@@ -173,19 +173,157 @@ def test_pipeline() -> None:
     check("能通过 s3 体检", not res["problems"], str(res["problems"][:3]))
 
 
+# ------------------------------------------------------------------ 4. .env
+def test_dotenv() -> None:
+    print("\n[4] .env 密钥管理")
+    import os
+    import tempfile
+
+    check(".env.example 已提供", (paths.ROOT / ".env.example").exists())
+    gi = (paths.ROOT / ".gitignore").read_text(encoding="utf-8")
+    check(".env 已被 gitignore", ".env" in gi.split())
+
+    with tempfile.TemporaryDirectory() as d:
+        f = Path(d) / ".env"
+        f.write_text("# 注释\nSELFTEST_A=hello\nexport SELFTEST_B=\"quoted value\"\n"
+                     "SELFTEST_C=from_dotenv\n坏行没有等号\n", encoding="utf-8")
+        os.environ["SELFTEST_C"] = "from_real_env"     # 真实环境变量应当优先
+        config._load_dotenv(f)
+        check("能读取 KEY=VALUE", os.environ.get("SELFTEST_A") == "hello")
+        check("支持 export 与引号", os.environ.get("SELFTEST_B") == "quoted value")
+        check("真实环境变量优先于 .env",
+              os.environ.get("SELFTEST_C") == "from_real_env")
+        for k in ("SELFTEST_A", "SELFTEST_B", "SELFTEST_C"):
+            os.environ.pop(k, None)
+
+    check("缺密钥时报错指向 .env", _missing_key_message_mentions_env())
+
+
+def _missing_key_message_mentions_env() -> bool:
+    import os
+    saved = os.environ.pop(config.API_KEY_ENV, None)
+    try:
+        config.api_key()
+        return False
+    except SystemExit as e:
+        return ".env" in str(e)
+    finally:
+        if saved is not None:
+            os.environ[config.API_KEY_ENV] = saved
+
+
+# ------------------------------------------------------------------ 5. 续传+并发
+def test_resume_and_concurrency() -> None:
+    print("\n[5] 并发跑批 + 断点续传")
+    import os
+    import tempfile
+
+    import s2_analyze_chapters as s2
+
+    ch1 = novel.get_chapter(1)
+
+    def fake_chat_json(system, user, temperature, max_tokens=None):
+        meta = {"tokens": {"prompt_tokens": 10, "completion_tokens": 5}, "attempts": 1}
+        if "原文解析员" in system:
+            return build_fake_analysis(ch1, flawed=False), meta
+        return {"score": 97, "verdict": "pass", "analysis": "自测假审查。" * 20,
+                "issues": [], "checked_items": {}, "missing_items": {}}, meta
+
+    with tempfile.TemporaryDirectory() as d:
+        tmp = Path(d)
+        orig_dir, orig_chat = paths.CHAPTERS_DIR, s2.chat_json
+        paths.CHAPTERS_DIR = tmp
+        s2.chat_json = fake_chat_json
+        try:
+            chapters = [novel.get_chapter(i) for i in range(1, 7)]
+
+            # 首轮：全新，6 章都要跑
+            todo, stats = s2.select_todo(chapters, "all", False, False)
+            check("首轮识别出全部未跑", len(todo) == 6 and stats["missing"] == 6)
+
+            from concurrent.futures import ThreadPoolExecutor
+            from contextlib import redirect_stdout
+
+            from common.progress import Progress
+            prog = Progress(total=len(todo), workers=3, force_plain=True)
+            with open(os.devnull, "w") as devnull, redirect_stdout(devnull):
+                with ThreadPoolExecutor(max_workers=3) as pool:
+                    list(pool.map(lambda c: s2.worker(c, "all", prog), chapters))
+
+            check("并发跑完 6 章", prog.done == 6 and prog.failed == 0,
+                  f"成功 {prog.ok}")
+            check("6 个章节 json 已落盘", len(list(tmp.glob("ch*.json"))) == 6)
+            check("章内步骤已走完（无残留活动槽）", not prog.active)
+
+            # 二轮：断点续传，应当全部跳过
+            todo2, stats2 = s2.select_todo(chapters, "all", False, False)
+            check("续传时全部跳过", todo2 == [] and stats2["done"] == 6)
+
+            # 模拟被打断的残缺文件 + 未达标文件
+            from common.jsonio import read_json, write_json
+            p3 = tmp / "ch0003.json"
+            bad = read_json(p3)
+            bad["run"].pop("finished_at")
+            write_json(p3, bad)
+            check("能识别残缺文件", s2.chapter_state(3) == "incomplete")
+
+            p4 = tmp / "ch0004.json"
+            d4 = read_json(p4)
+            d4["quality"]["passed"] = False
+            write_json(p4, d4)
+            check("能识别未达标文件", s2.chapter_state(4) == "failed")
+
+            (tmp / "ch0005.json").write_text("{ 坏掉的 json", encoding="utf-8")
+            check("能识别写坏的文件", s2.chapter_state(5) == "incomplete")
+
+            todo3, _ = s2.select_todo(chapters, "all", False, False)
+            check("续传自动重跑残缺章，不碰未达标章",
+                  sorted(c["seq"] for c in todo3) == [3, 5])
+            todo4, _ = s2.select_todo(chapters, "all", False, True)
+            check("--redo-failed 会带上未达标章",
+                  sorted(c["seq"] for c in todo4) == [3, 4, 5])
+            todo5, _ = s2.select_todo(chapters, "all", True, False)
+            check("--force 全部重跑", len(todo5) == 6)
+        finally:
+            paths.CHAPTERS_DIR = orig_dir
+            s2.chat_json = orig_chat
+
+
+# ------------------------------------------------------------------ 6. 进度显示
+def test_progress_render() -> None:
+    print("\n[6] 进度看板")
+    from common.progress import Progress, fmt_dur
+
+    check("时长格式化", fmt_dur(65) == "01:05" and fmt_dur(3725) == "1:02:05")
+    p = Progress(total=10, workers=2, done_already=90, force_plain=True)
+    p.done, p.ok, p.failed = 5, 4, 1
+    head = p._headline(plain=True)
+    check("总进度含已完成与总数", "95/100" in head, head.strip())
+    check("总进度含成功/失败计数", "✓4" in head and "✗1" in head)
+    p.begin(7, "第7章 测试", 4)
+    p.stage("抽取")
+    p.stage("逐字核验")
+    row = p._rows()[0]
+    check("章内进度含步骤与环节", "[2/4]" in row and "逐字核验" in row, row.strip())
+    p.stage("修订 第1轮", 6)
+    check("修订轮会上调章内总步数", "[3/6]" in p._rows()[0])
+    check("非 TTY 时自动退化为逐行输出", not p.tty)
+
+
 def main() -> None:
-    print(f"配置：模型 {config.MODEL} | 逐字门槛 {config.VERBATIM_PASS_RATE:.0%} | "
-          f"合格线 结构{config.PASS_SCORE['structure_review']}/"
-          f"一致{config.PASS_SCORE['fidelity_review']}")
+    print(config.describe())
     test_novel()
     test_verbatim()
     test_pipeline()
+    test_dotenv()
+    test_resume_and_concurrency()
+    test_progress_render()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")
         sys.exit(1)
-    print("✓ 全部通过。可以配 DEEPSEEK_API_KEY 跑真实分析了：")
-    print("    export DEEPSEEK_API_KEY=sk-xxx")
+    print("✓ 全部通过。配好密钥就能跑真实分析了：")
+    print("    cp .env.example .env      # 然后填入 DEEPSEEK_API_KEY")
     print("    python pipeline/s2_analyze_chapters.py --smoke 3")
 
 

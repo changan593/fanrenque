@@ -28,14 +28,68 @@ schemas/             章节分析 JSON 的结构约定
 
 ```bash
 pip install -r requirements.txt
+cp .env.example .env                       # ① 填入 DEEPSEEK_API_KEY
 
-python pipeline/s1_normalize_novel.py      # ① 标准化原文（已跑过，产物已入库）
-python pipeline/selftest.py                # ② 离线自测，确认管道通
+python pipeline/s1_normalize_novel.py      # ② 标准化原文（已跑过，产物已入库）
+python pipeline/selftest.py                # ③ 离线自测，确认管道通，不花额度
 
-export DEEPSEEK_API_KEY=sk-xxx
-python pipeline/s2_analyze_chapters.py --smoke 3   # ③ 先跑 3 章，人工看一眼质量
-python pipeline/s2_analyze_chapters.py             # ④ 跑全书，中断了重跑会自动续
-python pipeline/s3_validate_chapters.py            # ⑤ 体检，拿到需要重跑的章节列表
+python pipeline/s2_analyze_chapters.py --smoke 3   # ④ 先跑 3 章，人工看一眼质量
+python pipeline/s2_analyze_chapters.py             # ⑤ 跑全书，中断了重跑会自动续
+python pipeline/s3_validate_chapters.py            # ⑥ 体检，拿到需要重跑的章节列表
+```
+
+## 密钥与配置
+
+密钥放项目根目录的 `.env`，不用每次 `export`。`.env` 在 `.gitignore` 里，不会被提交。
+
+```
+优先级：真实环境变量  >  .env  >  config.py 里的默认值
+```
+
+可配项见 `.env.example`：模型、base_url、并发数、限速、修订轮上限、超时、重试次数。
+临时改一次用环境变量覆盖即可，例如 `PIPELINE_WORKERS=8 python pipeline/s2_analyze_chapters.py`。
+
+## 并发与进度
+
+`--workers` 控制并发章节数（默认 4，或 `.env` 里的 `PIPELINE_WORKERS`）。
+撞到 429 就设 `PIPELINE_QPS=3` 做全局限速。
+
+跑批时终端会画一块原地刷新的看板，**总进度**和**每章内部进度**都能看到：
+
+```
+总进度 [██████████░░░░░░░░░░░░░░░░░░░░] 413/1200  34.4%  ✓409 ✗4  用时 1:23:45  剩余 ~2:39:35
+  seq414   第414章 丹炉火微明，心静志更坚     [1/4] 抽取            12s
+  seq415   第415章 万金，万斤                 [3/4] 结构审查         8s
+  seq416   第416章 不夜楼，倒悬镜             [4/4] 一致性审查      21s
+  seq417   第417章 佛前有百尺，皇都第一人     [5/6] 修订 第1轮       3s
+```
+
+章内步骤固定 4 步（抽取 → 逐字核验 → 结构审查 → 一致性审查）；
+触发修订轮时分母自动上调（每轮 +2：修订 + 复核）。
+
+输出被重定向到文件时自动退化成逐行日志，不吐 ANSI 转义符。也可以用 `--plain` 强制。
+
+## 断点续传
+
+**默认行为，不用加参数。** 每章跑完立刻单独落盘，且用的是原子写
+（先写临时文件再 rename），Ctrl+C 或断网都不会留下半个坏文件。
+重跑同一条命令就从断点继续。
+
+续传时每章会判成四种状态之一：
+
+| 状态 | 含义 | 默认处理 |
+| --- | --- | --- |
+| `done` | 跑完且过了质量闸门 | 跳过 |
+| `missing` | 没跑过 | 跑 |
+| `incomplete` | 文件在但内容不全（上次跑到一半被打断 / 写坏了） | 自动重跑 |
+| `failed` | 跑完了但没过质量闸门 | 跳过，`--redo-failed` 才重跑 |
+
+启动时会先打印续传情况：
+
+```
+续传状态：已完成 408 | 未跑 787 | 残缺 1 | 未达标 4
+  提示：4 章未达标，本次不重跑；要重跑加 --redo-failed
+本次待处理 788 章
 ```
 
 ## s2 的每章流程
@@ -88,8 +142,10 @@ python pipeline/s3_validate_chapters.py            # ⑤ 体检，拿到需要�
 |---|---|
 | `--smoke 3` | 只跑前 3 章，验管道 |
 | `--range 100 200` | 只跑 seq 100~200 |
-| `--force` | 覆盖已有结果（默认跳过已完成的章节） |
-| `--workers 8` | 并发数，默认 4 |
+| `--workers 8` | 并发章节数，默认 4 |
+| `--redo-failed` | 连同上次没过质量闸门的章节一起重跑 |
+| `--force` | 无视已有结果全部重跑 |
+| `--plain` | 关掉进度看板，改逐行输出 |
 | `--phase review` | 复用已有抽取结果，只重跑两道审查 |
 
 `--phase review` 的用途：首轮并发跑的时候，靠后的章节可能读不到紧邻前几章的简介

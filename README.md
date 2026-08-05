@@ -17,6 +17,7 @@
 
 ```
 README.md              本文件
+.env.example           配置模板，复制成 .env 填密钥（.env 不入库）
 source/                源数据
   ├── *.txt            原文（GB18030 编码）
   ├── novel.json       标准化原文，1200 个分析单元 ★后续一切的输入
@@ -32,8 +33,8 @@ pipeline/              脚本管道 —— 见 pipeline/README.md
   ├── s2_analyze_chapters.py   逐章分析（调 API）
   ├── s3_validate_chapters.py  全量体检（不调 API）
   ├── selftest.py              离线自测
-  ├── config.py                所有可调参数
-  ├── common/                  路径、JSON、API 客户端、逐字核验器
+  ├── config.py                所有可调参数（读 .env）
+  ├── common/                  路径、JSON、API 客户端、逐字核验器、进度看板
   ├── prompts/                 四个提示词，改了立即生效
   └── schemas/                 章节分析 JSON 结构约定
 production/            具体剧集工作目录（s01/ s02/ …：分析、脚本、草稿、成片）
@@ -58,14 +59,17 @@ doc/                   文档
 
 ```bash
 pip install -r requirements.txt
+cp .env.example .env                               # 填入 DEEPSEEK_API_KEY
 python pipeline/selftest.py                        # 离线验管道，不花 API 额度
 
-export DEEPSEEK_API_KEY=sk-xxx
 python pipeline/s2_analyze_chapters.py --smoke 3   # 先跑 3 章，人工逐字比对
-python pipeline/s2_analyze_chapters.py             # 确认质量后跑全书，可断点续跑
+python pipeline/s2_analyze_chapters.py             # 确认质量后跑全书
 python pipeline/s3_validate_chapters.py            # 体检
 python pipeline/s2_analyze_chapters.py --phase review --force   # 建议：补一轮完整上下文审查
 ```
+
+跑全书支持**并发**（`--workers 8`）和**断点续传**（默认行为，中断后重跑同一条命令即可续上），
+终端会显示总进度和每章内部进度。细节见 [`pipeline/README.md`](pipeline/README.md)。
 
 ## ⚠ 两件必须先知道的事
 
