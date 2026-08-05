@@ -12,7 +12,11 @@
 
 用法：python pipeline/selftest.py
 """
+import json
 import sys
+import threading
+import time
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -310,6 +314,137 @@ def test_progress_render() -> None:
     check("非 TTY 时自动退化为逐行输出", not p.tty)
 
 
+# ------------------------------------------------------------------ 7. 流式与容错
+class _FakeAPI(BaseHTTPRequestHandler):
+    """假的 DeepSeek 接口，用来验流式接收、错误处理、卡死检测。"""
+    mode = "ok"
+    hits = 0
+
+    def log_message(self, *a):
+        pass
+
+    def do_POST(self):
+        _FakeAPI.hits += 1
+        body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+        mode = _FakeAPI.mode
+        if mode == "bad_model":
+            self.send_response(400)
+            self.end_headers()
+            self.wfile.write(b'{"error":{"message":"Model Not Exist"}}')
+            return
+        if mode == "flaky" and _FakeAPI.hits <= 2:      # 前两次 503，第三次成功
+            self.send_response(503)
+            self.end_headers()
+            self.wfile.write(b"overloaded")
+            return
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream")
+        self.end_headers()
+        if mode == "stall":                             # 建连后就不再吐数据
+            time.sleep(10)
+            return
+        if mode == "reasoning_only":
+            # 推理模型把 max_tokens 全烧在思维链上，正式回复一个字都没有
+            for _ in range(6):
+                frame = {"choices": [{"delta": {"reasoning_content": "思考" * 20}}]}
+                self.wfile.write(b"data: " + json.dumps(frame).encode() + b"\n\n")
+                self.wfile.flush()
+            end = {"choices": [{"delta": {}, "finish_reason": "length"}],
+                   "usage": {"prompt_tokens": 900, "completion_tokens": 8192}}
+            self.wfile.write(b"data: " + json.dumps(end).encode() + b"\n\n")
+            self.wfile.write(b"data: [DONE]\n\n")
+            self.wfile.flush()
+            return
+        text = '{"ok": true, "echo": "fanrenque", "pad": "' + "内容" * 60 + '"}'
+        for i in range(0, len(text), 6):
+            frame = {"choices": [{"delta": {"content": text[i:i + 6]}}]}
+            self.wfile.write(b"data: " + json.dumps(frame).encode() + b"\n\n")
+            self.wfile.flush()
+            time.sleep(0.02)
+        tail = {"choices": [], "usage": {"prompt_tokens": 11, "completion_tokens": 47}}
+        self.wfile.write(b"data: " + json.dumps(tail).encode() + b"\n\n")
+        self.wfile.write(b"data: [DONE]\n\n")
+        self.wfile.flush()
+
+
+def test_streaming() -> None:
+    print("\n[7] 流式接收与容错（本地假接口，不碰真 API）")
+    import os
+
+    from common import llm
+
+    srv = ThreadingHTTPServer(("127.0.0.1", 0), _FakeAPI)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    saved = (config.API_BASE, config.MODEL, config.STALL_TIMEOUT,
+             config.MAX_RETRIES, config.RETRY_BASE_DELAY,
+             os.environ.get(config.API_KEY_ENV))
+    config.API_BASE = f"http://127.0.0.1:{srv.server_address[1]}"
+    os.environ[config.API_KEY_ENV] = "sk-selftest"
+    try:
+        check("默认启用流式", config.STREAM, "非流式时几分钟看不到任何反馈")
+
+        ticks = []
+        llm.set_reporter(lambda **kw: ticks.append(kw))
+        _FakeAPI.mode, _FakeAPI.hits = "ok", 0
+        obj, meta = llm.chat_json("测试", "返回 JSON", 0.0, 400)
+        check("流式能拼回完整 JSON", obj.get("echo") == "fanrenque")
+        check("末帧带回 token 用量", meta["tokens"].get("completion_tokens") == 47)
+        gen = [t["chars"] for t in ticks if t.get("state") == "生成中"]
+        check("生成过程持续上报已收字数", len(gen) >= 2 and gen[-1] > gen[0],
+              f"{gen[:3]}…{gen[-1] if gen else 0}")
+
+        _FakeAPI.mode, _FakeAPI.hits = "bad_model", 0
+        config.MODEL = "不存在的模型"
+        try:
+            llm.chat_json("测试", "x", 0.0, 50)
+            check("模型名错时立即报错", False)
+        except llm.LLMError as e:
+            check("模型名错时立即报错不空转", "模型名" in str(e), str(e)[:60])
+        check("4xx 不做无谓重试", _FakeAPI.hits == 1, f"实际请求 {_FakeAPI.hits} 次")
+
+        config.MODEL, config.RETRY_BASE_DELAY = saved[1], 0.05
+        _FakeAPI.mode, _FakeAPI.hits = "flaky", 0
+        obj, meta = llm.chat_json("测试", "返回 JSON", 0.0, 400)
+        check("5xx 会退避重试直到成功", meta["attempts"] == 3, f"第 {meta['attempts']} 次成功")
+
+        # 空回复：重试多少次都还是空，必须立刻带诊断失败，不能空转
+        _FakeAPI.mode, _FakeAPI.hits = "reasoning_only", 0
+        ticks.clear()
+        t0 = time.time()
+        try:
+            llm.chat_json("测试", "返回 JSON", 0.0, 8192)
+            check("空回复能被识别", False)
+        except llm.LLMError as e:
+            msg = str(e)
+            check("空回复能被识别并说清原因", "空回复" in msg and "推理模型" in msg)
+            check("诊断里带上证据", "finish_reason=length" in msg and "思维链" in msg,
+                  msg.splitlines()[0][:70])
+            check("给出可直接执行的处置", "LLM_MAX_TOKENS" in msg)
+            check("不再空转重试", _FakeAPI.hits == 1 and time.time() - t0 < 5,
+                  f"请求 {_FakeAPI.hits} 次，{time.time() - t0:.1f}s 内返回")
+        check("思维链阶段单独上报为「推理中」",
+              any(t.get("state") == "推理中" for t in ticks))
+
+        config.STALL_TIMEOUT, config.MAX_RETRIES = 1, 0
+        _FakeAPI.mode, _FakeAPI.hits = "stall", 0
+        t0 = time.time()
+        try:
+            llm.chat_json("测试", "x", 0.0, 50)
+            check("卡死能被判定并中止", False)
+        except llm.LLMError:
+            dt = time.time() - t0
+            check("卡死能被判定并中止", dt < 6, f"{dt:.1f}s 后中止，未无限等待")
+    finally:
+        (config.API_BASE, config.MODEL, config.STALL_TIMEOUT,
+         config.MAX_RETRIES, config.RETRY_BASE_DELAY, oldkey) = saved
+        if oldkey is None:
+            os.environ.pop(config.API_KEY_ENV, None)
+        else:
+            os.environ[config.API_KEY_ENV] = oldkey
+        llm.set_reporter(None)
+        srv.shutdown()
+
+
 def main() -> None:
     print(config.describe())
     test_novel()
@@ -318,6 +453,7 @@ def main() -> None:
     test_dotenv()
     test_resume_and_concurrency()
     test_progress_render()
+    test_streaming()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")

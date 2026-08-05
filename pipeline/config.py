@@ -40,10 +40,22 @@ API_BASE = os.getenv("DEEPSEEK_BASE_URL", "https://api.deepseek.com")
 API_KEY_ENV = "DEEPSEEK_API_KEY"          # 从环境变量读，绝不写进仓库
 MODEL = os.getenv("DEEPSEEK_MODEL", "deepseek-v4-flash")
 
-REQUEST_TIMEOUT = int(os.getenv("LLM_TIMEOUT", "180"))     # 单次请求超时（秒）
-MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "5"))       # 失败重试次数
-RETRY_BASE_DELAY = 2.0                                     # 退避基数：2/4/8/16/32 秒
-MAX_OUTPUT_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "8192"))
+# 用流式接收：非流式请求在生成完之前什么都收不到，几分钟里无法判断是活着还是卡死。
+# 流式下每收到一段就能刷新进度，还能用「多久没收到数据」做卡死判定。
+STREAM = os.getenv("LLM_STREAM", "1") not in ("0", "false", "False")
+
+# 强制 JSON 输出模式。个别模型不支持，会返回空回复；关掉后靠提示词约束，
+# 解析仍走 extract_json_block 兜底。
+JSON_MODE = os.getenv("LLM_JSON_MODE", "1") not in ("0", "false", "False")
+
+CONNECT_TIMEOUT = int(os.getenv("LLM_CONNECT_TIMEOUT", "20"))   # 建连超时
+STALL_TIMEOUT = int(os.getenv("LLM_STALL_TIMEOUT", "90"))       # 流式：两段数据之间的最大间隔
+REQUEST_TIMEOUT = int(os.getenv("LLM_TIMEOUT", "600"))          # 单次请求总时限
+MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "5"))            # 失败重试次数
+RETRY_BASE_DELAY = 2.0                                          # 退避基数：2/4/8/16/32 秒
+# 推理模型的思维链也算在 max_tokens 里，给少了会出现「额度被思维链吃光、
+# 正式回复为空」。max_tokens 是上限不是预扣，按实际生成量计费，给足不额外花钱。
+MAX_OUTPUT_TOKENS = int(os.getenv("LLM_MAX_TOKENS", "32768"))
 
 # 三次调用各自的温度：抽取要稳，审查要冷静
 TEMPERATURE = {

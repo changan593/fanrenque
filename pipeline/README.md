@@ -32,10 +32,11 @@ cp .env.example .env                       # ① 填入 DEEPSEEK_API_KEY
 
 python pipeline/s1_normalize_novel.py      # ② 标准化原文（已跑过，产物已入库）
 python pipeline/selftest.py                # ③ 离线自测，确认管道通，不花额度
+python pipeline/s2_analyze_chapters.py --doctor    # ④ 验密钥/模型/网络，一次最小请求
 
-python pipeline/s2_analyze_chapters.py --smoke 3   # ④ 先跑 3 章，人工看一眼质量
-python pipeline/s2_analyze_chapters.py             # ⑤ 跑全书，中断了重跑会自动续
-python pipeline/s3_validate_chapters.py            # ⑥ 体检，拿到需要重跑的章节列表
+python pipeline/s2_analyze_chapters.py --smoke 3   # ⑤ 先跑 3 章，人工看一眼质量
+python pipeline/s2_analyze_chapters.py             # ⑥ 跑全书，中断了重跑会自动续
+python pipeline/s3_validate_chapters.py            # ⑦ 体检，拿到需要重跑的章节列表
 ```
 
 ## 密钥与配置
@@ -54,20 +55,29 @@ python pipeline/s3_validate_chapters.py            # ⑥ 体检，拿到需要�
 `--workers` 控制并发章节数（默认 4，或 `.env` 里的 `PIPELINE_WORKERS`）。
 撞到 429 就设 `PIPELINE_QPS=3` 做全局限速。
 
-跑批时终端会画一块原地刷新的看板，**总进度**和**每章内部进度**都能看到：
+跑批时终端会画一块原地刷新的看板，**总进度**、**章内进度**、**请求实时状态**都能看到：
 
 ```
 总进度 [██████████░░░░░░░░░░░░░░░░░░░░] 413/1200  34.4%  ✓409 ✗4  用时 1:23:45  剩余 ~2:39:35
-  seq414   第414章 丹炉火微明，心静志更坚     [1/4] 抽取            12s
-  seq415   第415章 万金，万斤                 [3/4] 结构审查         8s
-  seq416   第416章 不夜楼，倒悬镜             [4/4] 一致性审查      21s
-  seq417   第417章 佛前有百尺，皇都第一人     [5/6] 修订 第1轮       3s
+  seq414   第414章 丹炉火微明，心静志更坚      [1/4] 抽取       生成中 · ↓2847字            127s
+  seq415   第415章 万金，万斤                  [3/4] 结构审查   生成中 · ↓641字              64s
+  seq416   第416章 不夜楼，倒悬镜              [4/4] 一致性审查 退避重试 第2次 · HTTP 429     0s
+  seq417   第417章 佛前有百尺，皇都第一人      [1/4] 抽取       请求中                        0s ⚠静默41s
 ```
 
-章内步骤固定 4 步（抽取 → 逐字核验 → 结构审查 → 一致性审查）；
-触发修订轮时分母自动上调（每轮 +2：修订 + 复核）。
+三层信息：
 
-输出被重定向到文件时自动退化成逐行日志，不吐 ANSI 转义符。也可以用 `--plain` 强制。
+- **总进度**：完成数/总数、百分比、成功失败、用时、预计剩余
+- **章内进度**：`[步骤/总步数]` + 当前环节。固定 4 步（抽取 → 逐字核验 → 结构审查 →
+  一致性审查），触发修订轮时分母自动上调（每轮 +2：修订 + 复核）
+- **请求实时状态**：`生成中 · ↓2847字` 里的字数每 0.3 秒刷新一次。
+  **字数在涨就是活的。** 重试、退避、HTTP 错误码也都显示在这一列
+
+末列两个时间：本章总耗时，以及超过 20 秒没收到任何新状态时出现的 `⚠静默Ns`。
+静默计时一直涨才是真卡住了。
+
+看板宽度自适应，窄终端下会先截章节名保住判活信息。输出重定向到文件时自动退化成
+逐行日志，不吐 ANSI 转义符；也可以用 `--plain` 强制。
 
 ## 断点续传
 
@@ -147,6 +157,7 @@ python pipeline/s3_validate_chapters.py            # ⑥ 体检，拿到需要�
 | `--force` | 无视已有结果全部重跑 |
 | `--plain` | 关掉进度看板，改逐行输出 |
 | `--phase review` | 复用已有抽取结果，只重跑两道审查 |
+| `--doctor` | 只发一次最小请求验密钥/模型/网络，不跑章节 |
 
 `--phase review` 的用途：首轮并发跑的时候，靠后的章节可能读不到紧邻前几章的简介
 （还没落盘），连贯性审查的上下文会略弱。全书跑完后再跑一次 `--phase review --force`，
@@ -154,6 +165,46 @@ python pipeline/s3_validate_chapters.py            # ⑥ 体检，拿到需要�
 
 环境变量可临时覆盖配置：`DEEPSEEK_MODEL`、`PIPELINE_WORKERS`、`PIPELINE_QPS`、
 `PIPELINE_REPAIR_ROUNDS`、`LLM_TIMEOUT`。
+
+## 跑得慢 / 像卡住了怎么办
+
+先跑 `--doctor`，它会一次性告诉你密钥对不对、模型名存不存在、网络通不通、首字节多久。
+
+然后看看板的**请求实时状态列**：
+
+| 现象 | 含义 | 处理 |
+|---|---|---|
+| `生成中 · ↓字数`在涨 | 正常，只是生成慢 | 等；嫌慢就调小 `LLM_MAX_TOKENS` |
+| 停在`请求中`且`⚠静默`在涨 | 连上了但服务端不吐数据 | 到 `LLM_STALL_TIMEOUT`（默认 90s）会自动重试 |
+| 反复`退避重试 · HTTP 429` | 撞限流了 | 调小 `PIPELINE_WORKERS`，或设 `PIPELINE_QPS=3` |
+| 停在`推理中 · ↓字数` | 推理模型在跑思维链，还没开始写正式回复 | 正常，等它转到`生成中` |
+| 立刻报 HTTP 400/404 | 模型名不对 | 检查 `.env` 里的 `DEEPSEEK_MODEL` |
+| 立刻报 HTTP 401/403 | 密钥不对或没权限 | 检查 `.env` 里的 `DEEPSEEK_API_KEY` |
+| 报`模型返回空回复` | 见下 | 按报错里的处置改 `.env` |
+
+### 「模型返回空回复」
+
+推理模型的思维链（`reasoning_content`）和正式回复（`content`）共用 `max_tokens`。
+额度给少了，思维链就把额度烧光，正式回复一个字都写不出来，`content` 为空。
+
+报错会把证据和处置一并给出：
+
+```
+模型返回空回复（content 为空）。finish_reason=length，思维链 9840 字，输出 8192 tok，max_tokens=8192
+  原因：deepseek-v4-flash 是推理模型，max_tokens 全被思维链吃光了，没剩下额度写正式回复。
+  处置（改 .env 后重跑）：
+    1) 调大额度：LLM_MAX_TOKENS=32768
+    2) 或换非推理模型：DEEPSEEK_MODEL=deepseek-chat
+```
+
+`max_tokens` 是**上限不是预扣**，按实际生成量计费，调大不额外花钱，
+所以默认值就给到了 32768。
+
+这类错误不会重试——重试多少次结果都一样，只会白烧时间。
+
+单章正常耗时参考：三次调用串行，抽取输出 3~5k token 是大头，
+整章 1~4 分钟属正常范围；推理模型还要加上思维链的时间，会更久。
+并发 4 的话全书约 1200 章 ≈ 5~20 小时。
 
 ## 成本估算
 
@@ -166,7 +217,15 @@ python pipeline/s3_validate_chapters.py            # ⑥ 体检，拿到需要�
 
 ```
 .run/logs/s2_runs.jsonl     每章一行：分数、逐字命中率、修订轮数、耗时
+.run/logs/s2_calls.jsonl    每次 HTTP 请求一行：章节、环节、第几次、状态码、耗时、收到字数
 .run/logs/s2_errors.jsonl   失败章节及原因
+```
+
+`s2_calls.jsonl` 是排查卡顿的第一手材料——哪一章哪个环节慢、有没有在偷偷重试，
+一看便知：
+
+```bash
+tail -f .run/logs/s2_calls.jsonl
 ```
 
 `.run/` 不入库。章节 json 里已经带了完整的审查留痕，日志只用于跑批时监控。

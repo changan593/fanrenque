@@ -36,6 +36,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config
 from common import paths, verbatim
 from common.jsonio import append_jsonl, read_json, write_json
+from common import llm
 from common.llm import USAGE, LLMError, chat_json
 from common.novel import chapter_label, chapter_text, iter_chapters, load_novel
 from common.progress import Heartbeat, Progress, fmt_dur
@@ -355,8 +356,13 @@ def select_todo(chapters: list[dict], phase: str, force: bool,
 def worker(ch: dict, phase: str, prog: Progress) -> None:
     seq = ch["seq"]
     prog.begin(seq, chapter_label(ch), BASE_STEPS)
+    llm.set_reporter(prog.note)          # 请求级状态直通看板
     try:
-        doc = analyze_chapter(ch, phase, on_stage=prog.stage)
+        def on_stage(name, steps=None):
+            prog.stage(name, steps)
+            llm.set_call_context(seq=seq, stage=name)
+
+        doc = analyze_chapter(ch, phase, on_stage=on_stage)
         prog.stage("写入")
         write_json(paths.chapter_json_path(seq), doc)   # 原子写，中断不会留半个文件
         q = doc["quality"]
@@ -377,9 +383,69 @@ def worker(ch: dict, phase: str, prog: Progress) -> None:
         prog.end(seq, "fail", f"{type(e).__name__}: {e}")
 
 
+def doctor() -> int:
+    """
+    开跑前的连通性自检：一次最小请求，把密钥、模型名、网络、延迟一次性验清楚。
+    比在跑批里盯着不动的进度条猜要快得多。
+    """
+    import json as _json
+
+    print(config.describe())
+    print(f"接口地址 {config.API_BASE} | 流式 {'开' if config.STREAM else '关'} | "
+          f"建连超时 {config.CONNECT_TIMEOUT}s | 静默超时 {config.STALL_TIMEOUT}s\n")
+    try:
+        key = config.api_key()
+    except SystemExit as e:
+        print(e)
+        return 1
+    print(f"密钥  已读到，{key[:6]}...{key[-4:]}（长度 {len(key)}）")
+
+    ticks: list[tuple[float, str, int]] = []
+    t0 = time.time()
+    llm.set_reporter(lambda **kw: ticks.append(
+        (time.time() - t0, kw.get("state") or "", kw.get("chars") or 0)))
+    print(f"发起最小测试请求（max_tokens={config.MAX_OUTPUT_TOKENS}，"
+          f"JSON模式 {'开' if config.JSON_MODE else '关'}）……")
+    try:
+        obj, meta = chat_json(
+            "你是测试助手，只输出 JSON，不要任何解释文字。",
+            '请原样返回这个 JSON：{"ok": true, "echo": "fanrenque"}',
+            temperature=0.0)
+    except Exception as e:
+        print(f"\n✗ 失败：{e}\n")
+        print("其他常见原因：")
+        print("  · HTTP 401/403  → .env 里的 DEEPSEEK_API_KEY 不对或没权限")
+        print(f"  · HTTP 400/404  → 模型名可能不对，当前 DEEPSEEK_MODEL={config.MODEL}")
+        print("  · 连接超时/SSL  → 检查网络与代理")
+        print(f"  · 详细调用记录：{paths.LOG_DIR / 's2_calls.jsonl'}")
+        return 1
+
+    dt = time.time() - t0
+    think = [t for t in ticks if t[1] == "推理中"]
+    gen = [t for t in ticks if t[1] == "生成中"]
+    first = ticks[1][0] if len(ticks) > 1 else None
+    print(f"\n✓ 成功  总耗时 {dt:.1f}s" + (f"  首字节 {first:.1f}s" if first else ""))
+    print(f"  返回  {_json.dumps(obj, ensure_ascii=False)[:120]}")
+    print(f"  用量  {meta['tokens']}  请求次数 {meta['attempts']}")
+
+    if think:
+        thought = think[-1][2]
+        print(f"\n  ⚠ {config.MODEL} 是推理模型：这次思维链约 {thought} 字，"
+              f"正式回复才 {len(meta['raw'])} 字。")
+        print("    思维链也占 max_tokens。跑正式章节时输入更长、思维链也更长，")
+        print(f"    如果报「模型返回空回复」，把 .env 的 LLM_MAX_TOKENS 往上调"
+              f"（当前 {config.MAX_OUTPUT_TOKENS}），或换 DEEPSEEK_MODEL=deepseek-chat。")
+    if gen and first and first > 30:
+        print("\n  ⚠ 首字节偏慢，单章可能要几分钟，属正常但会拖长总时间")
+    print("\n连通性没问题。跑 --smoke 3 看质量。")
+    return 0
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(
         description="逐章分析（三次调用 + 可选修订轮）。支持并发、断点续传。")
+    ap.add_argument("--doctor", action="store_true",
+                    help="只做一次最小请求验证密钥/模型/网络，不跑章节")
     ap.add_argument("--range", nargs=2, type=int, metavar=("START", "END"),
                     help="只处理 seq 区间（含两端）")
     ap.add_argument("--smoke", type=int, metavar="N", help="只跑前 N 章，验管道用")
@@ -396,6 +462,8 @@ def main() -> None:
     args = ap.parse_args()
 
     paths.ensure_dirs()
+    if args.doctor:
+        sys.exit(doctor())
     total = load_novel()["meta"]["unit_count"]
     start, end = (args.range if args.range else (1, args.smoke or total))
     chapters = list(iter_chapters(start, end))

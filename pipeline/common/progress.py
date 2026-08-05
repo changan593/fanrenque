@@ -88,7 +88,8 @@ class Progress:
     def begin(self, seq: int, label: str, steps: int) -> None:
         with self._lock:
             self.active[self._acquire()] = {"seq": seq, "label": label, "stage": "准备",
-                                            "step": 0, "steps": steps, "t0": time.time()}
+                                            "step": 0, "steps": steps, "t0": time.time(),
+                                            "note": "", "ts": time.time()}
         self._paint()
 
     def stage(self, name: str, steps: int | None = None) -> None:
@@ -98,8 +99,34 @@ class Progress:
             if a:
                 a["stage"] = name
                 a["step"] += 1
+                a["note"] = ""
+                a["ts"] = time.time()
                 if steps:
                     a["steps"] = steps
+        self._paint()
+
+    def note(self, state: str = None, attempt: int = None,
+             chars: int = None, detail: str = None) -> None:
+        """
+        请求级实时状态。让「正在生成、已收到多少字、第几次重试」直接显示出来，
+        跑批时才能一眼看出是活着还是卡死。
+        """
+        with self._lock:
+            a = self.active.get(self._current())
+            if not a:
+                return
+            bits = []
+            if state:
+                bits.append(state)
+            if chars:
+                bits.append(f"↓{chars}字")
+            if attempt and attempt > 1:
+                bits.append(f"第{attempt}次请求")
+            if detail:
+                bits.append(detail)
+            if bits:
+                a["note"] = " · ".join(bits)
+                a["ts"] = time.time()
         self._paint()
 
     def end(self, seq: int, status: str, msg: str) -> None:
@@ -137,15 +164,35 @@ class Progress:
         return f"总进度 [{'█' * filled}{'░' * (width - filled)}] {core}"
 
     def _rows(self) -> list[str]:
+        """
+        宽度自适应。窄终端下优先保住判活信息（当前状态、已收字数、静默告警），
+        章节名可以截——seq 已经能定位到章了。
+        """
         cols = shutil.get_terminal_size((100, 24)).columns
-        rows = []
+        now = time.time()
+        cells = []
         for slot in sorted(self.active):
             a = self.active[slot]
-            rows.append(_clip(
-                f"  seq{a['seq']:<5d} {_pad(a['label'], 34)} "
-                f"[{a['step']}/{a['steps']}] {_pad(a['stage'], 12)} "
-                f"{time.time() - a['t0']:4.0f}s", cols - 1))
-        return rows
+            # 末列给两个时间：本章总耗时，和距上次收到新状态多久。
+            # 后者是判活的关键——它一直涨就说明真卡住了。
+            silent = now - a["ts"]
+            tail = f"{now - a['t0']:5.0f}s"
+            if silent > 20:
+                tail += f" ⚠静默{silent:.0f}s"
+            cells.append((f"  seq{a['seq']:<5d} ",
+                          a["label"],
+                          f"[{a['step']}/{a['steps']}] {_pad(a['stage'], 10)} ",
+                          a["note"], tail))
+        if not cells:
+            return []
+
+        # 各列宽度整帧统一算一次，逐行各算各的会错位
+        fixed = max(_dw(h) + _dw(m) + _dw(t) for h, _, m, _, t in cells)
+        avail = max(8, cols - 1 - fixed - 2)
+        note_w = max(10, min(max(_dw(n) for *_, n, _ in cells), int(avail * 0.55)))
+        label_w = max(6, avail - note_w)
+        return [_clip(f"{h}{_pad(lb, label_w)} {m}{_pad(n, note_w)} {t}", cols - 1)
+                for h, lb, m, n, t in cells]
 
     def _paint(self, log: str | None = None, force: bool = False) -> None:
         if not self.tty:
