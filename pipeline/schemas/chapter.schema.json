@@ -1,0 +1,212 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "章节分析 JSON",
+  "description": "data/chapters/chXXXX.json 的结构约定。一章一个文件，seq 为唯一主键。",
+  "type": "object",
+  "required": ["schema_version", "seq", "chapter_id", "declared_num", "title",
+               "raw_text", "paragraphs", "analysis", "quality", "reviews", "run"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "seq": {"type": "integer", "minimum": 1, "description": "文件顺序号，唯一主键"},
+    "chapter_id": {"type": "string", "pattern": "^ch[0-9]{4}$"},
+    "declared_num": {"type": "integer", "description": "作者标注的章号，存在重号/跳号，不可当主键"},
+    "title": {"type": "string"},
+    "label": {"type": "string", "description": "人读章节名，合并单元含被并入的标题"},
+    "merged_titles": {
+      "type": "array",
+      "description": "原站点把多章合并在一页时，被并入本单元的其他章节标题",
+      "items": {
+        "type": "object",
+        "required": ["declared_num", "title"],
+        "properties": {"declared_num": {"type": "integer"}, "title": {"type": "string"}}
+      }
+    },
+    "is_merged": {"type": "boolean"},
+    "source": {
+      "type": "object",
+      "required": ["line_start", "line_end", "char_count", "paragraph_count"],
+      "properties": {
+        "line_start": {"type": "integer"},
+        "line_end": {"type": "integer"},
+        "char_count": {"type": "integer"},
+        "paragraph_count": {"type": "integer"}
+      }
+    },
+    "raw_text": {"type": "string", "description": "章节原文全文"},
+    "paragraphs": {"type": "array", "items": {"type": "string"},
+                   "description": "分段原文，引用里的 para 是这个数组的 1 起下标"},
+
+    "analysis": {
+      "type": "object",
+      "required": ["synopsis", "characters", "scenes", "dialogues", "monologues",
+                   "narration", "beats"],
+      "properties": {
+        "one_line": {"type": "string"},
+        "synopsis": {"type": "string", "description": "章节剧情简介"},
+        "time_setting": {"type": "string"},
+        "emotional_tone": {"type": "string"},
+        "characters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "role_in_chapter"],
+            "properties": {
+              "name": {"type": "string"},
+              "aliases": {"type": "array", "items": {"type": "string"}},
+              "role_in_chapter": {"enum": ["主导", "参与", "提及"]},
+              "mentioned_only": {"type": "boolean"},
+              "appearance_quotes": {"type": "array", "items": {"type": "string"},
+                                    "description": "原文对该人物外貌/服饰的描写，必须逐字"},
+              "state": {"type": "string"},
+              "actions": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "scenes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "type"],
+            "properties": {
+              "name": {"type": "string"},
+              "type": {"enum": ["室内", "室外", "幻境梦境", "秘境", "其他"]},
+              "time_of_day": {"type": "string"},
+              "description_quotes": {"type": "array", "items": {"type": "string"},
+                                     "description": "原文场景描写，必须逐字"},
+              "present_characters": {"type": "array", "items": {"type": "string"}},
+              "events": {"type": "array", "items": {"type": "string"}},
+              "para_range": {"type": "array", "items": {"type": "integer"},
+                             "minItems": 2, "maxItems": 2}
+            }
+          }
+        },
+        "dialogues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["para", "speaker", "text"],
+            "properties": {
+              "para": {"type": "integer", "minimum": 1},
+              "speaker": {"type": "string"},
+              "addressee": {"type": "string"},
+              "text": {"type": "string", "description": "台词原文，必须逐字"},
+              "manner": {"type": "string"}
+            }
+          }
+        },
+        "monologues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["para", "character", "text"],
+            "properties": {
+              "para": {"type": "integer", "minimum": 1},
+              "character": {"type": "string"},
+              "text": {"type": "string", "description": "心理活动原文，必须逐字"},
+              "kind": {"enum": ["心理活动", "回忆", "判断推理", "情绪感受"]}
+            }
+          }
+        },
+        "narration": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["para", "text"],
+            "properties": {
+              "para": {"type": "integer", "minimum": 1},
+              "text": {"type": "string", "description": "关键旁白原文，必须逐字"},
+              "function": {"enum": ["世界观设定", "人物背景", "时间推移", "伏笔",
+                                    "情节交代", "环境渲染"]}
+            }
+          }
+        },
+        "beats": {
+          "type": "array",
+          "description": "分镜用的事件节拍，覆盖全章不留空档",
+          "items": {
+            "type": "object",
+            "required": ["order", "summary"],
+            "properties": {
+              "order": {"type": "integer"},
+              "para_range": {"type": "array", "items": {"type": "integer"},
+                             "minItems": 2, "maxItems": 2},
+              "scene": {"type": "string"},
+              "beat_type": {"enum": ["铺垫", "冲突", "转折", "情绪", "揭示", "收束"]},
+              "summary": {"type": "string"}
+            }
+          }
+        },
+        "props": {"type": "array", "items": {"type": "object"}},
+        "terms": {"type": "array", "items": {"type": "object"}},
+        "continuity": {
+          "type": "object",
+          "properties": {
+            "inherits": {"type": "array", "items": {"type": "string"}},
+            "foreshadows": {"type": "array", "items": {"type": "string"}},
+            "reveals": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    },
+
+    "quality": {
+      "type": "object",
+      "required": ["passed", "structure_score", "fidelity_score", "verbatim"],
+      "properties": {
+        "passed": {"type": "boolean"},
+        "fail_reasons": {"type": "array", "items": {"type": "string"}},
+        "structure_score": {"type": ["integer", "null"], "minimum": 0, "maximum": 100},
+        "fidelity_score": {"type": ["integer", "null"], "minimum": 0, "maximum": 100},
+        "verbatim": {
+          "type": "object",
+          "description": "程序逐字核验：把每条引用回原文做精确匹配的客观结果",
+          "properties": {
+            "total_quotes": {"type": "integer"},
+            "counts": {"type": "object"},
+            "verbatim_rate": {"type": "number"},
+            "misplaced_para_count": {"type": "integer"},
+            "problems": {"type": "array"}
+          }
+        },
+        "coverage": {"type": "object", "description": "台词覆盖率，专盯遗漏"},
+        "repair_rounds": {"type": "integer"},
+        "context_chapters_used": {"type": "array", "items": {"type": "integer"}}
+      }
+    },
+
+    "reviews": {
+      "type": "array",
+      "description": "审查留痕。每条至少含 score 与 analysis 两项输出。",
+      "items": {
+        "type": "object",
+        "required": ["stage"],
+        "properties": {
+          "stage": {"enum": ["structure_review", "fidelity_review", "repair", "extract_meta"]},
+          "round": {"type": "integer"},
+          "score": {"type": ["integer", "null"]},
+          "verdict": {"enum": ["pass", "revise", "fail", null]},
+          "analysis": {"type": "string", "description": "审查详细分析"},
+          "issues": {"type": "array"},
+          "checked_items": {"type": "object"},
+          "missing_items": {"type": "object"},
+          "model": {"type": "string"},
+          "tokens": {"type": "object"},
+          "reviewed_at": {"type": "string"}
+        }
+      }
+    },
+
+    "run": {
+      "type": "object",
+      "properties": {
+        "pipeline_version": {"type": "string"},
+        "model": {"type": "string"},
+        "phase": {"type": "string"},
+        "llm_calls": {"type": "integer", "minimum": 3},
+        "started_at": {"type": "string"},
+        "finished_at": {"type": "string"},
+        "elapsed_sec": {"type": "number"}
+      }
+    }
+  }
+}

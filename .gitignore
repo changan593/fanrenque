@@ -1,0 +1,15 @@
+# 运行期产物：日志、缓存
+.run/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 密钥绝不入库（API key 一律走环境变量 DEEPSEEK_API_KEY）
+.env
+*.key
+
+# 系统
+.DS_Store
