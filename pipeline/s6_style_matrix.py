@@ -198,12 +198,18 @@ def generate(prompt: str, n: int, key: str, model: str, size: str,
                 raise ImageError(f"HTTP {r.status_code}：{_err_detail(r.text)}")
 
         if attempt < config.IMAGE_MAX_RETRIES:
-            delay = config.RETRY_BASE_DELAY * (2 ** (attempt - 1)) + random.uniform(0, 1)
+            delay = config.IMAGE_RETRY_BASE * (2 ** (attempt - 1)) + random.uniform(0, 1)
             if report:
                 report(state="退避重试", attempt=attempt, detail=f"{last[:40]} · {delay:.0f}s")
             time.sleep(delay)
 
-    raise ImageError(f"重试 {config.IMAGE_MAX_RETRIES} 次仍失败：{last}")
+    hint = ""
+    # 体检模式（只试一次）不加这段——那边有更精确的阶梯结论，别用泛泛的猜测盖过去
+    if config.IMAGE_MAX_RETRIES > 1 and any(c in last for c in ("502", "503", "504", "500")):
+        hint = ("\n  这是上游的错，按官方文档不扣费。多半是服务端此刻不可用，"
+                "过几分钟重跑原命令即可（已出的图不会重复出）。"
+                "\n  若一直如此，跑 --doctor 逐级定位。")
+    raise ImageError(f"重试 {config.IMAGE_MAX_RETRIES} 次仍失败：{last}{hint}")
 
 
 def cell_files(out_dir: Path, tid: str, sid: str, repeats: int) -> list[Path]:
@@ -262,6 +268,72 @@ def run_cell(cell: dict, idx: int, args, key: str, abort: threading.Event,
 
 
 # ------------------------------------------------------------------ 入口
+def doctor(matrix: dict, args) -> int:
+    """
+    阶梯式体检。一次只动一个变量，第一个失败的台阶就是病因所在。
+
+    502「Upstream network error」是个筐——上游真抽风是它，模型名不认、
+    尺寸不支持、提示词太长、n=3 要不起，也可能被网关一并包成它。
+    逐级加压才能把变量分开，否则只能靠猜着重跑。
+    """
+    tiny = "一只碗。"
+    real = compose_prompt(matrix, matrix["targets"][0], matrix["styles"][0])
+    steps = [
+        ("接口连通 + 密钥 + 模型名", dict(prompt=tiny, n=1, size="1024x1024"),
+         f"这一步就挂 → 检查 IMAGE_BASE_URL（当前 {config.IMAGE_BASE_URL}）、"
+         f"IMAGE_API_KEY、IMAGE_MODEL（当前 {args.model}）"),
+        (f"目标尺寸 {args.size}", dict(prompt=tiny, n=1, size=args.size),
+         f"只有这一步挂 → 该模型不支持 {args.size}，"
+         f"改用 IMAGE_SIZE=1024x1024 或换 IMAGE_MODEL"),
+        (f"真实长度提示词（{len(real)} 字）", dict(prompt=real, n=1, size=args.size),
+         "只有这一步挂 → 提示词太长或触发了内容审核，"
+         "把 matrix.json 里的描述写短些"),
+        ("单次出 3 张（n=3）", dict(prompt=real, n=3, size=args.size),
+         "只有这一步挂 → 上游要不起一次三张，用 --batch 1 一张张出"),
+    ]
+
+    print(f"接口 {config.IMAGE_BASE_URL}")
+    print(f"模型 {args.model} | 尺寸 {args.size}\n")
+    try:
+        key = config.image_api_key()
+    except SystemExit as e:
+        print(e)
+        return 1
+    print(f"密钥  已读到，{key[:6]}...{key[-4:]}（长度 {len(key)}）\n")
+
+    abort = threading.Event()
+    saved, config.IMAGE_MAX_RETRIES = config.IMAGE_MAX_RETRIES, 1   # 体检不重试，要看真实反应
+    try:
+        for i, (name, kw, hint) in enumerate(steps, 1):
+            print(f"[{i}/{len(steps)}] {name} …… ", end="", flush=True)
+            t0 = time.time()
+            try:
+                imgs = generate(key=key, model=args.model, abort=abort, **kw)
+            except (ImageError, FatalError) as e:
+                print(f"✗  {time.time() - t0:.0f}s")
+                print(f"\n    {e}\n")
+                print(f"    {hint}")
+                # 只有第一级就挂时，「上游整体不可用」和「配置不对」才分不开。
+                # 第二级往后挂，说明前面的请求成功过，上游显然是活的——
+                # 这时再提「可能是上游抽风」只会把已经定位到的结论搅浑。
+                if i == 1:
+                    print("\n    也可能上游此刻整体不可用。这类错误按官方文档不扣费，")
+                    print("    先隔几分钟重跑一次 --doctor；仍是同样结果再按上面查配置。")
+                return 1
+            print(f"✓  {len(imgs)} 张 · "
+                  f"{sum(len(b) for b in imgs) / 1024:.1f}KB · {time.time() - t0:.0f}s")
+    finally:
+        config.IMAGE_MAX_RETRIES = saved
+
+    out = args.out / "_doctor"
+    out.mkdir(parents=True, exist_ok=True)
+    for j, b in enumerate(imgs, 1):
+        (out / f"doctor_{j}.png").write_bytes(b)
+    print(f"\n四级全通过。样图在 {out}，看一眼再跑全量。")
+    print("注意：体检出的图不计入矩阵，全量跑的时候会重新出。")
+    return 0
+
+
 def dump_prompts(matrix: dict, cells: list[dict], path: Path) -> None:
     lines = [f"# 画风矩阵提示词全集（{len(cells)} 格）", "",
              f"由 `matrix.json` 自动拼装，**不要手改本文件**——改了也不会生效，"
@@ -295,6 +367,8 @@ def main() -> int:
     ap.add_argument("--model", default=config.IMAGE_MODEL)
     ap.add_argument("--size", default=config.IMAGE_SIZE)
     ap.add_argument("--force", action="store_true", help="删掉已有图重出")
+    ap.add_argument("--doctor", action="store_true",
+                    help="阶梯式体检：连通→尺寸→提示词长度→n=3，定位失败原因")
     ap.add_argument("--dump", action="store_true", help="只导出提示词，不出图")
     ap.add_argument("--dry-run", action="store_true", help="只报要发多少请求，不出图")
     ap.add_argument("--plain", action="store_true", help="不画看板，逐行日志")
@@ -315,6 +389,10 @@ def main() -> int:
         dump_prompts(matrix, cells, PROMPTS_MD)
         print(f"已导出 {len(cells)} 条提示词 → {PROMPTS_MD}")
         return 0
+
+    if args.doctor:
+        paths.LOG_DIR.mkdir(parents=True, exist_ok=True)
+        return doctor(matrix, args)
 
     args.out.mkdir(parents=True, exist_ok=True)
     paths.LOG_DIR.mkdir(parents=True, exist_ok=True)

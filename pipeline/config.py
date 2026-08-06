@@ -166,7 +166,10 @@ IMAGE_WORKERS = _num("IMAGE_WORKERS", "3")
 # 若上游只认 n=1，脚本会按实际返回张数自动补跑，不会漏图。
 IMAGE_BATCH = _num("IMAGE_BATCH", "3")
 IMAGE_TIMEOUT = _num("IMAGE_TIMEOUT", "300")     # 出图比出文慢，给足
-IMAGE_MAX_RETRIES = _num("IMAGE_MAX_RETRIES", "4")
+IMAGE_MAX_RETRIES = _num("IMAGE_MAX_RETRIES", "5")
+# 出图的退避基数比文本大一档：5xx 多半是上游整体抽风，几秒内重试大概率还是撞上，
+# 且这类错误按官方文档不扣费，等得起。4/8/16/32 秒共约 1 分钟，够熬过一次短暂故障。
+IMAGE_RETRY_BASE = _num("IMAGE_RETRY_BASE", "4", float)
 
 
 def image_api_key() -> str:
