@@ -1,1 +1,3 @@
 requests>=2.31.0
+# 只有拼画风对比大图（s7_contact_sheet.py）用得到
+Pillow>=10.0.0

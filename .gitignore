@@ -7,9 +7,14 @@ __pycache__/
 .venv/
 venv/
 
-# 密钥绝不入库（API key 一律走环境变量 DEEPSEEK_API_KEY）
+# 密钥绝不入库（API key 一律走环境变量 DEEPSEEK_API_KEY / IMAGE_API_KEY）
 .env
 *.key
+
+# 画风选型的出图与拼图产物：240 张 2K 图 + 19 张大图，几百 MB，
+# 且随时能由 matrix.json 重新生成。入库的只有 matrix.json 和 prompts.md
+production/style_test/out/
+production/style_test/sheets/
 
 # 系统
 .DS_Store

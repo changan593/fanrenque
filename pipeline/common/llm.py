@@ -120,6 +120,41 @@ class LLMError(RuntimeError):
     pass
 
 
+# 零宽字符与 BOM：Python 的 str.strip() 不认它们，`"﻿".strip()` 仍然为真。
+# 模型偶尔只吐这么一个字符，于是「空回复」判定被绕过，一路跌到 JSON 解析
+# 才报错，且错误信息里打印出来是一片空白，完全没法定位。
+_INVISIBLE = "﻿​‌‍⁠ 　"
+
+
+def _visible(s: str) -> str:
+    return s.strip().strip(_INVISIBLE).strip()
+
+
+def _build_payload(system: str, user: str, temperature: float, max_tokens: int,
+                   json_mode: bool, thinking: bool) -> dict:
+    p: dict[str, Any] = {
+        "model": config.MODEL,
+        "messages": [{"role": "system", "content": system},
+                     {"role": "user", "content": user}],
+        "max_tokens": max_tokens,
+        "stream": config.STREAM,
+        # 官方文档：思考模式默认打开、effort 默认 high。默认值对抽取任务是灾难，
+        # 所以这里**永远显式声明**，不依赖服务端默认值。
+        "thinking": {"type": "enabled" if thinking else "disabled"},
+    }
+    if thinking:
+        p["reasoning_effort"] = config.REASONING_EFFORT
+    else:
+        # 文档：思考模式不支持 temperature（不报错但也不生效）。
+        # 只在关掉思考时发它，避免看着像设了实际没用。
+        p["temperature"] = temperature
+    if json_mode:
+        p["response_format"] = {"type": "json_object"}
+    if config.STREAM:
+        p["stream_options"] = {"include_usage": True}   # 末帧带上 token 用量
+    return p
+
+
 def chat_json(system: str, user: str, temperature: float,
               max_tokens: int | None = None) -> tuple[Any, dict]:
     """
@@ -127,30 +162,32 @@ def chat_json(system: str, user: str, temperature: float,
 
     返回 (解析后的对象, 元信息)。元信息含 tokens / 重试次数 / 原始回复，
     便于把审查过程完整留痕。
+
+    重试是**自适应**的，不是把同一个请求原样再发一遍：
+
+      空回复      → 先摘掉 JSON 模式（官方已知问题），再关掉思考模式
+      length 截断 → 把 max_tokens 上调 1.5 倍再发
+      5xx / 网络  → 原样退避重试
+
+    这条很重要。上一版对空回复原样重试 5 次，每次都空，一章白烧十几分钟——
+    参数不变的重试对确定性错误没有任何意义。
     """
-    payload = {
-        "model": config.MODEL,
-        "messages": [{"role": "system", "content": system},
-                     {"role": "user", "content": user}],
-        "temperature": temperature,
-        "max_tokens": max_tokens or config.MAX_OUTPUT_TOKENS,
-        "stream": config.STREAM,
-    }
-    if config.JSON_MODE:
-        payload["response_format"] = {"type": "json_object"}
-    if config.STREAM:
-        payload["stream_options"] = {"include_usage": True}   # 末帧带上 token 用量
     headers = {"Authorization": f"Bearer {config.api_key()}",
                "Content-Type": "application/json"}
     url = f"{config.API_BASE.rstrip('/')}/chat/completions"
 
+    json_mode, thinking = config.JSON_MODE, config.THINKING
+    max_tok = max_tokens or config.MAX_OUTPUT_TOKENS
+    adapted: list[str] = []          # 记下自适应过程，留痕到元信息里
     last_err = None
+
     for attempt in range(config.MAX_RETRIES + 1):
         if attempt:
             delay = config.RETRY_BASE_DELAY * (2 ** (attempt - 1))
             wait = delay + random.uniform(0, delay * 0.25)     # 抖动，避免并发同步重试
             report(state=f"退避重试 第{attempt}次", detail=f"等{wait:.0f}s · 上次：{last_err}"[:70])
             time.sleep(wait)
+        payload = _build_payload(system, user, temperature, max_tok, json_mode, thinking)
         _limiter.wait()
         t0 = time.time()
         try:
@@ -162,26 +199,58 @@ def chat_json(system: str, user: str, temperature: float,
                 last_err = f"HTTP {status}"
                 _log_call(attempt + 1, status, time.time() - t0, 0, last_err)
                 continue
-            if not content.strip():
-                # 空回复重试多少次都还是空，参数不改就没救。立刻带诊断信息失败，
-                # 别把 5 次退避重试的十几分钟白白烧掉。
+
+            clean = _visible(content)
+            if not clean:
                 _log_call(attempt + 1, status, time.time() - t0, 0, "空回复")
-                raise LLMError(_empty_content_hint(info, usage,
-                                                   payload["max_tokens"]))
-            report(state="解析", detail=f"{len(content)}字")
-            obj = extract_json_block(content)      # JSON 坏掉也当可重试错误
+                # 换个参数还有救，就换；无参数可换了再带诊断失败
+                if json_mode:
+                    json_mode = False
+                    adapted.append("空回复→关JSON模式")
+                    last_err = "空回复（官方已知：JSON 模式有概率返回空 content），改用提示词约束"
+                    continue
+                if thinking:
+                    thinking = False
+                    adapted.append("空回复→关思考模式")
+                    last_err = "空回复，改为关闭思考模式"
+                    continue
+                raise LLMError(_empty_content_hint(info, usage, max_tok))
+
+            if info.get("finish_reason") == "length":
+                # 截断的 JSON 必然解析失败。原样重试只会截断在同一个位置，
+                # 必须先把额度加上去。
+                grown = min(int(max_tok * 1.5), config.MAX_OUTPUT_CAP)
+                _log_call(attempt + 1, status, time.time() - t0, len(clean), "length截断")
+                if grown > max_tok:
+                    adapted.append(f"截断→额度{max_tok}→{grown}")
+                    last_err = f"输出被 max_tokens={max_tok} 截断，上调到 {grown}"
+                    max_tok = grown
+                    continue
+                raise LLMError(
+                    f"输出被截断，且 max_tokens 已到封顶 {config.MAX_OUTPUT_CAP}。"
+                    f"已收 {len(clean)} 字。\n"
+                    f"  处置：拆小单次任务，或在 .env 调高 LLM_MAX_TOKENS_CAP")
+
+            report(state="解析", detail=f"{len(clean)}字")
+            obj = extract_json_block(clean)        # JSON 坏掉也当可重试错误
             USAGE.add(usage, retries=attempt)
-            _log_call(attempt + 1, status, time.time() - t0, len(content), None)
-            return obj, {"tokens": usage, "attempts": attempt + 1, "raw": content}
+            _log_call(attempt + 1, status, time.time() - t0, len(clean), None)
+            return obj, {"tokens": usage, "attempts": attempt + 1, "raw": clean,
+                         "adapted": adapted, "thinking": thinking, "json_mode": json_mode}
         except LLMError:
             raise                                   # 4xx 等不可重试错误直接抛
         except (requests.RequestException, ValueError, KeyError) as e:
             last_err = f"{type(e).__name__}: {e}"
             _log_call(attempt + 1, None, time.time() - t0, 0, last_err)
+            # JSON 模式下还解析失败，说明这个模式在帮倒忙，摘掉它再来
+            if isinstance(e, ValueError) and json_mode:
+                json_mode = False
+                adapted.append("解析失败→关JSON模式")
             continue
 
     USAGE.fail()
-    raise LLMError(f"重试 {config.MAX_RETRIES} 次仍失败：{last_err}")
+    tail = f"（已尝试自适应：{' / '.join(adapted)}）" if adapted else ""
+    raise LLMError(f"重试 {config.MAX_RETRIES} 次仍失败：{last_err}{tail}")
 
 
 def _do_blocking(url, payload, headers, attempt) -> tuple[str, dict, int, dict]:
@@ -269,22 +338,22 @@ def _empty_content_hint(info: dict, usage: dict, max_tokens: int) -> str:
              f"输出 {out_tok} tok，max_tokens={max_tokens}")
 
     if reasoning and finish == "length":
-        fix = (f"\n  原因：{config.MODEL} 是推理模型，max_tokens 全被思维链吃光了，"
-               f"没剩下额度写正式回复。\n"
+        fix = (f"\n  原因：思维链把 max_tokens 吃光了，没剩下额度写正式回复。\n"
                f"  处置（改 .env 后重跑）：\n"
-               f"    1) 调大额度：LLM_MAX_TOKENS=32768\n"
-               f"    2) 或换非推理模型：DEEPSEEK_MODEL=deepseek-chat")
+               f"    1) 关掉思考模式：LLM_THINKING=0（推荐，抽取任务不需要思维链）\n"
+               f"    2) 或调大额度：LLM_MAX_TOKENS=32768")
     elif finish == "length":
         fix = (f"\n  原因：输出被 max_tokens={max_tokens} 截断。\n"
                f"  处置：.env 里调大 LLM_MAX_TOKENS")
     elif reasoning:
         fix = (f"\n  原因：只产出了思维链，没产出正式回复。\n"
-               f"  处置：.env 里调大 LLM_MAX_TOKENS，或换 DEEPSEEK_MODEL=deepseek-chat")
+               f"  处置：.env 里设 LLM_THINKING=0")
     elif finish == "content_filter":
         fix = "\n  原因：被内容过滤拦截。\n  处置：检查该章原文是否触发了敏感词"
     else:
-        fix = (f"\n  处置：先跑 python pipeline/s2_analyze_chapters.py --doctor 定位；"
-               f"若模型不支持 JSON 模式，在 .env 里设 LLM_JSON_MODE=0")
+        fix = (f"\n  原因：官方文档已载明「使用 JSON Output 功能时，API 有概率返回空的"
+               f" content」。本次已自动降级重试（关 JSON 模式 → 关思考模式）仍为空。\n"
+               f"  处置：先跑 python pipeline/s2_analyze_chapters.py --doctor 定位")
     return facts + fix
 
 

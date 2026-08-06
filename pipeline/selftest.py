@@ -319,6 +319,7 @@ class _FakeAPI(BaseHTTPRequestHandler):
     """假的 DeepSeek 接口，用来验流式接收、错误处理、卡死检测。"""
     mode = "ok"
     hits = 0
+    seen: list = []          # 收到的请求体，用来验参数是不是真发对了
 
     def log_message(self, *a):
         pass
@@ -326,6 +327,7 @@ class _FakeAPI(BaseHTTPRequestHandler):
     def do_POST(self):
         _FakeAPI.hits += 1
         body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+        _FakeAPI.seen.append(body)
         mode = _FakeAPI.mode
         if mode == "bad_model":
             self.send_response(400)
@@ -342,6 +344,25 @@ class _FakeAPI(BaseHTTPRequestHandler):
         self.end_headers()
         if mode == "stall":                             # 建连后就不再吐数据
             time.sleep(10)
+            return
+        if mode == "invisible":
+            # content 只有一个 BOM。str.strip() 不认它，会绕过「空回复」判定
+            frame = {"choices": [{"delta": {"content": "﻿"}, "finish_reason": "stop"}]}
+            self.wfile.write(b"data: " + json.dumps(frame).encode() + b"\n\n")
+            self.wfile.write(b"data: [DONE]\n\n")
+            self.wfile.flush()
+            return
+        if mode == "truncate":
+            # 额度不够就截断；调用方把 max_tokens 加上去之后才给完整 JSON
+            enough = body.get("max_tokens", 0) > 1000
+            text = ('{"ok": true, "echo": "fanrenque"}' if enough
+                    else '{"ok": true, "echo": "fanren')
+            frame = {"choices": [{"delta": {"content": text},
+                                  "finish_reason": "stop" if enough else "length"}],
+                     "usage": {"prompt_tokens": 10, "completion_tokens": 20}}
+            self.wfile.write(b"data: " + json.dumps(frame).encode() + b"\n\n")
+            self.wfile.write(b"data: [DONE]\n\n")
+            self.wfile.flush()
             return
         if mode == "reasoning_only":
             # 推理模型把 max_tokens 全烧在思维链上，正式回复一个字都没有
@@ -407,20 +428,64 @@ def test_streaming() -> None:
         obj, meta = llm.chat_json("测试", "返回 JSON", 0.0, 400)
         check("5xx 会退避重试直到成功", meta["attempts"] == 3, f"第 {meta['attempts']} 次成功")
 
-        # 空回复：重试多少次都还是空，必须立刻带诊断失败，不能空转
-        _FakeAPI.mode, _FakeAPI.hits = "reasoning_only", 0
+        # 思考模式必须显式声明。官方默认是「开、effort=high」，
+        # 而抽取任务开着它会把 max_tokens 烧在思维链上导致 content 为空。
+        _FakeAPI.mode, _FakeAPI.hits, _FakeAPI.seen = "ok", 0, []
+        llm.chat_json("测试", "返回 JSON", 0.3, 400)
+        sent = _FakeAPI.seen[0]
+        check("显式关闭思考模式而非依赖服务端默认值",
+              sent.get("thinking") == {"type": "disabled"}, str(sent.get("thinking")))
+        check("关思考时才发 temperature", sent.get("temperature") == 0.3)
+        check("不发 reasoning_effort", "reasoning_effort" not in sent)
+
+        saved_think = config.THINKING
+        config.THINKING = True
+        _FakeAPI.seen = []
+        llm.chat_json("测试", "返回 JSON", 0.3, 400)
+        sent = _FakeAPI.seen[0]
+        check("打开思考模式时如实发 enabled + effort",
+              sent.get("thinking") == {"type": "enabled"}
+              and sent.get("reasoning_effort") == config.REASONING_EFFORT)
+        check("思考模式下不发 temperature（官方：不生效）", "temperature" not in sent)
+        config.THINKING = saved_think
+
+        # 截断：原样重试只会截在同一个地方，必须把额度加上去
+        _FakeAPI.mode, _FakeAPI.hits, _FakeAPI.seen = "truncate", 0, []
+        obj, meta = llm.chat_json("测试", "返回 JSON", 0.0, 800)
+        check("length 截断会自动上调 max_tokens 重试", obj.get("echo") == "fanrenque")
+        check("上调后的额度确实发出去了",
+              [s["max_tokens"] for s in _FakeAPI.seen] == [800, 1200],
+              str([s["max_tokens"] for s in _FakeAPI.seen]))
+        check("自适应过程有留痕", any("截断" in a for a in meta["adapted"]),
+              str(meta["adapted"]))
+
+        # 不可见字符：BOM 能骗过 strip()，必须当成空回复处理
+        _FakeAPI.mode, _FakeAPI.hits, _FakeAPI.seen = "invisible", 0, []
+        try:
+            llm.chat_json("测试", "返回 JSON", 0.0, 400)
+            check("零宽字符按空回复处理", False)
+        except llm.LLMError as e:
+            check("零宽字符按空回复处理", "空回复" in str(e), str(e)[:60])
+
+        # 空回复：官方已知问题。参数不变的重试毫无意义，必须逐级降级后带诊断失败
+        _FakeAPI.mode, _FakeAPI.hits, _FakeAPI.seen = "reasoning_only", 0, []
         ticks.clear()
         t0 = time.time()
         try:
-            llm.chat_json("测试", "返回 JSON", 0.0, 8192)
+            llm.chat_json("测试", "返回 JSON", 0.0, 65536)
             check("空回复能被识别", False)
         except llm.LLMError as e:
             msg = str(e)
-            check("空回复能被识别并说清原因", "空回复" in msg and "推理模型" in msg)
+            check("空回复能被识别并说清原因", "空回复" in msg and "思维链" in msg)
             check("诊断里带上证据", "finish_reason=length" in msg and "思维链" in msg,
                   msg.splitlines()[0][:70])
-            check("给出可直接执行的处置", "LLM_MAX_TOKENS" in msg)
-            check("不再空转重试", _FakeAPI.hits == 1 and time.time() - t0 < 5,
+            check("给出可直接执行的处置", "LLM_THINKING" in msg)
+            modes = [(s.get("response_format") is not None,
+                      s["thinking"]["type"]) for s in _FakeAPI.seen]
+            check("空回复走逐级降级而非原样空转",
+                  modes == [(True, "disabled"), (False, "disabled")], str(modes))
+            check("降级到底就立刻失败，不烧满 5 次重试",
+                  _FakeAPI.hits <= 3 and time.time() - t0 < 8,
                   f"请求 {_FakeAPI.hits} 次，{time.time() - t0:.1f}s 内返回")
         check("思维链阶段单独上报为「推理中」",
               any(t.get("state") == "推理中" for t in ticks))

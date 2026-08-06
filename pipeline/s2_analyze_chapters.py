@@ -192,6 +192,9 @@ def review_record(stage: str, rnd: int, obj: dict, meta: dict) -> dict:
         "model": config.MODEL,
         "tokens": meta.get("tokens", {}),
         "attempts": meta.get("attempts"),
+        # 这一次是不是靠降级救回来的（关 JSON 模式 / 关思考 / 加额度）。
+        # 留痕才能事后判断某章的质量是不是受了降级影响。
+        "adapted": meta.get("adapted") or [],
         "reviewed_at": _now(),
     }
 
@@ -305,6 +308,8 @@ def analyze_chapter(ch: dict, phase: str = "all",
             "pipeline_version": PIPELINE_VERSION,
             "model": config.MODEL,
             "phase": phase,
+            # 思考模式会显著改变输出特征，不记下来事后没法解释章与章之间的差异
+            "thinking": config.REASONING_EFFORT if config.THINKING else False,
             "llm_calls": calls,
             "started_at": started,
             "finished_at": _now(),
@@ -405,7 +410,8 @@ def doctor() -> int:
     llm.set_reporter(lambda **kw: ticks.append(
         (time.time() - t0, kw.get("state") or "", kw.get("chars") or 0)))
     print(f"发起最小测试请求（max_tokens={config.MAX_OUTPUT_TOKENS}，"
-          f"JSON模式 {'开' if config.JSON_MODE else '关'}）……")
+          f"JSON模式 {'开' if config.JSON_MODE else '关'}，"
+          f"思考模式 {config.REASONING_EFFORT if config.THINKING else '关'}）……")
     try:
         obj, meta = chat_json(
             "你是测试助手，只输出 JSON，不要任何解释文字。",
@@ -428,13 +434,18 @@ def doctor() -> int:
     print(f"  返回  {_json.dumps(obj, ensure_ascii=False)[:120]}")
     print(f"  用量  {meta['tokens']}  请求次数 {meta['attempts']}")
 
+    if meta.get("adapted"):
+        print(f"\n  ⚠ 这次是靠降级才成功的：{' / '.join(meta['adapted'])}")
+        print("    正式跑批前先按上面的方向把 .env 调对，别让每一章都走一遍降级。")
     if think:
         thought = think[-1][2]
-        print(f"\n  ⚠ {config.MODEL} 是推理模型：这次思维链约 {thought} 字，"
+        print(f"\n  ⚠ 思考模式是开着的：这次思维链约 {thought} 字，"
               f"正式回复才 {len(meta['raw'])} 字。")
-        print("    思维链也占 max_tokens。跑正式章节时输入更长、思维链也更长，")
-        print(f"    如果报「模型返回空回复」，把 .env 的 LLM_MAX_TOKENS 往上调"
-              f"（当前 {config.MAX_OUTPUT_TOKENS}），或换 DEEPSEEK_MODEL=deepseek-chat。")
+        print("    思维链和正式回复共用 max_tokens，长章节会把 content 挤成空；")
+        print("    且思考模式下 temperature 不生效。逐章分析是抽取任务，不需要思维链——")
+        print("    除非你确实想让它多想，否则把 .env 的 LLM_THINKING 设回 0。")
+    elif not config.THINKING:
+        print("\n  思考模式已关闭（抽取任务的正确配置）。")
     if gen and first and first > 30:
         print("\n  ⚠ 首字节偏慢，单章可能要几分钟，属正常但会拖长总时间")
     print("\n连通性没问题。跑 --smoke 3 看质量。")
