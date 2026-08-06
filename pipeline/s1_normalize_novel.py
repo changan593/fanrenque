@@ -11,7 +11,8 @@
   B. 站点把连续 2-3 章合并在同一页，导致多个标题行连排、正文只跟在最后一个标题后面。
      这类连排标题合并成一个「分析单元」，额外标题进 merged_titles。
 
-  C. 正文里混进了重复的章节标题行（缩进的 "　　第787章..."），属于抓取垃圾，
+  C. 正文里混进了抓取垃圾，两类：重复的章节标题行（缩进的 "　　第787章..."），
+     以及站点插入的翻页提示（"本小章还未完，请点击下一页..."，全书 88 处）。
      剔除后记录在 stripped_lines，不静默丢弃。
 
 用法：
@@ -31,6 +32,9 @@ ENCODING = "gb18030"
 BODY_INDENT = "　　"          # 正文段落的全角双空格缩进
 TITLE_RE = re.compile(r"^第\s*(\d+)\s*章(.*)$")
 BODY_START_MARK = "------章节内容开始-------"
+
+# 站点插进正文的翻页提示，不是作者写的。不剔除会被当成旁白抽进章节分析里。
+JUNK_RE = re.compile(r"请点击下一页|本小章还未完|小主，这个章节后面还有|爱下电子书|ixdzs")
 
 
 def load_lines() -> list[str]:
@@ -123,7 +127,10 @@ def normalize() -> dict:
             if not s:
                 continue
             if TITLE_RE.match(s):          # 正文里混入的重复标题 -> 剔除留痕
-                stripped.append({"line": i, "text": s})
+                stripped.append({"line": i, "kind": "重复标题", "text": s})
+                continue
+            if JUNK_RE.search(s):          # 站点翻页提示 -> 剔除留痕
+                stripped.append({"line": i, "kind": "站点插入", "text": s})
                 continue
             paragraphs.append(s)
 
@@ -191,9 +198,10 @@ def health_report(novel: dict) -> list[str]:
     short = [c for c in ch if c["char_count"] < 800]
     out.append(f"正文<800字的单元: {len(short)} 个" +
                (f" -> {[c['chapter_id'] for c in short]}" if short else ""))
-    stripped = [c for c in ch if c["stripped_lines"]]
-    out.append(f"剔除的垃圾标题行: {sum(len(c['stripped_lines']) for c in stripped)} 行"
-               f"（{[c['chapter_id'] for c in stripped]}）")
+    from collections import Counter
+    kinds = Counter(x["kind"] for c in ch for x in c["stripped_lines"])
+    out.append("剔除的抓取垃圾  : " + (", ".join(f"{k} {v} 行" for k, v in kinds.items())
+                                       or "无"))
 
     # 合并单元 = 内容可能缺失，必须显式列出
     merged = [c for c in ch if c["is_merged"]]

@@ -1,0 +1,159 @@
+{
+  "built_from_chapters": 8,
+  "scene_count": 17,
+  "scenes": [
+    {
+      "id": "s001_北阳城城隍庙",
+      "name": "北阳城城隍庙",
+      "first_seq": 1,
+      "chapter_count": 4,
+      "types": {
+        "室内": 4
+      }
+    },
+    {
+      "id": "s002_洞天桃花崖",
+      "name": "洞天桃花崖",
+      "first_seq": 5,
+      "chapter_count": 4,
+      "types": {
+        "秘境": 4
+      }
+    },
+    {
+      "id": "s003_城隍庙外施粥处",
+      "name": "城隍庙外施粥处",
+      "first_seq": 1,
+      "chapter_count": 2,
+      "types": {
+        "室外": 2
+      }
+    },
+    {
+      "id": "s004_天北桥码头",
+      "name": "天北桥码头",
+      "first_seq": 3,
+      "chapter_count": 2,
+      "types": {
+        "室外": 2
+      }
+    },
+    {
+      "id": "s005_回城主府的街道",
+      "name": "回城主府的街道",
+      "first_seq": 3,
+      "chapter_count": 2,
+      "types": {
+        "室外": 2
+      }
+    },
+    {
+      "id": "s006_紫云仙宫大堂",
+      "name": "紫云仙宫大堂",
+      "first_seq": 1,
+      "chapter_count": 1,
+      "types": {
+        "幻境梦境": 1
+      }
+    },
+    {
+      "id": "s007_施粥处旁的墙边",
+      "name": "施粥处旁的墙边",
+      "first_seq": 2,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s008_城主家的车队与马车内",
+      "name": "城主家的车队与马车内",
+      "first_seq": 2,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s009_天北桥集市",
+      "name": "天北桥集市",
+      "first_seq": 3,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s010_河边",
+      "name": "河边",
+      "first_seq": 3,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s011_城主府门外",
+      "name": "城主府门外",
+      "first_seq": 3,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s012_北阳城街市",
+      "name": "北阳城街市",
+      "first_seq": 4,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s013_小餐馆",
+      "name": "小餐馆",
+      "first_seq": 4,
+      "chapter_count": 1,
+      "types": {
+        "室内": 1
+      }
+    },
+    {
+      "id": "s014_河边与码头日常",
+      "name": "河边与码头日常",
+      "first_seq": 4,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s015_西牛贺洲云海与紫云仙宫",
+      "name": "西牛贺洲云海与紫云仙宫",
+      "first_seq": 5,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s016_紫云仙宫禁地洞口",
+      "name": "紫云仙宫禁地洞口",
+      "first_seq": 5,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    },
+    {
+      "id": "s017_九洲天下",
+      "name": "九洲天下",
+      "first_seq": 8,
+      "chapter_count": 1,
+      "types": {
+        "室外": 1
+      }
+    }
+  ]
+}

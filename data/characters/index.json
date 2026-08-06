@@ -1,0 +1,296 @@
+{
+  "built_from_chapters": 8,
+  "character_count": 20,
+  "alias_merge": true,
+  "suspicious_merges": [],
+  "data_problems": [],
+  "characters": [
+    {
+      "id": "c001_唐真",
+      "canonical_name": "唐真",
+      "aliases": [
+        "三只眼",
+        "小乞丐",
+        "唐小友",
+        "求法真君",
+        "小花子",
+        "后生",
+        "小伙子",
+        "唐苟安",
+        "少年"
+      ],
+      "first_seq": 1,
+      "last_seq": 8,
+      "chapter_count": 8,
+      "role_distribution": {
+        "主导": 8
+      }
+    },
+    {
+      "id": "c002_南红枝",
+      "canonical_name": "南红枝",
+      "aliases": [
+        "红枝",
+        "南姑娘",
+        "故人"
+      ],
+      "first_seq": 1,
+      "last_seq": 8,
+      "chapter_count": 6,
+      "role_distribution": {
+        "提及": 2,
+        "参与": 2,
+        "主导": 2
+      }
+    },
+    {
+      "id": "c003_紫云仙宫宫主",
+      "canonical_name": "紫云仙宫宫主",
+      "aliases": [
+        "师父",
+        "父亲",
+        "南红枝的父亲",
+        "唐真的师父"
+      ],
+      "first_seq": 1,
+      "last_seq": 8,
+      "chapter_count": 5,
+      "role_distribution": {
+        "参与": 2,
+        "提及": 3
+      }
+    },
+    {
+      "id": "c004_老拐子",
+      "canonical_name": "老拐子",
+      "aliases": [
+        "老乞丐",
+        "臭拐子",
+        "拐子",
+        "老家伙"
+      ],
+      "first_seq": 1,
+      "last_seq": 4,
+      "chapter_count": 4,
+      "role_distribution": {
+        "参与": 4
+      }
+    },
+    {
+      "id": "c005_姚安饶",
+      "canonical_name": "姚安饶",
+      "aliases": [
+        "安小姐",
+        "小姐",
+        "城主的独女"
+      ],
+      "first_seq": 1,
+      "last_seq": 4,
+      "chapter_count": 4,
+      "role_distribution": {
+        "参与": 2,
+        "提及": 2
+      }
+    },
+    {
+      "id": "c006_红儿",
+      "canonical_name": "红儿",
+      "aliases": [
+        "小丫头",
+        "小丫鬟",
+        "小红儿",
+        "小仙子",
+        "红儿姑娘",
+        "红儿姐"
+      ],
+      "first_seq": 1,
+      "last_seq": 4,
+      "chapter_count": 4,
+      "role_distribution": {
+        "参与": 1,
+        "主导": 3
+      }
+    },
+    {
+      "id": "c007_齐渊",
+      "canonical_name": "齐渊",
+      "aliases": [
+        "人魔尊",
+        "落魄书生",
+        "北山",
+        "书生",
+        "齐老鬼"
+      ],
+      "first_seq": 4,
+      "last_seq": 8,
+      "chapter_count": 4,
+      "role_distribution": {
+        "提及": 1,
+        "参与": 1,
+        "主导": 2
+      }
+    },
+    {
+      "id": "c008_乞丐们",
+      "canonical_name": "乞丐们",
+      "aliases": [
+        "其他乞丐"
+      ],
+      "first_seq": 1,
+      "last_seq": 3,
+      "chapter_count": 3,
+      "role_distribution": {
+        "参与": 3
+      }
+    },
+    {
+      "id": "c009_赵护卫",
+      "canonical_name": "赵护卫",
+      "aliases": [
+        "赵爷",
+        "赵叔"
+      ],
+      "first_seq": 1,
+      "last_seq": 2,
+      "chapter_count": 2,
+      "role_distribution": {
+        "参与": 2
+      }
+    },
+    {
+      "id": "c010_执法堂长老",
+      "canonical_name": "执法堂长老",
+      "aliases": [
+        "长老"
+      ],
+      "first_seq": 1,
+      "last_seq": 5,
+      "chapter_count": 2,
+      "role_distribution": {
+        "参与": 2
+      }
+    },
+    {
+      "id": "c011_码头管事",
+      "canonical_name": "码头管事",
+      "aliases": [
+        "掌事",
+        "管事的",
+        "中年汉子",
+        "管事"
+      ],
+      "first_seq": 3,
+      "last_seq": 4,
+      "chapter_count": 2,
+      "role_distribution": {
+        "参与": 2
+      }
+    },
+    {
+      "id": "c012_系统",
+      "canonical_name": "系统",
+      "aliases": [
+        "术法复制系统"
+      ],
+      "first_seq": 5,
+      "last_seq": 8,
+      "chapter_count": 2,
+      "role_distribution": {
+        "参与": 2
+      }
+    },
+    {
+      "id": "c013_圣人们",
+      "canonical_name": "圣人们",
+      "aliases": [
+        "圣人",
+        "正道圣人"
+      ],
+      "first_seq": 6,
+      "last_seq": 7,
+      "chapter_count": 2,
+      "role_distribution": {
+        "提及": 2
+      }
+    },
+    {
+      "id": "c014_李剑仙",
+      "canonical_name": "李剑仙",
+      "aliases": [],
+      "first_seq": 7,
+      "last_seq": 8,
+      "chapter_count": 2,
+      "role_distribution": {
+        "提及": 2
+      }
+    },
+    {
+      "id": "c015_三师弟",
+      "canonical_name": "三师弟",
+      "aliases": [],
+      "first_seq": 1,
+      "last_seq": 1,
+      "chapter_count": 1,
+      "role_distribution": {
+        "参与": 1
+      }
+    },
+    {
+      "id": "c016_富人家护卫",
+      "canonical_name": "富人家护卫",
+      "aliases": [],
+      "first_seq": 1,
+      "last_seq": 1,
+      "chapter_count": 1,
+      "role_distribution": {
+        "参与": 1
+      }
+    },
+    {
+      "id": "c017_农妇",
+      "canonical_name": "农妇",
+      "aliases": [
+        "妇人"
+      ],
+      "first_seq": 3,
+      "last_seq": 3,
+      "chapter_count": 1,
+      "role_distribution": {
+        "参与": 1
+      }
+    },
+    {
+      "id": "c018_小男孩",
+      "canonical_name": "小男孩",
+      "aliases": [],
+      "first_seq": 3,
+      "last_seq": 3,
+      "chapter_count": 1,
+      "role_distribution": {
+        "参与": 1
+      }
+    },
+    {
+      "id": "c019_家丁",
+      "canonical_name": "家丁",
+      "aliases": [],
+      "first_seq": 3,
+      "last_seq": 3,
+      "chapter_count": 1,
+      "role_distribution": {
+        "参与": 1
+      }
+    },
+    {
+      "id": "c020_硕大的人头",
+      "canonical_name": "硕大的人头",
+      "aliases": [],
+      "first_seq": 8,
+      "last_seq": 8,
+      "chapter_count": 1,
+      "role_distribution": {
+        "参与": 1
+      }
+    }
+  ]
+}

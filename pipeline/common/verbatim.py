@@ -160,12 +160,23 @@ def check_analysis(analysis: dict, paragraphs: list[str]) -> dict:
     }
 
 
+# 一条台词：从开引号起，到下一个任意引号字符或段落结束为止。
+# 不要求闭引号配对——原文里确有 `？“` 这种收尾误用左引号的地方，
+# 若强行要求配对，正则会一路吞到几段之后，把整块叙述误当成一条台词。
+_SPEECH_RE = re.compile(r"[“\"]([^“”\"]{2,})")
+
+
+def find_speech(paragraphs: list[str]) -> list[str]:
+    """逐段扫描台词。必须按段扫，跨段扫会让一个坏引号污染后面整片正文。"""
+    return [s.strip() for p in paragraphs for s in _SPEECH_RE.findall(p) if s.strip()]
+
+
 def coverage_report(analysis: dict, paragraphs: list[str]) -> dict:
     """
     覆盖率：原文里带引号的说话有多少被抽进 dialogues。
     漏台词和编台词一样致命，这项专门盯漏。
     """
-    speech = re.findall(r"[“\"]([^”\"]{2,})[”\"]", "\n".join(paragraphs))
+    speech = find_speech(paragraphs)
     got = {norm(d.get("text", "")) for d in (analysis.get("dialogues") or [])
            if isinstance(d, dict)}
     got_all = "".join(got)

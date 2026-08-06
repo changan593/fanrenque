@@ -1,0 +1,54 @@
+{
+  "canonical_name": "码头管事",
+  "aliases": [
+    "掌事",
+    "管事的",
+    "中年汉子",
+    "管事"
+  ],
+  "first_seq": 3,
+  "last_seq": 4,
+  "chapter_count": 2,
+  "chapters": [
+    3,
+    4
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 3,
+      "quote": "并不费力就在最舒服的凉棚下找到了管事的"
+    }
+  ],
+  "states": [
+    {
+      "seq": 3,
+      "state": "天北桥码头管事"
+    },
+    {
+      "seq": 4,
+      "state": "码头管事"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 3,
+      "actions": [
+        "问姓名与会不会用毛笔",
+        "安排唐真去计数",
+        "喊收工"
+      ]
+    },
+    {
+      "seq": 4,
+      "actions": [
+        "逮到出错的人就一顿大骂",
+        "给唐真结工钱"
+      ]
+    }
+  ],
+  "id": "c011_码头管事"
+}

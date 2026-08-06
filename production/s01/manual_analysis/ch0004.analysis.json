@@ -1,0 +1,733 @@
+{
+  "one_line": "唐真报出唐苟安这个名字，日子刚有起色，红儿就不见了。",
+  "synopsis": "唐真在码头正式上工，第一天累到往嘴里扒饭都有幸福感。红儿常来找他，或替姚安饶采买，或挨家挨户打探物价——那是姚安饶交给她的任务，要靠物价判断城里百姓的生活状况。她问唐真本名，唐真愣了愣，说自己姓唐叫苟安，取诸事皆不成此生唯苟安之意。此后两人日渐熟络，红儿发现只要她在场唐真就能多领二钱工钱，便总在收工时来凑热闹再让他送回府。唐真一点点变成了凡人，连呼叫系统的次数都少了。某天红儿问他若有更轻松更赚钱的活会不会干，唐真说为什么不干，红儿声音雀跃地走了。自那之后唐真好久没再见到红儿，直到老拐子告诉他城主府的安小姐招惹了吃人的妖魔，贴身侍女死了好几个。唐真心里一空，额头胎记再次滚烫。",
+  "time_setting": "自上一章次日起，历时一段时日，止于某个夜晚",
+  "emotional_tone": "由踏实温煦一路铺陈，末尾骤然坠入无力的绝望",
+  "characters": [
+    {
+      "name": "唐真",
+      "aliases": [
+        "三只眼",
+        "唐苟安",
+        "小乞丐"
+      ],
+      "role_in_chapter": "主导",
+      "mentioned_only": false,
+      "appearance_quotes": [],
+      "state": "码头计数工，日渐融入凡人生活，夜里仍噩梦缠身",
+      "actions": [
+        "在码头签到上工",
+        "陪红儿满城打探物价",
+        "报出唐苟安这个名字",
+        "得知安小姐招惹妖魔后心里一空"
+      ]
+    },
+    {
+      "name": "红儿",
+      "aliases": [
+        "小丫头"
+      ],
+      "role_in_chapter": "主导",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 8,
+          "text": "红儿今日换了身打扮，淡蓝色的长裙，依旧是木棉花的纹样，梳了个高高的发型，别着一支银制的小簪子一走起路来叮当叮当响个不停，俏脸上带着一分骄傲九分笑"
+        },
+        {
+          "para": 16,
+          "text": "她把腿伸的笔直，直到洁白的脚踝露出裙摆，才唰一下缩了回去"
+        }
+      ],
+      "state": "替姚安饶执行打探物价的任务，与唐真日渐熟络，后突然消失",
+      "actions": [
+        "叫唐真去搭把手",
+        "挨家挨户问价并记在小本上",
+        "追问唐真本名",
+        "问唐真会不会干更赚钱的活",
+        "此后不再出现"
+      ]
+    },
+    {
+      "name": "老拐子",
+      "aliases": [],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [],
+      "state": "在破庙告知唐真城主府出事的传言",
+      "actions": [
+        "告诉唐真安小姐招惹了妖魔并叮嘱他别靠近城主府"
+      ]
+    },
+    {
+      "name": "姚安饶",
+      "aliases": [
+        "小姐",
+        "安小姐"
+      ],
+      "role_in_chapter": "提及",
+      "mentioned_only": true,
+      "appearance_quotes": [],
+      "state": "被传招惹了吃人的妖魔，贴身侍女死了好几个",
+      "actions": []
+    },
+    {
+      "name": "码头管事",
+      "aliases": [
+        "掌事",
+        "管事"
+      ],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [],
+      "state": "码头管事",
+      "actions": [
+        "逮到出错的人就一顿大骂",
+        "给唐真结工钱"
+      ]
+    },
+    {
+      "name": "南红枝",
+      "aliases": [
+        "故人"
+      ],
+      "role_in_chapter": "提及",
+      "mentioned_only": true,
+      "appearance_quotes": [],
+      "state": "唐真所说的、枯树枝所纪念的那位故人，本章未道出姓名",
+      "actions": []
+    },
+    {
+      "name": "人魔尊",
+      "aliases": [],
+      "role_in_chapter": "提及",
+      "mentioned_only": true,
+      "appearance_quotes": [],
+      "state": "唐真绝望时脑中浮现的形象",
+      "actions": []
+    }
+  ],
+  "scenes": [
+    {
+      "name": "天北桥码头",
+      "type": "室外",
+      "time_of_day": "天微亮至中午",
+      "description_quotes": [
+        {
+          "para": 2,
+          "text": "此时这里已经人满为患，几艘货船刚刚靠岸，几十个光膀子的汉子正牵着缆绳，号子喊的震天响"
+        },
+        {
+          "para": 3,
+          "text": "许是时间问题，今日比昨日忙的多，吵吵嚷嚷的有时唐真都有几分错乱"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "码头管事",
+        "红儿"
+      ],
+      "events": [
+        "唐真签到上工",
+        "忙中出错被管事责骂",
+        "中午在背阳土坡吃饭",
+        "红儿来叫他去搭把手"
+      ],
+      "para_range": [
+        1,
+        12
+      ]
+    },
+    {
+      "name": "北阳城街市",
+      "type": "室外",
+      "time_of_day": "下午",
+      "description_quotes": [
+        {
+          "para": 14,
+          "text": "他像个小厮一样跟在红儿身后满城跑，这丫头说是为了买布料和纸张，但是却挨家挨户的问价格，粮铺酒铺金银首饰铺，每问一个价格她都记在小本上，不时露出思索的表情"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "红儿"
+      ],
+      "events": [
+        "红儿挨家挨户问价并记录",
+        "唐真拎着东西一言不发"
+      ],
+      "para_range": [
+        13,
+        14
+      ]
+    },
+    {
+      "name": "小餐馆",
+      "type": "室内",
+      "time_of_day": "晚饭时间",
+      "description_quotes": [
+        {
+          "para": 15,
+          "text": "小丫头找了间小餐馆，给唐真点了一叠花生米一盘白菜汆肉和二碗白米，自己则坐在旁边揉着走酸了的小腿"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "红儿"
+      ],
+      "events": [
+        "红儿说出打探物价是姚安饶的任务",
+        "红儿追问唐真本名",
+        "唐真报出唐苟安"
+      ],
+      "para_range": [
+        15,
+        27
+      ]
+    },
+    {
+      "name": "回城主府的街道",
+      "type": "室外",
+      "time_of_day": "入夜",
+      "description_quotes": [
+        {
+          "para": 41,
+          "text": "红儿抱着大包小包走向灯火通明的城主府，唐真则两手空空伴着月色走向破庙"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "红儿"
+      ],
+      "events": [
+        "红儿追问枯树枝",
+        "唐真说那是纪念一位故人",
+        "两人在城主府外分开"
+      ],
+      "para_range": [
+        28,
+        42
+      ]
+    },
+    {
+      "name": "河边与码头日常",
+      "type": "室外",
+      "time_of_day": "不定",
+      "description_quotes": [
+        {
+          "para": 48,
+          "text": "从码头回城主府的那条街道好像变得越来越窄，路程却又变得越来越长"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "红儿"
+      ],
+      "events": [
+        "两人日渐熟络",
+        "红儿问唐真想不想干更赚钱的活",
+        "红儿雀跃离去后再未出现"
+      ],
+      "para_range": [
+        43,
+        61
+      ]
+    },
+    {
+      "name": "北阳城城隍庙",
+      "type": "室内",
+      "time_of_day": "夜",
+      "description_quotes": [],
+      "present_characters": [
+        "唐真",
+        "老拐子"
+      ],
+      "events": [
+        "老拐子说出安小姐招惹妖魔的传言",
+        "唐真心里一空，额头胎记再次滚烫"
+      ],
+      "para_range": [
+        62,
+        68
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "para": 4,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "自己",
+      "manner": "找了个背阳的土坡歇下，只觉浑身疲惫"
+    },
+    {
+      "para": 5,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "自己",
+      "manner": "如此评价自己"
+    },
+    {
+      "para": 6,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "掐着腰"
+    },
+    {
+      "para": 10,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "看了看食盒里的菜式，皱眉吐了吐舌头"
+    },
+    {
+      "para": 11,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "询问"
+    },
+    {
+      "para": 12,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "一拍胸脯，豪气干云"
+    },
+    {
+      "para": 16,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "揉着走酸了的小腿"
+    },
+    {
+      "para": 17,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "闷头扒饭，呼哧呼哧的含糊道"
+    },
+    {
+      "para": 18,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "兴冲冲的靠过来小声说"
+    },
+    {
+      "para": 19,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "依旧扒饭"
+    },
+    {
+      "para": 20,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "有些无聊拄着下巴看他塞饭"
+    },
+    {
+      "para": 22,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "追问"
+    },
+    {
+      "para": 24,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "看他为难"
+    },
+    {
+      "para": 25,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "歪了歪头"
+    },
+    {
+      "para": 25,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "突然失笑"
+    },
+    {
+      "para": 26,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "嫌名字不好听"
+    },
+    {
+      "para": 27,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "低头继续扒饭不再搭话"
+    },
+    {
+      "para": 31,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "指了指他的腰间"
+    },
+    {
+      "para": 32,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "点头"
+    },
+    {
+      "para": 33,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "追问"
+    },
+    {
+      "para": 34,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "应答"
+    },
+    {
+      "para": 35,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "追问"
+    },
+    {
+      "para": 36,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "否认"
+    },
+    {
+      "para": 37,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "追问"
+    },
+    {
+      "para": 38,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "迟疑"
+    },
+    {
+      "para": 39,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "不再追问"
+    },
+    {
+      "para": 51,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "有一天问起"
+    },
+    {
+      "para": 52,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "闭着眼睛躺在河边的木板上歇息"
+    },
+    {
+      "para": 53,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "解释"
+    },
+    {
+      "para": 54,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "依然闭着眼"
+    },
+    {
+      "para": 55,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "强调是假如"
+    },
+    {
+      "para": 56,
+      "q": 0,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "懒洋洋的回答"
+    },
+    {
+      "para": 57,
+      "q": 0,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "声音有些雀跃"
+    },
+    {
+      "para": 62,
+      "q": 0,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "在破庙里告知传言"
+    }
+  ],
+  "monologues": [
+    {
+      "para": 5,
+      "character": "唐真",
+      "kind": "判断推理"
+    },
+    {
+      "para": 21,
+      "character": "唐真",
+      "kind": "情绪感受"
+    },
+    {
+      "para": 23,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 24,
+      "character": "红儿",
+      "kind": "判断推理",
+      "text": "红儿看他为难，心想对方父母真是不负责任"
+    },
+    {
+      "para": 29,
+      "character": "唐真",
+      "kind": "情绪感受"
+    },
+    {
+      "para": 43,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 50,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 63,
+      "character": "唐真",
+      "kind": "情绪感受",
+      "text": "后面的话唐真没有听清，他只觉心里一空，有种溺水的感觉"
+    },
+    {
+      "para": 64,
+      "character": "唐真",
+      "kind": "情绪感受"
+    },
+    {
+      "para": 65,
+      "character": "唐真",
+      "kind": "判断推理"
+    },
+    {
+      "para": 66,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 67,
+      "character": "唐真",
+      "kind": "情绪感受"
+    }
+  ],
+  "narration": [
+    {
+      "para": 13,
+      "function": "情节交代"
+    },
+    {
+      "para": 28,
+      "function": "情节交代"
+    },
+    {
+      "para": 44,
+      "function": "时间推移"
+    },
+    {
+      "para": 45,
+      "function": "时间推移"
+    },
+    {
+      "para": 46,
+      "function": "情节交代"
+    },
+    {
+      "para": 47,
+      "function": "时间推移"
+    },
+    {
+      "para": 48,
+      "function": "情节交代"
+    },
+    {
+      "para": 49,
+      "function": "情节交代"
+    },
+    {
+      "para": 59,
+      "function": "情节交代"
+    },
+    {
+      "para": 60,
+      "function": "情节交代"
+    },
+    {
+      "para": 68,
+      "function": "伏笔"
+    }
+  ],
+  "beats": [
+    {
+      "order": 1,
+      "para_range": [
+        1,
+        5
+      ],
+      "scene": "天北桥码头",
+      "beat_type": "铺垫",
+      "summary": "码头忙乱的一天，累到扒饭都有幸福感，唐真评价自己人啊果然是犯贱"
+    },
+    {
+      "order": 2,
+      "para_range": [
+        6,
+        14
+      ],
+      "scene": "北阳城街市",
+      "beat_type": "铺垫",
+      "summary": "红儿把他借走当小厮，满城挨家挨户打探物价"
+    },
+    {
+      "order": 3,
+      "para_range": [
+        15,
+        27
+      ],
+      "scene": "小餐馆",
+      "beat_type": "揭示",
+      "summary": "问价是姚安饶的任务；唐真报出唐苟安——诸事皆不成，此生唯苟安"
+    },
+    {
+      "order": 4,
+      "para_range": [
+        28,
+        42
+      ],
+      "scene": "回城主府的街道",
+      "beat_type": "情绪",
+      "summary": "枯树枝是纪念一位故人，两人在城主府外分开"
+    },
+    {
+      "order": 5,
+      "para_range": [
+        43,
+        50
+      ],
+      "scene": "河边与码头日常",
+      "beat_type": "铺垫",
+      "summary": "日子一天天过去，唐真变成凡人，连呼叫系统都少了"
+    },
+    {
+      "order": 6,
+      "para_range": [
+        51,
+        60
+      ],
+      "scene": "河边与码头日常",
+      "beat_type": "转折",
+      "summary": "红儿问他会不会干更赚钱的活，雀跃离去后再未出现"
+    },
+    {
+      "order": 7,
+      "para_range": [
+        61,
+        68
+      ],
+      "scene": "北阳城城隍庙",
+      "beat_type": "收束",
+      "summary": "老拐子说安小姐招惹了吃人的妖魔，唐真心里一空，额头胎记滚烫"
+    }
+  ],
+  "props": [
+    {
+      "name": "枯树枝",
+      "note": "唐真腰间的那根，本章点明是纪念一位故人"
+    },
+    {
+      "name": "小本",
+      "note": "红儿记录各铺物价用"
+    },
+    {
+      "name": "银制小簪子",
+      "note": "红儿新打扮上的，走起路来叮当响"
+    },
+    {
+      "name": "毛笔与墨水",
+      "note": "码头计数工具"
+    }
+  ],
+  "terms": [
+    {
+      "term": "唐苟安",
+      "note": "唐真自报的名字，取诸事皆不成、此生唯苟安之意"
+    },
+    {
+      "term": "北阳城",
+      "note": "红儿说未来这北阳城可是我家小姐的"
+    },
+    {
+      "term": "妖魔",
+      "note": "老拐子转述的传言，吃人，招惹上城主府的安小姐"
+    },
+    {
+      "term": "人魔尊",
+      "note": "唐真绝望时脑中再度浮现的形象"
+    }
+  ],
+  "continuity": {
+    "inherits": [
+      "承接码头帮工与红儿的往来",
+      "枯树枝的追问延续前三章的悬置，本章首次由唐真亲口说是纪念一位故人",
+      "系统仍在，只是呼叫次数变少"
+    ],
+    "foreshadows": [
+      "红儿问的『更轻松更赚钱的活』与她随后的消失直接相关",
+      "『是不是与名字中带红的命运相克呢』把红儿与南红枝的命运并置",
+      "唐真自问是否有大能拿他的人生当斩三尸的戏法",
+      "回目『麻绳只在细处断，厄运专找苦命人』预告祸事将至"
+    ],
+    "reveals": [
+      "唐真本名唐真，自报名字唐苟安",
+      "姚安饶让红儿打探物价，是要判断城里百姓的生活状况",
+      "唐真已经承认自己不是主角、已经认命",
+      "城主府的安小姐招惹了吃人的妖魔，贴身侍女死了好几个"
+    ]
+  },
+  "review_note": "人工分析。引用由程序精确取出，台词 34 条全数收录。第40段为省略号分隔符，不计入任何字段。原文此章曾夹有一行站点插入的翻页提示（本小章还未完，请点击下一页继续阅读后面精彩内容），已在 s1 标准化阶段剔除并记入 stripped_lines，故本文段号以清理后的编号为准。南红枝在本章仅以『一位故人』出现，未道出姓名，故 name 记为南红枝但标注本章未点名，供跨章归并；如需严格按本章原文，可视作提及项。"
+}

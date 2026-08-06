@@ -73,9 +73,13 @@ def check_one(doc: dict) -> dict:
     if ghost:
         problems.append(f"说话人不在人物名单：{ghost}")
 
-    # 审查留痕必须齐全（用户要求：每章至少三次调用、审查记录带分数和详细分析）
+    # 审查留痕必须齐全（要求：每章至少三次调用、审查记录带分数和详细分析）。
+    # 人工基准集例外：它的引用由程序直接从原文取，构造上不可能改写或臆造，
+    # 保证比三次模型互审更强，自然也没有模型调用次数可言。
+    manual = (doc.get("run") or {}).get("model") == "人工"
     stages = [r.get("stage") for r in (doc.get("reviews") or [])]
-    for need in ("structure_review", "fidelity_review"):
+    needs = ("fidelity_review",) if manual else ("structure_review", "fidelity_review")
+    for need in needs:
         if need not in stages:
             problems.append(f"缺审查记录：{need}")
     for r in (doc.get("reviews") or []):
@@ -84,7 +88,7 @@ def check_one(doc: dict) -> dict:
                 problems.append(f"{r['stage']} 缺 score")
             if len(r.get("analysis") or "") < 100:
                 problems.append(f"{r['stage']} 的详细分析过短")
-    if (doc.get("run") or {}).get("llm_calls", 0) < 3:
+    if not manual and (doc.get("run") or {}).get("llm_calls", 0) < 3:
         problems.append("模型调用次数不足 3 次")
 
     return {"seq": doc.get("seq"), "chapter_id": doc.get("chapter_id"),

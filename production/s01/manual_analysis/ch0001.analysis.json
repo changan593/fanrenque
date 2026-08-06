@@ -1,0 +1,217 @@
+{
+  "one_line": "唐真从被逐出师门的噩梦中惊醒，如今他是破庙里的小乞丐三只眼。",
+  "synopsis": "唐真在梦中重历被逐出紫云仙宫的那一日：宫主暴喝质问，执法堂长老宣判他密谋算计正道、修为被人魔尊所废乃咎由自取，三师弟带师弟妹们跪求饶恕。他从噩梦中惊叫坐起，已是正午的北阳城城隍庙。他不再是道法无双的少年天才，而是额头有黑色印记、被称作三只眼的小乞丐。他在脑海里呼唤系统，回应他的只有白噪音般的嗡鸣。乞丐们起哄要他讲梦，他便把记忆里的仙宫佛殿说成故事。施粥时辰到，老拐子领到城主家的赏食，又掏出私藏的银锭要唐真去巴结赵护卫混脸熟，唐真把银子塞了回去，说自己活着的目的就是等死。老拐子讲起自己年轻时也想大富大贵，最后拐子还是拐子。此时城主独女姚安饶的马车到了粥棚，唐真呆呆看着，神情痴傻。",
+  "time_setting": "夏日正午至傍晚前，北阳城；梦境部分是两年前紫云仙宫大堂",
+  "emotional_tone": "梦境的暴烈羞辱，转入市井的落魄与温情，收在一瞬的怔忡",
+
+  "characters": [
+    {"name": "唐真", "aliases": ["三只眼", "小花子"], "role_in_chapter": "主导", "mentioned_only": false,
+     "appearance_quotes": [
+       {"para": 16, "text": "他的额头正中有块黑色椭圆形的印记，形状极其工整，像是被人用手指点印上去的，远了看格外像是长了第三只眼睛"},
+       {"para": 37, "text": "这少年额头正中有一颗长得极正的黑斑，像被人用手指印上去的，让人总想多看一眼"},
+       {"para": 38, "text": "他虽然和别的乞丐一样面如死灰，毫无灵气，可是站的笔直，一身破烂却总是什么都无所谓的样子"}],
+     "state": "修为尽失，系统失效，以乞丐身份寄居城隍庙，心存死志",
+     "actions": ["从噩梦中惊叫坐起", "在脑海里呼唤系统未得回应", "给乞丐们讲梦中仙境", "把老拐子的银锭塞回去", "看见姚安饶时怔住"]},
+
+    {"name": "老拐子", "aliases": ["老乞丐", "臭拐子", "拐子"], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [
+       {"para": 31, "text": "老脸上的皱纹挤在一起像是旧抹布，丑陋而亲切的笑容"},
+       {"para": 36, "text": "那皱巴巴的老脸笑的瞬间挤满了皱纹"},
+       {"para": 55, "text": "老拐子砸吧着干瘪的嘴唇"}],
+     "state": "先天右脚萎缩的老乞丐头，城里大小事知道一二，对唐真格外照顾",
+     "actions": ["叫醒做噩梦的唐真", "领施粥赏食", "掏私藏银锭要唐真去巴结赵护卫", "讲自己年轻时的志向"]},
+
+    {"name": "赵护卫", "aliases": ["赵爷"], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [{"para": 35, "text": "护卫中一个身着黑色锦袍，腰别长刀的壮硕汉子"}],
+     "state": "城主家的护卫统领，练气境高手",
+     "actions": ["把赏食交给老拐子", "多看了唐真一眼", "断定唐真是个疯病"]},
+
+    {"name": "姚安饶", "aliases": ["城主的独女", "安小姐"], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [
+       {"para": 59, "text": "从车厢里扶出了一位白裙小姐"},
+       {"para": 60, "text": "那白裙小姐生的极美，最难得是一颦一笑之间竟不让人生出丝毫亵渎之感，清净明华让人感觉无比温暖"}],
+     "state": "北阳城城主独女，本次施粥的主持人",
+     "actions": ["乘马车抵达粥棚"]},
+
+    {"name": "小丫鬟", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [{"para": 59, "text": "一个明眸皓齿的小丫鬟很轻松的跳下了车，红色的裙摆完全无法阻挡她轻盈的身躯"}],
+     "state": "随姚安饶同来，本章未道出姓名",
+     "actions": ["跳下马车", "扶姚安饶下车"]},
+
+    {"name": "紫云仙宫宫主", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [{"para": 1, "text": "这位刚正不阿的老人双目通红，刚刚经过大战的圣人余威犹存"}],
+     "state": "梦境／回忆中出现，刚经历大战的圣人",
+     "actions": ["在大堂上暴喝质问唐真"]},
+
+    {"name": "执法堂长老", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [],
+     "state": "梦境／回忆中出现",
+     "actions": ["宣判唐真的罪状", "断言青云榜换批人对正道未尝不是好事"]},
+
+    {"name": "三师弟", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [],
+     "state": "梦境／回忆中出现",
+     "actions": ["带着师弟师妹拜倒求情"]},
+
+    {"name": "乞丐们", "aliases": ["其他乞丐"], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [{"para": 14, "text": "其他乞丐一边挑着彼此身上的虱子一边打趣"}],
+     "state": "城隍庙里的一群乞丐",
+     "actions": ["取笑唐真做噩梦", "起哄要唐真讲梦", "排队领粥"]},
+
+    {"name": "富人家护卫", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
+     "appearance_quotes": [{"para": 33, "text": "富人家高大的护卫拿着棍棒吆五喝六"}],
+     "state": "施粥现场维持秩序",
+     "actions": ["吆喝乞丐排队领粥"]},
+
+    {"name": "南红枝", "aliases": ["红枝"], "role_in_chapter": "提及", "mentioned_only": true,
+     "appearance_quotes": [],
+     "state": "梦境中被指认为因唐真而死",
+     "actions": []}
+  ],
+
+  "scenes": [
+    {"name": "紫云仙宫大堂", "type": "幻境梦境", "time_of_day": "未明确",
+     "description_quotes": [],
+     "present_characters": ["唐真", "紫云仙宫宫主", "执法堂长老", "三师弟"],
+     "events": ["宫主暴喝质问唐真", "执法堂长老宣判罪状", "三师弟带师弟妹跪求", "唐真恍惚跪在堂上"],
+     "para_range": [1, 11]},
+
+    {"name": "北阳城城隍庙", "type": "室内", "time_of_day": "正午",
+     "description_quotes": [
+       {"para": 12, "text": "鸟鸣阵阵，太阳已经高悬，从屋顶的破洞照进这间小庙，照的一切金晃晃，已是正午时分"},
+       {"para": 15, "text": "唐真扭过头，看着破庙里乱糟糟的场景"}],
+     "present_characters": ["唐真", "老拐子", "乞丐们"],
+     "events": ["唐真惊叫坐起", "呼唤系统只得白噪音", "给乞丐们讲梦中仙境", "老拐子催去施粥"],
+     "para_range": [12, 32]},
+
+    {"name": "城隍庙外施粥处", "type": "室外", "time_of_day": "正午",
+     "description_quotes": [
+       {"para": 33, "text": "三五个人赶着四五十畏畏缩缩的乞丐排队，犹如赶着一群家畜"},
+       {"para": 34, "text": "唐真借着老拐子的光没有排队，而是在树荫下等着"},
+       {"para": 58, "text": "只见有一辆朱红色的马车从街那头驶来，高壮的白马，精雕的车厢，无不说明来人身份的尊贵"}],
+     "present_characters": ["唐真", "老拐子", "赵护卫", "乞丐们", "富人家护卫", "姚安饶", "小丫鬟"],
+     "events": ["富家护卫吆喝乞丐排队", "赵护卫送赏食给老拐子", "老拐子劝唐真去巴结赵护卫", "唐真拒绝并说自己活着就是等死", "姚安饶马车抵达", "唐真失神"],
+     "para_range": [33, 63]}
+  ],
+
+  "dialogues": [
+    {"para": 1,  "q": 0, "speaker": "紫云仙宫宫主", "addressee": "唐真", "manner": "一声声暴喝，每个字都如轰轰雷鸣"},
+    {"para": 2,  "q": 0, "speaker": "执法堂长老", "addressee": "唐真", "manner": "声音淡漠到了极点"},
+    {"para": 3,  "q": 0, "speaker": "执法堂长老", "addressee": "堂上众人", "manner": "用最冰冷的一句话为此事做了收尾"},
+    {"para": 5,  "q": 0, "speaker": "三师弟", "addressee": "紫云仙宫宫主", "manner": "带着师弟师妹们拜倒而下"},
+    {"para": 7,  "q": 0, "speaker": "未明说", "addressee": "唐真", "manner": "梦境中无数嘈杂声音之一"},
+    {"para": 8,  "q": 0, "speaker": "未明说", "addressee": "唐真", "manner": "梦境中无数嘈杂声音之一"},
+    {"para": 9,  "q": 0, "speaker": "未明说", "addressee": "唐真", "manner": "梦境中无数嘈杂声音之一"},
+    {"para": 11, "q": 0, "speaker": "唐真", "addressee": "自己", "manner": "惊叫出声，整个人翻身坐起"},
+    {"para": 13, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "看着满身冷汗惊魂未定的唐真说道"},
+    {"para": 14, "q": 0, "speaker": "乞丐们", "addressee": "在场众人", "manner": "一边挑着彼此身上的虱子一边打趣"},
+    {"para": 17, "q": 0, "speaker": "唐真", "addressee": "系统", "manner": "在脑海里轻声呼喊"},
+    {"para": 20, "q": 0, "speaker": "乞丐们", "addressee": "唐真", "manner": "用胳膊肘捅咕他"},
+    {"para": 21, "q": 0, "speaker": "唐真", "addressee": "乞丐们", "manner": "抽出桃木枝挠了挠后背，打着哈气"},
+    {"para": 22, "q": 0, "speaker": "乞丐们", "addressee": "唐真", "manner": "继续起哄"},
+    {"para": 23, "q": 0, "speaker": "唐真", "addressee": "乞丐们", "manner": "笑了笑，咳了嗓子"},
+    {"para": 26, "q": 0, "speaker": "老拐子", "addressee": "乞丐们", "manner": "踢开人群"},
+    {"para": 31, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "丑陋而亲切的笑容"},
+    {"para": 32, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "笑着接话"},
+    {"para": 33, "q": 0, "speaker": "富人家护卫", "addressee": "乞丐们", "manner": "拿着棍棒吆五喝六"},
+    {"para": 35, "q": 0, "speaker": "赵护卫", "addressee": "老拐子", "manner": "走到树荫下递过破木匣子"},
+    {"para": 36, "q": 0, "speaker": "老拐子", "addressee": "赵护卫", "manner": "鞠躬接过"},
+    {"para": 37, "q": 0, "speaker": "赵护卫", "addressee": "老拐子", "manner": "点点头并不多说"},
+    {"para": 39, "q": 0, "speaker": "赵护卫", "addressee": "自己", "manner": "摇头离开"},
+    {"para": 40, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "有些恨铁不成钢，暗暗掐了唐真一把"},
+    {"para": 41, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "笑着问"},
+    {"para": 42, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "满脸敬畏"},
+    {"para": 45, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "捅了捅唐真"},
+    {"para": 45, "q": 1, "speaker": "老拐子", "addressee": "唐真", "manner": "把银锭塞到唐真手里"},
+    {"para": 48, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "有些惊讶"},
+    {"para": 49, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "心疼的看了银子一眼，然后狠狠的推了唐真一把"},
+    {"para": 50, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "笑着把银子塞回老拐子手里"},
+    {"para": 51, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "有些恨铁不成钢"},
+    {"para": 53, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "劝进"},
+    {"para": 54, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "伸手摸了摸额头的黑印"},
+    {"para": 54, "q": 1, "speaker": "唐真", "addressee": "老拐子", "manner": "笑道"},
+    {"para": 55, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "砸吧着干瘪的嘴唇"},
+    {"para": 56, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "有些伤感"},
+    {"para": 57, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "轻轻抚摸腰间的枯枝，思绪飘远"},
+    {"para": 61, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "踮着脚去看"},
+    {"para": 63, "q": 0, "speaker": "老拐子", "addressee": "自己", "manner": "摇头"}
+  ],
+
+  "monologues": [
+    {"para": 10, "character": "唐真", "kind": "情绪感受"},
+    {"para": 15, "character": "唐真", "kind": "心理活动"},
+    {"para": 25, "character": "唐真", "kind": "判断推理"},
+    {"para": 32, "character": "唐真", "kind": "心理活动",
+     "text": "他知道这是老拐子吃过最好吃的东西了，大抵这也是他能想到的最幸福的生活"},
+    {"para": 38, "character": "赵护卫", "kind": "心理活动"},
+    {"para": 44, "character": "唐真", "kind": "判断推理"},
+    {"para": 47, "character": "唐真", "kind": "心理活动",
+     "text": "握在手里还能感受到老拐子的体温，想来是拐子的私藏，不知道攒了多少年才有这么一疙瘩"},
+    {"para": 51, "character": "老拐子", "kind": "心理活动",
+     "text": "其实他也知道这点银子在赵爷眼里根本算不上什么，可他只有这么多了"},
+    {"para": 52, "character": "老拐子", "kind": "心理活动"},
+    {"para": 62, "character": "老拐子", "kind": "心理活动"},
+    {"para": 63, "character": "老拐子", "kind": "心理活动",
+     "text": "刚才还说什么活着为了等死，如今看到漂亮姑娘不也露出副痴呆模样！果然还是少年人嘞"}
+  ],
+
+  "narration": [
+    {"para": 4,  "function": "情节交代"},
+    {"para": 6,  "function": "情节交代"},
+    {"para": 16, "function": "人物背景"},
+    {"para": 18, "function": "世界观设定"},
+    {"para": 19, "function": "世界观设定"},
+    {"para": 28, "function": "人物背景"},
+    {"para": 29, "function": "人物背景"},
+    {"para": 30, "function": "人物背景"}
+  ],
+
+  "beats": [
+    {"order": 1, "para_range": [1, 11],  "scene": "紫云仙宫大堂", "beat_type": "冲突",
+     "summary": "梦境：唐真被宫主与长老当堂问罪，一代天骄一朝散尽"},
+    {"order": 2, "para_range": [12, 19], "scene": "北阳城城隍庙", "beat_type": "揭示",
+     "summary": "惊醒于破庙，交代他已是小乞丐三只眼，系统只剩白噪音"},
+    {"order": 3, "para_range": [20, 27], "scene": "北阳城城隍庙", "beat_type": "情绪",
+     "summary": "乞丐起哄，唐真把仙宫记忆讲成故事换一勺粥"},
+    {"order": 4, "para_range": [28, 32], "scene": "北阳城城隍庙", "beat_type": "铺垫",
+     "summary": "老拐子的来历，与下辈子天天吃羊下水的期盼"},
+    {"order": 5, "para_range": [33, 44], "scene": "城隍庙外施粥处", "beat_type": "铺垫",
+     "summary": "施粥现场如赶家畜，赵护卫赏食，多看了唐真一眼"},
+    {"order": 6, "para_range": [45, 57], "scene": "城隍庙外施粥处", "beat_type": "情绪",
+     "summary": "老拐子塞银子劝进被拒，唐真说自己活着的目的就是等死"},
+    {"order": 7, "para_range": [58, 63], "scene": "城隍庙外施粥处", "beat_type": "转折",
+     "summary": "姚安饶马车抵达，唐真呆呆看着，神情痴傻"}
+  ],
+
+  "props": [
+    {"name": "桃木枝", "note": "唐真从身下抽出、别在腰间的一根干枯桃木枝，本章仅交代他随身带着"},
+    {"name": "破木匣子", "note": "赵护卫给老拐子的赏食，内有大米粥、三个大馒头、一颗咸鸭蛋"},
+    {"name": "银锭", "note": "石子大小、成色很差、非官银，老拐子的私藏"}
+  ],
+
+  "terms": [
+    {"term": "紫云仙宫", "note": "唐真原属宗门，宫主为圣人"},
+    {"term": "青云榜", "note": "长老称『青云榜换批人对正道未尝不是好事』"},
+    {"term": "人魔尊", "note": "废去唐真修为者"},
+    {"term": "圣人", "note": "宫主的境界，『刚刚经过大战的圣人余威犹存』"},
+    {"term": "练气境", "note": "赵护卫的境界，在北阳城算数一数二的人物"},
+    {"term": "系统", "note": "唐真来自另一个世界的金手指，被人魔尊抹平，现只余白噪音般嗡鸣"},
+    {"term": "北阳城", "note": "唐真现居的凡人城池"}
+  ],
+
+  "continuity": {
+    "inherits": [],
+    "foreshadows": [
+      "腰间的干枯桃木枝被反复抚摸，来历未交代",
+      "额头黑色印记的由来未交代",
+      "南红枝之死与唐真的关系未展开",
+      "系统为何变成白噪音未展开",
+      "唐真见到姚安饶时的失神暗示她与某位故人相像"],
+    "reveals": [
+      "唐真曾是紫云仙宫弟子、青云榜相关人物，修为被人魔尊所废",
+      "他是穿越者，拥有一个已失效的系统",
+      "他现以乞丐身份居于北阳城城隍庙，心存死志"]
+  },
+
+  "review_note": "人工分析。所有引用均由程序按段号与引号序号从 novel.json 精确取出，构造上不存在改写与臆造。台词 40 条全数收录，与原文引号数一致。人物一律使用本章原文出现的称呼：小丫鬟在本章未道出姓名，故不写作红儿，留待后续章节由别名归并统一。梦境段（第1至11段）的三条嘈杂声原文未点明说话人，speaker 记为『未明说』，不作推测。"
+}
