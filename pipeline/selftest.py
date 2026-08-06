@@ -676,6 +676,116 @@ def test_asset_build() -> None:
              paths.SCENES_DIR, paths.PLOT_DIR) = saved
 
 
+# ------------------------------------------------------------------ 9. 出图
+def test_image_api() -> None:
+    print("\n[9] 出图接口（OpenAI Images API 规范，本地假接口）")
+    import base64
+    import io
+    import json as _j
+    import os
+    import threading
+    from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+
+    from PIL import Image
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import s6_style_matrix as s6
+
+    # ---- 尺寸自查：本地就能判死的，不该花一次请求去换一个 502 ----
+    check("gpt-image 拒绝 1792x1024 并说清原因",
+          "dall-e-3" in config.image_size_check("gpt-image-1", "1792x1024"))
+    check("dall-e-3 接受 1792x1024",
+          config.image_size_check("dall-e-3", "1792x1024") == "")
+    check("gpt-image 接受 1536x1024",
+          config.image_size_check("gpt-image-1", "1536x1024") == "")
+    check("auto 一律放行", config.image_size_check("gpt-image-1", "auto") == "")
+    check("未知模型不拦（网关可能自定义模型名）",
+          config.image_size_check("some-gateway-model", "9999x9999") == "")
+
+    # ---- 请求体：可选参数留空就不发 ----
+    saved = (config.IMAGE_QUALITY, config.IMAGE_MODERATION,
+             config.IMAGE_OUTPUT_FORMAT, config.IMAGE_BACKGROUND)
+    config.IMAGE_QUALITY, config.IMAGE_MODERATION = "high", "low"
+    config.IMAGE_OUTPUT_FORMAT = config.IMAGE_BACKGROUND = ""
+    p = s6.build_payload("提示词", 3, "gpt-image-1", "1536x1024")
+    check("请求体符合 Images API 必填字段",
+          {"model", "prompt", "n", "size"} <= set(p) and p["n"] == 3)
+    check("填了的可选参数才发",
+          p.get("quality") == "high" and p.get("moderation") == "low"
+          and "output_format" not in p and "background" not in p, str(sorted(p)))
+    check("降级时摘光可选参数",
+          set(s6.build_payload("x", 1, "m", "s", extras=False)) ==
+          {"model", "prompt", "n", "size"})
+
+    # ---- 裁 16:9 ----
+    def blob(w, h):
+        b = io.BytesIO()
+        Image.new("RGB", (w, h), (10, 20, 30)).save(b, "PNG")
+        return b.getvalue()
+
+    def size_of(data):
+        return Image.open(io.BytesIO(data)).size
+
+    check("3:2 裁成精确 16:9", size_of(s6.crop_169(blob(1536, 1024))) == (1536, 864))
+    check("正方形裁成精确 16:9", size_of(s6.crop_169(blob(1024, 1024))) == (1024, 576))
+    check("本来就是 16:9 时原样返回", size_of(s6.crop_169(blob(1920, 1080))) == (1920, 1080))
+    check("过宽的图切左右", size_of(s6.crop_169(blob(2000, 500))) == (888, 500))
+
+    # ---- 400 自动摘掉可选参数重试 ----
+    class H(BaseHTTPRequestHandler):
+        seen: list = []
+
+        def log_message(self, *a):
+            pass
+
+        def do_POST(self):
+            body = _j.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+            H.seen.append(body)
+            if "moderation" in body or "quality" in body:      # 网关不认这些参数
+                self.send_response(400)
+                self.end_headers()
+                self.wfile.write(b'{"error":{"message":"Unknown parameter: moderation"}}')
+                return
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(_j.dumps({"created": 1, "data": [
+                {"b64_json": base64.b64encode(blob(1536, 1024)).decode()}
+                for _ in range(body.get("n", 1))]}).encode())
+
+    srv = ThreadingHTTPServer(("127.0.0.1", 0), H)
+    threading.Thread(target=srv.serve_forever, daemon=True).start()
+    old_base, old_retry = config.IMAGE_BASE_URL, config.IMAGE_RETRY_BASE
+    config.IMAGE_BASE_URL = f"http://127.0.0.1:{srv.server_address[1]}"
+    config.IMAGE_RETRY_BASE = 0.01
+    try:
+        imgs = s6.generate("提示词", 2, "sk-x", "gpt-image-1", "1536x1024",
+                           threading.Event())
+        check("网关不认可选参数时自动摘掉重试而非整格报废", len(imgs) == 2)
+        check("降级前后各发一次，且第二次不带可选参数",
+              len(H.seen) == 2 and "moderation" in H.seen[0]
+              and "moderation" not in H.seen[1], f"{len(H.seen)} 次请求")
+        check("返回的图已裁成 16:9", size_of(imgs[0]) == (1536, 864))
+    finally:
+        config.IMAGE_BASE_URL, config.IMAGE_RETRY_BASE = old_base, old_retry
+        (config.IMAGE_QUALITY, config.IMAGE_MODERATION,
+         config.IMAGE_OUTPUT_FORMAT, config.IMAGE_BACKGROUND) = saved
+        srv.shutdown()
+
+    # ---- 提示词拼装：单一变量原则 ----
+    mx = _j.loads((paths.PRODUCTION_DIR / "style_test" / "matrix.json")
+                  .read_text(encoding="utf-8"))
+    t, s1, s2 = mx["targets"][0], mx["styles"][0], mx["styles"][1]
+    a, b = (s6.compose_prompt(mx, t, s1), s6.compose_prompt(mx, t, s2))
+    check("同一目标在不同画风下，画面描述逐字相同",
+          t["desc"] in a and t["desc"] in b)
+    check("画风段确实换掉了", s1["suffix"] in a and s1["suffix"] not in b)
+    check("接口没有 negative 字段，反面词折进正文",
+          "务必避免出现以下要素" in a and "negative" not in s6.build_payload(a, 1, "m", "s"))
+    ids = {t["id"] for t in mx["targets"]} | {s["id"] for s in mx["styles"]}
+    check("矩阵 id 无重复", len(ids) == len(mx["targets"]) + len(mx["styles"]))
+
+
 def main() -> None:
     print(config.describe())
     test_novel()
@@ -686,6 +796,7 @@ def main() -> None:
     test_progress_render()
     test_streaming()
     test_asset_build()
+    test_image_api()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")

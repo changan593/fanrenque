@@ -147,11 +147,60 @@ def _err_detail(body: str) -> str:
         return body[:300]
 
 
+def build_payload(prompt: str, n: int, model: str, size: str,
+                  extras: bool = True) -> dict:
+    """
+    按 OpenAI Images API 组请求体。
+
+    可选参数只在配置里填了才发：网关不认某个参数会直接 400，
+    能不发就不发。extras=False 用于 400 之后的降级重试。
+    """
+    p = {"model": model, "prompt": prompt, "n": n, "size": size}
+    if extras:
+        for key, val in (("quality", config.IMAGE_QUALITY),
+                         ("output_format", config.IMAGE_OUTPUT_FORMAT),
+                         ("background", config.IMAGE_BACKGROUND),
+                         ("moderation", config.IMAGE_MODERATION)):
+            if val:
+                p[key] = val
+    return p
+
+
+def crop_169(blob: bytes) -> bytes:
+    """
+    居中裁成精确 16:9。接口给不出 16:9 的档位（gpt-image 最接近的是 3:2），
+    与其迁就，不如出完自己裁——全片画幅已定 16:9，测试图就该按成片画幅看。
+    """
+    from io import BytesIO
+
+    from PIL import Image
+    im = Image.open(BytesIO(blob))
+    w, h = im.size
+    want = w * 9 / 16
+    if abs(h - want) < 2:                     # 本来就是 16:9
+        return blob
+    if h > want:                              # 偏方，切上下
+        top = int((h - want) / 2)
+        im = im.crop((0, top, w, top + int(want)))
+    else:                                     # 偏宽，切左右
+        want_w = int(h * 16 / 9)
+        left = int((w - want_w) / 2)
+        im = im.crop((left, 0, left + want_w, h))
+    out = BytesIO()
+    im.save(out, "PNG")
+    return out.getvalue()
+
+
 def generate(prompt: str, n: int, key: str, model: str, size: str,
              abort: threading.Event, report=None) -> list[bytes]:
     """发一次请求，返回若干张图的字节。失败按状态码分三档处理。"""
+    # 参数自查放在发请求之前：能在本地说清楚的问题，不该花一次请求去换一个 502
+    bad = config.image_size_check(model, size)
+    if bad:
+        raise ImageError(bad)
+
     url = f"{config.IMAGE_BASE_URL}/images/generations"
-    payload = {"model": model, "prompt": prompt, "n": n, "size": size}
+    payload = build_payload(prompt, n, model, size)
     headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
     last = ""
 
@@ -176,11 +225,14 @@ def generate(prompt: str, n: int, key: str, model: str, size: str,
                     last = "200 但 data 为空"
                 else:
                     imgs = [_decode(d) for d in data]
+                    if config.IMAGE_CROP_169:
+                        imgs = [crop_169(b) for b in imgs]
                     append_jsonl(CALL_LOG, {
                         "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                         "model": model, "size": size, "n_req": n, "n_got": len(imgs),
                         "attempt": attempt, "sec": round(time.time() - t0, 1),
                         "bytes": sum(len(b) for b in imgs),
+                        "extras": sorted(set(payload) - {"model", "prompt", "n", "size"}),
                         "prompt_head": prompt[:80],
                     })
                     return imgs
@@ -194,8 +246,19 @@ def generate(prompt: str, n: int, key: str, model: str, size: str,
                 if ra and ra.isdigit():
                     time.sleep(min(int(ra), 60))
             else:
-                # 400 之类：参数或提示词本身有问题，重试无意义
-                raise ImageError(f"HTTP {r.status_code}：{_err_detail(r.text)}")
+                detail = _err_detail(r.text)
+                # 400 多半是参数问题，原样重试无意义——但可选参数（quality /
+                # moderation / output_format / background）本就是「有则更好」，
+                # 网关不认就摘掉再来，不该让整格因此报废。
+                extras = sorted(set(payload) - {"model", "prompt", "n", "size"})
+                if r.status_code == 400 and extras:
+                    payload = build_payload(prompt, n, model, size, extras=False)
+                    last = f"HTTP 400：{detail}"
+                    if report:
+                        report(state="降级重试", attempt=attempt,
+                               detail=f"摘掉可选参数 {'/'.join(extras)}")
+                    continue
+                raise ImageError(f"HTTP {r.status_code}：{detail}")
 
         if attempt < config.IMAGE_MAX_RETRIES:
             delay = config.IMAGE_RETRY_BASE * (2 ** (attempt - 1)) + random.uniform(0, 1)
@@ -283,8 +346,9 @@ def doctor(matrix: dict, args) -> int:
          f"这一步就挂 → 检查 IMAGE_BASE_URL（当前 {config.IMAGE_BASE_URL}）、"
          f"IMAGE_API_KEY、IMAGE_MODEL（当前 {args.model}）"),
         (f"目标尺寸 {args.size}", dict(prompt=tiny, n=1, size=args.size),
-         f"只有这一步挂 → 该模型不支持 {args.size}，"
-         f"改用 IMAGE_SIZE=1024x1024 或换 IMAGE_MODEL"),
+         f"只有这一步挂 → 上游不认 {args.size}。gpt-image 官方只支持 "
+         f"1024x1024 / 1536x1024 / 1024x1536 / auto；1792x1024 是 dall-e-3 的档位。"
+         f"改 .env 里的 IMAGE_SIZE"),
         (f"真实长度提示词（{len(real)} 字）", dict(prompt=real, n=1, size=args.size),
          "只有这一步挂 → 提示词太长或触发了内容审核，"
          "把 matrix.json 里的描述写短些"),
@@ -292,8 +356,17 @@ def doctor(matrix: dict, args) -> int:
          "只有这一步挂 → 上游要不起一次三张，用 --batch 1 一张张出"),
     ]
 
-    print(f"接口 {config.IMAGE_BASE_URL}")
-    print(f"模型 {args.model} | 尺寸 {args.size}\n")
+    print(f"接口 {config.IMAGE_BASE_URL}/images/generations")
+    extras = build_payload("x", 1, args.model, args.size)
+    extras = {k: v for k, v in extras.items() if k not in ("model", "prompt", "n", "size")}
+    print(f"模型 {args.model} | 尺寸 {args.size} | "
+          f"裁 16:9 {'开' if config.IMAGE_CROP_169 else '关'}")
+    print(f"可选参数 {extras or '（未设置）'}"
+          f"　←　网关不认会 400，脚本会自动摘掉重试\n")
+    bad = config.image_size_check(args.model, args.size)
+    if bad:
+        print(f"⚠ 请求还没发就能判死：\n  {bad}\n")
+        return 1
     try:
         key = config.image_api_key()
     except SystemExit as e:

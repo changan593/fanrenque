@@ -152,17 +152,41 @@ MAX_REPAIR_ROUNDS = _num("PIPELINE_REPAIR_ROUNDS", "1")
 PREV_SYNOPSIS_COUNT = 3        # 结构审查时回喂前几章简介
 ALIAS_REGISTRY_LIMIT = 400     # 传给抽取的已知人物名上限，防止 prompt 膨胀
 
-# ---------------- 出图 API（image-2.0，兼容 OpenAI Images API）----------------
-# 官方文档明确要求 base_url 末尾不带斜杠，这里统一 rstrip 掉，
-# 免得 .env 里多敲一个 / 就整批 404。
-IMAGE_BASE_URL = os.getenv("IMAGE_BASE_URL", "https://api2.tabcode.cc/openai/draw/v1").rstrip("/")
+# ---------------- 出图 API（OpenAI Images API 规范）----------------
+# 按 OpenAI 官方 Images API 对接，base_url 与密钥走 .env，指向哪个网关都行。
+# 官方要求 base_url 末尾不带斜杠，这里统一 rstrip，免得多敲一个 / 就整批 404。
+IMAGE_BASE_URL = os.getenv("IMAGE_BASE_URL", "https://api.openai.com/v1").rstrip("/")
 IMAGE_API_KEY_ENV = "IMAGE_API_KEY"
-IMAGE_MODEL = os.getenv("IMAGE_MODEL", "gpt-image-2")
-# 16:9 = 1.778。接口给的档位里 1792x1024 = 1.75 最接近，直接用它，
-# 后期统一裁到 16:9 只需切掉左右各 1%。1536x1024 是 3:2，明显更方。
-IMAGE_SIZE = os.getenv("IMAGE_SIZE", "1792x1024")
+IMAGE_MODEL = os.getenv("IMAGE_MODEL", "gpt-image-1")
+
+# 尺寸。**这是最容易踩的一格**：
+#   gpt-image-*  只认 1024x1024 / 1536x1024 / 1024x1536 / auto
+#   dall-e-3     才认 1792x1024 / 1024x1792
+# 1792x1024 配 gpt-image 会被上游拒掉，网关多半包成 502，看着像网络故障。
+# 默认取 1536x1024（3:2 横版，gpt-image 的官方横版档），出图后由脚本裁成精确 16:9。
+IMAGE_SIZE = os.getenv("IMAGE_SIZE", "1536x1024")
+# 各模型官方支持的尺寸，用于请求前自查，把「上游 502」提前变成「本地说人话」
+IMAGE_SIZES_BY_MODEL = {
+    "gpt-image": ("1024x1024", "1536x1024", "1024x1536", "auto"),
+    "dall-e-3": ("1024x1024", "1792x1024", "1024x1792"),
+    "dall-e-2": ("256x256", "512x512", "1024x1024"),
+}
+
+# 以下四个是 gpt-image 的官方可选参数。留空则不发——
+# 网关不认某个参数会直接 400，能不发就不发。
+IMAGE_QUALITY = os.getenv("IMAGE_QUALITY", "high")           # low / medium / high / auto
+IMAGE_OUTPUT_FORMAT = os.getenv("IMAGE_OUTPUT_FORMAT", "")   # png / jpeg / webp
+IMAGE_BACKGROUND = os.getenv("IMAGE_BACKGROUND", "")         # transparent / opaque / auto
+# 我们的提示词里全是「缺牙」「丑陋」「肮脏」「乞丐」这类词，默认审核档容易误伤。
+# low 是官方允许的档位，正是为这种情况准备的。
+IMAGE_MODERATION = os.getenv("IMAGE_MODERATION", "low")      # low / auto
+
+# 出图后裁成精确 16:9。接口给不出 16:9 的档位，与其迁就，不如出完自己裁——
+# 全片画幅已定 16:9，测试图就该按成片画幅看。
+IMAGE_CROP_169 = _bool("IMAGE_CROP_169", "1")
+
 IMAGE_WORKERS = _num("IMAGE_WORKERS", "3")
-# 单次请求出几张。接口支持 n:3，一次要满能省 2/3 的请求数；
+# 单次请求出几张。官方 n 上限 10（dall-e-3 只能 1）。
 # 若上游只认 n=1，脚本会按实际返回张数自动补跑，不会漏图。
 IMAGE_BATCH = _num("IMAGE_BATCH", "3")
 IMAGE_TIMEOUT = _num("IMAGE_TIMEOUT", "300")     # 出图比出文慢，给足
@@ -170,6 +194,30 @@ IMAGE_MAX_RETRIES = _num("IMAGE_MAX_RETRIES", "5")
 # 出图的退避基数比文本大一档：5xx 多半是上游整体抽风，几秒内重试大概率还是撞上，
 # 且这类错误按官方文档不扣费，等得起。4/8/16/32 秒共约 1 分钟，够熬过一次短暂故障。
 IMAGE_RETRY_BASE = _num("IMAGE_RETRY_BASE", "4", float)
+
+
+def image_size_check(model: str, size: str) -> str:
+    """
+    请求前自查尺寸。返回空串表示没问题，否则返回该说给人听的话。
+
+    不做这一步的代价：1792x1024 配 gpt-image 会被上游拒，网关包成 502
+    「Upstream network error」，看上去和网络故障一模一样，只能靠猜。
+    """
+    if size == "auto":
+        return ""
+    for prefix, allowed in IMAGE_SIZES_BY_MODEL.items():
+        if model.startswith(prefix) and size not in allowed:
+            # 指出这个尺寸是谁家的档位——「你写的这个是别的模型的」比
+            # 「你写的这个不对」有用得多，用户十有八九是从混排的文档里抄来的
+            owner = [m for m, sizes in IMAGE_SIZES_BY_MODEL.items()
+                     if m != prefix and size in sizes]
+            src = f"（{size} 是 {' / '.join(owner)} 的档位）" if owner else ""
+            return (f"模型 {model} 不支持尺寸 {size}{src}。\n"
+                    f"  {model} 支持：{' / '.join(allowed)}\n"
+                    f"  这类请求会被上游拒掉，网关多半包成 502「Upstream network error」，"
+                    f"看着像网络故障，其实是参数问题。\n"
+                    f"  改 .env 里的 IMAGE_SIZE，或换 IMAGE_MODEL。")
+    return ""
 
 
 def image_api_key() -> str:
