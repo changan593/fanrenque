@@ -3,14 +3,17 @@
 按编号顺序跑。每个脚本只做一件事，产物落到固定位置，可断点续跑。
 
 ```
-s1_normalize_novel.py   原文 txt ──→ source/novel.json          （不调 API）
-s2_analyze_chapters.py  逐章分析 ──→ data/chapters/chXXXX.json  （调 API，每章 3~4 次）
+s0_probe_text.py        原文结构探查 ─→ data/plot/text_probe.json （不调 API）
+s1_normalize_novel.py   原文 txt ──→ source/novel.json           （不调 API）
+s2_analyze_chapters.py  逐章分析 ──→ data/chapters/chXXXX.json   （调 API，每章 3~4 次）
 s3_validate_chapters.py 全量体检 ──→ data/plot/quality_report.json（不调 API）
-s4_build_assets.py      资产聚合 ──→ data/characters/、data/scenes/（待第 3 阶段实现）
+s4_build_assets.py      资产聚合 ──→ data/characters/、data/scenes/（不调 API）
 
 selftest.py             离线自测，用假模型跑通全流程，不花 API 额度
 config.py               所有可调参数集中在这里
 ```
+
+只有 `s2` 花钱。`s0` 不依赖任何分析结果，随时可跑；`s4` 在 `s2` 跑完后立刻可用。
 
 支撑模块：
 
@@ -37,7 +40,11 @@ python pipeline/s2_analyze_chapters.py --doctor    # ④ 验密钥/模型/网络
 python pipeline/s2_analyze_chapters.py --smoke 3   # ⑤ 先跑 3 章，人工看一眼质量
 python pipeline/s2_analyze_chapters.py             # ⑥ 跑全书，中断了重跑会自动续
 python pipeline/s3_validate_chapters.py            # ⑦ 体检，拿到需要重跑的章节列表
+python pipeline/s4_build_assets.py                 # ⑧ 聚合角色与场景资产
 ```
+
+`s0_probe_text.py` 独立于以上流程，任何时候都能跑，用来在分析跑完前先摸清全书结构，
+以及在跑完后当独立交叉校验源。
 
 ## 密钥与配置
 

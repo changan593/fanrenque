@@ -445,6 +445,112 @@ def test_streaming() -> None:
         srv.shutdown()
 
 
+# ------------------------------------------------------------------ 8. 资产聚合
+def _fake_chapter(seq: int, chars: list[dict], scenes: list[dict]) -> dict:
+    return {"seq": seq, "chapter_id": f"ch{seq:04d}", "declared_num": seq,
+            "title": f"测试第{seq}章", "analysis": {
+                "synopsis": "测试", "characters": chars, "scenes": scenes,
+                "dialogues": [], "monologues": [], "narration": [], "beats": []}}
+
+
+def test_asset_build() -> None:
+    print("\n[8] 角色/场景资产聚合")
+    import tempfile
+
+    from common.jsonio import read_json, write_json
+    import s4_build_assets as s4
+
+    C = [
+        # 同一人两种叫法，应归并成「唐真」（出场章数多的那个当主名）
+        _fake_chapter(1, [{"name": "唐真", "aliases": ["三只眼"], "role_in_chapter": "主导",
+                           "appearance_quotes": ["额头正中有块黑色椭圆形的印记"],
+                           "state": "修为尽失", "actions": ["惊醒"]},
+                          {"name": "老拐子", "aliases": [], "role_in_chapter": "参与",
+                           "appearance_quotes": ["老脸上的皱纹挤在一起像是旧抹布"]}],
+                      [{"name": "城隍庙", "type": "室内", "time_of_day": "正午",
+                        "description_quotes": ["从屋顶的破洞照进这间小庙"],
+                        "present_characters": ["唐真", "老拐子"], "events": ["醒来"]}]),
+        _fake_chapter(2, [{"name": "三只眼", "aliases": ["唐真"], "role_in_chapter": "主导",
+                           "appearance_quotes": ["一身破烂却总是什么都无所谓的样子"]},
+                          {"name": "老拐子", "aliases": [], "role_in_chapter": "参与"}],
+                      [{"name": "城隍庙", "type": "室内", "description_quotes": [],
+                        "present_characters": ["三只眼"]}]),
+        # 泛称「老人」不该把两个不同角色并到一起
+        _fake_chapter(3, [{"name": "唐真", "aliases": ["老人"], "role_in_chapter": "主导"},
+                          {"name": "南季礼", "aliases": ["老人"], "role_in_chapter": "参与"}],
+                      [{"name": "紫云仙宫", "type": "室外", "present_characters": ["南季礼"]}]),
+        # 脏数据：字段类型不对 / 缺字段，不该把整次聚合搞崩
+        _fake_chapter(4, [{"name": "唐真", "aliases": "不是数组", "role_in_chapter": "主导"},
+                          {"aliases": ["无名"]}, "根本不是对象"],
+                      [{"type": "室内"}, {"name": "破庙", "present_characters": None}]),
+    ]
+
+    with tempfile.TemporaryDirectory() as d:
+        tmp = Path(d)
+        saved = (paths.CHAPTERS_DIR, paths.CHARACTERS_DIR, paths.SCENES_DIR, paths.PLOT_DIR)
+        paths.CHAPTERS_DIR = tmp / "chapters"
+        paths.CHARACTERS_DIR = tmp / "characters"
+        paths.SCENES_DIR = tmp / "scenes"
+        paths.PLOT_DIR = tmp / "plot"
+        for p in (paths.CHAPTERS_DIR, paths.CHARACTERS_DIR, paths.SCENES_DIR, paths.PLOT_DIR):
+            p.mkdir(parents=True)
+        try:
+            for c in C:
+                write_json(paths.CHAPTERS_DIR / f"{c['chapter_id']}.json", c)
+            (paths.CHAPTERS_DIR / "ch0009.json").write_text("{坏", encoding="utf-8")
+
+            docs, problems = s4.load_chapters()
+            check("跳过读不了的章节且留痕", len(docs) == 4 and len(problems) == 1)
+
+            amap, susp = s4.build_alias_map(docs, merge=True)
+            check("别名归并到出场最多的主名",
+                  amap.get("三只眼") == "唐真" and amap.get("唐真") == "唐真",
+                  f"三只眼 -> {amap.get('三只眼')}")
+            check("泛称不参与归并（唐真与南季礼没被并成一个）",
+                  amap.get("南季礼") == "南季礼")
+            check("泛称本身不进映射", "老人" not in amap)
+
+            chars = s4.build_characters(docs, amap)
+            by = {c["canonical_name"]: c for c in chars}
+            check("角色去重正确", set(by) == {"唐真", "老拐子", "南季礼"}, str(sorted(by)))
+            t = by["唐真"]
+            check("合并了两种叫法的出场章节", t["chapter_count"] == 4, str(t["chapters"]))
+            check("别名收全", "三只眼" in t["aliases"])
+            check("原文描写逐字带章节号收集",
+                  len(t["appearance_quotes"]) == 2
+                  and t["appearance_quotes"][0]["seq"] == 1
+                  and "黑色椭圆形" in t["appearance_quotes"][0]["quote"])
+            check("状态变化留档", t["states"] and t["states"][0]["state"] == "修为尽失")
+            check("戏份分布统计", t["role_distribution"].get("主导") == 4)
+
+            scenes = s4.build_scenes(docs, amap)
+            sby = {s["name"]: s for s in scenes}
+            check("场景聚合并按别名归一人物",
+                  sby["城隍庙"]["chapter_count"] == 2
+                  and sby["城隍庙"]["characters"].get("唐真") == 2,
+                  str(sby["城隍庙"]["characters"]))
+            check("场景原文描写逐字收集",
+                  "破洞" in sby["城隍庙"]["description_quotes"][0]["quote"])
+            check("脏场景数据被跳过而非崩溃", "破庙" in sby and len(scenes) == 3)
+
+            cooc = s4.build_cooccurrence(docs, amap)
+            pairs = {(p["a"], p["b"]): p["chapters"] for p in cooc["pairs"]}
+            check("同框统计正确", pairs.get(("唐真", "老拐子")) == 2, str(pairs))
+
+            # 制造一次真会误并的情况，确认能被标出来
+            bad = [_fake_chapter(1, [{"name": "甲角色", "aliases": ["乙角色"]}], [])
+                   for _ in range(1)]
+            bad += [_fake_chapter(i, [{"name": "甲角色"}, {"name": "乙角色"}], [])
+                    for i in range(2, 14)]
+            _, susp2 = s4.build_alias_map(bad, merge=True)
+            check("可疑归并会被标记出来交人工复核", len(susp2) == 1, str(susp2[:1]))
+            check("--no-merge 时完全不归并",
+                  s4.build_alias_map(docs, merge=False)[0].get("三只眼") == "三只眼")
+        finally:
+            (paths.CHAPTERS_DIR, paths.CHARACTERS_DIR,
+             paths.SCENES_DIR, paths.PLOT_DIR) = saved
+
+
 def main() -> None:
     print(config.describe())
     test_novel()
@@ -454,6 +560,7 @@ def main() -> None:
     test_resume_and_concurrency()
     test_progress_render()
     test_streaming()
+    test_asset_build()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")
