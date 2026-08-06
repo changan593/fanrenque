@@ -200,6 +200,61 @@ def test_dotenv() -> None:
         for k in ("SELFTEST_A", "SELFTEST_B", "SELFTEST_C"):
             os.environ.pop(k, None)
 
+    # 行尾注释。.env.example 里写满了说明文字，直接 cp 成 .env 之后
+    # 「600   # 单次请求总时限」会一路带到 int() 才炸。
+    cv = config._clean_value
+    check("剥掉行尾注释", cv("600    # 单次请求总时限") == "600", cv("600    # 说明"))
+    check("引号内的 # 保留", cv('"a # b"  # 注释') == "a # b")
+    check("紧挨着的 # 不当注释（密钥可能带 #）", cv("sk-ab#cd") == "sk-ab#cd")
+    check("值本身为空时不报错", cv("   # 只有注释") == "")
+
+    # 最要命的一条：.env.example 必须能原样当 .env 用。
+    # 它是 README 让人 cp 的那个文件，它自己跑不通等于第一步就把人挡在门外。
+    ex = (paths.ROOT / ".env.example").read_text(encoding="utf-8")
+    bad = []
+    for ln in ex.splitlines():
+        ln = ln.strip()
+        if not ln or ln.startswith("#") or "=" not in ln:
+            continue
+        k, v = ln.split("=", 1)
+        k, v = k.strip(), cv(v)
+        if k in ("LLM_CONNECT_TIMEOUT", "LLM_STALL_TIMEOUT", "LLM_TIMEOUT",
+                 "LLM_MAX_RETRIES", "LLM_MAX_TOKENS", "LLM_MAX_TOKENS_CAP",
+                 "PIPELINE_WORKERS", "PIPELINE_REPAIR_ROUNDS", "IMAGE_WORKERS",
+                 "IMAGE_BATCH", "IMAGE_TIMEOUT", "IMAGE_MAX_RETRIES"):
+            if not v.isdigit():
+                bad.append(f"{k}={v!r}")
+        elif k in ("PIPELINE_QPS",):
+            try:
+                float(v)
+            except ValueError:
+                bad.append(f"{k}={v!r}")
+        elif k in ("LLM_STREAM", "LLM_JSON_MODE", "LLM_THINKING"):
+            if v.lower() not in ("0", "1", "true", "false", "yes", "no", "on", "off"):
+                bad.append(f"{k}={v!r}")
+    check(".env.example 能原样当 .env 用（每个值都解析得出来）",
+          not bad, "；".join(bad))
+
+    # 开关写错不会报错，只会静默按相反的方式跑——这种坑必须在读的时候就拦住
+    for v, want in (("0", False), ("false", False), ("FALSE", False), ("no", False),
+                    ("off", False), ("1", True), ("true", True), ("Yes", True)):
+        os.environ["SELFTEST_SW"] = v
+        check(f"开关认得 {v!r}", config._bool("SELFTEST_SW", "0") is want)
+    os.environ["SELFTEST_SW"] = "开"
+    try:
+        config._bool("SELFTEST_SW", "0")
+        check("开关值看不懂时报错而非猜", False)
+    except SystemExit as e:
+        check("开关值看不懂时报错而非猜", "只接受" in str(e))
+    os.environ["SELFTEST_SW"] = "20    # 建连超时"
+    try:
+        config._num("SELFTEST_SW", "20")
+        check("数值配置坏掉时给出可执行的处置", False)
+    except SystemExit as e:
+        check("数值配置坏掉时给出可执行的处置",
+              "行尾注释" in str(e) and "正确写法" in str(e), str(e).splitlines()[0])
+    os.environ.pop("SELFTEST_SW", None)
+
     check("缺密钥时报错指向 .env", _missing_key_message_mentions_env())
 
 
