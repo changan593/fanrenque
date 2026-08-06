@@ -437,15 +437,18 @@ def doctor() -> int:
     if meta.get("adapted"):
         print(f"\n  ⚠ 这次是靠降级才成功的：{' / '.join(meta['adapted'])}")
         print("    正式跑批前先按上面的方向把 .env 调对，别让每一章都走一遍降级。")
-    if think:
-        thought = think[-1][2]
-        print(f"\n  ⚠ 思考模式是开着的：这次思维链约 {thought} 字，"
-              f"正式回复才 {len(meta['raw'])} 字。")
+    # 判据只能是「真收到过思维链」或「配置里确实开着」。
+    # 不能拿看板状态当判据——那是给人看进度的，不是可靠的观测量。
+    thought = max([t[2] for t in think], default=0)
+    if config.THINKING or thought:
+        print(f"\n  ⚠ 思考模式在起作用：这次思维链约 {thought} 字，"
+              f"正式回复 {len(meta['raw'])} 字"
+              f"（.env 里 LLM_THINKING={'1' if config.THINKING else '0'}）。")
         print("    思维链和正式回复共用 max_tokens，长章节会把 content 挤成空；")
         print("    且思考模式下 temperature 不生效。逐章分析是抽取任务，不需要思维链——")
         print("    除非你确实想让它多想，否则把 .env 的 LLM_THINKING 设回 0。")
-    elif not config.THINKING:
-        print("\n  思考模式已关闭（抽取任务的正确配置）。")
+    else:
+        print("\n  思考模式已关闭，本次也未收到任何思维链（抽取任务的正确配置）。")
     if gen and first and first > 30:
         print("\n  ⚠ 首字节偏慢，单章可能要几分钟，属正常但会拖长总时间")
     print("\n连通性没问题。跑 --smoke 3 看质量。")

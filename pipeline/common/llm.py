@@ -318,9 +318,12 @@ def _do_stream(url, payload, headers, attempt) -> tuple[str, dict, int, dict]:
             if now - last_report > 0.3:            # 限流上报，别把看板刷爆
                 last_report = now
                 done = sum(map(len, parts))
-                # 分开显示：还在思考 vs 已经在写正式回复
-                report(state="生成中" if done else "推理中", attempt=attempt,
-                       chars=done or reasoning)
+                # 三种状态要分清。早先把「还没收到正文」一律标成「推理中」，
+                # 于是短回复的第一帧必然先报一次「推理中」——哪怕思维链一个字都没有。
+                # --doctor 据此判定「思考模式开着」，就成了稳定的假警报。
+                # 「在思考」的唯一证据是收到过 reasoning_content，不是「正文还没来」。
+                state = "生成中" if done else ("推理中" if reasoning else "等待首字")
+                report(state=state, attempt=attempt, chars=done or reasoning)
     return ("".join(parts), usage, 200,
             {"finish_reason": finish_reason, "reasoning_chars": reasoning})
 

@@ -468,6 +468,11 @@ def test_streaming() -> None:
         gen = [t["chars"] for t in ticks if t.get("state") == "生成中"]
         check("生成过程持续上报已收字数", len(gen) >= 2 and gen[-1] > gen[0],
               f"{gen[:3]}…{gen[-1] if gen else 0}")
+        # 没有思维链时绝不能报「推理中」。早先把「正文还没来」也标成「推理中」，
+        # 短回复的第一帧必然触发，--doctor 据此判定「思考模式开着」，成了稳定的假警报。
+        check("没有思维链时不谎报「推理中」",
+              not [t for t in ticks if t.get("state") == "推理中"],
+              str([t.get("state") for t in ticks][:4]))
 
         _FakeAPI.mode, _FakeAPI.hits = "bad_model", 0
         config.MODEL = "不存在的模型"
