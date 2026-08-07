@@ -121,6 +121,48 @@ PRESETS = {
                 "「轮不到红儿这个未出阁的二小姐」），故排除。"
                 "「姚姑娘」前期指她、后期可能指姚望舒，列为存疑。",
     },
+    "姜羽": {
+        "canonical": "姜羽",
+        "aliases": ["姜羽", "羽儿", "小羽", "姜师妹"],
+        "ambiguous": ["师妹"],
+        "note": "唐真的师妹，南季礼之徒，南红枝的师妹。"
+                "「师妹」133 次是跨人歧义——同时可能指南红枝，故单列存疑。",
+    },
+    "尉天齐": {
+        "canonical": "尉天齐",
+        "aliases": ["尉天齐", "天齐", "尉师弟"],
+        "ambiguous": [],
+        "exclude": ["寿与天齐", "与天齐", "齐天"],
+        "note": "被各方推出来取代唐真的少年（seq245）。"
+                "⚠ 裸「天齐」首现于 seq164 的成语「寿与天齐」，"
+                "早于本人登场（seq236）72 章，故必须排除该词组，"
+                "否则会把成语当成人物出场。",
+    },
+    "王玉屏": {
+        "canonical": "王玉屏",
+        "aliases": ["王玉屏", "屏姐"],
+        "ambiguous": ["山主", "小师妹"],
+        "exclude": ["玉屏山", "玉屏观", "玉屏峰"],
+        "note": "玉屏山山主。⚠ 两个坑："
+                "①「玉屏」889 次里 768 次是地名（玉屏山 522 / 玉屏观 246），必须排除；"
+                "②**「小胖」不是她**，是同门吴师兄（seq70「别叫什么吴师兄，叫我小胖就行」，"
+                "「一个穿着常服的小胖子，面相憨厚」），全书 307 次，绝不并入。"
+                "「山主」85 次未必都指她，列为存疑。",
+    },
+    "魏成": {
+        "canonical": "魏成",
+        "aliases": ["魏成", "魏师兄"],
+        "ambiguous": [],
+        "note": "玉蟾宫遗孤，把白玉珠交给红儿的人，望舒宫的实际操盘者。",
+    },
+    "吕藏锋": {
+        "canonical": "吕藏锋",
+        "aliases": ["吕藏锋", "藏锋", "吕师兄"],
+        "ambiguous": [],
+        "exclude": ["藏锋于袖", "藏锋于", "不露藏锋"],
+        "note": "⚠ 裸「藏锋」首现于 seq77 的「藏锋于袖中，出之则见血」，"
+                "是形容剑而非人名，必须排除。",
+    },
 }
 
 # 抽取用的关键词。命中即打标签，方便写文档时按主题捡证据。
@@ -146,8 +188,24 @@ def build_matcher(aliases: list[str]):
     return re.compile("|".join(re.escape(a) for a in ordered)) if ordered else None
 
 
-def scan(text: str, matcher) -> Counter:
-    return Counter(m.group(0) for m in matcher.finditer(text)) if matcher else Counter()
+def build_excluder(patterns: list[str]):
+    """
+    含别名但另有所指的词组。不排掉就会把成语和地名当成人物出场：
+    「寿与天齐」不是尉天齐、「藏锋于袖」不是吕藏锋、
+    「玉屏山」「玉屏观」是地名不是王玉屏。
+    """
+    ordered = sorted(set(patterns), key=len, reverse=True)
+    return re.compile("|".join(re.escape(p) for p in ordered)) if ordered else None
+
+
+def scan(text: str, matcher, excluder=None) -> Counter:
+    if not matcher:
+        return Counter()
+    if excluder:
+        # 先把干扰词整体抹成等长占位，再匹配。
+        # 抹成等长是为了不打乱后面按位置做的判断（比如台词在名字前还是后）。
+        text = excluder.sub(lambda m: "　" * len(m.group(0)), text)
+    return Counter(m.group(0) for m in matcher.finditer(text))
 
 
 def tag_of(text: str) -> list[str]:
@@ -176,9 +234,10 @@ def speech_in(text: str, matcher) -> list[dict]:
 
 
 def collect(units, canon: str, aliases: list[str], ambiguous: list[str],
-            window: int) -> dict:
+            window: int, exclude: list[str] | None = None) -> dict:
     m_sure = build_matcher(aliases)
     m_amb = build_matcher(ambiguous)
+    m_ex = build_excluder(exclude or [])
 
     chapters, tag_index = [], defaultdict(list)
     alias_total, alias_first = Counter(), {}
@@ -188,7 +247,7 @@ def collect(units, canon: str, aliases: list[str], ambiguous: list[str],
         paras = u["paragraphs"]
         hits, amb_hits = [], []
         for i, p in enumerate(paras):
-            c = scan(p, m_sure)
+            c = scan(p, m_sure, m_ex)
             if c:
                 alias_total.update(c)
                 for a in c:
@@ -198,7 +257,7 @@ def collect(units, canon: str, aliases: list[str], ambiguous: list[str],
                              "speech": speech_in(p, m_sure)})
                 for t in tags:
                     tag_index[t].append({"seq": u["seq"], "para": i})
-            ca = scan(p, m_amb)
+            ca = scan(p, m_amb, m_ex)
             if ca and not c:          # 已确认命中的段不用再进存疑
                 amb_total.update(ca)
                 amb_hits.append({"para": i, "text": p, "aliases": dict(ca)})
@@ -289,6 +348,7 @@ def main() -> int:
     ap.add_argument("--name")
     ap.add_argument("--aliases", help="逗号分隔")
     ap.add_argument("--ambiguous", default="", help="逗号分隔，可能指本人也可能指别人")
+    ap.add_argument("--exclude", default="", help="逗号分隔，含别名但另有所指的词组")
     ap.add_argument("--window", type=int, default=2, help="命中段前后各带几段上下文")
     ap.add_argument("--out", type=Path, default=paths.CHARACTERS_DIR)
     args = ap.parse_args()
@@ -297,18 +357,21 @@ def main() -> int:
         p = PRESETS[args.preset]
         canon, aliases = p["canonical"], p["aliases"]
         ambiguous, note = p["ambiguous"], p.get("note", "")
+        exclude = p.get("exclude", [])
     elif args.name and args.aliases:
         canon, note = args.name, ""
         aliases = [x.strip() for x in args.aliases.split(",") if x.strip()]
         ambiguous = [x.strip() for x in args.ambiguous.split(",") if x.strip()]
+        exclude = [x.strip() for x in args.exclude.split(",") if x.strip()]
     else:
         raise SystemExit("给 --preset，或同时给 --name 与 --aliases")
 
     nv = load_novel()
     units = nv["chapters"] if isinstance(nv, dict) else nv
-    d = collect(units, canon, aliases, ambiguous, args.window)
+    d = collect(units, canon, aliases, ambiguous, args.window, exclude)
     d["note"] = note
     d["window"] = args.window
+    d["exclude"] = exclude
 
     args.out.mkdir(parents=True, exist_ok=True)
     js, md = args.out / f"dossier_{canon}.json", args.out / f"dossier_{canon}.md"
