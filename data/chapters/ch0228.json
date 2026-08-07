@@ -299,6 +299,14 @@
         "manner": "一边走一边吩咐道"
       },
       {
+        "para": 25,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "是玉蟾宫？是唐真？是唐真！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 28,
         "speaker": "李一",
         "addressee": "自己",
@@ -487,9 +495,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 35,
+      "total_quotes": 36,
       "counts": {
-        "exact": 35,
+        "exact": 36,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -509,7 +517,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

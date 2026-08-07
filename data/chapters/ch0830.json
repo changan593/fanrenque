@@ -540,6 +540,14 @@
         "addressee": "尉天齐",
         "text": "我们都在期待南季礼和紫云仙宫会不会出现在皇都。。。",
         "manner": "兴冲冲的开口"
+      },
+      {
+        "para": 110,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不是都说他是最和善的天骄吗？今天见到感觉比真君还脾气不好呢！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -926,9 +934,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 93,
+      "total_quotes": 94,
       "counts": {
-        "exact": 93,
+        "exact": 94,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -947,7 +955,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

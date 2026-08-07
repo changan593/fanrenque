@@ -287,6 +287,14 @@
         "manner": ""
       },
       {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "唉呀。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 37,
         "speaker": "主事",
         "addressee": "葵",
@@ -320,6 +328,14 @@
         "addressee": "葵",
         "text": "早点回去睡觉！大半夜的学夜猫子呢啊！",
         "manner": "开口叫道"
+      },
+      {
+        "para": 61,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "姜姑娘。。。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -687,9 +703,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 66,
+      "total_quotes": 68,
       "counts": {
-        "exact": 66,
+        "exact": 68,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -713,7 +729,8 @@
       1113,
       1114,
       1115
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -414,6 +414,14 @@
         "manner": "笑着道"
       },
       {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我说的不是如何绕过齐渊，我指的是真君身上的魔功。迦叶笑着道。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 42,
         "speaker": "唐真",
         "addressee": "迦叶尊者",
@@ -572,9 +580,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 45,
+      "total_quotes": 46,
       "counts": {
-        "exact": 45,
+        "exact": 46,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -597,7 +605,8 @@
       648,
       649,
       650
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

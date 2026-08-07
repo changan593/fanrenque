@@ -339,6 +339,14 @@
         "manner": "摆了摆手，左右看看，笑的更加灿烂"
       },
       {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "想不到都是当年我看好的修炼苗子啊！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 33,
         "speaker": "白师叔",
         "addressee": "魏成",
@@ -526,9 +534,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 38,
       "counts": {
-        "exact": 37,
+        "exact": 38,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -547,7 +555,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

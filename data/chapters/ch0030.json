@@ -209,7 +209,14 @@
         "para": 4,
         "speaker": "唐真",
         "addressee": "姚安饶",
-        "text": "真不是。之所以修炼方法有些奇怪，是因为它本是魔道的术法，这是我专门为你改良后的修行方式。",
+        "text": "真不是。",
+        "manner": "无奈的解释道"
+      },
+      {
+        "para": 4,
+        "speaker": "唐真",
+        "addressee": "姚安饶",
+        "text": "之所以修炼方法有些奇怪，是因为它本是魔道的术法，这是我专门为你改良后的修行方式。",
         "manner": "无奈的解释道"
       },
       {
@@ -797,26 +804,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 77,
+      "total_quotes": 78,
       "counts": {
-        "exact": 76,
-        "near": 1,
+        "exact": 78,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.987,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "真不是。之所以修炼方法有些奇怪，是因为它本是魔道的术法，这是我专门为你改良后的修行方式。",
-          "para_claimed": 4,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9091,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 50,
@@ -826,7 +823,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

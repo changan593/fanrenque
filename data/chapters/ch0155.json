@@ -145,7 +145,7 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [
-          "他抬起手松了松自己头顶的抹额。"
+          "抬起手松了松自己头顶的抹额。"
         ],
         "state": "在普陀山间，手持红钗",
         "actions": [
@@ -205,6 +205,26 @@
         "actions": [
           "从舌底探出，施展佛宗龙象罗汉音"
         ]
+      },
+      {
+        "name": "白衣姚安饶",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "巨大的人头",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -640,24 +660,14 @@
     "verbatim": {
       "total_quotes": 46,
       "counts": {
-        "exact": 45,
-        "near": 1,
+        "exact": 46,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9783,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "他抬起手松了松自己头顶的抹额。",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9333,
-          "para_correct": null,
-          "field": "characters[4].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 17,
@@ -667,7 +677,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

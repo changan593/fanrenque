@@ -239,6 +239,14 @@
         "manner": "认真"
       },
       {
+        "para": 17,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你还年轻尚且不懂，但到你成为我们之日，便会感激我等今日所作所为。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 23,
         "speaker": "长老",
         "addressee": "弟子",
@@ -621,9 +629,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 55,
       "counts": {
-        "exact": 54,
+        "exact": 55,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -642,7 +650,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

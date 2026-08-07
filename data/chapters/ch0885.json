@@ -199,7 +199,14 @@
         "para": 6,
         "speaker": "唐真",
         "addressee": "人皇",
-        "text": "是，但它是人族气运所做，扔入螺生中，便等于半个人族成为维持螺生的养料。当年三教凝练此物，最忌讳的就是有人可以随意使用，所以设下如此多的禁忌，您若一意孤行，我也。。。",
+        "text": "是，但它是人族气运所做，扔入螺生中，便等于半个人族成为维持螺生的养料。",
+        "manner": "收回手"
+      },
+      {
+        "para": 6,
+        "speaker": "唐真",
+        "addressee": "人皇",
+        "text": "当年三教凝练此物，最忌讳的就是有人可以随意使用，所以设下如此多的禁忌，您若一意孤行，我也。。。",
         "manner": "收回手"
       },
       {
@@ -611,26 +618,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 55,
+      "total_quotes": 56,
       "counts": {
-        "exact": 54,
-        "near": 1,
+        "exact": 56,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9818,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "是，但它是人族气运所做，扔入螺生中，便等于半个人族成为维持螺生的养料。当年三教凝练此物，最忌讳的就是有人可以随意使用，所以设下如此多的禁忌，您若一意孤行，我也。。。",
-          "para_claimed": 6,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8902,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 30,
@@ -640,7 +637,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -358,6 +358,14 @@
         "manner": "拍着胸脯，大声说"
       },
       {
+        "para": 30,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "乃是大夏五皇子姜麟！虽无修为，但有资格进入不夜楼！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 32,
         "speaker": "姜麟",
         "addressee": "不夜楼（守门者）",
@@ -621,9 +629,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 42,
       "counts": {
-        "exact": 41,
+        "exact": 42,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -642,7 +650,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

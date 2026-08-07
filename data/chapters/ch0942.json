@@ -171,7 +171,14 @@
         "para": 6,
         "speaker": "幺儿",
         "addressee": "周东东",
-        "text": "可你不是一直都知道吗？你看着我一路醒来，看着我一点点的变化，你难道要告诉我，你在此刻才意识到这些？不！你早就猜到了！只是不甘心，到了如今，却要怨我不与你说。",
+        "text": "可你不是一直都知道吗？",
+        "manner": "微微蹙眉，似有些埋怨"
+      },
+      {
+        "para": 6,
+        "speaker": "幺儿",
+        "addressee": "周东东",
+        "text": "你看着我一路醒来，看着我一点点的变化，你难道要告诉我，你在此刻才意识到这些？不！你早就猜到了！只是不甘心，到了如今，却要怨我不与你说。",
         "manner": "微微蹙眉，似有些埋怨"
       },
       {
@@ -227,7 +234,14 @@
         "para": 23,
         "speaker": "周东东",
         "addressee": "幺儿",
-        "text": "你不想当魔尊，可你已经是魔尊了！而且，是你自己不告而别！是你自己躺在这敌营的中心大帐内！你是来这睡觉的吗？幺儿！我告诉你，这天下没人能逼你认命，除了你自己！是你自己先认了命！如今不要因为自己认了命，却来怪我不够兄弟！",
+        "text": "你不想当魔尊，可你已经是魔尊了！而且，是你自己不告而别！是你自己躺在这敌营的中心大帐内！你是来这睡觉的吗？",
+        "manner": "大步走近，伸手抓向幺儿的领子"
+      },
+      {
+        "para": 23,
+        "speaker": "周东东",
+        "addressee": "幺儿",
+        "text": "幺儿！我告诉你，这天下没人能逼你认命，除了你自己！是你自己先认了命！如今不要因为自己认了命，却来怪我不够兄弟！",
         "manner": "大步走近，伸手抓向幺儿的领子"
       },
       {
@@ -283,7 +297,14 @@
         "para": 36,
         "speaker": "周东东",
         "addressee": "江流",
-        "text": "杀魔头，救皇都！现在，南宁王那个大魔头没找到，但这个魔头就在这！",
+        "text": "杀魔头，救皇都！",
+        "manner": "冷着脸指向幺儿"
+      },
+      {
+        "para": 36,
+        "speaker": "周东东",
+        "addressee": "江流",
+        "text": "现在，南宁王那个大魔头没找到，但这个魔头就在这！",
         "manner": "冷着脸指向幺儿"
       },
       {
@@ -481,44 +502,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 41,
       "counts": {
-        "exact": 35,
-        "near": 3,
+        "exact": 41,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9211,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "可你不是一直都知道吗？你看着我一路醒来，看着我一点点的变化，你难道要告诉我，你在此刻才意识到这些？不！你早就猜到了！只是不甘心，到了如今，却要怨我不与你说。",
-          "para_claimed": 6,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.859,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        },
-        {
-          "quote": "你不想当魔尊，可你已经是魔尊了！而且，是你自己不告而别！是你自己躺在这敌营的中心大帐内！你是来这睡觉的吗？幺儿！我告诉你，这天下没人能逼你认命，除了你自己！是你自己先认了命！如今不要因为自己认了命，却来怪我不够兄弟！",
-          "para_claimed": 23,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.787,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        },
-        {
-          "quote": "杀魔头，救皇都！现在，南宁王那个大魔头没找到，但这个魔头就在这！",
-          "para_claimed": 36,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.75,
-          "para_correct": null,
-          "field": "dialogues[20]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 31,
@@ -532,7 +525,8 @@
       939,
       940,
       941
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -408,7 +408,14 @@
         "para": 48,
         "speaker": "陆剑仙",
         "addressee": "百剑峰山主",
-        "text": "别装糊涂！天门山这么大的事，你也不找我谈谈？我告诉你，你若是开口，不论是哪边，哪家，包括玉蟾宫的那几个白色大饼子，还是悬空寺那个小秃头！我剑山都帮你包下来！未必砍死，但肯定拦住打一顿！",
+        "text": "别装糊涂！天门山这么大的事，你也不找我谈谈？",
+        "manner": "说话很直爽"
+      },
+      {
+        "para": 48,
+        "speaker": "陆剑仙",
+        "addressee": "百剑峰山主",
+        "text": "我告诉你，你若是开口，不论是哪边，哪家，包括玉蟾宫的那几个白色大饼子，还是悬空寺那个小秃头！我剑山都帮你包下来！未必砍死，但肯定拦住打一顿！",
         "manner": "说话很直爽"
       },
       {
@@ -429,7 +436,14 @@
         "para": 52,
         "speaker": "百剑峰山主",
         "addressee": "陆剑仙",
-        "text": "哪边都不是。此事是许圣特意嘱咐过，百剑峰不参与天门内斗。",
+        "text": "哪边都不是。",
+        "manner": "认真的看向陆剑仙"
+      },
+      {
+        "para": 52,
+        "speaker": "百剑峰山主",
+        "addressee": "陆剑仙",
+        "text": "此事是许圣特意嘱咐过，百剑峰不参与天门内斗。",
         "manner": "认真的看向陆剑仙"
       },
       {
@@ -640,35 +654,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 50,
       "counts": {
-        "exact": 46,
-        "near": 2,
+        "exact": 50,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9583,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "别装糊涂！天门山这么大的事，你也不找我谈谈？我告诉你，你若是开口，不论是哪边，哪家，包括玉蟾宫的那几个白色大饼子，还是悬空寺那个小秃头！我剑山都帮你包下来！未必砍死，但肯定拦住打一顿！",
-          "para_claimed": 48,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8913,
-          "para_correct": null,
-          "field": "dialogues[23]"
-        },
-        {
-          "quote": "哪边都不是。此事是许圣特意嘱咐过，百剑峰不参与天门内斗。",
-          "para_claimed": 52,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8214,
-          "para_correct": null,
-          "field": "dialogues[26]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 29,
@@ -682,7 +677,8 @@
       178,
       179,
       180
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -130,6 +130,16 @@
         "actions": [
           "与白化一同出现"
         ]
+      },
+      {
+        "name": "念娘",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -160,6 +170,14 @@
       }
     ],
     "dialogues": [
+      {
+        "para": 2,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "具体情况就是这样。",
+        "manner": "",
+        "_filled": true
+      },
       {
         "para": 3,
         "speaker": "念娘",
@@ -559,9 +577,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 45,
       "counts": {
-        "exact": 44,
+        "exact": 45,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -580,7 +598,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

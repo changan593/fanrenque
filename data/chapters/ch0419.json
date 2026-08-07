@@ -221,6 +221,14 @@
         "manner": ""
       },
       {
+        "para": 28,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我知道你们年轻人总有很多想法，想救大夏、救中洲甚至阻止道儒之争，我没时间嘲笑你们的幼稚，也不认为你们就做不到，只是很多时候你们做事的方式带来的伤害远超过正义的结果带来的益处。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 29,
         "speaker": "帝后",
         "addressee": "尉天齐",
@@ -504,9 +512,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 34,
+      "total_quotes": 35,
       "counts": {
-        "exact": 34,
+        "exact": 35,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -529,7 +537,8 @@
       413,
       414,
       415
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

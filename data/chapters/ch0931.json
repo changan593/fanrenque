@@ -98,7 +98,7 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "那张脸白的好似死敌的砒霜",
+          "脸白的好似死敌的砒霜。",
           "那张脸也不知因激动还是咳嗽变得通红",
           "他落魄凄惨，但眼神并未灰败",
           "那张惨白的毫无血色的脸"
@@ -475,24 +475,14 @@
     "verbatim": {
       "total_quotes": 36,
       "counts": {
-        "exact": 35,
-        "near": 1,
+        "exact": 36,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9722,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "那张脸白的好似死敌的砒霜",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8333,
-          "para_correct": null,
-          "field": "characters[1].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 19,
@@ -506,7 +496,8 @@
       928,
       929,
       930
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

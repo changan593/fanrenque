@@ -252,7 +252,14 @@
         "para": 34,
         "speaker": "林姑娘",
         "addressee": "尉天齐",
-        "text": "是啊，迷藏嘛～还有没有什么想问的？花心大萝卜。",
+        "text": "是啊，迷藏嘛～",
+        "manner": "笑着耸肩，亲昵模样"
+      },
+      {
+        "para": 34,
+        "speaker": "林姑娘",
+        "addressee": "尉天齐",
+        "text": "还有没有什么想问的？花心大萝卜。",
         "manner": "笑着耸肩，亲昵模样"
       },
       {
@@ -577,26 +584,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 57,
       "counts": {
-        "exact": 55,
-        "near": 1,
+        "exact": 57,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9821,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "是啊，迷藏嘛～还有没有什么想问的？花心大萝卜。",
-          "para_claimed": 34,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7826,
-          "para_correct": null,
-          "field": "dialogues[7]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 11,
@@ -606,7 +603,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

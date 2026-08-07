@@ -162,6 +162,14 @@
         "manner": "反对"
       },
       {
+        "para": 21,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我家红儿真棒！砸那么大坑！累坏了吧，快来喝口水润润嗓子！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 28,
         "speaker": "江湖郎中（青年）",
         "addressee": "姚安饶",
@@ -429,9 +437,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 32,
+      "total_quotes": 33,
       "counts": {
-        "exact": 32,
+        "exact": 33,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -450,7 +458,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

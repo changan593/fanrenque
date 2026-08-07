@@ -284,6 +284,14 @@
         "manner": ""
       },
       {
+        "para": 8,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "忘记一切的刀法",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 9,
         "speaker": "唐真",
         "addressee": "阿难",
@@ -962,9 +970,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 107,
+      "total_quotes": 108,
       "counts": {
-        "exact": 107,
+        "exact": 108,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -987,7 +995,8 @@
       654,
       655,
       656
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

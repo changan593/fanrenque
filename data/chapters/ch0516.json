@@ -207,6 +207,14 @@
         "manner": "低声嗫嚅着"
       },
       {
+        "para": 9,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "他的怨气太重，已经不是单独对人皇陛下的怨气了，而是对整个姜家血脉乃至皇宫的怨气，若是不为人知还好，但偏偏知道的人说多不多说少不少，儒门和皇宫都不会希望一位带着报复之心的帝王出现的，他可能为了年少的遗憾，而把整个大夏带向毁灭。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 12,
         "speaker": "尉天齐",
         "addressee": "吴慢慢",
@@ -571,9 +579,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 51,
+      "total_quotes": 52,
       "counts": {
-        "exact": 51,
+        "exact": 52,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -596,7 +604,8 @@
       513,
       514,
       515
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

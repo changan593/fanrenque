@@ -252,6 +252,14 @@
         "addressee": "萧师兄",
         "text": "萧师兄，萧师兄，我如此做，可否？",
         "manner": "内心独白"
+      },
+      {
+        "para": 54,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "可。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -671,9 +679,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 60,
+        "exact": 61,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -692,7 +700,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

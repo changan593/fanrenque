@@ -153,6 +153,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "申时二刻左右，距离天黑还有半个时辰多。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 2,
         "speaker": "林姑娘",
         "addressee": "尉天齐",
@@ -212,7 +220,14 @@
         "para": 13,
         "speaker": "林姑娘",
         "addressee": "尉天齐",
-        "text": "好吧。。我施展此法，便无法与人沟通，你紧随我便是，中途不要触碰我，不然可能中断。",
+        "text": "好吧。。",
+        "manner": "将信将疑的伸手接过，然后缓声道"
+      },
+      {
+        "para": 13,
+        "speaker": "林姑娘",
+        "addressee": "尉天齐",
+        "text": "我施展此法，便无法与人沟通，你紧随我便是，中途不要触碰我，不然可能中断。",
         "manner": "将信将疑的伸手接过，然后缓声道"
       },
       {
@@ -532,26 +547,16 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 52,
+      "total_quotes": 54,
       "counts": {
-        "exact": 51,
-        "near": 1,
+        "exact": 54,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9808,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "好吧。。我施展此法，便无法与人沟通，你紧随我便是，中途不要触碰我，不然可能中断。",
-          "para_claimed": 13,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 22,
@@ -563,7 +568,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

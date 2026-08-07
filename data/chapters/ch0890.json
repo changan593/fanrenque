@@ -151,6 +151,14 @@
         "addressee": "尉天齐",
         "text": "尉公子确实名不虚传，如此短的时间就能撼动古镜，你在阵法上的造诣怕是已经在当世首屈一指。",
         "manner": "语气里满满的敬佩"
+      },
+      {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我已经尽力了？",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -342,9 +350,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 23,
+      "total_quotes": 24,
       "counts": {
-        "exact": 23,
+        "exact": 24,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -363,7 +371,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

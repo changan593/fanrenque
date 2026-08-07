@@ -150,6 +150,14 @@
         "manner": "将腰间的两本旧书拿起，轻轻拍打"
       },
       {
+        "para": 16,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我做选择的原因，取决于我的能力，而不取决于无法分出好坏的事情。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 18,
         "speaker": "尉天齐",
         "addressee": "刘知为",
@@ -428,9 +436,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 36,
+        "exact": 37,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -449,7 +457,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

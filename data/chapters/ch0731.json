@@ -305,7 +305,14 @@
         "para": 14,
         "speaker": "狌狌（小男孩）",
         "addressee": "唐真",
-        "text": "再如何弱，也是我们青丘狐奶奶的弟子，您本可以小惩大诫，但万万不该杀她，更不该杀了她后还往山上走。青丘与十四处相比确实上不得台面，但缺什么便愈发想要什么，我们这些杂碎垃圾最想要的就是脸面。",
+        "text": "再如何弱，也是我们青丘狐奶奶的弟子，您本可以小惩大诫，但万万不该杀她，更不该杀了她后还往山上走。",
+        "manner": "伸手轻轻拨开了唐真的手"
+      },
+      {
+        "para": 14,
+        "speaker": "狌狌（小男孩）",
+        "addressee": "唐真",
+        "text": "青丘与十四处相比确实上不得台面，但缺什么便愈发想要什么，我们这些杂碎垃圾最想要的就是脸面。",
         "manner": "伸手轻轻拨开了唐真的手"
       },
       {
@@ -695,26 +702,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 63,
+      "total_quotes": 64,
       "counts": {
-        "exact": 62,
-        "near": 1,
+        "exact": 64,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9841,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "再如何弱，也是我们青丘狐奶奶的弟子，您本可以小惩大诫，但万万不该杀她，更不该杀了她后还往山上走。青丘与十四处相比确实上不得台面，但缺什么便愈发想要什么，我们这些杂碎垃圾最想要的就是脸面。",
-          "para_claimed": 14,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8172,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 27,
@@ -724,7 +721,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

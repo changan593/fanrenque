@@ -265,7 +265,14 @@
         "para": 18,
         "speaker": "杜文宗",
         "addressee": "杜圣",
-        "text": "那混账究竟要做什么！我若是抓到他必然要把他的腿打折！关进祠堂！",
+        "text": "那混账究竟要做什么！",
+        "manner": "怒斥出声，脸比青茅山的天空还要阴沉"
+      },
+      {
+        "para": 18,
+        "speaker": "杜文宗",
+        "addressee": "杜圣",
+        "text": "我若是抓到他必然要把他的腿打折！关进祠堂！",
         "manner": "怒斥出声，脸比青茅山的天空还要阴沉"
       },
       {
@@ -467,26 +474,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 35,
-        "near": 1,
+        "exact": 37,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9722,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "那混账究竟要做什么！我若是抓到他必然要把他的腿打折！关进祠堂！",
-          "para_claimed": 18,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7097,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 12,
@@ -496,7 +493,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,32 @@
+{
+  "canonical_name": "强壮男人",
+  "aliases": [
+    "为首那个体态庞大的男人"
+  ],
+  "first_seq": 1112,
+  "last_seq": 1112,
+  "chapter_count": 1,
+  "chapters": [
+    1112
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 1112,
+      "quote": "体态庞大"
+    }
+  ],
+  "states": [],
+  "actions": [
+    {
+      "seq": 1112,
+      "actions": [
+        "率先开口行礼"
+      ]
+    }
+  ],
+  "id": "c932_强壮男人"
+}

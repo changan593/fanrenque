@@ -1,0 +1,52 @@
+{
+  "canonical_name": "农圣",
+  "aliases": [
+    "农夫",
+    "那位农夫"
+  ],
+  "first_seq": 113,
+  "last_seq": 950,
+  "chapter_count": 5,
+  "chapters": [
+    113,
+    124,
+    152,
+    647,
+    950
+  ],
+  "role_distribution": {
+    "提及": 4,
+    "参与": 1
+  },
+  "mentioned_only_count": 4,
+  "appearance_quotes": [
+    {
+      "seq": 124,
+      "quote": "看着那个亲切热情的农夫走过广场"
+    }
+  ],
+  "states": [
+    {
+      "seq": 124,
+      "state": "作为准圣，对唐真不满，用手段敲打"
+    },
+    {
+      "seq": 152,
+      "state": "未出场，但被提及"
+    },
+    {
+      "seq": 647,
+      "state": "未明确"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 124,
+      "actions": [
+        "走过广场，敲打唐真",
+        "在考核中安坐，未表态"
+      ]
+    }
+  ],
+  "id": "c184_农圣"
+}

@@ -132,6 +132,16 @@
           "反问尉天齐是否舍得孩子",
           "评价尉天齐无趣"
         ]
+      },
+      {
+        "name": "未知（笑声）",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -196,7 +206,14 @@
         "para": 14,
         "speaker": "尉天齐",
         "addressee": "姚安饶",
-        "text": "那你听好了！少年落难可曾悔，百败犹悔剑不锋！",
+        "text": "那你听好了！",
+        "manner": "缓缓闭目，下一刻猛地睁眼，高声唱道"
+      },
+      {
+        "para": 14,
+        "speaker": "尉天齐",
+        "addressee": "姚安饶",
+        "text": "少年落难可曾悔，百败犹悔剑不锋！",
         "manner": "缓缓闭目，下一刻猛地睁眼，高声唱道"
       },
       {
@@ -483,26 +500,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 32,
       "counts": {
-        "exact": 30,
-        "near": 1,
+        "exact": 32,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9677,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "那你听好了！少年落难可曾悔，百败犹悔剑不锋！",
-          "para_claimed": 14,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7273,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 22,
@@ -512,7 +519,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

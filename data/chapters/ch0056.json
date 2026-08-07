@@ -248,7 +248,14 @@
         "para": 24,
         "speaker": "明月中老人",
         "addressee": "姜羽",
-        "text": "姜羽！！你竟敢在南瞻部洲袭击我玉蟾宫的人！你真以为仗着紫云峰和大夏便能为所欲为了吗？",
+        "text": "姜羽！！",
+        "manner": "声音愤怒无比"
+      },
+      {
+        "para": 24,
+        "speaker": "明月中老人",
+        "addressee": "姜羽",
+        "text": "你竟敢在南瞻部洲袭击我玉蟾宫的人！你真以为仗着紫云峰和大夏便能为所欲为了吗？",
         "manner": "声音愤怒无比"
       },
       {
@@ -491,26 +498,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 29,
+      "total_quotes": 30,
       "counts": {
-        "exact": 28,
-        "near": 1,
+        "exact": 30,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9655,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "姜羽！！你竟敢在南瞻部洲袭击我玉蟾宫的人！你真以为仗着紫云峰和大夏便能为所欲为了吗？",
-          "para_claimed": 24,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9048,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 15,
@@ -524,7 +521,8 @@
       53,
       54,
       55
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

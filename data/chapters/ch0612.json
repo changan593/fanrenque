@@ -163,6 +163,16 @@
           "抬着担架到场",
           "堵住胡同"
         ]
+      },
+      {
+        "name": "污衙的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -213,7 +223,14 @@
         "para": 3,
         "speaker": "中年男人",
         "addressee": "史母",
-        "text": "哈。哪位罪犯会承认自己的罪行呢？他说过就是真的？可有证据？我们抓人是有确切证据的，有同谋者供述出来了他的名字。",
+        "text": "哈。",
+        "manner": "摇头笑道"
+      },
+      {
+        "para": 3,
+        "speaker": "中年男人",
+        "addressee": "史母",
+        "text": "哪位罪犯会承认自己的罪行呢？他说过就是真的？可有证据？我们抓人是有确切证据的，有同谋者供述出来了他的名字。",
         "manner": "摇头笑道"
       },
       {
@@ -262,7 +279,14 @@
         "para": 24,
         "speaker": "中年男人",
         "addressee": "众人",
-        "text": "这是苦主？看看！这些不知好歹的儒生，对我们保家卫国的将士做了什么！？看看那伤口！我污衙如果不彻查，怎么对得起皇都和陛下！",
+        "text": "这是苦主？",
+        "manner": "笑了，看向众人"
+      },
+      {
+        "para": 24,
+        "speaker": "中年男人",
+        "addressee": "众人",
+        "text": "看看！这些不知好歹的儒生，对我们保家卫国的将士做了什么！？看看那伤口！我污衙如果不彻查，怎么对得起皇都和陛下！",
         "manner": "笑了，看向众人"
       },
       {
@@ -562,35 +586,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 55,
       "counts": {
-        "exact": 51,
-        "near": 2,
+        "exact": 55,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9623,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哈。哪位罪犯会承认自己的罪行呢？他说过就是真的？可有证据？我们抓人是有确切证据的，有同谋者供述出来了他的名字。",
-          "para_claimed": 3,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9636,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "这是苦主？看看！这些不知好歹的儒生，对我们保家卫国的将士做了什么！？看看那伤口！我污衙如果不彻查，怎么对得起皇都和陛下！",
-          "para_claimed": 24,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9167,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 19,
@@ -604,7 +609,8 @@
       609,
       610,
       611
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

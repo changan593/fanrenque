@@ -1,0 +1,39 @@
+{
+  "canonical_name": "恶念",
+  "aliases": [],
+  "first_seq": 534,
+  "last_seq": 535,
+  "chapter_count": 2,
+  "chapters": [
+    534,
+    535
+  ],
+  "role_distribution": {
+    "出场": 1,
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 535,
+      "quote": "干枯黑瘦的恶念"
+    }
+  ],
+  "states": [
+    {
+      "seq": 535,
+      "state": "逐渐失了灵慧，只剩执念，消散"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 535,
+      "actions": [
+        "站在门外发呆",
+        "喊出“加密”",
+        "化为浓烟消散"
+      ]
+    }
+  ],
+  "id": "c303_恶念"
+}

@@ -530,7 +530,7 @@
       {
         "para": 26,
         "speaker": "旁白",
-        "text": "为何佛宗大道震动？他看向身周，却忽然发现自己亲传弟子的队列中，一尊金色手持古灯的佛像忽然出现了裂纹，随即化为一大片金粉飞散。",
+        "text": "为何佛宗大道震动？”他看向身周，却忽然发现自己亲传弟子的队列中，一尊金色手持古灯的佛像忽然出现了裂纹，随即化为一大片金粉飞散。",
         "function": "情节交代"
       },
       {
@@ -683,24 +683,14 @@
     "verbatim": {
       "total_quotes": 50,
       "counts": {
-        "exact": 49,
-        "near": 1,
+        "exact": 50,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.98,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "为何佛宗大道震动？他看向身周，却忽然发现自己亲传弟子的队列中，一尊金色手持古灯的佛像忽然出现了裂纹，随即化为一大片金粉飞散。",
-          "para_claimed": 26,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9839,
-          "para_correct": null,
-          "field": "narration[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 20,
@@ -710,7 +700,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

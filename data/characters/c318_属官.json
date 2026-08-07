@@ -1,0 +1,43 @@
+{
+  "canonical_name": "属官",
+  "aliases": [],
+  "first_seq": 720,
+  "last_seq": 723,
+  "chapter_count": 2,
+  "chapters": [
+    720,
+    723
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 720,
+      "state": "污衙属官，色厉内荏"
+    },
+    {
+      "seq": 723,
+      "state": "返虚境修士，多年不斗法，斗法水平一般，被无名扭断脖子死亡"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 720,
+      "actions": [
+        "威胁军部，下令抓人，被无名吓退"
+      ]
+    },
+    {
+      "seq": 723,
+      "actions": [
+        "化为黑影冲向指挥使",
+        "被军威震飞，银针崩断",
+        "被无名扭断脖子"
+      ]
+    }
+  ],
+  "id": "c318_属官"
+}

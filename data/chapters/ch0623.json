@@ -154,6 +154,16 @@
         "appearance_quotes": [],
         "state": "",
         "actions": []
+      },
+      {
+        "name": "师门前辈",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -596,7 +606,8 @@
       613,
       614,
       615
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

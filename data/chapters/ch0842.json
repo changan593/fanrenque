@@ -275,6 +275,14 @@
         "manner": "平淡"
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "走吧，天快亮了，真君应该也要动身了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 16,
         "speaker": "钟鸾",
         "addressee": "谋士",
@@ -536,9 +544,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 39,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -561,7 +569,8 @@
       839,
       840,
       841
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

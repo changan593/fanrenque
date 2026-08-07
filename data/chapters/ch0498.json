@@ -168,6 +168,14 @@
         "manner": "低声提醒"
       },
       {
+        "para": 7,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "东临太守。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 8,
         "speaker": "偏将",
         "addressee": "几位先生",
@@ -222,6 +230,14 @@
         "addressee": "玄甲军众人",
         "text": "走！整军备战，所有人做前压准备！",
         "manner": "气哼哼的离开"
+      },
+      {
+        "para": 38,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "唉——！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -527,9 +543,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 47,
+      "total_quotes": 49,
       "counts": {
-        "exact": 47,
+        "exact": 49,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -553,7 +569,8 @@
       495,
       496,
       497
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

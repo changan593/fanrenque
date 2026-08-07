@@ -339,7 +339,14 @@
         "para": 54,
         "speaker": "阿难",
         "addressee": "姚安恕",
-        "text": "绝无虚言，其实能想起来也是意外。若非吕施主上次来提起我佛宗那位孔雀冥王转世元永洁要访问南洲，我也不会想起那位姜施主。",
+        "text": "绝无虚言，其实能想起来也是意外。",
+        "manner": "看着姚安恕道"
+      },
+      {
+        "para": 54,
+        "speaker": "阿难",
+        "addressee": "姚安恕",
+        "text": "若非吕施主上次来提起我佛宗那位孔雀冥王转世元永洁要访问南洲，我也不会想起那位姜施主。",
         "manner": "看着姚安恕道"
       },
       {
@@ -531,26 +538,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 45,
+      "total_quotes": 46,
       "counts": {
-        "exact": 44,
-        "near": 1,
+        "exact": 46,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9778,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "绝无虚言，其实能想起来也是意外。若非吕施主上次来提起我佛宗那位孔雀冥王转世元永洁要访问南洲，我也不会想起那位姜施主。",
-          "para_claimed": 54,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8103,
-          "para_correct": null,
-          "field": "dialogues[20]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 26,
@@ -560,7 +557,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

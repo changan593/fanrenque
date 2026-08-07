@@ -204,7 +204,7 @@
         "description_quotes": [
           "白灰色的烟摇而不断",
           "灶房角落的阴凉处堆放着十数个小坛子",
-          "主殿高高的门槛上，一整天阳光都会撒到这里"
+          "主殿高高的门槛上，一整天的阳光都会撒到这里"
         ],
         "present_characters": [
           "姚安恕"
@@ -515,24 +515,14 @@
     "verbatim": {
       "total_quotes": 34,
       "counts": {
-        "exact": 33,
-        "near": 1,
+        "exact": 34,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9706,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "主殿高高的门槛上，一整天阳光都会撒到这里",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.95,
-          "para_correct": null,
-          "field": "scenes[1].description_quotes[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 12,
@@ -542,7 +532,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

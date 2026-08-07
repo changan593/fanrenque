@@ -155,6 +155,16 @@
         "appearance_quotes": [],
         "state": "被提及，曾告诉唐真多面琉璃灯由果至因",
         "actions": []
+      },
+      {
+        "name": "天菩萨",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -521,7 +531,8 @@
       1163,
       1164,
       1165
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

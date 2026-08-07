@@ -145,6 +145,22 @@
         "addressee": "史家母",
         "text": "没事！我就去出去看看！张家大哥还有书院的教习，大家都在的，你早点睡吧！",
         "manner": "叹了口气道"
+      },
+      {
+        "para": 20,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "唉！痛之吾母！多言尽仍问加衣否？大义生只管子女安！是犬子可待早春开，可苍生如何过冬寒？",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 36,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊！哀之吾儿！待半百求让子成才，子成才又恐命早衰，是老母懦害怕吃苦？是稚子勇不惧母哀。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -249,9 +265,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 12,
+      "total_quotes": 14,
       "counts": {
-        "exact": 12,
+        "exact": 14,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -271,7 +287,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

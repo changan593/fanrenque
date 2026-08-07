@@ -223,7 +223,14 @@
         "para": 16,
         "speaker": "狐魔尊分身",
         "addressee": "尉天齐",
-        "text": "呵！你不要乱谢，我可并非是要提点你！我乃是受邀来此阻你，也并未如何留手，是你自己选择了自己的路，你在梦里若无法给出答案，那么最终便真的会死于我梦中。你若选择回到皇都，那便放你哪里来回哪里去。",
+        "text": "呵！你不要乱谢，我可并非是要提点你！",
+        "manner": "笑了起来"
+      },
+      {
+        "para": 16,
+        "speaker": "狐魔尊分身",
+        "addressee": "尉天齐",
+        "text": "我乃是受邀来此阻你，也并未如何留手，是你自己选择了自己的路，你在梦里若无法给出答案，那么最终便真的会死于我梦中。你若选择回到皇都，那便放你哪里来回哪里去。",
         "manner": "笑了起来"
       },
       {
@@ -557,26 +564,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 47,
+      "total_quotes": 48,
       "counts": {
-        "exact": 46,
-        "near": 1,
+        "exact": 48,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9787,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "呵！你不要乱谢，我可并非是要提点你！我乃是受邀来此阻你，也并未如何留手，是你自己选择了自己的路，你在梦里若无法给出答案，那么最终便真的会死于我梦中。你若选择回到皇都，那便放你哪里来回哪里去。",
-          "para_claimed": 16,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9053,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 26,
@@ -586,7 +583,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

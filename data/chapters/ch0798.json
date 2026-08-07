@@ -463,6 +463,14 @@
         "addressee": "善缘",
         "text": "我当时说了，‘除了我妹妹’。",
         "manner": ""
+      },
+      {
+        "para": 56,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "呼！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -666,9 +674,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 62,
+      "total_quotes": 63,
       "counts": {
-        "exact": 62,
+        "exact": 63,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -691,7 +699,8 @@
       795,
       796,
       797
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -371,6 +371,14 @@
         "addressee": "观众",
         "text": "莫说苦，谁能苦过我那地上神仙的情郎~莫说冤，哪个冤过我这天下骂名的小娘啊！",
         "manner": "高声唱起"
+      },
+      {
+        "para": 46,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "真君能登天，不代表登天的就是真君啊。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -516,9 +524,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 35,
+      "total_quotes": 36,
       "counts": {
-        "exact": 35,
+        "exact": 36,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -537,7 +545,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

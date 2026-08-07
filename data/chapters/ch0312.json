@@ -96,7 +96,7 @@
         "mentioned_only": false,
         "appearance_quotes": [
           "嘴角有着淡淡的新鲜的血迹",
-          "小臂处有一个不大的小口子以及一排整齐细密的牙印"
+          "小臂处看到一个并不大的小口子以及一排整齐细密的牙印"
         ],
         "state": "饥饿，因怕咬云儿姐而咬自己，愧疚哭泣",
         "actions": [
@@ -195,6 +195,14 @@
         "addressee": "云儿",
         "text": "姐！！我饿！我。。怕自己咬你！才。。咬的自己。",
         "manner": "捂着脸断断续续的说道"
+      },
+      {
+        "para": 40,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "自己的血也是血！总好过云儿姐的血！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 41,
@@ -476,26 +484,16 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 49,
       "counts": {
-        "exact": 47,
-        "near": 1,
+        "exact": 49,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9792,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "小臂处有一个不大的小口子以及一排整齐细密的牙印",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8696,
-          "para_correct": null,
-          "field": "characters[1].appearance_quotes[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 13,
@@ -507,7 +505,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

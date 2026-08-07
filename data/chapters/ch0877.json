@@ -139,7 +139,14 @@
         "para": 12,
         "speaker": "佛像们",
         "addressee": "尉天齐",
-        "text": "尉天齐。儒门的很多人都真的认为你比唐真更适合成为青云榜榜首，他们说你不是高高在上的仙人，只是一个凡人，懂得凡人的喜怒，看见世事的沉浮，你或许没有唐真强，但你在意比唐真多，或者说唐真只在意他自己，而你懂得大局，能为更多人考虑。",
+        "text": "尉天齐。",
+        "manner": "如空谷中巨石滚落般的声音，衰老而缓慢"
+      },
+      {
+        "para": 12,
+        "speaker": "佛像们",
+        "addressee": "尉天齐",
+        "text": "儒门的很多人都真的认为你比唐真更适合成为青云榜榜首，他们说你不是高高在上的仙人，只是一个凡人，懂得凡人的喜怒，看见世事的沉浮，你或许没有唐真强，但你在意比唐真多，或者说唐真只在意他自己，而你懂得大局，能为更多人考虑。",
         "manner": "如空谷中巨石滚落般的声音，衰老而缓慢"
       },
       {
@@ -410,26 +417,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 30,
+      "total_quotes": 31,
       "counts": {
-        "exact": 29,
-        "near": 1,
+        "exact": 31,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9667,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "尉天齐。儒门的很多人都真的认为你比唐真更适合成为青云榜榜首，他们说你不是高高在上的仙人，只是一个凡人，懂得凡人的喜怒，看见世事的沉浮，你或许没有唐真强，但你在意比唐真多，或者说唐真只在意他自己，而你懂得大局，能为更多人考虑。",
-          "para_claimed": 12,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9643,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 9,
@@ -441,7 +438,8 @@
     "repair_rounds": 0,
     "context_chapters_used": [
       865
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

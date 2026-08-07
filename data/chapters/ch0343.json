@@ -198,6 +198,16 @@
           "弯腰行礼",
           "跪拜红儿"
         ]
+      },
+      {
+        "name": "魏成和白子鹤",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -235,6 +245,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 10,
         "speaker": "城主",
         "addressee": "念娘等人",
@@ -261,6 +279,14 @@
         "addressee": "念娘",
         "text": "哦？还有此事？",
         "manner": "一脸震惊"
+      },
+      {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "昨日家中琐事繁忙，一直不曾出门，未曾得到什么消息。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 15,
@@ -317,6 +343,14 @@
         "addressee": "老人",
         "text": "不曾。",
         "manner": "摇头道"
+      },
+      {
+        "para": 27,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "白玉宫中的同门对我等照顾有加。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 28,
@@ -688,9 +722,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 62,
+      "total_quotes": 65,
       "counts": {
-        "exact": 62,
+        "exact": 65,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -715,7 +749,8 @@
       340,
       341,
       342
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

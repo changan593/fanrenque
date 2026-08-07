@@ -122,6 +122,26 @@
         "actions": [
           "被大菩萨安排去一旁吃东西"
         ]
+      },
+      {
+        "name": "岛民",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "密宗僧侣",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -188,6 +208,14 @@
         "addressee": "唐真",
         "text": "此山乃是我宗前人当初从婆娑洲用术法搬来的，并非是驱使岛民建造，海岛上可找不到这么好的石料。",
         "manner": "笑着解释"
+      },
+      {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "唔！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 12,
@@ -487,9 +515,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 36,
+        "exact": 37,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -512,7 +540,8 @@
       563,
       564,
       565
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

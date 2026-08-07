@@ -1,0 +1,24 @@
+{
+  "canonical_name": "南巧儿",
+  "aliases": [],
+  "first_seq": 596,
+  "last_seq": 884,
+  "chapter_count": 2,
+  "chapters": [
+    596,
+    884
+  ],
+  "role_distribution": {
+    "提及": 2
+  },
+  "mentioned_only_count": 2,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 596,
+      "state": "姚安饶想起的人。"
+    }
+  ],
+  "actions": [],
+  "id": "c308_南巧儿"
+}

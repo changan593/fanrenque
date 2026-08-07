@@ -197,6 +197,14 @@
     ],
     "dialogues": [
       {
+        "para": 4,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "汪！！汪！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "红儿",
         "addressee": "唐真",
@@ -300,6 +308,14 @@
         "addressee": "红儿",
         "text": "我哭是因为你的眉眼长得有些像我的一位故人。",
         "manner": "面无表情继续解释"
+      },
+      {
+        "para": 26,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：我哭是因为你的眉眼长得有些像我的一位故人。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 29,
@@ -486,9 +502,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 33,
+      "total_quotes": 35,
       "counts": {
-        "exact": 33,
+        "exact": 35,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -512,7 +528,8 @@
       13,
       14,
       15
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

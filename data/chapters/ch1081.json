@@ -343,6 +343,14 @@
         "manner": "对着半空中越来越远的身影喊道"
       },
       {
+        "para": 40,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这日子我真是够了，投靠魔尊还得打工的吗？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 44,
         "speaker": "杜有才",
         "addressee": "姜羽和葵",
@@ -567,9 +575,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 33,
+      "total_quotes": 34,
       "counts": {
-        "exact": 33,
+        "exact": 34,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -588,7 +596,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -235,6 +235,14 @@
         "manner": "总结了姚望舒的斗法特点"
       },
       {
+        "para": 15,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "最后要说的，则是对手，大多数人其实都忽略了真正重要的这位火行魔修，以至于很多人误判了血月独夫的实力。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 16,
         "speaker": "尉天齐",
         "addressee": "姚安饶",
@@ -404,9 +412,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 23,
+      "total_quotes": 24,
       "counts": {
-        "exact": 23,
+        "exact": 24,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -425,7 +433,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

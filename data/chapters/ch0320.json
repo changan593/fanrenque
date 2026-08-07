@@ -255,11 +255,27 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 10,
         "speaker": "屏姐",
         "addressee": "唐真",
         "text": "唐真？",
         "manner": "一愣"
+      },
+      {
+        "para": 12,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "谁？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 13,
@@ -274,6 +290,14 @@
         "addressee": "中年男人",
         "text": "你是？",
         "manner": "皱起眉"
+      },
+      {
+        "para": 16,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我。。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 19,
@@ -658,9 +682,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 57,
+      "total_quotes": 60,
       "counts": {
-        "exact": 57,
+        "exact": 60,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -685,7 +709,8 @@
       313,
       314,
       315
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -367,7 +367,14 @@
         "para": 32,
         "speaker": "杜有才",
         "addressee": "唐真",
-        "text": "哦哦，那我们接着说，中洲那边兵马动，不会攻城拔寨，而是全力南下奔袭，优先占领南洲最大几个宗门的周围地域，比如望山城这种。。。",
+        "text": "哦哦，",
+        "manner": "似懂非懂的点头"
+      },
+      {
+        "para": 32,
+        "speaker": "杜有才",
+        "addressee": "唐真",
+        "text": "那我们接着说，中洲那边兵马动，不会攻城拔寨，而是全力南下奔袭，优先占领南洲最大几个宗门的周围地域，比如望山城这种。。。",
         "manner": "似懂非懂的点头"
       },
       {
@@ -588,26 +595,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 28,
+      "total_quotes": 29,
       "counts": {
-        "exact": 27,
-        "near": 1,
+        "exact": 29,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9643,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "哦哦，那我们接着说，中洲那边兵马动，不会攻城拔寨，而是全力南下奔袭，优先占领南洲最大几个宗门的周围地域，比如望山城这种。。。",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9677,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 12,
@@ -617,7 +614,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

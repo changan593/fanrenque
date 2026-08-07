@@ -276,6 +276,14 @@
         "manner": "被这一幕吓了一跳，站起身来，有些不知所措"
       },
       {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "他来了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 42,
         "speaker": "老和尚",
         "addressee": "小和尚",
@@ -512,9 +520,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 32,
+      "total_quotes": 33,
       "counts": {
-        "exact": 32,
+        "exact": 33,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -533,7 +541,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

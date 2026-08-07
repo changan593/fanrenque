@@ -413,6 +413,14 @@
         "addressee": "吕藏锋",
         "text": "额。。也有可能",
         "manner": ""
+      },
+      {
+        "para": 42,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "额。。也有可能。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -586,9 +594,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 41,
       "counts": {
-        "exact": 40,
+        "exact": 41,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -611,7 +619,8 @@
       613,
       614,
       615
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

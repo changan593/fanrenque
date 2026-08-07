@@ -85,7 +85,7 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "她玉化的右手",
+          "玉化的右手",
           "她玉化的指尖"
         ],
         "state": "修行达到最低要求，左手持笔不熟练，手腕酸疼",
@@ -605,24 +605,14 @@
     "verbatim": {
       "total_quotes": 65,
       "counts": {
-        "exact": 64,
-        "near": 1,
+        "exact": 65,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9846,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "她玉化的右手",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8333,
-          "para_correct": null,
-          "field": "characters[0].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -632,7 +622,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

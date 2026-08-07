@@ -203,6 +203,14 @@
         "manner": "大声的骂道"
       },
       {
+        "para": 29,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "妈的！老子赶了一天一夜的路，结果我刚到就给我来这个？！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "古命好",
         "addressee": "兵甲",
@@ -358,9 +366,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 24,
+      "total_quotes": 25,
       "counts": {
-        "exact": 24,
+        "exact": 25,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -383,7 +391,8 @@
       913,
       914,
       915
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

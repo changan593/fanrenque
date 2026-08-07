@@ -1,0 +1,30 @@
+{
+  "canonical_name": "数位白袍和金袍身影",
+  "aliases": [],
+  "first_seq": 133,
+  "last_seq": 133,
+  "chapter_count": 1,
+  "chapters": [
+    133
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 133,
+      "state": "跟随金桧布阵"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 133,
+      "actions": [
+        "布阵"
+      ]
+    }
+  ],
+  "id": "c428_数位白袍和金袍身影"
+}

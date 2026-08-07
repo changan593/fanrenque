@@ -231,6 +231,14 @@
         "manner": "笑着走近了两步"
       },
       {
+        "para": 37,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "咳！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 38,
         "speaker": "董无",
         "addressee": "尉天齐",
@@ -563,9 +571,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 43,
       "counts": {
-        "exact": 42,
+        "exact": 43,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -584,7 +592,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

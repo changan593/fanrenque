@@ -195,6 +195,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 16,
         "speaker": "云儿",
         "addressee": "尉天齐",
@@ -310,7 +318,14 @@
         "para": 52,
         "speaker": "永和楼老板",
         "addressee": "尉天齐",
-        "text": "哼！我悄悄告诉你，你别说出去啊！我跟云儿姑娘说好了，到时候饶儿班出一个新曲目！与三教御典同时开场！若是表现的好，必然一举扬名皇都！",
+        "text": "哼！我悄悄告诉你，你别说出去啊！",
+        "manner": "有些急不可耐的弯下腰道"
+      },
+      {
+        "para": 52,
+        "speaker": "永和楼老板",
+        "addressee": "尉天齐",
+        "text": "我跟云儿姑娘说好了，到时候饶儿班出一个新曲目！与三教御典同时开场！若是表现的好，必然一举扬名皇都！",
         "manner": "有些急不可耐的弯下腰道"
       },
       {
@@ -472,26 +487,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 32,
+      "total_quotes": 34,
       "counts": {
-        "exact": 31,
-        "near": 1,
+        "exact": 34,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9688,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哼！我悄悄告诉你，你别说出去啊！我跟云儿姑娘说好了，到时候饶儿班出一个新曲目！与三教御典同时开场！若是表现的好，必然一举扬名皇都！",
-          "para_claimed": 52,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7538,
-          "para_correct": null,
-          "field": "dialogues[16]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -507,7 +512,8 @@
       357,
       358,
       359
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

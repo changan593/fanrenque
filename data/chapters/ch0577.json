@@ -331,6 +331,14 @@
         "manner": "吃了一口皮冻，忍不住点头"
       },
       {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这些菜大多都是婆娑洲本地的富户创造的，他们家中多有自称信佛却无法成为僧侣之人，为了能维持人设，故而创造了很多奇怪的搭配，最终慢慢流入民间。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 36,
         "speaker": "唐真",
         "addressee": "第一大菩萨",
@@ -561,9 +569,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -584,7 +592,8 @@
     "repair_rounds": 1,
     "context_chapters_used": [
       565
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

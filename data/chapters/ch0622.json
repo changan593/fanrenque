@@ -198,6 +198,14 @@
         "manner": "笑的自然"
       },
       {
+        "para": 34,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "很好。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "尉天齐",
         "addressee": "觉悔菩萨",
@@ -322,9 +330,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 19,
+      "total_quotes": 20,
       "counts": {
-        "exact": 19,
+        "exact": 20,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -347,7 +355,8 @@
       613,
       614,
       615
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

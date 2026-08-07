@@ -298,6 +298,14 @@
         "manner": "提了一个出乎意料的要求"
       },
       {
+        "para": 27,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "唉。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 29,
         "speaker": "姜羽",
         "addressee": "门外的人",
@@ -576,9 +584,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 39,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -597,7 +605,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

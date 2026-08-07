@@ -405,6 +405,14 @@
         "manner": "戏腔的声音冰冷而没有情绪"
       },
       {
+        "para": 62,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "咦？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 69,
         "speaker": "老拐子",
         "addressee": "自己",
@@ -674,9 +682,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 59,
+      "total_quotes": 60,
       "counts": {
-        "exact": 59,
+        "exact": 60,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -695,7 +703,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

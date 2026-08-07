@@ -1,0 +1,30 @@
+{
+  "canonical_name": "商户们",
+  "aliases": [],
+  "first_seq": 535,
+  "last_seq": 535,
+  "chapter_count": 1,
+  "chapters": [
+    535
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 535,
+      "state": "查看门市情况，摇头叹气"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 535,
+      "actions": [
+        "走出自家大门查看门市"
+      ]
+    }
+  ],
+  "id": "c651_商户们"
+}

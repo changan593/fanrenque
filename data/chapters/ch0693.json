@@ -268,6 +268,14 @@
         "manner": "恭敬地行礼"
       },
       {
+        "para": 34,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "儒门做学问，清水最世故、龙场最自由、茅草最死板、棋盘最可爱、白鹿最正常。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "姜羽",
         "addressee": "秦祖",
@@ -476,9 +484,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 33,
+      "total_quotes": 34,
       "counts": {
-        "exact": 33,
+        "exact": 34,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -497,7 +505,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -219,6 +219,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "拂衣",
         "addressee": "红儿",
@@ -275,6 +283,14 @@
         "manner": "轻声解释"
       },
       {
+        "para": 29,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "好。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 30,
         "speaker": "拂衣",
         "addressee": "红儿和念娘",
@@ -294,6 +310,14 @@
         "addressee": "红儿和念娘",
         "text": "我想飞，能飞就行！",
         "manner": "边说边抬起自己的双臂，似乎在扇动翅膀"
+      },
+      {
+        "para": 40,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "宫主！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 42,
@@ -561,9 +585,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 42,
       "counts": {
-        "exact": 39,
+        "exact": 42,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -584,7 +608,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

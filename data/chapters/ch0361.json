@@ -112,6 +112,16 @@
           "坐在楼顶观察尉天齐与孩子们互动",
           "思考尉天齐可能成为班主，觉得无妨"
         ]
+      },
+      {
+        "name": "几个略大一些的男生",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -193,6 +203,14 @@
       }
     ],
     "dialogues": [
+      {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
       {
         "para": 8,
         "speaker": "云儿",
@@ -445,9 +463,9 @@
     "structure_score": 92,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 27,
+      "total_quotes": 28,
       "counts": {
-        "exact": 27,
+        "exact": 28,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -466,7 +484,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

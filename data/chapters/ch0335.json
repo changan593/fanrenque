@@ -255,6 +255,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 13,
         "speaker": "云儿",
         "addressee": "短打装扮的男孩",
@@ -648,9 +656,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 55,
+      "total_quotes": 56,
       "counts": {
-        "exact": 55,
+        "exact": 56,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -670,7 +678,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

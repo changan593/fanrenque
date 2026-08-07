@@ -231,6 +231,14 @@
         "manner": "缓步靠近，语气像跟朋友抱怨"
       },
       {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "登天太难了，而且也不安全，我师父不就是明证吗？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 43,
         "speaker": "唐真",
         "addressee": "古命好",
@@ -547,9 +555,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -569,7 +577,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

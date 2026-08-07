@@ -245,6 +245,14 @@
         "manner": "看了看四周"
       },
       {
+        "para": 20,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这是幻境？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 22,
         "speaker": "许行",
         "addressee": "唐真",
@@ -271,6 +279,14 @@
         "addressee": "唐真",
         "text": "也不是很熟，实际上他当初找到我们提出这个计划的之后没活几年就死了，我们只见过几面，而且大多时候也都在谈天门山脉的未来而已。",
         "manner": "似乎想了想"
+      },
+      {
+        "para": 26,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "她爸提出的这个计划？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 27,
@@ -602,9 +618,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 48,
       "counts": {
-        "exact": 46,
+        "exact": 48,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -624,7 +640,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

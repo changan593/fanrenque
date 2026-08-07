@@ -302,7 +302,14 @@
         "para": 19,
         "speaker": "知了和尚",
         "addressee": "吕藏锋",
-        "text": "吕施主，据贫僧所知，你与姚姑娘并未深交，不该身陷至此才是。虽然贫僧如此说有些古怪，但天下男女并非一一对照，有缘人并非只此一个，施主年纪尚浅，可待来日，缘法重归。",
+        "text": "吕施主，据贫僧所知，你与姚姑娘并未深交，不该身陷至此才是。",
+        "manner": "低声劝慰"
+      },
+      {
+        "para": 19,
+        "speaker": "知了和尚",
+        "addressee": "吕藏锋",
+        "text": "虽然贫僧如此说有些古怪，但天下男女并非一一对照，有缘人并非只此一个，施主年纪尚浅，可待来日，缘法重归。",
         "manner": "低声劝慰"
       },
       {
@@ -316,14 +323,28 @@
         "para": 25,
         "speaker": "知了和尚",
         "addressee": "吕藏锋",
-        "text": "吕施主，你的剑！贫僧曾听真君说过情伤可用斗法疗，也许持剑打几场架会好些。",
+        "text": "吕施主，你的剑！",
+        "manner": "开口提醒"
+      },
+      {
+        "para": 25,
+        "speaker": "知了和尚",
+        "addressee": "吕藏锋",
+        "text": "贫僧曾听真君说过情伤可用斗法疗，也许持剑打几场架会好些。",
         "manner": "开口提醒"
       },
       {
         "para": 30,
         "speaker": "知了和尚",
         "addressee": "吕藏锋的背影",
-        "text": "阿弥陀佛。学不会藏锋的剑，锋利足，但太容易崩刃了些。",
+        "text": "阿弥陀佛。",
+        "manner": "喃喃道"
+      },
+      {
+        "para": 30,
+        "speaker": "知了和尚",
+        "addressee": "吕藏锋的背影",
+        "text": "学不会藏锋的剑，锋利足，但太容易崩刃了些。",
         "manner": "喃喃道"
       },
       {
@@ -725,44 +746,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 68,
+      "total_quotes": 71,
       "counts": {
-        "exact": 65,
-        "near": 3,
+        "exact": 71,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9559,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "吕施主，据贫僧所知，你与姚姑娘并未深交，不该身陷至此才是。虽然贫僧如此说有些古怪，但天下男女并非一一对照，有缘人并非只此一个，施主年纪尚浅，可待来日，缘法重归。",
-          "para_claimed": 19,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8625,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        },
-        {
-          "quote": "吕施主，你的剑！贫僧曾听真君说过情伤可用斗法疗，也许持剑打几场架会好些。",
-          "para_claimed": 25,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8056,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        },
-        {
-          "quote": "阿弥陀佛。学不会藏锋的剑，锋利足，但太容易崩刃了些。",
-          "para_claimed": 30,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8077,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 20,
@@ -776,7 +769,8 @@
       159,
       160,
       161
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

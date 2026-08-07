@@ -1,0 +1,35 @@
+{
+  "canonical_name": "蝉儿",
+  "aliases": [
+    "小女孩",
+    "小丫头"
+  ],
+  "first_seq": 348,
+  "last_seq": 348,
+  "chapter_count": 1,
+  "chapters": [
+    348
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 348,
+      "state": "胆小，迷上仙人"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 348,
+      "actions": [
+        "洗手，吃饭",
+        "问唐真会不会法术",
+        "被哥哥凶，不再说话"
+      ]
+    }
+  ],
+  "id": "c548_蝉儿"
+}

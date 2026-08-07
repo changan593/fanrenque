@@ -1,0 +1,36 @@
+{
+  "canonical_name": "剑山男孩",
+  "aliases": [],
+  "first_seq": 530,
+  "last_seq": 530,
+  "chapter_count": 1,
+  "chapters": [
+    530
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 530,
+      "quote": "一个抱着重剑的小男孩"
+    }
+  ],
+  "states": [
+    {
+      "seq": 530,
+      "state": "参与搅乱"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 530,
+      "actions": [
+        "跳窗跟随周东东",
+        "一剑破开土地搅乱御林军"
+      ]
+    }
+  ],
+  "id": "c646_剑山男孩"
+}

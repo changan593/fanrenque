@@ -94,7 +94,7 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "她轻轻掀起一只袖子，露出洁白的藕臂，她微微握拳，小臂的皮肤上便忽然浮现出了很多血红色的纹路，像是一朵朵鲜花或者一条条蛇！"
+          "姚安饶轻轻掀起一只袖子，露出洁白的藕臂，她微微握拳，小臂的皮肤上便忽然浮现出了很多血红色的纹路，像是一朵朵鲜花或者一条条蛇！"
         ],
         "state": "冷静，似笑非笑，被尉天齐识破后冷冷看着",
         "actions": [
@@ -570,24 +570,14 @@
     "verbatim": {
       "total_quotes": 49,
       "counts": {
-        "exact": 48,
-        "near": 1,
+        "exact": 49,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9796,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "她轻轻掀起一只袖子，露出洁白的藕臂，她微微握拳，小臂的皮肤上便忽然浮现出了很多血红色的纹路，像是一朵朵鲜花或者一条条蛇！",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9833,
-          "para_correct": null,
-          "field": "characters[1].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 30,
@@ -597,7 +587,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

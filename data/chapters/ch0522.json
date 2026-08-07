@@ -448,6 +448,14 @@
         "manner": "说完也不再多言，拱了拱手"
       },
       {
+        "para": 62,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "公子只要带着我儿子行正事，我就一直是悬镜司的后盾。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 66,
         "speaker": "尉天齐",
         "addressee": "吴慢慢",
@@ -799,9 +807,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 70,
+      "total_quotes": 71,
       "counts": {
-        "exact": 70,
+        "exact": 71,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -826,7 +834,8 @@
       513,
       514,
       515
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

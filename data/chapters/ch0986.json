@@ -299,6 +299,14 @@
         "manner": "身后忽然有声音开口"
       },
       {
+        "para": 56,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你是本体还是分身",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 57,
         "speaker": "吕藏锋",
         "addressee": "姚安恕",
@@ -583,9 +591,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 54,
       "counts": {
-        "exact": 53,
+        "exact": 54,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -604,7 +612,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

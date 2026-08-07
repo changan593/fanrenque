@@ -1,0 +1,46 @@
+{
+  "canonical_name": "大长老",
+  "aliases": [
+    "姥爷"
+  ],
+  "first_seq": 928,
+  "last_seq": 1061,
+  "chapter_count": 3,
+  "chapters": [
+    928,
+    1049,
+    1061
+  ],
+  "role_distribution": {
+    "提及": 1,
+    "参与": 2
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1049,
+      "state": "在老人身旁"
+    },
+    {
+      "seq": 1061,
+      "state": "在屏风后，发声要求葵认罪"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1049,
+      "actions": [
+        "接受古命好行礼",
+        "在回忆中夺橙子塞给葵"
+      ]
+    },
+    {
+      "seq": 1061,
+      "actions": [
+        "在屏风后喊话要求葵认罪"
+      ]
+    }
+  ],
+  "id": "c253_大长老"
+}

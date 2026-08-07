@@ -373,7 +373,14 @@
         "para": 61,
         "speaker": "南季礼",
         "addressee": "巨人",
-        "text": "你师父虽不担责，但懂得自持，不加害旁人。你行事偏激，愧对圣位，不及你师父多矣。功过难抵，老夫今日为洪洲因你私欲而无端承受苦难者而出手，愿你罪孽能赎清一丝，死后再见你师父，你能有脸磕个头。",
+        "text": "你师父虽不担责，但懂得自持，不加害旁人。你行事偏激，愧对圣位，不及你师父多矣。",
+        "manner": "声音端正不加一点私情"
+      },
+      {
+        "para": 61,
+        "speaker": "南季礼",
+        "addressee": "巨人",
+        "text": "功过难抵，老夫今日为洪洲因你私欲而无端承受苦难者而出手，愿你罪孽能赎清一丝，死后再见你师父，你能有脸磕个头。",
         "manner": "声音端正不加一点私情"
       }
     ],
@@ -502,26 +509,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 35,
-        "near": 1,
+        "exact": 37,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9722,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "你师父虽不担责，但懂得自持，不加害旁人。你行事偏激，愧对圣位，不及你师父多矣。功过难抵，老夫今日为洪洲因你私欲而无端承受苦难者而出手，愿你罪孽能赎清一丝，死后再见你师父，你能有脸磕个头。",
-          "para_claimed": 61,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8172,
-          "para_correct": null,
-          "field": "dialogues[22]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 24,
@@ -531,7 +528,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

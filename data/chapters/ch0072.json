@@ -211,6 +211,14 @@
     ],
     "dialogues": [
       {
+        "para": 6,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "倒是蛮便捷的。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 15,
         "speaker": "姚安饶",
         "addressee": "红儿",
@@ -342,6 +350,14 @@
         "addressee": "王玉屏",
         "text": "你说不欢迎就不欢迎？天门山所有山脉都是我天门二十八主峰所属，你一个即将除名的副峰怎么敢这么和我金童峰说话的！",
         "manner": "说话声音也大了起来，特意着重咬了咬金童峰三个字"
+      },
+      {
+        "para": 62,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "金童峰在主峰只是第六位，又不是第一位，在我们玉屏山说话并不管用。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 63,
@@ -604,9 +620,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 56,
       "counts": {
-        "exact": 54,
+        "exact": 56,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -630,7 +646,8 @@
       63,
       64,
       65
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

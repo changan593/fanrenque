@@ -284,7 +284,14 @@
         "para": 45,
         "speaker": "第一大菩萨",
         "addressee": "唐真",
-        "text": "婆娑洲远离其他九洲，所以不得不依赖海运和鱼货，这些年佛船的发展确实很好。真君不要以为这是什么大港，这是一处沿海小港，真正的大港是由大寺庙经营的，在那里甚至有机会看到数百丈的佛船，即便是遇到天仙境的海妖也能与之周旋。",
+        "text": "婆娑洲远离其他九洲，所以不得不依赖海运和鱼货，这些年佛船的发展确实很好。",
+        "manner": "笑着解释"
+      },
+      {
+        "para": 45,
+        "speaker": "第一大菩萨",
+        "addressee": "唐真",
+        "text": "真君不要以为这是什么大港，这是一处沿海小港，真正的大港是由大寺庙经营的，在那里甚至有机会看到数百丈的佛船，即便是遇到天仙境的海妖也能与之周旋。",
         "manner": "笑着解释"
       },
       {
@@ -461,26 +468,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 38,
-        "near": 1,
+        "exact": 40,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9744,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "婆娑洲远离其他九洲，所以不得不依赖海运和鱼货，这些年佛船的发展确实很好。真君不要以为这是什么大港，这是一处沿海小港，真正的大港是由大寺庙经营的，在那里甚至有机会看到数百丈的佛船，即便是遇到天仙境的海妖也能与之周旋。",
-          "para_claimed": 45,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8879,
-          "para_correct": null,
-          "field": "dialogues[14]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 17,
@@ -493,7 +490,8 @@
     "context_chapters_used": [
       564,
       565
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,25 @@
+{
+  "canonical_name": "叔叔",
+  "aliases": [
+    "男人"
+  ],
+  "first_seq": 426,
+  "last_seq": 426,
+  "chapter_count": 1,
+  "chapters": [
+    426
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 426,
+      "state": "反对接令"
+    }
+  ],
+  "actions": [],
+  "id": "c580_叔叔"
+}

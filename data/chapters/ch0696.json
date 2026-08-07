@@ -250,7 +250,14 @@
         "para": 17,
         "speaker": "张狂",
         "addressee": "在场众人",
-        "text": "我看儒门魁首就交给南宁王府吧！白鹿洞和清水书院竟然比不过一位小姑娘吗？",
+        "text": "我看儒门魁首就交给南宁王府吧！",
+        "manner": "声音响起，挑拨"
+      },
+      {
+        "para": 17,
+        "speaker": "张狂",
+        "addressee": "在场众人",
+        "text": "白鹿洞和清水书院竟然比不过一位小姑娘吗？",
         "manner": "声音响起，挑拨"
       },
       {
@@ -278,7 +285,14 @@
         "para": 22,
         "speaker": "张狂",
         "addressee": "秦祖",
-        "text": "倒是个好字呢！那秦大公子可曾解出来？如果实在解不出来，白鹿洞也是儒门势力，可以求清水书院帮一帮吗！不丢人！",
+        "text": "倒是个好字呢！",
+        "manner": "话锋一转，直指秦祖"
+      },
+      {
+        "para": 22,
+        "speaker": "张狂",
+        "addressee": "秦祖",
+        "text": "那秦大公子可曾解出来？如果实在解不出来，白鹿洞也是儒门势力，可以求清水书院帮一帮吗！不丢人！",
         "manner": "话锋一转，直指秦祖"
       },
       {
@@ -327,7 +341,14 @@
         "para": 34,
         "speaker": "吕藏锋",
         "addressee": "尉天齐",
-        "text": "没有，我没头绪，所以瞎转转。你呢？你看出来了？啥字？",
+        "text": "没有，我没头绪，所以瞎转转。",
+        "manner": "摇头，举起酒杯反问"
+      },
+      {
+        "para": 34,
+        "speaker": "吕藏锋",
+        "addressee": "尉天齐",
+        "text": "你呢？你看出来了？啥字？",
         "manner": "摇头，举起酒杯反问"
       },
       {
@@ -552,44 +573,16 @@
     "structure_score": 88,
     "fidelity_score": 72,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 39,
       "counts": {
-        "exact": 33,
-        "near": 1,
-        "miss": 2,
+        "exact": 39,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9167,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "我看儒门魁首就交给南宁王府吧！白鹿洞和清水书院竟然比不过一位小姑娘吗？",
-          "para_claimed": 17,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5714,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "倒是个好字呢！那秦大公子可曾解出来？如果实在解不出来，白鹿洞也是儒门势力，可以求清水书院帮一帮吗！不丢人！",
-          "para_claimed": 22,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8679,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        },
-        {
-          "quote": "没有，我没头绪，所以瞎转转。你呢？你看出来了？啥字？",
-          "para_claimed": 34,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5385,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 26,
@@ -605,7 +598,8 @@
       693,
       694,
       695
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

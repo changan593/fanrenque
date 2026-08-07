@@ -343,7 +343,7 @@
       },
       {
         "para": 40,
-        "text": "姚安饶滚落到街旁，耳畔嗡鸣声更大了，她术法会的太少，自创的魔功又只是起步，本就算不得一个战力强的修士，面对天仙境闻人哭，她就像是一个任人把玩的玩偶。",
+        "text": "姚安饶滚落到街旁，耳畔嗡鸣声更大了，她术法会的太少，自创的魔功又只是起步，本就算不得一个战力强的修士，面对天仙境的闻人哭，她就像是一个任人把玩的玩偶。",
         "function": "人物背景"
       }
     ],
@@ -450,24 +450,14 @@
     "verbatim": {
       "total_quotes": 40,
       "counts": {
-        "exact": 39,
-        "near": 1,
+        "exact": 40,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.975,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "姚安饶滚落到街旁，耳畔嗡鸣声更大了，她术法会的太少，自创的魔功又只是起步，本就算不得一个战力强的修士，面对天仙境闻人哭，她就像是一个任人把玩的玩偶。",
-          "para_claimed": 40,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9865,
-          "para_correct": null,
-          "field": "narration[7]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 17,
@@ -477,7 +467,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -243,7 +243,14 @@
         "para": 16,
         "speaker": "唐真",
         "addressee": "吕藏锋",
-        "text": "哈，你以为我没躲过？我一躲到那，那位于念娘就跟防贼似的，把姚望舒的茶具被褥都全部换一套。",
+        "text": "哈，你以为我没躲过？",
+        "manner": "一耸肩"
+      },
+      {
+        "para": 16,
+        "speaker": "唐真",
+        "addressee": "吕藏锋",
+        "text": "我一躲到那，那位于念娘就跟防贼似的，把姚望舒的茶具被褥都全部换一套。",
         "manner": "一耸肩"
       },
       {
@@ -540,26 +547,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 35,
+      "total_quotes": 36,
       "counts": {
-        "exact": 34,
-        "near": 1,
+        "exact": 36,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9714,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哈，你以为我没躲过？我一躲到那，那位于念娘就跟防贼似的，把姚望舒的茶具被褥都全部换一套。",
-          "para_claimed": 16,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8182,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 24,
@@ -569,7 +566,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

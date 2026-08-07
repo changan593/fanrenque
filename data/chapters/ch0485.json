@@ -197,7 +197,14 @@
         "para": 11,
         "speaker": "姜赢",
         "addressee": "人皇",
-        "text": "回禀父皇。。。我。。我觉得，和安班虽然唱的不好，但终归是四大戏楼之一，小惩大诫才能。。才能让皇都的百姓满意啊！",
+        "text": "回禀父皇。。。我。。",
+        "manner": "磕磕绊绊道"
+      },
+      {
+        "para": 11,
+        "speaker": "姜赢",
+        "addressee": "人皇",
+        "text": "我觉得，和安班虽然唱的不好，但终归是四大戏楼之一，小惩大诫才能。。才能让皇都的百姓满意啊！",
         "manner": "磕磕绊绊道"
       },
       {
@@ -406,26 +413,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 21,
+      "total_quotes": 22,
       "counts": {
-        "exact": 20,
-        "near": 1,
+        "exact": 22,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9524,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "回禀父皇。。。我。。我觉得，和安班虽然唱的不好，但终归是四大戏楼之一，小惩大诫才能。。才能让皇都的百姓满意啊！",
-          "para_claimed": 11,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8182,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 9,
@@ -435,7 +432,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -349,6 +349,14 @@
         "manner": "纷纷拜倒"
       },
       {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "老人家，还有一事只说与你一人听。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 32,
         "speaker": "姚安饶",
         "addressee": "老拐子",
@@ -559,9 +567,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 39,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -584,7 +592,8 @@
       13,
       14,
       15
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

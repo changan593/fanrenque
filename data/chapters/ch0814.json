@@ -103,6 +103,16 @@
         "actions": [
           "劝谏姜赢，拔剑护主，识别梦魇，下令结阵，指出退路被断。"
         ]
+      },
+      {
+        "name": "白幡人影",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -167,6 +177,22 @@
         "addressee": "姜赢",
         "text": "都很顺利，目前来看除去零星独走的，应该已经清理的差不多了，这批从东北门涌入的只是妖族的斥候，数量少和质量也不算强。",
         "manner": "低声回答"
+      },
+      {
+        "para": 7,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "嗯。",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 12,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "走！回城墙！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 15,
@@ -571,9 +597,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 57,
+      "total_quotes": 59,
       "counts": {
-        "exact": 57,
+        "exact": 59,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -593,7 +619,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

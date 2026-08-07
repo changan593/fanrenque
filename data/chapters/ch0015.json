@@ -341,6 +341,14 @@
         "manner": ""
       },
       {
+        "para": 47,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：师父让你去，应该是另有原因。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 48,
         "speaker": "五师兄",
         "addressee": "周东东",
@@ -655,9 +663,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 60,
+        "exact": 61,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -680,7 +688,8 @@
       12,
       13,
       14
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

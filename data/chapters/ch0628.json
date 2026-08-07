@@ -406,6 +406,14 @@
         "manner": "低语"
       },
       {
+        "para": 16,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "走！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 23,
         "speaker": "刘知为",
         "addressee": "自己",
@@ -654,9 +662,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 46,
+        "exact": 47,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -675,7 +683,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -325,7 +325,14 @@
         "para": 44,
         "speaker": "不痴",
         "addressee": "红儿",
-        "text": "正是。师兄因身份原因并未住进普陀山，而是穿行于山林，如今也无法来到玉皇顶，故而让我来带话。",
+        "text": "正是。",
+        "manner": "点头"
+      },
+      {
+        "para": 44,
+        "speaker": "不痴",
+        "addressee": "红儿",
+        "text": "师兄因身份原因并未住进普陀山，而是穿行于山林，如今也无法来到玉皇顶，故而让我来带话。",
         "manner": "点头"
       },
       {
@@ -584,26 +591,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 42,
-        "near": 1,
+        "exact": 44,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9767,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "正是。师兄因身份原因并未住进普陀山，而是穿行于山林，如今也无法来到玉皇顶，故而让我来带话。",
-          "para_claimed": 44,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9333,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -617,7 +614,8 @@
       113,
       114,
       115
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

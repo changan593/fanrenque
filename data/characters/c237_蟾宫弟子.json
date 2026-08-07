@@ -1,0 +1,52 @@
+{
+  "canonical_name": "蟾宫弟子",
+  "aliases": [
+    "蟾宫修士"
+  ],
+  "first_seq": 297,
+  "last_seq": 341,
+  "chapter_count": 3,
+  "chapters": [
+    297,
+    313,
+    341
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 297,
+      "state": "在通天路结阵迎敌"
+    },
+    {
+      "seq": 341,
+      "state": "汇报消息"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 297,
+      "actions": [
+        "在通天路结阵迎敌"
+      ]
+    },
+    {
+      "seq": 313,
+      "actions": [
+        "随白师叔出现，随魏成离开"
+      ]
+    },
+    {
+      "seq": 341,
+      "actions": [
+        "汇报白玉宫情况",
+        "出示同意书",
+        "离开"
+      ]
+    }
+  ],
+  "id": "c237_蟾宫弟子"
+}

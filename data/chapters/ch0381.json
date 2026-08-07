@@ -217,6 +217,16 @@
           "被唐真牵着下山",
           "被唐假骑着"
         ]
+      },
+      {
+        "name": "郭师兄",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -399,6 +409,14 @@
         "addressee": "唐真",
         "text": "那就好，那就好啊！",
         "manner": "脸色暗了暗"
+      },
+      {
+        "para": 51,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "还好还好，她命中注定只跟高手过招，没工夫放飞自我。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 53,
@@ -650,9 +668,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 43,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -671,7 +689,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

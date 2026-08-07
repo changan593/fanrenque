@@ -235,6 +235,14 @@
         "manner": "低声道"
       },
       {
+        "para": 10,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "咳咳。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 12,
         "speaker": "首魔尊",
         "addressee": "姚望舒",
@@ -296,6 +304,14 @@
         "addressee": "姚望舒",
         "text": "死！！",
         "manner": "被激怒"
+      },
+      {
+        "para": 32,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不对！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 36,
@@ -556,9 +572,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 43,
       "counts": {
-        "exact": 41,
+        "exact": 43,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -578,7 +594,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

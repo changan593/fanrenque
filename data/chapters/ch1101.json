@@ -132,8 +132,8 @@
         "mentioned_only": false,
         "appearance_quotes": [
           "满身泥泞和血污",
-          "蓬头垢面，衣衫破烂，头发乱七八糟",
-          "脸上满是抓痕，一道道血珠从缝隙里挤出，混着眼泪流下，眼睛里全是通红的血丝"
+          "蓬头垢面了，衣衫破烂不说，头发也乱七八糟",
+          "脸上满是抓痕，一道道的血珠从缝隙里挤出，然后混着眼泪流下，男人的眼睛里全是通红的血丝"
         ],
         "state": "失心疯，惊恐，眼神呆滞",
         "actions": [
@@ -653,33 +653,14 @@
     "verbatim": {
       "total_quotes": 58,
       "counts": {
-        "exact": 56,
-        "near": 2,
+        "exact": 58,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9655,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "蓬头垢面，衣衫破烂，头发乱七八糟",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.75,
-          "para_correct": null,
-          "field": "characters[3].appearance_quotes[1]"
-        },
-        {
-          "quote": "脸上满是抓痕，一道道血珠从缝隙里挤出，混着眼泪流下，眼睛里全是通红的血丝",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8333,
-          "para_correct": null,
-          "field": "characters[3].appearance_quotes[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 26,
@@ -689,7 +670,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

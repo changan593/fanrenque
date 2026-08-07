@@ -288,6 +288,14 @@
         "addressee": "唐真",
         "text": "哦，我忘了，你或许就是在逃避，或许南红枝的失败吓破了你的胆？你已经不敢承担选择失败带来的后果了。",
         "manner": ""
+      },
+      {
+        "para": 38,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这本书的剧情都是死人在推进。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -606,9 +614,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 51,
+      "total_quotes": 52,
       "counts": {
-        "exact": 51,
+        "exact": 52,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -631,7 +639,8 @@
       246,
       247,
       248
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

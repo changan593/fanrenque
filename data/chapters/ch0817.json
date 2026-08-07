@@ -194,7 +194,14 @@
         "para": 1,
         "speaker": "唐真",
         "addressee": "姜赢",
-        "text": "唉。太子殿下，我们不是在斗法，我们是在进行一场战争，所有站在对立面的都是我们的敌人！战场上，没必要宽恕任何人，因为没人会宽恕你的。",
+        "text": "唉。",
+        "manner": "叹气，无奈"
+      },
+      {
+        "para": 1,
+        "speaker": "唐真",
+        "addressee": "姜赢",
+        "text": "太子殿下，我们不是在斗法，我们是在进行一场战争，所有站在对立面的都是我们的敌人！战场上，没必要宽恕任何人，因为没人会宽恕你的。",
         "manner": "叹气，无奈"
       },
       {
@@ -306,7 +313,14 @@
         "para": 25,
         "speaker": "唐真",
         "addressee": "姜赢",
-        "text": "舍利是金身炼出来的，跟佛国太大没关系，而且他背叛了佛国，但佛国又没背叛他。你知道他当初究竟是因为什么被赶出婆娑洲的吗？",
+        "text": "舍利是金身炼出来的，跟佛国太大没关系，而且他背叛了佛国，但佛国又没背叛他。",
+        "manner": "笑了笑"
+      },
+      {
+        "para": 25,
+        "speaker": "唐真",
+        "addressee": "姜赢",
+        "text": "你知道他当初究竟是因为什么被赶出婆娑洲的吗？",
         "manner": "笑了笑"
       },
       {
@@ -570,35 +584,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 46,
       "counts": {
-        "exact": 42,
-        "near": 2,
+        "exact": 46,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9545,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "唉。太子殿下，我们不是在斗法，我们是在进行一场战争，所有站在对立面的都是我们的敌人！战场上，没必要宽恕任何人，因为没人会宽恕你的。",
-          "para_claimed": 1,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9692,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        },
-        {
-          "quote": "舍利是金身炼出来的，跟佛国太大没关系，而且他背叛了佛国，但佛国又没背叛他。你知道他当初究竟是因为什么被赶出婆娑洲的吗？",
-          "para_claimed": 25,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8644,
-          "para_correct": null,
-          "field": "dialogues[16]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 28,
@@ -612,7 +607,8 @@
       813,
       814,
       815
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -214,7 +214,14 @@
         "para": 44,
         "speaker": "周东东",
         "addressee": "江流",
-        "text": "好！到时你就喊我紫云仙宫嫡传六弟子周东东！我就喊你剑山嫡传江流！到时你我一起仰天大笑！",
+        "text": "好！",
+        "manner": "拍着胸脯保证"
+      },
+      {
+        "para": 44,
+        "speaker": "周东东",
+        "addressee": "江流",
+        "text": "到时你就喊我紫云仙宫嫡传六弟子周东东！我就喊你剑山嫡传江流！到时你我一起仰天大笑！",
         "manner": "拍着胸脯保证"
       }
     ],
@@ -471,26 +478,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 29,
+      "total_quotes": 30,
       "counts": {
-        "exact": 28,
-        "near": 1,
+        "exact": 30,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9655,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "好！到时你就喊我紫云仙宫嫡传六弟子周东东！我就喊你剑山嫡传江流！到时你我一起仰天大笑！",
-          "para_claimed": 44,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9535,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 6,
@@ -500,7 +497,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

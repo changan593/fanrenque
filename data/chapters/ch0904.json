@@ -387,6 +387,14 @@
         "manner": ""
       },
       {
+        "para": 62,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "或许吧，但我并没有对你不满。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 64,
         "speaker": "程百尺",
         "addressee": "唐真",
@@ -724,9 +732,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 74,
+      "total_quotes": 75,
       "counts": {
-        "exact": 74,
+        "exact": 75,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -745,7 +753,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

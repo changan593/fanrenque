@@ -206,6 +206,14 @@
         "manner": "低着头"
       },
       {
+        "para": 7,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 8,
         "speaker": "人皇",
         "addressee": "姜麟",
@@ -274,6 +282,14 @@
         "addressee": "姜麟",
         "text": "这啊。。。都是你那个母亲的错，但你也别怪她，我印象里她就是那样的人。。。只喜欢孩子，简直像是一只生了一大窝崽子的母狗，要给任何一个看起来比自己小的生物喂奶。。。。",
         "manner": "后面的话有些模糊"
+      },
+      {
+        "para": 28,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "呼气。。吸气。。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 30,
@@ -614,9 +630,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 55,
+      "total_quotes": 57,
       "counts": {
-        "exact": 55,
+        "exact": 57,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -640,7 +656,8 @@
       713,
       714,
       715
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

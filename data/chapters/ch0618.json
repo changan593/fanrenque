@@ -201,7 +201,7 @@
         "type": "室外",
         "time_of_day": "清晨",
         "description_quotes": [
-          "小园的枯木空空荡荡，连一枚树叶都没有"
+          "小院的枯木空空荡荡，连一枚树叶都没有"
         ],
         "present_characters": [
           "江流",
@@ -642,24 +642,14 @@
     "verbatim": {
       "total_quotes": 54,
       "counts": {
-        "exact": 53,
-        "near": 1,
+        "exact": 54,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9815,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "小园的枯木空空荡荡，连一枚树叶都没有",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9444,
-          "para_correct": null,
-          "field": "scenes[1].description_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 37,
@@ -673,7 +663,8 @@
       615,
       616,
       617
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

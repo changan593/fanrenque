@@ -272,7 +272,14 @@
         "para": 6,
         "speaker": "古命好",
         "addressee": "姜羽",
-        "text": "唉——事情的真相和你们想的不一样，他们应该没兴趣救齐渊，他们只是在找一件东西。",
+        "text": "唉——",
+        "manner": "叹了口气，抬头道"
+      },
+      {
+        "para": 6,
+        "speaker": "古命好",
+        "addressee": "姜羽",
+        "text": "事情的真相和你们想的不一样，他们应该没兴趣救齐渊，他们只是在找一件东西。",
         "manner": "叹了口气，抬头道"
       },
       {
@@ -328,7 +335,14 @@
         "para": 16,
         "speaker": "古命好",
         "addressee": "葵",
-        "text": "不知道。许是见到了什么神识容不下的东西吧！",
+        "text": "不知道。",
+        "manner": "摇头"
+      },
+      {
+        "para": 16,
+        "speaker": "古命好",
+        "addressee": "葵",
+        "text": "许是见到了什么神识容不下的东西吧！",
         "manner": "摇头"
       },
       {
@@ -342,7 +356,14 @@
         "para": 18,
         "speaker": "姜羽",
         "addressee": "古命好",
-        "text": "无需你来说。你只需要告诉我，洪州到底在藏什么？",
+        "text": "无需你来说。",
+        "manner": "冷冷道"
+      },
+      {
+        "para": 18,
+        "speaker": "姜羽",
+        "addressee": "古命好",
+        "text": "你只需要告诉我，洪州到底在藏什么？",
         "manner": "冷冷道"
       },
       {
@@ -440,7 +461,14 @@
         "para": 43,
         "speaker": "田二郎",
         "addressee": "葛道人",
-        "text": "自然，但道法能创造一切。所以，洪洲的一切都和道法有关，你想知道的一切也必然如此。",
+        "text": "自然，但道法能创造一切。",
+        "manner": "拨开干果，放进嘴里，然后把手在自己脏兮兮的书生袍上擦了擦"
+      },
+      {
+        "para": 43,
+        "speaker": "田二郎",
+        "addressee": "葛道人",
+        "text": "所以，洪洲的一切都和道法有关，你想知道的一切也必然如此。",
         "manner": "拨开干果，放进嘴里，然后把手在自己脏兮兮的书生袍上擦了擦"
       },
       {
@@ -644,53 +672,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 50,
+      "total_quotes": 54,
       "counts": {
-        "exact": 46,
-        "near": 4,
+        "exact": 54,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.92,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "唉——事情的真相和你们想的不一样，他们应该没兴趣救齐渊，他们只是在找一件东西。",
-          "para_claimed": 6,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9231,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        },
-        {
-          "quote": "不知道。许是见到了什么神识容不下的东西吧！",
-          "para_claimed": 16,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8095,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        },
-        {
-          "quote": "无需你来说。你只需要告诉我，洪州到底在藏什么？",
-          "para_claimed": 18,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7391,
-          "para_correct": null,
-          "field": "dialogues[14]"
-        },
-        {
-          "quote": "自然，但道法能创造一切。所以，洪洲的一切都和道法有关，你想知道的一切也必然如此。",
-          "para_claimed": 43,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.725,
-          "para_correct": null,
-          "field": "dialogues[28]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 44,
@@ -704,7 +695,8 @@
       1072,
       1073,
       1074
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

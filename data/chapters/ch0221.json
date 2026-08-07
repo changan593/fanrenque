@@ -401,6 +401,14 @@
         "manner": "不通音律，但说的诚恳"
       },
       {
+        "para": 58,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "对了，我还有一事要问你来的。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 59,
         "speaker": "萧不同",
         "addressee": "唐真",
@@ -645,9 +653,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 59,
+      "total_quotes": 60,
       "counts": {
-        "exact": 59,
+        "exact": 60,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -670,7 +678,8 @@
       213,
       214,
       215
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

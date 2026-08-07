@@ -196,6 +196,14 @@
         "manner": "高呼"
       },
       {
+        "para": 9,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "道人以言，禁人以行",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 11,
         "speaker": "军队",
         "addressee": "在场众人",
@@ -436,9 +444,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 27,
+      "total_quotes": 28,
       "counts": {
-        "exact": 27,
+        "exact": 28,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -457,7 +465,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

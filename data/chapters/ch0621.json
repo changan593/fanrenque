@@ -173,6 +173,26 @@
         "appearance_quotes": [],
         "state": "与人皇喝茶",
         "actions": []
+      },
+      {
+        "name": "汇报者",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "武僧",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -320,14 +340,28 @@
         "para": 13,
         "speaker": "知了和尚",
         "addressee": "觉悔",
-        "text": "二圣没有统一意见？如若阿难二祖觉得该追究金觉佛陀之事，迦叶初祖觉得应当了利用道儒相争的乱局，二圣应该商讨后再做共同决定才是。",
+        "text": "二圣没有统一意见？",
+        "manner": "摇头"
+      },
+      {
+        "para": 13,
+        "speaker": "知了和尚",
+        "addressee": "觉悔",
+        "text": "如若阿难二祖觉得该追究金觉佛陀之事，迦叶初祖觉得应当了利用道儒相争的乱局，二圣应该商讨后再做共同决定才是。",
         "manner": "摇头"
       },
       {
         "para": 15,
         "speaker": "觉悔",
         "addressee": "知了和尚",
-        "text": "二圣的意见是统一的，不然就不会是我拿着多闻环来此了。只是阿难二祖似乎觉得我佛宗忍得太久了，有些急。",
+        "text": "二圣的意见是统一的，不然就不会是我拿着多闻环来此了。",
+        "manner": "摇头"
+      },
+      {
+        "para": 15,
+        "speaker": "觉悔",
+        "addressee": "知了和尚",
+        "text": "只是阿难二祖似乎觉得我佛宗忍得太久了，有些急。",
         "manner": "摇头"
       },
       {
@@ -675,35 +709,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 52,
+      "total_quotes": 54,
       "counts": {
-        "exact": 50,
-        "near": 2,
+        "exact": 54,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9615,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "二圣没有统一意见？如若阿难二祖觉得该追究金觉佛陀之事，迦叶初祖觉得应当了利用道儒相争的乱局，二圣应该商讨后再做共同决定才是。",
-          "para_claimed": 13,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8871,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        },
-        {
-          "quote": "二圣的意见是统一的，不然就不会是我拿着多闻环来此了。只是阿难二祖似乎觉得我佛宗忍得太久了，有些急。",
-          "para_claimed": 15,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8571,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 26,
@@ -717,7 +732,8 @@
       613,
       614,
       615
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

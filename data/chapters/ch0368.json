@@ -182,6 +182,36 @@
         "actions": [
           "在永和楼外观看三教御典，随后涌回楼内"
         ]
+      },
+      {
+        "name": "酒楼里的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "旁边的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "二楼探出头的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -292,7 +322,14 @@
         "para": 3,
         "speaker": "二楼探出头的人",
         "addressee": "旁边的人",
-        "text": "角度问题呗！善通坊这边位置不好，可能是挡住了！好了好了！结束了，没啥新意，皇上登完台，那边就快开始了，咱们这边也快了吧！",
+        "text": "角度问题呗！善通坊这边位置不好，可能是挡住了！",
+        "manner": "随口答道"
+      },
+      {
+        "para": 3,
+        "speaker": "二楼探出头的人",
+        "addressee": "旁边的人",
+        "text": "好了好了！结束了，没啥新意，皇上登完台，那边就快开始了，咱们这边也快了吧！",
         "manner": "随口答道"
       },
       {
@@ -334,7 +371,14 @@
         "para": 20,
         "speaker": "姚安饶",
         "addressee": "孩子们",
-        "text": "加油啊！演完这场，去找楼主每人领五两银子，全班放假三天，过过年节，都在皇都里好好玩玩，如果不知道去哪，就去找你们的‘天齐哥哥’问问，他是本地人呢。",
+        "text": "加油啊！",
+        "manner": "笑着鼓励"
+      },
+      {
+        "para": 20,
+        "speaker": "姚安饶",
+        "addressee": "孩子们",
+        "text": "演完这场，去找楼主每人领五两银子，全班放假三天，过过年节，都在皇都里好好玩玩，如果不知道去哪，就去找你们的‘天齐哥哥’问问，他是本地人呢。",
         "manner": "笑着鼓励"
       },
       {
@@ -619,35 +663,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 43,
       "counts": {
-        "exact": 39,
-        "near": 2,
+        "exact": 43,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9512,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "角度问题呗！善通坊这边位置不好，可能是挡住了！好了好了！结束了，没啥新意，皇上登完台，那边就快开始了，咱们这边也快了吧！",
-          "para_claimed": 3,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7667,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "加油啊！演完这场，去找楼主每人领五两银子，全班放假三天，过过年节，都在皇都里好好玩玩，如果不知道去哪，就去找你们的‘天齐哥哥’问问，他是本地人呢。",
-          "para_claimed": 20,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9452,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 20,
@@ -661,7 +686,8 @@
       363,
       364,
       365
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

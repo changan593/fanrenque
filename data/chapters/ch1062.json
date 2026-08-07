@@ -263,6 +263,14 @@
         "manner": "仰起头看向天空"
       },
       {
+        "para": 13,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "如今我与我座下的僧侣都像个笑话一般。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 14,
         "speaker": "唐真",
         "addressee": "阿难",
@@ -644,9 +652,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 52,
+      "total_quotes": 53,
       "counts": {
-        "exact": 52,
+        "exact": 53,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -670,7 +678,8 @@
       1059,
       1060,
       1061
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -277,6 +277,14 @@
         "manner": "颤巍巍道"
       },
       {
+        "para": 43,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "天仙境。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 44,
         "speaker": "周东东",
         "addressee": "幺儿",
@@ -318,7 +326,7 @@
       {
         "para": 43,
         "character": "周东东",
-        "text": "天仙境。周东东扫视着场间，开始寻找那位棺仙，那光束中的女子显然不是主体，如果要出手，便要一击必杀！",
+        "text": "天仙境。”周东东扫视着场间，开始寻找那位棺仙，那光束中的女子显然不是主体，如果要出手，便要一击必杀！",
         "kind": "判断推理"
       }
     ],
@@ -572,26 +580,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 52,
+      "total_quotes": 53,
       "counts": {
-        "exact": 51,
-        "near": 1,
+        "exact": 53,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9808,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "天仙境。周东东扫视着场间，开始寻找那位棺仙，那光束中的女子显然不是主体，如果要出手，便要一击必杀！",
-          "para_claimed": 43,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9796,
-          "para_correct": null,
-          "field": "monologues[5]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 15,
@@ -603,7 +601,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

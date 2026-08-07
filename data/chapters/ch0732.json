@@ -168,6 +168,16 @@
         "appearance_quotes": [],
         "state": "年轻时来过狐宫",
         "actions": []
+      },
+      {
+        "name": "宫女",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -234,6 +244,14 @@
         "addressee": "姜羽",
         "text": "囚牛。",
         "manner": "低语"
+      },
+      {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "龙血种？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 16,
@@ -466,9 +484,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 33,
+      "total_quotes": 34,
       "counts": {
-        "exact": 33,
+        "exact": 34,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -487,7 +505,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -180,6 +180,14 @@
         "manner": "皱着眉，语气平稳"
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你确实变了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 16,
         "speaker": "人皇",
         "addressee": "唐真",
@@ -496,9 +504,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 43,
       "counts": {
-        "exact": 42,
+        "exact": 43,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -521,7 +529,8 @@
       863,
       864,
       865
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

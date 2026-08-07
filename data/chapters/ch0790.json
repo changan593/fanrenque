@@ -187,6 +187,36 @@
           "卷动海浪阻拦程百尺",
           "被无救魔尊抛出"
         ]
+      },
+      {
+        "name": "无救",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "金色古树",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "古月",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -257,6 +287,14 @@
         "addressee": "程百尺",
         "text": "师兄，你便是有一苇渡江的本事，但大海是无尽的。",
         "manner": "冷冷道"
+      },
+      {
+        "para": 12,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "只寄希望于人皇玺，并不能制服程百尺。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 14,
@@ -849,9 +887,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 93,
+      "total_quotes": 94,
       "counts": {
-        "exact": 93,
+        "exact": 94,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -870,7 +908,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

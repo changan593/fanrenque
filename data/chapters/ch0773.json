@@ -196,6 +196,16 @@
         "actions": [
           "宣告时间到了"
         ]
+      },
+      {
+        "name": "轿子（未明说人物）",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -597,7 +607,8 @@
       770,
       771,
       772
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

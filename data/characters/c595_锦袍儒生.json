@@ -1,0 +1,40 @@
+{
+  "canonical_name": "锦袍儒生",
+  "aliases": [
+    "前排一个锦袍儒生",
+    "前排另一个儒生"
+  ],
+  "first_seq": 445,
+  "last_seq": 445,
+  "chapter_count": 1,
+  "chapters": [
+    445
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 445,
+      "quote": "锦袍儒生"
+    }
+  ],
+  "states": [
+    {
+      "seq": 445,
+      "state": "参与围剿，每次在姚安饶叫价后加价一百"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 445,
+      "actions": [
+        "紧跟着举手叫价一千二",
+        "几乎和姚安饶前后脚开口叫价一千四",
+        "继续加价"
+      ]
+    }
+  ],
+  "id": "c595_锦袍儒生"
+}

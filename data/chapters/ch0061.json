@@ -291,6 +291,14 @@
         "manner": ""
       },
       {
+        "para": 44,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "若是妈妈还活着！一定不会允许那个女人进到家里来！你每天在妈妈灵位前就不会觉得羞耻吗！我要带着妈妈回姥爷家！才不会让她跟你在这里受这种委屈！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 48,
         "speaker": "唐真",
         "addressee": "姜羽",
@@ -993,9 +1001,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 108,
+      "total_quotes": 109,
       "counts": {
-        "exact": 108,
+        "exact": 109,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -1014,7 +1022,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

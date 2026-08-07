@@ -296,7 +296,14 @@
         "para": 19,
         "speaker": "人皇",
         "addressee": "闻人哭",
-        "text": "真的？可我听说，有人专门策动儒生并调遣御林军，在善通坊里安排了一场冲突。",
+        "text": "真的？",
+        "manner": "俯身向前，小声开口"
+      },
+      {
+        "para": 19,
+        "speaker": "人皇",
+        "addressee": "闻人哭",
+        "text": "可我听说，有人专门策动儒生并调遣御林军，在善通坊里安排了一场冲突。",
         "manner": "俯身向前，小声开口"
       },
       {
@@ -606,26 +613,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 47,
+      "total_quotes": 48,
       "counts": {
-        "exact": 46,
-        "near": 1,
+        "exact": 48,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9787,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 2,
-      "problems": [
-        {
-          "quote": "真的？可我听说，有人专门策动儒生并调遣御林军，在善通坊里安排了一场冲突。",
-          "para_claimed": 19,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9167,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 28,
@@ -635,7 +632,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

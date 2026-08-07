@@ -153,6 +153,16 @@
         "appearance_quotes": [],
         "state": "曾给姜甲讲过变故。",
         "actions": []
+      },
+      {
+        "name": "未知（人皇）",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -583,7 +593,8 @@
       771,
       772,
       773
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

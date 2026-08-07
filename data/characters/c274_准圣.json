@@ -1,0 +1,20 @@
+{
+  "canonical_name": "准圣",
+  "aliases": [],
+  "first_seq": 110,
+  "last_seq": 141,
+  "chapter_count": 2,
+  "chapters": [
+    110,
+    141
+  ],
+  "role_distribution": {
+    "提及": 1,
+    "出场": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [],
+  "id": "c274_准圣"
+}

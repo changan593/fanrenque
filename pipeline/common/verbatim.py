@@ -166,9 +166,29 @@ def check_analysis(analysis: dict, paragraphs: list[str]) -> dict:
 _SPEECH_RE = re.compile(r"[“\"]([^“”\"]{2,})")
 
 
-def find_speech(paragraphs: list[str]) -> list[str]:
-    """逐段扫描台词。必须按段扫，跨段扫会让一个坏引号污染后面整片正文。"""
-    return [s.strip() for p in paragraphs for s in _SPEECH_RE.findall(p) if s.strip()]
+# 中文引号不只用来引说话，也用来标绰号、术语、反语。
+# 「凡人」「高人」「六指大神」「仙人脑」「天残手」这些都被引号括着，但都不是台词。
+# 不区分就会把覆盖率压得很低，掩盖掉真正漏掉的台词。
+_SENT_MARK = "。！？…～~，,、；;：:"
+
+
+def is_speech(seg: str) -> bool:
+    """判断一段引号内容是不是「有人在说话」，而不是被引起来的名词。"""
+    s = (seg or "").strip()
+    if len(s) < 2:
+        return False
+    if len(s) >= 7:                       # 够长的，基本只能是话
+        return True
+    return any(ch in s for ch in _SENT_MARK)   # 短的要看有没有句读
+
+
+def find_speech(paragraphs: list[str], strict: bool = True) -> list[str]:
+    """
+    逐段扫描台词。必须按段扫，跨段扫会让一个坏引号污染后面整片正文。
+    strict=True 时滤掉「加引号的名词」，只留真正的说话。
+    """
+    segs = [s.strip() for p in paragraphs for s in _SPEECH_RE.findall(p) if s.strip()]
+    return [s for s in segs if is_speech(s)] if strict else segs
 
 
 def coverage_report(analysis: dict, paragraphs: list[str]) -> dict:

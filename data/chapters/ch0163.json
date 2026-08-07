@@ -250,6 +250,14 @@
         "manner": "温润的声音提问"
       },
       {
+        "para": 48,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这活呀，不是这么干的！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 49,
         "speaker": "唐真",
         "addressee": "白玉蟾",
@@ -460,9 +468,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 22,
+      "total_quotes": 23,
       "counts": {
-        "exact": 22,
+        "exact": 23,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -481,7 +489,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -224,7 +224,14 @@
         "para": 12,
         "speaker": "迦叶",
         "addressee": "唐真",
-        "text": "当然还有些别的事情，比如关于知了的事情。真君也不用着急做决定，此事我还需略做安排，阿难其人有大善，但厌恶魔修至极，如若处理不好，真君也要有麻烦，故而还请真君在我这悬空寺中，少与旁人说起此事。",
+        "text": "当然还有些别的事情，比如关于知了的事情。",
+        "manner": "目色平静"
+      },
+      {
+        "para": 12,
+        "speaker": "迦叶",
+        "addressee": "唐真",
+        "text": "真君也不用着急做决定，此事我还需略做安排，阿难其人有大善，但厌恶魔修至极，如若处理不好，真君也要有麻烦，故而还请真君在我这悬空寺中，少与旁人说起此事。",
         "manner": "目色平静"
       },
       {
@@ -350,7 +357,14 @@
         "para": 43,
         "speaker": "唐真",
         "addressee": "王善",
-        "text": "嘶——有没有可能重和轻只是意象？是让你心里沉住。",
+        "text": "嘶——",
+        "manner": "呲着牙"
+      },
+      {
+        "para": 43,
+        "speaker": "唐真",
+        "addressee": "王善",
+        "text": "有没有可能重和轻只是意象？是让你心里沉住。",
         "manner": "呲着牙"
       },
       {
@@ -553,35 +567,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 46,
       "counts": {
-        "exact": 42,
-        "near": 2,
+        "exact": 46,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9545,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "当然还有些别的事情，比如关于知了的事情。真君也不用着急做决定，此事我还需略做安排，阿难其人有大善，但厌恶魔修至极，如若处理不好，真君也要有麻烦，故而还请真君在我这悬空寺中，少与旁人说起此事。",
-          "para_claimed": 12,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9053,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        },
-        {
-          "quote": "嘶——有没有可能重和轻只是意象？是让你心里沉住。",
-          "para_claimed": 43,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.875,
-          "para_correct": null,
-          "field": "dialogues[24]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 30,
@@ -591,7 +586,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

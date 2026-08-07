@@ -307,6 +307,14 @@
         "manner": "声音沉闷如鼓"
       },
       {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "如此父子之情，终是让人羡羡。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 21,
         "speaker": "帝后娘娘",
         "addressee": "荀阿鹄",
@@ -788,9 +796,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 68,
+      "total_quotes": 69,
       "counts": {
-        "exact": 68,
+        "exact": 69,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -814,7 +822,8 @@
       846,
       847,
       848
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

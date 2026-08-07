@@ -234,6 +234,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 4,
         "speaker": "小丫头",
         "addressee": "红儿",
@@ -358,6 +366,14 @@
         "addressee": "尉天齐",
         "text": "嗯！",
         "manner": "抬了抬下巴"
+      },
+      {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "请！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 36,
@@ -562,9 +578,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 38,
       "counts": {
-        "exact": 36,
+        "exact": 38,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -588,7 +604,8 @@
       318,
       319,
       320
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

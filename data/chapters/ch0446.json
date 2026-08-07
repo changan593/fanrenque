@@ -145,6 +145,16 @@
           "买下恕索坊坊主之位",
           "接过坊主令，走向巨大灯笼"
         ]
+      },
+      {
+        "name": "黑袍人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -347,6 +357,14 @@
         "addressee": "黑袍人",
         "text": "“哦！对了！你可以开些自己的店铺，但税收是必须按时交纳的！如果经营不善，我们京府衙门可能会要求整改，如果还是不行，不排除收回坊主之位！”七品官员转过身，他有些懒散的低声道：“我们也知道，这地界灰产多，但还是那句话，能不出人命就不出人命，即便出了也必须有合理的理由，别扯什么‘意外’，而且每条人命不论有没有理由，都会提高当月的缴费！你有意见吗？”",
         "manner": ""
+      },
+      {
+        "para": 56,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你明白没有！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 59,
@@ -704,9 +722,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 69,
+      "total_quotes": 70,
       "counts": {
-        "exact": 69,
+        "exact": 70,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -730,7 +748,8 @@
       443,
       444,
       445
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

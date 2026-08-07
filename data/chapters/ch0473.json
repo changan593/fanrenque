@@ -173,6 +173,14 @@
     ],
     "dialogues": [
       {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "无欲常教心似水，有言自觉气如霜。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 12,
         "speaker": "下人",
         "addressee": "在场众人",
@@ -448,9 +456,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 32,
       "counts": {
-        "exact": 31,
+        "exact": 32,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -473,7 +481,8 @@
       470,
       471,
       472
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

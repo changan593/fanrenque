@@ -320,6 +320,14 @@
         "manner": "惨白着脸"
       },
       {
+        "para": 26,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "都是。。。都是从上游朝阳城那边飘过来的！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 27,
         "speaker": "姚城主",
         "addressee": "在场众人",
@@ -609,9 +617,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 47,
+      "total_quotes": 48,
       "counts": {
-        "exact": 47,
+        "exact": 48,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -635,7 +643,8 @@
       13,
       14,
       15
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

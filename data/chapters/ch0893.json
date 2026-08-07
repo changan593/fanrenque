@@ -211,6 +211,26 @@
         "appearance_quotes": [],
         "state": "在地牢中",
         "actions": []
+      },
+      {
+        "name": "为首那僧人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "十数个高僧",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -336,6 +356,14 @@
         "addressee": "尉天齐",
         "text": "我们派去的人都没有从地牢里出来。",
         "manner": "缓缓摇头"
+      },
+      {
+        "para": 36,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "地牢里眼下情况并不清楚！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 37,
@@ -680,9 +708,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 55,
       "counts": {
-        "exact": 54,
+        "exact": 55,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -701,7 +729,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

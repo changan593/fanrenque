@@ -192,6 +192,16 @@
         "appearance_quotes": [],
         "state": "被姜羽甩飞，砸入墙体",
         "actions": []
+      },
+      {
+        "name": "人头",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -260,6 +270,14 @@
         "addressee": "周东东和幺儿",
         "text": "你们俩待在棋盘上！不准下来！",
         "manner": "声音十分严肃"
+      },
+      {
+        "para": 53,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "魔尊中最让人不齿的，就是挖坟盗墓毁坏尸体的小偷了。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -440,9 +458,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 24,
+      "total_quotes": 25,
       "counts": {
-        "exact": 24,
+        "exact": 25,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -461,7 +479,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

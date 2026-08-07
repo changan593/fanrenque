@@ -192,6 +192,14 @@
         "manner": "简单的笑了一下"
       },
       {
+        "para": 2,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "或许吧。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 3,
         "speaker": "古月皇贵妃",
         "addressee": "帝后娘娘",
@@ -547,9 +555,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -568,7 +576,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

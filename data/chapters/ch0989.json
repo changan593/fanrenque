@@ -204,6 +204,14 @@
         "manner": "一惊"
       },
       {
+        "para": 20,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你如今神识不全，运行观想之法只会更加伤重。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 21,
         "speaker": "姚安恕",
         "addressee": "白子鹤",
@@ -479,9 +487,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 39,
       "counts": {
-        "exact": 38,
+        "exact": 39,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -500,7 +508,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

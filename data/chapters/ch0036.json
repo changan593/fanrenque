@@ -392,6 +392,14 @@
         "manner": ""
       },
       {
+        "para": 75,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我。。。告诉你。。方向。你。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 76,
         "speaker": "师姐",
         "addressee": "姚安饶",
@@ -655,9 +663,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 62,
+      "total_quotes": 63,
       "counts": {
-        "exact": 62,
+        "exact": 63,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -680,7 +688,8 @@
       33,
       34,
       35
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

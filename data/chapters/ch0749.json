@@ -141,6 +141,16 @@
           "得知御林军叛变，询问两松观观主",
           "拔剑准备迎战"
         ]
+      },
+      {
+        "name": "门外的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -246,6 +256,14 @@
         "addressee": "姜赢",
         "text": "跟丢了！",
         "manner": "高声回答"
+      },
+      {
+        "para": 47,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "无碍，应该无碍！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 48,
@@ -389,9 +407,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 24,
+      "total_quotes": 25,
       "counts": {
-        "exact": 24,
+        "exact": 25,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -410,7 +428,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

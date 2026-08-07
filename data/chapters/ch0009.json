@@ -274,6 +274,14 @@
         "manner": "有气无力的靠在墙边笑着打趣道"
       },
       {
+        "para": 27,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "藏起来了？还是来错方位了？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 32,
         "speaker": "王半仙",
         "addressee": "姚城主",
@@ -291,7 +299,14 @@
         "para": 35,
         "speaker": "姚城主",
         "addressee": "众骗子",
-        "text": "那是自然，谢谢各位仙师前来了！诸位仙师吃好喝好，若是能解救小女，我必送上令各位满意的谢礼！",
+        "text": "那是自然，谢谢各位仙师前来了！",
+        "manner": "皱着眉陪笑道"
+      },
+      {
+        "para": 35,
+        "speaker": "姚城主",
+        "addressee": "众骗子",
+        "text": "诸位仙师吃好喝好，若是能解救小女，我必送上令各位满意的谢礼！",
         "manner": "皱着眉陪笑道"
       },
       {
@@ -314,6 +329,22 @@
         "addressee": "赵护卫",
         "text": "不过，我城主府也不是什么施粥的地方，若是确定为行骗而来的，莫要留手。",
         "manner": "说到此处，方才有几分峥嵘之气"
+      },
+      {
+        "para": 40,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "最近府里不太平，护院更要加强防范，抓到可疑之人不必顾虑手段，审的出来就审，审不出来就斩了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "是！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -480,26 +511,16 @@
     "structure_score": 88,
     "fidelity_score": 62,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 35,
       "counts": {
-        "exact": 30,
+        "exact": 35,
         "near": 0,
-        "miss": 1,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9677,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "那是自然，谢谢各位仙师前来了！诸位仙师吃好喝好，若是能解救小女，我必送上令各位满意的谢礼！",
-          "para_claimed": 35,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6889,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -522,7 +543,8 @@
       6,
       7,
       8
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

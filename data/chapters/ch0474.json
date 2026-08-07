@@ -242,7 +242,14 @@
         "para": 14,
         "speaker": "施家家主",
         "addressee": "姚望舒",
-        "text": "此事，不行啊！我家祖母已经老迈，见不得外人，甚至说话都说不清了，您见了，不仅她老人家有损晚节，您也可能受到惊吓，还请宫主恕罪。",
+        "text": "此事，不行啊！",
+        "manner": "摇头笑道"
+      },
+      {
+        "para": 14,
+        "speaker": "施家家主",
+        "addressee": "姚望舒",
+        "text": "我家祖母已经老迈，见不得外人，甚至说话都说不清了，您见了，不仅她老人家有损晚节，您也可能受到惊吓，还请宫主恕罪。",
         "manner": "摇头笑道"
       },
       {
@@ -503,26 +510,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 38,
       "counts": {
-        "exact": 36,
-        "near": 1,
+        "exact": 38,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.973,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "此事，不行啊！我家祖母已经老迈，见不得外人，甚至说话都说不清了，您见了，不仅她老人家有损晚节，您也可能受到惊吓，还请宫主恕罪。",
-          "para_claimed": 14,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8889,
-          "para_correct": null,
-          "field": "dialogues[5]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 19,
@@ -536,7 +533,8 @@
       463,
       464,
       465
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

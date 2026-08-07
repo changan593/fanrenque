@@ -303,6 +303,14 @@
         "addressee": "白化",
         "text": "不能去！城里现在只有我们是修行者！如果我们出现在火灾现场，那唯一能放火的就只有你！或者我了！",
         "manner": "声音都在颤抖"
+      },
+      {
+        "para": 55,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "想不到真的是你望舒宫！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -575,9 +583,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 51,
+      "total_quotes": 52,
       "counts": {
-        "exact": 51,
+        "exact": 52,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -596,7 +604,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

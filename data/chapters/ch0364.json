@@ -217,6 +217,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "小女孩",
         "addressee": "在场众人",
@@ -283,7 +291,14 @@
         "para": 42,
         "speaker": "姚安饶",
         "addressee": "吕藏锋",
-        "text": "他当然演不了唐真，因为他是凡夫啊！虽然我挺讨厌唐真的，但有些时候你不得不承认这个人就是和别人不同。",
+        "text": "他当然演不了唐真，因为他是凡夫啊！",
+        "manner": "声音忽然有些迷离"
+      },
+      {
+        "para": 42,
+        "speaker": "姚安饶",
+        "addressee": "吕藏锋",
+        "text": "虽然我挺讨厌唐真的，但有些时候你不得不承认这个人就是和别人不同。",
         "manner": "声音忽然有些迷离"
       },
       {
@@ -297,7 +312,14 @@
         "para": 44,
         "speaker": "姚安饶",
         "addressee": "吕藏锋",
-        "text": "那可真是讨人厌的眼神啊。。我最开始只以为他是仙人、天骄，所以高傲至此。可后来发现，即便其他的仙人与天骄也不会将所有的一切都不放在眼里，不！他甚至不是天上的人，毕竟他可能连这片天地都没放在眼里。",
+        "text": "那可真是讨人厌的眼神啊。。",
+        "manner": "像是在回忆那个人"
+      },
+      {
+        "para": 44,
+        "speaker": "姚安饶",
+        "addressee": "吕藏锋",
+        "text": "我最开始只以为他是仙人、天骄，所以高傲至此。可后来发现，即便其他的仙人与天骄也不会将所有的一切都不放在眼里，不！他甚至不是天上的人，毕竟他可能连这片天地都没放在眼里。",
         "manner": "像是在回忆那个人"
       },
       {
@@ -330,7 +352,7 @@
       {
         "para": 27,
         "character": "永和楼楼主",
-        "text": "他不知他怎么了，印象里这不是挺活跃的一个小伙吗？而且第一次就演的这么好，要是他肯定喜不自胜。",
+        "text": "楼主不知他怎么了，印象里这不是挺活跃的一个小伙吗？而且第一次就演的这么好，要是他肯定喜不自胜。",
         "kind": "心理活动"
       },
       {
@@ -483,44 +505,16 @@
     "structure_score": 88,
     "fidelity_score": 72,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 34,
       "counts": {
-        "exact": 28,
-        "near": 2,
-        "miss": 1,
+        "exact": 34,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9032,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "他当然演不了唐真，因为他是凡夫啊！虽然我挺讨厌唐真的，但有些时候你不得不承认这个人就是和别人不同。",
-          "para_claimed": 42,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6939,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        },
-        {
-          "quote": "那可真是讨人厌的眼神啊。。我最开始只以为他是仙人、天骄，所以高傲至此。可后来发现，即便其他的仙人与天骄也不会将所有的一切都不放在眼里，不！他甚至不是天上的人，毕竟他可能连这片天地都没放在眼里。",
-          "para_claimed": 44,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8854,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        },
-        {
-          "quote": "他不知他怎么了，印象里这不是挺活跃的一个小伙吗？而且第一次就演的这么好，要是他肯定喜不自胜。",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9783,
-          "para_correct": null,
-          "field": "monologues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -536,7 +530,8 @@
       361,
       362,
       363
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -156,6 +156,14 @@
     ],
     "dialogues": [
       {
+        "para": 12,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "为什么不叫上我？也许多了我一切都可能不同！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 21,
         "speaker": "姜羽",
         "addressee": "唐真",
@@ -647,9 +655,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 70,
+      "total_quotes": 71,
       "counts": {
-        "exact": 70,
+        "exact": 71,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -672,7 +680,8 @@
       377,
       378,
       379
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

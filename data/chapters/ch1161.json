@@ -157,6 +157,16 @@
           "询问是否还清人情",
           "邀请孔雀明王站到自己一侧"
         ]
+      },
+      {
+        "name": "元永洁",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -640,7 +650,8 @@
       1158,
       1159,
       1160
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

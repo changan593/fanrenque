@@ -127,6 +127,16 @@
         "actions": [
           "骑马报信"
         ]
+      },
+      {
+        "name": "清泉茶庄",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -253,6 +263,14 @@
         "addressee": "在场众人",
         "text": "慎言！",
         "manner": "冷声道"
+      },
+      {
+        "para": 26,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "眼下根本不是在做买卖！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 42,
@@ -520,9 +538,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 42,
       "counts": {
-        "exact": 41,
+        "exact": 42,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -545,7 +563,8 @@
       1120,
       1121,
       1122
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

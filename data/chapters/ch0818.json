@@ -162,6 +162,16 @@
         "actions": [
           "向唐真讲解黑烟的来源"
         ]
+      },
+      {
+        "name": "书生",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -473,7 +483,8 @@
       815,
       816,
       817
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -226,6 +226,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "念娘",
         "addressee": "白子鹤",
@@ -252,6 +260,14 @@
         "addressee": "念娘",
         "text": "那我需不需要化妆？",
         "manner": "好奇地看了看如心死一般闭上眼的白子鹤，问道"
+      },
+      {
+        "para": 10,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "宫主！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 12,
@@ -600,9 +616,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 46,
       "counts": {
-        "exact": 44,
+        "exact": 46,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -622,7 +638,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

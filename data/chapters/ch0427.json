@@ -156,6 +156,16 @@
         "actions": [
           "哭嚎求饶"
         ]
+      },
+      {
+        "name": "父亲",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -529,7 +539,8 @@
     "repair_rounds": 0,
     "context_chapters_used": [
       415
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

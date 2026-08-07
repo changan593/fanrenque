@@ -270,7 +270,14 @@
         "para": 18,
         "speaker": "魏成",
         "addressee": "在场众人",
-        "text": "我玉蟾宫承蒙南洲修行界厚爱，暂为南洲道门魁首，既承其位，自然要为南洲修行界做出贡献，如今我等奉我宗门祖师白玉蟾之命，协助天门山脉群峰合并一宗！为我南洲再添新贵！此乃我南洲之大幸！亦是各位之大幸也！",
+        "text": "我玉蟾宫承蒙南洲修行界厚爱，暂为南洲道门魁首，既承其位，自然要为南洲修行界做出贡献，如今我等奉我宗门祖师白玉蟾之命，协助天门山脉群峰合并一宗！为我南洲再添新贵！",
+        "manner": "张开双臂大声道"
+      },
+      {
+        "para": 18,
+        "speaker": "魏成",
+        "addressee": "在场众人",
+        "text": "此乃我南洲之大幸！亦是各位之大幸也！",
         "manner": "张开双臂大声道"
       },
       {
@@ -333,7 +340,14 @@
         "para": 44,
         "speaker": "小胖",
         "addressee": "吕藏锋",
-        "text": "啊。可以！不过还请稍待，等前一人走远些，再进入，每人只有一炷香的时间，时间一到莫要逗留，不然恐有危险。",
+        "text": "啊。可以！",
+        "manner": "点头，又有些犹豫的补充"
+      },
+      {
+        "para": 44,
+        "speaker": "小胖",
+        "addressee": "吕藏锋",
+        "text": "不过还请稍待，等前一人走远些，再进入，每人只有一炷香的时间，时间一到莫要逗留，不然恐有危险。",
         "manner": "点头，又有些犹豫的补充"
       },
       {
@@ -347,7 +361,14 @@
         "para": 51,
         "speaker": "吕藏锋",
         "addressee": "魏成",
-        "text": "我？我没有啊。我只是来找人，人家拜山的规则就是如此，我总不好臭不要脸的往里强闯吧！",
+        "text": "我？我没有啊。",
+        "manner": "面无表情的开口"
+      },
+      {
+        "para": 51,
+        "speaker": "吕藏锋",
+        "addressee": "魏成",
+        "text": "我只是来找人，人家拜山的规则就是如此，我总不好臭不要脸的往里强闯吧！",
         "manner": "面无表情的开口"
       },
       {
@@ -567,44 +588,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 41,
       "counts": {
-        "exact": 35,
-        "near": 3,
+        "exact": 41,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9211,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我玉蟾宫承蒙南洲修行界厚爱，暂为南洲道门魁首，既承其位，自然要为南洲修行界做出贡献，如今我等奉我宗门祖师白玉蟾之命，协助天门山脉群峰合并一宗！为我南洲再添新贵！此乃我南洲之大幸！亦是各位之大幸也！",
-          "para_claimed": 18,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8776,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        },
-        {
-          "quote": "啊。可以！不过还请稍待，等前一人走远些，再进入，每人只有一炷香的时间，时间一到莫要逗留，不然恐有危险。",
-          "para_claimed": 44,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.902,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        },
-        {
-          "quote": "我？我没有啊。我只是来找人，人家拜山的规则就是如此，我总不好臭不要脸的往里强闯吧！",
-          "para_claimed": 51,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8293,
-          "para_correct": null,
-          "field": "dialogues[14]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -618,7 +611,8 @@
       100,
       101,
       102
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -206,7 +206,14 @@
         "para": 8,
         "speaker": "男子",
         "addressee": "李一",
-        "text": "并非是我让他来的，是他自己来的，他想为我做些什么。我们狐族确实会骗人，但却不会欺骗‘情爱’，这点狐族比人族好的多。",
+        "text": "并非是我让他来的，是他自己来的，他想为我做些什么。",
+        "manner": "抬头看向李一"
+      },
+      {
+        "para": 8,
+        "speaker": "男子",
+        "addressee": "李一",
+        "text": "我们狐族确实会骗人，但却不会欺骗‘情爱’，这点狐族比人族好的多。",
         "manner": "抬头看向李一"
       },
       {
@@ -503,26 +510,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 38,
       "counts": {
-        "exact": 36,
-        "near": 1,
+        "exact": 38,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.973,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "并非是我让他来的，是他自己来的，他想为我做些什么。我们狐族确实会骗人，但却不会欺骗‘情爱’，这点狐族比人族好的多。",
-          "para_claimed": 8,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7895,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 13,
@@ -532,7 +529,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -196,6 +196,14 @@
         "manner": "冲进院子，拉起手"
       },
       {
+        "para": 7,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "大家都在那里，快走！快去看看！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 14,
         "speaker": "云儿",
         "addressee": "小丫头",
@@ -250,6 +258,14 @@
         "addressee": "云儿",
         "text": "我并不曾强留下他们，也不是人贩子，虽然我们确实是来接你们走出山村的，毕竟。。。",
         "manner": "摊开手"
+      },
+      {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这里太苦了。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 32,
@@ -320,6 +336,14 @@
         "addressee": "云儿",
         "text": "来吧，别怕。",
         "manner": "伸出手"
+      },
+      {
+        "para": 47,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我姓齐，你可以叫我齐哥。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 54,
@@ -579,9 +603,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 57,
       "counts": {
-        "exact": 54,
+        "exact": 57,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -606,7 +630,8 @@
       913,
       914,
       915
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

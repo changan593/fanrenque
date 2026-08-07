@@ -200,11 +200,27 @@
     ],
     "dialogues": [
       {
+        "para": 3,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "名扬四海风云戏，业立千秋日月追",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 5,
         "speaker": "楼主",
         "addressee": "尉天齐",
         "text": "兄弟！你是好样的！假以时日必能成为皇都，不！大夏最好的‘真君’！",
         "manner": "拍着他的肩膀"
+      },
+      {
+        "para": 8,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "看‘真君’，要先嚼明白三庆班的轴子，吃透了四喜班的曲子，养大个春台班的孩子，见识过和安班的把子，最后，来到永和楼，去请饶儿班睁下眼子。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 12,
@@ -331,6 +347,14 @@
         "addressee": "林姑娘",
         "text": "你们也有支持的皇子？",
         "manner": ""
+      },
+      {
+        "para": 46,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "是二皇子还是三皇子？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 47,
@@ -644,9 +668,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 56,
       "counts": {
-        "exact": 53,
+        "exact": 56,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -668,7 +692,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

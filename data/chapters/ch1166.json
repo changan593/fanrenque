@@ -291,14 +291,28 @@
         "para": 45,
         "speaker": "木方生",
         "addressee": "迦叶",
-        "text": "怎么？你们佛宗不是已经扔进去不少人了吗？多我一个不行？",
+        "text": "怎么？",
+        "manner": "冷脸反问"
+      },
+      {
+        "para": 45,
+        "speaker": "木方生",
+        "addressee": "迦叶",
+        "text": "你们佛宗不是已经扔进去不少人了吗？多我一个不行？",
         "manner": "冷脸反问"
       },
       {
         "para": 46,
         "speaker": "迦叶",
         "addressee": "木方生",
-        "text": "可以，但只修螺生，进去后也做不了其他，不过是充当螺生的地基而已。我佛宗送进去的修士皆是为了此方可成，而不是为了如你这般寻人。",
+        "text": "可以，但只修螺生，进去后也做不了其他，不过是充当螺生的地基而已。",
+        "manner": "背对着她端坐着，声音平淡如水"
+      },
+      {
+        "para": 46,
+        "speaker": "迦叶",
+        "addressee": "木方生",
+        "text": "我佛宗送进去的修士皆是为了此方可成，而不是为了如你这般寻人。",
         "manner": "背对着她端坐着，声音平淡如水"
       },
       {
@@ -652,35 +666,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 56,
       "counts": {
-        "exact": 52,
-        "near": 1,
-        "miss": 1,
+        "exact": 56,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.963,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "怎么？你们佛宗不是已经扔进去不少人了吗？多我一个不行？",
-          "para_claimed": 45,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8889,
-          "para_correct": null,
-          "field": "dialogues[7]"
-        },
-        {
-          "quote": "可以，但只修螺生，进去后也做不了其他，不过是充当螺生的地基而已。我佛宗送进去的修士皆是为了此方可成，而不是为了如你这般寻人。",
-          "para_claimed": 46,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6613,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 19,
@@ -694,7 +689,8 @@
       1163,
       1164,
       1165
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

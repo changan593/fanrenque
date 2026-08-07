@@ -191,6 +191,14 @@
         "manner": "认真的扫视众人"
       },
       {
+        "para": 22,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "好吵。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 23,
         "speaker": "闻人哭",
         "addressee": "太和殿门口的护卫",
@@ -540,9 +548,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 46,
+        "exact": 47,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -566,7 +574,8 @@
       513,
       514,
       515
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

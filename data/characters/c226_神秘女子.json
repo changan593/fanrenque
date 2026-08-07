@@ -1,0 +1,68 @@
+{
+  "canonical_name": "神秘女子",
+  "aliases": [
+    "美丽姐姐"
+  ],
+  "first_seq": 65,
+  "last_seq": 895,
+  "chapter_count": 3,
+  "chapters": [
+    65,
+    782,
+    895
+  ],
+  "role_distribution": {
+    "提及": 1,
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 65,
+      "quote": "低着头，有些鬼鬼祟祟"
+    },
+    {
+      "seq": 782,
+      "quote": "那张精致的小圆脸上有些焦急"
+    },
+    {
+      "seq": 895,
+      "quote": "那是一个无比美丽的穿着墨绿色长裙的姐姐，面色有些清冷"
+    }
+  ],
+  "states": [
+    {
+      "seq": 65,
+      "state": "未明说"
+    },
+    {
+      "seq": 782,
+      "state": "先冷漠后焦急"
+    },
+    {
+      "seq": 895,
+      "state": "盘膝坐在棋盘上，被纸压住"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 65,
+      "actions": [
+        "敲门递给唐真小牌，低声询问特殊渠道"
+      ]
+    },
+    {
+      "seq": 782,
+      "actions": [
+        "发现昏迷的闻人哭，背起他离开"
+      ]
+    },
+    {
+      "seq": 895,
+      "actions": [
+        "发出声音问王善是否想活，并让他回头"
+      ]
+    }
+  ],
+  "id": "c226_神秘女子"
+}

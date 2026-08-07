@@ -93,6 +93,16 @@
         "actions": [
           "坚持向上，辩解自己并非证明不同，举剑指向法坛与南洲，宣战"
         ]
+      },
+      {
+        "name": "南洲各势力",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -538,7 +548,8 @@
       213,
       214,
       215
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

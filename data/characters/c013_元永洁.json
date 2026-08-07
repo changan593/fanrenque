@@ -32,7 +32,7 @@
   ],
   "first_seq": 204,
   "last_seq": 1200,
-  "chapter_count": 94,
+  "chapter_count": 95,
   "chapters": [
     204,
     237,
@@ -63,6 +63,7 @@
     631,
     632,
     637,
+    639,
     640,
     694,
     696,
@@ -132,7 +133,8 @@
   "role_distribution": {
     "主导": 17,
     "提及": 29,
-    "参与": 50
+    "参与": 50,
+    "出场": 2
   },
   "mentioned_only_count": 26,
   "appearance_quotes": [

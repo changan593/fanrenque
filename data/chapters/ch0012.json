@@ -287,6 +287,14 @@
         "manner": ""
       },
       {
+        "para": 25,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "还好你意志坚强，一直没有被吓倒。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 26,
         "speaker": "红儿",
         "addressee": "唐真",
@@ -583,9 +591,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 45,
       "counts": {
-        "exact": 44,
+        "exact": 45,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -608,7 +616,8 @@
       6,
       7,
       8
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

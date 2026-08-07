@@ -219,6 +219,14 @@
         "manner": "细细打量，然后点头道"
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这里是外殿，只有每年开山祭拜时才会请人打扫清理一番，平常只是每月固定擦拭一下神像罢了，后殿才是玉屏观的修行之所。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 17,
         "speaker": "王玉屏",
         "addressee": "唐真等人",
@@ -287,6 +295,14 @@
         "addressee": "郭师兄",
         "text": "当然是为了找两位有天赋的入道境弟子。",
         "manner": "声音也有些大"
+      },
+      {
+        "para": 33,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "难道就坐在这观里，每天指望玉女峰帮忙吗？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 34,
@@ -662,9 +678,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 63,
+      "total_quotes": 65,
       "counts": {
-        "exact": 63,
+        "exact": 65,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -688,7 +704,8 @@
       63,
       64,
       65
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

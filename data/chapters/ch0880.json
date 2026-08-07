@@ -242,6 +242,14 @@
         "manner": "将怀里的孩子轻轻抱紧，目光里闪过一丝怀念"
       },
       {
+        "para": 33,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "他也让我进入了白马寺，他说‘趁错的还不远改一改，改不好，他在一旁也能直接杀了我，免得让其他人受难。’他虽如此说，但一直在悉心教导，带着我修行，这才有了如今我成为准佛，却不曾堕入魔窟。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "法庆",
         "addressee": "迦叶",
@@ -438,9 +446,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 38,
       "counts": {
-        "exact": 37,
+        "exact": 38,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -459,7 +467,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

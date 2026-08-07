@@ -300,7 +300,14 @@
         "para": 48,
         "speaker": "藿",
         "addressee": "古命好",
-        "text": "我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！",
+        "text": "我以为你是唯一能理解我的人！",
+        "manner": "声音有些大，语气变得有些激动"
+      },
+      {
+        "para": 48,
+        "speaker": "藿",
+        "addressee": "古命好",
+        "text": "我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！",
         "manner": "声音有些大，语气变得有些激动"
       },
       {
@@ -527,26 +534,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 43,
       "counts": {
-        "exact": 41,
+        "exact": 43,
         "near": 0,
-        "miss": 1,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9762,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！",
-          "para_claimed": 48,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6585,
-          "para_correct": null,
-          "field": "dialogues[14]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 28,
@@ -560,7 +557,8 @@
       927,
       928,
       929
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

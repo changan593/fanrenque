@@ -222,6 +222,26 @@
         "actions": [
           "跟随红儿发银子"
         ]
+      },
+      {
+        "name": "赌徒",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "城主",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -296,6 +316,14 @@
         "addressee": "众人",
         "text": "赵客缦胡缨，吴钩霜雪明。银鞍照白马，飒沓如流星。十步杀一人，千里不留行。事了拂衣去，深藏身与名。。。",
         "manner": "吟唱"
+      },
+      {
+        "para": 8,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "凡天下用剑之人，吟我剑者，当破敌于前，无悔于胸。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 14,
@@ -417,6 +445,22 @@
         "manner": "扯开嗓子"
       },
       {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "梦魇残魂，即便有几分灵智也终究不全，极易被气势所迫。",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "赌徒之贪为极恶，可斩七情，二十个赌徒气血翻涌为贪所控，哪怕让他们变成狗他们都不带一丝犹豫，气势已成！说你是困兽，你是也是，不是也是！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 44,
         "speaker": "唐真",
         "addressee": "黑狗（梦魇）",
@@ -443,6 +487,14 @@
         "addressee": "唐真",
         "text": "嗷！",
         "manner": "悍然蹦起"
+      },
+      {
+        "para": 65,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "砰！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 77,
@@ -635,9 +687,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 44,
       "counts": {
-        "exact": 40,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -663,7 +715,8 @@
       14,
       15,
       16
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -346,6 +346,14 @@
         "manner": ""
       },
       {
+        "para": 34,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "有何具体要求吗？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "文宗",
         "addressee": "程百尺",
@@ -692,9 +700,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 58,
+      "total_quotes": 59,
       "counts": {
-        "exact": 58,
+        "exact": 59,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -715,7 +723,8 @@
     "repair_rounds": 0,
     "context_chapters_used": [
       965
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

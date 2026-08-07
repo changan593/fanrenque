@@ -258,7 +258,14 @@
         "para": 20,
         "speaker": "张狂",
         "addressee": "秦祖",
-        "text": "嗯。我还能再推一次！",
+        "text": "嗯。",
+        "manner": "呲着牙点头"
+      },
+      {
+        "para": 20,
+        "speaker": "张狂",
+        "addressee": "秦祖",
+        "text": "我还能再推一次！",
         "manner": "呲着牙点头"
       },
       {
@@ -535,26 +542,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 32,
+      "total_quotes": 33,
       "counts": {
-        "exact": 31,
-        "near": 1,
+        "exact": 33,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9688,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "嗯。我还能再推一次！",
-          "para_claimed": 20,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 12,
@@ -564,7 +561,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

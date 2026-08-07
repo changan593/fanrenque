@@ -408,6 +408,14 @@
         "manner": "语气不善"
       },
       {
+        "para": 29,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "直娘贼！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 30,
         "speaker": "老赵",
         "addressee": "队长",
@@ -462,6 +470,14 @@
         "addressee": "郎中",
         "text": "哦。。那可真是。。万幸啊。",
         "manner": "不自然的笑"
+      },
+      {
+        "para": 47,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "那我们先出去，让他先休养好了精神再来细细询问。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 48,
@@ -727,9 +743,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 62,
       "counts": {
-        "exact": 60,
+        "exact": 62,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -752,7 +768,8 @@
     "context_chapters_used": [
       14,
       15
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

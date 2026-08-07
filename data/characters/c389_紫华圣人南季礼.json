@@ -1,0 +1,25 @@
+{
+  "canonical_name": "紫华圣人南季礼",
+  "aliases": [
+    "南小子"
+  ],
+  "first_seq": 94,
+  "last_seq": 94,
+  "chapter_count": 1,
+  "chapters": [
+    94
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 94,
+      "state": "紫云仙宫宫主，圣人"
+    }
+  ],
+  "actions": [],
+  "id": "c389_紫华圣人南季礼"
+}

@@ -74,7 +74,7 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "背着那破烂的箩筐",
+          "背着他那破烂的箩筐",
           "衣衫陈旧",
           "身无分文"
         ],
@@ -488,24 +488,14 @@
     "verbatim": {
       "total_quotes": 40,
       "counts": {
-        "exact": 39,
-        "near": 1,
+        "exact": 40,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.975,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "背着那破烂的箩筐",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.875,
-          "para_correct": null,
-          "field": "characters[0].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 20,
@@ -520,7 +510,8 @@
     "context_chapters_used": [
       814,
       815
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

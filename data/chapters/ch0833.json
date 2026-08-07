@@ -163,7 +163,14 @@
         "para": 1,
         "speaker": "佛兵",
         "addressee": "尉天齐",
-        "text": "菩萨，可能需要您在此地稍歇几日。如今悬空寺内几位主事的高僧都比较忙，需等我们通报上去，您才能进入悬空寺拜见圣人。",
+        "text": "菩萨，可能需要您在此地稍歇几日。",
+        "manner": "低声道"
+      },
+      {
+        "para": 1,
+        "speaker": "佛兵",
+        "addressee": "尉天齐",
+        "text": "如今悬空寺内几位主事的高僧都比较忙，需等我们通报上去，您才能进入悬空寺拜见圣人。",
         "manner": "低声道"
       },
       {
@@ -642,26 +649,16 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 59,
-        "near": 1,
+        "exact": 61,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9833,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "菩萨，可能需要您在此地稍歇几日。如今悬空寺内几位主事的高僧都比较忙，需等我们通报上去，您才能进入悬空寺拜见圣人。",
-          "para_claimed": 1,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7321,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 31,
@@ -671,7 +668,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

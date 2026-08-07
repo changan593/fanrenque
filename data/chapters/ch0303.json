@@ -169,6 +169,16 @@
         "appearance_quotes": [],
         "state": "被提及，将建筑群划给剑山",
         "actions": []
+      },
+      {
+        "name": "男孩",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -273,6 +283,14 @@
         "manner": "茫然四顾"
       },
       {
+        "para": 36,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哈——啊！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 37,
         "speaker": "幺儿",
         "addressee": "周东东",
@@ -334,6 +352,14 @@
         "addressee": "幺儿",
         "text": "吴姐姐刚走。",
         "manner": "如实的说"
+      },
+      {
+        "para": 46,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "说了一堆奇怪的话！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 47,
@@ -587,9 +613,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 48,
       "counts": {
-        "exact": 46,
+        "exact": 48,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -609,7 +635,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

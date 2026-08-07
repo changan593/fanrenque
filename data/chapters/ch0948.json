@@ -210,7 +210,14 @@
         "para": 1,
         "speaker": "唐真",
         "addressee": "周东东",
-        "text": "东东。师兄我并不常管你，但这次不同，她并不是你认识的那个幺儿，这等以命河为道的魔尊根本无法预防，能做的就是远离。",
+        "text": "东东。",
+        "manner": "看着周东东，忍不住有些感慨"
+      },
+      {
+        "para": 1,
+        "speaker": "唐真",
+        "addressee": "周东东",
+        "text": "师兄我并不常管你，但这次不同，她并不是你认识的那个幺儿，这等以命河为道的魔尊根本无法预防，能做的就是远离。",
         "manner": "看着周东东，忍不住有些感慨"
       },
       {
@@ -606,26 +613,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 50,
+      "total_quotes": 51,
       "counts": {
-        "exact": 49,
-        "near": 1,
+        "exact": 51,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.98,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "东东。师兄我并不常管你，但这次不同，她并不是你认识的那个幺儿，这等以命河为道的魔尊根本无法预防，能做的就是远离。",
-          "para_claimed": 1,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9464,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -635,7 +632,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

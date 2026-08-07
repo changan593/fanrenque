@@ -1,0 +1,32 @@
+{
+  "canonical_name": "四位白袍中年男人",
+  "aliases": [
+    "四位长老"
+  ],
+  "first_seq": 449,
+  "last_seq": 449,
+  "chapter_count": 1,
+  "chapters": [
+    449
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 449,
+      "state": "白袍，躬身低头，安静。"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 449,
+      "actions": [
+        "躬身低头，回答姚望舒的问题"
+      ]
+    }
+  ],
+  "id": "c599_四位白袍中年男人"
+}

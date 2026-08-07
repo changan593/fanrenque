@@ -158,6 +158,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 18,
         "speaker": "唐真",
         "addressee": "",
@@ -495,9 +503,9 @@
     "structure_score": 88,
     "fidelity_score": 85,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 43,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -522,7 +530,8 @@
       327,
       328,
       329
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

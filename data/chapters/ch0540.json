@@ -209,7 +209,14 @@
         "para": 4,
         "speaker": "云儿",
         "addressee": "姚安饶",
-        "text": "并不是这样的哦。你只是被幻觉遮住了双眼而已，其实真实就在你的面前，只是你看不到，你与他之间相隔的并不是两个世界，而是一层纱。",
+        "text": "并不是这样的哦。",
+        "manner": "笑盈盈的拄着脑袋看着姚安饶"
+      },
+      {
+        "para": 4,
+        "speaker": "云儿",
+        "addressee": "姚安饶",
+        "text": "你只是被幻觉遮住了双眼而已，其实真实就在你的面前，只是你看不到，你与他之间相隔的并不是两个世界，而是一层纱。",
         "manner": "笑盈盈的拄着脑袋看着姚安饶"
       },
       {
@@ -237,7 +244,14 @@
         "para": 10,
         "speaker": "云儿",
         "addressee": "姚安饶",
-        "text": "当你太过弱小的时候，要学会放弃抵抗。无外乎是挖走你所有的记忆，然后我变成你，顶替出现在尉天齐面前，而你困在幻觉里，直到修行有成罢了。",
+        "text": "当你太过弱小的时候，要学会放弃抵抗。",
+        "manner": "那云儿与红儿交错的脸庞缓声道"
+      },
+      {
+        "para": 10,
+        "speaker": "云儿",
+        "addressee": "姚安饶",
+        "text": "无外乎是挖走你所有的记忆，然后我变成你，顶替出现在尉天齐面前，而你困在幻觉里，直到修行有成罢了。",
         "manner": "那云儿与红儿交错的脸庞缓声道"
       },
       {
@@ -601,35 +615,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 67,
+      "total_quotes": 69,
       "counts": {
-        "exact": 65,
-        "near": 2,
+        "exact": 69,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9701,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "并不是这样的哦。你只是被幻觉遮住了双眼而已，其实真实就在你的面前，只是你看不到，你与他之间相隔的并不是两个世界，而是一层纱。",
-          "para_claimed": 4,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.871,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "当你太过弱小的时候，要学会放弃抵抗。无外乎是挖走你所有的记忆，然后我变成你，顶替出现在尉天齐面前，而你困在幻觉里，直到修行有成罢了。",
-          "para_claimed": 10,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7424,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 18,
@@ -639,7 +634,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

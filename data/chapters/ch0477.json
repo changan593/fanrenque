@@ -219,6 +219,14 @@
         "manner": "叫她"
       },
       {
+        "para": 6,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "怎么了？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 7,
         "speaker": "姚望舒",
         "addressee": "秦怀雀",
@@ -476,9 +484,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 29,
+      "total_quotes": 30,
       "counts": {
-        "exact": 29,
+        "exact": 30,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -499,7 +507,8 @@
     "repair_rounds": 0,
     "context_chapters_used": [
       465
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

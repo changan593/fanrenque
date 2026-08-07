@@ -263,6 +263,14 @@
         "manner": "一边摆手一边走近了一些"
       },
       {
+        "para": 12,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这么大年纪了，这么晚还不睡觉。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 13,
         "speaker": "幺儿",
         "addressee": "程百尺",
@@ -289,6 +297,14 @@
         "addressee": "闻人哭",
         "text": "人皇陛下要与魔尊勾连？",
         "manner": "表情无比平淡"
+      },
+      {
+        "para": 26,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "别怕，慢慢说。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 27,
@@ -625,9 +641,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 55,
       "counts": {
-        "exact": 53,
+        "exact": 55,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -651,7 +667,8 @@
       563,
       564,
       565
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

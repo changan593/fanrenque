@@ -336,6 +336,14 @@
         "manner": "努力压制住自己纷乱的思绪，直白的反驳道"
       },
       {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "再说，白玉蟾曾告知我，天下之前便出现过多面琉璃灯！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 20,
         "speaker": "唐真",
         "addressee": "杜圣",
@@ -397,6 +405,14 @@
         "addressee": "唐真",
         "text": "不，并不是繁衍，而是创造。",
         "manner": "摇头"
+      },
+      {
+        "para": 30,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "是用两种类型的大道创造一个可以容纳琉璃灯的生灵。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 31,
@@ -655,9 +671,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 51,
       "counts": {
-        "exact": 49,
+        "exact": 51,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -681,7 +697,8 @@
       1008,
       1009,
       1010
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

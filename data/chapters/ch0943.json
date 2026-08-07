@@ -249,6 +249,14 @@
         "manner": "有些腼腆的笑了"
       },
       {
+        "para": 43,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你们一路进来累坏了吧。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 44,
         "speaker": "幺儿",
         "addressee": "周东东、江流",
@@ -512,9 +520,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 39,
       "counts": {
-        "exact": 38,
+        "exact": 39,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -537,7 +545,8 @@
       940,
       941,
       942
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

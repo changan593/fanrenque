@@ -342,7 +342,14 @@
         "para": 37,
         "speaker": "天魔尊",
         "addressee": "唐真",
-        "text": "真君妄言了。这等毫无根据的猜测对我何其不公？",
+        "text": "真君妄言了。",
+        "manner": "摇头"
+      },
+      {
+        "para": 37,
+        "speaker": "天魔尊",
+        "addressee": "唐真",
+        "text": "这等毫无根据的猜测对我何其不公？",
         "manner": "摇头"
       },
       {
@@ -647,26 +654,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 45,
+      "total_quotes": 46,
       "counts": {
-        "exact": 44,
-        "near": 1,
+        "exact": 46,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9778,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 2,
-      "problems": [
-        {
-          "quote": "真君妄言了。这等毫无根据的猜测对我何其不公？",
-          "para_claimed": 37,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7273,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 26,
@@ -676,7 +673,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

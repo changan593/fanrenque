@@ -202,6 +202,14 @@
         "manner": "淡淡的开口"
       },
       {
+        "para": 12,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "唐真的本体。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 14,
         "speaker": "唐真",
         "addressee": "天魔尊",
@@ -727,9 +735,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 76,
+      "total_quotes": 77,
       "counts": {
-        "exact": 76,
+        "exact": 77,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -749,7 +757,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

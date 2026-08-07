@@ -295,6 +295,14 @@
         "manner": "平静的转过头看向身旁的迦叶，随意的开口问道"
       },
       {
+        "para": 18,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "唉！还是赶紧走吧！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 57,
         "speaker": "唐真",
         "addressee": "老僧",
@@ -637,9 +645,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 43,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -658,7 +666,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

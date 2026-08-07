@@ -252,7 +252,14 @@
         "para": 26,
         "speaker": "人皇",
         "addressee": "左相",
-        "text": "谁说我要让他们夜间出动了？朕只是要他们承担追捕和调查的职责而已，不是爱卿说要严查严审却无人吗？",
+        "text": "谁说我要让他们夜间出动了？",
+        "manner": "看了看左相，笑道"
+      },
+      {
+        "para": 26,
+        "speaker": "人皇",
+        "addressee": "左相",
+        "text": "朕只是要他们承担追捕和调查的职责而已，不是爱卿说要严查严审却无人吗？",
         "manner": "看了看左相，笑道"
       },
       {
@@ -538,26 +545,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 38,
       "counts": {
-        "exact": 36,
-        "near": 1,
+        "exact": 38,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.973,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "谁说我要让他们夜间出动了？朕只是要他们承担追捕和调查的职责而已，不是爱卿说要严查严审却无人吗？",
-          "para_claimed": 26,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7447,
-          "para_correct": null,
-          "field": "dialogues[5]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 18,
@@ -567,7 +564,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

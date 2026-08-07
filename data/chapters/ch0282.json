@@ -147,6 +147,16 @@
           "吐槽儒术",
           "与店小二对话"
         ]
+      },
+      {
+        "name": "醉汉",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -156,7 +166,7 @@
         "time_of_day": "未明确",
         "description_quotes": [
           "一位酒桌上的酒客看着那笔走龙蛇的墨迹",
-          "在幽暗的小角落里"
+          "那幽暗的小角落"
         ],
         "present_characters": [
           "尉天齐",
@@ -439,24 +449,14 @@
     "verbatim": {
       "total_quotes": 34,
       "counts": {
-        "exact": 33,
-        "near": 1,
+        "exact": 34,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9706,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "在幽暗的小角落里",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.75,
-          "para_correct": null,
-          "field": "scenes[0].description_quotes[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 21,
@@ -466,7 +466,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

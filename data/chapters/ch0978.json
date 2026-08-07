@@ -301,7 +301,14 @@
         "para": 41,
         "speaker": "元永洁",
         "addressee": "姜赢",
-        "text": "走了一半回来了。紫云守住了逃跑的官道，百姓交给左右相了，我要了一匹马一路骑回来的。",
+        "text": "走了一半回来了。",
+        "manner": "似乎知道他想问什么"
+      },
+      {
+        "para": 41,
+        "speaker": "元永洁",
+        "addressee": "姜赢",
+        "text": "紫云守住了逃跑的官道，百姓交给左右相了，我要了一匹马一路骑回来的。",
         "manner": "似乎知道他想问什么"
       },
       {
@@ -385,7 +392,14 @@
         "para": 62,
         "speaker": "元永洁",
         "addressee": "姜赢",
-        "text": "书剑双绝。紫云五弟子，年纪小，出手少，但据说心性极佳。",
+        "text": "书剑双绝。",
+        "manner": "看着秦怀雀开口道"
+      },
+      {
+        "para": 62,
+        "speaker": "元永洁",
+        "addressee": "姜赢",
+        "text": "紫云五弟子，年纪小，出手少，但据说心性极佳。",
         "manner": "看着秦怀雀开口道"
       },
       {
@@ -641,35 +655,16 @@
     "structure_score": 92,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 55,
       "counts": {
-        "exact": 51,
-        "near": 2,
+        "exact": 55,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9623,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "走了一半回来了。紫云守住了逃跑的官道，百姓交给左右相了，我要了一匹马一路骑回来的。",
-          "para_claimed": 41,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8049,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        },
-        {
-          "quote": "书剑双绝。紫云五弟子，年纪小，出手少，但据说心性极佳。",
-          "para_claimed": 62,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8148,
-          "para_correct": null,
-          "field": "dialogues[23]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 28,
@@ -679,7 +674,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

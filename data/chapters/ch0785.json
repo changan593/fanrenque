@@ -208,7 +208,14 @@
         "para": 4,
         "speaker": "南宁王",
         "addressee": "元永洁",
-        "text": "姜羽是只凤凰，李一是剑鬼之女，唐真是紫云仙宫全力培养的天骄，想来也是身世不凡的，这些天才的共通之处显而易见，都是十四处级别的宗门运营后得到的结果！而我早就说过，你的天赋其实并不弱于她们。",
+        "text": "姜羽是只凤凰，李一是剑鬼之女，唐真是紫云仙宫全力培养的天骄，想来也是身世不凡的，这些天才的共通之处显而易见，都是十四处级别的宗门运营后得到的结果！",
+        "manner": "语气平静"
+      },
+      {
+        "para": 4,
+        "speaker": "南宁王",
+        "addressee": "元永洁",
+        "text": "而我早就说过，你的天赋其实并不弱于她们。",
         "manner": "语气平静"
       },
       {
@@ -576,26 +583,16 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 48,
-        "near": 1,
+        "exact": 50,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9796,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "姜羽是只凤凰，李一是剑鬼之女，唐真是紫云仙宫全力培养的天骄，想来也是身世不凡的，这些天才的共通之处显而易见，都是十四处级别的宗门运营后得到的结果！而我早就说过，你的天赋其实并不弱于她们。",
-          "para_claimed": 4,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8172,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -605,7 +602,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -249,6 +249,14 @@
         "manner": ""
       },
       {
+        "para": 29,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这个你替她收好，此物我已二次炼化，防身尚可。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 36,
         "speaker": "李一",
         "addressee": "周东东",
@@ -517,9 +525,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 39,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -542,7 +550,8 @@
       167,
       168,
       169
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

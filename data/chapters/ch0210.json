@@ -150,6 +150,26 @@
         "appearance_quotes": [],
         "state": "已死",
         "actions": []
+      },
+      {
+        "name": "裴林剑",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "报信人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -262,6 +282,14 @@
         "addressee": "萧不同",
         "text": "昨晚，有两位魔尊潜入玉蟾宫，袭杀了玉蟾祖师，蟾宫唯一的准圣拼死抵抗，被废了修为，此时正在召各地蟾宫修士回宫！",
         "manner": "声音有些低"
+      },
+      {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "死了啊。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 36,
@@ -521,9 +549,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 43,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -542,7 +570,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

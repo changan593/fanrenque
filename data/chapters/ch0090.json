@@ -251,7 +251,14 @@
         "para": 12,
         "speaker": "屏姐",
         "addressee": "唐真",
-        "text": "这么多讲究吗？你把我的多给红儿和小胖分点，我吃了也没啥用的。",
+        "text": "这么多讲究吗？",
+        "manner": "有些记不住"
+      },
+      {
+        "para": 12,
+        "speaker": "屏姐",
+        "addressee": "唐真",
+        "text": "你把我的多给红儿和小胖分点，我吃了也没啥用的。",
         "manner": "有些记不住"
       },
       {
@@ -321,7 +328,14 @@
         "para": 34,
         "speaker": "唐真",
         "addressee": "姚安饶",
-        "text": "到时候，红儿会帮我压阵，她有红钗护佑，应是无碍。但我若是入魔太深又或者被人夺舍，红钗所化凤凰火便可能焚尽我。",
+        "text": "到时候，红儿会帮我压阵，她有红钗护佑，应是无碍。",
+        "manner": "扭过头看她"
+      },
+      {
+        "para": 34,
+        "speaker": "唐真",
+        "addressee": "姚安饶",
+        "text": "但我若是入魔太深又或者被人夺舍，红钗所化凤凰火便可能焚尽我。",
         "manner": "扭过头看她"
       },
       {
@@ -570,35 +584,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 40,
       "counts": {
-        "exact": 36,
-        "near": 1,
-        "miss": 1,
+        "exact": 40,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9474,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "这么多讲究吗？你把我的多给红儿和小胖分点，我吃了也没啥用的。",
-          "para_claimed": 12,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7667,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        },
-        {
-          "quote": "到时候，红儿会帮我压阵，她有红钗护佑，应是无碍。但我若是入魔太深又或者被人夺舍，红钗所化凤凰火便可能焚尽我。",
-          "para_claimed": 34,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5926,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 22,
@@ -612,7 +607,8 @@
       87,
       88,
       89
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

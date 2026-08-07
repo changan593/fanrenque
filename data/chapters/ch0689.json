@@ -150,6 +150,16 @@
         "appearance_quotes": [],
         "state": "在收拾法宝，准备帮尉天齐",
         "actions": []
+      },
+      {
+        "name": "纸剑文字",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -421,7 +431,7 @@
       },
       {
         "para": 11,
-        "text": "来人正是杜家年轻一代的佼佼者，杜有为。",
+        "text": "来人正是杜家年轻一代的佼佼者，独有为。",
         "function": "人物背景"
       },
       {
@@ -603,24 +613,14 @@
     "verbatim": {
       "total_quotes": 46,
       "counts": {
-        "exact": 45,
-        "near": 1,
+        "exact": 46,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9783,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "来人正是杜家年轻一代的佼佼者，杜有为。",
-          "para_claimed": 11,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9474,
-          "para_correct": null,
-          "field": "narration[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -630,7 +630,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,25 @@
+{
+  "canonical_name": "北阳城城主",
+  "aliases": [
+    "中年男人"
+  ],
+  "first_seq": 1060,
+  "last_seq": 1060,
+  "chapter_count": 1,
+  "chapters": [
+    1060
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1060,
+      "state": "已死"
+    }
+  ],
+  "actions": [],
+  "id": "c917_北阳城城主"
+}

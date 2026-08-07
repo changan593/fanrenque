@@ -1,0 +1,30 @@
+{
+  "canonical_name": "南洲准圣",
+  "aliases": [],
+  "first_seq": 227,
+  "last_seq": 227,
+  "chapter_count": 1,
+  "chapters": [
+    227
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 227,
+      "state": "愤怒，高声指责红儿"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 227,
+      "actions": [
+        "高声喝骂红儿，指责其毁蟾宫"
+      ]
+    }
+  ],
+  "id": "c490_南洲准圣"
+}

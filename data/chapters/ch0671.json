@@ -224,6 +224,16 @@
         "appearance_quotes": [],
         "state": "",
         "actions": []
+      },
+      {
+        "name": "滑板者",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -402,7 +412,14 @@
         "para": 55,
         "speaker": "唐真",
         "addressee": "老僧",
-        "text": "老头！你知道你女儿一直在找你吗？她还想问问，她还有没有妈妈？",
+        "text": "老头！",
+        "manner": "咧开嘴角，残忍而兴奋"
+      },
+      {
+        "para": 55,
+        "speaker": "唐真",
+        "addressee": "老僧",
+        "text": "你知道你女儿一直在找你吗？她还想问问，她还有没有妈妈？",
         "manner": "咧开嘴角，残忍而兴奋"
       },
       {
@@ -964,26 +981,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 93,
+      "total_quotes": 94,
       "counts": {
-        "exact": 92,
-        "near": 1,
+        "exact": 94,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9892,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 7,
-      "problems": [
-        {
-          "quote": "老头！你知道你女儿一直在找你吗？她还想问问，她还有没有妈妈？",
-          "para_claimed": 55,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 28,
@@ -997,7 +1004,8 @@
       668,
       669,
       670
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,41 @@
+{
+  "canonical_name": "天命阁分部主事",
+  "aliases": [
+    "伙计"
+  ],
+  "first_seq": 830,
+  "last_seq": 830,
+  "chapter_count": 1,
+  "chapters": [
+    830
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 830,
+      "quote": "一个伙计正探头探脑的看着自己。"
+    },
+    {
+      "seq": 830,
+      "quote": "那伙计眼睛亮的惊人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 830,
+      "state": "压力大，但健谈"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 830,
+      "actions": [
+        "认出尉天齐，提供中洲消息"
+      ]
+    }
+  ],
+  "id": "c818_天命阁分部主事"
+}

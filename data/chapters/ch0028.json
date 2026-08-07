@@ -237,6 +237,14 @@
     ],
     "dialogues": [
       {
+        "para": 7,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "呕——！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 13,
         "speaker": "唐真",
         "addressee": "姚安饶、红儿",
@@ -389,6 +397,14 @@
         "addressee": "唐真",
         "text": "留一半人在城里等死，剩下一半跑？",
         "manner": ""
+      },
+      {
+        "para": 57,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：留一半人在城里等死，剩下一半跑？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 58,
@@ -570,9 +586,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 39,
       "counts": {
-        "exact": 37,
+        "exact": 39,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -592,7 +608,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

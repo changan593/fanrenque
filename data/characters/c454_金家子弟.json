@@ -1,0 +1,36 @@
+{
+  "canonical_name": "金家子弟",
+  "aliases": [
+    "金家后辈",
+    "众人"
+  ],
+  "first_seq": 184,
+  "last_seq": 184,
+  "chapter_count": 1,
+  "chapters": [
+    184
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 184,
+      "state": "经验匮乏，被郭守安和小胖震慑，心生退意"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 184,
+      "actions": [
+        "破门冲入玉屏观",
+        "驱使鹿豚冲击钟鼓楼",
+        "被小胖火法冲散，有人撤退",
+        "试图抓红儿为人质"
+      ]
+    }
+  ],
+  "id": "c454_金家子弟"
+}

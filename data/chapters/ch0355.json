@@ -240,6 +240,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 2,
         "speaker": "白思",
         "addressee": "红儿",
@@ -271,7 +279,14 @@
         "para": 8,
         "speaker": "白思",
         "addressee": "红儿",
-        "text": "这就不仅仅是黄金，而是货真价实的宝石。我宫招新来的孩子，天赋大多凡人之资，修行对他们而言是生活，若让他们用铜钱生活正是合适，用黄金生活则略有浪费，若是用宝石生活，怕是买卖之间亏空过大，便宜之物无法出手，贵重之物不知几何。",
+        "text": "这就不仅仅是黄金，而是货真价实的宝石。",
+        "manner": "缓缓放下茶杯，看向红儿"
+      },
+      {
+        "para": 8,
+        "speaker": "白思",
+        "addressee": "红儿",
+        "text": "我宫招新来的孩子，天赋大多凡人之资，修行对他们而言是生活，若让他们用铜钱生活正是合适，用黄金生活则略有浪费，若是用宝石生活，怕是买卖之间亏空过大，便宜之物无法出手，贵重之物不知几何。",
         "manner": "缓缓放下茶杯，看向红儿"
       },
       {
@@ -585,26 +600,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 46,
       "counts": {
-        "exact": 43,
-        "near": 1,
+        "exact": 46,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9773,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "这就不仅仅是黄金，而是货真价实的宝石。我宫招新来的孩子，天赋大多凡人之资，修行对他们而言是生活，若让他们用铜钱生活正是合适，用黄金生活则略有浪费，若是用宝石生活，怕是买卖之间亏空过大，便宜之物无法出手，贵重之物不知几何。",
-          "para_claimed": 8,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8545,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 12,
@@ -620,7 +625,8 @@
       352,
       353,
       354
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

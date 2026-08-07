@@ -278,6 +278,14 @@
         "addressee": "幺儿",
         "text": "我长手自然是用来放术法的！难道是用来挖山参刨土坑的？",
         "manner": "心说"
+      },
+      {
+        "para": 44,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "大哥，这个回剑入鞘怎样能不扎手一次成功啊？",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -583,9 +591,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 46,
+        "exact": 47,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -608,7 +616,8 @@
       63,
       64,
       65
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

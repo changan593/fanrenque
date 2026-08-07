@@ -364,7 +364,7 @@
       },
       {
         "para": 46,
-        "text": "原来如此。唐真笑了，在进入雾门的那一刻，他便以罗生门入了道，所以他‘过门’这个在想象中出现的情况，便被投射到了现实中，凭空捏造了一个‘唐真’直接穿过了竹屋的门。",
+        "text": "原来如此。”唐真笑了，在进入雾门的那一刻，他便以罗生门入了道，所以他‘过门’这个在想象中出现的情况，便被投射到了现实中，凭空捏造了一个‘唐真’直接穿过了竹屋的门。",
         "function": "情节交代"
       }
     ],
@@ -485,24 +485,14 @@
     "verbatim": {
       "total_quotes": 36,
       "counts": {
-        "exact": 35,
-        "near": 1,
+        "exact": 36,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9722,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "原来如此。唐真笑了，在进入雾门的那一刻，他便以罗生门入了道，所以他‘过门’这个在想象中出现的情况，便被投射到了现实中，凭空捏造了一个‘唐真’直接穿过了竹屋的门。",
-          "para_claimed": 46,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9875,
-          "para_correct": null,
-          "field": "narration[7]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 18,
@@ -512,7 +502,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

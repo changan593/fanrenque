@@ -1,0 +1,19 @@
+[
+  {
+    "seq": 445,
+    "before_rate": 0.98,
+    "after_rate": 1.0,
+    "before_coverage": 1.0,
+    "after_coverage": 1.0,
+    "fixes": [
+      {
+        "field": "characters.appearance_quotes",
+        "kind": "对齐原文",
+        "before": "红色脸谱",
+        "after": [
+          "红色的脸谱"
+        ]
+      }
+    ]
+  }
+]

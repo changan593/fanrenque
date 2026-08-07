@@ -1,0 +1,35 @@
+{
+  "canonical_name": "富人家护卫",
+  "aliases": [],
+  "first_seq": 1,
+  "last_seq": 1,
+  "chapter_count": 1,
+  "chapters": [
+    1
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1,
+      "quote": "富人家高大的护卫拿着棍棒吆五喝六"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1,
+      "state": "施粥现场维持秩序"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1,
+      "actions": [
+        "吆喝乞丐排队领粥"
+      ]
+    }
+  ],
+  "id": "c347_富人家护卫"
+}

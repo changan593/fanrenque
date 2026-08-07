@@ -144,6 +144,26 @@
         "appearance_quotes": [],
         "state": "还俗想起她，认为她的道术法适合在此修行",
         "actions": []
+      },
+      {
+        "name": "佛兵",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "僧人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -192,6 +212,14 @@
         "addressee": "丫儿",
         "text": "丫儿，你想求我什么？",
         "manner": "那个傻傻的大菩萨问她"
+      },
+      {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不用担心，听自己的就好。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 45,
@@ -459,9 +487,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 32,
       "counts": {
-        "exact": 31,
+        "exact": 32,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -480,7 +508,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

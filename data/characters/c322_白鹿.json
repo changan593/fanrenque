@@ -1,0 +1,47 @@
+{
+  "canonical_name": "白鹿",
+  "aliases": [],
+  "first_seq": 762,
+  "last_seq": 763,
+  "chapter_count": 2,
+  "chapters": [
+    762,
+    763
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 762,
+      "quote": "通体雪白发着光的白鹿"
+    }
+  ],
+  "states": [
+    {
+      "seq": 762,
+      "state": "被秦祖驱使，撞击箩筐后倒退几步"
+    },
+    {
+      "seq": 763,
+      "state": "未明确"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 762,
+      "actions": [
+        "发出鹿鸣",
+        "低头俯冲撞向箩筐"
+      ]
+    },
+    {
+      "seq": 763,
+      "actions": [
+        "撞箩筐"
+      ]
+    }
+  ],
+  "id": "c322_白鹿"
+}

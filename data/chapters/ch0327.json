@@ -177,6 +177,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 8,
         "speaker": "尉天齐",
         "addressee": "吕藏锋",
@@ -627,9 +635,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 54,
       "counts": {
-        "exact": 53,
+        "exact": 54,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -653,7 +661,8 @@
       324,
       325,
       326
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

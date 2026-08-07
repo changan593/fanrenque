@@ -343,6 +343,14 @@
         "manner": "忽然响起"
       },
       {
+        "para": 34,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "紫云峰的。。余庆？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "狐魔尊",
         "addressee": "余庆",
@@ -573,9 +581,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 43,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -598,7 +606,8 @@
       1185,
       1186,
       1187
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

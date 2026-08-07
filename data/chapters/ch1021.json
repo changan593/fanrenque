@@ -191,6 +191,16 @@
         "actions": [
           "从身后掏出木车"
         ]
+      },
+      {
+        "name": "小男孩",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -749,7 +759,8 @@
       1013,
       1014,
       1015
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -179,14 +179,28 @@
         "para": 5,
         "speaker": "木方生",
         "addressee": "天魔尊",
-        "text": "可我就是好疼。你陪我说说话嘛！说说话，我就会好很多。",
+        "text": "可我就是好疼。",
+        "manner": "像是在撒娇"
+      },
+      {
+        "para": 5,
+        "speaker": "木方生",
+        "addressee": "天魔尊",
+        "text": "你陪我说说话嘛！说说话，我就会好很多。",
         "manner": "像是在撒娇"
       },
       {
         "para": 6,
         "speaker": "天魔尊",
         "addressee": "木方生",
-        "text": "你说不了话的。你只是我的幻想，是通天路怪异环境引起的‘心障’。",
+        "text": "你说不了话的。",
+        "manner": "低声道"
+      },
+      {
+        "para": 6,
+        "speaker": "天魔尊",
+        "addressee": "木方生",
+        "text": "你只是我的幻想，是通天路怪异环境引起的‘心障’。",
         "manner": "低声道"
       },
       {
@@ -207,7 +221,14 @@
         "para": 9,
         "speaker": "木方生",
         "addressee": "天魔尊",
-        "text": "可哪有父亲会把女儿放进灯里呢？从一开始，你就打算用我来补天的对不对？迷藏是人道，而温胥就是天生大道，你本是想让我直接成为一盏灯。",
+        "text": "可哪有父亲会把女儿放进灯里呢？",
+        "manner": ""
+      },
+      {
+        "para": 9,
+        "speaker": "木方生",
+        "addressee": "天魔尊",
+        "text": "从一开始，你就打算用我来补天的对不对？迷藏是人道，而温胥就是天生大道，你本是想让我直接成为一盏灯。",
         "manner": ""
       },
       {
@@ -235,7 +256,14 @@
         "para": 18,
         "speaker": "木方生",
         "addressee": "天魔尊",
-        "text": "这就是问题所在啊！螺生后的天菩萨继承了你追求和想法，但也选择将我抛弃在九洲，岂不说明您从头到尾都认为我是无用的东西？",
+        "text": "这就是问题所在啊！",
+        "manner": "笑着说"
+      },
+      {
+        "para": 18,
+        "speaker": "木方生",
+        "addressee": "天魔尊",
+        "text": "螺生后的天菩萨继承了你追求和想法，但也选择将我抛弃在九洲，岂不说明您从头到尾都认为我是无用的东西？",
         "manner": "笑着说"
       },
       {
@@ -263,7 +291,14 @@
         "para": 24,
         "speaker": "木方生",
         "addressee": "天魔尊",
-        "text": "我是你身体里的骨骼，你把我拆下来做灯的架子，好生的残忍啊。父亲你提着我做成的灯，竟然不觉得重吗？",
+        "text": "我是你身体里的骨骼，你把我拆下来做灯的架子，好生的残忍啊。",
+        "manner": "埋怨似的问道"
+      },
+      {
+        "para": 24,
+        "speaker": "木方生",
+        "addressee": "天魔尊",
+        "text": "父亲你提着我做成的灯，竟然不觉得重吗？",
         "manner": "埋怨似的问道"
       },
       {
@@ -347,7 +382,14 @@
         "para": 69,
         "speaker": "唐真",
         "addressee": "天魔尊",
-        "text": "天魔尊！！你站住！",
+        "text": "天魔尊！！",
+        "manner": "大声的怒喝"
+      },
+      {
+        "para": 69,
+        "speaker": "唐真",
+        "addressee": "天魔尊",
+        "text": "你站住！",
         "manner": "大声的怒喝"
       }
     ],
@@ -693,71 +735,16 @@
     "structure_score": 88,
     "fidelity_score": 60,
     "verbatim": {
-      "total_quotes": 70,
+      "total_quotes": 76,
       "counts": {
-        "exact": 64,
-        "near": 5,
-        "miss": 1,
+        "exact": 76,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9143,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 2,
-      "problems": [
-        {
-          "quote": "可我就是好疼。你陪我说说话嘛！说说话，我就会好很多。",
-          "para_claimed": 5,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7692,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        },
-        {
-          "quote": "你说不了话的。你只是我的幻想，是通天路怪异环境引起的‘心障’。",
-          "para_claimed": 6,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7742,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        },
-        {
-          "quote": "可哪有父亲会把女儿放进灯里呢？从一开始，你就打算用我来补天的对不对？迷藏是人道，而温胥就是天生大道，你本是想让我直接成为一盏灯。",
-          "para_claimed": 9,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8906,
-          "para_correct": null,
-          "field": "dialogues[7]"
-        },
-        {
-          "quote": "这就是问题所在啊！螺生后的天菩萨继承了你追求和想法，但也选择将我抛弃在九洲，岂不说明您从头到尾都认为我是无用的东西？",
-          "para_claimed": 18,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8448,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        },
-        {
-          "quote": "我是你身体里的骨骼，你把我拆下来做灯的架子，好生的残忍啊。父亲你提着我做成的灯，竟然不觉得重吗？",
-          "para_claimed": 24,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7917,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        },
-        {
-          "quote": "天魔尊！！你站住！",
-          "para_claimed": 69,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5556,
-          "para_correct": null,
-          "field": "dialogues[27]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 34,
@@ -771,7 +758,8 @@
       1191,
       1192,
       1193
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -294,6 +294,14 @@
         "manner": "开朗道"
       },
       {
+        "para": 23,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "嗯！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 24,
         "speaker": "尉天齐",
         "addressee": "云儿",
@@ -722,9 +730,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 68,
+      "total_quotes": 69,
       "counts": {
-        "exact": 68,
+        "exact": 69,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -746,7 +754,8 @@
     "context_chapters_used": [
       664,
       665
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

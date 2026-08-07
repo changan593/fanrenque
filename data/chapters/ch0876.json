@@ -175,6 +175,14 @@
         "manner": "缓缓开口"
       },
       {
+        "para": 12,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "潇湘刃。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 32,
         "speaker": "尉天齐",
         "addressee": "密宗大弟子",
@@ -350,9 +358,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 18,
+      "total_quotes": 19,
       "counts": {
-        "exact": 18,
+        "exact": 19,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -374,7 +382,8 @@
     "context_chapters_used": [
       864,
       865
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -393,6 +393,14 @@
         "addressee": "姜赢",
         "text": "你还想当皇帝吗？",
         "manner": "随意的像是刚才问他是否再要一碗热粥一样"
+      },
+      {
+        "para": 59,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "到底是只虫子。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -618,9 +626,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -643,7 +651,8 @@
       963,
       964,
       965
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

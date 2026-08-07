@@ -311,7 +311,14 @@
         "para": 3,
         "speaker": "荀欢",
         "addressee": "施北望",
-        "text": "施兄！你如此做如此说，当真让我等汗颜！昨日朝堂施兄已经证明了自己对于书院乃至对于儒门的忠诚！中洲儒门每一位学儒之人都会记得施兄的！",
+        "text": "施兄！你如此做如此说，当真让我等汗颜！",
+        "manner": "按住了施北望的肩膀，眼中热泪盈眶，看着年轻男子动情道"
+      },
+      {
+        "para": 3,
+        "speaker": "荀欢",
+        "addressee": "施北望",
+        "text": "昨日朝堂施兄已经证明了自己对于书院乃至对于儒门的忠诚！中洲儒门每一位学儒之人都会记得施兄的！",
         "manner": "按住了施北望的肩膀，眼中热泪盈眶，看着年轻男子动情道"
       },
       {
@@ -840,26 +847,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 66,
+      "total_quotes": 67,
       "counts": {
-        "exact": 65,
-        "near": 1,
+        "exact": 67,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9848,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "施兄！你如此做如此说，当真让我等汗颜！昨日朝堂施兄已经证明了自己对于书院乃至对于儒门的忠诚！中洲儒门每一位学儒之人都会记得施兄的！",
-          "para_claimed": 3,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7231,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 41,
@@ -869,7 +866,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

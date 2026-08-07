@@ -172,7 +172,14 @@
         "para": 43,
         "speaker": "首魔尊",
         "addressee": "姚安恕",
-        "text": "哈，堂堂圣人首，落在你手里竟是这等窝囊用法？我倒要看看你还能画多少。",
+        "text": "哈，堂堂圣人首，落在你手里竟是这等窝囊用法？",
+        "manner": "不屑的笑道"
+      },
+      {
+        "para": 43,
+        "speaker": "首魔尊",
+        "addressee": "姚安恕",
+        "text": "我倒要看看你还能画多少。",
         "manner": "不屑的笑道"
       }
     ],
@@ -210,7 +217,7 @@
       },
       {
         "para": 6,
-        "text": "以姚安恕此时的修为根本不可能和他对战，唯一的优势就是吕藏锋并无身体，也无剑。",
+        "text": "以姚安饶此时的修为根本不可能和他对战，唯一的优势就是吕藏锋并无身体，也无剑。",
         "function": "情节交代"
       },
       {
@@ -220,7 +227,7 @@
       },
       {
         "para": 8,
-        "text": "但这份估量里，显然能容下好几个姚安恕了。",
+        "text": "但这份估量里，显然能容下好几个姚安饶了。",
         "function": "情节交代"
       },
       {
@@ -345,44 +352,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 22,
+      "total_quotes": 23,
       "counts": {
-        "exact": 19,
-        "near": 2,
-        "miss": 1,
+        "exact": 23,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.8636,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哈，堂堂圣人首，落在你手里竟是这等窝囊用法？我倒要看看你还能画多少。",
-          "para_claimed": 43,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6765,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        },
-        {
-          "quote": "以姚安恕此时的修为根本不可能和他对战，唯一的优势就是吕藏锋并无身体，也无剑。",
-          "para_claimed": 6,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9737,
-          "para_correct": null,
-          "field": "narration[1]"
-        },
-        {
-          "quote": "但这份估量里，显然能容下好几个姚安恕了。",
-          "para_claimed": 8,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.95,
-          "para_correct": null,
-          "field": "narration[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 8,
@@ -396,7 +375,8 @@
       987,
       988,
       989
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

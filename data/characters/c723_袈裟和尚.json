@@ -1,0 +1,35 @@
+{
+  "canonical_name": "袈裟和尚",
+  "aliases": [],
+  "first_seq": 662,
+  "last_seq": 662,
+  "chapter_count": 1,
+  "chapters": [
+    662
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 662,
+      "quote": "那一身的袈裟绣满了金丝，布料更是在阳光下折射出璀璨的光辉。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 662,
+      "state": "穿着华丽袈裟，面相好"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 662,
+      "actions": [
+        "进入道观，与素衣老和尚对话"
+      ]
+    }
+  ],
+  "id": "c723_袈裟和尚"
+}

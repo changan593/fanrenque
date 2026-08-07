@@ -1,0 +1,28 @@
+{
+  "canonical_name": "六指大神",
+  "aliases": [],
+  "first_seq": 9,
+  "last_seq": 9,
+  "chapter_count": 1,
+  "chapters": [
+    9
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 9,
+      "quote": "长着六指的"
+    }
+  ],
+  "states": [
+    {
+      "seq": 9,
+      "state": "自称有神通，实为骗子。"
+    }
+  ],
+  "actions": [],
+  "id": "c351_六指大神"
+}

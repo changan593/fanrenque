@@ -253,6 +253,16 @@
         "actions": [
           "与知了和尚对话"
         ]
+      },
+      {
+        "name": "小太监（未明说）",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -1015,7 +1025,8 @@
       652,
       653,
       654
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

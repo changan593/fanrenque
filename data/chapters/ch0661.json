@@ -297,7 +297,14 @@
         "para": 17,
         "speaker": "老僧",
         "addressee": "唐真",
-        "text": "你还是没有懂。你仔细看看，此时佛宗大道上弥漫得魔气根本就不是我的啊！",
+        "text": "你还是没有懂。",
+        "manner": "看着唐真的眼睛悠悠道"
+      },
+      {
+        "para": 17,
+        "speaker": "老僧",
+        "addressee": "唐真",
+        "text": "你仔细看看，此时佛宗大道上弥漫得魔气根本就不是我的啊！",
         "manner": "看着唐真的眼睛悠悠道"
       },
       {
@@ -381,7 +388,7 @@
         "para": 69,
         "speaker": "老僧",
         "addressee": "阿难",
-        "text": "阿难。一道老人声音忽然在他身后响起，你忘了我佛宗大愿吗？",
+        "text": "阿难。”一道老人声音忽然在他身后响起，“你忘了我佛宗大愿吗？",
         "manner": "老人声音忽然在他身后响起"
       },
       {
@@ -395,7 +402,14 @@
         "para": 72,
         "speaker": "老僧",
         "addressee": "阿难",
-        "text": "是的，我们成功了。可我们成功了，你却依然固执己见。不然又怎么会来到今天这一步？",
+        "text": "是的，我们成功了。",
+        "manner": "老僧回答"
+      },
+      {
+        "para": 72,
+        "speaker": "老僧",
+        "addressee": "阿难",
+        "text": "可我们成功了，你却依然固执己见。不然又怎么会来到今天这一步？",
         "manner": "老僧回答"
       },
       {
@@ -1112,44 +1126,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 120,
+      "total_quotes": 122,
       "counts": {
-        "exact": 117,
-        "near": 3,
+        "exact": 122,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.975,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "你还是没有懂。你仔细看看，此时佛宗大道上弥漫得魔气根本就不是我的啊！",
-          "para_claimed": 17,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7941,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        },
-        {
-          "quote": "阿难。一道老人声音忽然在他身后响起，你忘了我佛宗大愿吗？",
-          "para_claimed": 69,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9286,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        },
-        {
-          "quote": "是的，我们成功了。可我们成功了，你却依然固执己见。不然又怎么会来到今天这一步？",
-          "para_claimed": 72,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8205,
-          "para_correct": null,
-          "field": "dialogues[17]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 45,
@@ -1159,7 +1145,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

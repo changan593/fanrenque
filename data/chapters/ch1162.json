@@ -306,7 +306,14 @@
         "para": 35,
         "speaker": "元永洁",
         "addressee": "天菩萨",
-        "text": "可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！",
+        "text": "可你们！",
+        "manner": "眉头起立"
+      },
+      {
+        "para": 35,
+        "speaker": "元永洁",
+        "addressee": "天菩萨",
+        "text": "你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！",
         "manner": "眉头起立"
       },
       {
@@ -499,26 +506,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 43,
       "counts": {
-        "exact": 41,
-        "near": 1,
+        "exact": 43,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9762,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！",
-          "para_claimed": 35,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9529,
-          "para_correct": null,
-          "field": "dialogues[24]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 31,
@@ -532,7 +529,8 @@
       1159,
       1160,
       1161
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

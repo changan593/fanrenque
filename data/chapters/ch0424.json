@@ -135,6 +135,16 @@
         "actions": [
           "率领铁骑四处筹粮押送"
         ]
+      },
+      {
+        "name": "夫子",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -482,7 +492,8 @@
       413,
       414,
       415
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

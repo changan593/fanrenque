@@ -275,7 +275,14 @@
         "para": 58,
         "speaker": "紫云",
         "addressee": "程伊",
-        "text": "圣人之死就不是了？我看儒道之争，既不落在线上，也不落在南洲上，该是落在你我这种人身上。",
+        "text": "圣人之死就不是了？",
+        "manner": "歪着头"
+      },
+      {
+        "para": 58,
+        "speaker": "紫云",
+        "addressee": "程伊",
+        "text": "我看儒道之争，既不落在线上，也不落在南洲上，该是落在你我这种人身上。",
         "manner": "歪着头"
       },
       {
@@ -669,26 +676,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 59,
-        "near": 1,
+        "exact": 61,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9833,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "圣人之死就不是了？我看儒道之争，既不落在线上，也不落在南洲上，该是落在你我这种人身上。",
-          "para_claimed": 58,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7907,
-          "para_correct": null,
-          "field": "dialogues[7]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 10,
@@ -698,7 +695,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -120,7 +120,7 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "那个怪异神奇的男人站直身子，微微眯眼打量着面前矮小的人",
+          "这个怪异神奇的男人站直身子，微微眯眼打量着面前矮小的人",
           "那个强壮男人随意的便掐起了吴慢慢，神情没有任何的波动"
         ],
         "state": "被地牢压制但实力强大，愤怒后破牢离去",
@@ -450,24 +450,14 @@
     "verbatim": {
       "total_quotes": 25,
       "counts": {
-        "exact": 24,
-        "near": 1,
+        "exact": 25,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.96,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "那个怪异神奇的男人站直身子，微微眯眼打量着面前矮小的人",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.963,
-          "para_correct": null,
-          "field": "characters[2].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -477,7 +467,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

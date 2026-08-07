@@ -381,6 +381,14 @@
         "manner": "惊愕的反问道"
       },
       {
+        "para": 60,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊，你来这里了，是的，你也该来。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 61,
         "speaker": "程伊",
         "addressee": "唐真",
@@ -541,9 +549,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 41,
       "counts": {
-        "exact": 40,
+        "exact": 41,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -562,7 +570,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

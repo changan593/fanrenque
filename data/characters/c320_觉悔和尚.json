@@ -1,0 +1,39 @@
+{
+  "canonical_name": "觉悔和尚",
+  "aliases": [
+    "觉悔"
+  ],
+  "first_seq": 750,
+  "last_seq": 753,
+  "chapter_count": 2,
+  "chapters": [
+    750,
+    753
+  ],
+  "role_distribution": {
+    "提及": 1,
+    "参与": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 753,
+      "quote": "一身华丽的袈裟，手里也依然拿着那个并非完整的多闻环"
+    }
+  ],
+  "states": [
+    {
+      "seq": 753,
+      "state": "追踪魔修，发现孩子们去向"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 753,
+      "actions": [
+        "出现在院子，用多闻环指向孩子们的方向"
+      ]
+    }
+  ],
+  "id": "c320_觉悔和尚"
+}

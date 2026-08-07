@@ -278,7 +278,14 @@
         "para": 32,
         "speaker": "尉天齐",
         "addressee": "林姑娘",
-        "text": "嗯。此次多谢姑娘帮助了。",
+        "text": "嗯。",
+        "manner": "轻轻揉了揉太阳穴，抬眼道"
+      },
+      {
+        "para": 32,
+        "speaker": "尉天齐",
+        "addressee": "林姑娘",
+        "text": "此次多谢姑娘帮助了。",
         "manner": "轻轻揉了揉太阳穴，抬眼道"
       },
       {
@@ -306,7 +313,14 @@
         "para": 38,
         "speaker": "尉天齐",
         "addressee": "林姑娘",
-        "text": "并不相同。人魔尊齐渊是抱着以伤换命的代价去的桃花崖，但狐魔尊只是见猎心喜，她不想惹出任何轰动，所以才会有这种小儿科似的赌斗。",
+        "text": "并不相同。",
+        "manner": "摇头"
+      },
+      {
+        "para": 38,
+        "speaker": "尉天齐",
+        "addressee": "林姑娘",
+        "text": "人魔尊齐渊是抱着以伤换命的代价去的桃花崖，但狐魔尊只是见猎心喜，她不想惹出任何轰动，所以才会有这种小儿科似的赌斗。",
         "manner": "摇头"
       },
       {
@@ -637,35 +651,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 50,
+      "total_quotes": 52,
       "counts": {
-        "exact": 48,
-        "near": 2,
+        "exact": 52,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.96,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "嗯。此次多谢姑娘帮助了。",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8333,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "并不相同。人魔尊齐渊是抱着以伤换命的代价去的桃花崖，但狐魔尊只是见猎心喜，她不想惹出任何轰动，所以才会有这种小儿科似的赌斗。",
-          "para_claimed": 38,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9194,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 12,
@@ -679,7 +674,8 @@
       563,
       564,
       565
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

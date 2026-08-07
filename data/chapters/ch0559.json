@@ -250,7 +250,14 @@
         "para": 44,
         "speaker": "林姑娘",
         "addressee": "尉天齐",
-        "text": "拖我进这滩泥水，竟然是为了一个魔女？我倒要看看她长的什么天仙样子！",
+        "text": "拖我进这滩泥水，竟然是为了一个魔女？",
+        "manner": "微微仰了仰下巴"
+      },
+      {
+        "para": 44,
+        "speaker": "林姑娘",
+        "addressee": "尉天齐",
+        "text": "我倒要看看她长的什么天仙样子！",
         "manner": "微微仰了仰下巴"
       },
       {
@@ -264,7 +271,14 @@
         "para": 51,
         "speaker": "姚安饶",
         "addressee": "林姑娘",
-        "text": "干嘛这么看着我？觉得我长得。。也不是很好看？",
+        "text": "干嘛这么看着我？",
+        "manner": "抬起眉眼，笑盈盈的轻声问"
+      },
+      {
+        "para": 51,
+        "speaker": "姚安饶",
+        "addressee": "林姑娘",
+        "text": "觉得我长得。。也不是很好看？",
         "manner": "抬起眉眼，笑盈盈的轻声问"
       }
     ],
@@ -489,35 +503,16 @@
     "structure_score": 88,
     "fidelity_score": 60,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 40,
       "counts": {
-        "exact": 36,
+        "exact": 40,
         "near": 0,
-        "miss": 2,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9474,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "拖我进这滩泥水，竟然是为了一个魔女？我倒要看看她长的什么天仙样子！",
-          "para_claimed": 44,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6061,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        },
-        {
-          "quote": "干嘛这么看着我？觉得我长得。。也不是很好看？",
-          "para_claimed": 51,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6364,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 18,
@@ -531,7 +526,8 @@
       556,
       557,
       558
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

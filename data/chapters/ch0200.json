@@ -383,6 +383,14 @@
         "addressee": "唐真",
         "text": "以此为证。",
         "manner": "语调都没变，从袖袍里掏出了一枚白色的令牌"
+      },
+      {
+        "para": 44,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你才没道理！你全家都没道理！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -664,9 +672,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 54,
       "counts": {
-        "exact": 53,
+        "exact": 54,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -685,7 +693,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

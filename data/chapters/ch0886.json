@@ -292,7 +292,14 @@
         "para": 53,
         "speaker": "古月皇贵妃",
         "addressee": "帝后娘娘",
-        "text": "她是她，我是我。就好像帝后娘娘是帝后娘娘，周芝是周芝。",
+        "text": "她是她，我是我。",
+        "manner": "开口道"
+      },
+      {
+        "para": 53,
+        "speaker": "古月皇贵妃",
+        "addressee": "帝后娘娘",
+        "text": "就好像帝后娘娘是帝后娘娘，周芝是周芝。",
         "manner": "开口道"
       },
       {
@@ -327,7 +334,14 @@
         "para": 60,
         "speaker": "帝后娘娘",
         "addressee": "古月皇贵妃",
-        "text": "你冒着如此大的风险来这里劝我，就是为了那个男人？你难道真的会爱上他？",
+        "text": "你冒着如此大的风险来这里劝我，就是为了那个男人？",
+        "manner": "颇为好奇的回过头"
+      },
+      {
+        "para": 60,
+        "speaker": "帝后娘娘",
+        "addressee": "古月皇贵妃",
+        "text": "你难道真的会爱上他？",
         "manner": "颇为好奇的回过头"
       },
       {
@@ -605,35 +619,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 55,
       "counts": {
-        "exact": 51,
-        "near": 2,
+        "exact": 55,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9623,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "她是她，我是我。就好像帝后娘娘是帝后娘娘，周芝是周芝。",
-          "para_claimed": 53,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7037,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        },
-        {
-          "quote": "你冒着如此大的风险来这里劝我，就是为了那个男人？你难道真的会爱上他？",
-          "para_claimed": 60,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7353,
-          "para_correct": null,
-          "field": "dialogues[17]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 21,
@@ -643,7 +638,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

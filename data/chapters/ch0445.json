@@ -88,7 +88,7 @@
         "appearance_quotes": [
           "一个喜欢穿白裙带着红色花脸脸谱的姑娘",
           "带着红色花脸脸谱",
-          "红色脸谱"
+          "红色的脸谱"
         ],
         "state": "气场怪诞，戴着大花脸脸谱，面对围剿毫无反应，继续叫价",
         "actions": [
@@ -557,24 +557,14 @@
     "verbatim": {
       "total_quotes": 50,
       "counts": {
-        "exact": 49,
-        "near": 1,
+        "exact": 50,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.98,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "红色脸谱",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.75,
-          "para_correct": null,
-          "field": "characters[0].appearance_quotes[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 20,
@@ -584,7 +574,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

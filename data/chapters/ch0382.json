@@ -276,6 +276,14 @@
         "manner": "指了指上方"
       },
       {
+        "para": 30,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "云上险峰，有道心无善念难登到此。天下福地，多勤勉点聪慧亦可自游。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 32,
         "speaker": "周东东",
         "addressee": "幺儿",
@@ -620,9 +628,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 58,
+      "total_quotes": 59,
       "counts": {
-        "exact": 58,
+        "exact": 59,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -641,7 +649,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -258,6 +258,14 @@
         "addressee": "红儿",
         "text": "红儿姐。。。",
         "manner": "回过头"
+      },
+      {
+        "para": 44,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我。。的楼，我的娘。。亲。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -489,9 +497,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 36,
+        "exact": 37,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -510,7 +518,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

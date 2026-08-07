@@ -353,6 +353,14 @@
         "manner": "摇头"
       },
       {
+        "para": 51,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "来找人。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 56,
         "speaker": "红儿",
         "addressee": "唐真",
@@ -834,9 +842,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 83,
+      "total_quotes": 84,
       "counts": {
-        "exact": 83,
+        "exact": 84,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -855,7 +863,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

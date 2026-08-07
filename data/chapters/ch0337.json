@@ -176,6 +176,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 4,
         "speaker": "红儿",
         "addressee": "念娘",
@@ -300,6 +308,14 @@
         "addressee": "老奎",
         "text": "那里有人有什么用？迟归楼怎么一直没人！",
         "manner": "怒拍桌子"
+      },
+      {
+        "para": 33,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "宫主！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 37,
@@ -538,9 +554,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 45,
       "counts": {
-        "exact": 43,
+        "exact": 45,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -560,7 +576,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

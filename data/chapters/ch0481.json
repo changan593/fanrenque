@@ -200,6 +200,14 @@
         "manner": "淡淡的道"
       },
       {
+        "para": 15,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啪！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 17,
         "speaker": "秦怀雀",
         "addressee": "姚望舒",
@@ -541,9 +549,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 42,
       "counts": {
-        "exact": 41,
+        "exact": 42,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -568,7 +576,8 @@
       478,
       479,
       480
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

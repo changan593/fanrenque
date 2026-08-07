@@ -243,6 +243,14 @@
         "manner": "仰着头，看着数道流光划过云层"
       },
       {
+        "para": 2,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "无妖无魔，啧啧啧，到底是东东哥的老家。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "幺儿",
         "addressee": "周东东",
@@ -479,9 +487,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 29,
+      "total_quotes": 30,
       "counts": {
-        "exact": 29,
+        "exact": 30,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -504,7 +512,8 @@
       963,
       964,
       965
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

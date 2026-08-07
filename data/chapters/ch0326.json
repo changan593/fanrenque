@@ -186,6 +186,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 5,
         "speaker": "班主",
         "addressee": "在场众人",
@@ -509,9 +517,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 41,
       "counts": {
-        "exact": 40,
+        "exact": 41,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -533,7 +541,8 @@
     "context_chapters_used": [
       314,
       315
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

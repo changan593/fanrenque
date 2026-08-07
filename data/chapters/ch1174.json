@@ -388,7 +388,14 @@
         "para": 54,
         "speaker": "李一",
         "addressee": "唐真",
-        "text": "哈，现在北洲一点都不麻烦了，命苦死了，遗族也不见了，空空旷旷的，我都以为北洲死绝了呢！唉，在北洲就在荒漠里跑商，怎么进了这里还在沙漠里拉磨啊，这遗族人是真没好命。",
+        "text": "哈，现在北洲一点都不麻烦了，命苦死了，遗族也不见了，空空旷旷的，我都以为北洲死绝了呢！",
+        "manner": "走到唐真身旁抬头看向高空的螺壳"
+      },
+      {
+        "para": 54,
+        "speaker": "李一",
+        "addressee": "唐真",
+        "text": "唉，在北洲就在荒漠里跑商，怎么进了这里还在沙漠里拉磨啊，这遗族人是真没好命。",
         "manner": "走到唐真身旁抬头看向高空的螺壳"
       },
       {
@@ -409,7 +416,14 @@
         "para": 57,
         "speaker": "唐真",
         "addressee": "李一",
-        "text": "哈，她自己不来，让你传话？太不够意思了！",
+        "text": "哈，她自己不来，让你传话？",
+        "manner": "站起身"
+      },
+      {
+        "para": 57,
+        "speaker": "唐真",
+        "addressee": "李一",
+        "text": "太不够意思了！",
         "manner": "站起身"
       }
     ],
@@ -477,7 +491,7 @@
       {
         "para": 44,
         "character": "唐真",
-        "text": "他听这话便想起了上次阿难带着他参观佛宗大道的时候，那大道正面是漫天的神佛，而大道后面则是各色诡谲的邪佛恶鬼。",
+        "text": "唐真听这话便想起了上次阿难带着他参观佛宗大道的时候，那大道正面是漫天的神佛，而大道后面则是各色诡谲的邪佛恶鬼。",
         "kind": "回忆"
       }
     ],
@@ -664,44 +678,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 55,
+      "total_quotes": 57,
       "counts": {
-        "exact": 52,
-        "near": 2,
-        "miss": 1,
+        "exact": 57,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9455,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哈，现在北洲一点都不麻烦了，命苦死了，遗族也不见了，空空旷旷的，我都以为北洲死绝了呢！唉，在北洲就在荒漠里跑商，怎么进了这里还在沙漠里拉磨啊，这遗族人是真没好命。",
-          "para_claimed": 54,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7531,
-          "para_correct": null,
-          "field": "dialogues[25]"
-        },
-        {
-          "quote": "哈，她自己不来，让你传话？太不够意思了！",
-          "para_claimed": 57,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.65,
-          "para_correct": null,
-          "field": "dialogues[28]"
-        },
-        {
-          "quote": "他听这话便想起了上次阿难带着他参观佛宗大道的时候，那大道正面是漫天的神佛，而大道后面则是各色诡谲的邪佛恶鬼。",
-          "para_claimed": 44,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9815,
-          "para_correct": null,
-          "field": "monologues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 32,
@@ -715,7 +701,8 @@
       1171,
       1172,
       1173
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -345,6 +345,14 @@
         "manner": "摊手"
       },
       {
+        "para": 37,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "野狐禅师毕竟如今大道残缺，而对面也已经狗急跳墙，完全可能全力强杀了慢慢。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 38,
         "speaker": "唐真",
         "addressee": "李一",
@@ -627,9 +635,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 51,
+      "total_quotes": 52,
       "counts": {
-        "exact": 51,
+        "exact": 52,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -648,7 +656,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -260,7 +260,14 @@
         "para": 28,
         "speaker": "人皇",
         "addressee": "姜羽",
-        "text": "啊？你不知道吗？我还以为你母亲告诉你了呢！‘气运二玺’之道为‘令’与‘封’，可锁天地，控灵真，据说拿到二者，便可改人气运，当然我没试过！",
+        "text": "啊？你不知道吗？我还以为你母亲告诉你了呢！",
+        "manner": "一脸诧异，摊开手"
+      },
+      {
+        "para": 28,
+        "speaker": "人皇",
+        "addressee": "姜羽",
+        "text": "‘气运二玺’之道为‘令’与‘封’，可锁天地，控灵真，据说拿到二者，便可改人气运，当然我没试过！",
         "manner": "一脸诧异，摊开手"
       },
       {
@@ -495,26 +502,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 33,
+      "total_quotes": 34,
       "counts": {
-        "exact": 32,
-        "near": 1,
+        "exact": 34,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9697,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "啊？你不知道吗？我还以为你母亲告诉你了呢！‘气运二玺’之道为‘令’与‘封’，可锁天地，控灵真，据说拿到二者，便可改人气运，当然我没试过！",
-          "para_claimed": 28,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.75,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 14,
@@ -524,7 +521,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

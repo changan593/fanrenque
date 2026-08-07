@@ -325,7 +325,14 @@
         "para": 15,
         "speaker": "尉天齐",
         "addressee": "云儿",
-        "text": "咳——！！谁跟你说的！小小年纪轮得到你来管我了？",
+        "text": "咳——！！",
+        "manner": "一口酒都喷了出来，伸手拿起筷子去敲云儿的头"
+      },
+      {
+        "para": 15,
+        "speaker": "尉天齐",
+        "addressee": "云儿",
+        "text": "谁跟你说的！小小年纪轮得到你来管我了？",
         "manner": "一口酒都喷了出来，伸手拿起筷子去敲云儿的头"
       },
       {
@@ -339,7 +346,14 @@
         "para": 17,
         "speaker": "尉天齐",
         "addressee": "云儿",
-        "text": "啊？嘶——你这丫头是真欠收拾了！",
+        "text": "啊？",
+        "manner": "一愣，才反应过来"
+      },
+      {
+        "para": 17,
+        "speaker": "尉天齐",
+        "addressee": "云儿",
+        "text": "嘶——你这丫头是真欠收拾了！",
         "manner": "一愣，才反应过来"
       },
       {
@@ -611,35 +625,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 43,
       "counts": {
-        "exact": 39,
-        "near": 2,
+        "exact": 43,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9512,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "咳——！！谁跟你说的！小小年纪轮得到你来管我了？",
-          "para_claimed": 15,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7917,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        },
-        {
-          "quote": "啊？嘶——你这丫头是真欠收拾了！",
-          "para_claimed": 17,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.875,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 33,
@@ -653,7 +648,8 @@
       674,
       675,
       676
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

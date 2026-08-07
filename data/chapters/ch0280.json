@@ -159,6 +159,16 @@
           "与姚安饶打招呼",
           "卖馒头给姚安饶"
         ]
+      },
+      {
+        "name": "安恕",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -282,7 +292,14 @@
         "para": 26,
         "speaker": "早食老板",
         "addressee": "姚安饶",
-        "text": "姚大家早啊！有路过的早食老板推着小车，高声打招呼，“来了这么久也没见过您亲自登过台！什么时候给我们开开嗓长长见识啊！”",
+        "text": "姚大家早啊！",
+        "manner": "高声打招呼"
+      },
+      {
+        "para": 26,
+        "speaker": "早食老板",
+        "addressee": "姚安饶",
+        "text": "来了这么久也没见过您亲自登过台！什么时候给我们开开嗓长长见识啊！",
         "manner": "高声打招呼"
       },
       {
@@ -522,26 +539,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 35,
-        "near": 1,
+        "exact": 37,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9722,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "姚大家早啊！有路过的早食老板推着小车，高声打招呼，“来了这么久也没见过您亲自登过台！什么时候给我们开开嗓长长见识啊！”",
-          "para_claimed": 26,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9831,
-          "para_correct": null,
-          "field": "dialogues[5]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 17,
@@ -558,7 +565,8 @@
       277,
       278,
       279
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -176,6 +176,16 @@
         "appearance_quotes": [],
         "state": "曾在北阳城斩碎蜘蛛妖兽",
         "actions": []
+      },
+      {
+        "name": "司仪",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -234,7 +244,14 @@
         "para": 30,
         "speaker": "唐真",
         "addressee": "红儿",
-        "text": "有些麻烦。难道是因为我来了，所以这小小的天门山里才会装这么多东西？",
+        "text": "有些麻烦。",
+        "manner": "微微摇头"
+      },
+      {
+        "para": 30,
+        "speaker": "唐真",
+        "addressee": "红儿",
+        "text": "难道是因为我来了，所以这小小的天门山里才会装这么多东西？",
         "manner": "微微摇头"
       },
       {
@@ -248,7 +265,14 @@
         "para": 35,
         "speaker": "红儿",
         "addressee": "唐真",
-        "text": "根据玉皇顶的文书，先进行的是入场环节，然后是群峰考核，最后是灵溪洞的开洞仪式以及农圣和几位来客的讲道。中间夹杂的项目包括宴席、各宗斗法、歌舞表演、儒门诗会、佛宗讲经之类的。",
+        "text": "根据玉皇顶的文书，先进行的是入场环节，然后是群峰考核，最后是灵溪洞的开洞仪式以及农圣和几位来客的讲道。",
+        "manner": "记得清楚"
+      },
+      {
+        "para": 35,
+        "speaker": "红儿",
+        "addressee": "唐真",
+        "text": "中间夹杂的项目包括宴席、各宗斗法、歌舞表演、儒门诗会、佛宗讲经之类的。",
         "manner": "记得清楚"
       },
       {
@@ -733,35 +757,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 69,
+      "total_quotes": 71,
       "counts": {
-        "exact": 67,
-        "near": 2,
+        "exact": 71,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.971,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "有些麻烦。难道是因为我来了，所以这小小的天门山里才会装这么多东西？",
-          "para_claimed": 30,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8485,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        },
-        {
-          "quote": "根据玉皇顶的文书，先进行的是入场环节，然后是群峰考核，最后是灵溪洞的开洞仪式以及农圣和几位来客的讲道。中间夹杂的项目包括宴席、各宗斗法、歌舞表演、儒门诗会、佛宗讲经之类的。",
-          "para_claimed": 35,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8953,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 14,
@@ -775,7 +780,8 @@
       113,
       114,
       115
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

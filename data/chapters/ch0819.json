@@ -234,6 +234,22 @@
         "manner": "实在是管不住这傻徒弟，紧走了两步，把他从土里拉起来，然后猛地一压他脑袋"
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "行礼！",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 15,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 17,
         "speaker": "中年人",
         "addressee": "一行人",
@@ -527,9 +543,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 41,
       "counts": {
-        "exact": 39,
+        "exact": 41,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -553,7 +569,8 @@
       816,
       817,
       818
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -160,6 +160,16 @@
           "建议严查严审",
           "被人皇问及具体办法时沉默"
         ]
+      },
+      {
+        "name": "方丈",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -290,6 +300,14 @@
         "addressee": "知了和尚",
         "text": "所以，目前佛宗并不想搞清楚到底是皇宫中的哪位参与了万佛寺囚禁佛陀，也不想听知了大师精确的汇报，佛宗需要握住这张牌，与皇宫做出交易，用来扩大咱们的势力。",
         "manner": "似乎很自然的就把自己算在了佛宗的势力里"
+      },
+      {
+        "para": 30,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "百官觐见！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 33,
@@ -578,9 +596,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 45,
       "counts": {
-        "exact": 44,
+        "exact": 45,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -599,7 +617,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

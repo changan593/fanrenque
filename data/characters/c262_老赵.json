@@ -1,0 +1,47 @@
+{
+  "canonical_name": "老赵",
+  "aliases": [
+    "兵大哥"
+  ],
+  "first_seq": 26,
+  "last_seq": 31,
+  "chapter_count": 2,
+  "chapters": [
+    26,
+    31
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 26,
+      "state": "巡卒，雨中巡视，抱怨"
+    },
+    {
+      "seq": 31,
+      "state": "已死，头颅被挂"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 26,
+      "actions": [
+        "雨中巡视，踩进水坑，发现尸体"
+      ]
+    },
+    {
+      "seq": 31,
+      "actions": [
+        "被摇醒",
+        "骂少年",
+        "发现尸体",
+        "骂阿一",
+        "死不瞑目"
+      ]
+    }
+  ],
+  "id": "c262_老赵"
+}

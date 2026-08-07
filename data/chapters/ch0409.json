@@ -219,6 +219,14 @@
         "manner": "语气里满是怜悯"
       },
       {
+        "para": 55,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊——！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 57,
         "speaker": "良木居士",
         "addressee": "红儿",
@@ -650,9 +658,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 63,
+      "total_quotes": 64,
       "counts": {
-        "exact": 63,
+        "exact": 64,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -671,7 +679,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

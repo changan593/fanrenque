@@ -1,0 +1,43 @@
+{
+  "canonical_name": "教习",
+  "aliases": [],
+  "first_seq": 1024,
+  "last_seq": 1025,
+  "chapter_count": 2,
+  "chapters": [
+    1024,
+    1025
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1024,
+      "state": "担忧"
+    },
+    {
+      "seq": 1025,
+      "state": "领路，配合天菩萨速度，未帮忙"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1024,
+      "actions": [
+        "告知首魔尊生死未定",
+        "询问是否表示，通报天菩萨来访"
+      ]
+    },
+    {
+      "seq": 1025,
+      "actions": [
+        "领天菩萨从偏门进入",
+        "指引房间"
+      ]
+    }
+  ],
+  "id": "c337_教习"
+}

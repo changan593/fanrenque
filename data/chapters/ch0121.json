@@ -275,7 +275,14 @@
         "para": 6,
         "speaker": "吕藏锋",
         "addressee": "唐真",
-        "text": "当然！这可是近几年大型法会的固定项目！不过南洲可能比较少，毕竟老一辈比较烦你们，但像我们北俱芦洲啊，中胜神州啊每场必有！",
+        "text": "当然！",
+        "manner": "点头"
+      },
+      {
+        "para": 6,
+        "speaker": "吕藏锋",
+        "addressee": "唐真",
+        "text": "这可是近几年大型法会的固定项目！不过南洲可能比较少，毕竟老一辈比较烦你们，但像我们北俱芦洲啊，中胜神州啊每场必有！",
         "manner": "点头"
       },
       {
@@ -303,7 +310,14 @@
         "para": 17,
         "speaker": "吕藏锋",
         "addressee": "唐真",
-        "text": "不知道，应该是共同创作吧！本来刚开始大家只是下意识的按六贼的框架组队，后来据说是有个队伍里的女剑修刻意仿了我大师姐的模样在某场法会上喝酒打闹，大家都觉得很精彩，然后就变成这样了。",
+        "text": "不知道，应该是共同创作吧！",
+        "manner": "摇头"
+      },
+      {
+        "para": 17,
+        "speaker": "吕藏锋",
+        "addressee": "唐真",
+        "text": "本来刚开始大家只是下意识的按六贼的框架组队，后来据说是有个队伍里的女剑修刻意仿了我大师姐的模样在某场法会上喝酒打闹，大家都觉得很精彩，然后就变成这样了。",
         "manner": "摇头"
       },
       {
@@ -317,7 +331,14 @@
         "para": 21,
         "speaker": "吕藏锋",
         "addressee": "唐真",
-        "text": "肯定是不让明面来的，你没看每个人都没说名字吗！但不让又能怎样，哪里管的住！老一辈也不怎么参加这种新兴法会。",
+        "text": "肯定是不让明面来的，你没看每个人都没说名字吗！",
+        "manner": "小声道"
+      },
+      {
+        "para": 21,
+        "speaker": "吕藏锋",
+        "addressee": "唐真",
+        "text": "但不让又能怎样，哪里管的住！老一辈也不怎么参加这种新兴法会。",
         "manner": "小声道"
       },
       {
@@ -630,44 +651,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 41,
       "counts": {
-        "exact": 35,
-        "near": 3,
+        "exact": 41,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9211,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "当然！这可是近几年大型法会的固定项目！不过南洲可能比较少，毕竟老一辈比较烦你们，但像我们北俱芦洲啊，中胜神州啊每场必有！",
-          "para_claimed": 6,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.95,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "不知道，应该是共同创作吧！本来刚开始大家只是下意识的按六贼的框架组队，后来据说是有个队伍里的女剑修刻意仿了我大师姐的模样在某场法会上喝酒打闹，大家都觉得很精彩，然后就变成这样了。",
-          "para_claimed": 17,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9101,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        },
-        {
-          "quote": "肯定是不让明面来的，你没看每个人都没说名字吗！但不让又能怎样，哪里管的住！老一辈也不怎么参加这种新兴法会。",
-          "para_claimed": 21,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8302,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -681,7 +674,8 @@
       118,
       119,
       120
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

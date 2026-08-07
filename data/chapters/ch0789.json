@@ -254,14 +254,28 @@
         "para": 32,
         "speaker": "程百尺",
         "addressee": "无救",
-        "text": "或许吧。我的道理并不需要证，只要存在便足够了。",
+        "text": "或许吧。",
+        "manner": "声音平淡，并不见任何愤恨"
+      },
+      {
+        "para": 32,
+        "speaker": "程百尺",
+        "addressee": "无救",
+        "text": "我的道理并不需要证，只要存在便足够了。",
         "manner": "声音平淡，并不见任何愤恨"
       },
       {
         "para": 34,
         "speaker": "人皇",
         "addressee": "程百尺",
-        "text": "闲话已毕。师兄如此爱与他人穷经论道，可我三人并无儒学道理，你又如何？",
+        "text": "闲话已毕。",
+        "manner": "金色的古树里男人的声音微微发冷"
+      },
+      {
+        "para": 34,
+        "speaker": "人皇",
+        "addressee": "程百尺",
+        "text": "师兄如此爱与他人穷经论道，可我三人并无儒学道理，你又如何？",
         "manner": "金色的古树里男人的声音微微发冷"
       },
       {
@@ -549,35 +563,16 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 47,
+      "total_quotes": 49,
       "counts": {
-        "exact": 45,
-        "near": 2,
+        "exact": 49,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9574,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "或许吧。我的道理并不需要证，只要存在便足够了。",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8261,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        },
-        {
-          "quote": "闲话已毕。师兄如此爱与他人穷经论道，可我三人并无儒学道理，你又如何？",
-          "para_claimed": 34,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8529,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 21,
@@ -587,7 +582,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

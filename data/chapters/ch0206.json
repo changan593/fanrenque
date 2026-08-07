@@ -142,6 +142,16 @@
           "被齐渊吓到，烤蜗牛掉地",
           "捡起烤蜗牛递给齐渊"
         ]
+      },
+      {
+        "name": "齐渊分身",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -1027,7 +1037,8 @@
       203,
       204,
       205
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

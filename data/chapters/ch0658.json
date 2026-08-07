@@ -167,6 +167,36 @@
           "高呼佛宗有叛",
           "声称已查明金觉佛陀之死的蹊跷"
         ]
+      },
+      {
+        "name": "小丫头",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "女童",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "女孩",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -636,7 +666,7 @@
       {
         "para": 89,
         "character": "唐真",
-        "text": "唐真的背脊有些发凉了，毫无疑问这场佛宗内部的问题终究要掀开摆在台面上了，唐真看了看知了，却见胖和尚一眼都没有瞅自己。",
+        "text": "唐真的背脊有些发凉了，毫无疑问这场佛宗内部的问题终究要掀开摆在台面上了，唐真看了看知了，却见胖和尚一眼都没有瞅自己",
         "kind": "心理活动"
       },
       {
@@ -871,24 +901,14 @@
     "verbatim": {
       "total_quotes": 100,
       "counts": {
-        "exact": 99,
-        "near": 1,
+        "exact": 100,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.99,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "唐真的背脊有些发凉了，毫无疑问这场佛宗内部的问题终究要掀开摆在台面上了，唐真看了看知了，却见胖和尚一眼都没有瞅自己。",
-          "para_claimed": 89,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9828,
-          "para_correct": null,
-          "field": "monologues[21]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 44,
@@ -898,7 +918,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

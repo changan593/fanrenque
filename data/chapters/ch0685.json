@@ -150,7 +150,14 @@
         "para": 47,
         "speaker": "余庆",
         "addressee": "尉天齐",
-        "text": "据说是当年我们宗门某位老祖宗做出来给祖师玩的。后来我修剑鬼，祖师便想起了这柄剑，因为其特性是密布周遭，但杀伤力并不强，最适合孩童锻体，既全面又不伤身体。",
+        "text": "据说是当年我们宗门某位老祖宗做出来给祖师玩的。",
+        "manner": "微微摇头"
+      },
+      {
+        "para": 47,
+        "speaker": "余庆",
+        "addressee": "尉天齐",
+        "text": "后来我修剑鬼，祖师便想起了这柄剑，因为其特性是密布周遭，但杀伤力并不强，最适合孩童锻体，既全面又不伤身体。",
         "manner": "微微摇头"
       },
       {
@@ -377,26 +384,16 @@
     "structure_score": 92,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 22,
+      "total_quotes": 23,
       "counts": {
-        "exact": 21,
-        "near": 1,
+        "exact": 23,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9545,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "据说是当年我们宗门某位老祖宗做出来给祖师玩的。后来我修剑鬼，祖师便想起了这柄剑，因为其特性是密布周遭，但杀伤力并不强，最适合孩童锻体，既全面又不伤身体。",
-          "para_claimed": 47,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7632,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 9,
@@ -406,7 +403,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

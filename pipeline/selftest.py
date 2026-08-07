@@ -106,7 +106,7 @@ def build_fake_analysis(ch: dict, flawed: bool) -> dict:
                      "text": "这天地终将由我改写！", "manner": "怒吼"})
     return {
         "one_line": "自测用假数据",
-        "synopsis": "这是自测用的假简介，" * 8,
+        "synopsis": "这是自测用的假简介，" * 8 + "以句号收尾。",
         "time_setting": "正午", "emotional_tone": "压抑",
         "characters": [{"name": "唐真", "aliases": ["三只眼"], "role_in_chapter": "主导",
                         "mentioned_only": False, "appearance_quotes": [],

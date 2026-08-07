@@ -254,6 +254,14 @@
         "addressee": "长发怪男",
         "text": "既然如今未到，那么便不会来了。",
         "manner": "神情平淡"
+      },
+      {
+        "para": 42,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "若是紫云仙宫在西洲，我师父或许会动念，毕竟是个精气神饱满的老头。但如今它还未回到西洲，主事的是我那五师弟，那是个老气横秋的年轻人。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -474,9 +482,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 36,
+        "exact": 37,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -495,7 +503,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

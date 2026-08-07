@@ -277,6 +277,14 @@
         "manner": "偏头想了想"
       },
       {
+        "para": 39,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我当时的代号好像叫‘青丘赌圣’。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 40,
         "speaker": "蟾蜍上的男人",
         "addressee": "唐真",
@@ -437,9 +445,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 32,
       "counts": {
-        "exact": 31,
+        "exact": 32,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -458,7 +466,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

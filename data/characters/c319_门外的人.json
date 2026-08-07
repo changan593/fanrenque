@@ -1,0 +1,25 @@
+{
+  "canonical_name": "门外的人",
+  "aliases": [],
+  "first_seq": 743,
+  "last_seq": 749,
+  "chapter_count": 2,
+  "chapters": [
+    743,
+    749
+  ],
+  "role_distribution": {
+    "客串": 1,
+    "出场": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 743,
+      "state": "未明确"
+    }
+  ],
+  "actions": [],
+  "id": "c319_门外的人"
+}

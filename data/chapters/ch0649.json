@@ -265,7 +265,14 @@
         "para": 37,
         "speaker": "魏成",
         "addressee": "姚望舒",
-        "text": "宫主，您不去吗？今年九洲清宴应当是这些年来最热闹的一次了，涉及人皇玺的下落，我南洲虽然不感兴趣，可终归是九洲的大势，如果选对下注，也是能有些收获的。",
+        "text": "宫主，您不去吗？",
+        "manner": "问出口"
+      },
+      {
+        "para": 37,
+        "speaker": "魏成",
+        "addressee": "姚望舒",
+        "text": "今年九洲清宴应当是这些年来最热闹的一次了，涉及人皇玺的下落，我南洲虽然不感兴趣，可终归是九洲的大势，如果选对下注，也是能有些收获的。",
         "manner": "问出口"
       },
       {
@@ -516,26 +523,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 35,
-        "near": 1,
+        "exact": 37,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9722,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "宫主，您不去吗？今年九洲清宴应当是这些年来最热闹的一次了，涉及人皇玺的下落，我南洲虽然不感兴趣，可终归是九洲的大势，如果选对下注，也是能有些收获的。",
-          "para_claimed": 37,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9054,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 24,
@@ -545,7 +542,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -90,9 +90,9 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "她看着镜子，她伸手抚摸着那金色脚链",
+          "看着镜子，她伸手抚摸着那金色脚链",
           "她活灵活现地学着那位圣人的语气",
-          "她一边说着一边爬向镜子",
+          "一边说着一边爬向镜子",
           "狂风吹的女人的发丝飞舞起来，她的脚踝又开始流血了"
         ],
         "state": "被囚禁，脚踝流血，情绪复杂",
@@ -509,33 +509,14 @@
     "verbatim": {
       "total_quotes": 48,
       "counts": {
-        "exact": 46,
-        "near": 2,
+        "exact": 48,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9583,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "她看着镜子，她伸手抚摸着那金色脚链",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9412,
-          "para_correct": null,
-          "field": "characters[1].appearance_quotes[0]"
-        },
-        {
-          "quote": "她一边说着一边爬向镜子",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9091,
-          "para_correct": null,
-          "field": "characters[1].appearance_quotes[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -545,7 +526,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

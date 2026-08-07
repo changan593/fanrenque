@@ -205,6 +205,16 @@
         "appearance_quotes": [],
         "state": "",
         "actions": []
+      },
+      {
+        "name": "数不清的修行者",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -276,6 +286,14 @@
         "addressee": "在场众人",
         "text": "也正合重归道门之意吧！",
         "manner": "笑了笑，脸上的笑意却有些淡"
+      },
+      {
+        "para": 9,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "紫雷九响庆归家",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 11,
@@ -656,9 +674,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 55,
       "counts": {
-        "exact": 54,
+        "exact": 55,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -681,7 +699,8 @@
       473,
       474,
       475
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

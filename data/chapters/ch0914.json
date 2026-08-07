@@ -187,6 +187,16 @@
         "actions": [
           "在村口发糖，吸引孩子"
         ]
+      },
+      {
+        "name": "大人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -917,7 +927,8 @@
       911,
       912,
       913
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

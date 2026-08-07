@@ -266,7 +266,14 @@
         "para": 2,
         "speaker": "姜赢",
         "addressee": "身旁的每个人",
-        "text": "我们必须夺回来！南城门不仅是离我们最近的！也是离南宁铁骑最近的！东门是不行的，即便把将领送出去，等他调兵协防南门也未必来得及！我们需要从南门将将领送出去，让南方驻扎的军队立刻建立防线！",
+        "text": "我们必须夺回来！",
+        "manner": "高声道"
+      },
+      {
+        "para": 2,
+        "speaker": "姜赢",
+        "addressee": "身旁的每个人",
+        "text": "南城门不仅是离我们最近的！也是离南宁铁骑最近的！东门是不行的，即便把将领送出去，等他调兵协防南门也未必来得及！我们需要从南门将将领送出去，让南方驻扎的军队立刻建立防线！",
         "manner": "高声道"
       },
       {
@@ -582,26 +589,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 49,
       "counts": {
-        "exact": 47,
-        "near": 1,
+        "exact": 49,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9792,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我们必须夺回来！南城门不仅是离我们最近的！也是离南宁铁骑最近的！东门是不行的，即便把将领送出去，等他调兵协防南门也未必来得及！我们需要从南门将将领送出去，让南方驻扎的军队立刻建立防线！",
-          "para_claimed": 2,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.913,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -614,7 +611,8 @@
     "context_chapters_used": [
       764,
       765
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

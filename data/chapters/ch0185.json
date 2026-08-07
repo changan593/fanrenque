@@ -220,6 +220,14 @@
         "addressee": "未明说",
         "text": "好歹是个天仙，能不能出来说话？",
         "manner": "开口"
+      },
+      {
+        "para": 45,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "紫云道法，雷诀。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -440,9 +448,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 37,
       "counts": {
-        "exact": 36,
+        "exact": 37,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -461,7 +469,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

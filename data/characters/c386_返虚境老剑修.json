@@ -1,0 +1,23 @@
+{
+  "canonical_name": "返虚境老剑修",
+  "aliases": [],
+  "first_seq": 89,
+  "last_seq": 89,
+  "chapter_count": 1,
+  "chapters": [
+    89
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 89,
+      "state": "撑了吕藏锋五剑而败"
+    }
+  ],
+  "actions": [],
+  "id": "c386_返虚境老剑修"
+}

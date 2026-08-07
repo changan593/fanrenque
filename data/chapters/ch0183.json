@@ -343,7 +343,14 @@
         "para": 39,
         "speaker": "金浩",
         "addressee": "姚安饶",
-        "text": "若是寻常时候，他自己惹祸被人所杀，我甚至不会意外，毕竟仗势欺人之人终究要死于他人之手。但他这次并非死于仗势之时，他是为我金童峰，为我天门山做事而死，即便平常千般不好，但既然他死于正事，我便要认下这个弟弟！！我金家就要讨回这个公道！",
+        "text": "若是寻常时候，他自己惹祸被人所杀，我甚至不会意外，毕竟仗势欺人之人终究要死于他人之手。",
+        "manner": "微微前倾身子，语气变得严肃"
+      },
+      {
+        "para": 39,
+        "speaker": "金浩",
+        "addressee": "姚安饶",
+        "text": "但他这次并非死于仗势之时，他是为我金童峰，为我天门山做事而死，即便平常千般不好，但既然他死于正事，我便要认下这个弟弟！！我金家就要讨回这个公道！",
         "manner": "微微前倾身子，语气变得严肃"
       },
       {
@@ -371,7 +378,14 @@
         "para": 45,
         "speaker": "金浩",
         "addressee": "长风道人",
-        "text": "不讨喜，罪不至死。长风师叔，动手吧！",
+        "text": "不讨喜，罪不至死。",
+        "manner": "低声说道"
+      },
+      {
+        "para": 45,
+        "speaker": "金浩",
+        "addressee": "长风道人",
+        "text": "长风师叔，动手吧！",
         "manner": "低声说道"
       },
       {
@@ -387,6 +401,14 @@
         "addressee": "姚安饶",
         "text": "佛宗？",
         "manner": "大惊"
+      },
+      {
+        "para": 59,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "完了！我成冤大头了！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -531,35 +553,16 @@
     "structure_score": 88,
     "fidelity_score": 72,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 34,
       "counts": {
-        "exact": 29,
-        "near": 1,
-        "miss": 1,
+        "exact": 34,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9355,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "若是寻常时候，他自己惹祸被人所杀，我甚至不会意外，毕竟仗势欺人之人终究要死于他人之手。但他这次并非死于仗势之时，他是为我金童峰，为我天门山做事而死，即便平常千般不好，但既然他死于正事，我便要认下这个弟弟！！我金家就要讨回这个公道！",
-          "para_claimed": 39,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8435,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        },
-        {
-          "quote": "不讨喜，罪不至死。长风师叔，动手吧！",
-          "para_claimed": 45,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5556,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 19,
@@ -575,7 +578,8 @@
       180,
       181,
       182
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

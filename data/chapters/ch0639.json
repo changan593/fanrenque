@@ -223,6 +223,36 @@
         "appearance_quotes": [],
         "state": "看待命理的方式与阁主契合",
         "actions": []
+      },
+      {
+        "name": "佛宗",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "诸皇子",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "元永洁",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -332,6 +362,14 @@
         "manner": "说起人皇陛下，似乎很熟悉的样子"
       },
       {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "可我并不是唐真那种优柔寡断的人，我没那么善良。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 20,
         "speaker": "木方生",
         "addressee": "姜麟",
@@ -393,6 +431,14 @@
         "addressee": "吴悔",
         "text": "别愁眉苦脸的，我同意和你们做交易了，不过前提是你家那位得亲自作保。",
         "manner": "拍了拍吴悔的肩膀"
+      },
+      {
+        "para": 46,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "毕竟是他的圣途，总不能要我出力吧！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 47,
@@ -638,9 +684,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 44,
       "counts": {
-        "exact": 42,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -660,7 +706,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

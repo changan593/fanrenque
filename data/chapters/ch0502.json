@@ -310,6 +310,14 @@
         "addressee": "怀素",
         "text": "界，南洲界的界。",
         "manner": "看着怀素无比确定道"
+      },
+      {
+        "para": 40,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "姚姑娘，这字太大了，方寸之田写不出南洲的界！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -492,9 +500,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 43,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -513,7 +521,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

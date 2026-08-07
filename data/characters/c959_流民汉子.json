@@ -1,0 +1,37 @@
+{
+  "canonical_name": "流民汉子",
+  "aliases": [
+    "小老二儿"
+  ],
+  "first_seq": 1178,
+  "last_seq": 1178,
+  "chapter_count": 1,
+  "chapters": [
+    1178
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1178,
+      "quote": "年纪四十左右"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1178,
+      "state": "在码头做帮工，娶了流民老婆，妻子临产"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1178,
+      "actions": [
+        "在河道上奔跑，寻找刘郎中"
+      ]
+    }
+  ],
+  "id": "c959_流民汉子"
+}

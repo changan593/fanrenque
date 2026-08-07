@@ -347,7 +347,14 @@
         "para": 35,
         "speaker": "姚望舒",
         "addressee": "怀素",
-        "text": "还有！咳！咳！若未来怀老先生真的登临圣位，要做我。。。咳！要做我南洲的圣人！！",
+        "text": "还有！咳！咳！",
+        "manner": "又开始咳嗽了，她捂着胸口咳了好一会，才抬头道"
+      },
+      {
+        "para": 35,
+        "speaker": "姚望舒",
+        "addressee": "怀素",
+        "text": "若未来怀老先生真的登临圣位，要做我。。。咳！要做我南洲的圣人！！",
         "manner": "又开始咳嗽了，她捂着胸口咳了好一会，才抬头道"
       },
       {
@@ -778,26 +785,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 82,
+      "total_quotes": 83,
       "counts": {
-        "exact": 81,
-        "near": 1,
+        "exact": 83,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9878,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "还有！咳！咳！若未来怀老先生真的登临圣位，要做我。。。咳！要做我南洲的圣人！！",
-          "para_claimed": 35,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8205,
-          "para_correct": null,
-          "field": "dialogues[21]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 29,
@@ -811,7 +808,8 @@
       502,
       503,
       504
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

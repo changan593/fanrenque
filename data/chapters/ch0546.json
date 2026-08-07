@@ -256,6 +256,14 @@
         "manner": "声音缓慢"
       },
       {
+        "para": 38,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "阿弥陀佛。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 39,
         "speaker": "法源寺方丈",
         "addressee": "知了和尚",
@@ -580,9 +588,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 55,
       "counts": {
-        "exact": 54,
+        "exact": 55,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -601,7 +609,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

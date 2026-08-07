@@ -407,7 +407,7 @@
       },
       {
         "para": 28,
-        "text": "这话没道理，但他一边说一边从袖子里掏出一顶草帽以及一截手骨便变得又有点道理。",
+        "text": "这话没道理，但他一边说一边从袖子里掏出一顶草帽以及一截手骨便变得又有了点道理。",
         "function": "伏笔"
       },
       {
@@ -564,24 +564,14 @@
     "verbatim": {
       "total_quotes": 42,
       "counts": {
-        "exact": 41,
-        "near": 1,
+        "exact": 42,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9762,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 3,
-      "problems": [
-        {
-          "quote": "这话没道理，但他一边说一边从袖子里掏出一顶草帽以及一截手骨便变得又有点道理。",
-          "para_claimed": 28,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9737,
-          "para_correct": null,
-          "field": "narration[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 8,
@@ -595,7 +585,8 @@
       913,
       914,
       915
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

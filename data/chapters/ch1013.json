@@ -344,6 +344,14 @@
         "manner": "伸手指向唐真"
       },
       {
+        "para": 46,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "他心忧天道坍塌，可当他看着一个女孩在自己膝下长大，却又无可奈何间生了几分私心。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 47,
         "speaker": "杜圣",
         "addressee": "唐真",
@@ -800,9 +808,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 80,
+      "total_quotes": 81,
       "counts": {
-        "exact": 80,
+        "exact": 81,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -822,7 +830,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

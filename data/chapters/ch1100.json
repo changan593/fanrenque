@@ -112,6 +112,16 @@
           "陈述守护镜湖的决心",
           "答应姜羽的要求"
         ]
+      },
+      {
+        "name": "管事",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -238,6 +248,14 @@
         "addressee": "姜羽与火魔尊",
         "text": "我清泉宗求二位卖我宗一个面子，这镜湖实乃我宗之要地，毁不得。",
         "manner": "真诚道"
+      },
+      {
+        "para": 48,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "可以，但我有个要求。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -504,9 +522,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 45,
       "counts": {
-        "exact": 44,
+        "exact": 45,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -525,7 +543,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

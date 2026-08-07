@@ -231,6 +231,14 @@
     ],
     "dialogues": [
       {
+        "para": 5,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "咳！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 10,
         "speaker": "裴林剑",
         "addressee": "红儿",
@@ -644,9 +652,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 57,
       "counts": {
-        "exact": 56,
+        "exact": 57,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -665,7 +673,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

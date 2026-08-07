@@ -297,7 +297,14 @@
         "para": 39,
         "speaker": "棺仙",
         "addressee": "姜羽",
-        "text": "伊呀呀呀～～！这就是所谓的帝女落尘凤首埋！欲索那连枝！兀自哀呀！",
+        "text": "伊呀呀呀～～！",
+        "manner": "一边大笑一边唱起了戏腔"
+      },
+      {
+        "para": 39,
+        "speaker": "棺仙",
+        "addressee": "姜羽",
+        "text": "这就是所谓的帝女落尘凤首埋！欲索那连枝！兀自哀呀！",
         "manner": "一边大笑一边唱起了戏腔"
       },
       {
@@ -775,26 +782,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 67,
+      "total_quotes": 68,
       "counts": {
-        "exact": 66,
-        "near": 1,
+        "exact": 68,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9851,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "伊呀呀呀～～！这就是所谓的帝女落尘凤首埋！欲索那连枝！兀自哀呀！",
-          "para_claimed": 39,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7812,
-          "para_correct": null,
-          "field": "dialogues[5]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -804,7 +801,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -170,6 +170,16 @@
         "appearance_quotes": [],
         "state": "被提及，教授小孩子",
         "actions": []
+      },
+      {
+        "name": "佛像里的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -219,7 +229,14 @@
         "para": 1,
         "speaker": "佛像里的人",
         "addressee": "吴慢慢",
-        "text": "你——！！你可知自己干了什么？那是已经快要成形的道基，舍生为蜡，明光成烛，是多么难得！你怎能。。。",
+        "text": "你——！！你可知自己干了什么？",
+        "manner": "嘶吼"
+      },
+      {
+        "para": 1,
+        "speaker": "佛像里的人",
+        "addressee": "吴慢慢",
+        "text": "那是已经快要成形的道基，舍生为蜡，明光成烛，是多么难得！你怎能。。。",
         "manner": "嘶吼"
       },
       {
@@ -268,7 +285,14 @@
         "para": 30,
         "speaker": "阎罗罗汉",
         "addressee": "迦叶",
-        "text": "你们当年骗我，也是如此说的。凤凰火道出世，天下火道归一，我确实怕了，你二人趁此机，邀我避世，言那凤凰过于傲，存世难长久，只要我躲入禁灵之处，便可不被凤凰火道影响，待到凤凰陨落再出来，便有机会火道精进。",
+        "text": "你们当年骗我，也是如此说的。",
+        "manner": "冷笑道"
+      },
+      {
+        "para": 30,
+        "speaker": "阎罗罗汉",
+        "addressee": "迦叶",
+        "text": "凤凰火道出世，天下火道归一，我确实怕了，你二人趁此机，邀我避世，言那凤凰过于傲，存世难长久，只要我躲入禁灵之处，便可不被凤凰火道影响，待到凤凰陨落再出来，便有机会火道精进。",
         "manner": "冷笑道"
       },
       {
@@ -601,35 +625,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 55,
       "counts": {
-        "exact": 51,
-        "near": 2,
+        "exact": 55,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9623,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "你——！！你可知自己干了什么？那是已经快要成形的道基，舍生为蜡，明光成烛，是多么难得！你怎能。。。",
-          "para_claimed": 1,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7959,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        },
-        {
-          "quote": "你们当年骗我，也是如此说的。凤凰火道出世，天下火道归一，我确实怕了，你二人趁此机，邀我避世，言那凤凰过于傲，存世难长久，只要我躲入禁灵之处，便可不被凤凰火道影响，待到凤凰陨落再出来，便有机会火道精进。",
-          "para_claimed": 30,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.87,
-          "para_correct": null,
-          "field": "dialogues[7]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 15,
@@ -643,7 +648,8 @@
       910,
       911,
       912
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

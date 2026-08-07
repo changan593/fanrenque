@@ -155,6 +155,14 @@
     ],
     "dialogues": [
       {
+        "para": 8,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 18,
         "speaker": "尉天齐",
         "addressee": "麻雀",
@@ -279,9 +287,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 9,
+      "total_quotes": 10,
       "counts": {
-        "exact": 9,
+        "exact": 10,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -300,7 +308,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

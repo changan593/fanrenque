@@ -151,7 +151,14 @@
         "para": 17,
         "speaker": "闻人哭",
         "addressee": "李公公",
-        "text": "李三全。你庆和三十二年进宫，如今在宫八十年整，从尚宝监一个带班太监，一路走到今天的御前太监，从未犯过大错，处事极为善退，故而能有今天的地位。",
+        "text": "李三全。",
+        "manner": "声音变得阴柔，有些旧友闲聊的架势"
+      },
+      {
+        "para": 17,
+        "speaker": "闻人哭",
+        "addressee": "李公公",
+        "text": "你庆和三十二年进宫，如今在宫八十年整，从尚宝监一个带班太监，一路走到今天的御前太监，从未犯过大错，处事极为善退，故而能有今天的地位。",
         "manner": "声音变得阴柔，有些旧友闲聊的架势"
       },
       {
@@ -165,7 +172,14 @@
         "para": 22,
         "speaker": "闻人哭",
         "addressee": "李公公",
-        "text": "不过，那是以前。你在七十六岁生日那天，喝了很多酒，然后甩开给你庆祝的同僚，一个人去了一趟御花园，这一路上你一个人都没见到。",
+        "text": "不过，那是以前。",
+        "manner": "迈步走向自己的小马车"
+      },
+      {
+        "para": 22,
+        "speaker": "闻人哭",
+        "addressee": "李公公",
+        "text": "你在七十六岁生日那天，喝了很多酒，然后甩开给你庆祝的同僚，一个人去了一趟御花园，这一路上你一个人都没见到。",
         "manner": "迈步走向自己的小马车"
       },
       {
@@ -462,35 +476,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 42,
       "counts": {
-        "exact": 38,
-        "near": 2,
+        "exact": 42,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.95,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "李三全。你庆和三十二年进宫，如今在宫八十年整，从尚宝监一个带班太监，一路走到今天的御前太监，从未犯过大错，处事极为善退，故而能有今天的地位。",
-          "para_claimed": 17,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9429,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        },
-        {
-          "quote": "不过，那是以前。你在七十六岁生日那天，喝了很多酒，然后甩开给你庆祝的同僚，一个人去了一趟御花园，这一路上你一个人都没见到。",
-          "para_claimed": 22,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8852,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 10,
@@ -500,7 +495,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

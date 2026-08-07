@@ -162,6 +162,16 @@
         "actions": [
           "抱怨姚安饶歇戏四天"
         ]
+      },
+      {
+        "name": "酒桌上的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -260,6 +270,14 @@
       }
     ],
     "dialogues": [
+      {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
       {
         "para": 8,
         "speaker": "酒桌上的人",
@@ -383,7 +401,14 @@
         "para": 43,
         "speaker": "尉天齐",
         "addressee": "云儿",
-        "text": "可以。除了血液，饭食、水、煮熟的肉都可以。",
+        "text": "可以。",
+        "manner": "满身大汗的出现在了那里，对着云儿道"
+      },
+      {
+        "para": 43,
+        "speaker": "尉天齐",
+        "addressee": "云儿",
+        "text": "除了血液，饭食、水、煮熟的肉都可以。",
         "manner": "满身大汗的出现在了那里，对着云儿道"
       },
       {
@@ -657,26 +682,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 51,
       "counts": {
-        "exact": 48,
-        "near": 1,
+        "exact": 51,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9796,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "可以。除了血液，饭食、水、煮熟的肉都可以。",
-          "para_claimed": 43,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8571,
-          "para_correct": null,
-          "field": "dialogues[17]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 21,
@@ -692,7 +707,8 @@
       313,
       314,
       315
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

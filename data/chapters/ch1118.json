@@ -221,6 +221,14 @@
         "manner": "扔铜板"
       },
       {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "脑子有问题？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 13,
         "speaker": "茶庄主事",
         "addressee": "女孩",
@@ -606,9 +614,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 54,
       "counts": {
-        "exact": 53,
+        "exact": 54,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -631,7 +639,8 @@
       1115,
       1116,
       1117
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

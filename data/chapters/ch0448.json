@@ -361,7 +361,14 @@
         "para": 48,
         "speaker": "神秘人",
         "addressee": "楼主",
-        "text": "哼，不用谢我～要怪就怪畅音阁的那帮奴才不懂事！偏偏做了见不得人的事，还被污衙抓了把柄！若非那当红小生进了污衙，再怎样也不会在你们这帮外面的戏班子里挑人的！",
+        "text": "哼，不用谢我～",
+        "manner": "冷笑一声"
+      },
+      {
+        "para": 48,
+        "speaker": "神秘人",
+        "addressee": "楼主",
+        "text": "要怪就怪畅音阁的那帮奴才不懂事！偏偏做了见不得人的事，还被污衙抓了把柄！若非那当红小生进了污衙，再怎样也不会在你们这帮外面的戏班子里挑人的！",
         "manner": "冷笑一声"
       },
       {
@@ -384,6 +391,14 @@
         "addressee": "神秘人",
         "text": "请问。。",
         "manner": "开口"
+      },
+      {
+        "para": 51,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这是要做什么？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 52,
@@ -662,26 +677,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 61,
+      "total_quotes": 63,
       "counts": {
-        "exact": 60,
-        "near": 1,
+        "exact": 63,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9836,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哼，不用谢我～要怪就怪畅音阁的那帮奴才不懂事！偏偏做了见不得人的事，还被污衙抓了把柄！若非那当红小生进了污衙，再怎样也不会在你们这帮外面的戏班子里挑人的！",
-          "para_claimed": 48,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9221,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 28,
@@ -693,7 +698,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

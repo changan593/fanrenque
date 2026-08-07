@@ -233,6 +233,14 @@
         "manner": "低声道"
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "嗯。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 16,
         "speaker": "喊声",
         "addressee": "白生",
@@ -427,9 +435,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 39,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -452,7 +460,8 @@
       213,
       214,
       215
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

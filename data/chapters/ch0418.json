@@ -257,6 +257,14 @@
         "manner": "点头"
       },
       {
+        "para": 5,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "那尉天齐这边。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "吴悔",
         "addressee": "儒生",
@@ -423,6 +431,14 @@
         "addressee": "尉天齐",
         "text": "是的，南宁郡主和南宁王到了皇都后，就住在了皇宫中，得空当然要来拜见娘娘。",
         "manner": "点头，然后侧步"
+      },
+      {
+        "para": 59,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "尉公子上去吧，会有其他宫人领路。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 60,
@@ -688,9 +704,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 65,
+      "total_quotes": 67,
       "counts": {
-        "exact": 65,
+        "exact": 67,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -714,7 +730,8 @@
       413,
       414,
       415
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

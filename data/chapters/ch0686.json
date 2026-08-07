@@ -221,7 +221,14 @@
         "para": 48,
         "speaker": "余庆",
         "addressee": "尉天齐",
-        "text": "是的。我吃过的三柄剑中，师祖送的灵光剑最早，所以剑意最弱，之后师父给我找了昙花剑，它剑意更稳。而在我炼化完成这两柄剑后，跨入了金丹，于是师兄给我找来了第三柄剑。",
+        "text": "是的。",
+        "manner": "点头"
+      },
+      {
+        "para": 48,
+        "speaker": "余庆",
+        "addressee": "尉天齐",
+        "text": "我吃过的三柄剑中，师祖送的灵光剑最早，所以剑意最弱，之后师父给我找了昙花剑，它剑意更稳。而在我炼化完成这两柄剑后，跨入了金丹，于是师兄给我找来了第三柄剑。",
         "manner": "点头"
       },
       {
@@ -626,26 +633,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 58,
+      "total_quotes": 59,
       "counts": {
-        "exact": 57,
-        "near": 1,
+        "exact": 59,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9828,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "是的。我吃过的三柄剑中，师祖送的灵光剑最早，所以剑意最弱，之后师父给我找了昙花剑，它剑意更稳。而在我炼化完成这两柄剑后，跨入了金丹，于是师兄给我找来了第三柄剑。",
-          "para_claimed": 48,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9625,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 15,
@@ -659,7 +656,8 @@
       683,
       684,
       685
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -412,10 +412,25 @@
         "manner": "声音有些颤抖"
       },
       {
+        "para": 77,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：前些天晚上，我半夜听到小姐叫我，于是开门查看，正好从屏风上的影子看到小姐坐了起来，我以为小姐病好了，赶忙跑过去！",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 77,
+        "speaker": "红儿",
+        "addressee": "唐真",
+        "text": "前些天晚上，我半夜听到小姐叫我，于是开门查看，正好从屏风上的影子看到小姐坐了起来，我以为小姐病好了，赶忙跑过去！",
+        "manner": ""
+      },
+      {
         "para": 78,
         "speaker": "红儿",
         "addressee": "唐真",
-        "text": "前些天晚上，我半夜听到小姐叫我，于是开门查看，正好从屏风上的影子看到小姐坐了起来，我以为小姐病好了，赶忙跑过去！结果发现屏风后小姐依然躺着，可是。。。可是屏风上的影子！！还在坐着！！",
+        "text": "结果发现屏风后小姐依然躺着，可是。。。可是屏风上的影子！！还在坐着！！",
         "manner": ""
       }
     ],
@@ -672,26 +687,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 65,
+      "total_quotes": 67,
       "counts": {
-        "exact": 64,
-        "near": 1,
+        "exact": 67,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9846,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "前些天晚上，我半夜听到小姐叫我，于是开门查看，正好从屏风上的影子看到小姐坐了起来，我以为小姐病好了，赶忙跑过去！结果发现屏风后小姐依然躺着，可是。。。可是屏风上的影子！！还在坐着！！",
-          "para_claimed": 78,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.978,
-          "para_correct": null,
-          "field": "dialogues[33]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 35,
@@ -707,7 +712,8 @@
       6,
       7,
       8
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

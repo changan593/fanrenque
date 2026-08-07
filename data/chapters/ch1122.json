@@ -254,7 +254,14 @@
         "para": 20,
         "speaker": "唐真",
         "addressee": "姜羽",
-        "text": "哈。不，我想让你帮我回西洲，帮我问齐渊一句话，你要找的葵和杜有才我会帮你找到的。",
+        "text": "哈。",
+        "manner": "笑了一下"
+      },
+      {
+        "para": 20,
+        "speaker": "唐真",
+        "addressee": "姜羽",
+        "text": "不，我想让你帮我回西洲，帮我问齐渊一句话，你要找的葵和杜有才我会帮你找到的。",
         "manner": "笑了一下"
       },
       {
@@ -747,26 +754,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 64,
+      "total_quotes": 65,
       "counts": {
-        "exact": 63,
-        "near": 1,
+        "exact": 65,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9844,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哈。不，我想让你帮我回西洲，帮我问齐渊一句话，你要找的葵和杜有才我会帮你找到的。",
-          "para_claimed": 20,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.95,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 21,
@@ -780,7 +777,8 @@
       1119,
       1120,
       1121
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

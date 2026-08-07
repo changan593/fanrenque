@@ -197,6 +197,16 @@
         "appearance_quotes": [],
         "state": "",
         "actions": []
+      },
+      {
+        "name": "其他奇人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -244,6 +254,14 @@
         "addressee": "姚城主",
         "text": "老爷，上午时来了个小厮打扮的少年，不似府里人，我等起疑拦阻正欲盘查，红儿小姐出现带那人进了院里，此时还未出来。",
         "manner": "低声"
+      },
+      {
+        "para": 3,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：老爷，上午时来了个小厮打扮的少年，不似府里人，我等起疑拦阻正欲盘查，红儿小姐出现带那人进了院里，此时还未出来。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 4,
@@ -681,9 +699,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 55,
+      "total_quotes": 56,
       "counts": {
-        "exact": 55,
+        "exact": 56,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -706,7 +724,8 @@
       10,
       11,
       12
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -269,7 +269,14 @@
         "para": 62,
         "speaker": "王善",
         "addressee": "吴慢慢",
-        "text": "我叫王善！我乃是密宗天菩萨的嫡传弟子，且我与求法真君唐真有过很深的渊源。你刚刚救了我，我不管你在外面是什么样的魔头，总不好让你这么困在这里，所以我也会救你，不求你别的，只求你起来后，你我各走各路！算是因果两清！你若杀了我，即便你跑出地牢，也会有人追杀你到天涯海角。",
+        "text": "我叫王善！我乃是密宗天菩萨的嫡传弟子，且我与求法真君唐真有过很深的渊源。",
+        "manner": "颇为正式的开口"
+      },
+      {
+        "para": 62,
+        "speaker": "王善",
+        "addressee": "吴慢慢",
+        "text": "你刚刚救了我，我不管你在外面是什么样的魔头，总不好让你这么困在这里，所以我也会救你，不求你别的，只求你起来后，你我各走各路！算是因果两清！你若杀了我，即便你跑出地牢，也会有人追杀你到天涯海角。",
         "manner": "颇为正式的开口"
       },
       {
@@ -648,26 +655,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 59,
+      "total_quotes": 60,
       "counts": {
-        "exact": 58,
-        "near": 1,
+        "exact": 60,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9831,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我叫王善！我乃是密宗天菩萨的嫡传弟子，且我与求法真君唐真有过很深的渊源。你刚刚救了我，我不管你在外面是什么样的魔头，总不好让你这么困在这里，所以我也会救你，不求你别的，只求你起来后，你我各走各路！算是因果两清！你若杀了我，即便你跑出地牢，也会有人追杀你到天涯海角。",
-          "para_claimed": 62,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8409,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -677,7 +674,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

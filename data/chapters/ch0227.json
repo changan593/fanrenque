@@ -168,7 +168,7 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [
-          "比张狂高半头，腰身笔直"
+          "比他高半头，加上腰身笔直"
         ],
         "state": "因杜圣记挂南洲百姓而合作，对张狂冷淡",
         "actions": [
@@ -595,24 +595,14 @@
     "verbatim": {
       "total_quotes": 39,
       "counts": {
-        "exact": 38,
-        "near": 1,
+        "exact": 39,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9744,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "比张狂高半头，腰身笔直",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7273,
-          "para_correct": null,
-          "field": "characters[7].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 24,
@@ -624,7 +614,8 @@
     "repair_rounds": 0,
     "context_chapters_used": [
       215
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

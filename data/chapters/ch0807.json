@@ -253,6 +253,14 @@
         "manner": "衰老虚弱，带着无尽的沧桑"
       },
       {
+        "para": 7,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "禁！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 9,
         "speaker": "李一",
         "addressee": "程百尺",
@@ -515,9 +523,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 30,
+      "total_quotes": 31,
       "counts": {
-        "exact": 30,
+        "exact": 31,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -536,7 +544,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

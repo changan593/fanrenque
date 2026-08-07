@@ -1,0 +1,32 @@
+{
+  "canonical_name": "白袍老者",
+  "aliases": [
+    "最年长的长老"
+  ],
+  "first_seq": 208,
+  "last_seq": 208,
+  "chapter_count": 1,
+  "chapters": [
+    208
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 208,
+      "state": "颤巍巍"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 208,
+      "actions": [
+        "拍肩膀安慰，提议回宫报告师叔祖"
+      ]
+    }
+  ],
+  "id": "c473_白袍老者"
+}

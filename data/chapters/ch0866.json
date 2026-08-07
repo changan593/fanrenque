@@ -157,6 +157,16 @@
         "appearance_quotes": [],
         "state": "手骨被唐真握住，可能已死或未死",
         "actions": []
+      },
+      {
+        "name": "长发男",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -432,7 +442,8 @@
       863,
       864,
       865
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

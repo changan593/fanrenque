@@ -569,7 +569,14 @@
         "para": 63,
         "speaker": "屏姐",
         "addressee": "唐真",
-        "text": "啊！狗安，恭喜你入道！唉！本该是个大事的，但今晚事太多，一时让我觉得倒也没那么惊喜了。",
+        "text": "啊！狗安，恭喜你入道！",
+        "manner": "似乎终于想起"
+      },
+      {
+        "para": 63,
+        "speaker": "屏姐",
+        "addressee": "唐真",
+        "text": "唉！本该是个大事的，但今晚事太多，一时让我觉得倒也没那么惊喜了。",
         "manner": "似乎终于想起"
       },
       {
@@ -597,7 +604,14 @@
         "para": 71,
         "speaker": "唐真",
         "addressee": "红儿",
-        "text": "什么没事？你是担心姚安饶？我觉得你还不如担心担心这代青年才俊的视力情况，这年头流行恶女吗？",
+        "text": "什么没事？你是担心姚安饶？",
+        "manner": "笑了笑，打趣"
+      },
+      {
+        "para": 71,
+        "speaker": "唐真",
+        "addressee": "红儿",
+        "text": "我觉得你还不如担心担心这代青年才俊的视力情况，这年头流行恶女吗？",
         "manner": "笑了笑，打趣"
       },
       {
@@ -1247,35 +1261,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 135,
+      "total_quotes": 137,
       "counts": {
-        "exact": 133,
-        "near": 2,
+        "exact": 137,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9852,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "啊！狗安，恭喜你入道！唉！本该是个大事的，但今晚事太多，一时让我觉得倒也没那么惊喜了。",
-          "para_claimed": 63,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7674,
-          "para_correct": null,
-          "field": "dialogues[27]"
-        },
-        {
-          "quote": "什么没事？你是担心姚安饶？我觉得你还不如担心担心这代青年才俊的视力情况，这年头流行恶女吗？",
-          "para_claimed": 71,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7333,
-          "para_correct": null,
-          "field": "dialogues[31]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 38,
@@ -1285,7 +1280,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

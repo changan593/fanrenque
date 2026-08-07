@@ -1,0 +1,30 @@
+{
+  "canonical_name": "剑山中人",
+  "aliases": [],
+  "first_seq": 79,
+  "last_seq": 79,
+  "chapter_count": 1,
+  "chapters": [
+    79
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 79,
+      "state": "连挑二十八山门，未有能过两剑者"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 79,
+      "actions": [
+        "问剑，连挑二十八山门"
+      ]
+    }
+  ],
+  "id": "c382_剑山中人"
+}

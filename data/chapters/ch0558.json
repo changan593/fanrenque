@@ -155,11 +155,35 @@
         "manner": "揉了揉云儿的脑袋"
       },
       {
+        "para": 4,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "嗯！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 5,
         "speaker": "尉天齐",
         "addressee": "云儿",
         "text": "你的糕点，别都分给其他孩子，自己也要吃啊！",
         "manner": "叫住了她，把碟子递过去"
+      },
+      {
+        "para": 5,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "回来！",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 6,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "好嘞！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 7,
@@ -445,9 +469,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 32,
+      "total_quotes": 35,
       "counts": {
-        "exact": 32,
+        "exact": 35,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -468,7 +492,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

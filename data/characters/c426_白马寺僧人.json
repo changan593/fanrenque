@@ -1,0 +1,23 @@
+{
+  "canonical_name": "白马寺僧人",
+  "aliases": [],
+  "first_seq": 126,
+  "last_seq": 126,
+  "chapter_count": 1,
+  "chapters": [
+    126
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 126,
+      "state": "面露满意之色"
+    }
+  ],
+  "actions": [],
+  "id": "c426_白马寺僧人"
+}

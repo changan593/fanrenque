@@ -1,0 +1,35 @@
+{
+  "canonical_name": "身材火辣的女人",
+  "aliases": [],
+  "first_seq": 620,
+  "last_seq": 620,
+  "chapter_count": 1,
+  "chapters": [
+    620
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 620,
+      "quote": "身材火辣"
+    }
+  ],
+  "states": [
+    {
+      "seq": 620,
+      "state": "被老和尚拍碎头颅"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 620,
+      "actions": [
+        "以仙胎镜偷袭老和尚"
+      ]
+    }
+  ],
+  "id": "c696_身材火辣的女人"
+}

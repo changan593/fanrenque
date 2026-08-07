@@ -1,0 +1,43 @@
+{
+  "canonical_name": "唱名者",
+  "aliases": [],
+  "first_seq": 91,
+  "last_seq": 124,
+  "chapter_count": 3,
+  "chapters": [
+    91,
+    123,
+    124
+  ],
+  "role_distribution": {
+    "次要": 1,
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 91,
+      "state": "通报盟主到"
+    },
+    {
+      "seq": 124,
+      "state": "负责点名"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 123,
+      "actions": [
+        "唱名"
+      ]
+    },
+    {
+      "seq": 124,
+      "actions": [
+        "喊出玉屏山"
+      ]
+    }
+  ],
+  "id": "c230_唱名者"
+}

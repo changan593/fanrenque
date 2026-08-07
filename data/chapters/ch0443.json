@@ -265,6 +265,14 @@
         "manner": "笑，阳光洒落，温柔开朗"
       },
       {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "现在整个中都的女孩都已经喜欢上了这个美丽又强大的长公主了，我当然不例外。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 13,
         "speaker": "尉天齐",
         "addressee": "姚安饶",
@@ -545,9 +553,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 46,
+        "exact": 47,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -566,7 +574,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

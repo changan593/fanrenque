@@ -209,6 +209,16 @@
         "appearance_quotes": [],
         "state": "带骑兵左支右突",
         "actions": []
+      },
+      {
+        "name": "道士",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -262,6 +272,14 @@
         "addressee": "姜羽",
         "text": "我想表达的是，一个家的组成不是论喜好与爱恨的！",
         "manner": "抬起头看向姜羽"
+      },
+      {
+        "para": 4,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你生为凤凰，久居天上，不知亦不懂世间亲情，亲情不是必须爱着彼此，也不是要如何恨着彼此！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 5,
@@ -747,9 +765,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 70,
+      "total_quotes": 71,
       "counts": {
-        "exact": 70,
+        "exact": 71,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -769,7 +787,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

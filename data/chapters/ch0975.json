@@ -210,6 +210,14 @@
     ],
     "dialogues": [
       {
+        "para": 3,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "免送。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "少年",
         "addressee": "葛道人",
@@ -327,6 +335,14 @@
         "addressee": "秦怀雀",
         "text": "虽然你刚刚演的有些拙劣，但话并没有说错，容齐渊者，紫云所不容。",
         "manner": "束手而立"
+      },
+      {
+        "para": 34,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不论是他天魔尊也好，还是迦叶尊者也罢。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 35,
@@ -718,9 +734,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 69,
+      "total_quotes": 71,
       "counts": {
-        "exact": 69,
+        "exact": 71,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -744,7 +760,8 @@
       963,
       964,
       965
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

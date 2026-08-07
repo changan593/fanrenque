@@ -181,7 +181,14 @@
         "para": 13,
         "speaker": "阿难",
         "addressee": "唐真",
-        "text": "我知道。迦叶那厮佛法比我高深，但也正因为他太高深了，所以他反而不如我看重佛法，就好像，我足够‘大力’，所以反而不寻求自己的弟子和学生有多么能打。",
+        "text": "我知道。",
+        "manner": "很诚实的点头"
+      },
+      {
+        "para": 13,
+        "speaker": "阿难",
+        "addressee": "唐真",
+        "text": "迦叶那厮佛法比我高深，但也正因为他太高深了，所以他反而不如我看重佛法，就好像，我足够‘大力’，所以反而不寻求自己的弟子和学生有多么能打。",
         "manner": "很诚实的点头"
       },
       {
@@ -511,26 +518,16 @@
     "structure_score": 92,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 41,
       "counts": {
-        "exact": 39,
-        "near": 1,
+        "exact": 41,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.975,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我知道。迦叶那厮佛法比我高深，但也正因为他太高深了，所以他反而不如我看重佛法，就好像，我足够‘大力’，所以反而不寻求自己的弟子和学生有多么能打。",
-          "para_claimed": 13,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9444,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 21,
@@ -540,7 +537,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

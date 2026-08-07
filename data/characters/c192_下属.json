@@ -1,0 +1,66 @@
+{
+  "canonical_name": "下属",
+  "aliases": [
+    "有下属"
+  ],
+  "first_seq": 572,
+  "last_seq": 870,
+  "chapter_count": 5,
+  "chapters": [
+    572,
+    595,
+    751,
+    808,
+    870
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "出场": 1,
+    "提及": 2
+  },
+  "mentioned_only_count": 2,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 572,
+      "state": "闻人哭的下属"
+    },
+    {
+      "seq": 751,
+      "state": "污衙下属，执行闻人哭命令"
+    },
+    {
+      "seq": 808,
+      "state": "未明确"
+    },
+    {
+      "seq": 870,
+      "state": "报告书院来人"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 572,
+      "actions": [
+        "汇报戏班情报",
+        "领命退走"
+      ]
+    },
+    {
+      "seq": 751,
+      "actions": [
+        "汇报情况",
+        "拍门",
+        "踹门",
+        "搜查"
+      ]
+    },
+    {
+      "seq": 870,
+      "actions": [
+        "跑进来报告有书院的人来保护二皇子"
+      ]
+    }
+  ],
+  "id": "c192_下属"
+}

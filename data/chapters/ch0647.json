@@ -345,6 +345,14 @@
         "manner": "私下说的话"
       },
       {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "这帮人还算靠谱，知道红儿姐身体受伤，没有来打扰。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 42,
         "speaker": "八字胡的中年男人",
         "addressee": "魏成",
@@ -625,9 +633,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 46,
+        "exact": 47,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -646,7 +654,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

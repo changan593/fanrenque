@@ -230,6 +230,16 @@
         "actions": [
           "在畅音阁外听戏，自言再退一步"
         ]
+      },
+      {
+        "name": "戏台",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -414,6 +424,14 @@
         "manner": "苦恼的摇了摇头，然后伸手一指，笑着道"
       },
       {
+        "para": 38,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我？嗯。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 39,
         "speaker": "人皇",
         "addressee": "古月皇贵妃",
@@ -580,9 +598,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 41,
       "counts": {
-        "exact": 40,
+        "exact": 41,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -601,7 +619,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

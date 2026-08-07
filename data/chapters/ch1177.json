@@ -394,6 +394,14 @@
         "manner": ""
       },
       {
+        "para": 22,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哈哈哈。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 23,
         "speaker": "姚望舒",
         "addressee": "秦淮雀",
@@ -448,6 +456,14 @@
         "addressee": "姚望舒",
         "text": "这。。会不会太贵重了？",
         "manner": "问，看向姚望舒"
+      },
+      {
+        "para": 37,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "那我玉屏观就谢过仙宫了。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 38,
@@ -672,9 +688,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 48,
       "counts": {
-        "exact": 46,
+        "exact": 48,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -696,7 +712,8 @@
     "repair_rounds": 0,
     "context_chapters_used": [
       1165
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

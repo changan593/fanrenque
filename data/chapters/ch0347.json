@@ -181,10 +181,25 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 7,
         "speaker": "唐假",
         "addressee": "唐真",
-        "text": "宝儿，我昨天帮你想了想。若想出乎我的预料，最好的方法就是去你没去过的地方，见你很久没见过的人！新的事物、新的朋友、新的故事才更方便你来骗我啊！",
+        "text": "宝儿，我昨天帮你想了想。",
+        "manner": "跟在他身后嘴里碎碎念着"
+      },
+      {
+        "para": 7,
+        "speaker": "唐假",
+        "addressee": "唐真",
+        "text": "若想出乎我的预料，最好的方法就是去你没去过的地方，见你很久没见过的人！新的事物、新的朋友、新的故事才更方便你来骗我啊！",
         "manner": "跟在他身后嘴里碎碎念着"
       },
       {
@@ -198,7 +213,14 @@
         "para": 14,
         "speaker": "唐假",
         "addressee": "唐真",
-        "text": "你要是这么想，我的敌人岂不是整个九洲天道？一个回收大道都需要多面琉璃灯的家伙，实在上不了台面啊。我见的天道可多啊，有的逼格很高，有的纯粹搞笑。",
+        "text": "你要是这么想，我的敌人岂不是整个九洲天道？",
+        "manner": "抬起头看向天空"
+      },
+      {
+        "para": 14,
+        "speaker": "唐假",
+        "addressee": "唐真",
+        "text": "一个回收大道都需要多面琉璃灯的家伙，实在上不了台面啊。我见的天道可多啊，有的逼格很高，有的纯粹搞笑。",
         "manner": "抬起头看向天空"
       },
       {
@@ -247,7 +269,14 @@
         "para": 27,
         "speaker": "壮汉",
         "addressee": "唐真",
-        "text": "买骡子？那先进来吧！有空房。",
+        "text": "买骡子？",
+        "manner": "一愣，看了看他手里的银锭，挠了挠头，却是侧开身子"
+      },
+      {
+        "para": 27,
+        "speaker": "壮汉",
+        "addressee": "唐真",
+        "text": "那先进来吧！有空房。",
         "manner": "一愣，看了看他手里的银锭，挠了挠头，却是侧开身子"
       },
       {
@@ -261,7 +290,14 @@
         "para": 29,
         "speaker": "壮汉",
         "addressee": "唐真",
-        "text": "你不睡觉！我家骡子还睡觉呢！我家我娘们说了算，那骡子买卖我管不了。她睡觉死，天不亮永远叫不醒，你若是着急，便去寻别家！",
+        "text": "你不睡觉！我家骡子还睡觉呢！",
+        "manner": "没好气的说道，随后看在银子的面上补充道"
+      },
+      {
+        "para": 29,
+        "speaker": "壮汉",
+        "addressee": "唐真",
+        "text": "我家我娘们说了算，那骡子买卖我管不了。她睡觉死，天不亮永远叫不醒，你若是着急，便去寻别家！",
         "manner": "没好气的说道，随后看在银子的面上补充道"
       },
       {
@@ -296,7 +332,14 @@
         "para": 35,
         "speaker": "唐假",
         "addressee": "唐真",
-        "text": "宝儿，让不你求求我，我带你飞。堂堂真君骑骡子算个什么事吗！",
+        "text": "宝儿，让不你求求我，我带你飞。",
+        "manner": "不知何时站在了房间的一角"
+      },
+      {
+        "para": 35,
+        "speaker": "唐假",
+        "addressee": "唐真",
+        "text": "堂堂真君骑骡子算个什么事吗！",
         "manner": "不知何时站在了房间的一角"
       },
       {
@@ -473,62 +516,16 @@
     "structure_score": 88,
     "fidelity_score": 60,
     "verbatim": {
-      "total_quotes": 35,
+      "total_quotes": 41,
       "counts": {
-        "exact": 30,
-        "near": 4,
-        "miss": 1,
+        "exact": 41,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.8571,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "宝儿，我昨天帮你想了想。若想出乎我的预料，最好的方法就是去你没去过的地方，见你很久没见过的人！新的事物、新的朋友、新的故事才更方便你来骗我啊！",
-          "para_claimed": 7,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8451,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        },
-        {
-          "quote": "你要是这么想，我的敌人岂不是整个九洲天道？一个回收大道都需要多面琉璃灯的家伙，实在上不了台面啊。我见的天道可多啊，有的逼格很高，有的纯粹搞笑。",
-          "para_claimed": 14,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.831,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "买骡子？那先进来吧！有空房。",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7857,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        },
-        {
-          "quote": "你不睡觉！我家骡子还睡觉呢！我家我娘们说了算，那骡子买卖我管不了。她睡觉死，天不亮永远叫不醒，你若是着急，便去寻别家！",
-          "para_claimed": 29,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7797,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        },
-        {
-          "quote": "宝儿，让不你求求我，我带你飞。堂堂真君骑骡子算个什么事吗！",
-          "para_claimed": 35,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5172,
-          "para_correct": null,
-          "field": "dialogues[16]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 24,
@@ -544,7 +541,8 @@
       344,
       345,
       346
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

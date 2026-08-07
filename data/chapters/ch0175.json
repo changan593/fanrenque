@@ -234,6 +234,16 @@
         "actions": [
           "恭敬回答白玉蟾，告知弟子去向，接受嘱托"
         ]
+      },
+      {
+        "name": "银针上的字",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -442,6 +452,14 @@
         "addressee": "白玉蟾",
         "text": "最近南洲不太平，都有放到各处安稳局面去了。",
         "manner": "恭敬地开口"
+      },
+      {
+        "para": 60,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哦。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 61,
@@ -700,9 +718,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 50,
+      "total_quotes": 51,
       "counts": {
-        "exact": 50,
+        "exact": 51,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -725,7 +743,8 @@
       163,
       164,
       165
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -281,6 +281,14 @@
         "manner": "再次问出最后一个问题"
       },
       {
+        "para": 34,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你们寻找天下术的结果是什么？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "隗夫人",
         "addressee": "南季礼",
@@ -832,9 +840,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 83,
+      "total_quotes": 84,
       "counts": {
-        "exact": 83,
+        "exact": 84,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -853,7 +861,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

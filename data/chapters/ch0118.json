@@ -309,7 +309,14 @@
         "para": 45,
         "speaker": "唐真",
         "addressee": "灵兽崖长老",
-        "text": "哎！老前辈，我玉屏山心中还是十分仰慕灵兽崖的，希望日后不要为敌。",
+        "text": "哎！",
+        "manner": "突然叫住他"
+      },
+      {
+        "para": 45,
+        "speaker": "唐真",
+        "addressee": "灵兽崖长老",
+        "text": "老前辈，我玉屏山心中还是十分仰慕灵兽崖的，希望日后不要为敌。",
         "manner": "突然叫住他"
       },
       {
@@ -520,26 +527,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 35,
+      "total_quotes": 36,
       "counts": {
-        "exact": 34,
-        "near": 1,
+        "exact": 36,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9714,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哎！老前辈，我玉屏山心中还是十分仰慕灵兽崖的，希望日后不要为敌。",
-          "para_claimed": 45,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9375,
-          "para_correct": null,
-          "field": "dialogues[19]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -553,7 +550,8 @@
       115,
       116,
       117
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

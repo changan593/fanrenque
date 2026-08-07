@@ -1,0 +1,51 @@
+{
+  "canonical_name": "修士",
+  "aliases": [],
+  "first_seq": 342,
+  "last_seq": 903,
+  "chapter_count": 4,
+  "chapters": [
+    342,
+    726,
+    776,
+    903
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "背景": 1,
+    "群体": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 342,
+      "quote": "几位白衣胜雪的修士"
+    }
+  ],
+  "states": [
+    {
+      "seq": 342,
+      "state": "冷漠"
+    },
+    {
+      "seq": 776,
+      "state": "冲锋、布防"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 342,
+      "actions": [
+        "冷漠点头",
+        "宣布招新规则"
+      ]
+    },
+    {
+      "seq": 903,
+      "actions": [
+        "检查姜甲伤势并报告"
+      ]
+    }
+  ],
+  "id": "c208_修士"
+}

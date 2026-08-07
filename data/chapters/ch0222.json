@@ -217,6 +217,26 @@
         "appearance_quotes": [],
         "state": "静默，不受唐真之礼",
         "actions": []
+      },
+      {
+        "name": "紫云峰余庆",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "紫云峰秦淮雀",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -471,7 +491,7 @@
         "para": 43,
         "speaker": "白思",
         "addressee": "白生",
-        "text": "是唐真？白思皱眉，赶忙回过头道：二祖，我们要不要。。",
+        "text": "是唐真？”白思皱眉，赶忙回过头道：“二祖，我们要不要。。",
         "manner": "皱眉"
       },
       {
@@ -693,24 +713,14 @@
     "verbatim": {
       "total_quotes": 54,
       "counts": {
-        "exact": 53,
-        "near": 1,
+        "exact": 54,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9815,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "是唐真？白思皱眉，赶忙回过头道：二祖，我们要不要。。",
-          "para_claimed": 43,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9231,
-          "para_correct": null,
-          "field": "dialogues[28]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 37,
@@ -724,7 +734,8 @@
       213,
       214,
       215
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

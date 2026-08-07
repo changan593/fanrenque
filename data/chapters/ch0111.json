@@ -227,7 +227,14 @@
         "para": 26,
         "speaker": "万大家",
         "addressee": "姚安饶",
-        "text": "安饶！怎么不跟父亲打个招呼啊！太没礼貌了！",
+        "text": "安饶！",
+        "manner": "严肃的说"
+      },
+      {
+        "para": 26,
+        "speaker": "万大家",
+        "addressee": "姚安饶",
+        "text": "怎么不跟父亲打个招呼啊！太没礼貌了！",
         "manner": "严肃的说"
       },
       {
@@ -255,14 +262,28 @@
         "para": 31,
         "speaker": "万大家",
         "addressee": "姚安饶",
-        "text": "我呀！让求娣找了好久，才找到姚城主所在呢！原来是去了南阳城做副城主。据说啊，他还在新府邸里给你立了祠，每次喝醉酒都会跑到那哭呢~",
+        "text": "我呀！让求娣找了好久，才找到姚城主所在呢！原来是去了南阳城做副城主。",
+        "manner": "来到姚安饶身边，蹲下，那张画满浓妆的脸离姚安饶很近"
+      },
+      {
+        "para": 31,
+        "speaker": "万大家",
+        "addressee": "姚安饶",
+        "text": "据说啊，他还在新府邸里给你立了祠，每次喝醉酒都会跑到那哭呢~",
         "manner": "来到姚安饶身边，蹲下，那张画满浓妆的脸离姚安饶很近"
       },
       {
         "para": 32,
         "speaker": "万大家",
         "addressee": "姚安饶",
-        "text": "安饶你是我有生以来见过最适合修魔的人，所以我很好奇你到底是不是全无弱点？如果我折磨他或者杀了他你依然不肯听话，那我就彻底没什么办法了！不过那样也说明你全无弱点，未来会成为尊者也说不定哦！呀！好期待~",
+        "text": "安饶你是我有生以来见过最适合修魔的人，所以我很好奇你到底是不是全无弱点？",
+        "manner": "带着几分兴奋道"
+      },
+      {
+        "para": 32,
+        "speaker": "万大家",
+        "addressee": "姚安饶",
+        "text": "如果我折磨他或者杀了他你依然不肯听话，那我就彻底没什么办法了！不过那样也说明你全无弱点，未来会成为尊者也说不定哦！呀！好期待~",
         "manner": "带着几分兴奋道"
       },
       {
@@ -311,7 +332,14 @@
         "para": 58,
         "speaker": "万大家",
         "addressee": "姚安饶",
-        "text": "真好看真好看！他围着姚安饶转圈，随后突然停住，开口道：“好徒弟，唱一句！唱一句！让为师听听。”",
+        "text": "真好看真好看！",
+        "manner": "笑的开心，甚至有些手舞足蹈"
+      },
+      {
+        "para": 58,
+        "speaker": "万大家",
+        "addressee": "姚安饶",
+        "text": "好徒弟，唱一句！唱一句！让为师听听。",
         "manner": "笑的开心，甚至有些手舞足蹈"
       },
       {
@@ -488,53 +516,16 @@
     "structure_score": 82,
     "fidelity_score": 82,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 45,
       "counts": {
-        "exact": 37,
-        "near": 3,
-        "miss": 1,
+        "exact": 45,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9024,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "安饶！怎么不跟父亲打个招呼啊！太没礼貌了！",
-          "para_claimed": 26,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8571,
-          "para_correct": null,
-          "field": "dialogues[7]"
-        },
-        {
-          "quote": "我呀！让求娣找了好久，才找到姚城主所在呢！原来是去了南阳城做副城主。据说啊，他还在新府邸里给你立了祠，每次喝醉酒都会跑到那哭呢~",
-          "para_claimed": 31,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5781,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        },
-        {
-          "quote": "安饶你是我有生以来见过最适合修魔的人，所以我很好奇你到底是不是全无弱点？如果我折磨他或者杀了他你依然不肯听话，那我就彻底没什么办法了！不过那样也说明你全无弱点，未来会成为尊者也说不定哦！呀！好期待~",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8687,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        },
-        {
-          "quote": "真好看真好看！他围着姚安饶转圈，随后突然停住，开口道：“好徒弟，唱一句！唱一句！让为师听听。”",
-          "para_claimed": 58,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9787,
-          "para_correct": null,
-          "field": "dialogues[19]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -548,7 +539,8 @@
       108,
       109,
       110
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

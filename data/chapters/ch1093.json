@@ -131,6 +131,16 @@
         "appearance_quotes": [],
         "state": "未明确",
         "actions": []
+      },
+      {
+        "name": "鬼物",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -598,7 +608,8 @@
       1090,
       1091,
       1092
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

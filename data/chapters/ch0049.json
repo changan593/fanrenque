@@ -321,6 +321,14 @@
         "manner": ""
       },
       {
+        "para": 59,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：既然姚安饶和师姐都不在此。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 60,
         "speaker": "唐真",
         "addressee": "红儿",
@@ -340,6 +348,14 @@
         "addressee": "红儿",
         "text": "走吧！我们也去城主府看看，若是。。。老拐子安在，他该是能看到全过程的。",
         "manner": ""
+      },
+      {
+        "para": 61,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：走吧！我们也去城主府看看，若是。。。老拐子安在，他该是能看到全过程的。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -679,9 +695,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 67,
+      "total_quotes": 69,
       "counts": {
-        "exact": 67,
+        "exact": 69,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -705,7 +721,8 @@
       46,
       47,
       48
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

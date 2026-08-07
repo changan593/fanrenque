@@ -162,6 +162,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 2,
         "speaker": "唐假",
         "addressee": "唐真",
@@ -207,7 +215,14 @@
         "para": 9,
         "speaker": "唐假",
         "addressee": "唐真",
-        "text": "开始了？连个名字都没介绍呢？",
+        "text": "开始了？",
+        "manner": ""
+      },
+      {
+        "para": 9,
+        "speaker": "唐假",
+        "addressee": "唐真",
+        "text": "连个名字都没介绍呢？",
         "manner": ""
       },
       {
@@ -683,26 +698,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 70,
+      "total_quotes": 72,
       "counts": {
-        "exact": 69,
-        "near": 1,
+        "exact": 72,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9857,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "开始了？连个名字都没介绍呢？",
-          "para_claimed": 9,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7143,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 19,
@@ -718,7 +723,8 @@
       329,
       330,
       331
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

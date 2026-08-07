@@ -1,0 +1,18 @@
+{
+  "canonical_name": "骑兵",
+  "aliases": [],
+  "first_seq": 810,
+  "last_seq": 810,
+  "chapter_count": 1,
+  "chapters": [
+    810
+  ],
+  "role_distribution": {
+    "出场": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [],
+  "id": "c805_骑兵"
+}

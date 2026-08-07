@@ -223,6 +223,14 @@
         "manner": "对着她的背影开口"
       },
       {
+        "para": 20,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "太阳和影子到底该怎么见面呢？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 33,
         "speaker": "少年",
         "addressee": "姜羽",
@@ -481,9 +489,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 39,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -504,7 +512,8 @@
     "repair_rounds": 1,
     "context_chapters_used": [
       615
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

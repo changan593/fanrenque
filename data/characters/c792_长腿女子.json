@@ -1,0 +1,30 @@
+{
+  "canonical_name": "长腿女子",
+  "aliases": [],
+  "first_seq": 796,
+  "last_seq": 796,
+  "chapter_count": 1,
+  "chapters": [
+    796
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 796,
+      "quote": "一个抱着腌菜坛子的长腿女子"
+    }
+  ],
+  "states": [],
+  "actions": [
+    {
+      "seq": 796,
+      "actions": [
+        "打开信"
+      ]
+    }
+  ],
+  "id": "c792_长腿女子"
+}

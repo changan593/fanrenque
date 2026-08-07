@@ -306,6 +306,14 @@
         "manner": "缓缓低下头"
       },
       {
+        "para": 39,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "洪州那边来消息了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 41,
         "speaker": "唐真",
         "addressee": "姚望舒",
@@ -679,9 +687,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 50,
+      "total_quotes": 51,
       "counts": {
-        "exact": 50,
+        "exact": 51,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -704,7 +712,8 @@
       1063,
       1064,
       1065
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -413,6 +413,14 @@
         "manner": "皱眉凝重道"
       },
       {
+        "para": 27,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "洪州之事不可外言。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 30,
         "speaker": "葵",
         "addressee": "古命好",
@@ -667,9 +675,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -692,7 +700,8 @@
       1017,
       1018,
       1019
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

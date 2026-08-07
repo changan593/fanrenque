@@ -227,6 +227,14 @@
         "manner": "怒吼"
       },
       {
+        "para": 50,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "先除羽翼！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 55,
         "speaker": "未明说",
         "addressee": "在场众人",
@@ -659,9 +667,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 60,
+        "exact": 61,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -680,7 +688,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

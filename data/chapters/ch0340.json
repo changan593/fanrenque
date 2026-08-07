@@ -203,6 +203,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 2,
         "speaker": "于念娘",
         "addressee": "妇人",
@@ -250,6 +258,14 @@
         "addressee": "于念娘等人",
         "text": "你们走吧！我们家铁蛋儿不去！哪里也不去！",
         "manner": "扭过头"
+      },
+      {
+        "para": 9,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哎呀！妈！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 10,
@@ -624,9 +640,9 @@
     "structure_score": 92,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 52,
+      "total_quotes": 54,
       "counts": {
-        "exact": 52,
+        "exact": 54,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -646,7 +662,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -183,7 +183,14 @@
         "para": 11,
         "speaker": "尉天齐",
         "addressee": "姚安饶",
-        "text": "我知道你能听得到。你的虚弱虽然给了狐魔尊潜入的绝佳机会，但也限制了她的发挥。因为你无法支撑复杂的梦境，甚至无法想象你看不到的地方在发生什么，所以她不得不把每一个梦里的思想都挤在很小的场景里，在我们进入梦境那一刻，你们就只能一直待在一旁看着我们。",
+        "text": "我知道你能听得到。",
+        "manner": "笑着继续开口，把手缓缓伸向窗外"
+      },
+      {
+        "para": 11,
+        "speaker": "尉天齐",
+        "addressee": "姚安饶",
+        "text": "你的虚弱虽然给了狐魔尊潜入的绝佳机会，但也限制了她的发挥。因为你无法支撑复杂的梦境，甚至无法想象你看不到的地方在发生什么，所以她不得不把每一个梦里的思想都挤在很小的场景里，在我们进入梦境那一刻，你们就只能一直待在一旁看着我们。",
         "manner": "笑着继续开口，把手缓缓伸向窗外"
       },
       {
@@ -573,26 +580,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 48,
-        "near": 1,
+        "exact": 50,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9796,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我知道你能听得到。你的虚弱虽然给了狐魔尊潜入的绝佳机会，但也限制了她的发挥。因为你无法支撑复杂的梦境，甚至无法想象你看不到的地方在发生什么，所以她不得不把每一个梦里的思想都挤在很小的场景里，在我们进入梦境那一刻，你们就只能一直待在一旁看着我们。",
-          "para_claimed": 11,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9262,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 15,
@@ -602,7 +599,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

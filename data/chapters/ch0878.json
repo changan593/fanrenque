@@ -359,7 +359,14 @@
         "para": 24,
         "speaker": "尉天齐",
         "addressee": "巨大佛像",
-        "text": "你不知道。你们当然不知道，你们将她们不远万里的抓来，却甚至没有问过她们的姓名，更不要说去了解她们的过去。",
+        "text": "你不知道。",
+        "manner": "自问自答"
+      },
+      {
+        "para": 24,
+        "speaker": "尉天齐",
+        "addressee": "巨大佛像",
+        "text": "你们当然不知道，你们将她们不远万里的抓来，却甚至没有问过她们的姓名，更不要说去了解她们的过去。",
         "manner": "自问自答"
       },
       {
@@ -387,7 +394,14 @@
         "para": 30,
         "speaker": "尉天齐",
         "addressee": "巨大佛像",
-        "text": "我想说，天下不重要的东西太多了，不仅仅是云儿她们的命，也包括天下很多人的命，那些凡人的梦想、生命、追求对于你我而言都是不重要的，尤其是当他们仅仅代表小小的单一个体时！",
+        "text": "我想说，",
+        "manner": "悠悠开口"
+      },
+      {
+        "para": 30,
+        "speaker": "尉天齐",
+        "addressee": "巨大佛像",
+        "text": "天下不重要的东西太多了，不仅仅是云儿她们的命，也包括天下很多人的命，那些凡人的梦想、生命、追求对于你我而言都是不重要的，尤其是当他们仅仅代表小小的单一个体时！",
         "manner": "悠悠开口"
       },
       {
@@ -464,7 +478,14 @@
         "para": 63,
         "speaker": "巨大佛像",
         "addressee": "尉天齐",
-        "text": "哈！怎么？你认为自己是个凡人，所以就可以有私心？你有如此天赋，走到如此地位，干扰如此多因果，如今犯了错，说上一嘴自己是个凡人？那你何不自废修为，做个真的凡人了当！",
+        "text": "哈！怎么？你认为自己是个凡人，所以就可以有私心？",
+        "manner": "冷笑"
+      },
+      {
+        "para": 63,
+        "speaker": "巨大佛像",
+        "addressee": "尉天齐",
+        "text": "你有如此天赋，走到如此地位，干扰如此多因果，如今犯了错，说上一嘴自己是个凡人？那你何不自废修为，做个真的凡人了当！",
         "manner": "冷笑"
       },
       {
@@ -885,44 +906,16 @@
     "structure_score": 92,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 85,
+      "total_quotes": 88,
       "counts": {
-        "exact": 82,
-        "near": 3,
+        "exact": 88,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9647,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "你不知道。你们当然不知道，你们将她们不远万里的抓来，却甚至没有问过她们的姓名，更不要说去了解她们的过去。",
-          "para_claimed": 24,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9038,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        },
-        {
-          "quote": "我想说，天下不重要的东西太多了，不仅仅是云儿她们的命，也包括天下很多人的命，那些凡人的梦想、生命、追求对于你我而言都是不重要的，尤其是当他们仅仅代表小小的单一个体时！",
-          "para_claimed": 30,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9639,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        },
-        {
-          "quote": "哈！怎么？你认为自己是个凡人，所以就可以有私心？你有如此天赋，走到如此地位，干扰如此多因果，如今犯了错，说上一嘴自己是个凡人？那你何不自废修为，做个真的凡人了当！",
-          "para_claimed": 63,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9136,
-          "para_correct": null,
-          "field": "dialogues[24]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 38,
@@ -932,7 +925,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

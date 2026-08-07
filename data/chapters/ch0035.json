@@ -336,6 +336,14 @@
         "manner": "缓缓低下头，露出笑容"
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你那位师姐性格木讷，不争不抢，只不过有些好斗，平常你随意待她，只要不抢她的猎物就好。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 17,
         "speaker": "太子",
         "addressee": "师姐",
@@ -793,9 +801,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 64,
+      "total_quotes": 65,
       "counts": {
-        "exact": 64,
+        "exact": 65,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -814,7 +822,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

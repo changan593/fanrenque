@@ -1,0 +1,25 @@
+{
+  "canonical_name": "黑袍侍从",
+  "aliases": [],
+  "first_seq": 556,
+  "last_seq": 556,
+  "chapter_count": 1,
+  "chapters": [
+    556
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 556,
+      "actions": [
+        "向闻人哭建议逮捕荀欢"
+      ]
+    }
+  ],
+  "id": "c657_黑袍侍从"
+}

@@ -293,6 +293,14 @@
         "manner": ""
       },
       {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "咳。。。咳。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 41,
         "speaker": "老拐子",
         "addressee": "干巴老头",
@@ -340,6 +348,14 @@
         "addressee": "老拐子",
         "text": "向老哥打听个事，在这附近有没有见过一女孩，二十几岁的年纪穿着麻衣提着把剑，脸上还有些麻子。",
         "manner": "挠了挠头道"
+      },
+      {
+        "para": 50,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "昨天晚上应该是来过的。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 51,
@@ -550,9 +566,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 40,
       "counts": {
-        "exact": 38,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -572,7 +588,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

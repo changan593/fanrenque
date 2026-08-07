@@ -397,6 +397,14 @@
         "manner": "声音很轻"
       },
       {
+        "para": 77,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "那你也该知道分身是无法修炼无法增长修为的。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 79,
         "speaker": "唐真",
         "addressee": "姚安饶",
@@ -479,6 +487,14 @@
         "addressee": "姚安饶",
         "text": "一直往南有一片很大的山脉，那里灵气充足，山峰众多，每一座山峰上都有一个小寺小庙小宗门，若是御剑在高空俯瞰，就会发现其中最大最高最险的二十八座山峰连在一起恰巧组成了一个门字。",
         "manner": ""
+      },
+      {
+        "para": 94,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "人们称呼它们为‘天门二十八峰’。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -841,9 +857,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 85,
+      "total_quotes": 87,
       "counts": {
-        "exact": 85,
+        "exact": 87,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -863,7 +879,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

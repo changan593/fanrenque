@@ -239,7 +239,14 @@
         "para": 27,
         "speaker": "尉天齐",
         "addressee": "云儿",
-        "text": "是有人故意把它们洒进这座皇都的，希望可以用这些火星，点燃这里一切，要把大夏变成九洲最大的篝火。但我不同意，所以我排了那出戏。",
+        "text": "是有人故意把它们洒进这座皇都的，希望可以用这些火星，点燃这里一切，要把大夏变成九洲最大的篝火。",
+        "manner": "抱着膝盖，语气里带着说不明的情绪"
+      },
+      {
+        "para": 27,
+        "speaker": "尉天齐",
+        "addressee": "云儿",
+        "text": "但我不同意，所以我排了那出戏。",
         "manner": "抱着膝盖，语气里带着说不明的情绪"
       },
       {
@@ -267,7 +274,14 @@
         "para": 32,
         "speaker": "尉天齐",
         "addressee": "云儿",
-        "text": "我并不是要让他们选择反抗与否，凡人是无法扯住日月的，凡人只能改变自己。要选的是，成为易燃随火的枯木还是沉默无声的顽石。",
+        "text": "我并不是要让他们选择反抗与否，凡人是无法扯住日月的，凡人只能改变自己。",
+        "manner": "微微摇头"
+      },
+      {
+        "para": 32,
+        "speaker": "尉天齐",
+        "addressee": "云儿",
+        "text": "要选的是，成为易燃随火的枯木还是沉默无声的顽石。",
         "manner": "微微摇头"
       },
       {
@@ -513,35 +527,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 48,
       "counts": {
-        "exact": 44,
-        "near": 2,
+        "exact": 48,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9565,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "是有人故意把它们洒进这座皇都的，希望可以用这些火星，点燃这里一切，要把大夏变成九洲最大的篝火。但我不同意，所以我排了那出戏。",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7742,
-          "para_correct": null,
-          "field": "dialogues[14]"
-        },
-        {
-          "quote": "我并不是要让他们选择反抗与否，凡人是无法扯住日月的，凡人只能改变自己。要选的是，成为易燃随火的枯木还是沉默无声的顽石。",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8305,
-          "para_correct": null,
-          "field": "dialogues[18]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -555,7 +550,8 @@
       613,
       614,
       615
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

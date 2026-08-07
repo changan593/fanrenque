@@ -134,6 +134,16 @@
         "appearance_quotes": [],
         "state": "已死，南洲失去圣人",
         "actions": []
+      },
+      {
+        "name": "玉屏山",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -267,6 +277,14 @@
         "addressee": "红儿",
         "text": "同不同意都可以，这南洲我们说了又不算。",
         "manner": "将信纸递回"
+      },
+      {
+        "para": 27,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你不用特意来问我，按自己想法说就是了，那位裴山主会自己考虑利弊的。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 28,
@@ -547,9 +565,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 44,
+      "total_quotes": 45,
       "counts": {
-        "exact": 44,
+        "exact": 45,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -568,7 +586,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

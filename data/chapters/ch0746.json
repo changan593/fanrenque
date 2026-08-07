@@ -251,7 +251,14 @@
         "para": 27,
         "speaker": "狐魔尊",
         "addressee": "姜羽",
-        "text": "我想你可以叫他——哥哥？毕竟你们拥有着同一个父母，生命的本质也完全相同，所以你不是孤单一人，你有血亲！有兄长！",
+        "text": "我想你可以叫他——哥哥？",
+        "manner": "歪着头"
+      },
+      {
+        "para": 27,
+        "speaker": "狐魔尊",
+        "addressee": "姜羽",
+        "text": "毕竟你们拥有着同一个父母，生命的本质也完全相同，所以你不是孤单一人，你有血亲！有兄长！",
         "manner": "歪着头"
       },
       {
@@ -697,26 +704,16 @@
     "structure_score": 92,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 71,
+      "total_quotes": 72,
       "counts": {
-        "exact": 70,
-        "near": 1,
+        "exact": 72,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9859,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "我想你可以叫他——哥哥？毕竟你们拥有着同一个父母，生命的本质也完全相同，所以你不是孤单一人，你有血亲！有兄长！",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8364,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -726,7 +723,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

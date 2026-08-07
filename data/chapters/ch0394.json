@@ -266,6 +266,14 @@
         "manner": "大声"
       },
       {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "望舒宫。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 12,
         "speaker": "红儿",
         "addressee": "霍求仙",
@@ -285,6 +293,14 @@
         "addressee": "红儿",
         "text": "霍师叔说话素来如此。",
         "manner": "低声解释道"
+      },
+      {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "杀！！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 21,
@@ -520,9 +536,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 33,
       "counts": {
-        "exact": 31,
+        "exact": 33,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -542,7 +558,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

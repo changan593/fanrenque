@@ -290,6 +290,14 @@
         "manner": ""
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "而且天命阁也来人了，别人可能不认识，但天命阁。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 18,
         "speaker": "唐真",
         "addressee": "吕藏锋",
@@ -582,9 +590,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 39,
+      "total_quotes": 40,
       "counts": {
-        "exact": 39,
+        "exact": 40,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -603,7 +611,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

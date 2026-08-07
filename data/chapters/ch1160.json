@@ -88,7 +88,7 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "他神色依然有些发白，他眉头紧锁",
+          "神色依然有些发白，他眉头紧锁",
           "他看着齐渊瘦瘦巴巴的脸",
           "唐真喘着气，眼睛呆呆地看着地面"
         ],
@@ -147,7 +147,14 @@
         "para": 2,
         "speaker": "齐渊",
         "addressee": "唐真",
-        "text": "其中玄妙，你该是懂得？那。。是不是？是不是井外！是不是天外！是不是！？",
+        "text": "其中玄妙，你该是懂得？那。。是不是？",
+        "manner": "急切和紧张"
+      },
+      {
+        "para": 2,
+        "speaker": "齐渊",
+        "addressee": "唐真",
+        "text": "是不是井外！是不是天外！是不是！？",
         "manner": "急切和紧张"
       },
       {
@@ -168,7 +175,14 @@
         "para": 7,
         "speaker": "齐渊",
         "addressee": "唐真",
-        "text": "是的，我也觉得。不然不该没有人的，对不对？那应该是天外与井内的界限，只要穿过那里，我们便能出去了。",
+        "text": "是的，我也觉得。",
+        "manner": "喃喃道"
+      },
+      {
+        "para": 7,
+        "speaker": "齐渊",
+        "addressee": "唐真",
+        "text": "不然不该没有人的，对不对？那应该是天外与井内的界限，只要穿过那里，我们便能出去了。",
         "manner": "喃喃道"
       },
       {
@@ -560,44 +574,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 59,
+      "total_quotes": 61,
       "counts": {
-        "exact": 56,
-        "near": 2,
-        "miss": 1,
+        "exact": 61,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9492,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "其中玄妙，你该是懂得？那。。是不是？是不是井外！是不是天外！是不是！？",
-          "para_claimed": 2,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5714,
-          "para_correct": null,
-          "field": "dialogues[0]"
-        },
-        {
-          "quote": "是的，我也觉得。不然不该没有人的，对不对？那应该是天外与井内的界限，只要穿过那里，我们便能出去了。",
-          "para_claimed": 7,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8367,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        },
-        {
-          "quote": "他神色依然有些发白，他眉头紧锁",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9333,
-          "para_correct": null,
-          "field": "characters[0].appearance_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -611,7 +597,8 @@
       1157,
       1158,
       1159
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

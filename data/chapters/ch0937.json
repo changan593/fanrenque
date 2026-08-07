@@ -269,6 +269,14 @@
         "manner": ""
       },
       {
+        "para": 36,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "而且，那时的你也不是如此对我的。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 37,
         "speaker": "元永洁",
         "addressee": "姜羽",
@@ -600,9 +608,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -621,7 +629,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

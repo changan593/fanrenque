@@ -160,6 +160,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 7,
         "speaker": "云儿",
         "addressee": "众人",
@@ -380,9 +388,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 29,
+      "total_quotes": 30,
       "counts": {
-        "exact": 29,
+        "exact": 30,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -405,7 +413,8 @@
       313,
       314,
       315
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

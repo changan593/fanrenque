@@ -167,7 +167,14 @@
         "para": 48,
         "speaker": "唐真",
         "addressee": "南宁王",
-        "text": "我本来还想和你说些话，但如今我觉得你还是死了更好，你真的不知道一个凡人接触魔尊的蜕皮代表着什么吗？你已经算不得人了，甚至是不是魔修都有待商榷，更像是魔物！",
+        "text": "我本来还想和你说些话，但如今我觉得你还是死了更好，你真的不知道一个凡人接触魔尊的蜕皮代表着什么吗？",
+        "manner": "冷冷的看着"
+      },
+      {
+        "para": 48,
+        "speaker": "唐真",
+        "addressee": "南宁王",
+        "text": "你已经算不得人了，甚至是不是魔修都有待商榷，更像是魔物！",
         "manner": "冷冷的看着"
       },
       {
@@ -488,26 +495,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 47,
+      "total_quotes": 48,
       "counts": {
-        "exact": 46,
-        "near": 1,
+        "exact": 48,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9787,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我本来还想和你说些话，但如今我觉得你还是死了更好，你真的不知道一个凡人接触魔尊的蜕皮代表着什么吗？你已经算不得人了，甚至是不是魔修都有待商榷，更像是魔物！",
-          "para_claimed": 48,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7662,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 9,
@@ -517,7 +514,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

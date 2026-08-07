@@ -228,6 +228,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 5,
         "speaker": "念娘",
         "addressee": "魏成",
@@ -266,7 +274,14 @@
         "para": 21,
         "speaker": "男童",
         "addressee": "老人",
-        "text": "奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！",
+        "text": "奶！",
+        "manner": "嗓音十足"
+      },
+      {
+        "para": 21,
+        "speaker": "男童",
+        "addressee": "老人",
+        "text": "我在街上看见拍花子的了！他们还对我招手让我过去嘞！",
         "manner": "嗓音十足"
       },
       {
@@ -287,7 +302,14 @@
         "para": 27,
         "speaker": "妇人",
         "addressee": "男童",
-        "text": "谁啊？铁蛋！去开门！",
+        "text": "谁啊？",
+        "manner": "高声问道"
+      },
+      {
+        "para": 27,
+        "speaker": "妇人",
+        "addressee": "男童",
+        "text": "铁蛋！去开门！",
         "manner": "高声问道"
       },
       {
@@ -301,7 +323,14 @@
         "para": 29,
         "speaker": "妇人",
         "addressee": "门外（念娘等人）",
-        "text": "啧！这瓜娃子！谁啊？",
+        "text": "啧！这瓜娃子！",
+        "manner": "一边骂孩子一边开门"
+      },
+      {
+        "para": 29,
+        "speaker": "妇人",
+        "addressee": "门外（念娘等人）",
+        "text": "谁啊？",
         "manner": "一边骂孩子一边开门"
       },
       {
@@ -552,44 +581,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 42,
       "counts": {
-        "exact": 35,
-        "near": 3,
+        "exact": 42,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9211,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！",
-          "para_claimed": 21,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9259,
-          "para_correct": null,
-          "field": "dialogues[5]"
-        },
-        {
-          "quote": "谁啊？铁蛋！去开门！",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        },
-        {
-          "quote": "啧！这瓜娃子！谁啊？",
-          "para_claimed": 29,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 30,
@@ -607,7 +608,8 @@
       336,
       337,
       338
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -152,7 +152,7 @@
         "description_quotes": [
           "低矮闭塞，缺少阳光，虽然灵气很充足，但走在其中却觉得不够大气",
           "顺着古代泉眼，缓缓垂下",
-          "大堂里点着香，阵法的核心就在这里"
+          "堂内点着香，阵法的核心就在这里"
         ],
         "present_characters": [
           "南季礼",
@@ -396,24 +396,14 @@
     "verbatim": {
       "total_quotes": 25,
       "counts": {
-        "exact": 24,
-        "near": 1,
+        "exact": 25,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.96,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "大堂里点着香，阵法的核心就在这里",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.875,
-          "para_correct": null,
-          "field": "scenes[0].description_quotes[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 4,
@@ -423,7 +413,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,41 @@
+{
+  "canonical_name": "云火道人",
+  "aliases": [
+    "观主",
+    "云火观主"
+  ],
+  "first_seq": 21,
+  "last_seq": 27,
+  "chapter_count": 3,
+  "chapters": [
+    21,
+    24,
+    27
+  ],
+  "role_distribution": {
+    "提及": 3
+  },
+  "mentioned_only_count": 3,
+  "appearance_quotes": [
+    {
+      "seq": 24,
+      "quote": "一颗惨白的人头，它早已被水泡的浮肿分不出样貌，但脸颊上那一大片红色云形的印记反倒被死人惨白色的皮肤衬托的更为鲜明！"
+    }
+  ],
+  "states": [
+    {
+      "seq": 21,
+      "state": "未明确"
+    },
+    {
+      "seq": 24,
+      "state": "已死，头颅被唐真发现"
+    },
+    {
+      "seq": 27,
+      "state": "已死，身体不知落在哪"
+    }
+  ],
+  "actions": [],
+  "id": "c223_云火道人"
+}

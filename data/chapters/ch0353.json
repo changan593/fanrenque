@@ -132,6 +132,16 @@
         "appearance_quotes": [],
         "state": "未出场，被提及也早想到茶壶灵气方法",
         "actions": []
+      },
+      {
+        "name": "魏成、念娘",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -160,6 +170,14 @@
       }
     ],
     "dialogues": [
+      {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
       {
         "para": 2,
         "speaker": "红儿",
@@ -472,9 +490,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 34,
+      "total_quotes": 35,
       "counts": {
-        "exact": 34,
+        "exact": 35,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -493,7 +511,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

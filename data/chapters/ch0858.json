@@ -214,7 +214,14 @@
         "para": 5,
         "speaker": "云儿",
         "addressee": "王善",
-        "text": "骡子血？无灵气的生灵的血液对我们的帮助很小，而且。。。这量也太少了。",
+        "text": "骡子血？",
+        "manner": "皱眉"
+      },
+      {
+        "para": 5,
+        "speaker": "云儿",
+        "addressee": "王善",
+        "text": "无灵气的生灵的血液对我们的帮助很小，而且。。。这量也太少了。",
         "manner": "皱眉"
       },
       {
@@ -445,26 +452,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 30,
+      "total_quotes": 31,
       "counts": {
-        "exact": 29,
-        "near": 1,
+        "exact": 31,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9667,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "骡子血？无灵气的生灵的血液对我们的帮助很小，而且。。。这量也太少了。",
-          "para_claimed": 5,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8824,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 18,
@@ -474,7 +471,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

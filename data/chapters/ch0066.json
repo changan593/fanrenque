@@ -146,6 +146,16 @@
           "皱眉担忧",
           "怀疑人生"
         ]
+      },
+      {
+        "name": "客栈小二",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -249,7 +259,14 @@
         "para": 27,
         "speaker": "屏姐",
         "addressee": "唐真",
-        "text": "天门山啊！你们中午不是说想拜入‘天门二十八峰’吗！我这有个能带家属上山的路子！",
+        "text": "天门山啊！",
+        "manner": "疑惑"
+      },
+      {
+        "para": 27,
+        "speaker": "屏姐",
+        "addressee": "唐真",
+        "text": "你们中午不是说想拜入‘天门二十八峰’吗！我这有个能带家属上山的路子！",
         "manner": "疑惑"
       },
       {
@@ -284,7 +301,14 @@
         "para": 32,
         "speaker": "唐真",
         "addressee": "屏姐",
-        "text": "哎，不对。你中午不是喝多了睡着了吗？怎么听到我们说话的？",
+        "text": "哎，不对。",
+        "manner": "突然发现了问题的关键"
+      },
+      {
+        "para": 32,
+        "speaker": "唐真",
+        "addressee": "屏姐",
+        "text": "你中午不是喝多了睡着了吗？怎么听到我们说话的？",
         "manner": "突然发现了问题的关键"
       },
       {
@@ -579,35 +603,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 51,
       "counts": {
-        "exact": 47,
-        "near": 2,
+        "exact": 51,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9592,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "天门山啊！你们中午不是说想拜入‘天门二十八峰’吗！我这有个能带家属上山的路子！",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8718,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        },
-        {
-          "quote": "哎，不对。你中午不是喝多了睡着了吗？怎么听到我们说话的？",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8571,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -621,7 +626,8 @@
       63,
       64,
       65
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

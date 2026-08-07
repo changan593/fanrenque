@@ -240,7 +240,14 @@
         "para": 16,
         "speaker": "泉小郎君",
         "addressee": "老主事",
-        "text": "去去，别来这套。我缺灵茶吗？要不是看在你的面上，这七棵茶树我们清泉宗都未必收。",
+        "text": "去去，别来这套。",
+        "manner": "挑眉"
+      },
+      {
+        "para": 16,
+        "speaker": "泉小郎君",
+        "addressee": "老主事",
+        "text": "我缺灵茶吗？要不是看在你的面上，这七棵茶树我们清泉宗都未必收。",
         "manner": "挑眉"
       },
       {
@@ -279,6 +286,22 @@
         "manner": "招了招手"
       },
       {
+        "para": 25,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "好嘞！",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 25,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "把车推上来。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 29,
         "speaker": "泉小郎君",
         "addressee": "众人",
@@ -310,7 +333,14 @@
         "para": 39,
         "speaker": "中年人",
         "addressee": "泉小郎君",
-        "text": "好了，不要说了。今夜有外乡人违规在镜湖上使用术法，我宗的高人已经先去了，庄主和我们要去通知其他茶庄严格搜查其他洲的修士，这种时候，你莫要给我生事丢人！",
+        "text": "好了，不要说了。",
+        "manner": "不想听这些，看着泉小郎君道"
+      },
+      {
+        "para": 39,
+        "speaker": "中年人",
+        "addressee": "泉小郎君",
+        "text": "今夜有外乡人违规在镜湖上使用术法，我宗的高人已经先去了，庄主和我们要去通知其他茶庄严格搜查其他洲的修士，这种时候，你莫要给我生事丢人！",
         "manner": "不想听这些，看着泉小郎君道"
       },
       {
@@ -474,35 +504,16 @@
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 31,
+      "total_quotes": 35,
       "counts": {
-        "exact": 29,
-        "near": 2,
+        "exact": 35,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9355,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "去去，别来这套。我缺灵茶吗？要不是看在你的面上，这七棵茶树我们清泉宗都未必收。",
-          "para_claimed": 16,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8205,
-          "para_correct": null,
-          "field": "dialogues[4]"
-        },
-        {
-          "quote": "好了，不要说了。今夜有外乡人违规在镜湖上使用术法，我宗的高人已经先去了，庄主和我们要去通知其他茶庄严格搜查其他洲的修士，这种时候，你莫要给我生事丢人！",
-          "para_claimed": 39,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8933,
-          "para_correct": null,
-          "field": "dialogues[14]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 20,
@@ -519,7 +530,8 @@
       1084,
       1085,
       1086
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

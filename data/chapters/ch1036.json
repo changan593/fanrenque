@@ -539,6 +539,14 @@
         "manner": "点了点头"
       },
       {
+        "para": 22,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "苦啊！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 25,
         "speaker": "男人",
         "addressee": "女人",
@@ -749,6 +757,14 @@
         "manner": "提起三个孩子便笑了起来"
       },
       {
+        "para": 64,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊——切！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 65,
         "speaker": "择荫",
         "addressee": "拂衣",
@@ -810,6 +826,14 @@
         "addressee": "佟鼎儿",
         "text": "若是子鹤哥哥回来了，你就说我们俩去撒尿了。",
         "manner": "临走还在嘱咐佟鼎儿"
+      },
+      {
+        "para": 78,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哎呦！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 80,
@@ -1020,9 +1044,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 87,
+      "total_quotes": 90,
       "counts": {
-        "exact": 87,
+        "exact": 90,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -1043,7 +1067,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

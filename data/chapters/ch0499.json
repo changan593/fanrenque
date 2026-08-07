@@ -204,6 +204,14 @@
         "manner": "还是摇头"
       },
       {
+        "para": 34,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "施姑娘讲学啦！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 37,
         "speaker": "怀素",
         "addressee": "施姑娘",
@@ -490,9 +498,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 42,
       "counts": {
-        "exact": 41,
+        "exact": 42,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -511,7 +519,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -206,6 +206,14 @@
         "manner": "随意摆了摆手"
       },
       {
+        "para": 13,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哦。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 21,
         "speaker": "白玉蟾",
         "addressee": "唐真",
@@ -602,9 +610,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 51,
+      "total_quotes": 52,
       "counts": {
-        "exact": 51,
+        "exact": 52,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -623,7 +631,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

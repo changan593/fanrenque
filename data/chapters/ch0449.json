@@ -156,6 +156,16 @@
         "actions": [
           "躬身低头，回答姚望舒的问题"
         ]
+      },
+      {
+        "name": "各宗门代表",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -164,7 +174,7 @@
         "type": "室内",
         "time_of_day": "夜晚",
         "description_quotes": [
-          "长桌后的堂上，四位身穿白袍的中年男人躬着身低着头",
+          "长桌前的堂上，四位身穿白袍的中年男人躬着身低着头",
           "月光洒进屋内，照亮了她的白裙"
         ],
         "present_characters": [
@@ -494,24 +504,14 @@
     "verbatim": {
       "total_quotes": 33,
       "counts": {
-        "exact": 32,
-        "near": 1,
+        "exact": 33,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9697,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "长桌后的堂上，四位身穿白袍的中年男人躬着身低着头",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9583,
-          "para_correct": null,
-          "field": "scenes[0].description_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 12,
@@ -521,7 +521,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

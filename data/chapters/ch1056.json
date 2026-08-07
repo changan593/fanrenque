@@ -301,6 +301,14 @@
         "manner": "猛地站起"
       },
       {
+        "para": 14,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哈哈哈哈！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 19,
         "speaker": "吕藏锋",
         "addressee": "众人",
@@ -439,6 +447,14 @@
         "addressee": "姚望舒",
         "text": "这茶来之不易，我当慢饮。",
         "manner": "单手提起，笑道"
+      },
+      {
+        "para": 69,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我回来了。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -661,9 +677,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 51,
+      "total_quotes": 53,
       "counts": {
-        "exact": 51,
+        "exact": 53,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -683,7 +699,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

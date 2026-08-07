@@ -160,6 +160,16 @@
         "actions": [
           "爬上马车顶，向众人解释。"
         ]
+      },
+      {
+        "name": "悬镜司白衣人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -259,6 +269,14 @@
         "addressee": "青年",
         "text": "辛苦你了。",
         "manner": "看向青年"
+      },
+      {
+        "para": 10,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "堂堂副司长还要做这种活儿。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 11,
@@ -453,9 +471,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 23,
+      "total_quotes": 24,
       "counts": {
-        "exact": 23,
+        "exact": 24,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -474,7 +492,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

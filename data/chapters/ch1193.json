@@ -288,6 +288,14 @@
         "manner": "嘴唇颤抖，哆哆嗦嗦的伸手扶住车板"
       },
       {
+        "para": 42,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "住手！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 44,
         "speaker": "齐渊",
         "addressee": "尉天齐",
@@ -500,9 +508,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 38,
       "counts": {
-        "exact": 37,
+        "exact": 38,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -525,7 +533,8 @@
       1190,
       1191,
       1192
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

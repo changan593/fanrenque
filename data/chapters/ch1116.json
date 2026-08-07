@@ -326,6 +326,14 @@
         "manner": "微微垂下眼，摇头道"
       },
       {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "日子已久，清泉祖师如今怕是也有些变化。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 21,
         "speaker": "隗夫人",
         "addressee": "南季礼",
@@ -713,9 +721,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 60,
+        "exact": 61,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -738,7 +746,8 @@
       1113,
       1114,
       1115
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

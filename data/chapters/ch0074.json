@@ -253,6 +253,16 @@
         "appearance_quotes": [],
         "state": "未明确",
         "actions": []
+      },
+      {
+        "name": "小胖",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -365,7 +375,14 @@
         "para": 55,
         "speaker": "屏姐",
         "addressee": "郭师兄",
-        "text": "师兄！你还愣着干嘛呢？去把昨天晚上掏的山坑螺拿过来啊！辞盈最喜欢这个不知道吗？",
+        "text": "师兄！你还愣着干嘛呢？",
+        "manner": "一边搂着赵辞盈一边指向郭师兄，好像个欺男霸女的山大王"
+      },
+      {
+        "para": 55,
+        "speaker": "屏姐",
+        "addressee": "郭师兄",
+        "text": "去把昨天晚上掏的山坑螺拿过来啊！辞盈最喜欢这个不知道吗？",
         "manner": "一边搂着赵辞盈一边指向郭师兄，好像个欺男霸女的山大王"
       },
       {
@@ -750,26 +767,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 50,
+      "total_quotes": 51,
       "counts": {
-        "exact": 49,
-        "near": 1,
+        "exact": 51,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.98,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "师兄！你还愣着干嘛呢？去把昨天晚上掏的山坑螺拿过来啊！辞盈最喜欢这个不知道吗？",
-          "para_claimed": 55,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7179,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 36,
@@ -783,7 +790,8 @@
       71,
       72,
       73
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

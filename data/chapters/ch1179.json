@@ -465,6 +465,14 @@
         "addressee": "自己",
         "text": "无悲无恐，方无知无觉。",
         "manner": "喃喃自语"
+      },
+      {
+        "para": 61,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "他是个好人。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -658,9 +666,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -680,7 +688,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

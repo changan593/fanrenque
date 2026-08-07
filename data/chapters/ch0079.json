@@ -309,7 +309,14 @@
         "para": 22,
         "speaker": "小胖",
         "addressee": "唐真",
-        "text": "昨晚师兄与我说了你们的事，你也不用有心理负担，他说了那鱼骨的造化是足够的，他接不接得住怨不得你的。玉屏山还是要谢谢你。",
+        "text": "昨晚师兄与我说了你们的事，你也不用有心理负担，他说了那鱼骨的造化是足够的，他接不接得住怨不得你的。",
+        "manner": "斗笠下那张胖脸写着认真"
+      },
+      {
+        "para": 22,
+        "speaker": "小胖",
+        "addressee": "唐真",
+        "text": "玉屏山还是要谢谢你。",
         "manner": "斗笠下那张胖脸写着认真"
       },
       {
@@ -659,26 +666,16 @@
     "structure_score": 92,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 57,
+      "total_quotes": 58,
       "counts": {
-        "exact": 56,
-        "near": 1,
+        "exact": 58,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9825,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "昨晚师兄与我说了你们的事，你也不用有心理负担，他说了那鱼骨的造化是足够的，他接不接得住怨不得你的。玉屏山还是要谢谢你。",
-          "para_claimed": 22,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8305,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 37,
@@ -688,7 +685,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

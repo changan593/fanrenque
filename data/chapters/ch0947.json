@@ -275,6 +275,14 @@
         "manner": "眯起眼睛，手中的紫云剑微微旋转"
       },
       {
+        "para": 13,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不论‘七尾变’究竟为何种术法，都有着一个很重要的问题没有解决。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 14,
         "speaker": "唐真",
         "addressee": "幺儿",
@@ -322,6 +330,22 @@
         "addressee": "幺儿",
         "text": "是有些难，毕竟在术法上设下限制，便难过帝后玺，可不设限，谁又甘愿是分身。",
         "manner": "点头认可"
+      },
+      {
+        "para": 20,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不过并非不可能。",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 21,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "因为除了术法，还有人心。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 25,
@@ -703,9 +727,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 59,
       "counts": {
-        "exact": 56,
+        "exact": 59,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -726,7 +750,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

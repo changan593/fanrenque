@@ -218,6 +218,14 @@
     ],
     "dialogues": [
       {
+        "para": 28,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你们俩怎么才来",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 32,
         "speaker": "吕藏锋",
         "addressee": "阿难",
@@ -377,6 +385,14 @@
         "addressee": "阿难",
         "text": "你持正，但持正之人为何沦落到如此地步，僧袍红染，白墙血印，堂堂佛宗圣人不仅被赶出自己的宗门，还不得不沦落到躲在一处礁石之上。",
         "manner": "轻笑道"
+      },
+      {
+        "para": 73,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊啊啊！！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 81,
@@ -681,9 +697,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 58,
+      "total_quotes": 60,
       "counts": {
-        "exact": 58,
+        "exact": 60,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -703,7 +719,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

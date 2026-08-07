@@ -509,6 +509,14 @@
         "manner": "对着后院喊道"
       },
       {
+        "para": 43,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "好。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 44,
         "speaker": "赵辞盈",
         "addressee": "众人",
@@ -591,6 +599,14 @@
         "addressee": "众人",
         "text": "咱们山腰那，不有个空着的地方吗？已经荒了许久了吧！",
         "manner": "忽然道"
+      },
+      {
+        "para": 70,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "嗯？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 71,
@@ -860,9 +876,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 86,
+      "total_quotes": 88,
       "counts": {
-        "exact": 86,
+        "exact": 88,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -882,7 +898,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

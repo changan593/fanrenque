@@ -125,6 +125,16 @@
         "actions": [
           "牵着一个小女孩走在礁石上，衣袍被拽变形"
         ]
+      },
+      {
+        "name": "小女孩",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -262,6 +272,14 @@
         "addressee": "白玉蟾",
         "text": "祖师？祖师！何曾两清？我等日日跪拜，千百年来供奉着您的后人家族！哪里能两清？您与这南洲如何能两清？",
         "manner": "忽然感到了恐惧，他开始害怕，像是丢掉了父亲的孩子，脸上写满了惶恐"
+      },
+      {
+        "para": 28,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "聊完了？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 30,
@@ -470,9 +488,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 38,
+      "total_quotes": 39,
       "counts": {
-        "exact": 38,
+        "exact": 39,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -495,7 +513,8 @@
       177,
       178,
       179
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

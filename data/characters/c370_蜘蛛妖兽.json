@@ -1,0 +1,38 @@
+{
+  "canonical_name": "蜘蛛妖兽",
+  "aliases": [
+    "蜘蛛",
+    "妖兽"
+  ],
+  "first_seq": 44,
+  "last_seq": 44,
+  "chapter_count": 1,
+  "chapters": [
+    44
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 44,
+      "quote": "一只足有半间屋子大的蜘蛛在房屋里探出了身子，那妇人竟只是它的一只蛛脚"
+    }
+  ],
+  "states": [
+    {
+      "seq": 44,
+      "state": "被萧不同斩杀"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 44,
+      "actions": [
+        "喷毒汁攻击周东东"
+      ]
+    }
+  ],
+  "id": "c370_蜘蛛妖兽"
+}

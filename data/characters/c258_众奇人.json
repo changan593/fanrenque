@@ -1,0 +1,32 @@
+{
+  "canonical_name": "众奇人",
+  "aliases": [],
+  "first_seq": 13,
+  "last_seq": 14,
+  "chapter_count": 2,
+  "chapters": [
+    13,
+    14
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 14,
+      "state": "畏惧，离开"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 14,
+      "actions": [
+        "围观唐真种树",
+        "被赵护卫送走"
+      ]
+    }
+  ],
+  "id": "c258_众奇人"
+}

@@ -255,6 +255,14 @@
         "manner": "垂眸"
       },
       {
+        "para": 6,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你与我说，他深入婆娑洲，为了一个饶儿班的孩子，我是信的。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 7,
         "speaker": "唐真",
         "addressee": "吕藏锋",
@@ -318,6 +326,14 @@
         "manner": "抬手打断"
       },
       {
+        "para": 18,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "天下修行，不存在无路可走，总有方法能处理。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 19,
         "speaker": "唐真",
         "addressee": "吕藏锋",
@@ -365,6 +381,14 @@
         "addressee": "吕藏锋",
         "text": "三教凡夫，结果‘三教’尽废？凡夫‘火烛’？",
         "manner": "幽幽的道"
+      },
+      {
+        "para": 28,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "他的命就像是被人横着敲断了一样，强迫着跟我同样走了一步‘桃花崖’。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 29,
@@ -739,9 +763,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 61,
+      "total_quotes": 64,
       "counts": {
-        "exact": 61,
+        "exact": 64,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -762,7 +786,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

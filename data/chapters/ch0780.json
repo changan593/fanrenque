@@ -122,7 +122,7 @@
         "mentioned_only": false,
         "appearance_quotes": [
           "他身上的黑袍有些破损，脸颊有些地方带着细小的伤痕",
-          "他身后两片巨大的黑影像是羽翼一般遮蔽着一切",
+          "他的身后两片巨大的黑影像是羽翼一般遮蔽着一切。",
           "那竟然真的是羽翼！是黑色的羽翼",
           "他此时就像是一只黑色的巨鸟，只是展翼就覆盖了大半个恕索坊"
         ],
@@ -231,7 +231,14 @@
         "para": 27,
         "speaker": "闻人哭",
         "addressee": "姚安饶和师姐",
-        "text": "这就是我！虽然比不上凤凰或者南宁那只白孔雀，但所差的不过是那抹神佛之相罢了！",
+        "text": "这就是我！",
+        "manner": "飞在高空俯看二人"
+      },
+      {
+        "para": 27,
+        "speaker": "闻人哭",
+        "addressee": "姚安饶和师姐",
+        "text": "虽然比不上凤凰或者南宁那只白孔雀，但所差的不过是那抹神佛之相罢了！",
         "manner": "飞在高空俯看二人"
       },
       {
@@ -531,35 +538,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 49,
       "counts": {
-        "exact": 46,
-        "near": 2,
+        "exact": 49,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9583,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "这就是我！虽然比不上凤凰或者南宁那只白孔雀，但所差的不过是那抹神佛之相罢了！",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8684,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        },
-        {
-          "quote": "他身后两片巨大的黑影像是羽翼一般遮蔽着一切",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9524,
-          "para_correct": null,
-          "field": "characters[2].appearance_quotes[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -569,7 +557,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

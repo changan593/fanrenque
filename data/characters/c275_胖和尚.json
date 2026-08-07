@@ -1,0 +1,24 @@
+{
+  "canonical_name": "胖和尚",
+  "aliases": [],
+  "first_seq": 145,
+  "last_seq": 373,
+  "chapter_count": 2,
+  "chapters": [
+    145,
+    373
+  ],
+  "role_distribution": {
+    "提及": 2
+  },
+  "mentioned_only_count": 2,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 373,
+      "state": "访山，未出场"
+    }
+  ],
+  "actions": [],
+  "id": "c275_胖和尚"
+}

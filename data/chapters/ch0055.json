@@ -262,6 +262,14 @@
         "manner": "看着唐真继续道"
       },
       {
+        "para": 49,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：我奉宫主令，特来请唐真师兄前往玉蟾宫一叙！还望唐真师兄赏光！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 50,
         "speaker": "唐真",
         "addressee": "萧不同",
@@ -761,9 +769,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 71,
+      "total_quotes": 72,
       "counts": {
-        "exact": 71,
+        "exact": 72,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -782,7 +790,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

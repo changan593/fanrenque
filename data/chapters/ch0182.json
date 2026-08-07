@@ -196,6 +196,13 @@
     ],
     "dialogues": [
       {
+        "para": 39,
+        "speaker": "长老",
+        "addressee": "在场众人",
+        "text": "混账！",
+        "manner": "怒骂"
+      },
+      {
         "para": 44,
         "speaker": "魏成",
         "addressee": "长老及在场众人",
@@ -210,11 +217,12 @@
         "manner": "有些疲惫的摆手"
       },
       {
-        "para": 39,
-        "speaker": "长老",
-        "addressee": "在场众人",
-        "text": "混账！",
-        "manner": "怒骂"
+        "para": 48,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "是！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -597,9 +605,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -618,7 +626,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

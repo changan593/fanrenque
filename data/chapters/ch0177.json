@@ -225,6 +225,14 @@
         "manner": ""
       },
       {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "阿弥陀佛。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 39,
         "speaker": "金童峰修士",
         "addressee": "知了和尚",
@@ -363,9 +371,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 19,
+      "total_quotes": 20,
       "counts": {
-        "exact": 19,
+        "exact": 20,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -388,7 +396,8 @@
       174,
       175,
       176
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

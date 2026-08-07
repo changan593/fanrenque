@@ -695,7 +695,7 @@
       },
       {
         "para": 60,
-        "text": "师姐再次回头，喷出一口血沫，师姐立刻曲身准备硬抗，过了半晌却毫无反应，这次唐真只是摆摆样子吐了口唾沫。",
+        "text": "唐真再次回头，喷出一口血沫，师姐立刻曲身准备硬抗，过了半晌却毫无反应，这次唐真只是摆摆样子吐了口唾沫。",
         "function": "情节交代"
       },
       {
@@ -932,24 +932,14 @@
     "verbatim": {
       "total_quotes": 107,
       "counts": {
-        "exact": 106,
-        "near": 1,
+        "exact": 107,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9907,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 2,
-      "problems": [
-        {
-          "quote": "师姐再次回头，喷出一口血沫，师姐立刻曲身准备硬抗，过了半晌却毫无反应，这次唐真只是摆摆样子吐了口唾沫。",
-          "para_claimed": 60,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9608,
-          "para_correct": null,
-          "field": "narration[25]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 22,
@@ -959,7 +949,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

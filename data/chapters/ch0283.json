@@ -247,11 +247,27 @@
         "manner": "声音很柔很好听，可刚开口就被打断了"
       },
       {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 36,
         "speaker": "店小二",
         "addressee": "白裙姑娘",
         "text": "不知道也没关系，咱们边玩边学！大家都是这么过来的！",
         "manner": "直接在她的身边蹲下了，就像是她最忠心的侍从"
+      },
+      {
+        "para": 36,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我教您！保证让您玩得开心！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 37,
@@ -466,9 +482,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 36,
+      "total_quotes": 38,
       "counts": {
-        "exact": 36,
+        "exact": 38,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -488,7 +504,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -198,7 +198,14 @@
         "para": 11,
         "speaker": "太子",
         "addressee": "尉天齐",
-        "text": "不好听不一定是错的，尉少，你还是好好想想，做事情有些取舍才是正确的态度。你刚才说的那些，如果传出去，怕即便是你也会受到影响的，尤其是在你不打算站队娘娘，同时拒绝我的情况下。",
+        "text": "不好听不一定是错的，尉少，你还是好好想想，做事情有些取舍才是正确的态度。",
+        "manner": "摇头"
+      },
+      {
+        "para": 11,
+        "speaker": "太子",
+        "addressee": "尉天齐",
+        "text": "你刚才说的那些，如果传出去，怕即便是你也会受到影响的，尤其是在你不打算站队娘娘，同时拒绝我的情况下。",
         "manner": "摇头"
       },
       {
@@ -660,26 +667,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 59,
-        "near": 1,
+        "exact": 61,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9833,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "不好听不一定是错的，尉少，你还是好好想想，做事情有些取舍才是正确的态度。你刚才说的那些，如果传出去，怕即便是你也会受到影响的，尤其是在你不打算站队娘娘，同时拒绝我的情况下。",
-          "para_claimed": 11,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9186,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 30,
@@ -693,7 +690,8 @@
       413,
       414,
       415
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

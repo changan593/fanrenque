@@ -395,6 +395,14 @@
         "addressee": "杜有才",
         "text": "杜兄，我有一师妹，与朝阳公主小名相仿，我先代为收着，等我和我那师妹聊一聊，再决定是否回皇宫看一看，你且安心。",
         "manner": "声音带着笑意，将圣旨揣入怀中"
+      },
+      {
+        "para": 63,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "第二卷天门二十八峰，完。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -685,9 +693,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 62,
+      "total_quotes": 63,
       "counts": {
-        "exact": 62,
+        "exact": 63,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -706,7 +714,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

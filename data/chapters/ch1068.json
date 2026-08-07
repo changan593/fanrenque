@@ -237,7 +237,14 @@
         "para": 10,
         "speaker": "父亲",
         "addressee": "葵",
-        "text": "哈哈哈哈。。。无稽之谈！小姑娘家出去一趟见了些丑恶的东西，回来便开始怀疑家里藏了鬼？",
+        "text": "哈哈哈哈。。。",
+        "manner": "笑着摇头"
+      },
+      {
+        "para": 10,
+        "speaker": "父亲",
+        "addressee": "葵",
+        "text": "无稽之谈！小姑娘家出去一趟见了些丑恶的东西，回来便开始怀疑家里藏了鬼？",
         "manner": "笑着摇头"
       },
       {
@@ -544,26 +551,16 @@
     "structure_score": 82,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 45,
-        "near": 1,
+        "exact": 47,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9783,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哈哈哈哈。。。无稽之谈！小姑娘家出去一趟见了些丑恶的东西，回来便开始怀疑家里藏了鬼？",
-          "para_claimed": 10,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8333,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 16,
@@ -577,7 +574,8 @@
       1065,
       1066,
       1067
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

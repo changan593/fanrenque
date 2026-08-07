@@ -1,0 +1,36 @@
+{
+  "canonical_name": "粉色长裙的女孩",
+  "aliases": [],
+  "first_seq": 587,
+  "last_seq": 587,
+  "chapter_count": 1,
+  "chapters": [
+    587
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 587,
+      "quote": "紧随在她身后的则是另一个穿着粉裙，和她长得一模一样的可爱姑娘。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 587,
+      "state": "文静，低声说话"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 587,
+      "actions": [
+        "跟随姐姐入座",
+        "低声说‘我们不该跟她抢的’"
+      ]
+    }
+  ],
+  "id": "c670_粉色长裙的女孩"
+}

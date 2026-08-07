@@ -266,7 +266,14 @@
         "para": 10,
         "speaker": "姜赢",
         "addressee": "信使",
-        "text": "好！立刻告诉右相，想办法通知城门司协助遣送各军部将领出城抵达皇都守军驻扎营地，同时封锁城门，决不能放任何其他人离开皇都，尤其是南宁王！",
+        "text": "好！",
+        "manner": "合掌，然后指着对方道"
+      },
+      {
+        "para": 10,
+        "speaker": "姜赢",
+        "addressee": "信使",
+        "text": "立刻告诉右相，想办法通知城门司协助遣送各军部将领出城抵达皇都守军驻扎营地，同时封锁城门，决不能放任何其他人离开皇都，尤其是南宁王！",
         "manner": "合掌，然后指着对方道"
       },
       {
@@ -329,7 +336,14 @@
         "para": 29,
         "speaker": "太子府修士",
         "addressee": "姜赢",
-        "text": "太子，此地一旦遇袭，我等舍命未必护得住您啊！您如果出事，这刚刚搭建起来的皇都中枢便会直接瘫痪，导致刚刚变好的局面再次陷入混乱之中。",
+        "text": "太子，此地一旦遇袭，我等舍命未必护得住您啊！",
+        "manner": "疾步上前"
+      },
+      {
+        "para": 29,
+        "speaker": "太子府修士",
+        "addressee": "姜赢",
+        "text": "您如果出事，这刚刚搭建起来的皇都中枢便会直接瘫痪，导致刚刚变好的局面再次陷入混乱之中。",
         "manner": "疾步上前"
       },
       {
@@ -685,35 +699,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 55,
       "counts": {
-        "exact": 51,
-        "near": 2,
+        "exact": 55,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9623,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "好！立刻告诉右相，想办法通知城门司协助遣送各军部将领出城抵达皇都守军驻扎营地，同时封锁城门，决不能放任何其他人离开皇都，尤其是南宁王！",
-          "para_claimed": 10,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9701,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        },
-        {
-          "quote": "太子，此地一旦遇袭，我等舍命未必护得住您啊！您如果出事，这刚刚搭建起来的皇都中枢便会直接瘫痪，导致刚刚变好的局面再次陷入混乱之中。",
-          "para_claimed": 29,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7077,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 34,
@@ -723,7 +718,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

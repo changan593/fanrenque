@@ -159,6 +159,16 @@
         "actions": [
           "看着首魔尊遗骸，感慨其难死难生"
         ]
+      },
+      {
+        "name": "群僧",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -475,6 +485,14 @@
         "manner": ""
       },
       {
+        "para": 63,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "所以你能毫不犹豫的舍弃它。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 64,
         "speaker": "阿难",
         "addressee": "姚安恕",
@@ -690,9 +708,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 60,
+        "exact": 61,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -711,7 +729,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

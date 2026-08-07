@@ -190,7 +190,14 @@
         "para": 7,
         "speaker": "南季礼",
         "addressee": "隗夫人",
-        "text": "隗夫人。刚刚我们说的只是之前关于齐渊那一件事，但你别忘了就在昨晚，你们清泉宗的立场你还没有解释呢。",
+        "text": "隗夫人。",
+        "manner": "侧过头来打断了女人的话"
+      },
+      {
+        "para": 7,
+        "speaker": "南季礼",
+        "addressee": "隗夫人",
+        "text": "刚刚我们说的只是之前关于齐渊那一件事，但你别忘了就在昨晚，你们清泉宗的立场你还没有解释呢。",
         "manner": "侧过头来打断了女人的话"
       },
       {
@@ -610,26 +617,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 57,
       "counts": {
-        "exact": 55,
-        "near": 1,
+        "exact": 57,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9821,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "隗夫人。刚刚我们说的只是之前关于齐渊那一件事，但你别忘了就在昨晚，你们清泉宗的立场你还没有解释呢。",
-          "para_claimed": 7,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9184,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -643,7 +640,8 @@
       1111,
       1112,
       1113
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

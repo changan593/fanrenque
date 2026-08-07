@@ -148,6 +148,16 @@
           "邀请姜羽葵进屋",
           "否认师叔祖称呼"
         ]
+      },
+      {
+        "name": "娘子",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -330,6 +340,14 @@
         "addressee": "娘子",
         "text": "娘子。",
         "manner": "看着对方开口"
+      },
+      {
+        "para": 40,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "何必呢？",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 41,
@@ -593,9 +611,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 49,
       "counts": {
-        "exact": 48,
+        "exact": 49,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -618,7 +636,8 @@
       1071,
       1072,
       1073
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,44 @@
+{
+  "canonical_name": "年轻官员",
+  "aliases": [
+    "之前跪地的年轻官员"
+  ],
+  "first_seq": 520,
+  "last_seq": 521,
+  "chapter_count": 2,
+  "chapters": [
+    520,
+    521
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 520,
+      "state": "为书院辩护，被右相封口"
+    },
+    {
+      "seq": 521,
+      "state": "用头撞柱，写血诗后晕倒。"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 520,
+      "actions": [
+        "冲出队伍为书院辩护",
+        "被右相封口"
+      ]
+    },
+    {
+      "seq": 521,
+      "actions": [
+        "用头撞柱，留血写诗，晕倒"
+      ]
+    }
+  ],
+  "id": "c301_年轻官员"
+}

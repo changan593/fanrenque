@@ -233,6 +233,14 @@
         "manner": "满脸苦色，带着哭腔"
       },
       {
+        "para": 47,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你让我调查的事有消息了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 49,
         "speaker": "美妇人",
         "addressee": "许行",
@@ -418,9 +426,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 24,
+      "total_quotes": 25,
       "counts": {
-        "exact": 24,
+        "exact": 25,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -439,7 +447,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

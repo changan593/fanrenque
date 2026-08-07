@@ -187,6 +187,14 @@
         "manner": "声音平静"
       },
       {
+        "para": 7,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "既然已经谈不了了，那我们便打吧，打到。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 9,
         "speaker": "唐真",
         "addressee": "狌狌",
@@ -618,9 +626,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 58,
+      "total_quotes": 59,
       "counts": {
-        "exact": 58,
+        "exact": 59,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -643,7 +651,8 @@
       813,
       814,
       815
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -121,6 +121,16 @@
         "actions": [
           "与姜介一同迎接僧人"
         ]
+      },
+      {
+        "name": "守城卫兵",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -510,7 +520,8 @@
       616,
       617,
       618
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

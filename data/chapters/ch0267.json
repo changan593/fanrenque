@@ -231,6 +231,38 @@
         "manner": "谈兴正浓"
       },
       {
+        "para": 28,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你我相聚二十步。",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 29,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不能过线，但已无线。",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 30,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "南姑娘，灯。",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你尽力了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 34,
         "speaker": "齐渊",
         "addressee": "吴慢慢、唐真、姜羽",
@@ -575,9 +607,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 52,
       "counts": {
-        "exact": 48,
+        "exact": 52,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -603,7 +635,8 @@
       263,
       264,
       265
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -252,7 +252,14 @@
         "para": 24,
         "speaker": "尉天齐",
         "addressee": "林姑娘",
-        "text": "不是瞎想，只是到了这个年纪，男孩子便会开始喜欢女孩子，窈窕淑女君子好逑而已，没什么不堪的。或许当初他离开命苦魔尊也是因为情窦初开罢了。",
+        "text": "不是瞎想，只是到了这个年纪，男孩子便会开始喜欢女孩子，窈窕淑女君子好逑而已，没什么不堪的。",
+        "manner": "倒是觉得很正常"
+      },
+      {
+        "para": 24,
+        "speaker": "尉天齐",
+        "addressee": "林姑娘",
+        "text": "或许当初他离开命苦魔尊也是因为情窦初开罢了。",
         "manner": "倒是觉得很正常"
       },
       {
@@ -294,7 +301,14 @@
         "para": 34,
         "speaker": "男主人",
         "addressee": "尉天齐",
-        "text": "没有兄弟姐妹如何能行？岂不是要被人欺负！你以后可得多生几个！最好四个兄弟，三个姐妹，这样就能凑一支行商队伍了！",
+        "text": "没有兄弟姐妹如何能行？岂不是要被人欺负！",
+        "manner": "皱眉"
+      },
+      {
+        "para": 34,
+        "speaker": "男主人",
+        "addressee": "尉天齐",
+        "text": "你以后可得多生几个！最好四个兄弟，三个姐妹，这样就能凑一支行商队伍了！",
         "manner": "皱眉"
       },
       {
@@ -519,35 +533,16 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 40,
+      "total_quotes": 42,
       "counts": {
-        "exact": 38,
-        "near": 2,
+        "exact": 42,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.95,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "不是瞎想，只是到了这个年纪，男孩子便会开始喜欢女孩子，窈窕淑女君子好逑而已，没什么不堪的。或许当初他离开命苦魔尊也是因为情窦初开罢了。",
-          "para_claimed": 24,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.806,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        },
-        {
-          "quote": "没有兄弟姐妹如何能行？岂不是要被人欺负！你以后可得多生几个！最好四个兄弟，三个姐妹，这样就能凑一支行商队伍了！",
-          "para_claimed": 34,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7273,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -557,7 +552,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -164,6 +164,16 @@
         "actions": [
           "送热酒，提醒喝凉的伤胃"
         ]
+      },
+      {
+        "name": "传讯兵",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -210,7 +220,14 @@
         "para": 33,
         "speaker": "尉天齐",
         "addressee": "姚安饶",
-        "text": "是的，书理之道说到底就是形，她将大道拆解，以形补字，拼成了一个界，不仅维护一洲，而且帮助已经道尽的准圣再入圣途，此乃天下书道新的解法，只凭此项，她若是个皇都人，清水书院应该都会邀请她去当书道教习的。",
+        "text": "是的，书理之道说到底就是形，她将大道拆解，以形补字，拼成了一个界，不仅维护一洲，而且帮助已经道尽的准圣再入圣途，此乃天下书道新的解法，",
+        "manner": "喝了口茶，脸色有些感慨"
+      },
+      {
+        "para": 33,
+        "speaker": "尉天齐",
+        "addressee": "姚安饶",
+        "text": "只凭此项，她若是个皇都人，清水书院应该都会邀请她去当书道教习的。",
         "manner": "喝了口茶，脸色有些感慨"
       },
       {
@@ -492,26 +509,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 33,
+      "total_quotes": 34,
       "counts": {
-        "exact": 32,
-        "near": 1,
+        "exact": 34,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9697,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "是的，书理之道说到底就是形，她将大道拆解，以形补字，拼成了一个界，不仅维护一洲，而且帮助已经道尽的准圣再入圣途，此乃天下书道新的解法，只凭此项，她若是个皇都人，清水书院应该都会邀请她去当书道教习的。",
-          "para_claimed": 33,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8283,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 15,
@@ -521,7 +528,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

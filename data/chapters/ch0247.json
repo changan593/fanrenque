@@ -211,6 +211,16 @@
         "actions": [
           "跪倒"
         ]
+      },
+      {
+        "name": "马上的人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -263,6 +273,14 @@
       }
     ],
     "dialogues": [
+      {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "玉坛残血，月落休斯，生不可托，死不悔改。",
+        "manner": "",
+        "_filled": true
+      },
       {
         "para": 17,
         "speaker": "来人",
@@ -484,9 +502,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 24,
+      "total_quotes": 25,
       "counts": {
-        "exact": 24,
+        "exact": 25,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -505,7 +523,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

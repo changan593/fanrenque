@@ -350,6 +350,14 @@
         "manner": "行礼"
       },
       {
+        "para": 27,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "无尘剑！！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 36,
         "speaker": "刘全",
         "addressee": "姚望舒",
@@ -815,9 +823,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 70,
+      "total_quotes": 71,
       "counts": {
-        "exact": 70,
+        "exact": 71,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -836,7 +844,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

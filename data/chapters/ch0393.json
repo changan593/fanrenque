@@ -229,6 +229,14 @@
         "manner": "偏头看向红儿"
       },
       {
+        "para": 24,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "是按照原计划让一位长老去看看情况？还是怎样？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 25,
         "speaker": "红儿",
         "addressee": "念娘",
@@ -350,9 +358,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 14,
+      "total_quotes": 15,
       "counts": {
-        "exact": 14,
+        "exact": 15,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -371,7 +379,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

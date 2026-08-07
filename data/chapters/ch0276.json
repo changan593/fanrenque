@@ -265,6 +265,14 @@
         "manner": "扯了扯姜羽的袖子，示意她坐下慢慢说，然后看向吴慢慢笑着道"
       },
       {
+        "para": 38,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "吾家慢慢不下了。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 39,
         "speaker": "唐真",
         "addressee": "吴慢慢",
@@ -502,9 +510,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 34,
+      "total_quotes": 35,
       "counts": {
-        "exact": 34,
+        "exact": 35,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -527,7 +535,8 @@
       273,
       274,
       275
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

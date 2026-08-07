@@ -311,6 +311,14 @@
         "manner": ""
       },
       {
+        "para": 11,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "最早的时候，道理很乱，所以主干很粗，能承载大多数人。可到如今，道理的脉络逐渐清晰，而主干也越来越细，于是排挤愈发多的发生。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 15,
         "speaker": "程百尺",
         "addressee": "刘知为",
@@ -598,9 +606,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 49,
       "counts": {
-        "exact": 48,
+        "exact": 49,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -619,7 +627,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

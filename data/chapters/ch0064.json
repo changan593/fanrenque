@@ -157,6 +157,26 @@
         "actions": [
           "在酒楼说书，讲述北阳城大捷"
         ]
+      },
+      {
+        "name": "小二",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "系统",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -369,6 +389,14 @@
         "addressee": "唐真",
         "text": "我说，被仙子们疯狂追求的大真人，还是请您抓紧入道吧！天下哪有招收弟子还允许带亲眷上山的宗门。",
         "manner": "嘲讽"
+      },
+      {
+        "para": 74,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：我说，被仙子们疯狂追求的大真人，还是请您抓紧入道吧！天下哪有招收弟子还允许带亲眷上山的宗门。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -723,9 +751,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 76,
+      "total_quotes": 77,
       "counts": {
-        "exact": 76,
+        "exact": 77,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -744,7 +772,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -111,6 +111,16 @@
         "appearance_quotes": [],
         "state": "被第一大菩萨牵着",
         "actions": []
+      },
+      {
+        "name": "岛民遗族",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -249,6 +259,14 @@
         "addressee": "唐真",
         "text": "此岛有五个遗族部落居住，虽然条件简陋，但物质很充足。",
         "manner": "随意的介绍道"
+      },
+      {
+        "para": 32,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "太阳临近下山时，是他们祭祀的时候，此时所有的成员都会聚集在广场。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 36,
@@ -510,9 +528,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 45,
+      "total_quotes": 46,
       "counts": {
-        "exact": 45,
+        "exact": 46,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -531,7 +549,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -384,7 +384,14 @@
         "para": 35,
         "speaker": "葛道人",
         "addressee": "文宗",
-        "text": "啧！你这！！唉——文宗大人，实在唐突了，我们是否换个地方详谈，让他自己冷静会儿。",
+        "text": "啧！你这！！唉——",
+        "manner": "一脸难堪之色"
+      },
+      {
+        "para": 35,
+        "speaker": "葛道人",
+        "addressee": "文宗",
+        "text": "文宗大人，实在唐突了，我们是否换个地方详谈，让他自己冷静会儿。",
         "manner": "一脸难堪之色"
       },
       {
@@ -475,7 +482,14 @@
         "para": 47,
         "speaker": "秦怀雀",
         "addressee": "葛道人",
-        "text": "师叔！！你难道忘了当日我仙宫的惨状吗！师父失去爱女，师兄落寞下山，师祖追击仇寇如今未归！我紫云主脉，因那齐渊一人，已是支离破碎！您要我忍，说什么考虑天下！我忍了！",
+        "text": "师叔！！",
+        "manner": "扭头看向葛道人"
+      },
+      {
+        "para": 47,
+        "speaker": "秦怀雀",
+        "addressee": "葛道人",
+        "text": "你难道忘了当日我仙宫的惨状吗！师父失去爱女，师兄落寞下山，师祖追击仇寇如今未归！我紫云主脉，因那齐渊一人，已是支离破碎！您要我忍，说什么考虑天下！我忍了！",
         "manner": "扭头看向葛道人"
       },
       {
@@ -765,35 +779,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 68,
+      "total_quotes": 70,
       "counts": {
-        "exact": 66,
-        "near": 2,
+        "exact": 70,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9706,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "啧！你这！！唉——文宗大人，实在唐突了，我们是否换个地方详谈，让他自己冷静会儿。",
-          "para_claimed": 35,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.775,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        },
-        {
-          "quote": "师叔！！你难道忘了当日我仙宫的惨状吗！师父失去爱女，师兄落寞下山，师祖追击仇寇如今未归！我紫云主脉，因那齐渊一人，已是支离破碎！您要我忍，说什么考虑天下！我忍了！",
-          "para_claimed": 47,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9506,
-          "para_correct": null,
-          "field": "dialogues[26]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 39,
@@ -807,7 +802,8 @@
       971,
       972,
       973
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

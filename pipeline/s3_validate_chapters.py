@@ -91,9 +91,14 @@ def check_one(doc: dict) -> dict:
         elif f != "synopsis" and not isinstance(a[f], list):
             problems.append(f"analysis.{f} 不是数组")
 
-    syn = a.get("synopsis", "")
-    if len(syn) < 80:
+    # 简介判两件事，且要分开判。
+    # 只卡字数会误伤——58~79 字的简介多数内容完整，只是写得紧。
+    # 真正的缺陷是**被截断**：话说到一半没了，末尾连句号都没有。
+    syn = (a.get("synopsis") or "").strip()
+    if len(syn) < 40:
         problems.append(f"简介过短（{len(syn)}字）")
+    elif syn and syn[-1] not in "。！？…”》」)）":
+        problems.append(f"简介被截断（{len(syn)}字，末尾「{syn[-6:]}」）")
 
     # 重算逐字命中，不信任落盘时记的值
     vb = verbatim.check_analysis(a, paras)

@@ -175,6 +175,16 @@
         ],
         "state": "围观或守卫",
         "actions": []
+      },
+      {
+        "name": "白思",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -315,14 +325,28 @@
         "para": 21,
         "speaker": "白生",
         "addressee": "白思",
-        "text": "唐真的意思？我还以为他前夜什么都不做是改了性子呢！原来还是这般少年心态。",
+        "text": "唐真的意思？",
+        "manner": "露出笑容"
+      },
+      {
+        "para": 21,
+        "speaker": "白生",
+        "addressee": "白思",
+        "text": "我还以为他前夜什么都不做是改了性子呢！原来还是这般少年心态。",
         "manner": "露出笑容"
       },
       {
         "para": 24,
         "speaker": "白生",
         "addressee": "白思",
-        "text": "也罢，我若是裴林剑也会选择卖他面子的。那便不用太行山了，下第三道南洲令，三日内不回蟾宫旧址祭拜祖师者，开出蟾宫名册！另外发放通告，点名萧不同以及那四位天仙境，如若期限内不归，直接视为伙同魔尊谋逆之人！无需自辩！",
+        "text": "也罢，我若是裴林剑也会选择卖他面子的。",
+        "manner": "坐回椅子"
+      },
+      {
+        "para": 24,
+        "speaker": "白生",
+        "addressee": "白思",
+        "text": "那便不用太行山了，下第三道南洲令，三日内不回蟾宫旧址祭拜祖师者，开出蟾宫名册！另外发放通告，点名萧不同以及那四位天仙境，如若期限内不归，直接视为伙同魔尊谋逆之人！无需自辩！",
         "manner": "坐回椅子"
       },
       {
@@ -587,35 +611,16 @@
     "structure_score": 88,
     "fidelity_score": 94,
     "verbatim": {
-      "total_quotes": 55,
+      "total_quotes": 57,
       "counts": {
-        "exact": 53,
-        "near": 2,
+        "exact": 57,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9636,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "唐真的意思？我还以为他前夜什么都不做是改了性子呢！原来还是这般少年心态。",
-          "para_claimed": 21,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8333,
-          "para_correct": null,
-          "field": "dialogues[12]"
-        },
-        {
-          "quote": "也罢，我若是裴林剑也会选择卖他面子的。那便不用太行山了，下第三道南洲令，三日内不回蟾宫旧址祭拜祖师者，开出蟾宫名册！另外发放通告，点名萧不同以及那四位天仙境，如若期限内不归，直接视为伙同魔尊谋逆之人！无需自辩！",
-          "para_claimed": 24,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9143,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 27,
@@ -625,7 +630,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

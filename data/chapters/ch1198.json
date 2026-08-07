@@ -290,7 +290,14 @@
         "para": 8,
         "speaker": "路人",
         "addressee": "古命好",
-        "text": "哈！你倒是做得好买卖！这价格买只不同的花？唐真都不会这么败家。",
+        "text": "哈！",
+        "manner": "气笑了"
+      },
+      {
+        "para": 8,
+        "speaker": "路人",
+        "addressee": "古命好",
+        "text": "你倒是做得好买卖！这价格买只不同的花？唐真都不会这么败家。",
         "manner": "气笑了"
       },
       {
@@ -346,7 +353,14 @@
         "para": 17,
         "speaker": "古命好",
         "addressee": "阿森",
-        "text": "你是来问我你本体的情况的？放心，你自由了，她死了。",
+        "text": "你是来问我你本体的情况的？",
+        "manner": "明白过来"
+      },
+      {
+        "para": 17,
+        "speaker": "古命好",
+        "addressee": "阿森",
+        "text": "放心，你自由了，她死了。",
         "manner": "明白过来"
       },
       {
@@ -402,7 +416,14 @@
         "para": 26,
         "speaker": "古命好",
         "addressee": "阿森",
-        "text": "啊——阿森姑娘，天下都在发生各种大事，你是敌人还是路人都直接点吧！",
+        "text": "啊——",
+        "manner": "长叹一口气，看着对方，有些无语"
+      },
+      {
+        "para": 26,
+        "speaker": "古命好",
+        "addressee": "阿森",
+        "text": "阿森姑娘，天下都在发生各种大事，你是敌人还是路人都直接点吧！",
         "manner": "长叹一口气，看着对方，有些无语"
       },
       {
@@ -500,14 +521,28 @@
         "para": 42,
         "speaker": "阿森",
         "addressee": "古命好",
-        "text": "哈哈哈哈！师父说的果然没错，你这个人最能骗自己。",
+        "text": "哈哈哈哈！",
+        "manner": "笑了，捂着嘴，笑得前仰后合"
+      },
+      {
+        "para": 42,
+        "speaker": "阿森",
+        "addressee": "古命好",
+        "text": "师父说的果然没错，你这个人最能骗自己。",
         "manner": "笑了，捂着嘴，笑得前仰后合"
       },
       {
         "para": 44,
         "speaker": "阿森",
         "addressee": "古命好",
-        "text": "迷人眼，自然也包括自己。你难道不觉得奇怪吗？",
+        "text": "迷人眼，自然也包括自己。",
+        "manner": "伸手把已经揉烂的黄花扔到了摊位上"
+      },
+      {
+        "para": 44,
+        "speaker": "阿森",
+        "addressee": "古命好",
+        "text": "你难道不觉得奇怪吗？",
         "manner": "伸手把已经揉烂的黄花扔到了摊位上"
       },
       {
@@ -528,7 +563,14 @@
         "para": 47,
         "speaker": "阿森",
         "addressee": "古命好",
-        "text": "仔细想想，凭什么隗夫人、天菩萨以及齐渊的交点会是你呢？你是唐真吗？你什么必须存在的东西吗？",
+        "text": "仔细想想，",
+        "manner": "抬手指了指那真我境躯体所化的巨大乌云，她摇头道"
+      },
+      {
+        "para": 47,
+        "speaker": "阿森",
+        "addressee": "古命好",
+        "text": "凭什么隗夫人、天菩萨以及齐渊的交点会是你呢？你是唐真吗？你什么必须存在的东西吗？",
         "manner": "抬手指了指那真我境躯体所化的巨大乌云，她摇头道"
       },
       {
@@ -612,7 +654,14 @@
         "para": 66,
         "speaker": "古命好",
         "addressee": "阿森",
-        "text": "这不可能！我没有大道！",
+        "text": "这不可能！",
+        "manner": "高声道"
+      },
+      {
+        "para": 66,
+        "speaker": "古命好",
+        "addressee": "阿森",
+        "text": "我没有大道！",
         "manner": "高声道"
       },
       {
@@ -651,6 +700,14 @@
         "manner": ""
       },
       {
+        "para": 78,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "迷藏啊，真是了不起，藏得好的时候，明明就在眼前，却不可见。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 81,
         "speaker": "古命好",
         "addressee": "阿森",
@@ -661,7 +718,14 @@
         "para": 83,
         "speaker": "阿森",
         "addressee": "古命好",
-        "text": "父亲，你藏的很好，但你千不该，万不该相信我师父。你的命河早已把故事讲的很清楚了。",
+        "text": "父亲，你藏的很好，但你千不该，万不该相信我师父。",
+        "manner": "幽幽的开口"
+      },
+      {
+        "para": 83,
+        "speaker": "阿森",
+        "addressee": "古命好",
+        "text": "你的命河早已把故事讲的很清楚了。",
         "manner": "幽幽的开口"
       },
       {
@@ -905,89 +969,16 @@
     "structure_score": 82,
     "fidelity_score": 62,
     "verbatim": {
-      "total_quotes": 76,
+      "total_quotes": 85,
       "counts": {
-        "exact": 68,
-        "near": 5,
-        "miss": 3,
+        "exact": 85,
+        "near": 0,
+        "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.8947,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "哈！你倒是做得好买卖！这价格买只不同的花？唐真都不会这么败家。",
-          "para_claimed": 8,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9355,
-          "para_correct": null,
-          "field": "dialogues[2]"
-        },
-        {
-          "quote": "你是来问我你本体的情况的？放心，你自由了，她死了。",
-          "para_claimed": 17,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.6,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        },
-        {
-          "quote": "啊——阿森姑娘，天下都在发生各种大事，你是敌人还是路人都直接点吧！",
-          "para_claimed": 26,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9091,
-          "para_correct": null,
-          "field": "dialogues[18]"
-        },
-        {
-          "quote": "哈哈哈哈！师父说的果然没错，你这个人最能骗自己。",
-          "para_claimed": 42,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7917,
-          "para_correct": null,
-          "field": "dialogues[32]"
-        },
-        {
-          "quote": "迷人眼，自然也包括自己。你难道不觉得奇怪吗？",
-          "para_claimed": 44,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5455,
-          "para_correct": null,
-          "field": "dialogues[33]"
-        },
-        {
-          "quote": "仔细想想，凭什么隗夫人、天菩萨以及齐渊的交点会是你呢？你是唐真吗？你什么必须存在的东西吗？",
-          "para_claimed": 47,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8889,
-          "para_correct": null,
-          "field": "dialogues[36]"
-        },
-        {
-          "quote": "这不可能！我没有大道！",
-          "para_claimed": 66,
-          "status": "miss",
-          "para_found": null,
-          "similarity": 0.5455,
-          "para_correct": null,
-          "field": "dialogues[48]"
-        },
-        {
-          "quote": "父亲，你藏的很好，但你千不该，万不该相信我师父。你的命河早已把故事讲的很清楚了。",
-          "para_claimed": 83,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.75,
-          "para_correct": null,
-          "field": "dialogues[55]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 67,
@@ -1003,7 +994,8 @@
       1195,
       1196,
       1197
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

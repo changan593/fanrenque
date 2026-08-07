@@ -167,7 +167,7 @@
         "type": "室外",
         "time_of_day": "阳光洒落",
         "description_quotes": [
-          "土堆前就是村口，运粮官正在和孩子们玩耍，他举着糖，大声的笑着问，'谁想要！'"
+          "土堆前就是村口，运粮官正在和孩子们玩耍，他举着糖，大声的笑着问，“谁想要！"
         ],
         "present_characters": [
           "云儿",
@@ -539,24 +539,14 @@
     "verbatim": {
       "total_quotes": 37,
       "counts": {
-        "exact": 36,
-        "near": 1,
+        "exact": 37,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.973,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 2,
-      "problems": [
-        {
-          "quote": "土堆前就是村口，运粮官正在和孩子们玩耍，他举着糖，大声的笑着问，'谁想要！'",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9474,
-          "para_correct": null,
-          "field": "scenes[1].description_quotes[0]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 20,
@@ -566,7 +556,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

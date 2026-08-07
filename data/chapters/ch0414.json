@@ -188,6 +188,14 @@
     ],
     "dialogues": [
       {
+        "para": 2,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "好俊的姑娘，好有派的儿郎。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 8,
         "speaker": "男孩甲",
         "addressee": "男孩乙",
@@ -612,9 +620,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 46,
+        "exact": 47,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -633,7 +641,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

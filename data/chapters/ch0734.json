@@ -129,6 +129,16 @@
         "actions": [
           "摇头拒绝放下轿子"
         ]
+      },
+      {
+        "name": "屠邹",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -241,6 +251,14 @@
         "addressee": "无救",
         "text": "更何况是一棵将死未死的老树。",
         "manner": "语气里似乎带着嘲讽"
+      },
+      {
+        "para": 39,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "藤缠木死，木壮藤折",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 47,
@@ -517,9 +535,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 45,
+      "total_quotes": 46,
       "counts": {
-        "exact": 45,
+        "exact": 46,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -542,7 +560,8 @@
       731,
       732,
       733
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

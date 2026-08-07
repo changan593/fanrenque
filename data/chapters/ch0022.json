@@ -281,7 +281,14 @@
         "para": 30,
         "speaker": "姚安饶",
         "addressee": "红儿",
-        "text": "为什么？我不是说了吗，为了你啊！你若不成仙，就不可能得到你想要的。奢望别人可怜是天下最可怜的事，我的妹妹绝不会沦落到给人推背，什么故人新人都不行！",
+        "text": "为什么？我不是说了吗，为了你啊！",
+        "manner": "将匣子和道书塞进红儿手里"
+      },
+      {
+        "para": 30,
+        "speaker": "姚安饶",
+        "addressee": "红儿",
+        "text": "你若不成仙，就不可能得到你想要的。奢望别人可怜是天下最可怜的事，我的妹妹绝不会沦落到给人推背，什么故人新人都不行！",
         "manner": "将匣子和道书塞进红儿手里"
       },
       {
@@ -597,26 +604,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 53,
+      "total_quotes": 54,
       "counts": {
-        "exact": 52,
-        "near": 1,
+        "exact": 54,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9811,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "为什么？我不是说了吗，为了你啊！你若不成仙，就不可能得到你想要的。奢望别人可怜是天下最可怜的事，我的妹妹绝不会沦落到给人推背，什么故人新人都不行！",
-          "para_claimed": 30,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7945,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -630,7 +627,8 @@
       13,
       14,
       15
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

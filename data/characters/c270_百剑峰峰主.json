@@ -1,0 +1,49 @@
+{
+  "canonical_name": "百剑峰峰主",
+  "aliases": [
+    "百剑峰山主"
+  ],
+  "first_seq": 89,
+  "last_seq": 181,
+  "chapter_count": 2,
+  "chapters": [
+    89,
+    181
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 181,
+      "quote": "中年男人满面笑意"
+    }
+  ],
+  "states": [
+    {
+      "seq": 89,
+      "state": "拦住弟子车轮战，上前劝解吕藏锋"
+    },
+    {
+      "seq": 181,
+      "state": "封山，拒绝参与内斗"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 89,
+      "actions": [
+        "拦住弟子车轮战",
+        "上前想劝吕藏锋"
+      ]
+    },
+    {
+      "seq": 181,
+      "actions": [
+        "接待陆剑仙，解释中立立场"
+      ]
+    }
+  ],
+  "id": "c270_百剑峰峰主"
+}

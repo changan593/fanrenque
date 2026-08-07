@@ -338,6 +338,14 @@
         "manner": "托着自己的脸，忸怩的摆起造型"
       },
       {
+        "para": 32,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "程先生可知，这丫头是谁？",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "程伊",
         "addressee": "幺儿",
@@ -371,6 +379,14 @@
         "addressee": "程伊",
         "text": "我是说，这丫头的师父，是吴慢慢那个丫头！",
         "manner": "笑着说"
+      },
+      {
+        "para": 39,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "您还是不了解她啊！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 40,
@@ -718,9 +734,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 65,
+      "total_quotes": 67,
       "counts": {
-        "exact": 65,
+        "exact": 67,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -740,7 +756,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

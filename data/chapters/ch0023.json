@@ -427,6 +427,14 @@
         "addressee": "唐真",
         "text": "是为了报复啊！",
         "manner": "邀功似的"
+      },
+      {
+        "para": 65,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "：不！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -644,9 +652,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 50,
       "counts": {
-        "exact": 49,
+        "exact": 50,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -669,7 +677,8 @@
       20,
       21,
       22
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

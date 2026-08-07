@@ -320,6 +320,14 @@
         "manner": "将桨往身旁一递"
       },
       {
+        "para": 37,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "略——！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 38,
         "speaker": "唐假",
         "addressee": "老五",
@@ -492,9 +500,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 34,
+      "total_quotes": 35,
       "counts": {
-        "exact": 34,
+        "exact": 35,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -517,7 +525,8 @@
       413,
       414,
       415
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

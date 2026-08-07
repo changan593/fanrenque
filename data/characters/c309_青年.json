@@ -1,0 +1,56 @@
+{
+  "canonical_name": "青年",
+  "aliases": [],
+  "first_seq": 597,
+  "last_seq": 724,
+  "chapter_count": 2,
+  "chapters": [
+    597,
+    724
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 597,
+      "quote": "眉宇间有些傲气的青年，一看脸就知道家世不错"
+    },
+    {
+      "seq": 724,
+      "quote": "一位青年正面色阴沉的站在大堂门口"
+    },
+    {
+      "seq": 724,
+      "quote": "那双本来无比和善的眼睛里似乎充斥着无尽的怒火"
+    }
+  ],
+  "states": [
+    {
+      "seq": 597,
+      "state": "新科官员，谈兴很浓"
+    },
+    {
+      "seq": 724,
+      "state": "愤怒"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 597,
+      "actions": [
+        "与老黄搭话",
+        "追问悬镜司情况"
+      ]
+    },
+    {
+      "seq": 724,
+      "actions": [
+        "以剑指挡住无名的手，救下姜介",
+        "怒斥众人"
+      ]
+    }
+  ],
+  "id": "c309_青年"
+}

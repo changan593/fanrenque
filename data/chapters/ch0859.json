@@ -279,7 +279,14 @@
         "para": 17,
         "speaker": "老僧",
         "addressee": "还俗",
-        "text": "说的也是。我们推断，那群孩子会在后日中午前两三刻，理智进入彻底崩溃。",
+        "text": "说的也是。",
+        "manner": "点头赞同"
+      },
+      {
+        "para": 17,
+        "speaker": "老僧",
+        "addressee": "还俗",
+        "text": "我们推断，那群孩子会在后日中午前两三刻，理智进入彻底崩溃。",
         "manner": "点头赞同"
       },
       {
@@ -321,7 +328,14 @@
         "para": 42,
         "speaker": "长发怪男",
         "addressee": "唐真",
-        "text": "额。。。杀过。修行一路，难免与魔修和歹人起冲突，曾经杀过几个劫掠人钱财的邪修，绝没杀过好人。",
+        "text": "额。。。杀过。",
+        "manner": "点头，补充解释"
+      },
+      {
+        "para": 42,
+        "speaker": "长发怪男",
+        "addressee": "唐真",
+        "text": "修行一路，难免与魔修和歹人起冲突，曾经杀过几个劫掠人钱财的邪修，绝没杀过好人。",
         "manner": "点头，补充解释"
       },
       {
@@ -622,35 +636,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 50,
       "counts": {
-        "exact": 46,
-        "near": 2,
+        "exact": 50,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9583,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "说的也是。我们推断，那群孩子会在后日中午前两三刻，理智进入彻底崩溃。",
-          "para_claimed": 17,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8529,
-          "para_correct": null,
-          "field": "dialogues[3]"
-        },
-        {
-          "quote": "额。。。杀过。修行一路，难免与魔修和歹人起冲突，曾经杀过几个劫掠人钱财的邪修，绝没杀过好人。",
-          "para_claimed": 42,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8478,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 15,
@@ -664,7 +659,8 @@
       856,
       857,
       858
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

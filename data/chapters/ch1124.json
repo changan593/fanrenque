@@ -213,7 +213,14 @@
         "para": 17,
         "speaker": "女子",
         "addressee": "老人",
-        "text": "唉——女声又是叹气，好像真的无奈了，“清泉茶庄找我们来就是说这个的？”",
+        "text": "唉——",
+        "manner": "叹气"
+      },
+      {
+        "para": 17,
+        "speaker": "女子",
+        "addressee": "老人",
+        "text": "清泉茶庄找我们来就是说这个的？",
         "manner": "叹气"
       },
       {
@@ -516,26 +523,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 43,
       "counts": {
-        "exact": 41,
-        "near": 1,
+        "exact": 43,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9762,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "唉——女声又是叹气，好像真的无奈了，“清泉茶庄找我们来就是说这个的？”",
-          "para_claimed": 17,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9714,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 24,
@@ -549,7 +546,8 @@
       1121,
       1122,
       1123
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

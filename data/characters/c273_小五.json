@@ -1,0 +1,52 @@
+{
+  "canonical_name": "小五",
+  "aliases": [],
+  "first_seq": 109,
+  "last_seq": 110,
+  "chapter_count": 2,
+  "chapters": [
+    109,
+    110
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 109,
+      "quote": "穿着灰色道袍的青年"
+    },
+    {
+      "seq": 109,
+      "quote": "腰间挂着一堆乱七八糟的葫芦和布袋"
+    }
+  ],
+  "states": [
+    {
+      "seq": 109,
+      "state": "灵兽崖弟子，对金桧受伤感到愤怒"
+    },
+    {
+      "seq": 110,
+      "state": "背着昏迷的金桧走出竹林"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 109,
+      "actions": [
+        "牵鹿豚带魏成过阵",
+        "发现金桧受伤",
+        "提议背金桧出去通知金童峰"
+      ]
+    },
+    {
+      "seq": 110,
+      "actions": [
+        "背出金桧，解释是吕先生打的"
+      ]
+    }
+  ],
+  "id": "c273_小五"
+}

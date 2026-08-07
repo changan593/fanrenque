@@ -629,6 +629,14 @@
         "manner": "点了点头"
       },
       {
+        "para": 88,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我是三个皇子里最棒的！我是最有能力的！选我！选我！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 96,
         "speaker": "姜赢",
         "addressee": "姜甲",
@@ -1096,9 +1104,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 101,
+      "total_quotes": 102,
       "counts": {
-        "exact": 101,
+        "exact": 102,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -1117,7 +1125,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

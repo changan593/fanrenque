@@ -147,6 +147,16 @@
         "appearance_quotes": [],
         "state": "在中洲经营多年，势力盘根错节",
         "actions": []
+      },
+      {
+        "name": "白玉蟾尸体",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -280,6 +290,14 @@
         "addressee": "白生",
         "text": "大抵尽仁道,即是圣人。",
         "manner": "移开了自己的视线"
+      },
+      {
+        "para": 36,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你如今也满足了第一条而已，而且你只剩半个夜晚了。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 39,
@@ -425,9 +443,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 25,
+      "total_quotes": 26,
       "counts": {
-        "exact": 25,
+        "exact": 26,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -446,7 +464,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,46 @@
+{
+  "canonical_name": "小厮",
+  "aliases": [
+    "无名小厮",
+    "姜赢的随从"
+  ],
+  "first_seq": 148,
+  "last_seq": 438,
+  "chapter_count": 2,
+  "chapters": [
+    148,
+    438
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 148,
+      "state": "客气"
+    },
+    {
+      "seq": 438,
+      "state": "被姜赢烫嘴迁怒，吓得跪下"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 148,
+      "actions": [
+        "领三人到二楼偏席",
+        "告知可随意叫唤"
+      ]
+    },
+    {
+      "seq": 438,
+      "actions": [
+        "给姜赢沏茶，被烫后跪下",
+        "被姜赢命令去找闻人哭"
+      ]
+    }
+  ],
+  "id": "c276_小厮"
+}

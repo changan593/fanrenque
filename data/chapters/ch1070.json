@@ -337,7 +337,14 @@
         "para": 39,
         "speaker": "葛道人",
         "addressee": "男人",
-        "text": "哦。你是担心我紫云仙宫剽窃你们洪州的术法啊！",
+        "text": "哦。",
+        "manner": "恍然大悟"
+      },
+      {
+        "para": 39,
+        "speaker": "葛道人",
+        "addressee": "男人",
+        "text": "你是担心我紫云仙宫剽窃你们洪州的术法啊！",
         "manner": "恍然大悟"
       },
       {
@@ -565,26 +572,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 43,
       "counts": {
-        "exact": 41,
-        "near": 1,
+        "exact": 43,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9762,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "哦。你是担心我紫云仙宫剽窃你们洪州的术法啊！",
-          "para_claimed": 39,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9091,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 26,
@@ -598,7 +595,8 @@
       1063,
       1064,
       1065
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

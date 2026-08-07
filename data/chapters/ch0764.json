@@ -310,6 +310,14 @@
         "manner": "束手而立，恭敬道"
       },
       {
+        "para": 28,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你们究竟想要做什么，以及做到什么程度。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 42,
         "speaker": "周东东",
         "addressee": "江流",
@@ -322,6 +330,14 @@
         "addressee": "周东东",
         "text": "那不是鸟，那是剑！一柄叫做麻雀的剑！",
         "manner": "低声道"
+      },
+      {
+        "para": 43,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "那人是三教凡夫尉天齐。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 48,
@@ -648,9 +664,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 58,
       "counts": {
-        "exact": 56,
+        "exact": 58,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -670,7 +686,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

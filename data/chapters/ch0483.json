@@ -257,6 +257,14 @@
         "manner": "抚掌而笑"
       },
       {
+        "para": 8,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "天下祸根何其恨，最怕分家找外人！刀加颈火攻心，哪怕永世不翻身，我也要祖业有存根！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 9,
         "speaker": "姜羽",
         "addressee": "众人",
@@ -517,9 +525,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 34,
+      "total_quotes": 35,
       "counts": {
-        "exact": 34,
+        "exact": 35,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -538,7 +546,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

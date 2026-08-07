@@ -1,0 +1,25 @@
+{
+  "canonical_name": "紫云峰五师弟",
+  "aliases": [],
+  "first_seq": 61,
+  "last_seq": 61,
+  "chapter_count": 1,
+  "chapters": [
+    61
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 61,
+      "actions": [
+        "传书给姜羽"
+      ]
+    }
+  ],
+  "id": "c375_紫云峰五师弟"
+}

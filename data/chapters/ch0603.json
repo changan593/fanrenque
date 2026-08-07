@@ -405,6 +405,14 @@
         "addressee": "妻子",
         "text": "你好蠢。",
         "manner": ""
+      },
+      {
+        "para": 61,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "哎！爱之吾妻！莫气恼夫嘴笨话少，要平安落叶已打干。知汝想为夫英雄相，可英雄只能热豆浆？",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -638,9 +646,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 61,
+      "total_quotes": 62,
       "counts": {
-        "exact": 61,
+        "exact": 62,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -659,7 +667,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -242,6 +242,14 @@
         "addressee": "姚望舒",
         "text": "今朝。。何其有幸，如此年纪还能收敛。。吾师骸骨！",
         "manner": "老泪纵横"
+      },
+      {
+        "para": 41,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "家里祖传的道法要求太高，所以道统难续，他师父幸运捡到了他，但他却无子无徒，到了如此年纪，已经无望，如今回收了师父的骸骨，自然感怀。",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -405,9 +413,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 22,
+      "total_quotes": 23,
       "counts": {
-        "exact": 22,
+        "exact": 23,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -426,7 +434,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

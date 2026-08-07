@@ -203,6 +203,14 @@
         "manner": "伸手指向姚安饶，阴冷的开口"
       },
       {
+        "para": 32,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "来！看着我！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 38,
         "speaker": "闻人哭",
         "addressee": "姚安饶",
@@ -572,9 +580,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 62,
+      "total_quotes": 63,
       "counts": {
-        "exact": 62,
+        "exact": 63,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -594,7 +602,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

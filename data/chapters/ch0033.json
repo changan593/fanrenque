@@ -236,6 +236,14 @@
         "manner": "言简意赅"
       },
       {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "呼。。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 35,
         "speaker": "太子",
         "addressee": "活尸群",
@@ -598,9 +606,9 @@
     "structure_score": 92,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 57,
+      "total_quotes": 58,
       "counts": {
-        "exact": 57,
+        "exact": 58,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -619,7 +627,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

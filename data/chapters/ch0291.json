@@ -225,7 +225,14 @@
         "para": 20,
         "speaker": "尉天齐",
         "addressee": "周围众人",
-        "text": "你看，我说的可惜吧！仙兵斗庄闲点数相等，则为平局，唉！你说说我这手气差的！",
+        "text": "你看，我说的可惜吧！",
+        "manner": "摇头叹气，笑着"
+      },
+      {
+        "para": 20,
+        "speaker": "尉天齐",
+        "addressee": "周围众人",
+        "text": "仙兵斗庄闲点数相等，则为平局，唉！你说说我这手气差的！",
         "manner": "摇头叹气，笑着"
       },
       {
@@ -323,7 +330,7 @@
       {
         "para": 54,
         "character": "儒师",
-        "text": "他对着少年的眼睛，恍惚间，想起了自己第一次见到尉天齐的时候，那时他虽然年过四十，但却刚刚离开张家，心怀满腔的抱负，内藏满腹的经纶，来到皇都要干成拯救天下的大事，为此特意先找到那个悖逆儒学的三教之人，要替儒家正名。",
+        "text": "儒师对着少年的眼睛，恍惚间，想起了自己第一次见到尉天齐的时候，那时他虽然年过四十，但却刚刚离开张家，心怀满腔的抱负，内藏满腹的经纶，来到皇都要干成拯救天下的大事，为此特意先找到那个悖逆儒学的三教之人，要替儒家正名。",
         "kind": "回忆"
       },
       {
@@ -615,35 +622,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 58,
-        "near": 2,
+        "exact": 61,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9667,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "你看，我说的可惜吧！仙兵斗庄闲点数相等，则为平局，唉！你说说我这手气差的！",
-          "para_claimed": 20,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7297,
-          "para_correct": null,
-          "field": "dialogues[5]"
-        },
-        {
-          "quote": "他对着少年的眼睛，恍惚间，想起了自己第一次见到尉天齐的时候，那时他虽然年过四十，但却刚刚离开张家，心怀满腔的抱负，内藏满腹的经纶，来到皇都要干成拯救天下的大事，为此特意先找到那个悖逆儒学的三教之人，要替儒家正名。",
-          "para_claimed": 54,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9906,
-          "para_correct": null,
-          "field": "monologues[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 19,
@@ -653,7 +641,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

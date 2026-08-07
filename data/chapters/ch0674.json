@@ -288,6 +288,14 @@
         "manner": "无比认真的开口"
       },
       {
+        "para": 53,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "尊者。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 54,
         "speaker": "迦叶",
         "addressee": "弟子",
@@ -742,9 +750,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 78,
+      "total_quotes": 79,
       "counts": {
-        "exact": 78,
+        "exact": 79,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -767,7 +775,8 @@
       663,
       664,
       665
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -215,6 +215,14 @@
         "manner": "翻阅书卷，轻声念，抬头问"
       },
       {
+        "para": 18,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "潇洒桐庐郡，乌龙山霭中。使君无一事，心共白玉空。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 19,
         "speaker": "姚红儿",
         "addressee": "于念娘",
@@ -447,9 +455,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 30,
+      "total_quotes": 31,
       "counts": {
-        "exact": 30,
+        "exact": 31,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -468,7 +476,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

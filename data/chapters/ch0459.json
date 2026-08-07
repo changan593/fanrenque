@@ -294,6 +294,14 @@
         "manner": "低声吩咐"
       },
       {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "欲改修行路，自寻高人控鼎，于悬崖而跃，莫要回头，生则拜桐庐老人为道途祖师，死可让亲友取己之遗骸，莫作他想，鼎不可动。——望舒宫立，违者杀之。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 36,
         "speaker": "姚安饶",
         "addressee": "尉天齐",
@@ -534,9 +542,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 37,
+      "total_quotes": 38,
       "counts": {
-        "exact": 37,
+        "exact": 38,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -557,7 +565,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

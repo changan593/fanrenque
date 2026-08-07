@@ -310,6 +310,14 @@
         "manner": ""
       },
       {
+        "para": 39,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "郭师兄，我可把机缘搬到你面前了！你要珍惜啊！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 40,
         "speaker": "吕藏锋",
         "addressee": "江流",
@@ -371,6 +379,14 @@
         "addressee": "在场众人",
         "text": "不可。",
         "manner": "一道平平的男声响起"
+      },
+      {
+        "para": 55,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "别吧，郭师兄没必要这个时候吧！胖子出手是挨一顿打，顶大天躺两天，你和这个吕藏锋打，那便真要挨一剑的！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -648,9 +664,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 59,
+      "total_quotes": 61,
       "counts": {
-        "exact": 59,
+        "exact": 61,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -670,7 +686,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

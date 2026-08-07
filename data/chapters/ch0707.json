@@ -288,7 +288,14 @@
         "para": 19,
         "speaker": "唐真",
         "addressee": "天命阁阁主",
-        "text": "现在很多人都知道你到了圣途的关键时刻，这是你最强，却最不能出手的时刻。如果我得不到我想要的答案，今天我一定拆了你的船、抢了你的狗、毁了你的大道。",
+        "text": "现在很多人都知道你到了圣途的关键时刻，这是你最强，却最不能出手的时刻。",
+        "manner": "眼神认真"
+      },
+      {
+        "para": 19,
+        "speaker": "唐真",
+        "addressee": "天命阁阁主",
+        "text": "如果我得不到我想要的答案，今天我一定拆了你的船、抢了你的狗、毁了你的大道。",
         "manner": "眼神认真"
       },
       {
@@ -698,26 +705,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 65,
+      "total_quotes": 66,
       "counts": {
-        "exact": 64,
-        "near": 1,
+        "exact": 66,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9846,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "现在很多人都知道你到了圣途的关键时刻，这是你最强，却最不能出手的时刻。如果我得不到我想要的答案，今天我一定拆了你的船、抢了你的狗、毁了你的大道。",
-          "para_claimed": 19,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8056,
-          "para_correct": null,
-          "field": "dialogues[7]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 32,
@@ -731,7 +728,8 @@
       704,
       705,
       706
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

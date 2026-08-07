@@ -1,0 +1,30 @@
+{
+  "canonical_name": "同行修士",
+  "aliases": [],
+  "first_seq": 1049,
+  "last_seq": 1049,
+  "chapter_count": 1,
+  "chapters": [
+    1049
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1049,
+      "state": "在回忆中被大长老打了一巴掌"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1049,
+      "actions": [
+        "摘橙子给藿"
+      ]
+    }
+  ],
+  "id": "c909_同行修士"
+}

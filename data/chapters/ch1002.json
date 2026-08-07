@@ -224,6 +224,14 @@
         "manner": ""
       },
       {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我不想放过他。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 22,
         "speaker": "天命阁阁主",
         "addressee": "唐真",
@@ -557,9 +565,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 43,
       "counts": {
-        "exact": 42,
+        "exact": 43,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -578,7 +586,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

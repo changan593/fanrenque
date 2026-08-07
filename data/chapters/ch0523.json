@@ -199,6 +199,14 @@
         "addressee": "唐真",
         "text": "你脑子里有功夫回忆这些，为什么不回忆回忆感情史呢？我不想去婆娑洲！那边都是和尚！我要漂亮姐姐！！",
         "manner": "趴在船边埋着头"
+      },
+      {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "咳咳！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [],
@@ -358,9 +366,9 @@
     "structure_score": 88,
     "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 22,
+      "total_quotes": 23,
       "counts": {
-        "exact": 22,
+        "exact": 23,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -383,7 +391,8 @@
       513,
       514,
       515
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -315,7 +315,14 @@
         "para": 42,
         "speaker": "首魔尊",
         "addressee": "姜羽",
-        "text": "怎么？担心我去找唐真报仇？等我拿了你这颗凤凰脑袋，便会去找他！我要把他的头变成我的夜壶！",
+        "text": "怎么？担心我去找唐真报仇？",
+        "manner": "人头怪笑两声"
+      },
+      {
+        "para": 42,
+        "speaker": "首魔尊",
+        "addressee": "姜羽",
+        "text": "等我拿了你这颗凤凰脑袋，便会去找他！我要把他的头变成我的夜壶！",
         "manner": "人头怪笑两声"
       },
       {
@@ -778,26 +785,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 69,
+      "total_quotes": 70,
       "counts": {
-        "exact": 68,
-        "near": 1,
+        "exact": 70,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9855,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "怎么？担心我去找唐真报仇？等我拿了你这颗凤凰脑袋，便会去找他！我要把他的头变成我的夜壶！",
-          "para_claimed": 42,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7955,
-          "para_correct": null,
-          "field": "dialogues[14]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 24,
@@ -807,7 +804,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

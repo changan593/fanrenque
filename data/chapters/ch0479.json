@@ -268,7 +268,14 @@
         "para": 13,
         "speaker": "姚望舒",
         "addressee": "紫云仙宫众多仙人",
-        "text": "不论对南洲有好处还是有坏处，不论是贪图南洲之地的清水，还是护住我南洲的紫云，都不是如今停在我南洲的理由。仙宫相助，我已经谢过，但如今望舒宫已经建成，月牧至此，南洲已经有了自己的道统，那么便该把余下的事交还给南洲人处理！",
+        "text": "不论对南洲有好处还是有坏处，不论是贪图南洲之地的清水，还是护住我南洲的紫云，都不是如今停在我南洲的理由。",
+        "manner": "缓缓站起身，认真的看向紫云仙宫众多仙人"
+      },
+      {
+        "para": 13,
+        "speaker": "姚望舒",
+        "addressee": "紫云仙宫众多仙人",
+        "text": "仙宫相助，我已经谢过，但如今望舒宫已经建成，月牧至此，南洲已经有了自己的道统，那么便该把余下的事交还给南洲人处理！",
         "manner": "缓缓站起身，认真的看向紫云仙宫众多仙人"
       },
       {
@@ -689,26 +696,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 64,
+      "total_quotes": 65,
       "counts": {
-        "exact": 63,
-        "near": 1,
+        "exact": 65,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9844,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "不论对南洲有好处还是有坏处，不论是贪图南洲之地的清水，还是护住我南洲的紫云，都不是如今停在我南洲的理由。仙宫相助，我已经谢过，但如今望舒宫已经建成，月牧至此，南洲已经有了自己的道统，那么便该把余下的事交还给南洲人处理！",
-          "para_claimed": 13,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7615,
-          "para_correct": null,
-          "field": "dialogues[8]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 29,
@@ -718,7 +715,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -185,6 +185,14 @@
         "manner": "讪讪的笑，靠过来低声道"
       },
       {
+        "para": 9,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "看似富饶繁华，实则内里冗员冗官、门阀分立、藩镇割据等等一应俱全！积弊难返啦！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 15,
         "speaker": "唐真",
         "addressee": "杜有才",
@@ -566,9 +574,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 43,
+      "total_quotes": 44,
       "counts": {
-        "exact": 43,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -587,7 +595,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

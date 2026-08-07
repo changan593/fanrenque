@@ -341,7 +341,14 @@
         "para": 23,
         "speaker": "念娘",
         "addressee": "城主府管家",
-        "text": "房费就免了，我让拂衣那小丫头跟我住在一个屋。你回去告诉城主，我会照顾好她的。",
+        "text": "房费就免了，我让拂衣那小丫头跟我住在一个屋。",
+        "manner": "看向对方道"
+      },
+      {
+        "para": 23,
+        "speaker": "念娘",
+        "addressee": "城主府管家",
+        "text": "你回去告诉城主，我会照顾好她的。",
         "manner": "看向对方道"
       },
       {
@@ -390,7 +397,14 @@
         "para": 34,
         "speaker": "白玉宫师弟",
         "addressee": "魏成",
-        "text": "魏师兄，如今宫里氛围紧张，金丹境的长老们每天都阴沉着脸，提起师兄和望舒宫都是直咬牙，底层弟子略有浮动，但整体也是对你们抵触的紧，至于霍师叔和白师叔他们已经很久没有露面了！有传言说白师叔因为白化、白思二位师叔的出走气病了。",
+        "text": "魏师兄，如今宫里氛围紧张，金丹境的长老们每天都阴沉着脸，提起师兄和望舒宫都是直咬牙，底层弟子略有浮动，但整体也是对你们抵触的紧，至于霍师叔和白师叔他们已经很久没有露面了！",
+        "manner": "小声道"
+      },
+      {
+        "para": 34,
+        "speaker": "白玉宫师弟",
+        "addressee": "魏成",
+        "text": "有传言说白师叔因为白化、白思二位师叔的出走气病了。",
         "manner": "小声道"
       },
       {
@@ -623,35 +637,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 44,
       "counts": {
-        "exact": 40,
-        "near": 2,
+        "exact": 44,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9524,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "房费就免了，我让拂衣那小丫头跟我住在一个屋。你回去告诉城主，我会照顾好她的。",
-          "para_claimed": 23,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7105,
-          "para_correct": null,
-          "field": "dialogues[11]"
-        },
-        {
-          "quote": "魏师兄，如今宫里氛围紧张，金丹境的长老们每天都阴沉着脸，提起师兄和望舒宫都是直咬牙，底层弟子略有浮动，但整体也是对你们抵触的紧，至于霍师叔和白师叔他们已经很久没有露面了！有传言说白师叔因为白化、白思二位师叔的出走气病了。",
-          "para_claimed": 34,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9273,
-          "para_correct": null,
-          "field": "dialogues[18]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 29,
@@ -665,7 +660,8 @@
       388,
       389,
       390
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

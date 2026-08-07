@@ -154,6 +154,26 @@
         "appearance_quotes": [],
         "state": "",
         "actions": []
+      },
+      {
+        "name": "其中一人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "两位佛宗的准佛之一",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -289,7 +309,14 @@
         "para": 32,
         "speaker": "伙计",
         "addressee": "唐真",
-        "text": "我就说！巧了吗！这不是！这佛宗出了这么大的事，一想就只有您能干出来！",
+        "text": "我就说！巧了吗！这不是！",
+        "manner": "凑得更近了"
+      },
+      {
+        "para": 32,
+        "speaker": "伙计",
+        "addressee": "唐真",
+        "text": "这佛宗出了这么大的事，一想就只有您能干出来！",
         "manner": "凑得更近了"
       },
       {
@@ -310,7 +337,14 @@
         "para": 37,
         "speaker": "伙计",
         "addressee": "唐真",
-        "text": "这有什么？婆娑洲不少人都知道啦！您没看见，如今那白马寺永远雪白的墙都变成什么模样了！吓死个人！",
+        "text": "这有什么？婆娑洲不少人都知道啦！",
+        "manner": "一拍大腿"
+      },
+      {
+        "para": 37,
+        "speaker": "伙计",
+        "addressee": "唐真",
+        "text": "您没看见，如今那白马寺永远雪白的墙都变成什么模样了！吓死个人！",
         "manner": "一拍大腿"
       },
       {
@@ -678,35 +712,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 58,
       "counts": {
-        "exact": 54,
-        "near": 2,
+        "exact": 58,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9643,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我就说！巧了吗！这不是！这佛宗出了这么大的事，一想就只有您能干出来！",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7059,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        },
-        {
-          "quote": "这有什么？婆娑洲不少人都知道啦！您没看见，如今那白马寺永远雪白的墙都变成什么模样了！吓死个人！",
-          "para_claimed": 37,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7872,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 29,
@@ -716,7 +731,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -70,7 +70,7 @@
         "mentioned_only": false,
         "appearance_quotes": [
           "齐渊低着头看着自己碎裂扭曲的手指，脸色愁苦",
-          "齐渊有些费力的咳嗽了两声，嘴角溢出了丝丝缕缕的鲜血"
+          "只是有些费力的咳嗽了两声，嘴角溢出了丝丝缕缕的鲜血"
         ],
         "state": "身受重伤，手指碎裂，嘴角溢血，无退路",
         "actions": [
@@ -485,24 +485,14 @@
     "verbatim": {
       "total_quotes": 44,
       "counts": {
-        "exact": 43,
-        "near": 1,
+        "exact": 44,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9773,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "齐渊有些费力的咳嗽了两声，嘴角溢出了丝丝缕缕的鲜血",
-          "para_claimed": null,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.92,
-          "para_correct": null,
-          "field": "characters[0].appearance_quotes[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 8,
@@ -512,7 +502,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

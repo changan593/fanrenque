@@ -190,6 +190,16 @@
           "借唐真之口问孩子姓氏",
           "现身搂住唐真"
         ]
+      },
+      {
+        "name": "雄儿、蝉儿",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -245,6 +255,14 @@
       }
     ],
     "dialogues": [
+      {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
       {
         "para": 7,
         "speaker": "唐假",
@@ -473,7 +491,14 @@
         "para": 61,
         "speaker": "雄儿",
         "addressee": "蝉儿和唐真",
-        "text": "拜蝉儿！你没看出人家在逗你吗？哥哥也是，不要说这些，她会当真的！到时候晚上不睡觉，娘亲又要说我们了！",
+        "text": "拜蝉儿！你没看出人家在逗你吗？",
+        "manner": "气鼓鼓的打断道"
+      },
+      {
+        "para": 61,
+        "speaker": "雄儿",
+        "addressee": "蝉儿和唐真",
+        "text": "哥哥也是，不要说这些，她会当真的！到时候晚上不睡觉，娘亲又要说我们了！",
         "manner": "气鼓鼓的打断道"
       },
       {
@@ -700,26 +725,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 58,
       "counts": {
-        "exact": 55,
-        "near": 1,
+        "exact": 58,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9821,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "拜蝉儿！你没看出人家在逗你吗？哥哥也是，不要说这些，她会当真的！到时候晚上不睡觉，娘亲又要说我们了！",
-          "para_claimed": 61,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.74,
-          "para_correct": null,
-          "field": "dialogues[32]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 42,
@@ -731,7 +746,8 @@
       ]
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

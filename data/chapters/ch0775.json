@@ -142,6 +142,16 @@
         "appearance_quotes": [],
         "state": "曾是青云榜榜首，被寄予厚望",
         "actions": []
+      },
+      {
+        "name": "污衙",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -276,6 +286,14 @@
         "addressee": "吴悔",
         "text": "稳定和破坏的难度相比，差了太多。",
         "manner": "看着云层上那些不断散发光辉的青色藤蔓，微微摇头"
+      },
+      {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我们已经到了最后一刻！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 20,
@@ -503,9 +521,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 42,
       "counts": {
-        "exact": 41,
+        "exact": 42,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -528,7 +546,8 @@
       763,
       764,
       765
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

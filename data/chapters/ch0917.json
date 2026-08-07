@@ -156,6 +156,16 @@
         "actions": [
           "叫云儿姐"
         ]
+      },
+      {
+        "name": "红袄小丫头",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -548,7 +558,7 @@
       {
         "para": 26,
         "character": "云儿",
-        "text": "我看着那粘稠灰黑色的液体，视线越来越小，那锅里的东西却越来越大，那些黑灰色的米粥一点点的发生变化，此时看上去，它们更像是泥，黑灰色的淤泥！",
+        "text": "我呆呆地看着那粘稠灰黑色的液体，视线越来越小，那锅里的东西却越来越大，那些黑灰色的米粥一点点的发生变化，此时看上去，它们更像是泥，黑灰色的淤泥！",
         "function": "情节交代"
       },
       {
@@ -713,24 +723,14 @@
     "verbatim": {
       "total_quotes": 65,
       "counts": {
-        "exact": 64,
-        "near": 1,
+        "exact": 65,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9846,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我看着那粘稠灰黑色的液体，视线越来越小，那锅里的东西却越来越大，那些黑灰色的米粥一点点的发生变化，此时看上去，它们更像是泥，黑灰色的淤泥！",
-          "para_claimed": 26,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9855,
-          "para_correct": null,
-          "field": "narration[2]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -744,7 +744,8 @@
       914,
       915,
       916
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

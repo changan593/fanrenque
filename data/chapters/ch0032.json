@@ -255,6 +255,14 @@
         "manner": "低声吩咐"
       },
       {
+        "para": 39,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "啊呀！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 44,
         "speaker": "师姐",
         "addressee": "老拐子",
@@ -608,9 +616,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 61,
+      "total_quotes": 62,
       "counts": {
-        "exact": 61,
+        "exact": 62,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -634,7 +642,8 @@
       29,
       30,
       31
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -28,7 +28,7 @@
   ],
   "first_seq": 42,
   "last_seq": 1188,
-  "chapter_count": 92,
+  "chapter_count": 93,
   "chapters": [
     42,
     46,
@@ -81,6 +81,7 @@
     528,
     557,
     560,
+    561,
     563,
     564,
     565,
@@ -127,7 +128,8 @@
     "参与": 52,
     "主导": 23,
     "提及": 16,
-    "背景": 1
+    "背景": 1,
+    "出场": 1
   },
   "mentioned_only_count": 13,
   "appearance_quotes": [

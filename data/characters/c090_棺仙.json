@@ -2,19 +2,20 @@
   "canonical_name": "棺仙",
   "aliases": [
     "棺仙人",
+    "戏子",
     "棺仙南巧儿",
     "棺仙娘娘",
-    "戏子",
     "老棺材",
     "师尊"
   ],
   "first_seq": 43,
   "last_seq": 781,
-  "chapter_count": 17,
+  "chapter_count": 18,
   "chapters": [
     43,
     48,
     50,
+    80,
     128,
     150,
     151,
@@ -33,6 +34,7 @@
   "role_distribution": {
     "主导": 5,
     "提及": 6,
+    "出场": 1,
     "参与": 6
   },
   "mentioned_only_count": 5,

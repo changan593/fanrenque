@@ -248,7 +248,14 @@
         "para": 19,
         "speaker": "师姐",
         "addressee": "唐真",
-        "text": "斗法要思对方所思，想对方所想，攻对方所虚张，避对方所实藏！而你太着急虚张自己的强项了！恰恰因为你什么都懂，所以你的什么都不做才不合理！你若有能力便不会放任我用梦魇废掉这个拿着最强战力符箓的女孩，正因为你改变不了结果，才在此时跳出来企图吓退我！",
+        "text": "斗法要思对方所思，想对方所想，攻对方所虚张，避对方所实藏！而你太着急虚张自己的强项了！",
+        "manner": "张开双臂"
+      },
+      {
+        "para": 19,
+        "speaker": "师姐",
+        "addressee": "唐真",
+        "text": "恰恰因为你什么都懂，所以你的什么都不做才不合理！你若有能力便不会放任我用梦魇废掉这个拿着最强战力符箓的女孩，正因为你改变不了结果，才在此时跳出来企图吓退我！",
         "manner": "张开双臂"
       },
       {
@@ -597,26 +604,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 49,
       "counts": {
-        "exact": 47,
-        "near": 1,
+        "exact": 49,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9792,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "斗法要思对方所思，想对方所想，攻对方所虚张，避对方所实藏！而你太着急虚张自己的强项了！恰恰因为你什么都懂，所以你的什么都不做才不合理！你若有能力便不会放任我用梦魇废掉这个拿着最强战力符箓的女孩，正因为你改变不了结果，才在此时跳出来企图吓退我！",
-          "para_claimed": 19,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9256,
-          "para_correct": null,
-          "field": "dialogues[10]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 28,
@@ -626,7 +623,8 @@
       "missed_samples": []
     },
     "repair_rounds": 1,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

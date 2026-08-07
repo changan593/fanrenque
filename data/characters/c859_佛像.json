@@ -1,0 +1,40 @@
+{
+  "canonical_name": "佛像",
+  "aliases": [
+    "打鱼的人"
+  ],
+  "first_seq": 911,
+  "last_seq": 911,
+  "chapter_count": 1,
+  "chapters": [
+    911
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 911,
+      "quote": "高高的佛像也在高温中微微的扭曲"
+    }
+  ],
+  "states": [
+    {
+      "seq": 911,
+      "state": "开口说话，声音是尉天齐刚到悬空寺时在下方台阶打鱼的人。"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 911,
+      "actions": [
+        "以佛音劝尉天齐向上",
+        "指出命运的不公",
+        "说出“不知苦处，不信神佛”",
+        "提醒尉天齐“棋力高，并非通晓世事”"
+      ]
+    }
+  ],
+  "id": "c859_佛像"
+}

@@ -102,6 +102,16 @@
           "压塌山洞，处理僧人血液",
           "带众人向南飞去"
         ]
+      },
+      {
+        "name": "紫光（未明说）",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -183,6 +193,14 @@
         "addressee": "知了和尚",
         "text": "唯有怨。",
         "manner": "认真"
+      },
+      {
+        "para": 19,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "走吧，你们也该休息完了。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 23,
@@ -328,9 +346,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 21,
+      "total_quotes": 22,
       "counts": {
-        "exact": 21,
+        "exact": 22,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -349,7 +367,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

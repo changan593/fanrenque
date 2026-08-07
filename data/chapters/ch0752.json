@@ -331,6 +331,14 @@
         "manner": "高声开口道"
       },
       {
+        "para": 49,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "上。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 52,
         "speaker": "姚安饶",
         "addressee": "尉天齐",
@@ -567,9 +575,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 57,
       "counts": {
-        "exact": 56,
+        "exact": 57,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -588,7 +596,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

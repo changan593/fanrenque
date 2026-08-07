@@ -218,6 +218,16 @@
           "扫叶子",
           "挥舞扫帚"
         ]
+      },
+      {
+        "name": "拂衣/择荫/佟鼎儿",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -399,6 +409,14 @@
         "manner": "抬头羞涩的笑"
       },
       {
+        "para": 59,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "都是曾经跟着班主练的。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 61,
         "speaker": "王玉屏",
         "addressee": "云儿",
@@ -411,6 +429,14 @@
         "addressee": "云儿",
         "text": "你可真厉害啊。",
         "manner": "感慨的看着小丫头"
+      },
+      {
+        "para": 62,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "吃了不少苦吧。",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 68,
@@ -623,9 +649,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 42,
+      "total_quotes": 44,
       "counts": {
-        "exact": 42,
+        "exact": 44,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -645,7 +671,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -255,6 +255,16 @@
         "appearance_quotes": [],
         "state": "被提及，知道用罗汉音控制姜羽",
         "actions": []
+      },
+      {
+        "name": "三小只",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -679,7 +689,8 @@
       706,
       707,
       708
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

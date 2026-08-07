@@ -310,6 +310,14 @@
         "manner": "指了指安恕"
       },
       {
+        "para": 25,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不过。。。",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 26,
         "speaker": "红儿",
         "addressee": "魏成",
@@ -588,9 +596,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 46,
+      "total_quotes": 47,
       "counts": {
-        "exact": 46,
+        "exact": 47,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -613,7 +621,8 @@
       263,
       264,
       265
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

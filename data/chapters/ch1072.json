@@ -157,7 +157,14 @@
         "para": 4,
         "speaker": "姜羽",
         "addressee": "葵",
-        "text": "我也这么想。正道持正，邪门避人，若是他们问心无愧，便不会阻拦你。",
+        "text": "我也这么想。",
+        "manner": "淡淡道"
+      },
+      {
+        "para": 4,
+        "speaker": "姜羽",
+        "addressee": "葵",
+        "text": "正道持正，邪门避人，若是他们问心无愧，便不会阻拦你。",
         "manner": "淡淡道"
       },
       {
@@ -611,26 +618,16 @@
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
-      "total_quotes": 60,
+      "total_quotes": 61,
       "counts": {
-        "exact": 59,
-        "near": 1,
+        "exact": 61,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9833,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "我也这么想。正道持正，邪门避人，若是他们问心无愧，便不会阻拦你。",
-          "para_claimed": 4,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8125,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 9,
@@ -644,7 +641,8 @@
       1063,
       1064,
       1065
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

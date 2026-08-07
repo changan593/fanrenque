@@ -135,6 +135,14 @@
         "manner": "气笑了，伸手指着杜有为的脸"
       },
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "你什么都知道！你只是从来不会站在我的角度去想！",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 12,
         "speaker": "杜有为",
         "addressee": "杜有才",
@@ -542,9 +550,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 54,
+      "total_quotes": 55,
       "counts": {
-        "exact": 54,
+        "exact": 55,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -567,7 +575,8 @@
       763,
       764,
       765
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

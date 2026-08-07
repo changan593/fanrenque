@@ -426,7 +426,14 @@
         "para": 72,
         "speaker": "云儿",
         "addressee": "王善",
-        "text": "不！小和尚！你还没想明白吗？",
+        "text": "不！",
+        "manner": ""
+      },
+      {
+        "para": 72,
+        "speaker": "云儿",
+        "addressee": "王善",
+        "text": "小和尚！你还没想明白吗？",
         "manner": ""
       },
       {
@@ -924,26 +931,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 79,
+      "total_quotes": 80,
       "counts": {
-        "exact": 78,
-        "near": 1,
+        "exact": 80,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9873,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "不！小和尚！你还没想明白吗？",
-          "para_claimed": 72,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8571,
-          "para_correct": null,
-          "field": "dialogues[16]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 31,
@@ -957,7 +954,8 @@
       1013,
       1014,
       1015
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

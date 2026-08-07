@@ -224,7 +224,14 @@
         "para": 3,
         "speaker": "小丫头",
         "addressee": "姚望舒等人",
-        "text": "姐姐心性不好！她不懂！所以才熬不过！这怨不得爷爷！怨她自己！你们也不懂！只有吃苦，才能出头！这是天经地义的道理！",
+        "text": "姐姐心性不好！她不懂！所以才熬不过！这怨不得爷爷！怨她自己！",
+        "manner": "继续嘶吼"
+      },
+      {
+        "para": 3,
+        "speaker": "小丫头",
+        "addressee": "姚望舒等人",
+        "text": "你们也不懂！只有吃苦，才能出头！这是天经地义的道理！",
         "manner": "继续嘶吼"
       },
       {
@@ -322,7 +329,14 @@
         "para": 38,
         "speaker": "白思",
         "addressee": "施公子",
-        "text": "你是代表施家来的？后果你也应该清楚，我望舒宫并非好脾气，做了什么，后果自负。",
+        "text": "你是代表施家来的？",
+        "manner": "冷漠的开口问道"
+      },
+      {
+        "para": 38,
+        "speaker": "白思",
+        "addressee": "施公子",
+        "text": "后果你也应该清楚，我望舒宫并非好脾气，做了什么，后果自负。",
         "manner": "冷漠的开口问道"
       },
       {
@@ -613,35 +627,16 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 49,
+      "total_quotes": 51,
       "counts": {
-        "exact": 47,
-        "near": 2,
+        "exact": 51,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9592,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 1,
-      "problems": [
-        {
-          "quote": "姐姐心性不好！她不懂！所以才熬不过！这怨不得爷爷！怨她自己！你们也不懂！只有吃苦，才能出头！这是天经地义的道理！",
-          "para_claimed": 3,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8393,
-          "para_correct": null,
-          "field": "dialogues[1]"
-        },
-        {
-          "quote": "你是代表施家来的？后果你也应该清楚，我望舒宫并非好脾气，做了什么，后果自负。",
-          "para_claimed": 38,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7895,
-          "para_correct": null,
-          "field": "dialogues[15]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 23,
@@ -655,7 +650,8 @@
       454,
       455,
       456
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

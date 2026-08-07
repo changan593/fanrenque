@@ -331,6 +331,14 @@
         "addressee": "姚安饶和吕藏锋",
         "text": "杀！！！",
         "manner": "怒吼震动着整个隧道"
+      },
+      {
+        "para": 99,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "佛影？！",
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -924,9 +932,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 109,
+      "total_quotes": 110,
       "counts": {
-        "exact": 109,
+        "exact": 110,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -945,7 +953,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -144,6 +144,26 @@
           "发现姚安恕消失，发信号传回宫内",
           "执行全域搜索命令"
         ]
+      },
+      {
+        "name": "另一人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
+      },
+      {
+        "name": "有几人",
+        "aliases": [],
+        "role_in_chapter": "出场",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "",
+        "actions": [],
+        "_filled": true
       }
     ],
     "scenes": [
@@ -235,6 +255,14 @@
         "addressee": "在场众人",
         "text": "不是，是佛影！记载里此人会佛影，是她自己躲起来了！",
         "manner": "皱眉道"
+      },
+      {
+        "para": 35,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "是在躲我们吗？！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 36,
@@ -451,9 +479,9 @@
     "structure_score": 92,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 30,
+      "total_quotes": 31,
       "counts": {
-        "exact": 30,
+        "exact": 31,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -472,7 +500,8 @@
       ]
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

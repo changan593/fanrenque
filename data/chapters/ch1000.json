@@ -290,7 +290,14 @@
         "para": 47,
         "speaker": "天菩萨",
         "addressee": "姜赢",
-        "text": "姜家的这一代人皇陛下联合妖族以及南宁王里应外合，欲窃人皇玺之道，已是入魔，并且最终导致我人族气运崩塌，是此次皇都之乱的核心。而你作为其子，如今为何还能进入此楼，你可知你姜家犯下了多大的错？又哪里来的勇气在这里指点我佛宗？",
+        "text": "姜家的这一代人皇陛下联合妖族以及南宁王里应外合，欲窃人皇玺之道，已是入魔，并且最终导致我人族气运崩塌，是此次皇都之乱的核心。",
+        "manner": "看着姜赢"
+      },
+      {
+        "para": 47,
+        "speaker": "天菩萨",
+        "addressee": "姜赢",
+        "text": "而你作为其子，如今为何还能进入此楼，你可知你姜家犯下了多大的错？又哪里来的勇气在这里指点我佛宗？",
         "manner": "看着姜赢"
       },
       {
@@ -332,7 +339,14 @@
         "para": 57,
         "speaker": "天菩萨",
         "addressee": "文宗",
-        "text": "哈，那我还请问诸位，我又为何是魔尊？我最大的罪顶多是脱离了佛教主干，创造了密宗而已，但这是我佛家内部事务，与成魔还是成圣有何关系？",
+        "text": "哈，那我还请问诸位，我又为何是魔尊？",
+        "manner": "摊开了手"
+      },
+      {
+        "para": 57,
+        "speaker": "天菩萨",
+        "addressee": "文宗",
+        "text": "我最大的罪顶多是脱离了佛教主干，创造了密宗而已，但这是我佛家内部事务，与成魔还是成圣有何关系？",
         "manner": "摊开了手"
       },
       {
@@ -346,7 +360,14 @@
         "para": 60,
         "speaker": "天菩萨",
         "addressee": "在场众人",
-        "text": "那天命阁也该给我一个理由才是，天命阁，阁主呢？诸位可曾叫他来？",
+        "text": "那天命阁也该给我一个理由才是，天命阁，阁主呢？",
+        "manner": "笑着开口问"
+      },
+      {
+        "para": 60,
+        "speaker": "天菩萨",
+        "addressee": "在场众人",
+        "text": "诸位可曾叫他来？",
         "manner": "笑着开口问"
       }
     ],
@@ -647,44 +668,16 @@
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
-      "total_quotes": 65,
+      "total_quotes": 68,
       "counts": {
-        "exact": 62,
-        "near": 3,
+        "exact": 68,
+        "near": 0,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9538,
+      "verbatim_rate": 1.0,
       "misplaced_para_count": 0,
-      "problems": [
-        {
-          "quote": "姜家的这一代人皇陛下联合妖族以及南宁王里应外合，欲窃人皇玺之道，已是入魔，并且最终导致我人族气运崩塌，是此次皇都之乱的核心。而你作为其子，如今为何还能进入此楼，你可知你姜家犯下了多大的错？又哪里来的勇气在这里指点我佛宗？",
-          "para_claimed": 47,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.9091,
-          "para_correct": null,
-          "field": "dialogues[13]"
-        },
-        {
-          "quote": "哈，那我还请问诸位，我又为何是魔尊？我最大的罪顶多是脱离了佛教主干，创造了密宗而已，但这是我佛家内部事务，与成魔还是成圣有何关系？",
-          "para_claimed": 57,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8462,
-          "para_correct": null,
-          "field": "dialogues[19]"
-        },
-        {
-          "quote": "那天命阁也该给我一个理由才是，天命阁，阁主呢？诸位可曾叫他来？",
-          "para_claimed": 60,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.7419,
-          "para_correct": null,
-          "field": "dialogues[21]"
-        }
-      ]
+      "problems": []
     },
     "coverage": {
       "raw_speech_count": 25,
@@ -698,7 +691,8 @@
       997,
       998,
       999
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

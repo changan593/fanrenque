@@ -159,6 +159,14 @@
     ],
     "dialogues": [
       {
+        "para": 1,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "tt-title",
+        "manner": "",
+        "_filled": true
+      },
+      {
         "para": 6,
         "speaker": "念娘",
         "addressee": "红儿",
@@ -283,6 +291,30 @@
         "addressee": "念娘",
         "text": "只是他们以为罢了，我从未和他述说过情谊，他也从未和我有过感情方面的约定。",
         "manner": ""
+      },
+      {
+        "para": 30,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "看！害不害怕？",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 31,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "疼不疼？",
+        "manner": "",
+        "_filled": true
+      },
+      {
+        "para": 32,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "不疼哦！不信你摸摸！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 36,
@@ -628,9 +660,9 @@
     "structure_score": 88,
     "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 56,
+      "total_quotes": 60,
       "counts": {
-        "exact": 56,
+        "exact": 60,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -656,7 +688,8 @@
       311,
       312,
       313
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {
