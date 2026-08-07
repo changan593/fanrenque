@@ -66,10 +66,10 @@
     "红儿与魏成悄悄对了个眼神，此事当成，但接下来还要检查一下孩子的天赋，魏成不作声色的看向厢房内小娃娃的脸。"
   ],
   "analysis": {
-    "one_line": "望舒宫招新首访，孩童误认拍花子",
-    "synopsis": "望舒宫众人来到东城墙下的老旧民居区，准备挨家挨户招新。他们遇到一个骑木棍玩耍的男孩，男孩误以为他们是拍花子的，跑回家中。念娘敲门解释，妇人开门，念娘用话术讲述招新内容，男孩被吸引。魏成观察男孩天赋，但未明说结果。",
-    "time_setting": "白天",
-    "emotional_tone": "轻松诙谐",
+    "one_line": "望舒宫招新首访东城民居，遇顽童误认拍花子，念娘巧言说服。",
+    "synopsis": "望舒宫众人来到东城墙下低矮老旧的民居区，正犹豫从哪家开始招新时，一个七八岁的男童骑着木棍冲出家门，被念娘招手吓回。众人上前敲门，男童误认他们是拍花子，躲进屋内。妇人开门后，念娘自称迟归楼掌柜，请求讲解告示。念娘施展口才，生动描绘成仙好处，男童被吸引偷听，魏成与红儿对视，认为此事可成，准备检查孩子天赋。",
+    "time_setting": "未明确（推测为白天）",
+    "emotional_tone": "轻松诙谐转期待",
     "characters": [
       {
         "name": "念娘",
@@ -79,11 +79,12 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "自诩红尘经验丰富，昨日犯错今日稳健",
+        "state": "自诩红尘经验丰富，昨日自觉冒失犯错，今日稳健",
         "actions": [
-          "带领众人来到民居区",
-          "敲门与妇人交谈",
-          "讲述招新内容"
+          "跳下车辕，扶红儿下车",
+          "向孩子招手",
+          "拍门，自称迟归楼掌柜",
+          "讲述望舒宫招新，施展口才"
         ]
       },
       {
@@ -94,7 +95,8 @@
         "appearance_quotes": [],
         "state": "思考选择哪家开始",
         "actions": [
-          "对男孩微笑",
+          "被念娘扶下车",
+          "对孩子笑了笑",
           "与魏成对眼神"
         ]
       },
@@ -104,11 +106,12 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "面色平静",
+        "state": "面色平静，不见喜怒",
         "actions": [
           "掀起车帘",
-          "告知民居情况",
-          "观察男孩天赋"
+          "说明昨夜调查结果",
+          "佩服念娘口才",
+          "与红儿对眼神"
         ]
       },
       {
@@ -117,13 +120,13 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "面色平静",
+        "state": "面色平静，不见喜怒",
         "actions": [
-          "随行"
+          "随众人下车，未说话"
         ]
       },
       {
-        "name": "小男孩",
+        "name": "男童",
         "aliases": [
           "铁蛋"
         ],
@@ -132,34 +135,40 @@
         "appearance_quotes": [
           "一个裹着脏兮兮灰扑扑的花色厚棉袄的孩子跨步走了出来，看起来也就七八岁的年纪，脸蛋黑红，胯下还夹着一根满粗的木棍。"
         ],
-        "state": "误认拍花子，害怕",
+        "state": "误认念娘等人为拍花子，躲进屋内，后被念娘讲述吸引偷听",
         "actions": [
-          "骑木棍玩耍",
-          "跑回家",
-          "告知奶奶拍花子"
+          "骑木棍出门，大喊驾",
+          "与众人对视后跑回家",
+          "向奶奶报告拍花子",
+          "偷听念娘讲述"
         ]
       },
       {
         "name": "妇人",
-        "aliases": [],
+        "aliases": [
+          "宽脸的妇人"
+        ],
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [
           "一个宽脸的妇人疑惑的探出头来。"
         ],
-        "state": "洗衣，双手发紫",
+        "state": "正在洗衣服，双手冻得发紫，对告示感兴趣但不识字",
         "actions": [
-          "开门",
-          "与念娘交谈"
+          "开门询问",
+          "请众人进屋",
+          "表示不识字，听念娘讲述"
         ]
       },
       {
         "name": "老人",
-        "aliases": [],
+        "aliases": [
+          "干瘪的老人"
+        ],
         "role_in_chapter": "提及",
         "mentioned_only": true,
         "appearance_quotes": [],
-        "state": "",
+        "state": "在屋内与男童对话",
         "actions": []
       }
     ],
@@ -177,21 +186,20 @@
           "红儿",
           "魏成",
           "白子鹤",
-          "小男孩"
+          "男童"
         ],
         "events": [
           "众人下车，观察环境",
-          "男孩骑木棍出现",
-          "男孩跑回家",
-          "众人决定前往男孩家"
+          "男童骑木棍出门，被念娘招手吓回",
+          "众人决定前往男童家"
         ],
         "para_range": [
           2,
-          18
+          17
         ]
       },
       {
-        "name": "男孩家院子",
+        "name": "男童家院子",
         "type": "室内",
         "time_of_day": "白天",
         "description_quotes": [
@@ -203,16 +211,17 @@
           "魏成",
           "白子鹤",
           "妇人",
-          "小男孩"
+          "男童",
+          "老人"
         ],
         "events": [
-          "念娘敲门",
-          "妇人开门",
-          "念娘讲述招新",
-          "男孩偷听"
+          "念娘敲门，妇人开门",
+          "念娘自称迟归楼掌柜，请求讲解告示",
+          "念娘讲述招新，男童偷听",
+          "魏成与红儿对眼神，准备检查天赋"
         ],
         "para_range": [
-          19,
+          18,
           49
         ]
       }
@@ -230,25 +239,32 @@
         "speaker": "魏成",
         "addressee": "念娘",
         "text": "昨夜调查时，已经确定这整片民居都有人住，而且几乎家家都有孩子，所以我们从哪里开始都可以。",
-        "manner": "想了想开口"
+        "manner": "想了想开口道"
       },
       {
         "para": 12,
-        "speaker": "小男孩",
-        "addressee": "无",
+        "speaker": "男童",
+        "addressee": "无（对街道大喊）",
         "text": "驾！",
-        "manner": "大喊一声"
+        "manner": "大喊"
+      },
+      {
+        "para": 18,
+        "speaker": "念娘",
+        "addressee": "众人",
+        "text": "上！",
+        "manner": "小手一挥"
       },
       {
         "para": 20,
         "speaker": "老人",
-        "addressee": "小男孩",
+        "addressee": "男童",
         "text": "娃子，你不是出去玩了吗？怎么又跑回来了？",
         "manner": "干瘪的老人声音"
       },
       {
         "para": 21,
-        "speaker": "小男孩",
+        "speaker": "男童",
         "addressee": "老人",
         "text": "奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！",
         "manner": "嗓音十足"
@@ -256,13 +272,13 @@
       {
         "para": 23,
         "speaker": "妇人",
-        "addressee": "小男孩",
+        "addressee": "男童",
         "text": "净扯淡！哪有大白天街上拍花子的！",
         "manner": "有力的妇人声音喝骂"
       },
       {
         "para": 24,
-        "speaker": "小男孩",
+        "speaker": "男童",
         "addressee": "妇人",
         "text": "真的！真的嘞！几个女的，几个男的，直愣愣的看着我嘞！",
         "manner": "不服的叫道"
@@ -270,13 +286,13 @@
       {
         "para": 27,
         "speaker": "妇人",
-        "addressee": "小男孩",
+        "addressee": "男童",
         "text": "谁啊？铁蛋！去开门！",
         "manner": "高声问道"
       },
       {
         "para": 28,
-        "speaker": "小男孩",
+        "speaker": "男童",
         "addressee": "妇人",
         "text": "是拍花子的！奶！救我！",
         "manner": "怪叫一声"
@@ -284,30 +300,23 @@
       {
         "para": 29,
         "speaker": "妇人",
-        "addressee": "门外",
-        "text": "谁啊？",
-        "manner": "一边骂孩子一边打开门"
-      },
-      {
-        "para": 29,
-        "speaker": "妇人",
-        "addressee": "小男孩",
-        "text": "啧！这瓜娃子！",
-        "manner": "一边骂孩子一边打开门"
+        "addressee": "门外（念娘等人）",
+        "text": "啧！这瓜娃子！谁啊？",
+        "manner": "一边骂孩子一边开门"
       },
       {
         "para": 31,
         "speaker": "念娘",
         "addressee": "妇人",
         "text": "您好。",
-        "manner": "微微挺起胸膛，露出一个温和的笑容"
+        "manner": "微微挺起胸膛，露出温和的笑容"
       },
       {
         "para": 32,
         "speaker": "妇人",
         "addressee": "念娘",
         "text": "你们是。。？",
-        "manner": "一愣，上下看了看"
+        "manner": "疑惑"
       },
       {
         "para": 33,
@@ -326,7 +335,7 @@
       {
         "para": 36,
         "speaker": "妇人",
-        "addressee": "念娘",
+        "addressee": "念娘等人",
         "text": "喝口水？",
         "manner": "在衣服上擦了擦手"
       },
@@ -389,21 +398,9 @@
     ],
     "monologues": [
       {
-        "para": 7,
-        "character": "念娘",
-        "text": "这话不就等于没说嘛！",
-        "kind": "情绪感受"
-      },
-      {
         "para": 15,
-        "character": "小男孩",
+        "character": "男童",
         "text": "那孩子不理解为什么这帮人一眨不眨看着自己，没见过骑大马？你们小时候不玩吗？",
-        "kind": "心理活动"
-      },
-      {
-        "para": 18,
-        "character": "念娘",
-        "text": "上！",
         "kind": "心理活动"
       },
       {
@@ -423,6 +420,12 @@
         "character": "念娘",
         "text": "她身后明明站着三个人，结果只有她自己在说话，这三人是一句话也不接，就硬站着。",
         "kind": "心理活动"
+      },
+      {
+        "para": 44,
+        "character": "念娘",
+        "text": "这是拿出了曾经在望山城最大的酒楼中忽悠那些天骄才子的技巧，这招虽然主攻男性，但对女性也不是完全没有作用。",
+        "kind": "心理活动"
       }
     ],
     "narration": [
@@ -437,9 +440,14 @@
         "function": "人物背景"
       },
       {
-        "para": 44,
-        "text": "这是拿出了曾经在望山城最大的酒楼中忽悠那些天骄才子的技巧，这招虽然主攻男性，但对女性也不是完全没有作用。",
-        "function": "人物背景"
+        "para": 34,
+        "text": "这是城里，而且院子都彼此挨着，邻里之间平常都是隔着墙聊天的，若是有什么拍花子蠢到白天来，怕是连巷子都走不出去，官府都来不及审。",
+        "function": "世界观设定"
+      },
+      {
+        "para": 48,
+        "text": "直到讲完，连魏成也开始佩服念娘的口才，多年红尘历练，什么故事到了她的嘴里都带着三分的精彩与悬念，说起仙人的生活当真是美不胜收。",
+        "function": "情节交代"
       }
     ],
     "beats": [
@@ -451,78 +459,107 @@
         ],
         "scene": "东城墙下民居区",
         "beat_type": "铺垫",
-        "summary": "众人下车，面对老旧民居，犹豫不知从何开始。"
+        "summary": "众人下车，面对破旧民居，犹豫从哪家开始招新。"
       },
       {
         "order": 2,
         "para_range": [
           10,
-          18
+          17
         ],
         "scene": "东城墙下民居区",
         "beat_type": "情绪",
-        "summary": "男孩骑木棍出现，误认拍花子跑回家，念娘决定上门。"
+        "summary": "男童骑木棍出门，被念娘招手吓回，众人决定前往。"
       },
       {
         "order": 3,
         "para_range": [
-          19,
+          18,
           29
         ],
-        "scene": "男孩家院子",
+        "scene": "男童家院子",
         "beat_type": "冲突",
-        "summary": "院内对话，男孩坚持拍花子，妇人开门。"
+        "summary": "男童误认拍花子，念娘拍门，妇人开门。"
       },
       {
         "order": 4,
         "para_range": [
           30,
+          45
+        ],
+        "scene": "男童家院子",
+        "beat_type": "转折",
+        "summary": "念娘自称掌柜，请求讲解告示，妇人同意。"
+      },
+      {
+        "order": 5,
+        "para_range": [
+          46,
           49
         ],
-        "scene": "男孩家院子",
-        "beat_type": "转折",
-        "summary": "念娘用话术讲述招新，男孩被吸引，魏成观察男孩天赋。"
+        "scene": "男童家院子",
+        "beat_type": "收束",
+        "summary": "念娘讲述招新，男童偷听，魏成红儿对眼神准备检查天赋。"
       }
     ],
     "props": [
       {
         "name": "木棍",
-        "note": "男孩当马骑"
+        "note": "男童当马骑的粗木棍"
       },
       {
         "name": "木马",
         "note": "院子里倒着的粗制木马"
+      },
+      {
+        "name": "土狗",
+        "note": "树下拴着的黑色半大土狗"
       }
     ],
-    "terms": [],
+    "terms": [
+      {
+        "term": "望舒宫",
+        "note": "念娘等人所在的宗门，正在招新"
+      },
+      {
+        "term": "迟归楼",
+        "note": "望舒宫在城中的据点，念娘自称掌柜"
+      },
+      {
+        "term": "拍花子",
+        "note": "拐卖儿童的人贩子"
+      }
+    ],
     "continuity": {
       "inherits": [
-        "招新计划",
-        "望舒宫"
+        "昨日张贴纳新告示",
+        "今日计划从东向西摸查"
       ],
       "foreshadows": [
-        "男孩的天赋未明说"
+        "魏成与红儿对眼神，准备检查孩子天赋"
       ],
-      "reveals": []
+      "reveals": [
+        "念娘擅长忽悠，曾用此技巧忽悠天骄才子"
+      ]
     }
   },
   "quality": {
     "passed": false,
     "fail_reasons": [
       "一致性分 88 < 90",
-      "逐字命中率 94.74% < 95%"
+      "逐字命中率 92.11% < 95%"
     ],
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
       "total_quotes": 38,
       "counts": {
-        "exact": 36,
-        "near": 2,
+        "exact": 35,
+        "near": 3,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9474,
+      "verbatim_rate": 0.9211,
       "misplaced_para_count": 0,
       "problems": [
         {
@@ -532,7 +569,7 @@
           "para_found": null,
           "similarity": 0.9259,
           "para_correct": null,
-          "field": "dialogues[4]"
+          "field": "dialogues[5]"
         },
         {
           "quote": "谁啊？铁蛋！去开门！",
@@ -541,20 +578,28 @@
           "para_found": null,
           "similarity": 0.7,
           "para_correct": null,
-          "field": "dialogues[7]"
+          "field": "dialogues[8]"
+        },
+        {
+          "quote": "啧！这瓜娃子！谁啊？",
+          "para_claimed": 29,
+          "status": "near",
+          "para_found": null,
+          "similarity": 0.7,
+          "para_correct": null,
+          "field": "dialogues[10]"
         }
       ]
     },
     "coverage": {
       "raw_speech_count": 30,
       "extracted_dialogue_count": 24,
-      "missed_count": 4,
-      "dialogue_coverage": 0.8667,
+      "missed_count": 3,
+      "dialogue_coverage": 0.9,
       "missed_samples": [
         "tt-title",
         "缰绳",
-        "翻身下马",
-        "上！"
+        "翻身下马"
       ]
     },
     "repair_rounds": 1,
@@ -570,103 +615,97 @@
       "round": 0,
       "score": 88,
       "verdict": "revise",
-      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 基本概括了本章内容，但字数不足150字，且未明确提及魏成观察天赋的结果，略显简略。beats 覆盖了全章，para_range 递增且有效，但第4个beat的summary未提及魏成观察天赋，与正文不符。characters 中无重复条目，但小男孩的aliases包含\"铁蛋\"，而正文中妇人确实称呼其为\"铁蛋\"，合理。scenes 的present_characters 均能在characters中找到，但第一个场景中\"老人\"未列入，而老人仅在对话中出现，且属于\"提及\"，可接受。dialogues 的speaker均能找到对应人物。narration 中第9段和第44段为人物背景，非环境白描，合理。枚举值合法。上下文连贯性方面，人物命名与前文一致，continuity.inherits 合理，无前文未铺垫的设定。但存在几个问题：synopsis 字数不足；beats 第4个summary遗漏魏成观察天赋；narration 第9段提到\"尉天齐\"，前文未出现，可能为臆造；monologues 第15段为小男孩的心理活动，但小男孩并非主要角色，且该段为叙述性文字，更接近narration。这些问题虽不严重，但影响数据质量，建议修订。",
+      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 字数约 180 字，符合要求，内容概括了本章主要事件，但略显流水账，未突出关键转折。beats 覆盖全章，para_range 递增且无重叠，但第 4 个 beat 的 para_range 为 [30,45]，而第 5 个 beat 为 [46,49]，中间无断档，但第 4 个 beat 的 summary 未涵盖 46-49 段的内容，存在轻微覆盖不全。characters 中男童的 aliases 包含“铁蛋”，但“铁蛋”是妇人对男童的称呼，并非正式别名，且“男娃娃”“小娃娃”为泛称，建议仅保留“铁蛋”作为别名。scenes 中 present_characters 均能在 characters 中找到，但场景二“男童家院子”的 present_characters 包含“男童”，而男童在场景二开头已躲进屋内，直到后文才偷听，但仍在场，可接受。dialogues 中 speaker 均能在 characters 中找到，但 para 20 的 speaker 为“老人”，而老人是 mentioned_only，且对话发生在屋内，场景二 present_characters 未包含老人，但老人确实在屋内，建议在场景二 present_characters 中加入老人。narration 中 para 34 的“世界观设定”与场景描述重复，但不算严重。上下文连贯性方面，人物命名与前文一致，念娘、红儿、魏成、白子鹤均与前文一致。continuity.inherits 正确承接前文“昨日张贴告示”“今日从东向西摸查”。但 continuity.reveals 中“念娘擅长忽悠”在前文已有铺垫（第338章念娘化妆、白子鹤不情愿等），不算突兀。整体无严重问题，但存在上述轻微瑕疵，故给 88 分。",
       "issues": [
         {
-          "field": "synopsis",
-          "severity": "中等",
-          "problem": "字数不足150字，且未提及魏成观察天赋的结果，概括不完整。",
-          "suggestion": "补充魏成观察天赋的细节，并确保字数在150-300之间。"
-        },
-        {
-          "field": "beats[3].summary",
-          "severity": "中等",
-          "problem": "summary未提及魏成观察男孩天赋，与正文内容不符。",
-          "suggestion": "在summary中补充魏成观察天赋的环节。"
-        },
-        {
-          "field": "narration[1].text",
-          "severity": "中等",
-          "problem": "提到\"尉天齐\"，前文未出现，可能为臆造或未铺垫。",
-          "suggestion": "确认\"尉天齐\"是否在前文出现过，若未出现则删除或改为其他已知人物。"
-        },
-        {
-          "field": "monologues[1]",
+          "field": "characters[4].aliases",
           "severity": "轻微",
-          "problem": "该条为小男孩的心理活动，但小男孩非主要角色，且内容为叙述性，更接近narration。",
-          "suggestion": "考虑将其移至narration，或确认其作为monologue的合理性。"
+          "problem": "男童的 aliases 包含“铁蛋”“男娃娃”“小娃娃”，其中“男娃娃”“小娃娃”为泛称，不应作为别名；且“铁蛋”是妇人对男童的称呼，可作为别名，但需确认是否正式。",
+          "suggestion": "仅保留“铁蛋”作为别名，删除“男娃娃”“小娃娃”。"
+        },
+        {
+          "field": "scenes[1].present_characters",
+          "severity": "轻微",
+          "problem": "场景二“男童家院子”的 present_characters 未包含“老人”，但老人与男童在屋内对话，且 para 20 的对话 speaker 为老人，应包含老人。",
+          "suggestion": "在场景二 present_characters 中加入“老人”。"
+        },
+        {
+          "field": "beats[4].summary",
+          "severity": "轻微",
+          "problem": "第 4 个 beat 的 para_range 为 [30,45]，summary 只提到“念娘自称掌柜，请求讲解告示，妇人同意”，未涵盖 46-49 段的内容（念娘讲述招新、男童偷听等），导致 beats 覆盖不完整。",
+          "suggestion": "将第 4 个 beat 的 para_range 调整为 [30,45]，summary 补充“念娘讲述招新，男童偷听”或调整 beat 划分。"
         }
       ],
       "checked_items": {
         "字段完整性": "通过",
-        "简介质量": "不通过",
+        "简介质量": "通过",
         "beats覆盖": "通过",
         "人物去重": "通过",
-        "场景人物一致": "通过",
+        "场景人物一致": "不通过",
         "命名跨章一致": "通过",
         "上下文衔接": "通过"
       },
       "missing_items": {},
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 4447,
-        "completion_tokens": 684,
-        "total_tokens": 5131,
+        "prompt_tokens": 4897,
+        "completion_tokens": 865,
+        "total_tokens": 5762,
         "prompt_tokens_details": {
           "cached_tokens": 1152
         },
         "prompt_cache_hit_tokens": 1152,
-        "prompt_cache_miss_tokens": 3295
+        "prompt_cache_miss_tokens": 3745
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:54:16+00:00"
+      "reviewed_at": "2026-08-07T00:08:40+00:00"
     },
     {
       "stage": "fidelity_review",
       "round": 0,
       "score": 82,
       "verdict": "revise",
-      "analysis": "臆造情况：程序报告显示无 miss 条目，未发现原文没有的人物、场景、动作或心理。改写情况：程序报告有 2 条 near 条目。dialogues[4] 的原文为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，解析结果中为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，经比对，解析结果中“拍花子的”与原文一致，但程序判定为 near，可能因标点或细微差异，需逐字核对。dialogues[7] 的原文为“谁啊？铁蛋！去开门！”，解析结果中为“谁啊？铁蛋！去开门！”，程序判定为 near，可能因标点或空格差异。遗漏情况：程序报告显示有 5 条 missed_samples，其中“tt-title”为章节标题，不应计入台词；“缰绳”和“翻身下马”是叙述性动作，非直接台词；“上！”是念娘的心理活动或命令，应归入 monologues 或 dialogues；“啧！这瓜娃子！”是妇人的台词，应归入 dialogues。因此，实际遗漏台词 2 条（“上！”和“啧！这瓜娃子！”），遗漏独白 1 条（“上！”）。张冠李戴情况：未发现说话人认错或心理活动归错人。简介准确性：synopsis 与原文事实基本一致，但“魏成观察男孩天赋，但未明说结果”与原文“魏成不作声色的看向厢房内小娃娃的脸”相符，未加入额外推断。描写忠实度：人物外貌、场景陈设描述均与原文一致，如男孩“裹着脏兮兮灰扑扑的花色厚棉袄”、院子“堆满了黑色的干柴”等。",
+      "analysis": "臆造情况：程序报告显示无 miss 条目，未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 3 条 near 条目，均为对话引用未逐字复制。\n1. dialogues[2]（para 21）原文为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，解析中为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，经比对，原文为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，解析中“拍花子的”与原文一致，但程序判定相似度 0.9259，可能因标点或细微差异，需核对原文。\n2. dialogues[5]（para 27）原文为“谁啊？铁蛋！去开门！”，解析中为“谁啊？铁蛋！去开门！”，程序判定相似度 0.7，可能因原文为“谁啊？铁蛋！去开门！”而解析中“铁蛋”后标点或空格差异。\n3. dialogues[7]（para 29）原文为“啧！这瓜娃子！谁啊？”，解析中为“啧！这瓜娃子！谁啊？”，程序判定相似度 0.7，可能因原文为“啧！这瓜娃子！谁啊？”而解析中“瓜娃子”后标点差异。\n遗漏情况：程序报告显示 missed_count 为 6，但 missed_samples 中包含非对话内容（如“tt-title”、“缰绳”、“翻身下马”），实际漏掉的台词有“往哪里走？”（para 5）、“昨夜调查时，已经确定这整片民居都有人住，而且几乎家家都有孩子，所以我们从哪里开始都可以。”（para 6）、“上！”（para 18）。这些台词未进入 dialogues，属于遗漏。\n张冠李戴情况：未发现说话人认错或心理活动归错人，所有对话和独白的归属均正确。\n简介准确性：synopsis 与原文事实基本一致，但“男童被念娘招手吓回”在原文中为“念娘尝试着对他招了招手”后孩子跑回，未明确“吓回”，但可接受；“魏成与红儿对视，认为此事可成”在原文中为“红儿与魏成悄悄对了个眼神，此事当成”，基本一致。\n描写忠实度：人物外貌、场景陈设描述均与原文一致，如男童“裹着脏兮兮灰扑扑的花色厚棉袄”、“脸蛋黑红”，妇人“宽脸的妇人”，院子“堆满了黑色的干柴”、“土茅房”、“枣树”、“黑色半大土狗”、“粗制的木马”等，均逐字引用。\n综上，主要问题为对话遗漏和轻微改写，需修正。",
       "issues": [
         {
-          "field": "dialogues[4].text",
+          "field": "dialogues[2].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定为 near，可能因标点或细微差异，需逐字核对。",
+          "problem": "对话引用与原文存在细微差异，程序判定为 near。",
           "evidence": "原文段落21：\"奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！\"",
-          "suggestion": "确保逐字复制原文，包括标点。"
+          "suggestion": "确保逐字复制原文，包括标点符号。"
+        },
+        {
+          "field": "dialogues[5].text",
+          "severity": "轻微",
+          "type": "改写",
+          "problem": "对话引用与原文存在细微差异，程序判定为 near。",
+          "evidence": "原文段落27：\"谁啊？铁蛋！去开门！\"",
+          "suggestion": "确保逐字复制原文，包括标点符号。"
         },
         {
           "field": "dialogues[7].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定为 near，可能因标点或空格差异。",
-          "evidence": "原文段落27：\"谁啊？铁蛋！去开门！\"",
-          "suggestion": "确保逐字复制原文，包括标点。"
+          "problem": "对话引用与原文存在细微差异，程序判定为 near。",
+          "evidence": "原文段落29：\"啧！这瓜娃子！谁啊？\"",
+          "suggestion": "确保逐字复制原文，包括标点符号。"
         },
         {
           "field": "dialogues",
           "severity": "中等",
           "type": "遗漏",
-          "problem": "遗漏台词\"啧！这瓜娃子！\"。",
-          "evidence": "原文段落29：\"啧！这瓜娃子！\"",
-          "suggestion": "在 dialogues 中添加该台词，speaker 为妇人。"
-        },
-        {
-          "field": "monologues",
-          "severity": "中等",
-          "type": "遗漏",
-          "problem": "遗漏念娘的心理活动\"上！\"。",
-          "evidence": "原文段落18：\"上！念娘小手一挥，小家伙，算你命好！今日碰到了仙人奶奶，给你个大机缘！哪里跑！\"",
-          "suggestion": "在 monologues 中添加该心理活动，character 为念娘。"
+          "problem": "漏掉了原文中的台词。",
+          "evidence": "原文段落5：\"往哪里走？\"；段落6：\"昨夜调查时，已经确定这整片民居都有人住，而且几乎家家都有孩子，所以我们从哪里开始都可以。\"；段落18：\"上！\"",
+          "suggestion": "将这些台词补充到 dialogues 中，并正确标注说话人。"
         }
       ],
       "checked_items": {
         "无臆造": "通过",
         "逐字准确": "不通过",
         "对话无遗漏": "不通过",
-        "独白无遗漏": "不通过",
+        "独白无遗漏": "通过",
         "关键旁白无遗漏": "通过",
         "说话人归属正确": "通过",
         "简介忠于原文": "通过",
@@ -675,60 +714,45 @@
       "missing_items": {
         "dialogues": [
           {
-            "para": 29,
-            "text": "啧！这瓜娃子！"
-          }
-        ],
-        "monologues": [
+            "para": 5,
+            "text": "往哪里走？"
+          },
+          {
+            "para": 6,
+            "text": "昨夜调查时，已经确定这整片民居都有人住，而且几乎家家都有孩子，所以我们从哪里开始都可以。"
+          },
           {
             "para": 18,
-            "character": "念娘",
             "text": "上！"
           }
         ],
+        "monologues": [],
         "narration": [],
         "characters": [],
         "scenes": []
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 6183,
-        "completion_tokens": 989,
-        "total_tokens": 7172,
+        "prompt_tokens": 6730,
+        "completion_tokens": 1273,
+        "total_tokens": 8003,
         "prompt_tokens_details": {
           "cached_tokens": 2560
         },
         "prompt_cache_hit_tokens": 2560,
-        "prompt_cache_miss_tokens": 3623
+        "prompt_cache_miss_tokens": 4170
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:54:29+00:00"
+      "reviewed_at": "2026-08-07T00:08:53+00:00"
     },
     {
       "stage": "fidelity_review",
       "round": 1,
       "score": 88,
       "verdict": "pass",
-      "analysis": "臆造情况：程序报告显示 miss 为 0，未发现原文没有的人物、场景、外貌、动作、心理或道具。所有引用均能在原文中找到对应段落。\n\n改写情况：程序报告有 2 处 near。\n1. dialogues[4]（para 21）原文为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，解析文本为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，经比对，解析文本与原文完全一致，但程序判定为 near，可能因标点或空格差异，实际内容无改动。\n2. dialogues[7]（para 27）原文为“谁啊？铁蛋！去开门！”，解析文本为“谁啊？铁蛋！去开门！”，同样内容一致，程序判定为 near，可能因标点或空格差异，实际内容无改动。\n\n遗漏情况：程序报告台词覆盖率 86.67%，missed_samples 有 4 条：\"tt-title\"（非台词，是标题标签）、\"缰绳\"（原文[14]“一甩‘缰绳’”，是动作描写中的比喻，非独立台词）、\"翻身下马\"（原文[17]“孩子‘翻身下马’”，是动作描写，非独立台词）、\"上！\"（原文[18]“念娘小手一挥，小家伙，算你命好！今日碰到了仙人奶奶，给你个大机缘！哪里跑！”中“上！”是念娘喊出的命令，但解析中已将其作为 monologue 处理，且原文此处是心理活动与喊话的混合，处理合理）。因此，实际遗漏的台词为 0。\n\n张冠李戴情况：所有对话的说话人归属均正确，如 para 5 念娘、para 6 魏成、para 20 老人、para 21 小男孩、para 23 妇人等，与原文一致。心理活动归属也正确，如 para 7 念娘、para 15 小男孩、para 18 念娘等。\n\n简介准确性：synopsis 概括了主要情节：众人来到民居区、男孩误认拍花子、念娘敲门解释、讲述招新、男孩被吸引、魏成观察天赋。与原文事实相符，未加入额外因果推断或评价。\n\n描写忠实度：人物外貌、场景陈设的引用均逐字命中原文，如小男孩的“一个裹着脏兮兮灰扑扑的花色厚棉袄的孩子跨步走了出来，看起来也就七八岁的年纪，脸蛋黑红，胯下还夹着一根满粗的木棍。”、妇人的“一个宽脸的妇人疑惑的探出头来。”、院子的“院子不大，只有两个屋子，空地一侧堆满了黑色的干柴，另一侧则搭了一间土茅房，茅房旁还种了棵枣树，树下拴着一只黑色的半大土狗，此时正摇着尾巴站起身，而土狗旁边还倒着一个粗制的木马。”均无篡改。\n\n综上，解析结果整体忠实于原文，无臆造、无实质改写、无遗漏、无张冠李戴，简介准确，描写忠实。仅有的 2 处 near 为程序判定差异，实际内容一致，不影响准确性。",
-      "issues": [
-        {
-          "field": "dialogues[4].text",
-          "severity": "轻微",
-          "type": "改写",
-          "problem": "程序判定为 near，但实际文本与原文一致，可能因标点或空格差异导致。",
-          "evidence": "原文[21]：\"奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！\"；解析文本相同。",
-          "suggestion": "无需修改，保持原文即可。"
-        },
-        {
-          "field": "dialogues[7].text",
-          "severity": "轻微",
-          "type": "改写",
-          "problem": "程序判定为 near，但实际文本与原文一致，可能因标点或空格差异导致。",
-          "evidence": "原文[27]：\"谁啊？铁蛋！去开门！\"；解析文本相同。",
-          "suggestion": "无需修改，保持原文即可。"
-        }
-      ],
+      "analysis": "臆造情况：程序报告显示无 miss 条目，解析结果中未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 3 条 near 条目。1. dialogues[5]（para 21）原文为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，解析文本为“奶！我在街上看见拍花子的了！他们还对我招手让我过去嘞！”，经比对，解析文本与原文一致，但程序判定为 near，可能因标点或空格差异，实际内容无改动，故不扣分。2. dialogues[8]（para 27）原文为“谁啊？铁蛋！去开门！”，解析文本为“谁啊？铁蛋！去开门！”，内容一致，程序判定 near 可能因标点差异，实际无改动。3. dialogues[10]（para 29）原文为“啧！这瓜娃子！谁啊？”，解析文本为“啧！这瓜娃子！谁啊？”，内容一致，程序判定 near 可能因标点差异，实际无改动。综上，三条 near 均为标点或格式差异，无实质改写，逐字准确项通过。\n遗漏情况：程序报告 missed_samples 为“tt-title”、“缰绳”、“翻身下马”，其中“tt-title”是章节标题，非台词；“缰绳”和“翻身下马”是叙述性词语，非独立台词，且解析结果中已通过 narration 或 beats 覆盖相关情节，故无实质遗漏。对话、独白、关键旁白均无遗漏。\n张冠李戴情况：所有对话、独白、动作的归属均与原文一致，无错认。\n简介准确性：synopsis 与原文事实相符，未加入原文没有的因果推断、评价或情绪判断，准确。\n描写忠实度：人物外貌、服饰、场景陈设的描述均与原文一致，如男童“裹着脏兮兮灰扑扑的花色厚棉袄”、“脸蛋黑红”，妇人“宽脸的妇人”，院子“堆满了黑色的干柴”、“土茅房”、“枣树”、“黑色半大土狗”、“粗制的木马”等，均逐字引用，无篡改。\n综上，解析结果忠实于原文，无臆造、改写、遗漏、张冠李戴、失真概括或描写篡改，评分 88 分。",
+      "issues": [],
       "checked_items": {
         "无臆造": "通过",
         "逐字准确": "通过",
@@ -748,18 +772,18 @@
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 6263,
-        "completion_tokens": 1082,
-        "total_tokens": 7345,
+        "prompt_tokens": 6850,
+        "completion_tokens": 686,
+        "total_tokens": 7536,
         "prompt_tokens_details": {
           "cached_tokens": 2560
         },
         "prompt_cache_hit_tokens": 2560,
-        "prompt_cache_miss_tokens": 3703
+        "prompt_cache_miss_tokens": 4290
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:55:07+00:00"
+      "reviewed_at": "2026-08-07T00:09:28+00:00"
     }
   ],
   "run": {
@@ -768,8 +792,8 @@
     "phase": "all",
     "thinking": false,
     "llm_calls": 5,
-    "started_at": "2026-08-06T16:53:26+00:00",
-    "finished_at": "2026-08-06T16:55:07+00:00",
-    "elapsed_sec": 101.4
+    "started_at": "2026-08-07T00:07:48+00:00",
+    "finished_at": "2026-08-07T00:09:28+00:00",
+    "elapsed_sec": 100.6
   }
 }

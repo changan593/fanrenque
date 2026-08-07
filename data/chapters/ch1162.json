@@ -63,24 +63,11 @@
     "但，元永洁站在那依旧骄傲的仰着自己的下巴。"
   ],
   "analysis": {
-    "one_line": "孔雀明王与天菩萨论道，坚持自身圣洁之道",
-    "synopsis": "天菩萨与元永洁就螺生计划产生激烈争论。天菩萨认为螺生并非夺舍，且大事必有牺牲，不能因过程污点否定最终利益，并以三教统一、南季礼等为例，指责元永洁苛责佛宗。元永洁则坚持自身清白，认为世道可以不纯净，但自己必须干净，拒绝以‘做大事’为借口参与夺舍。双方各执一词，天菩萨斥其想法可笑，元永洁则释放气势，坚持‘清史满页无墨痕’的道心。",
+    "one_line": "元永洁与天菩萨就螺生计划激烈辩论。",
+    "synopsis": "元永洁与天菩萨就螺生计划展开激烈辩论。天菩萨认为螺生并非夺舍，且大势所趋必有牺牲，圣人不该畏惧污点。元永洁则坚持自身清白，拒绝参与夺舍，并释放气势对抗。唐真被天菩萨指问，但未回应。最终元永洁骄傲不屈，天菩萨批判其圣洁观。",
     "time_setting": "未明确",
-    "emotional_tone": "激烈争论，立场对立",
+    "emotional_tone": "紧张对峙，理念冲突",
     "characters": [
-      {
-        "name": "天菩萨",
-        "aliases": [],
-        "role_in_chapter": "主导",
-        "mentioned_only": false,
-        "appearance_quotes": [],
-        "state": "气恼，言语流露委屈窝囊",
-        "actions": [
-          "与元永洁争论螺生并非夺舍",
-          "列举三教统一等例证大事必有牺牲",
-          "指责元永洁想法可笑"
-        ]
-      },
       {
         "name": "元永洁",
         "aliases": [
@@ -92,40 +79,52 @@
         "appearance_quotes": [
           "白色的素袍拂过沙子表面不染尘埃"
         ],
-        "state": "冷笑，坚持自身清白，释放气势",
+        "state": "愤怒，坚持自身清白，释放气势",
         "actions": [
-          "嗤笑天菩萨的借口",
-          "坚持自身道心，释放气势",
-          "拒绝夺舍丫头"
+          "与天菩萨辩论螺生计划",
+          "释放气势对抗天菩萨"
+        ]
+      },
+      {
+        "name": "天菩萨",
+        "aliases": [],
+        "role_in_chapter": "主导",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "气恼，据理力争，言语流露委屈",
+        "actions": [
+          "为螺生计划辩护",
+          "指责元永洁想法可笑"
         ]
       },
       {
         "name": "唐真",
         "aliases": [],
-        "role_in_chapter": "在场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "在场，被天菩萨指问",
+        "state": "旁观，未发言",
         "actions": [
-          "被天菩萨指问"
+          "被天菩萨指问，未回应"
         ]
       }
     ],
     "scenes": [
       {
-        "name": "未明确",
+        "name": "风沙之地",
         "type": "室外",
         "time_of_day": "未明确",
         "description_quotes": [
-          "白色的素袍拂过沙子表面不染尘埃"
+          "白色的素袍拂过沙子表面不染尘埃",
+          "磅礴的气势从元永洁脚下扩散，沙子震动的像是在跳舞"
         ],
         "present_characters": [
-          "天菩萨",
           "元永洁",
+          "天菩萨",
           "唐真"
         ],
         "events": [
-          "天菩萨与元永洁争论螺生",
+          "元永洁与天菩萨辩论",
           "元永洁释放气势"
         ],
         "para_range": [
@@ -330,28 +329,35 @@
         "addressee": "元永洁",
         "text": "而且什么又是圣洁？不染一丝污点便是？什么又算是污点？亏尔修行佛法如此久，却还困于他人眼中的圣洁与完美。修到最后竟然是为了修世俗眼中的‘虚名’！",
         "manner": "毫不留情面的打击"
+      },
+      {
+        "para": 43,
+        "speaker": "叙述者",
+        "addressee": "",
+        "text": "纯净无痕",
+        "manner": ""
+      },
+      {
+        "para": 43,
+        "speaker": "叙述者",
+        "addressee": "",
+        "text": "无错",
+        "manner": ""
       }
     ],
     "monologues": [
       {
         "para": 21,
         "speaker": "天菩萨",
-        "text": "你是什么刚刚返虚的少年少女吗？见过的坏人都是魔修，好人都是宗门前辈！面临的最大烦恼就是去哪挖几棵灵材？",
-        "manner": ""
+        "text": "你是什么刚刚返虚的少年少女吗？见过的坏人都是魔修，好人都是宗门前辈！面临的最大烦恼就是去哪挖几棵灵材？"
       },
       {
         "para": 22,
         "speaker": "天菩萨",
-        "text": "连你的外身那叫做元永洁的小丫头都能懂得道理，你竟然装作听不懂？",
-        "manner": ""
+        "text": "连你的外身那叫做元永洁的小丫头都能懂得道理，你竟然装作听不懂？"
       }
     ],
     "narration": [
-      {
-        "para": 16,
-        "text": "说到此处，这位天菩萨竟然言语流露出了几分委屈窝囊。",
-        "function": "情绪描写"
-      },
       {
         "para": 17,
         "text": "这话有些歪理，但逻辑本身并无错漏，任何大事发生，都一定会对他人产生影响，事情越大影响越大，当事情大到一定程度，那落到凡人身上的便是生死而已。",
@@ -361,11 +367,6 @@
         "para": 18,
         "text": "而且这是无法预料和管控的，春圣那么不想牵扯他人因果的人，最终还是扯了洪洲许多人。",
         "function": "人物背景"
-      },
-      {
-        "para": 28,
-        "text": "这种道理是可以翻来覆去的讲，但他真的不想讲这些每个人都知道的道理，他是来做大事的，不是来哄孩子的。",
-        "function": "人物动机"
       },
       {
         "para": 41,
@@ -400,7 +401,7 @@
           1,
           2
         ],
-        "scene": "未明确",
+        "scene": "风沙之地",
         "beat_type": "铺垫",
         "summary": "天菩萨反驳元永洁，称螺生非夺舍，争议不算什么。"
       },
@@ -410,7 +411,7 @@
           3,
           6
         ],
-        "scene": "未明确",
+        "scene": "风沙之地",
         "beat_type": "冲突",
         "summary": "元永洁嗤笑，天菩萨冷喝，双方开始争执。"
       },
@@ -420,9 +421,9 @@
           7,
           15
         ],
-        "scene": "未明确",
+        "scene": "风沙之地",
         "beat_type": "冲突",
-        "summary": "天菩萨阐述大势必有牺牲，举三教等例，指责元永洁。"
+        "summary": "天菩萨阐述大势牺牲论，举例历史，指问唐真。"
       },
       {
         "order": 4,
@@ -430,9 +431,9 @@
           16,
           18
         ],
-        "scene": "未明确",
+        "scene": "风沙之地",
         "beat_type": "情绪",
-        "summary": "天菩萨流露委屈，旁白分析其逻辑。"
+        "summary": "天菩萨流露委屈，旁白评论其逻辑。"
       },
       {
         "order": 5,
@@ -440,9 +441,9 @@
           19,
           27
         ],
-        "scene": "未明确",
+        "scene": "风沙之地",
         "beat_type": "冲突",
-        "summary": "元永洁质问借口，天菩萨怒斥其幼稚，强调结果与初衷。"
+        "summary": "元永洁冷笑，天菩萨怒斥其幼稚，强调结果与初衷。"
       },
       {
         "order": 6,
@@ -450,9 +451,9 @@
           28,
           36
         ],
-        "scene": "未明确",
+        "scene": "风沙之地",
         "beat_type": "转折",
-        "summary": "元永洁坚持自身清白，释放气势，表明道心。"
+        "summary": "元永洁表明自身清白之道，释放气势。"
       },
       {
         "order": 7,
@@ -460,54 +461,52 @@
           37,
           46
         ],
-        "scene": "未明确",
-        "beat_type": "收束",
-        "summary": "天菩萨斥其可笑，元永洁骄傲仰头，争论未决。"
+        "scene": "风沙之地",
+        "beat_type": "冲突",
+        "summary": "天菩萨批判元永洁圣洁观，元永洁骄傲不屈。"
       }
     ],
     "props": [],
     "terms": [
       {
         "term": "螺生",
-        "note": "古命好的计划，天菩萨称非夺舍，元永洁认为是夺舍婴孩。"
+        "note": "天菩萨称非夺舍，元永洁认为是夺舍婴孩"
       },
       {
         "term": "真我境",
-        "note": "修行境界，发现对人族有益，但让洪洲百代人蒙尘。"
+        "note": "天菩萨提及，发现对人族修行有益，但让洪洲百代人蒙尘"
       },
       {
         "term": "佛宗",
-        "note": "天菩萨与元永洁所属宗门，出走九洲。"
+        "note": "天菩萨提及，佛宗出走，最终对九洲有利"
       }
     ],
     "continuity": {
       "inherits": [
-        "前文元永洁拒绝站到天菩萨一侧，本章继续争论"
+        "前文元永洁揭露螺生为夺舍，天菩萨反驳"
       ],
       "foreshadows": [
-        "元永洁坚持圣洁之道，可能影响后续行动"
+        "元永洁与天菩萨理念冲突可能影响后续行动"
       ],
       "reveals": [
-        "天菩萨认为螺生非夺舍，且大事必有牺牲；元永洁坚持自身清白，拒绝参与夺舍。"
+        "天菩萨认为螺生非夺舍，且大势必有牺牲；元永洁坚持自身清白"
       ]
     }
   },
   "quality": {
-    "passed": false,
-    "fail_reasons": [
-      "一致性分 88 < 90"
-    ],
+    "passed": true,
+    "fail_reasons": [],
     "structure_score": 88,
-    "fidelity_score": 88,
+    "fidelity_score": 92,
     "verbatim": {
-      "total_quotes": 41,
+      "total_quotes": 42,
       "counts": {
-        "exact": 40,
+        "exact": 41,
         "near": 1,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9756,
+      "verbatim_rate": 0.9762,
       "misplaced_para_count": 0,
       "problems": [
         {
@@ -523,13 +522,10 @@
     },
     "coverage": {
       "raw_speech_count": 31,
-      "extracted_dialogue_count": 28,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9355,
-      "missed_samples": [
-        "纯净无痕",
-        "无错"
-      ]
+      "extracted_dialogue_count": 30,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [
@@ -544,36 +540,36 @@
       "round": 0,
       "score": 88,
       "verdict": "revise",
-      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 概括了争论核心，但字数约 180，符合要求，且非流水账。beats 覆盖全章，para_range 递增且无重叠，但第 4 个 beat 的 summary 提到“旁白分析其逻辑”，而 narration 中第 17-18 段确为旁白，但该 beat 的 para_range 为 16-18，其中第 16 段未在 narration 中列出，可能遗漏。characters 无重复，但唐真 role_in_chapter 为“提及”，且 actions 为空，但 dialogues 中天菩萨曾指向唐真，且 scenes 中 present_characters 包含唐真，存在轻微不一致。scenes 的 present_characters 均能在 characters 中找到。dialogues 的 speaker 均在 characters 中。narration 中第 21、22 段为天菩萨的内心活动，但被归为 narration，且 function 为“人物背景”，可能应归为 monologue，但 monologues 为空，存在分类问题。上下文连贯性方面，人物命名与前文一致，元永洁的 aliases 包含孔雀大明王，正确。continuity.inherits 接上前文争论，合理。但 narration 第 42 段提到“姜羽”，前文未铺垫，可能为臆造或未提及人物，需核实。另外，synopsis 中“清史满页无墨痕”与 dialogues 中一致，但 narration 第 43 段称“纯净无痕”是世俗的，与元永洁的道心形成对比，逻辑自洽。总体结构良好，但存在 narration 与 monologue 分类不清、唐真角色定位轻微矛盾、姜羽未铺垫等问题，故扣分。",
+      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 概括了本章核心冲突，但字数约 120 字，未达 150-300 字要求，且略显流水账，未充分体现人物立场和结果。beats 覆盖全章，para_range 递增且覆盖 1-46，但第 4 个 beat 的 summary 提到“旁白评论其逻辑”，而 narration 中 para 17-18 确实存在，但 para 16 未在 narration 中，可能遗漏。characters 中齐渊为 mentioned_only，但 dialogues 中无齐渊发言，符合。scenes 的 present_characters 包含元永洁、天菩萨、唐真，均能在 characters 中找到。dialogues 的 speaker 均存在。narration 中 para 21、22 等为人物背景，但 para 21 内容“你是什么刚刚返虚的少年少女吗？”疑似对话，却放在 narration，可能误分类。上下文连贯性方面，人物命名与前文一致，元永洁别名孔雀大明王，天菩萨、唐真、齐渊均一致。continuity.inherits 提到“前文元永洁揭露螺生为夺舍，天菩萨反驳”，与前文提要第1166章相符。但 synopsis 中“唐真拒绝齐渊的求助”在正文中未见明确描写，可能臆造。此外，narration 中 para 42 提到“姜羽”，前文未铺垫，可能为臆造。总体结构良好，但存在 synopsis 字数不足、narration 误分类、潜在臆造等问题，故给 88 分。",
       "issues": [
         {
-          "field": "narration[2].function",
+          "field": "synopsis",
           "severity": "中等",
-          "problem": "第21、22段是天菩萨的内心独白，却归为narration，且function为'人物背景'，应归为monologue。",
-          "suggestion": "将第21、22段移至monologues数组，并标注speaker为天菩萨。"
+          "problem": "字数约 120 字，未达 150-300 字要求，且内容概括较简略，未充分体现人物立场和结果。",
+          "suggestion": "扩充 synopsis，详细描述元永洁与天菩萨的辩论焦点、唐真的旁观反应以及最终结果，确保字数达标。"
         },
         {
-          "field": "characters[2].role_in_chapter",
-          "severity": "轻微",
-          "problem": "唐真role_in_chapter为'提及'，但scenes中present_characters包含唐真，且dialogues中天菩萨曾指向唐真，说明唐真在场且有互动，角色定位应更积极。",
-          "suggestion": "将唐真role_in_chapter改为'在场'或'次要'，并补充其actions。"
-        },
-        {
-          "field": "narration[5].text",
+          "field": "narration[2].para=21",
           "severity": "中等",
-          "problem": "第42段提到'姜羽'，但前文提要及本章均未铺垫此人，可能为解析员臆造或漏读前文。",
-          "suggestion": "核实姜羽是否在前文出现，若未出现则删除或标注为提及。"
+          "problem": "该段内容“你是什么刚刚返虚的少年少女吗？”疑似对话，却放在 narration 中，可能误分类。",
+          "suggestion": "检查原文，若为对话应移至 dialogues，并补充 speaker 和 addressee。"
         },
         {
-          "field": "beats[3].summary",
+          "field": "narration[5].para=42",
+          "severity": "中等",
+          "problem": "提到“姜羽”，前文提要未出现该人物，可能为臆造或未铺垫。",
+          "suggestion": "确认原文是否提及姜羽，若未提及则删除；若提及，需在 characters 中补充或在前文 continuity 中说明。"
+        },
+        {
+          "field": "synopsis",
           "severity": "轻微",
-          "problem": "第4个beat的summary提到'旁白分析其逻辑'，但para_range为16-18，其中第16段未在narration中列出，可能遗漏。",
-          "suggestion": "检查第16段内容，若为旁白则补充至narration，或调整beat范围。"
+          "problem": "“唐真拒绝齐渊的求助”在正文中未见明确描写，可能为臆造。",
+          "suggestion": "核对原文，若唐真未拒绝齐渊，则修改 synopsis；若确有，需在正文中体现。"
         }
       ],
       "checked_items": {
         "字段完整性": "通过",
-        "简介质量": "通过",
+        "简介质量": "不通过",
         "beats覆盖": "通过",
         "人物去重": "通过",
         "场景人物一致": "通过",
@@ -583,118 +579,67 @@
       "missing_items": {},
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 5038,
-        "completion_tokens": 867,
-        "total_tokens": 5905,
+        "prompt_tokens": 5051,
+        "completion_tokens": 803,
+        "total_tokens": 5854,
         "prompt_tokens_details": {
           "cached_tokens": 896
         },
         "prompt_cache_hit_tokens": 896,
-        "prompt_cache_miss_tokens": 4142
+        "prompt_cache_miss_tokens": 4155
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:57:26+00:00"
+      "reviewed_at": "2026-08-07T00:10:35+00:00"
     },
     {
       "stage": "fidelity_review",
       "round": 0,
       "score": 88,
       "verdict": "pass",
-      "analysis": "臆造情况：程序报告显示 miss 为 0，未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 1 条 near，即 dialogues[24]（para 35）的台词，原文为“可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！”，解析结果中该条文本与原文完全一致，但程序判定为 near，可能因标点或空格差异，实际内容无实质改动，故按改写扣 3 分。\n遗漏情况：程序报告台词覆盖率为 93.55%，missed_samples 为“纯净无痕”和“无错”，但这两处并非带引号的完整台词，而是原文中引用的短语（para 43），属于旁白中的引用，不应计入 dialogues，因此不构成台词遗漏。monologues 为空，但原文中无明显心理活动独白，天菩萨的“委屈窝囊”等已通过 narration 和 state 体现，故无遗漏。narration 已覆盖关键旁白，如 para 17、18、41-45，但 para 16（“说到此处，这位天菩萨竟然言语流露出了几分委屈窝囊。”）和 para 28（“这种道理是可以翻来覆去的讲，但他真的不想讲这些每个人都知道的道理，他是来做大事的，不是来哄孩子的。”）未纳入 narration，这两处为关键情绪和动机旁白，应补充，故遗漏扣 10 分。\n张冠李戴情况：所有对话的说话人归属均正确，未发现认错。\n简介准确性：synopsis 与原文事实相符，准确概括了争论焦点、双方立场和关键论据，未加入原文没有的因果推断或评价，通过。\n描写忠实度：元永洁的“白色的素袍拂过沙子表面不染尘埃”与原文 para 32 一致，场景描写未出现篡改，通过。\n综上，因 1 条 near 和 2 条旁白遗漏，扣分后得 88 分，verdict 为 pass。",
+      "analysis": "臆造情况：程序报告显示 miss 为 0，未发现原文没有的人物、场景、外貌、动作、心理或道具。所有引用均能在原文中找到对应段落。\n\n改写情况：程序报告有 1 条 near，即 dialogues[24]（para 35）的台词。原文为“可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！”，解析结果中该条文本与原文完全一致，但程序判定为 near，可能因标点或细微差异（如原文“！？”与解析中“！？”），但逐字比对未发现实质改动，故视为轻微改写。\n\n遗漏情况：程序报告台词覆盖率为 93.55%，missed_samples 为“纯净无痕”和“无错”。这两处是原文中带引号的短语（para 43），属于元永洁理念的关键表述，但未作为独立台词收录。不过，它们已包含在 narration 的 para 43 中，且并非完整对话，故遗漏影响轻微。此外，原文中所有带引号的完整说话均已收录，无遗漏。\n\n张冠李戴情况：所有对话的说话人归属均正确。天菩萨的台词（para 1,2,5,8-15,20,23,25,26,31,39,40）和元永洁的台词（para 3,6,19,29,30,32-36）均与原文一致。narration 中 para 21,22 为天菩萨的内心独白，但被归为旁白，未归入 monologues，但原文中这些是直接引语（无引号），且属于天菩萨的思考，应视为独白，但解析结果将其归为 narration，属于分类问题，不影响内容准确性。\n\n简介准确性：synopsis 提到“唐真旁观，最终拒绝齐渊的求助，齐渊绝望”，但原文中并未出现齐渊，也未提及唐真拒绝齐渊。这属于简介中的臆造内容，与原文事实不符。one_line 也提到“唐真与齐渊对峙”，同样无原文依据。\n\n描写忠实度：场景描写“风沙之地”基于原文“沙子表面”“沙子震动”等，符合。元永洁外貌“白色的素袍拂过沙子表面不染尘埃”逐字引用原文 para 32。天菩萨状态“言语流露委屈”对应原文 para 16。人物动作、心理描写均忠实原文。",
       "issues": [
+        {
+          "field": "synopsis",
+          "severity": "严重",
+          "type": "臆造",
+          "problem": "简介中提及“唐真旁观，最终拒绝齐渊的求助，齐渊绝望”，但原文中并未出现齐渊，也没有唐真拒绝齐渊的情节。",
+          "evidence": "原文第1-46段中，齐渊从未出现，唐真仅在para 15被天菩萨指问，未有任何拒绝行为。",
+          "suggestion": "删除简介中关于齐渊和唐真拒绝的内容，仅保留元永洁与天菩萨的辩论。"
+        },
+        {
+          "field": "one_line",
+          "severity": "中等",
+          "type": "臆造",
+          "problem": "一句话概括中“唐真与齐渊对峙”无原文依据，齐渊未出场。",
+          "evidence": "原文无齐渊出现，唐真未与任何人对峙。",
+          "suggestion": "改为“元永洁与天菩萨就螺生计划激烈辩论”。"
+        },
         {
           "field": "dialogues[24].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定该条为 near，可能因标点或空格差异，但内容与原文一致，无实质改动。",
-          "evidence": "原文 para 35：可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！",
-          "suggestion": "保持原文逐字，检查标点是否完全一致，如引号、感叹号等。"
+          "problem": "程序判定该条为near，可能因标点差异，但内容与原文一致。",
+          "evidence": "原文para 35与解析文本逐字比对，仅标点可能不同。",
+          "suggestion": "确保标点与原文完全一致，如使用原文的“！？”格式。"
         },
         {
-          "field": "narration",
-          "severity": "中等",
+          "field": "monologues",
+          "severity": "轻微",
           "type": "遗漏",
-          "problem": "原文 para 16 和 para 28 的关键旁白未纳入 narration。",
-          "evidence": "原文 para 16：说到此处，这位天菩萨竟然言语流露出了几分委屈窝囊。原文 para 28：这种道理是可以翻来覆去的讲，但他真的不想讲这些每个人都知道的道理，他是来做大事的，不是来哄孩子的。",
-          "suggestion": "在 narration 中补充这两条，分别标注功能为“情绪描写”和“人物动机”。"
+          "problem": "原文para 21、22为天菩萨的内心独白（无引号），但未归入monologues，而是归入narration。",
+          "evidence": "原文para 21“你是什么刚刚返虚的少年少女吗？……”和para 22“连你的外身那叫做元永洁的小丫头都能懂得道理……”均为天菩萨的心理活动。",
+          "suggestion": "将para 21、22从narration移至monologues，speaker为天菩萨。"
         }
       ],
       "checked_items": {
-        "无臆造": "通过",
-        "逐字准确": "不通过",
+        "无臆造": "不通过",
+        "逐字准确": "通过",
         "对话无遗漏": "通过",
-        "独白无遗漏": "通过",
-        "关键旁白无遗漏": "不通过",
-        "说话人归属正确": "通过",
-        "简介忠于原文": "通过",
-        "人物场景描写忠实": "通过"
-      },
-      "missing_items": {
-        "dialogues": [],
-        "monologues": [],
-        "narration": [
-          {
-            "para": 16,
-            "text": "说到此处，这位天菩萨竟然言语流露出了几分委屈窝囊。",
-            "function": "情绪描写"
-          },
-          {
-            "para": 28,
-            "text": "这种道理是可以翻来覆去的讲，但他真的不想讲这些每个人都知道的道理，他是来做大事的，不是来哄孩子的。",
-            "function": "人物动机"
-          }
-        ],
-        "characters": [],
-        "scenes": []
-      },
-      "model": "deepseek-v4-flash",
-      "tokens": {
-        "prompt_tokens": 6686,
-        "completion_tokens": 1039,
-        "total_tokens": 7725,
-        "prompt_tokens_details": {
-          "cached_tokens": 2560
-        },
-        "prompt_cache_hit_tokens": 2560,
-        "prompt_cache_miss_tokens": 4126
-      },
-      "attempts": 1,
-      "adapted": [],
-      "reviewed_at": "2026-08-06T16:57:37+00:00"
-    },
-    {
-      "stage": "fidelity_review",
-      "round": 1,
-      "score": 88,
-      "verdict": "pass",
-      "analysis": "臆造情况：程序报告显示无 miss 条目，解析结果中未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 1 条 near 条目，即 dialogues[24]（para 35）的台词，原文为“可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！”，解析结果中该条文本与原文完全一致，但程序判定为 near，可能因标点或细微差异，需注意。其余 40 条引用均逐字命中，改写情况基本通过。\n遗漏情况：程序报告显示有 2 条台词未进入 dialogues，即“纯净无痕”和“无错”，这两处是原文中带引号的词语，虽非完整台词，但属于对话中的关键引用，应纳入 dialogues 或 narration。此外，原文中所有带引号的说话均已覆盖，心理活动（如 para 21、22）已纳入 monologues，关键旁白（如 para 16、17、18、28、41-45）已纳入 narration，人物和场景无遗漏。\n张冠李戴情况：所有对话的说话人归属均正确，如 para 1、2、5、8-15、20、23、25、26、31、39、40 均为天菩萨，para 3、6、19、29、30、32-36 均为元永洁，无错位。\n简介准确性：synopsis 准确概括了双方争论的核心，即天菩萨认为螺生非夺舍且大事必有牺牲，元永洁坚持自身清白拒绝参与，与原文事实相符，未加入额外因果推断或评价。\n描写忠实度：人物外貌、服饰、场景陈设等描写均忠实于原文，如元永洁的“白色的素袍拂过沙子表面不染尘埃”（para 32），天菩萨的“双手合十”（para 4）、“随手指向唐真”（para 15）等，无篡改。\n综上，解析结果整体忠实于原文，仅存在少量台词遗漏和一处 near 引用，建议补充遗漏台词并核对 near 引用。",
-      "issues": [
-        {
-          "field": "dialogues[24].text",
-          "severity": "轻微",
-          "type": "改写",
-          "problem": "程序判定该条引用为 near，可能因标点或细微差异，需核对原文确保逐字一致。",
-          "evidence": "原文 para 35：可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！",
-          "suggestion": "确保该条文本与原文完全一致，包括标点符号。"
-        },
-        {
-          "field": "dialogues",
-          "severity": "中等",
-          "type": "遗漏",
-          "problem": "原文中带引号的词语“纯净无痕”和“无错”未进入 dialogues，属于对话中的关键引用。",
-          "evidence": "程序报告 missed_samples 列出“纯净无痕”和“无错”，原文 para 43 有“纯净无痕”，para 43 有“无错”。",
-          "suggestion": "将“纯净无痕”和“无错”作为对话或引用补充到 dialogues 或 narration 中。"
-        }
-      ],
-      "checked_items": {
-        "无臆造": "通过",
-        "逐字准确": "不通过",
-        "对话无遗漏": "不通过",
-        "独白无遗漏": "通过",
+        "独白无遗漏": "不通过",
         "关键旁白无遗漏": "通过",
         "说话人归属正确": "通过",
-        "简介忠于原文": "通过",
+        "简介忠于原文": "不通过",
         "人物场景描写忠实": "通过"
       },
       "missing_items": {
@@ -708,6 +653,65 @@
             "text": "无错"
           }
         ],
+        "monologues": [
+          {
+            "para": 21,
+            "character": "天菩萨",
+            "text": "你是什么刚刚返虚的少年少女吗？见过的坏人都是魔修，好人都是宗门前辈！面临的最大烦恼就是去哪挖几棵灵材？"
+          },
+          {
+            "para": 22,
+            "character": "天菩萨",
+            "text": "连你的外身那叫做元永洁的小丫头都能懂得道理，你竟然装作听不懂？"
+          }
+        ],
+        "narration": [],
+        "characters": [],
+        "scenes": []
+      },
+      "model": "deepseek-v4-flash",
+      "tokens": {
+        "prompt_tokens": 6686,
+        "completion_tokens": 1343,
+        "total_tokens": 8029,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 4126
+      },
+      "attempts": 1,
+      "adapted": [],
+      "reviewed_at": "2026-08-07T00:10:50+00:00"
+    },
+    {
+      "stage": "fidelity_review",
+      "round": 1,
+      "score": 92,
+      "verdict": "pass",
+      "analysis": "臆造情况：程序报告显示 miss 为 0，未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 1 条 near，即 dialogues[24]（para 35）的台词，原文为“可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！”，解析结果中该条文本与原文一致，但程序判定为 near（相似度 0.9529），可能因标点或细微差异，但人工核对未发现实质改动，故按程序报告记为改写，扣 3 分。\n遗漏情况：程序报告台词覆盖率为 100%，missed_samples 为空，对话无遗漏。独白方面，原文 [21][22] 为天菩萨的心理活动，已收入 monologues。关键旁白方面，原文 [17][18][41][42][43][44][45] 等叙述性内容均已收入 narration，无遗漏。人物方面，元永洁、天菩萨、唐真均已出场，无遗漏。场景方面，原文未明确场景名称，但解析结果设为“风沙之地”，依据原文 [32]“白色的素袍拂过沙子表面”和 [37]“沙子震动的像是在跳舞”，合理，无遗漏。\n张冠李戴情况：所有对话的说话人归属均正确，如 [1][2][5][8] 等为天菩萨，[3][6][19] 等为元永洁，[15] 天菩萨指问唐真，唐真未发言，符合原文。独白 [21][22] 归属天菩萨正确。无张冠李戴。\n简介准确性：synopsis 概括了辩论核心，天菩萨认为螺生非夺舍、大势必有牺牲、圣人不畏污点，元永洁坚持清白、拒绝夺舍、释放气势，唐真被指问未回应，最终元永洁骄傲不屈，天菩萨批判其圣洁观，均与原文事实相符，无额外因果推断或评价，准确。\n描写忠实度：元永洁外貌“白色的素袍拂过沙子表面不染尘埃”逐字引用原文 [32]，场景描写“磅礴的气势从元永洁脚下扩散，沙子震动的像是在跳舞”逐字引用原文 [37]，人物状态如天菩萨“气恼”“言语流露委屈”依据原文 [4][16]，元永洁“愤怒”依据 [35]，均忠实。\n综上，仅有一处程序判定的 near 改写，其余全部准确，评分 92，verdict 为 pass。",
+      "issues": [
+        {
+          "field": "dialogues[24].text",
+          "severity": "轻微",
+          "type": "改写",
+          "problem": "程序判定该条引用为 near，相似度 0.9529，可能存在细微标点或字符差异，但人工核对未发现实质改动。",
+          "evidence": "原文 [35]：可你们！你们对我做了什么！要我来夺舍一个丫头吗！？你们坏我清白！毁我道理！竟然好意思在这里跟我讲那些烂话，什么做大事不拘小节，你们可以不拘自己的小节，但本尊这里没有小节！",
+          "suggestion": "确保逐字复制原文，包括标点符号，如使用全角标点等。"
+        }
+      ],
+      "checked_items": {
+        "无臆造": "通过",
+        "逐字准确": "不通过",
+        "对话无遗漏": "通过",
+        "独白无遗漏": "通过",
+        "关键旁白无遗漏": "通过",
+        "说话人归属正确": "通过",
+        "简介忠于原文": "通过",
+        "人物场景描写忠实": "通过"
+      },
+      "missing_items": {
+        "dialogues": [],
         "monologues": [],
         "narration": [],
         "characters": [],
@@ -715,18 +719,18 @@
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 6804,
-        "completion_tokens": 983,
-        "total_tokens": 7787,
+        "prompt_tokens": 6708,
+        "completion_tokens": 913,
+        "total_tokens": 7621,
         "prompt_tokens_details": {
           "cached_tokens": 2560
         },
         "prompt_cache_hit_tokens": 2560,
-        "prompt_cache_miss_tokens": 4244
+        "prompt_cache_miss_tokens": 4148
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:58:13+00:00"
+      "reviewed_at": "2026-08-07T00:11:23+00:00"
     }
   ],
   "run": {
@@ -735,8 +739,8 @@
     "phase": "all",
     "thinking": false,
     "llm_calls": 5,
-    "started_at": "2026-08-06T16:56:37+00:00",
-    "finished_at": "2026-08-06T16:58:13+00:00",
-    "elapsed_sec": 96.5
+    "started_at": "2026-08-07T00:09:52+00:00",
+    "finished_at": "2026-08-07T00:11:23+00:00",
+    "elapsed_sec": 91.5
   }
 }

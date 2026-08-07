@@ -64,8 +64,8 @@
     "“藏锋已经把两个孩子送下山安排好了，别担心。”魏成继续道：“一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”"
   ],
   "analysis": {
-    "one_line": "望舒宫宫主姚望舒率众至玉屏观，云儿被送下山，屏姐胎儿引多方关注。",
-    "synopsis": "高冠老头闯入玉屏观，郭师兄与赵辞盈欲阻拦，被中年人拦下，称奉望舒宫宫主之命而来。姚望舒随后到达，表情难看，程百尺将王善拎出白光，检查王玉屏胎儿。云儿被吕藏锋带下山，与王善、老五、尉天齐一同前往望山城躲避。玉屏观内气氛紧张，赵辞盈情绪低落，魏成安慰她。赵辞盈知晓屏姐胎儿为天魔尊齐渊的螺生转世，但探查无果。",
+    "one_line": "玉屏观外洲修士云集，姚望舒亲临，屏姐胎儿引多方关注。",
+    "synopsis": "郭师兄质问高冠老头，中年人现身阻止冲突，称奉望舒宫宫主之命而来。姚望舒携众修士抵达玉屏观，程百尺检查王玉屏腹中胎儿，气氛紧张。云儿被吕藏锋带走，与王善、尉天齐下山避难。玉屏观内，赵辞盈情绪低落，魏成安慰。赵辞盈担忧胎儿为天魔尊齐渊螺生转世，事态紧急。",
     "time_setting": "未明确",
     "emotional_tone": "紧张压抑",
     "characters": [
@@ -75,23 +75,10 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "严肃，阻拦高冠老头",
+        "state": "紧张警惕，脸色难看",
         "actions": [
           "质问高冠老头，阻拦其靠近屏姐",
-          "与姚望舒交谈，强调探查胎儿"
-        ]
-      },
-      {
-        "name": "赵辞盈",
-        "aliases": [],
-        "role_in_chapter": "参与",
-        "mentioned_only": false,
-        "appearance_quotes": [],
-        "state": "情绪低落，怕哭出来",
-        "actions": [
-          "与郭师兄一同阻拦高冠老头",
-          "站在榕树下，情绪压抑",
-          "接过魏成的伞"
+          "与姚望舒交谈，强调探查过胎儿"
         ]
       },
       {
@@ -100,9 +87,9 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "皱眉",
+        "state": "皱眉，未作答",
         "actions": [
-          "闯入玉屏观，被郭师兄阻拦"
+          "被郭师兄阻拦，欲说话"
         ]
       },
       {
@@ -111,15 +98,15 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "未明确",
+        "state": "半空中，捻住黑剑与银针",
         "actions": [
-          "拦住黑剑与银针，说明来意"
+          "阻止郭师兄与赵辞盈攻击，说明来意"
         ]
       },
       {
         "name": "姚望舒",
         "aliases": [
-          "南洲独夫"
+          "望舒宫宫主"
         ],
         "role_in_chapter": "主导",
         "mentioned_only": false,
@@ -128,8 +115,7 @@
         ],
         "state": "表情难看，咬嘴唇",
         "actions": [
-          "到达玉屏观，让郭师兄让开",
-          "与郭师兄和赵辞盈交谈"
+          "到达玉屏观，与郭师兄交谈，安排事宜"
         ]
       },
       {
@@ -137,10 +123,12 @@
         "aliases": [],
         "role_in_chapter": "参与",
         "mentioned_only": false,
-        "appearance_quotes": [],
-        "state": "未明确",
+        "appearance_quotes": [
+          "老人"
+        ],
+        "state": "正派沉稳",
         "actions": [
-          "拎出王善，检查王玉屏胎儿"
+          "拎出王善，检查王玉屏肚子，安抚她"
         ]
       },
       {
@@ -151,7 +139,7 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "被光柱护住，被检查胎儿",
+        "state": "被光柱护住，被检查",
         "actions": [
           "被程百尺检查，被小胖转移注意力"
         ]
@@ -162,9 +150,9 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "被拎出白光，被送下山",
+        "state": "呆呆的",
         "actions": [
-          "被程百尺拎出，后被吕藏锋送下山"
+          "被程百尺拎出白光，后被带走下山"
         ]
       },
       {
@@ -172,10 +160,12 @@
         "aliases": [],
         "role_in_chapter": "参与",
         "mentioned_only": false,
-        "appearance_quotes": [],
-        "state": "受伤，被送下山",
+        "appearance_quotes": [
+          "额头的伤口"
+        ],
+        "state": "受伤，全身疼，但尚能忍受",
         "actions": [
-          "被光柱崩飞，被吕藏锋带走"
+          "被光柱崩飞，被吕藏锋带走下山"
         ]
       },
       {
@@ -184,9 +174,9 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "平常憨厚，此时能扛事",
+        "state": "憨厚但能扛事",
         "actions": [
-          "遮挡云儿，与屏姐说话"
+          "遮挡云儿，与屏姐说话转移注意力"
         ]
       },
       {
@@ -200,7 +190,18 @@
         "appearance_quotes": [],
         "state": "脸色迷茫",
         "actions": [
-          "带走云儿，安排下山"
+          "带走云儿，安排下山，告知情况"
+        ]
+      },
+      {
+        "name": "赵辞盈",
+        "aliases": [],
+        "role_in_chapter": "参与",
+        "mentioned_only": false,
+        "appearance_quotes": [],
+        "state": "情绪低落，怕哭出来",
+        "actions": [
+          "与郭师兄交谈，被魏成安慰"
         ]
       },
       {
@@ -209,7 +210,7 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "未明确",
+        "state": "平静",
         "actions": [
           "递伞给赵辞盈，安慰她"
         ]
@@ -217,39 +218,33 @@
       {
         "name": "铁石",
         "aliases": [],
-        "role_in_chapter": "提及",
-        "mentioned_only": true,
+        "role_in_chapter": "在场",
+        "mentioned_only": false,
         "appearance_quotes": [
-          "瘸腿的铁石"
+          "瘸腿"
         ],
-        "state": "未明确",
-        "actions": [
-          "出现在山门外"
-        ]
+        "state": "出现在山门外",
+        "actions": []
       },
       {
         "name": "裴林剑",
         "aliases": [
           "天门山山主"
         ],
-        "role_in_chapter": "提及",
-        "mentioned_only": true,
+        "role_in_chapter": "在场",
+        "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "未明确",
-        "actions": [
-          "出现在场间"
-        ]
+        "state": "出现在场间",
+        "actions": []
       },
       {
         "name": "刘全",
         "aliases": [],
-        "role_in_chapter": "提及",
-        "mentioned_only": true,
+        "role_in_chapter": "在场",
+        "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "未明确",
-        "actions": [
-          "轮番检查屏姐"
-        ]
+        "state": "与程百尺轮番检查屏姐",
+        "actions": []
       },
       {
         "name": "尉天齐",
@@ -257,36 +252,31 @@
           "老尉"
         ],
         "role_in_chapter": "提及",
-        "mentioned_only": true,
+        "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "未明确",
-        "actions": [
-          "被接上，一起下山"
-        ]
+        "state": "在忘园，被接上下山",
+        "actions": []
       },
       {
         "name": "老五",
         "aliases": [],
         "role_in_chapter": "提及",
-        "mentioned_only": true,
+        "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "未明确",
-        "actions": [
-          "被牵着下山"
-        ]
+        "state": "被王善牵着",
+        "actions": []
       }
     ],
     "scenes": [
       {
-        "name": "玉屏观",
+        "name": "玉屏观大殿",
         "type": "室内",
-        "time_of_day": "小雨",
+        "time_of_day": "未明确",
         "description_quotes": [
-          "小雨依然淅淅沥沥的落在青石板上"
+          "风过大殿"
         ],
         "present_characters": [
           "郭师兄",
-          "赵辞盈",
           "高冠老头",
           "中年人",
           "姚望舒",
@@ -296,19 +286,46 @@
           "云儿",
           "小胖",
           "吕藏锋",
+          "赵辞盈",
           "魏成",
           "铁石",
           "裴林剑",
           "刘全"
         ],
         "events": [
-          "高冠老头闯入，被阻拦",
-          "姚望舒到达，程百尺检查胎儿",
-          "云儿被送下山",
-          "赵辞盈情绪低落，魏成安慰"
+          "郭师兄质问高冠老头，中年人阻止冲突",
+          "姚望舒到达，程百尺检查王玉屏",
+          "云儿被吕藏锋带走，下山"
         ],
         "para_range": [
           1,
+          36
+        ]
+      },
+      {
+        "name": "玉屏观内",
+        "type": "室内",
+        "time_of_day": "小雨",
+        "description_quotes": [
+          "小雨依然淅淅沥沥的落在青石板上",
+          "赵辞盈站在榕树下，看着那因不平整而浅浅积了一层水的石板"
+        ],
+        "present_characters": [
+          "赵辞盈",
+          "郭师兄",
+          "姚望舒",
+          "小胖",
+          "王玉屏",
+          "程百尺",
+          "刘全",
+          "魏成"
+        ],
+        "events": [
+          "赵辞盈情绪低落，魏成安慰",
+          "郭师兄与姚望舒交谈，小胖转移屏姐注意力"
+        ],
+        "para_range": [
+          38,
           47
         ]
       }
@@ -323,15 +340,15 @@
       },
       {
         "para": 3,
-        "speaker": "未明确",
-        "addressee": "未明确",
+        "speaker": "中年人",
+        "addressee": "在场众人",
         "text": "慢着！",
         "manner": "高声道"
       },
       {
         "para": 5,
         "speaker": "中年人",
-        "addressee": "郭师兄和赵辞盈",
+        "addressee": "郭师兄与赵辞盈",
         "text": "我等奉望舒宫宫主之命而来，莫要紧张，宫主马上就到，事态紧急，还望见谅。",
         "manner": "低头看着下方紧张而警惕的二人开口"
       },
@@ -347,7 +364,7 @@
         "speaker": "程百尺",
         "addressee": "王玉屏",
         "text": "放松，莫要多思多想。",
-        "manner": "老人看着王玉屏开口"
+        "manner": "看着王玉屏开口，声音正派沉稳"
       },
       {
         "para": 26,
@@ -360,7 +377,14 @@
         "para": 27,
         "speaker": "吕藏锋",
         "addressee": "云儿",
-        "text": "嘘。别说话，外面都是他洲来的大人物，修为很高。",
+        "text": "嘘。",
+        "manner": "捂住她的嘴，随后努力扯出一张笑脸道"
+      },
+      {
+        "para": 27,
+        "speaker": "吕藏锋",
+        "addressee": "云儿",
+        "text": "别说话，外面都是他洲来的大人物，修为很高。",
         "manner": "捂住她的嘴，随后努力扯出一张笑脸道"
       },
       {
@@ -368,7 +392,7 @@
         "speaker": "吕藏锋",
         "addressee": "云儿",
         "text": "屏姐那可能要出些小问题，我和姚望舒他们是来解决的，这几天玉屏山一定会封山，会有大量修士出现，甚至可能发生斗法，忘园也不太安全，一会儿我带你、王善和老尉一起下山，在望山城屏姐有户小院子，你们在那躲几天。",
-        "manner": "想了想，然后低声道"
+        "manner": "低声道"
       },
       {
         "para": 31,
@@ -381,35 +405,42 @@
         "para": 32,
         "speaker": "云儿",
         "addressee": "吕藏锋",
-        "text": "没事。那么多大人物来，那屏姐应该不会有事吧！",
-        "manner": "摇头，随后抬头问"
+        "text": "没事。",
+        "manner": "摇头"
+      },
+      {
+        "para": 32,
+        "speaker": "云儿",
+        "addressee": "吕藏锋",
+        "text": "那么多大人物来，那屏姐应该不会有事吧！",
+        "manner": "随后抬头问"
       },
       {
         "para": 34,
         "speaker": "吕藏锋",
         "addressee": "云儿",
         "text": "不知道。",
-        "manner": "抿嘴，想了想最后还是决定如实讲给这个过于早熟的小丫头"
-      },
-      {
-        "para": 40,
-        "speaker": "赵辞盈",
-        "addressee": "未明确",
-        "text": "螺生",
-        "manner": "内心独白"
+        "manner": "抿嘴，想了想"
       },
       {
         "para": 45,
         "speaker": "魏成",
         "addressee": "赵辞盈",
         "text": "没事吧？",
-        "manner": "缓缓开口道"
+        "manner": "缓缓开口"
       },
       {
         "para": 47,
         "speaker": "魏成",
         "addressee": "赵辞盈",
-        "text": "藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。",
+        "text": "藏锋已经把两个孩子送下山安排好了，别担心。",
+        "manner": "继续道"
+      },
+      {
+        "para": 47,
+        "speaker": "魏成",
+        "addressee": "赵辞盈",
+        "text": "一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。",
         "manner": "继续道"
       }
     ],
@@ -445,6 +476,18 @@
         "kind": "情绪感受"
       },
       {
+        "para": 28,
+        "character": "云儿",
+        "text": "这是废话，那帮人肯定有注意到云儿这个小魔修，只是云儿这个魔修太小了，发生的事情又太大，没人搭理而已。",
+        "kind": "判断推理"
+      },
+      {
+        "para": 29,
+        "character": "云儿",
+        "text": "但云儿在这，别的宗门的人根本不认识，万一当成魔修什么的，解释起来也是麻烦，身份毕竟过于敏感。",
+        "kind": "判断推理"
+      },
+      {
         "para": 40,
         "character": "赵辞盈",
         "text": "但赵辞盈知道这是没意义的，那是天魔尊齐渊，那是响彻九洲的那道“螺生”，她也偷偷在屏姐睡着的时候探查过许多次，但那些术法在这两个名字面前不会给到任何结果。",
@@ -465,11 +508,6 @@
     ],
     "narration": [
       {
-        "para": 3,
-        "text": "这便是无话可说了，黑剑与银针便要直刺而下，却听有人高声道：“慢着！”",
-        "function": "情节交代"
-      },
-      {
         "para": 4,
         "text": "风过大殿，郭师兄与赵辞盈来不及反应，却见一个中年人站在了半空中，两只手分别捻住了黑剑与银针，那黑剑和银针便安静了下来。",
         "function": "情节交代"
@@ -485,6 +523,11 @@
         "function": "情节交代"
       },
       {
+        "para": 9,
+        "text": "然后瘸腿的铁石出现在了山门外。",
+        "function": "人物出场"
+      },
+      {
         "para": 10,
         "text": "而那个能决定南洲一切的白裙女孩终于也到达了此地。",
         "function": "人物背景"
@@ -495,89 +538,14 @@
         "function": "情节交代"
       },
       {
-        "para": 14,
-        "text": "老人说话的声音实在正派沉稳，王玉屏让觉得很可靠。",
-        "function": "情节交代"
-      },
-      {
-        "para": 15,
-        "text": "大殿里小胖伸手缓缓把云儿移到自己身后，用自己的身体完全遮挡住外面的视线，云儿捂着胸口靠着小胖的后背探头往外看，她全身很疼，但尚能忍受。",
-        "function": "情节交代"
-      },
-      {
-        "para": 20,
-        "text": "此时主殿里热闹起来，有白袍修士不断落下，布置阵法之类的，还有天门山山主裴林剑也出现在场间，而姚望舒与郭师兄和赵辞盈低声交谈着什么，不时便看向屏姐。",
-        "function": "情节交代"
-      },
-      {
-        "para": 21,
-        "text": "郭师兄的脸色很难看，赵辞盈几次捂嘴，不断地摇头。",
-        "function": "情节交代"
-      },
-      {
-        "para": 23,
-        "text": "忽然她感觉自己被人从小胖的后背抓了起来，她一惊下意识地抓住小胖的衣袖，小胖回头一把抓住她，可看了一眼，却送开了手，点头，然后往郭师兄那边跑去。",
-        "function": "情节交代"
-      },
-      {
-        "para": 24,
-        "text": "显然小胖也看见那边情况不太好，不过为了云儿还是挡在这儿。",
-        "function": "情节交代"
-      },
-      {
-        "para": 25,
-        "text": "云儿被直接从郭师兄撞开的墙带到了后殿，她此时抬头，才发现拉自己的人是吕藏锋，怪不得小胖很放心的把自己交给了对方。",
-        "function": "情节交代"
-      },
-      {
-        "para": 28,
-        "text": "这是废话，那帮人肯定有注意到云儿这个小魔修，只是云儿这个魔修太小了，发生的事情又太大，没人搭理而已。",
-        "function": "情节交代"
-      },
-      {
-        "para": 29,
-        "text": "但云儿在这，别的宗门的人根本不认识，万一当成魔修什么的，解释起来也是麻烦，身份毕竟过于敏感。",
-        "function": "情节交代"
-      },
-      {
-        "para": 33,
-        "text": "吕藏锋抿嘴，想了想最后还是决定如实讲给这个过于早熟的小丫头。",
-        "function": "情节交代"
-      },
-      {
-        "para": 35,
-        "text": "剑仙直起身，脸色也有些迷茫。",
-        "function": "情节交代"
-      },
-      {
-        "para": 36,
-        "text": "很快，吕藏锋抱着受伤的云儿，王善牵着老五就从后门离开了玉屏观，去忘园接上尉天齐后，四个人一头驴便下了山。",
-        "function": "情节交代"
+        "para": 37,
+        "text": "。。。",
+        "function": "时间推移"
       },
       {
         "para": 38,
         "text": "玉屏观内气氛紧张而压抑，小雨依然淅淅沥沥的落在青石板上，赵辞盈站在榕树下，看着那因不平整而浅浅积了一层水的石板，感觉胸口一阵的上不来气。",
         "function": "环境渲染"
-      },
-      {
-        "para": 39,
-        "text": "郭师兄还在和姚望舒皱眉说着那些事，强调自己等人探查过好多次那个胎儿。",
-        "function": "情节交代"
-      },
-      {
-        "para": 41,
-        "text": "小胖则在光柱旁低声和被程百尺和刘全轮番检查的屏姐说话，这个小胖平常看着憨厚，但此时真的能扛起事情，即便知晓了大致的情况，依然能嬉皮笑脸的转移屏姐的注意力。",
-        "function": "情节交代"
-      },
-      {
-        "para": 44,
-        "text": "身后有人拍了拍她的肩头，赵辞盈深吸了口气压下沸腾的情绪，回过头，是魏成。",
-        "function": "情节交代"
-      },
-      {
-        "para": 46,
-        "text": "赵辞盈心不在焉的接过伞，点头不语。",
-        "function": "情节交代"
       }
     ],
     "beats": [
@@ -585,49 +553,49 @@
         "order": 1,
         "para_range": [
           1,
-          7
+          5
         ],
-        "scene": "玉屏观",
+        "scene": "玉屏观大殿",
         "beat_type": "冲突",
-        "summary": "高冠老头闯入，郭师兄阻拦，中年人出现拦下攻击。"
+        "summary": "郭师兄阻拦高冠老头，中年人现身阻止，说明来意。"
       },
       {
         "order": 2,
         "para_range": [
-          8,
-          14
+          6,
+          12
         ],
-        "scene": "玉屏观",
+        "scene": "玉屏观大殿",
         "beat_type": "转折",
-        "summary": "姚望舒到达，程百尺检查胎儿，气氛缓和但凝重。"
+        "summary": "姚望舒到达，气氛缓和，郭师兄让开。"
       },
       {
         "order": 3,
         "para_range": [
-          15,
-          22
+          13,
+          21
         ],
-        "scene": "玉屏观",
-        "beat_type": "情绪",
-        "summary": "云儿被小胖遮挡，感受到山雨欲来的氛围。"
+        "scene": "玉屏观大殿",
+        "beat_type": "铺垫",
+        "summary": "程百尺检查屏姐，云儿观察，众修士布置，气氛紧张。"
       },
       {
         "order": 4,
         "para_range": [
-          23,
+          22,
           36
         ],
-        "scene": "玉屏观",
-        "beat_type": "收束",
-        "summary": "吕藏锋带走云儿，安排下山，离开玉屏观。"
+        "scene": "玉屏观大殿",
+        "beat_type": "情绪",
+        "summary": "吕藏锋带走云儿等人下山，告知情况。"
       },
       {
         "order": 5,
         "para_range": [
-          37,
+          38,
           47
         ],
-        "scene": "玉屏观",
+        "scene": "玉屏观内",
         "beat_type": "情绪",
         "summary": "赵辞盈情绪低落，魏成安慰，众人撑住。"
       }
@@ -661,41 +629,37 @@
       },
       {
         "term": "南洲独夫",
-        "note": "姚望舒的称号"
+        "note": "对姚望舒的称呼"
       }
     ],
     "continuity": {
       "inherits": [
-        "前文光柱保护王玉屏和王善",
-        "齐渊自尽螺生转世"
+        "前文提到齐渊自尽并螺生转世，本章众人担忧胎儿为天魔尊齐渊螺生转世"
       ],
       "foreshadows": [
-        "屏姐胎儿可能引发斗法",
-        "玉屏山封山"
+        "玉屏山将封山，可能发生斗法"
       ],
       "reveals": [
-        "姚望舒亲自到来",
-        "胎儿为天魔尊齐渊的螺生"
+        "姚望舒亲临玉屏观，事态紧急"
       ]
     }
   },
   "quality": {
     "passed": false,
     "fail_reasons": [
-      "一致性分 88 < 90",
-      "逐字命中率 91.67% < 95%"
+      "一致性分 88 < 90"
     ],
     "structure_score": 88,
     "fidelity_score": 88,
     "verbatim": {
-      "total_quotes": 48,
+      "total_quotes": 41,
       "counts": {
-        "exact": 44,
-        "near": 4,
+        "exact": 40,
+        "near": 1,
         "miss": 0,
         "empty": 0
       },
-      "verbatim_rate": 0.9167,
+      "verbatim_rate": 0.9756,
       "misplaced_para_count": 0,
       "problems": [
         {
@@ -706,42 +670,17 @@
           "similarity": 0.7895,
           "para_correct": null,
           "field": "dialogues[0]"
-        },
-        {
-          "quote": "嘘。别说话，外面都是他洲来的大人物，修为很高。",
-          "para_claimed": 27,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.913,
-          "para_correct": null,
-          "field": "dialogues[6]"
-        },
-        {
-          "quote": "没事。那么多大人物来，那屏姐应该不会有事吧！",
-          "para_claimed": 32,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8636,
-          "para_correct": null,
-          "field": "dialogues[9]"
-        },
-        {
-          "quote": "藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。",
-          "para_claimed": 47,
-          "status": "near",
-          "para_found": null,
-          "similarity": 0.8298,
-          "para_correct": null,
-          "field": "dialogues[13]"
         }
       ]
     },
     "coverage": {
       "raw_speech_count": 18,
-      "extracted_dialogue_count": 14,
-      "missed_count": 0,
-      "dialogue_coverage": 1.0,
-      "missed_samples": []
+      "extracted_dialogue_count": 16,
+      "missed_count": 1,
+      "dialogue_coverage": 0.9444,
+      "missed_samples": [
+        "螺生"
+      ]
     },
     "repair_rounds": 1,
     "context_chapters_used": [
@@ -755,32 +694,38 @@
       "stage": "structure_review",
       "round": 0,
       "score": 88,
-      "verdict": "pass",
-      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 字数约 180，符合要求，但内容偏流水账，未明确点出核心冲突（胎儿身份引发的多方关注）及结果，可稍作提炼。beats 覆盖全章，para_range 递增且无重叠，但 beat 3 的 summary 与 beat 4 有部分重叠（云儿下山），且 beat 3 的 para_range 包含 15-29，其中 23-29 已涉及下山安排，建议调整边界。characters 无重复，但高冠老头与中年人身份未明确，且铁石、裴林剑、刘全等仅提及，role_in_chapter 标为“提及”但 mentioned_only 为 false，存在矛盾。scenes 的 present_characters 均能在 characters 中找到，但高冠老头、中年人、铁石等未在 characters 中标注为“提及”或“参与”，需统一。dialogues 的 speaker 均在 characters 中。narration 中 para 38 为环境渲染，未重复塞入。枚举值合法。上下文连贯性方面，人物命名与前文一致（姚望舒、吕藏锋、王玉屏等），aliases 合理。continuity.inherits 正确承接前文光柱和螺生转世。但 synopsis 中“众人皆知屏姐胎儿为天魔尊齐渊的螺生转世”与前文提要中“姚望舒意识到齐渊自尽并螺生转世”一致，但本章中赵辞盈内心独白提到“那是天魔尊齐渊，那是响彻九洲的那道‘螺生’”，说明众人已知，符合逻辑。未发现前文未铺垫的设定。主要扣分点：synopsis 概括性不足，beats 边界重叠，部分角色 mentioned_only 与 role_in_chapter 矛盾，以及高冠老头等角色信息不完整。",
+      "verdict": "revise",
+      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 字数约 150 字，符合要求，但内容略显流水账，未突出关键冲突和人物关系。beats 覆盖了主要情节，但第 2 个 beat 的 para_range 为 [6,12]，而第 3 个 beat 为 [13,21]，中间无重叠，但第 2 个 beat 的 summary 提到“郭师兄让开”，而实际第 7 段郭师兄说“待到姚望舒来，方能靠近”，存在轻微矛盾。characters 中“铁石”、“裴林剑”、“刘全”、“尉天齐”、“老五”等角色 role_in_chapter 为“提及”，但 scenes 中 present_characters 包含了“铁石”、“裴林剑”、“刘全”，而“尉天齐”、“老五”未出现在任何场景中，但 dialogues 中吕藏锋提到“老尉”，可能指尉天齐，但未在场景中出场，需确认。另外，characters 中“高冠老头”和“中年人”未给出具体姓名，但作为独立角色处理，可接受。scenes 中 present_characters 与 characters 基本一致，但“吕藏锋”未出现在任何场景的 present_characters 中，尽管他在第 4 个 beat 中带走云儿，应属于场景 1 或 2，需补充。dialogues 中 speaker 均能在 characters 中找到，但 para 3 的 speaker 为“未明说”，应明确为“中年人”或“郭师兄”。narration 中 para 37 为“。。。”，作为时间推移，但内容过于简单，且 para 38 的环境描写与 narration 重复，但可接受。上下文连贯性方面，人物命名与前文一致，如“姚望舒”、“程百尺”、“吕藏锋”等，aliases 合理。continuity.inherits 提到“前文提到齐渊自尽并螺生转世，本章确认胎儿为天魔尊齐渊”，与前文提要一致，但本章并未明确确认胎儿为天魔尊，只是众人担忧，因此表述略有偏差。情节推进与前文不矛盾，但“南洲独夫”这一称呼在前文未出现，但作为对姚望舒的称呼，可能为本章新提，需确认是否合理。总体而言，结构基本完整，但存在一些细节问题，如场景人物缺失、对话 speaker 不明、synopsis 略流水账等，因此扣分。",
       "issues": [
         {
+          "field": "scenes[0].present_characters",
+          "severity": "中等",
+          "problem": "吕藏锋在场景1中带走云儿，但未列入 present_characters。",
+          "suggestion": "将吕藏锋加入场景1的 present_characters。"
+        },
+        {
+          "field": "dialogues[1].speaker",
+          "severity": "中等",
+          "problem": "para 3 的 speaker 为“未明说”，应明确说话人。",
+          "suggestion": "根据上下文，该句应为“中年人”所说，建议改为“中年人”。"
+        },
+        {
           "field": "synopsis",
-          "severity": "中等",
-          "problem": "内容偏流水账，未突出核心冲突（胎儿身份引发的多方关注）及结果，缺乏概括性。",
-          "suggestion": "提炼核心事件，如“姚望舒亲临玉屏观，确认胎儿为螺生转世，云儿等被送下山避难，赵辞盈情绪崩溃”等。"
-        },
-        {
-          "field": "beats[3].para_range",
           "severity": "轻微",
-          "problem": "beat 3 的 para_range 为 15-29，但其中 23-29 已涉及云儿被送下山，与 beat 4 的 30-36 内容重叠。",
-          "suggestion": "调整 beat 3 的 para_range 为 15-22，将 23-29 归入 beat 4，或重新划分。"
+          "problem": "synopsis 略显流水账，未突出关键冲突和人物关系。",
+          "suggestion": "精简并突出核心矛盾，如姚望舒亲临、胎儿身份争议等。"
         },
         {
-          "field": "characters[2].role_in_chapter",
-          "severity": "中等",
-          "problem": "高冠老头、中年人、铁石、裴林剑、刘全等角色 role_in_chapter 标为“参与”或“提及”，但 mentioned_only 为 false，且部分角色仅出现一次，未明确其参与程度。",
-          "suggestion": "统一 role_in_chapter 与 mentioned_only 的逻辑，如仅提及则 mentioned_only 设为 true，role_in_chapter 设为“提及”。"
-        },
-        {
-          "field": "characters[2].state",
+          "field": "continuity.inherits",
           "severity": "轻微",
-          "problem": "高冠老头、中年人、铁石、裴林剑、刘全等角色的 state 均为“未明确”，信息缺失。",
-          "suggestion": "根据原文补充状态，如高冠老头“皱眉”，中年人“沉稳”等。"
+          "problem": "表述“本章确认胎儿为天魔尊齐渊”过于绝对，本章仅为众人担忧，并未确认。",
+          "suggestion": "改为“本章众人担忧胎儿为天魔尊齐渊螺生转世”。"
+        },
+        {
+          "field": "characters[12].role_in_chapter",
+          "severity": "轻微",
+          "problem": "铁石、裴林剑、刘全等角色 role_in_chapter 为“提及”，但 scenes 中 present_characters 包含他们，且 actions 为空，可能应为“参与”或“在场”。",
+          "suggestion": "根据实际出场情况调整 role_in_chapter，若在场但无动作，可改为“在场”。"
         }
       ],
       "checked_items": {
@@ -788,94 +733,86 @@
         "简介质量": "不通过",
         "beats覆盖": "通过",
         "人物去重": "通过",
-        "场景人物一致": "通过",
+        "场景人物一致": "不通过",
         "命名跨章一致": "通过",
         "上下文衔接": "通过"
       },
       "missing_items": {},
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 6108,
-        "completion_tokens": 926,
-        "total_tokens": 7034,
+        "prompt_tokens": 5359,
+        "completion_tokens": 1034,
+        "total_tokens": 6393,
         "prompt_tokens_details": {
           "cached_tokens": 1152
         },
         "prompt_cache_hit_tokens": 1152,
-        "prompt_cache_miss_tokens": 4956
+        "prompt_cache_miss_tokens": 4207
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:57:33+00:00"
+      "reviewed_at": "2026-08-07T00:10:37+00:00"
     },
     {
       "stage": "fidelity_review",
       "round": 0,
-      "score": 60,
-      "verdict": "fail",
-      "analysis": "臆造情况：程序报告指出 characters[2].appearance_quotes[0] 的“穿儒袍戴高冠的老者”为 miss，原文中并未出现此描述，属于臆造。改写情况：程序报告列出 4 处 near，包括 dialogues[0]（原文为“何人！？”但解析为“何人！？”，相似度 0.7895，可能因标点或空格差异）、dialogues[5]（原文为“嘘。”但解析为“嘘。”，相似度 0.913，可能因标点或空格差异）、dialogues[8]（原文为“没事。”但解析为“没事。”，相似度 0.8636，可能因标点或空格差异）、dialogues[11]（原文为“藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”但解析为“藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”，相似度 0.8298，可能因标点或空格差异）。这些 near 条目均需逐字核对，但程序已判定为改写，需修正。遗漏情况：程序报告台词覆盖率为 0.8889，missed_samples 包括“慢着！”（原文第 3 段）和“螺生”（原文第 40 段），这两处台词未进入 dialogues。此外，原文第 3 段的“慢着！”是重要台词，应补入；第 40 段的“螺生”是术语，但作为台词也应补入。张冠李戴情况：未发现明显错误，说话人归属基本正确。简介准确性：synopsis 基本忠于原文，但“众人皆知屏姐胎儿为天魔尊齐渊的螺生转世”这一表述在原文中仅赵辞盈一人知晓（第 40 段），并非“众人皆知”，属于失真概括。描写忠实度：除臆造的高冠老头外貌外，其他描写基本忠实，如姚望舒“白裙女孩”、铁石“瘸腿”等均与原文一致。",
+      "score": 72,
+      "verdict": "revise",
+      "analysis": "臆造情况：程序报告显示1条miss，即characters[1].appearance_quotes[0]“穿儒袍戴高冠的老者”，原文中仅称“高冠老头”，未提及“儒袍”，属于臆造。改写情况：程序报告有5条near，其中dialogues[0]“何人！？此地天门山玉屏观，非邀不得入！”与原文[1]“何人！？”等相比，原文为“何人！？此地天门山玉屏观，非邀不得入！”，但程序判定为near，可能因标点或空格差异，但内容基本一致；dialogues[6]“嘘。别说话，外面都是他洲来的大人物，修为很高。”与原文[27]“嘘。”和“别说话，外面都是他洲来的大人物，修为很高。”相比，原文分两句，解析合并为一句，属于轻微改写；dialogues[9]“没事。那么多大人物来，那屏姐应该不会有事吧！”与原文[32]“没事。”和“那么多大人物来，那屏姐应该不会有事吧！”相比，原文分两句，解析合并，属于轻微改写；dialogues[12]“藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”与原文[47]“藏锋已经把两个孩子送下山安排好了，别担心。”和“一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”相比，原文分两句，解析合并，属于轻微改写；characters[7].appearance_quotes[0]“额头有伤口”与原文[31]“看了看云儿额头的伤口”相比，原文为“额头的伤口”，解析为“额头有伤口”，属于轻微改写。遗漏情况：程序报告台词覆盖率为94.44%，missed_samples为“螺生”，但“螺生”在原文[40]中作为术语出现，并非独立台词，且已在terms中记录，故不视为遗漏。narration中遗漏了原文[4]“风过大殿，郭师兄与赵辞盈来不及反应，却见一个中年人站在了半空中，两只手分别捻住了黑剑与银针，那黑剑和银针便安静了下来。”这一关键动作描写，以及[8]“高冠老头皱眉，正欲说话，只见半空中几轮明月缓缓浮现，随后是一道道流光从远处天际划来。”和[9]“然后瘸腿的铁石出现在了山门外。”等情节交代，但narration已包含部分，未完全遗漏。张冠李戴情况：未发现说话人认错或心理活动归错人。简介准确性：synopsis基本忠于原文，但“众人担忧胎儿为天魔尊齐渊螺生转世”在原文中仅赵辞盈内心独白提及，未明确“众人担忧”，属于轻微失真。描写忠实度：除“儒袍”臆造外，其余描写基本忠实。",
       "issues": [
         {
-          "field": "characters[2].appearance_quotes[0]",
+          "field": "characters[1].appearance_quotes[0]",
           "severity": "严重",
           "type": "臆造",
-          "problem": "原文未描述高冠老头穿儒袍戴高冠，属于臆造外貌描写。",
-          "evidence": "原文第 1-13 段仅称“高冠老头”，未提及服饰。",
-          "suggestion": "删除该条 appearance_quotes，或改为原文中实际出现的描述，如“高冠老头”。"
+          "problem": "原文仅称“高冠老头”，未提及“穿儒袍”，属于臆造外貌描写。",
+          "evidence": "原文[1]“何人！？”郭师兄开口问，“此地天门山玉屏观，非邀不得入！”；[2]“那老头看了他一眼，并未作答，继续向前。”未描述服饰。",
+          "suggestion": "删除“穿儒袍”，仅保留“高冠老头”或“高冠老者”。"
         },
         {
-          "field": "dialogues[0].text",
+          "field": "dialogues[6].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定为 near，可能因标点或空格差异，需逐字核对。",
-          "evidence": "原文第 1 段为“何人！？此地天门山玉屏观，非邀不得入！”，解析文本相同，但程序相似度 0.7895，可能因标点或空格差异。",
-          "suggestion": "确保逐字复制原文，包括标点。"
+          "problem": "原文[27]为“嘘。”和“别说话，外面都是他洲来的大人物，修为很高。”两句，解析合并为一句，且省略了“捂住她的嘴，随后努力扯出一张笑脸道”的动作描写。",
+          "evidence": "原文[27]“嘘。”吕藏锋捂住她的嘴，随后努力扯出一张笑脸道：“别说话，外面都是他洲来的大人物，修为很高。”",
+          "suggestion": "将台词拆分为两句，并保留动作描写。"
         },
         {
-          "field": "dialogues[5].text",
+          "field": "dialogues[9].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定为 near，可能因标点或空格差异。",
-          "evidence": "原文第 27 段为“嘘。”但解析为“嘘。”，程序相似度 0.913，可能因标点或空格差异。",
-          "suggestion": "确保逐字复制原文。"
+          "problem": "原文[32]为“没事。”和“那么多大人物来，那屏姐应该不会有事吧！”两句，解析合并为一句。",
+          "evidence": "原文[32]“没事。”云儿摇头，随后抬头问，“那么多大人物来，那屏姐应该不会有事吧！”",
+          "suggestion": "将台词拆分为两句。"
         },
         {
-          "field": "dialogues[8].text",
+          "field": "dialogues[12].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定为 near，可能因标点或空格差异。",
-          "evidence": "原文第 32 段为“没事。”但解析为“没事。”，程序相似度 0.8636，可能因标点或空格差异。",
-          "suggestion": "确保逐字复制原文。"
+          "problem": "原文[47]为“藏锋已经把两个孩子送下山安排好了，别担心。”和“一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”两句，解析合并为一句。",
+          "evidence": "原文[47]“藏锋已经把两个孩子送下山安排好了，别担心。”魏成继续道：“一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”",
+          "suggestion": "将台词拆分为两句。"
         },
         {
-          "field": "dialogues[11].text",
+          "field": "characters[7].appearance_quotes[0]",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定为 near，可能因标点或空格差异。",
-          "evidence": "原文第 47 段为“藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”，解析文本相同，但程序相似度 0.8298，可能因标点或空格差异。",
-          "suggestion": "确保逐字复制原文。"
-        },
-        {
-          "field": "dialogues",
-          "severity": "中等",
-          "type": "遗漏",
-          "problem": "漏掉原文第 3 段的台词“慢着！”和第 40 段的“螺生”。",
-          "evidence": "程序报告 missed_samples 包括“慢着！”和“螺生”。",
-          "suggestion": "补入 dialogues，分别对应第 3 段和第 40 段。"
+          "problem": "原文[31]为“额头的伤口”，解析为“额头有伤口”，措辞略有改动。",
+          "evidence": "原文[31]“他看了看云儿额头的伤口皱眉”。",
+          "suggestion": "改为“额头的伤口”。"
         },
         {
           "field": "synopsis",
           "severity": "中等",
           "type": "失真概括",
-          "problem": "简介中“众人皆知屏姐胎儿为天魔尊齐渊的螺生转世”与原文不符，原文仅赵辞盈一人知晓。",
-          "evidence": "原文第 40 段“但赵辞盈知道这是没意义的，那是天魔尊齐渊，那是响彻九洲的那道‘螺生’”，未提及众人皆知。",
-          "suggestion": "改为“赵辞盈知晓屏姐胎儿为天魔尊齐渊的螺生转世”。"
+          "problem": "synopsis中“众人担忧胎儿为天魔尊齐渊螺生转世”表述为“众人”，但原文仅赵辞盈内心独白提及，未明确“众人担忧”。",
+          "evidence": "原文[40]“但赵辞盈知道这是没意义的，那是天魔尊齐渊，那是响彻九洲的那道‘螺生’”。",
+          "suggestion": "改为“赵辞盈担忧胎儿为天魔尊齐渊螺生转世”。"
         }
       ],
       "checked_items": {
         "无臆造": "不通过",
         "逐字准确": "不通过",
-        "对话无遗漏": "不通过",
+        "对话无遗漏": "通过",
         "独白无遗漏": "通过",
         "关键旁白无遗漏": "通过",
         "说话人归属正确": "通过",
@@ -883,74 +820,57 @@
         "人物场景描写忠实": "不通过"
       },
       "missing_items": {
-        "dialogues": [
+        "dialogues": [],
+        "monologues": [],
+        "narration": [
           {
-            "para": 3,
-            "text": "慢着！"
+            "para": 4,
+            "text": "风过大殿，郭师兄与赵辞盈来不及反应，却见一个中年人站在了半空中，两只手分别捻住了黑剑与银针，那黑剑和银针便安静了下来。",
+            "function": "情节交代"
           },
           {
-            "para": 40,
-            "text": "螺生"
+            "para": 8,
+            "text": "高冠老头皱眉，正欲说话，只见半空中几轮明月缓缓浮现，随后是一道道流光从远处天际划来。",
+            "function": "情节交代"
+          },
+          {
+            "para": 9,
+            "text": "然后瘸腿的铁石出现在了山门外。",
+            "function": "人物出场"
           }
         ],
-        "monologues": [],
-        "narration": [],
         "characters": [],
         "scenes": []
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 8056,
-        "completion_tokens": 1478,
-        "total_tokens": 9534,
+        "prompt_tokens": 7374,
+        "completion_tokens": 1735,
+        "total_tokens": 9109,
         "prompt_tokens_details": {
           "cached_tokens": 2432
         },
         "prompt_cache_hit_tokens": 2432,
-        "prompt_cache_miss_tokens": 5624
+        "prompt_cache_miss_tokens": 4942
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:57:50+00:00"
+      "reviewed_at": "2026-08-07T00:10:51+00:00"
     },
     {
       "stage": "fidelity_review",
       "round": 1,
       "score": 88,
       "verdict": "pass",
-      "analysis": "臆造情况：程序报告显示 miss 为 0，未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。改写情况：程序报告有 4 条 near 条目，均为标点或细微文字差异，未改变原意。具体为：dialogues[0] 原文为“何人！？”解析为“何人！？”，但相似度 0.7895，可能因标点或空格差异；dialogues[6] 原文为“嘘。”解析为“嘘。”，相似度 0.913，可能因句号或空格；dialogues[9] 原文为“没事。”解析为“没事。”，相似度 0.8636，可能因标点；dialogues[13] 原文为“藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”解析为“藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。”，相似度 0.8298，可能因标点或空格。这些差异不影响内容，但按规则每条扣 3 分，共扣 12 分。遗漏情况：程序报告台词覆盖率为 1.0，missed_samples 为空，对话无遗漏；独白方面，原文明显的心理活动如云儿在[16][17][18][19][22]的内心活动、赵辞盈在[40][42][43]的内心活动均已收录；关键旁白如[3][4][6][8][10][11][14][15][20][21][23][24][25][28][29][33][35][36][38][39][41][44][46]均已收录，未发现遗漏。张冠李戴情况：所有说话人归属正确，如[1]郭师兄、[5]中年人、[7]郭师兄、[13]程百尺、[26]云儿、[27]吕藏锋、[30]吕藏锋、[31]吕藏锋、[32]云儿、[34]吕藏锋、[45]魏成、[47]魏成，均与原文一致；心理活动归属正确，云儿和赵辞盈的独白均正确。简介准确性：synopsis 与原文事实相符，未加入原文没有的因果推断、评价或情绪判断，如“高冠老头闯入玉屏观，郭师兄与赵辞盈欲阻拦，被中年人拦下，称奉望舒宫宫主之命而来。姚望舒随后到达，表情难看，程百尺将王善拎出白光，检查王玉屏胎儿。云儿被吕藏锋带下山，与王善、老五、尉天齐一同前往望山城躲避。玉屏观内气氛紧张，赵辞盈情绪低落，魏成安慰她。赵辞盈知晓屏姐胎儿为天魔尊齐渊的螺生转世，但探查无果。”均可在原文找到依据。描写忠实度：人物外貌、服饰、场景陈设描述与原文一致，如姚望舒“白裙女孩”、铁石“瘸腿的铁石”、裴林剑“天门山山主”、场景“小雨依然淅淅沥沥的落在青石板上”等，均未篡改。",
+      "analysis": "臆造情况：程序报告显示无 miss 条目，未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 1 条 near，即 dialogues[0] 的“何人！？此地天门山玉屏观，非邀不得入！”，原文为“何人！？此地天门山玉屏观，非邀不得入！”，相似度 0.7895，可能因标点或空格差异导致，但内容逐字一致，判定为轻微改写，扣 3 分。\n遗漏情况：程序报告显示台词覆盖率为 0.9444，missed_samples 为“螺生”，但“螺生”并非完整台词，而是赵辞盈内心独白中的关键词，已在 monologues[7] 中完整包含，故不构成遗漏。对话、独白、关键旁白均无遗漏。\n张冠李戴情况：所有说话人归属正确，如郭师兄、中年人、程百尺、云儿、吕藏锋、魏成等，心理活动归属正确，人物场景安排无误。\n简介准确性：synopsis 与原文事实相符，未加入原文没有的因果推断、评价或情绪判断，准确概括了本章情节。\n描写忠实度：人物外貌、服饰、场景陈设描述与原文一致，如“白裙女孩”“瘸腿的铁石”“小雨淅淅沥沥落在青石板上”等，未发现篡改。\n综上，仅有一处轻微改写，其余各项均通过，评分 88 分。",
       "issues": [
         {
           "field": "dialogues[0].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "引用与原文存在细微差异，可能因标点或空格导致相似度未达 100%。",
-          "evidence": "原文[1]：'何人！？此地天门山玉屏观，非邀不得入！'；解析：'何人！？此地天门山玉屏观，非邀不得入！'",
-          "suggestion": "确保逐字复制原文，包括标点符号。"
-        },
-        {
-          "field": "dialogues[6].text",
-          "severity": "轻微",
-          "type": "改写",
-          "problem": "引用与原文存在细微差异，可能因标点或空格导致相似度未达 100%。",
-          "evidence": "原文[27]：'嘘。'；解析：'嘘。'",
-          "suggestion": "确保逐字复制原文，包括标点符号。"
-        },
-        {
-          "field": "dialogues[9].text",
-          "severity": "轻微",
-          "type": "改写",
-          "problem": "引用与原文存在细微差异，可能因标点或空格导致相似度未达 100%。",
-          "evidence": "原文[32]：'没事。'；解析：'没事。'",
-          "suggestion": "确保逐字复制原文，包括标点符号。"
-        },
-        {
-          "field": "dialogues[13].text",
-          "severity": "轻微",
-          "type": "改写",
-          "problem": "引用与原文存在细微差异，可能因标点或空格导致相似度未达 100%。",
-          "evidence": "原文[47]：'藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。'；解析：'藏锋已经把两个孩子送下山安排好了，别担心。一会儿也让孕妇宽心，不论如何，我们这些人也得先撑住。'",
-          "suggestion": "确保逐字复制原文，包括标点符号。"
+          "problem": "引用与原文存在细微差异，程序判定为 near，可能因标点或空格导致，但内容逐字一致。",
+          "evidence": "原文段落1：'何人！？此地天门山玉屏观，非邀不得入！'；解析结果：'何人！？此地天门山玉屏观，非邀不得入！'",
+          "suggestion": "确保引用与原文完全一致，包括标点符号。"
         }
       ],
       "checked_items": {
@@ -972,18 +892,18 @@
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 8046,
-        "completion_tokens": 1349,
-        "total_tokens": 9395,
+        "prompt_tokens": 7271,
+        "completion_tokens": 627,
+        "total_tokens": 7898,
         "prompt_tokens_details": {
           "cached_tokens": 2432
         },
         "prompt_cache_hit_tokens": 2432,
-        "prompt_cache_miss_tokens": 5614
+        "prompt_cache_miss_tokens": 4839
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-06T16:58:30+00:00"
+      "reviewed_at": "2026-08-07T00:11:28+00:00"
     }
   ],
   "run": {
@@ -992,8 +912,8 @@
     "phase": "all",
     "thinking": false,
     "llm_calls": 5,
-    "started_at": "2026-08-06T16:56:37+00:00",
-    "finished_at": "2026-08-06T16:58:30+00:00",
-    "elapsed_sec": 113.3
+    "started_at": "2026-08-07T00:09:52+00:00",
+    "finished_at": "2026-08-07T00:11:28+00:00",
+    "elapsed_sec": 96.2
   }
 }
