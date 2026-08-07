@@ -3,7 +3,7 @@
     "chars_per_sec": 4.5,
     "pause_factor": 1.2,
     "target_min": 28.0,
-    "episode_count": 269
+    "episode_count": 268
   },
   "episodes": [
     {
@@ -418,7 +418,7 @@
       "seq_end": 159,
       "chapters": 5,
       "minutes": 27.4,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 1,
       "season_name": "白噪音",
       "episode": 38,
@@ -495,7 +495,7 @@
       "seq_end": 190,
       "chapters": 4,
       "minutes": 29.3,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 1,
       "season_name": "白噪音",
       "episode": 45,
@@ -517,7 +517,7 @@
       "seq_end": 200,
       "chapters": 5,
       "minutes": 28.0,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 1,
       "season_name": "白噪音",
       "episode": 47,
@@ -649,7 +649,7 @@
       "seq_end": 253,
       "chapters": 3,
       "minutes": 24.8,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 2,
       "season_name": "血月升起",
       "episode": 12,
@@ -671,7 +671,7 @@
       "seq_end": 263,
       "chapters": 5,
       "minutes": 25.7,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 2,
       "season_name": "血月升起",
       "episode": 14,
@@ -704,7 +704,7 @@
       "seq_end": 277,
       "chapters": 4,
       "minutes": 27.8,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 2,
       "season_name": "血月升起",
       "episode": 17,
@@ -833,20 +833,20 @@
     },
     {
       "seq_start": 330,
-      "seq_end": 333,
-      "chapters": 4,
-      "minutes": 28.0,
-      "cut": "卷段中",
+      "seq_end": 334,
+      "chapters": 5,
+      "minutes": 30.9,
+      "cut": "软断",
       "season": 2,
       "season_name": "血月升起",
       "episode": 29,
       "code": "S02E29"
     },
     {
-      "seq_start": 334,
+      "seq_start": 335,
       "seq_end": 338,
-      "chapters": 5,
-      "minutes": 29.4,
+      "chapters": 4,
+      "minutes": 26.4,
       "cut": "卷段中",
       "season": 2,
       "season_name": "血月升起",
@@ -1023,7 +1023,7 @@
       "seq_end": 412,
       "chapters": 5,
       "minutes": 30.0,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 2,
       "season_name": "血月升起",
       "episode": 46,
@@ -1053,20 +1053,20 @@
     },
     {
       "seq_start": 422,
-      "seq_end": 426,
-      "chapters": 5,
-      "minutes": 31.6,
-      "cut": "卷段中",
+      "seq_end": 425,
+      "chapters": 4,
+      "minutes": 27.4,
+      "cut": "软断",
       "season": 3,
       "season_name": "南洲界",
       "episode": 3,
       "code": "S03E03"
     },
     {
-      "seq_start": 427,
-      "seq_end": 431,
+      "seq_start": 426,
+      "seq_end": 430,
       "chapters": 5,
-      "minutes": 29.9,
+      "minutes": 29.2,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1074,21 +1074,21 @@
       "code": "S03E04"
     },
     {
-      "seq_start": 432,
-      "seq_end": 436,
+      "seq_start": 431,
+      "seq_end": 435,
       "chapters": 5,
-      "minutes": 30.3,
-      "cut": "卷段中",
+      "minutes": 26.5,
+      "cut": "软断",
       "season": 3,
       "season_name": "南洲界",
       "episode": 5,
       "code": "S03E05"
     },
     {
-      "seq_start": 437,
-      "seq_end": 441,
-      "chapters": 5,
-      "minutes": 29.4,
+      "seq_start": 436,
+      "seq_end": 439,
+      "chapters": 4,
+      "minutes": 23.1,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1096,10 +1096,10 @@
       "code": "S03E06"
     },
     {
-      "seq_start": 442,
-      "seq_end": 446,
-      "chapters": 5,
-      "minutes": 33.6,
+      "seq_start": 440,
+      "seq_end": 443,
+      "chapters": 4,
+      "minutes": 28.6,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1107,10 +1107,10 @@
       "code": "S03E07"
     },
     {
-      "seq_start": 447,
-      "seq_end": 451,
-      "chapters": 5,
-      "minutes": 25.3,
+      "seq_start": 444,
+      "seq_end": 447,
+      "chapters": 4,
+      "minutes": 25.6,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1118,10 +1118,10 @@
       "code": "S03E08"
     },
     {
-      "seq_start": 452,
-      "seq_end": 456,
+      "seq_start": 448,
+      "seq_end": 452,
       "chapters": 5,
-      "minutes": 29.1,
+      "minutes": 24.0,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1129,10 +1129,10 @@
       "code": "S03E09"
     },
     {
-      "seq_start": 457,
-      "seq_end": 461,
+      "seq_start": 453,
+      "seq_end": 457,
       "chapters": 5,
-      "minutes": 25.4,
+      "minutes": 32.2,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1140,10 +1140,10 @@
       "code": "S03E10"
     },
     {
-      "seq_start": 462,
-      "seq_end": 466,
+      "seq_start": 458,
+      "seq_end": 462,
       "chapters": 5,
-      "minutes": 22.2,
+      "minutes": 20.9,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1151,10 +1151,10 @@
       "code": "S03E11"
     },
     {
-      "seq_start": 467,
-      "seq_end": 471,
+      "seq_start": 463,
+      "seq_end": 467,
       "chapters": 5,
-      "minutes": 21.5,
+      "minutes": 24.1,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1162,10 +1162,10 @@
       "code": "S03E12"
     },
     {
-      "seq_start": 472,
-      "seq_end": 476,
+      "seq_start": 468,
+      "seq_end": 472,
       "chapters": 5,
-      "minutes": 28.9,
+      "minutes": 24.3,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1173,10 +1173,10 @@
       "code": "S03E13"
     },
     {
-      "seq_start": 477,
-      "seq_end": 480,
-      "chapters": 4,
-      "minutes": 27.1,
+      "seq_start": 473,
+      "seq_end": 477,
+      "chapters": 5,
+      "minutes": 25.9,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1184,10 +1184,10 @@
       "code": "S03E14"
     },
     {
-      "seq_start": 481,
-      "seq_end": 484,
+      "seq_start": 478,
+      "seq_end": 481,
       "chapters": 4,
-      "minutes": 25.1,
+      "minutes": 30.7,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1195,10 +1195,10 @@
       "code": "S03E15"
     },
     {
-      "seq_start": 485,
-      "seq_end": 488,
-      "chapters": 4,
-      "minutes": 25.6,
+      "seq_start": 482,
+      "seq_end": 486,
+      "chapters": 5,
+      "minutes": 25.4,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1206,21 +1206,21 @@
       "code": "S03E16"
     },
     {
-      "seq_start": 489,
-      "seq_end": 492,
+      "seq_start": 487,
+      "seq_end": 490,
       "chapters": 4,
-      "minutes": 28.3,
-      "cut": "卷段中",
+      "minutes": 31.8,
+      "cut": "软断",
       "season": 3,
       "season_name": "南洲界",
       "episode": 17,
       "code": "S03E17"
     },
     {
-      "seq_start": 493,
-      "seq_end": 497,
-      "chapters": 5,
-      "minutes": 26.6,
+      "seq_start": 491,
+      "seq_end": 494,
+      "chapters": 4,
+      "minutes": 26.4,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1228,10 +1228,10 @@
       "code": "S03E18"
     },
     {
-      "seq_start": 498,
-      "seq_end": 501,
-      "chapters": 4,
-      "minutes": 31.0,
+      "seq_start": 495,
+      "seq_end": 499,
+      "chapters": 5,
+      "minutes": 29.9,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1239,10 +1239,10 @@
       "code": "S03E19"
     },
     {
-      "seq_start": 502,
-      "seq_end": 505,
+      "seq_start": 500,
+      "seq_end": 503,
       "chapters": 4,
-      "minutes": 29.8,
+      "minutes": 26.4,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1250,10 +1250,10 @@
       "code": "S03E20"
     },
     {
-      "seq_start": 506,
-      "seq_end": 509,
-      "chapters": 4,
-      "minutes": 27.6,
+      "seq_start": 504,
+      "seq_end": 506,
+      "chapters": 3,
+      "minutes": 28.1,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1261,10 +1261,10 @@
       "code": "S03E21"
     },
     {
-      "seq_start": 510,
-      "seq_end": 513,
-      "chapters": 4,
-      "minutes": 25.7,
+      "seq_start": 507,
+      "seq_end": 511,
+      "chapters": 5,
+      "minutes": 31.1,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1272,10 +1272,10 @@
       "code": "S03E22"
     },
     {
-      "seq_start": 514,
-      "seq_end": 517,
+      "seq_start": 512,
+      "seq_end": 515,
       "chapters": 4,
-      "minutes": 25.8,
+      "minutes": 26.4,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1283,10 +1283,10 @@
       "code": "S03E23"
     },
     {
-      "seq_start": 518,
-      "seq_end": 522,
+      "seq_start": 516,
+      "seq_end": 520,
       "chapters": 5,
-      "minutes": 30.2,
+      "minutes": 25.0,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1294,10 +1294,10 @@
       "code": "S03E24"
     },
     {
-      "seq_start": 523,
-      "seq_end": 527,
+      "seq_start": 521,
+      "seq_end": 525,
       "chapters": 5,
-      "minutes": 23.7,
+      "minutes": 29.5,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1305,10 +1305,10 @@
       "code": "S03E25"
     },
     {
-      "seq_start": 528,
-      "seq_end": 532,
+      "seq_start": 526,
+      "seq_end": 530,
       "chapters": 5,
-      "minutes": 25.4,
+      "minutes": 23.8,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1316,10 +1316,10 @@
       "code": "S03E26"
     },
     {
-      "seq_start": 533,
-      "seq_end": 536,
-      "chapters": 4,
-      "minutes": 28.6,
+      "seq_start": 531,
+      "seq_end": 535,
+      "chapters": 5,
+      "minutes": 29.2,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1327,10 +1327,10 @@
       "code": "S03E27"
     },
     {
-      "seq_start": 537,
-      "seq_end": 540,
-      "chapters": 4,
-      "minutes": 30.5,
+      "seq_start": 536,
+      "seq_end": 538,
+      "chapters": 3,
+      "minutes": 30.9,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1338,10 +1338,10 @@
       "code": "S03E28"
     },
     {
-      "seq_start": 541,
-      "seq_end": 545,
+      "seq_start": 539,
+      "seq_end": 543,
       "chapters": 5,
-      "minutes": 31.9,
+      "minutes": 28.4,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1349,21 +1349,21 @@
       "code": "S03E29"
     },
     {
-      "seq_start": 546,
-      "seq_end": 549,
+      "seq_start": 544,
+      "seq_end": 547,
       "chapters": 4,
-      "minutes": 25.3,
-      "cut": "卷段中",
+      "minutes": 29.1,
+      "cut": "软断",
       "season": 3,
       "season_name": "南洲界",
       "episode": 30,
       "code": "S03E30"
     },
     {
-      "seq_start": 550,
-      "seq_end": 552,
-      "chapters": 3,
-      "minutes": 24.6,
+      "seq_start": 548,
+      "seq_end": 551,
+      "chapters": 4,
+      "minutes": 27.5,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1371,10 +1371,10 @@
       "code": "S03E31"
     },
     {
-      "seq_start": 553,
-      "seq_end": 556,
+      "seq_start": 552,
+      "seq_end": 555,
       "chapters": 4,
-      "minutes": 27.2,
+      "minutes": 31.0,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1382,10 +1382,10 @@
       "code": "S03E32"
     },
     {
-      "seq_start": 557,
-      "seq_end": 561,
+      "seq_start": 556,
+      "seq_end": 560,
       "chapters": 5,
-      "minutes": 26.5,
+      "minutes": 24.6,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1393,10 +1393,10 @@
       "code": "S03E33"
     },
     {
-      "seq_start": 562,
-      "seq_end": 565,
+      "seq_start": 561,
+      "seq_end": 564,
       "chapters": 4,
-      "minutes": 27.1,
+      "minutes": 25.7,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1404,21 +1404,21 @@
       "code": "S03E34"
     },
     {
-      "seq_start": 566,
-      "seq_end": 569,
+      "seq_start": 565,
+      "seq_end": 568,
       "chapters": 4,
-      "minutes": 24.2,
-      "cut": "卷段中",
+      "minutes": 25.6,
+      "cut": "软断",
       "season": 3,
       "season_name": "南洲界",
       "episode": 35,
       "code": "S03E35"
     },
     {
-      "seq_start": 570,
-      "seq_end": 573,
+      "seq_start": 569,
+      "seq_end": 572,
       "chapters": 4,
-      "minutes": 27.6,
+      "minutes": 28.4,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1426,10 +1426,10 @@
       "code": "S03E36"
     },
     {
-      "seq_start": 574,
-      "seq_end": 578,
+      "seq_start": 573,
+      "seq_end": 577,
       "chapters": 5,
-      "minutes": 27.8,
+      "minutes": 26.6,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1437,10 +1437,10 @@
       "code": "S03E37"
     },
     {
-      "seq_start": 579,
-      "seq_end": 582,
+      "seq_start": 578,
+      "seq_end": 581,
       "chapters": 4,
-      "minutes": 29.5,
+      "minutes": 25.9,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1448,10 +1448,10 @@
       "code": "S03E38"
     },
     {
-      "seq_start": 583,
-      "seq_end": 586,
+      "seq_start": 582,
+      "seq_end": 585,
       "chapters": 4,
-      "minutes": 27.2,
+      "minutes": 32.6,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1459,21 +1459,21 @@
       "code": "S03E39"
     },
     {
-      "seq_start": 587,
-      "seq_end": 591,
+      "seq_start": 586,
+      "seq_end": 590,
       "chapters": 5,
-      "minutes": 25.2,
-      "cut": "卷段中",
+      "minutes": 27.2,
+      "cut": "软断",
       "season": 3,
       "season_name": "南洲界",
       "episode": 40,
       "code": "S03E40"
     },
     {
-      "seq_start": 592,
-      "seq_end": 596,
+      "seq_start": 591,
+      "seq_end": 595,
       "chapters": 5,
-      "minutes": 30.5,
+      "minutes": 27.3,
       "cut": "卷段中",
       "season": 3,
       "season_name": "南洲界",
@@ -1481,11 +1481,11 @@
       "code": "S03E41"
     },
     {
-      "seq_start": 597,
+      "seq_start": 596,
       "seq_end": 600,
-      "chapters": 4,
-      "minutes": 24.3,
-      "cut": "卷段中",
+      "chapters": 5,
+      "minutes": 30.8,
+      "cut": "软断",
       "season": 3,
       "season_name": "南洲界",
       "episode": 42,
@@ -1551,7 +1551,7 @@
       "seq_end": 625,
       "chapters": 3,
       "minutes": 27.2,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 4,
       "season_name": "人皇玺",
       "episode": 6,
@@ -1606,7 +1606,7 @@
       "seq_end": 649,
       "chapters": 5,
       "minutes": 26.0,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 4,
       "season_name": "人皇玺",
       "episode": 11,
@@ -1683,7 +1683,7 @@
       "seq_end": 672,
       "chapters": 4,
       "minutes": 30.2,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 4,
       "season_name": "人皇玺",
       "episode": 18,
@@ -1881,7 +1881,7 @@
       "seq_end": 756,
       "chapters": 5,
       "minutes": 23.9,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 4,
       "season_name": "人皇玺",
       "episode": 36,
@@ -1903,7 +1903,7 @@
       "seq_end": 766,
       "chapters": 5,
       "minutes": 31.5,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 4,
       "season_name": "人皇玺",
       "episode": 38,
@@ -1925,7 +1925,7 @@
       "seq_end": 776,
       "chapters": 5,
       "minutes": 26.5,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 4,
       "season_name": "人皇玺",
       "episode": 40,
@@ -1991,7 +1991,7 @@
       "seq_end": 800,
       "chapters": 4,
       "minutes": 22.2,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 4,
       "season_name": "人皇玺",
       "episode": 46,
@@ -2013,7 +2013,7 @@
       "seq_end": 810,
       "chapters": 5,
       "minutes": 29.6,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
       "episode": 2,
@@ -2035,7 +2035,7 @@
       "seq_end": 820,
       "chapters": 5,
       "minutes": 27.1,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
       "episode": 4,
@@ -2057,7 +2057,7 @@
       "seq_end": 830,
       "chapters": 5,
       "minutes": 33.1,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
       "episode": 6,
@@ -2065,9 +2065,9 @@
     },
     {
       "seq_start": 831,
-      "seq_end": 834,
-      "chapters": 4,
-      "minutes": 24.3,
+      "seq_end": 835,
+      "chapters": 5,
+      "minutes": 33.2,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2075,21 +2075,21 @@
       "code": "S05E07"
     },
     {
-      "seq_start": 835,
-      "seq_end": 839,
+      "seq_start": 836,
+      "seq_end": 840,
       "chapters": 5,
-      "minutes": 28.3,
-      "cut": "卷段中",
+      "minutes": 27.7,
+      "cut": "硬断",
       "season": 5,
       "season_name": "螺生",
       "episode": 8,
       "code": "S05E08"
     },
     {
-      "seq_start": 840,
-      "seq_end": 844,
+      "seq_start": 841,
+      "seq_end": 845,
       "chapters": 5,
-      "minutes": 28.1,
+      "minutes": 29.2,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2097,21 +2097,21 @@
       "code": "S05E09"
     },
     {
-      "seq_start": 845,
-      "seq_end": 849,
+      "seq_start": 846,
+      "seq_end": 850,
       "chapters": 5,
-      "minutes": 26.1,
-      "cut": "卷段中",
+      "minutes": 22.2,
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
       "episode": 10,
       "code": "S05E10"
     },
     {
-      "seq_start": 850,
-      "seq_end": 854,
+      "seq_start": 851,
+      "seq_end": 855,
       "chapters": 5,
-      "minutes": 29.2,
+      "minutes": 31.9,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2119,10 +2119,10 @@
       "code": "S05E11"
     },
     {
-      "seq_start": 855,
-      "seq_end": 859,
+      "seq_start": 856,
+      "seq_end": 860,
       "chapters": 5,
-      "minutes": 29.9,
+      "minutes": 26.0,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2130,10 +2130,10 @@
       "code": "S05E12"
     },
     {
-      "seq_start": 860,
-      "seq_end": 863,
+      "seq_start": 861,
+      "seq_end": 864,
       "chapters": 4,
-      "minutes": 28.7,
+      "minutes": 28.5,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2141,10 +2141,10 @@
       "code": "S05E13"
     },
     {
-      "seq_start": 864,
-      "seq_end": 868,
+      "seq_start": 865,
+      "seq_end": 869,
       "chapters": 5,
-      "minutes": 26.6,
+      "minutes": 29.0,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2152,10 +2152,10 @@
       "code": "S05E14"
     },
     {
-      "seq_start": 869,
-      "seq_end": 873,
+      "seq_start": 870,
+      "seq_end": 874,
       "chapters": 5,
-      "minutes": 28.2,
+      "minutes": 24.6,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2163,10 +2163,10 @@
       "code": "S05E15"
     },
     {
-      "seq_start": 874,
-      "seq_end": 878,
+      "seq_start": 875,
+      "seq_end": 879,
       "chapters": 5,
-      "minutes": 26.9,
+      "minutes": 30.6,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2174,10 +2174,10 @@
       "code": "S05E16"
     },
     {
-      "seq_start": 879,
-      "seq_end": 882,
+      "seq_start": 880,
+      "seq_end": 883,
       "chapters": 4,
-      "minutes": 30.5,
+      "minutes": 29.5,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2185,21 +2185,21 @@
       "code": "S05E17"
     },
     {
-      "seq_start": 883,
-      "seq_end": 885,
-      "chapters": 3,
-      "minutes": 22.6,
-      "cut": "卷段中",
+      "seq_start": 884,
+      "seq_end": 888,
+      "chapters": 5,
+      "minutes": 34.3,
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
       "episode": 18,
       "code": "S05E18"
     },
     {
-      "seq_start": 886,
-      "seq_end": 889,
-      "chapters": 4,
-      "minutes": 22.9,
+      "seq_start": 889,
+      "seq_end": 893,
+      "chapters": 5,
+      "minutes": 27.3,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2207,10 +2207,10 @@
       "code": "S05E19"
     },
     {
-      "seq_start": 890,
-      "seq_end": 894,
+      "seq_start": 894,
+      "seq_end": 898,
       "chapters": 5,
-      "minutes": 23.2,
+      "minutes": 18.4,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
@@ -2218,26 +2218,15 @@
       "code": "S05E20"
     },
     {
-      "seq_start": 895,
-      "seq_end": 899,
+      "seq_start": 899,
+      "seq_end": 903,
       "chapters": 5,
-      "minutes": 21.1,
+      "minutes": 27.7,
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
       "episode": 21,
       "code": "S05E21"
-    },
-    {
-      "seq_start": 900,
-      "seq_end": 903,
-      "chapters": 4,
-      "minutes": 23.4,
-      "cut": "卷段中",
-      "season": 5,
-      "season_name": "螺生",
-      "episode": 22,
-      "code": "S05E22"
     },
     {
       "seq_start": 904,
@@ -2247,8 +2236,8 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 23,
-      "code": "S05E23"
+      "episode": 22,
+      "code": "S05E22"
     },
     {
       "seq_start": 907,
@@ -2258,8 +2247,8 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 24,
-      "code": "S05E24"
+      "episode": 23,
+      "code": "S05E23"
     },
     {
       "seq_start": 912,
@@ -2269,19 +2258,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 25,
-      "code": "S05E25"
+      "episode": 24,
+      "code": "S05E24"
     },
     {
       "seq_start": 916,
       "seq_end": 920,
       "chapters": 5,
       "minutes": 26.4,
-      "cut": "卷段中",
+      "cut": "硬断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 26,
-      "code": "S05E26"
+      "episode": 25,
+      "code": "S05E25"
     },
     {
       "seq_start": 921,
@@ -2291,19 +2280,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 27,
-      "code": "S05E27"
+      "episode": 26,
+      "code": "S05E26"
     },
     {
       "seq_start": 926,
       "seq_end": 930,
       "chapters": 5,
       "minutes": 21.3,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 28,
-      "code": "S05E28"
+      "episode": 27,
+      "code": "S05E27"
     },
     {
       "seq_start": 931,
@@ -2313,19 +2302,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 29,
-      "code": "S05E29"
+      "episode": 28,
+      "code": "S05E28"
     },
     {
       "seq_start": 936,
       "seq_end": 940,
       "chapters": 5,
       "minutes": 26.3,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 30,
-      "code": "S05E30"
+      "episode": 29,
+      "code": "S05E29"
     },
     {
       "seq_start": 941,
@@ -2335,19 +2324,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 31,
-      "code": "S05E31"
+      "episode": 30,
+      "code": "S05E30"
     },
     {
       "seq_start": 946,
       "seq_end": 950,
       "chapters": 5,
       "minutes": 29.4,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 32,
-      "code": "S05E32"
+      "episode": 31,
+      "code": "S05E31"
     },
     {
       "seq_start": 951,
@@ -2357,19 +2346,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 33,
-      "code": "S05E33"
+      "episode": 32,
+      "code": "S05E32"
     },
     {
       "seq_start": 956,
       "seq_end": 960,
       "chapters": 5,
       "minutes": 23.4,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 34,
-      "code": "S05E34"
+      "episode": 33,
+      "code": "S05E33"
     },
     {
       "seq_start": 961,
@@ -2379,19 +2368,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 35,
-      "code": "S05E35"
+      "episode": 34,
+      "code": "S05E34"
     },
     {
       "seq_start": 966,
       "seq_end": 970,
       "chapters": 5,
       "minutes": 22.5,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 36,
-      "code": "S05E36"
+      "episode": 35,
+      "code": "S05E35"
     },
     {
       "seq_start": 971,
@@ -2401,19 +2390,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 37,
-      "code": "S05E37"
+      "episode": 36,
+      "code": "S05E36"
     },
     {
       "seq_start": 976,
       "seq_end": 980,
       "chapters": 5,
       "minutes": 31.5,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 38,
-      "code": "S05E38"
+      "episode": 37,
+      "code": "S05E37"
     },
     {
       "seq_start": 981,
@@ -2423,8 +2412,8 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 39,
-      "code": "S05E39"
+      "episode": 38,
+      "code": "S05E38"
     },
     {
       "seq_start": 986,
@@ -2434,8 +2423,8 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 40,
-      "code": "S05E40"
+      "episode": 39,
+      "code": "S05E39"
     },
     {
       "seq_start": 991,
@@ -2445,19 +2434,19 @@
       "cut": "卷段中",
       "season": 5,
       "season_name": "螺生",
-      "episode": 41,
-      "code": "S05E41"
+      "episode": 40,
+      "code": "S05E40"
     },
     {
       "seq_start": 996,
       "seq_end": 1000,
       "chapters": 5,
       "minutes": 32.0,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 5,
       "season_name": "螺生",
-      "episode": 42,
-      "code": "S05E42"
+      "episode": 41,
+      "code": "S05E41"
     },
     {
       "seq_start": 1001,
@@ -2530,7 +2519,7 @@
       "seq_end": 1028,
       "chapters": 4,
       "minutes": 28.7,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 6,
       "season_name": "归玉屏",
       "episode": 7,
@@ -2651,7 +2640,7 @@
       "seq_end": 1075,
       "chapters": 5,
       "minutes": 31.4,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 6,
       "season_name": "归玉屏",
       "episode": 18,
@@ -2783,7 +2772,7 @@
       "seq_end": 1127,
       "chapters": 4,
       "minutes": 27.3,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 6,
       "season_name": "归玉屏",
       "episode": 30,
@@ -2882,7 +2871,7 @@
       "seq_end": 1167,
       "chapters": 5,
       "minutes": 30.1,
-      "cut": "卷段中",
+      "cut": "软断",
       "season": 6,
       "season_name": "归玉屏",
       "episode": 39,
@@ -2901,20 +2890,20 @@
     },
     {
       "seq_start": 1173,
-      "seq_end": 1176,
-      "chapters": 4,
-      "minutes": 28.0,
-      "cut": "卷段中",
+      "seq_end": 1177,
+      "chapters": 5,
+      "minutes": 33.1,
+      "cut": "硬断",
       "season": 6,
       "season_name": "归玉屏",
       "episode": 41,
       "code": "S06E41"
     },
     {
-      "seq_start": 1177,
-      "seq_end": 1181,
+      "seq_start": 1178,
+      "seq_end": 1182,
       "chapters": 5,
-      "minutes": 25.4,
+      "minutes": 25.9,
       "cut": "卷段中",
       "season": 6,
       "season_name": "归玉屏",
@@ -2922,10 +2911,10 @@
       "code": "S06E42"
     },
     {
-      "seq_start": 1182,
+      "seq_start": 1183,
       "seq_end": 1186,
-      "chapters": 5,
-      "minutes": 31.3,
+      "chapters": 4,
+      "minutes": 25.7,
       "cut": "卷段中",
       "season": 6,
       "season_name": "归玉屏",
@@ -2959,7 +2948,7 @@
       "seq_end": 1200,
       "chapters": 4,
       "minutes": 30.1,
-      "cut": "卷段中",
+      "cut": "硬断",
       "season": 6,
       "season_name": "归玉屏",
       "episode": 46,
