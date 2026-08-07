@@ -810,6 +810,62 @@ def test_image_api() -> None:
     check("矩阵 id 无重复", len(ids) == len(mx["targets"]) + len(mx["styles"]))
 
 
+# ------------------------------------------------------------------ 10. 分集求解
+def test_episode_plan() -> None:
+    print("\n[10] 分集规划求解器")
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import s10_episode_plan as s10
+
+    # 均匀的假章节：每章 7 分钟，4 章一集正好 28 分
+    even = [7.0] * 40
+    eps = s10.plan_range(1, 40, even, hard_cuts=set(), soft_cuts=set())
+    check("均匀输入切出等长集", all(e["chapters"] == 4 for e in eps), 
+          str([e["chapters"] for e in eps]))
+    check("覆盖全部章节且不重不漏",
+          [s for e in eps for s in range(e["seq_start"], e["seq_end"] + 1)] == list(range(1, 41)))
+
+    # 长短悬殊。用贴近全书真实分布的输入：均值约 6 分，夹杂 1.5 分的短章
+    # 和 15 分的长章。固定 4 章/集在这种输入上会做出 6 分和 46 分的集。
+    import random
+    random.seed(20260807)
+    uneven = [random.choice([1.5, 3, 5, 6, 7, 8, 11, 15]) for _ in range(120)]
+    eps2 = s10.plan_range(1, len(uneven), uneven, set(), set())
+    ms = [e["minutes"] for e in eps2]
+    fixed4 = [sum(uneven[i:i + 4]) for i in range(0, 120, 4)]
+    check("按时长打包显著优于固定章数",
+          max(ms) - min(ms) < (max(fixed4) - min(fixed4)) * 0.6,
+          f"求解 {min(ms):.0f}~{max(ms):.0f} 分 vs 固定4章 "
+          f"{min(fixed4):.0f}~{max(fixed4):.0f} 分")
+    check("每集都落在硬区间内",
+          all(s10.HARD_LO <= x <= s10.HARD_HI for x in ms),
+          f"{sum(1 for x in ms if s10.HARD_LO <= x <= s10.HARD_HI)}/{len(ms)}")
+    check("章数随时长自动变化", len({e["chapters"] for e in eps2}) > 1,
+          str(sorted({e["chapters"] for e in eps2})))
+
+    # 硬断点：一集绝不能跨过去
+    hard = {12, 24}
+    eps3 = s10.plan_range(1, 40, even, hard_cuts=hard, soft_cuts=set())
+    crossed = [e for e in eps3 for c in hard if e["seq_start"] <= c < e["seq_end"]]
+    check("一集不跨硬断点", not crossed, str([(e["seq_start"], e["seq_end"]) for e in crossed]))
+    check("硬断点确实成了收尾处",
+          all(any(e["seq_end"] == c for e in eps3) for c in hard))
+
+    # 断点惩罚要真的起作用：给了软断点就该往软断点上靠
+    # 软断点间隔 4 章——每章 7 分钟，4 章正好 28 分，落在舒适区内。
+    # 若间隔 5 章（35 分）时长惩罚会压过断点奖励，那时不靠断点才是对的。
+    soft = {4, 8, 12, 16, 20, 24, 28, 32, 36}
+    eps4 = s10.plan_range(1, 40, even, set(), soft)
+    on = sum(1 for e in eps4 if e["seq_end"] in soft or e["seq_end"] == 40)
+    check("尽量收在断点上", on >= len(eps4) - 1, f"{on}/{len(eps4)} 集收在断点")
+
+    # 时长惩罚的形状
+    check("目标时长罚分最低",
+          s10.duration_penalty(s10.TARGET_MIN) < s10.duration_penalty(s10.SOFT_LO)
+          < s10.duration_penalty(s10.HARD_LO - 1))
+    check("越过硬区间罚到几乎不可选",
+          s10.duration_penalty(s10.HARD_HI + 1) > 1e4)
+
+
 def main() -> None:
     print(config.describe())
     test_novel()
@@ -821,6 +877,7 @@ def main() -> None:
     test_streaming()
     test_asset_build()
     test_image_api()
+    test_episode_plan()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")
