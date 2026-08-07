@@ -1,0 +1,44 @@
+{
+  "canonical_name": "赌徒们",
+  "aliases": [
+    "赌徒",
+    "众赌徒"
+  ],
+  "first_seq": 17,
+  "last_seq": 18,
+  "chapter_count": 2,
+  "chapters": [
+    17,
+    18
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 17,
+      "state": "贪财，疯狂"
+    },
+    {
+      "seq": 18,
+      "state": "在园外喊叫，声音嘶哑"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 17,
+      "actions": [
+        "喊“我是一只狗”换银子"
+      ]
+    },
+    {
+      "seq": 18,
+      "actions": [
+        "喊叫至天明"
+      ]
+    }
+  ],
+  "id": "c252_赌徒们"
+}

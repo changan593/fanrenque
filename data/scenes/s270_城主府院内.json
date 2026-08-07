@@ -1,0 +1,30 @@
+{
+  "name": "城主府院内",
+  "first_seq": 14,
+  "chapter_count": 1,
+  "chapters": [
+    14
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚望舒": 1,
+    "姚城主": 1
+  },
+  "events": [
+    {
+      "seq": 14,
+      "events": [
+        "唐真恢复",
+        "向城主提出条件"
+      ]
+    }
+  ],
+  "id": "s270_城主府院内"
+}

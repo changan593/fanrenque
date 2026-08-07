@@ -1,0 +1,30 @@
+{
+  "name": "一处民房的院子",
+  "first_seq": 928,
+  "chapter_count": 1,
+  "chapters": [
+    928
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "古命好": 1
+  },
+  "events": [
+    {
+      "seq": 928,
+      "events": [
+        "唐真埋葬婴孩",
+        "古命好解释螺生术法",
+        "古命好准备离开"
+      ]
+    }
+  ],
+  "id": "s1102_一处民房的院子"
+}

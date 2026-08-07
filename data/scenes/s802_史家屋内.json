@@ -1,0 +1,29 @@
+{
+  "name": "史家屋内",
+  "first_seq": 606,
+  "chapter_count": 1,
+  "chapters": [
+    606
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "史二郎": 1,
+    "史母": 1
+  },
+  "events": [
+    {
+      "seq": 606,
+      "events": [
+        "史二郎询问母亲身体",
+        "母亲叮嘱别伤无辜"
+      ]
+    }
+  ],
+  "id": "s802_史家屋内"
+}

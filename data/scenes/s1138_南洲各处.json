@@ -1,0 +1,29 @@
+{
+  "name": "南洲各处",
+  "first_seq": 960,
+  "chapter_count": 1,
+  "chapters": [
+    960
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "当日": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "裴林剑": 1,
+    "南洲修士": 1
+  },
+  "events": [
+    {
+      "seq": 960,
+      "events": [
+        "血月令发出，各派响应",
+        "南洲高空出现流星"
+      ]
+    }
+  ],
+  "id": "s1138_南洲各处"
+}

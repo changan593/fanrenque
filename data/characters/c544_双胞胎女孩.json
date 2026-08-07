@@ -1,0 +1,42 @@
+{
+  "canonical_name": "双胞胎女孩",
+  "aliases": [
+    "葵",
+    "粉裙姑娘"
+  ],
+  "first_seq": 518,
+  "last_seq": 518,
+  "chapter_count": 1,
+  "chapters": [
+    518
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 518,
+      "quote": "一个穿着藏青色的短衣短打，一个穿着淡粉色的长裙"
+    },
+    {
+      "seq": 518,
+      "quote": "二人长得一模一样，但是表情却完全不同，粉裙女孩怯怯的，可是眼睛滴溜溜的转个不停，藏青短衣的女孩仰着头大大咧咧，但面色坦然"
+    }
+  ],
+  "states": [
+    {
+      "seq": 518,
+      "state": "在冷宫排队"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 518,
+      "actions": [
+        "与吴慢慢对话，目送其离开"
+      ]
+    }
+  ],
+  "id": "c544_双胞胎女孩"
+}

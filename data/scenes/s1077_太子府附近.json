@@ -1,0 +1,28 @@
+{
+  "name": "太子府附近",
+  "first_seq": 888,
+  "chapter_count": 1,
+  "chapters": [
+    888
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜赢": 1,
+    "元永洁": 1
+  },
+  "events": [
+    {
+      "seq": 888,
+      "events": [
+        "姜赢问元永洁大夏是否要亡，元永洁点头，牵手安慰"
+      ]
+    }
+  ],
+  "id": "s1077_太子府附近"
+}

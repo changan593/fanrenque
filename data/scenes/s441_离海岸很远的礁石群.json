@@ -1,0 +1,33 @@
+{
+  "name": "离海岸很远的礁石群",
+  "first_seq": 180,
+  "chapter_count": 1,
+  "chapters": [
+    180
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 180,
+      "quote": "错落的礁石之上"
+    }
+  ],
+  "characters": {
+    "齐渊": 1,
+    "小女孩": 1
+  },
+  "events": [
+    {
+      "seq": 180,
+      "events": [
+        "书生牵着小女孩走在礁石上，衣袍被拽变形，暗藏厮杀"
+      ]
+    }
+  ],
+  "id": "s441_离海岸很远的礁石群"
+}

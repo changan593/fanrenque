@@ -1,0 +1,28 @@
+{
+  "name": "街道旁茶摊",
+  "first_seq": 94,
+  "chapter_count": 1,
+  "chapters": [
+    94
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "齐渊": 1,
+    "妖圣紫云": 1
+  },
+  "events": [
+    {
+      "seq": 94,
+      "events": [
+        "齐渊自语，紫云追上威胁"
+      ]
+    }
+  ],
+  "id": "s364_街道旁茶摊"
+}

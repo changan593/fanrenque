@@ -1,0 +1,52 @@
+{
+  "canonical_name": "知了",
+  "aliases": [
+    "知了和尚"
+  ],
+  "first_seq": 671,
+  "last_seq": 1026,
+  "chapter_count": 5,
+  "chapters": [
+    671,
+    674,
+    920,
+    998,
+    1026
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "提及": 3
+  },
+  "mentioned_only_count": 3,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 671,
+      "state": "心情复杂，接受现实"
+    },
+    {
+      "seq": 674,
+      "state": "目睹阿难砸寺，被冲击波推飞，说不出话"
+    },
+    {
+      "seq": 1026,
+      "state": "因阿难缘故消失在九洲视线中"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 671,
+      "actions": [
+        "询问阿难对策，接受离开决定"
+      ]
+    },
+    {
+      "seq": 674,
+      "actions": [
+        "站在金莲上目睹阿难法相托起白马寺",
+        "被冲击波推飞，抛向东海"
+      ]
+    }
+  ],
+  "id": "c187_知了"
+}

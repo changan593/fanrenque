@@ -1,0 +1,34 @@
+{
+  "name": "天命阁辰龙分部",
+  "first_seq": 513,
+  "chapter_count": 1,
+  "chapters": [
+    513
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 513,
+      "quote": "低矮的平房里挤满人"
+    }
+  ],
+  "characters": {
+    "尉天齐": 1,
+    "吴悔": 1
+  },
+  "events": [
+    {
+      "seq": 513,
+      "events": [
+        "尉天齐查看书院反应",
+        "吴悔给信件"
+      ]
+    }
+  ],
+  "id": "s736_天命阁辰龙分部"
+}

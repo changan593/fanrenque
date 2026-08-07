@@ -1,0 +1,35 @@
+{
+  "canonical_name": "墨绿长裙的姑娘",
+  "aliases": [],
+  "first_seq": 913,
+  "last_seq": 913,
+  "chapter_count": 1,
+  "chapters": [
+    913
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 913,
+      "quote": "墨绿长裙的姑娘"
+    }
+  ],
+  "states": [
+    {
+      "seq": 913,
+      "state": "逃亡中，专心走路"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 913,
+      "actions": [
+        "扶着骡子驮着的身影，专心走路"
+      ]
+    }
+  ],
+  "id": "c720_墨绿长裙的姑娘"
+}

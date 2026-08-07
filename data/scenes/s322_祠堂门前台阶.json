@@ -1,0 +1,34 @@
+{
+  "name": "祠堂门前台阶",
+  "first_seq": 50,
+  "chapter_count": 1,
+  "chapters": [
+    50
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 50,
+      "quote": "身后燃起熊熊烈火的祠堂"
+    }
+  ],
+  "characters": {
+    "周东东": 1,
+    "老拐子": 1
+  },
+  "events": [
+    {
+      "seq": 50,
+      "events": [
+        "老拐子托付遗言",
+        "老拐子逝去"
+      ]
+    }
+  ],
+  "id": "s322_祠堂门前台阶"
+}

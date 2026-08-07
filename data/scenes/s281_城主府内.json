@@ -1,0 +1,29 @@
+{
+  "name": "城主府内",
+  "first_seq": 24,
+  "chapter_count": 1,
+  "chapters": [
+    24
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚安饶": 1,
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 24,
+      "events": [
+        "姚安饶与唐真算账",
+        "唐真赠佛宗功法"
+      ]
+    }
+  ],
+  "id": "s281_城主府内"
+}

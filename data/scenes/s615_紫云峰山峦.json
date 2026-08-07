@@ -1,0 +1,32 @@
+{
+  "name": "紫云峰山峦",
+  "first_seq": 383,
+  "chapter_count": 1,
+  "chapters": [
+    383
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 383,
+      "quote": "仙气盎然，却不见人烟"
+    }
+  ],
+  "characters": {
+    "秦怀雀": 1
+  },
+  "events": [
+    {
+      "seq": 383,
+      "events": [
+        "秦怀雀转身走回山峦，感叹主脉只有一人"
+      ]
+    }
+  ],
+  "id": "s615_紫云峰山峦"
+}

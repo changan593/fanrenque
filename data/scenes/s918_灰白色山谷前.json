@@ -1,0 +1,27 @@
+{
+  "name": "灰白色山谷前",
+  "first_seq": 711,
+  "chapter_count": 1,
+  "chapters": [
+    711
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "申时": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1
+  },
+  "events": [
+    {
+      "seq": 711,
+      "events": [
+        "尉天齐观察斗法遗迹，佩服姜羽点子"
+      ]
+    }
+  ],
+  "id": "s918_灰白色山谷前"
+}

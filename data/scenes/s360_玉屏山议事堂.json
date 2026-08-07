@@ -1,0 +1,32 @@
+{
+  "name": "玉屏山议事堂",
+  "first_seq": 90,
+  "chapter_count": 1,
+  "chapters": [
+    90
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚安饶": 1,
+    "姚望舒": 1,
+    "王玉屏": 1
+  },
+  "events": [
+    {
+      "seq": 90,
+      "events": [
+        "唐真分发丹药",
+        "唐真与姚安饶谈话",
+        "红儿与姚安饶互动"
+      ]
+    }
+  ],
+  "id": "s360_玉屏山议事堂"
+}

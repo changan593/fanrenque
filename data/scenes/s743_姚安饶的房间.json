@@ -1,0 +1,28 @@
+{
+  "name": "姚安饶的房间",
+  "first_seq": 526,
+  "chapter_count": 1,
+  "chapters": [
+    526
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 526,
+      "events": [
+        "尉天齐走入房间，看到姚安饶抚摸云儿"
+      ]
+    }
+  ],
+  "id": "s743_姚安饶的房间"
+}

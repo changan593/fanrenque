@@ -1,0 +1,33 @@
+{
+  "name": "北海",
+  "first_seq": 793,
+  "chapter_count": 1,
+  "chapters": [
+    793
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "月色": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 793,
+      "quote": "月色照在北海的波浪上，铺出一条洁白的路。"
+    }
+  ],
+  "characters": {
+    "中年男人": 1
+  },
+  "events": [
+    {
+      "seq": 793,
+      "events": [
+        "收到灵剑",
+        "踏海而去"
+      ]
+    }
+  ],
+  "id": "s999_北海"
+}

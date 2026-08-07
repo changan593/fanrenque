@@ -1,0 +1,23 @@
+{
+  "canonical_name": "城主家的小千金",
+  "aliases": [],
+  "first_seq": 323,
+  "last_seq": 323,
+  "chapter_count": 1,
+  "chapters": [
+    323
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 323,
+      "state": "被城主夫人抓住打屁股"
+    }
+  ],
+  "actions": [],
+  "id": "c470_城主家的小千金"
+}

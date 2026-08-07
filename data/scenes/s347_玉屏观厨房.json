@@ -1,0 +1,29 @@
+{
+  "name": "玉屏观厨房",
+  "first_seq": 77,
+  "chapter_count": 1,
+  "chapters": [
+    77
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "傍晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "小胖": 1
+  },
+  "events": [
+    {
+      "seq": 77,
+      "events": [
+        "小胖做饭",
+        "唐真拿出鲶鱼骨要换鱼"
+      ]
+    }
+  ],
+  "id": "s347_玉屏观厨房"
+}

@@ -1,0 +1,46 @@
+{
+  "canonical_name": "爷爷",
+  "aliases": [],
+  "first_seq": 1068,
+  "last_seq": 1069,
+  "chapter_count": 2,
+  "chapters": [
+    1068,
+    1069
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1068,
+      "quote": "他与姥爷长的差不多，都是古板的模样，说话木木的。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1068,
+      "state": "古板，试图以母亲发疯病来平息质疑。"
+    },
+    {
+      "seq": 1069,
+      "state": "质问葛道人霸道"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1068,
+      "actions": [
+        "解释母亲曾发疯病，胡言乱语"
+      ]
+    },
+    {
+      "seq": 1069,
+      "actions": [
+        "侧脸看向葛道人并质问"
+      ]
+    }
+  ],
+  "id": "c322_爷爷"
+}

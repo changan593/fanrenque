@@ -1,0 +1,35 @@
+{
+  "name": "姚家祠堂",
+  "first_seq": 50,
+  "chapter_count": 1,
+  "chapters": [
+    50
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 50,
+      "quote": "大理石的缝隙都亮出了火光"
+    }
+  ],
+  "characters": {
+    "周东东": 1,
+    "老拐子": 1
+  },
+  "events": [
+    {
+      "seq": 50,
+      "events": [
+        "周东东询问老拐子",
+        "周东东带老拐子离开",
+        "周东东用血引火烧毁祠堂"
+      ]
+    }
+  ],
+  "id": "s321_姚家祠堂"
+}

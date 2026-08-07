@@ -1,0 +1,35 @@
+{
+  "name": "岛屿礁石",
+  "first_seq": 269,
+  "chapter_count": 1,
+  "chapters": [
+    269
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 269,
+      "quote": "海浪击打在礁石上哗啦啦真的很响。"
+    }
+  ],
+  "characters": {
+    "唐真": 1,
+    "吴慢慢": 1
+  },
+  "events": [
+    {
+      "seq": 269,
+      "events": [
+        "唐真沉思",
+        "吴慢慢递茅草",
+        "唐真蹲下捂脸"
+      ]
+    }
+  ],
+  "id": "s529_岛屿礁石"
+}

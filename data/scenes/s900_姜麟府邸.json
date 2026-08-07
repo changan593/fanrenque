@@ -1,0 +1,29 @@
+{
+  "name": "姜麟府邸",
+  "first_seq": 691,
+  "chapter_count": 1,
+  "chapters": [
+    691
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜麟": 1,
+    "下人": 1
+  },
+  "events": [
+    {
+      "seq": 691,
+      "events": [
+        "姜麟询问吴慢慢下落，发泄愤怒",
+        "接到古月皇贵妃召见，决定前往"
+      ]
+    }
+  ],
+  "id": "s900_姜麟府邸"
+}

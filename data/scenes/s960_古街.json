@@ -1,0 +1,37 @@
+{
+  "name": "古街",
+  "first_seq": 750,
+  "chapter_count": 1,
+  "chapters": [
+    750
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 750,
+      "quote": "古街上，身着道袍的老人出现在那棵枯死的柳树旁"
+    },
+    {
+      "seq": 750,
+      "quote": "贯通整条长街的剑痕"
+    }
+  ],
+  "characters": {
+    "两松观观主": 1,
+    "法源寺方丈": 1
+  },
+  "events": [
+    {
+      "seq": 750,
+      "events": [
+        "观主追剑痕，遇方丈，冲突，斗法"
+      ]
+    }
+  ],
+  "id": "s960_古街"
+}

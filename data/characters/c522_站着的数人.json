@@ -1,0 +1,23 @@
+{
+  "canonical_name": "站着的数人",
+  "aliases": [],
+  "first_seq": 458,
+  "last_seq": 458,
+  "chapter_count": 1,
+  "chapters": [
+    458
+  ],
+  "role_distribution": {
+    "群演": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 458,
+      "state": "无法理解施北望"
+    }
+  ],
+  "actions": [],
+  "id": "c522_站着的数人"
+}

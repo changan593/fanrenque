@@ -1,0 +1,30 @@
+{
+  "name": "古宅深水潭旁",
+  "first_seq": 628,
+  "chapter_count": 1,
+  "chapters": [
+    628
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "姜甲": 1,
+    "林姑娘": 1
+  },
+  "events": [
+    {
+      "seq": 628,
+      "events": [
+        "尉天齐与姜甲会合，林姑娘确认木方生位置",
+        "尉天齐带姜甲跃入深潭"
+      ]
+    }
+  ],
+  "id": "s828_古宅深水潭旁"
+}

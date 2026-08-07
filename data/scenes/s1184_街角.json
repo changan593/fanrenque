@@ -1,0 +1,27 @@
+{
+  "name": "街角",
+  "first_seq": 1009,
+  "chapter_count": 1,
+  "chapters": [
+    1009
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "雨天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "张狂": 1
+  },
+  "events": [
+    {
+      "seq": 1009,
+      "events": [
+        "张狂被绑淋雨，接雨抱怨"
+      ]
+    }
+  ],
+  "id": "s1184_街角"
+}

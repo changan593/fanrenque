@@ -1,0 +1,40 @@
+{
+  "name": "城外土路",
+  "first_seq": 26,
+  "chapter_count": 1,
+  "chapters": [
+    26
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 26,
+      "quote": "大雨噼里啪啦的敲在盔甲上"
+    },
+    {
+      "seq": 26,
+      "quote": "伸手不见五指"
+    }
+  ],
+  "characters": {
+    "老赵": 1,
+    "将领": 1,
+    "阿一": 1
+  },
+  "events": [
+    {
+      "seq": 26,
+      "events": [
+        "老赵与队长巡视",
+        "发现尸体",
+        "阿一传达太子令"
+      ]
+    }
+  ],
+  "id": "s284_城外土路"
+}

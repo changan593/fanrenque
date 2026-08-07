@@ -1,0 +1,28 @@
+{
+  "name": "独木川南洲界",
+  "first_seq": 1027,
+  "chapter_count": 1,
+  "chapters": [
+    1027
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "晚间": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "怀素": 1,
+    "刘全": 1
+  },
+  "events": [
+    {
+      "seq": 1027,
+      "events": [
+        "刘全来到独木川，怀素接待并通报宫主"
+      ]
+    }
+  ],
+  "id": "s1198_独木川南洲界"
+}

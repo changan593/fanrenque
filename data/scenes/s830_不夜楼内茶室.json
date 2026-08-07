@@ -1,0 +1,34 @@
+{
+  "name": "不夜楼内茶室",
+  "first_seq": 628,
+  "chapter_count": 1,
+  "chapters": [
+    628
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 628,
+      "quote": "有淡淡的墨香"
+    }
+  ],
+  "characters": {
+    "姜羽": 1,
+    "刘知为": 1
+  },
+  "events": [
+    {
+      "seq": 628,
+      "events": [
+        "姜羽冲开房门，发现屏风后有人，误以为不是木方生，离开",
+        "刘知为自我怀疑"
+      ]
+    }
+  ],
+  "id": "s830_不夜楼内茶室"
+}

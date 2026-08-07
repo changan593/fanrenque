@@ -1,0 +1,32 @@
+{
+  "name": "佛宗大殿",
+  "first_seq": 842,
+  "chapter_count": 1,
+  "chapters": [
+    842
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "晨光": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 842,
+      "quote": "明亮的晨光打进大殿，除了烟与尘，这里空空荡荡，并没有任何人影"
+    }
+  ],
+  "characters": {
+    "还俗和尚": 1
+  },
+  "events": [
+    {
+      "seq": 842,
+      "events": [
+        "还俗和尚做早课，听到老僧提醒佛船还有两天起航"
+      ]
+    }
+  ],
+  "id": "s1046_佛宗大殿"
+}

@@ -1,0 +1,30 @@
+{
+  "canonical_name": "木头一样的男人",
+  "aliases": [],
+  "first_seq": 796,
+  "last_seq": 796,
+  "chapter_count": 1,
+  "chapters": [
+    796
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 796,
+      "quote": "木头一样的男人"
+    }
+  ],
+  "states": [],
+  "actions": [
+    {
+      "seq": 796,
+      "actions": [
+        "看了信，封好，亲自送到太行山"
+      ]
+    }
+  ],
+  "id": "c666_木头一样的男人"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "青茅镇杜家大门",
+  "first_seq": 680,
+  "chapter_count": 1,
+  "chapters": [
+    680
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "门房": 1
+  },
+  "events": [
+    {
+      "seq": 680,
+      "events": [
+        "尉天齐询问入山队伍，门房指引"
+      ]
+    }
+  ],
+  "id": "s894_青茅镇杜家大门"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "战场（对峙）",
+  "first_seq": 949,
+  "chapter_count": 1,
+  "chapters": [
+    949
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 949,
+      "quote": "妖族站的比较远，但南宁铁骑确实已经里三层外三层了。"
+    }
+  ],
+  "characters": {
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 949,
+      "events": [
+        "唐真道歉",
+        "被包围",
+        "准备迎战"
+      ]
+    }
+  ],
+  "id": "s1125_战场（对峙）"
+}

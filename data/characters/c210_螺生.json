@@ -1,0 +1,37 @@
+{
+  "canonical_name": "螺生",
+  "aliases": [],
+  "first_seq": 884,
+  "last_seq": 1199,
+  "chapter_count": 4,
+  "chapters": [
+    884,
+    1150,
+    1177,
+    1199
+  ],
+  "role_distribution": {
+    "提及": 4
+  },
+  "mentioned_only_count": 4,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1177,
+      "state": "运转完成，未锁定施法对象"
+    },
+    {
+      "seq": 1199,
+      "state": "被提及，可能被运转"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1150,
+      "actions": [
+        "古命好遇到螺生"
+      ]
+    }
+  ],
+  "id": "c210_螺生"
+}

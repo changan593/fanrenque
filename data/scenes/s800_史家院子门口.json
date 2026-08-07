@@ -1,0 +1,30 @@
+{
+  "name": "史家院子门口",
+  "first_seq": 606,
+  "chapter_count": 1,
+  "chapters": [
+    606
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "史母": 1,
+    "史二郎": 1,
+    "林佳人": 1
+  },
+  "events": [
+    {
+      "seq": 606,
+      "events": [
+        "史母进院子，约定明天再去看戏",
+        "史二郎送林佳人回家"
+      ]
+    }
+  ],
+  "id": "s800_史家院子门口"
+}

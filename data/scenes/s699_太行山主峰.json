@@ -1,0 +1,27 @@
+{
+  "name": "太行山主峰",
+  "first_seq": 472,
+  "chapter_count": 1,
+  "chapters": [
+    472
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "清晨": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "月牧队伍": 1
+  },
+  "events": [
+    {
+      "seq": 472,
+      "events": [
+        "玉辇飞离，队伍扩大，分析原因"
+      ]
+    }
+  ],
+  "id": "s699_太行山主峰"
+}

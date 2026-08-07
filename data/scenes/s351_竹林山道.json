@@ -1,0 +1,34 @@
+{
+  "name": "竹林山道",
+  "first_seq": 81,
+  "chapter_count": 1,
+  "chapters": [
+    81
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "上午": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 81,
+      "quote": "林深雨密"
+    }
+  ],
+  "characters": {
+    "唐真": 1,
+    "王玉屏": 1,
+    "小胖": 1
+  },
+  "events": [
+    {
+      "seq": 81,
+      "events": [
+        "唐真与屏姐讨论情报，闲聊婚配，唐真告知小胖对手"
+      ]
+    }
+  ],
+  "id": "s351_竹林山道"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "树叶阴影中",
+  "first_seq": 991,
+  "chapter_count": 1,
+  "chapters": [
+    991
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚安饶": 1,
+    "双心三愿菩提": 1
+  },
+  "events": [
+    {
+      "seq": 991,
+      "events": [
+        "姚安恕从阴影中探出",
+        "用双心三愿菩提疗伤，菩提接近极限"
+      ]
+    }
+  ],
+  "id": "s1168_树叶阴影中"
+}

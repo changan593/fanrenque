@@ -1,0 +1,31 @@
+{
+  "name": "介王府佛堂（续）",
+  "first_seq": 882,
+  "chapter_count": 1,
+  "chapters": [
+    882
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "荀阿鹄": 1,
+    "姜介": 1,
+    "程百尺": 1
+  },
+  "events": [
+    {
+      "seq": 882,
+      "events": [
+        "姜介死亡",
+        "程百尺对话",
+        "荀阿鹄离开"
+      ]
+    }
+  ],
+  "id": "s1073_介王府佛堂（续）"
+}

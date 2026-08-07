@@ -1,0 +1,23 @@
+{
+  "canonical_name": "侍者",
+  "aliases": [],
+  "first_seq": 91,
+  "last_seq": 91,
+  "chapter_count": 1,
+  "chapters": [
+    91
+  ],
+  "role_distribution": {
+    "次要": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 91,
+      "state": "通报玉蟾宫仙人到"
+    }
+  ],
+  "actions": [],
+  "id": "c364_侍者"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "皇宫外",
+  "first_seq": 627,
+  "chapter_count": 1,
+  "chapters": [
+    627
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "李一": 1
+  },
+  "events": [
+    {
+      "seq": 627,
+      "events": [
+        "姜羽与李一对话，李一欲杀南宁王，告知木方生位置"
+      ]
+    }
+  ],
+  "id": "s827_皇宫外"
+}

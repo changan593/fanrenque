@@ -1,0 +1,30 @@
+{
+  "canonical_name": "玉蟾宫众弟子",
+  "aliases": [],
+  "first_seq": 110,
+  "last_seq": 110,
+  "chapter_count": 1,
+  "chapters": [
+    110
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 110,
+      "state": "等待魏成，不敢言"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 110,
+      "actions": [
+        "等待魏成，质问小胖，挑选二人入忘园"
+      ]
+    }
+  ],
+  "id": "c379_玉蟾宫众弟子"
+}

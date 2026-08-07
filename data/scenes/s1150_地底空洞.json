@@ -1,0 +1,29 @@
+{
+  "name": "地底空洞",
+  "first_seq": 974,
+  "chapter_count": 1,
+  "chapters": [
+    974
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "南宁王": 1,
+    "天魔尊": 1
+  },
+  "events": [
+    {
+      "seq": 974,
+      "events": [
+        "天魔尊抱着南宁王，南宁王得意，唐真起鸡皮疙瘩"
+      ]
+    }
+  ],
+  "id": "s1150_地底空洞"
+}

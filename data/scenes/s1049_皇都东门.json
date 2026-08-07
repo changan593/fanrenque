@@ -1,0 +1,31 @@
+{
+  "name": "皇都东门",
+  "first_seq": 848,
+  "chapter_count": 1,
+  "chapters": [
+    848
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "于林俊": 1,
+    "史凡仁": 1,
+    "御林军": 1
+  },
+  "events": [
+    {
+      "seq": 848,
+      "events": [
+        "于林俊观察增援兵卒",
+        "与史凡仁相认",
+        "激励士兵"
+      ]
+    }
+  ],
+  "id": "s1049_皇都东门"
+}

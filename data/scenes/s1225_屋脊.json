@@ -1,0 +1,33 @@
+{
+  "name": "屋脊",
+  "first_seq": 1046,
+  "chapter_count": 1,
+  "chapters": [
+    1046
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "破晓": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1046,
+      "quote": "天色在最黑后，开始以缓慢而坚定的速度放亮"
+    }
+  ],
+  "characters": {
+    "唐真": 1,
+    "刘全": 1
+  },
+  "events": [
+    {
+      "seq": 1046,
+      "events": [
+        "唐真坐屋脊看东方，刘全开导，唐真反思，化蝶离去"
+      ]
+    }
+  ],
+  "id": "s1225_屋脊"
+}

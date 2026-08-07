@@ -1,0 +1,31 @@
+{
+  "name": "某地（观剑处）",
+  "first_seq": 1036,
+  "chapter_count": 1,
+  "chapters": [
+    1036
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "葛道人": 1,
+    "姜羽": 1,
+    "齐渊": 1
+  },
+  "events": [
+    {
+      "seq": 1036,
+      "events": [
+        "葛道人感叹剑法",
+        "姜羽心悸",
+        "齐渊询问唐真"
+      ]
+    }
+  ],
+  "id": "s1212_某地（观剑处）"
+}

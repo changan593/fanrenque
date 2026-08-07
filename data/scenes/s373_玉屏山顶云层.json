@@ -1,0 +1,28 @@
+{
+  "name": "玉屏山顶云层",
+  "first_seq": 100,
+  "chapter_count": 1,
+  "chapters": [
+    100
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "吕藏锋": 1,
+    "百剑峰众人": 1
+  },
+  "events": [
+    {
+      "seq": 100,
+      "events": [
+        "吕藏锋放下响雷，引发雷声"
+      ]
+    }
+  ],
+  "id": "s373_玉屏山顶云层"
+}

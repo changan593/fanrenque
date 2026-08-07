@@ -1,0 +1,27 @@
+{
+  "name": "北阳城（回忆）",
+  "first_seq": 281,
+  "chapter_count": 1,
+  "chapters": [
+    281
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 281,
+      "events": [
+        "提及北阳城的梦魇"
+      ]
+    }
+  ],
+  "id": "s538_北阳城（回忆）"
+}

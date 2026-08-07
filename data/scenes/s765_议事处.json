@@ -1,0 +1,30 @@
+{
+  "name": "议事处",
+  "first_seq": 556,
+  "chapter_count": 1,
+  "chapters": [
+    556
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "吴慢慢": 1,
+    "尉天齐": 1,
+    "左乐": 1
+  },
+  "events": [
+    {
+      "seq": 556,
+      "events": [
+        "尉天齐讲述新学之道，决定悬镜司第一个任务",
+        "左乐汇报皇都情况"
+      ]
+    }
+  ],
+  "id": "s765_议事处"
+}

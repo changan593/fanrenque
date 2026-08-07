@@ -1,0 +1,34 @@
+{
+  "name": "皇宫大门口",
+  "first_seq": 834,
+  "chapter_count": 1,
+  "chapters": [
+    834
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 834,
+      "quote": "朱红色的宫门上密密麻麻的浮现了一道道云纹"
+    }
+  ],
+  "characters": {
+    "唐真": 1,
+    "碎发女人": 1
+  },
+  "events": [
+    {
+      "seq": 834,
+      "events": [
+        "唐真压制宫门阵法",
+        "碎发女人出现"
+      ]
+    }
+  ],
+  "id": "s1036_皇宫大门口"
+}

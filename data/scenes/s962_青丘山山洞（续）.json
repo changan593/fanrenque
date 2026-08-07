@@ -1,0 +1,29 @@
+{
+  "name": "青丘山山洞（续）",
+  "first_seq": 750,
+  "chapter_count": 1,
+  "chapters": [
+    750
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "狐魔尊": 1,
+    "姜羽": 1
+  },
+  "events": [
+    {
+      "seq": 750,
+      "events": [
+        "狐魔尊解释七囚箱，唐真指出其最弱，狐魔尊反问"
+      ]
+    }
+  ],
+  "id": "s962_青丘山山洞（续）"
+}

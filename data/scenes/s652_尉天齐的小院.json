@@ -1,0 +1,30 @@
+{
+  "name": "尉天齐的小院",
+  "first_seq": 430,
+  "chapter_count": 1,
+  "chapters": [
+    430
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "林姑娘": 1
+  },
+  "events": [
+    {
+      "seq": 430,
+      "events": [
+        "尉天齐等待",
+        "林姑娘来访",
+        "对话"
+      ]
+    }
+  ],
+  "id": "s652_尉天齐的小院"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "唐真病房",
+  "first_seq": 19,
+  "chapter_count": 1,
+  "chapters": [
+    19
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚城主": 1,
+    "姚望舒": 1,
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 19,
+      "events": [
+        "唐真苏醒，众人探望",
+        "红儿喂药，唐真拒绝，红儿用嘴喂冰糖"
+      ]
+    }
+  ],
+  "id": "s274_唐真病房"
+}

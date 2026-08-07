@@ -1,0 +1,29 @@
+{
+  "name": "唐真与尼姑对话处",
+  "first_seq": 668,
+  "chapter_count": 1,
+  "chapters": [
+    668
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "狐魔尊": 1
+  },
+  "events": [
+    {
+      "seq": 668,
+      "events": [
+        "唐真询问术法，尼姑告知罗生",
+        "唐真内心震惊，强忍情绪"
+      ]
+    }
+  ],
+  "id": "s876_唐真与尼姑对话处"
+}

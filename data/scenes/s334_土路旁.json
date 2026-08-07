@@ -1,0 +1,30 @@
+{
+  "name": "土路旁",
+  "first_seq": 62,
+  "chapter_count": 1,
+  "chapters": [
+    62
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 62,
+      "events": [
+        "唐真将朱钗交给红儿",
+        "朱钗为红儿换装",
+        "唐真提议修道"
+      ]
+    }
+  ],
+  "id": "s334_土路旁"
+}

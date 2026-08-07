@@ -1,0 +1,28 @@
+{
+  "name": "小木舟",
+  "first_seq": 1015,
+  "chapter_count": 1,
+  "chapters": [
+    1015
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "南季礼": 1,
+    "狐尊": 1
+  },
+  "events": [
+    {
+      "seq": 1015,
+      "events": [
+        "狐尊笑声试探，南季礼化解并警告"
+      ]
+    }
+  ],
+  "id": "s1191_小木舟"
+}

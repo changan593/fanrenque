@@ -1,0 +1,28 @@
+{
+  "name": "宫内（姚望舒处）",
+  "first_seq": 1036,
+  "chapter_count": 1,
+  "chapters": [
+    1036
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 1,
+    "于念娘": 1
+  },
+  "events": [
+    {
+      "seq": 1036,
+      "events": [
+        "姚望舒与于念娘对话，谈及孩子与工作"
+      ]
+    }
+  ],
+  "id": "s1213_宫内（姚望舒处）"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "北阳城北门",
+  "first_seq": 28,
+  "chapter_count": 1,
+  "chapters": [
+    28
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "大雨天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "一百位戴甲兵士": 1
+  },
+  "events": [
+    {
+      "seq": 28,
+      "events": [
+        "唐真送别甲士"
+      ]
+    }
+  ],
+  "id": "s288_北阳城北门"
+}

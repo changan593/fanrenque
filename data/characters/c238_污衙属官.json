@@ -1,0 +1,55 @@
+{
+  "canonical_name": "污衙属官",
+  "aliases": [],
+  "first_seq": 715,
+  "last_seq": 722,
+  "chapter_count": 3,
+  "chapters": [
+    715,
+    721,
+    722
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 715,
+      "state": "阴沉着脸，威胁亲兵首领"
+    },
+    {
+      "seq": 721,
+      "state": "脸色苍白，但未退后"
+    },
+    {
+      "seq": 722,
+      "state": "指挥污衙修士，后遭反击"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 715,
+      "actions": [
+        "威胁亲兵首领，声称旨意是人皇亲口说的",
+        "看到无名后面色大变，质问为何没去九洲清宴",
+        "最终退回队伍"
+      ]
+    },
+    {
+      "seq": 721,
+      "actions": [
+        "与军部对峙",
+        "发出杀声"
+      ]
+    },
+    {
+      "seq": 722,
+      "actions": [
+        "高喊杀无赦，指挥进攻，后遭反击"
+      ]
+    }
+  ],
+  "id": "c238_污衙属官"
+}

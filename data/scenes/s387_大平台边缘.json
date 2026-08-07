@@ -1,0 +1,34 @@
+{
+  "name": "大平台边缘",
+  "first_seq": 123,
+  "chapter_count": 1,
+  "chapters": [
+    123
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 123,
+      "quote": "山景辽远，云海奔腾，日光洒下，并不温暖"
+    }
+  ],
+  "characters": {
+    "姚望舒": 1,
+    "不痴": 1
+  },
+  "events": [
+    {
+      "seq": 123,
+      "events": [
+        "红儿复述诗句",
+        "不痴出现带话"
+      ]
+    }
+  ],
+  "id": "s387_大平台边缘"
+}

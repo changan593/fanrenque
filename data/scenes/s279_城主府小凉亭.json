@@ -1,0 +1,33 @@
+{
+  "name": "城主府小凉亭",
+  "first_seq": 23,
+  "chapter_count": 1,
+  "chapters": [
+    23
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 23,
+      "quote": "日光斑驳"
+    }
+  ],
+  "characters": {
+    "唐真": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 23,
+      "events": [
+        "唐真看到红儿读书，交谈道书之事"
+      ]
+    }
+  ],
+  "id": "s279_城主府小凉亭"
+}

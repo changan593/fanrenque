@@ -1,0 +1,28 @@
+{
+  "name": "老人午睡的床前",
+  "first_seq": 862,
+  "chapter_count": 1,
+  "chapters": [
+    862
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "日头高悬，即将下落": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "老人": 1
+  },
+  "events": [
+    {
+      "seq": 862,
+      "events": [
+        "尉天齐尝试复现螺生运行过程"
+      ]
+    }
+  ],
+  "id": "s1058_老人午睡的床前"
+}

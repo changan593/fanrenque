@@ -1,0 +1,29 @@
+{
+  "name": "驿站",
+  "first_seq": 745,
+  "chapter_count": 1,
+  "chapters": [
+    745
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "帝后娘娘": 1,
+    "李三全": 1,
+    "阿森": 1
+  },
+  "events": [
+    {
+      "seq": 745,
+      "events": [
+        "帝后遇到李三全，救下阿森"
+      ]
+    }
+  ],
+  "id": "s955_驿站"
+}

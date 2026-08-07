@@ -1,0 +1,33 @@
+{
+  "name": "悬空寺台阶",
+  "first_seq": 874,
+  "chapter_count": 1,
+  "chapters": [
+    874
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 874,
+      "quote": "台阶很长，但并不是无限的"
+    }
+  ],
+  "characters": {
+    "尉天齐": 1,
+    "麻雀": 1
+  },
+  "events": [
+    {
+      "seq": 874,
+      "events": [
+        "尉天齐缓步向上，麻雀飞舞"
+      ]
+    }
+  ],
+  "id": "s1063_悬空寺台阶"
+}

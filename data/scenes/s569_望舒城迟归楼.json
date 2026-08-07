@@ -1,0 +1,30 @@
+{
+  "name": "望舒城迟归楼",
+  "first_seq": 319,
+  "chapter_count": 1,
+  "chapters": [
+    319
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "于念娘": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 319,
+      "events": [
+        "建设顺利",
+        "收到魏成信",
+        "念娘邀红儿赴宴"
+      ]
+    }
+  ],
+  "id": "s569_望舒城迟归楼"
+}

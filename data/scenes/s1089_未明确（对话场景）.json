@@ -1,0 +1,29 @@
+{
+  "name": "未明确（对话场景）",
+  "first_seq": 906,
+  "chapter_count": 1,
+  "chapters": [
+    906
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "程百尺": 1,
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 906,
+      "events": [
+        "程百尺讲述人族历史",
+        "唐真推测气运二玺真相"
+      ]
+    }
+  ],
+  "id": "s1089_未明确（对话场景）"
+}

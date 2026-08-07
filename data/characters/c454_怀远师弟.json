@@ -1,0 +1,23 @@
+{
+  "canonical_name": "怀远师弟",
+  "aliases": [],
+  "first_seq": 256,
+  "last_seq": 256,
+  "chapter_count": 1,
+  "chapters": [
+    256
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 256,
+      "state": "已离开队伍。"
+    }
+  ],
+  "actions": [],
+  "id": "c454_怀远师弟"
+}

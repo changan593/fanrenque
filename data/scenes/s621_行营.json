@@ -1,0 +1,31 @@
+{
+  "name": "行营",
+  "first_seq": 386,
+  "chapter_count": 1,
+  "chapters": [
+    386
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "怀素": 1,
+    "玄甲军将领": 1,
+    "御林军": 1,
+    "儒生": 1
+  },
+  "events": [
+    {
+      "seq": 386,
+      "events": [
+        "儒生散去",
+        "甲士汇报军情"
+      ]
+    }
+  ],
+  "id": "s621_行营"
+}

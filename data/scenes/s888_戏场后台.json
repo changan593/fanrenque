@@ -1,0 +1,35 @@
+{
+  "name": "戏场后台",
+  "first_seq": 676,
+  "chapter_count": 1,
+  "chapters": [
+    676
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 676,
+      "quote": "后台里各种戏曲用的道具与服装堆积成山"
+    }
+  ],
+  "characters": {
+    "尉天齐": 1,
+    "葵": 1,
+    "云儿": 1
+  },
+  "events": [
+    {
+      "seq": 676,
+      "events": [
+        "尉天齐卸妆，葵出现道谢",
+        "葵赠玉笄给云儿"
+      ]
+    }
+  ],
+  "id": "s888_戏场后台"
+}

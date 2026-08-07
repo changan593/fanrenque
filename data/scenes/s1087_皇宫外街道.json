@@ -1,0 +1,33 @@
+{
+  "name": "皇宫外街道",
+  "first_seq": 903,
+  "chapter_count": 1,
+  "chapters": [
+    903
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 903,
+      "quote": "逆着撤退的人流穿过颇有些混乱的街道"
+    }
+  ],
+  "characters": {
+    "长发男": 1,
+    "姜甲": 1
+  },
+  "events": [
+    {
+      "seq": 903,
+      "events": [
+        "二人走出皇宫，逆着人流前往太子府"
+      ]
+    }
+  ],
+  "id": "s1087_皇宫外街道"
+}

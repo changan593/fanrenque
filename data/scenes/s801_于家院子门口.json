@@ -1,0 +1,29 @@
+{
+  "name": "于家院子门口",
+  "first_seq": 606,
+  "chapter_count": 1,
+  "chapters": [
+    606
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "史二郎": 1,
+    "林佳人": 1
+  },
+  "events": [
+    {
+      "seq": 606,
+      "events": [
+        "史二郎道谢，提及于大哥军令如山",
+        "林佳人愣住"
+      ]
+    }
+  ],
+  "id": "s801_于家院子门口"
+}

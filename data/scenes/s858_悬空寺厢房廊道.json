@@ -1,0 +1,27 @@
+{
+  "name": "悬空寺厢房廊道",
+  "first_seq": 656,
+  "chapter_count": 1,
+  "chapters": [
+    656
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 656,
+      "events": [
+        "唐真叹气，思考知了和尚之事"
+      ]
+    }
+  ],
+  "id": "s858_悬空寺厢房廊道"
+}

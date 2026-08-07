@@ -1,0 +1,36 @@
+{
+  "name": "山路上",
+  "first_seq": 262,
+  "chapter_count": 1,
+  "chapters": [
+    262
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 262,
+      "quote": "石阶上的积雪"
+    }
+  ],
+  "characters": {
+    "小剑疯": 1,
+    "儒生": 1,
+    "娇妹儿": 1
+  },
+  "events": [
+    {
+      "seq": 262,
+      "events": [
+        "四人下山",
+        "串供",
+        "遭黑剑袭击"
+      ]
+    }
+  ],
+  "id": "s521_山路上"
+}

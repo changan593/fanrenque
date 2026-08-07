@@ -1,0 +1,27 @@
+{
+  "name": "空中",
+  "first_seq": 88,
+  "chapter_count": 1,
+  "chapters": [
+    88
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1
+  },
+  "events": [
+    {
+      "seq": 88,
+      "events": [
+        "周东东御剑飞行，内心独白"
+      ]
+    }
+  ],
+  "id": "s359_空中"
+}

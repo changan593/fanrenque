@@ -1,0 +1,29 @@
+{
+  "name": "悬镜司大堂",
+  "first_seq": 601,
+  "chapter_count": 1,
+  "chapters": [
+    601
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "吴慢慢": 1,
+    "尉天齐": 1,
+    "左乐": 1
+  },
+  "events": [
+    {
+      "seq": 601,
+      "events": [
+        "吴慢慢发呆，尉天齐检查，左乐汇报，对话。"
+      ]
+    }
+  ],
+  "id": "s796_悬镜司大堂"
+}

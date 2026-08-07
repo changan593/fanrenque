@@ -1,0 +1,47 @@
+{
+  "canonical_name": "小沙弥",
+  "aliases": [],
+  "first_seq": 831,
+  "last_seq": 832,
+  "chapter_count": 2,
+  "chapters": [
+    831,
+    832
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 831,
+      "quote": "眉眼稚嫩单纯"
+    }
+  ],
+  "states": [
+    {
+      "seq": 831,
+      "state": "与尉天齐差不多年纪"
+    },
+    {
+      "seq": 832,
+      "state": "呆愣，对尉天齐剃度感到惊讶"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 831,
+      "actions": [
+        "与老方丈一起回房午睡"
+      ]
+    },
+    {
+      "seq": 832,
+      "actions": [
+        "询问尉天齐头发去向",
+        "询问出家缘由"
+      ]
+    }
+  ],
+  "id": "c309_小沙弥"
+}

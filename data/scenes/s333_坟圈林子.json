@@ -1,0 +1,29 @@
+{
+  "name": "坟圈林子",
+  "first_seq": 62,
+  "chapter_count": 1,
+  "chapters": [
+    62
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 62,
+      "events": [
+        "姜羽告别",
+        "唐真发现朱钗"
+      ]
+    }
+  ],
+  "id": "s333_坟圈林子"
+}

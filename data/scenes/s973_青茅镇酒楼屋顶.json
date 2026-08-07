@@ -1,0 +1,30 @@
+{
+  "name": "青茅镇酒楼屋顶",
+  "first_seq": 764,
+  "chapter_count": 1,
+  "chapters": [
+    764
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "江流": 1,
+    "幺儿": 1
+  },
+  "events": [
+    {
+      "seq": 764,
+      "events": [
+        "周东东和江流目睹破阵",
+        "江流认出尉天齐的剑"
+      ]
+    }
+  ],
+  "id": "s973_青茅镇酒楼屋顶"
+}

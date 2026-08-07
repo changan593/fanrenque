@@ -1,0 +1,31 @@
+{
+  "name": "帝后娘娘处",
+  "first_seq": 491,
+  "chapter_count": 1,
+  "chapters": [
+    491
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "帝后娘娘": 1,
+    "姜羽": 1
+  },
+  "events": [
+    {
+      "seq": 491,
+      "events": [
+        "姜羽询问人皇玺",
+        "帝后解释气运二玺",
+        "姜羽追问血脉",
+        "帝后告知身世"
+      ]
+    }
+  ],
+  "id": "s715_帝后娘娘处"
+}

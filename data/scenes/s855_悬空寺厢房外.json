@@ -1,0 +1,28 @@
+{
+  "name": "悬空寺厢房外",
+  "first_seq": 653,
+  "chapter_count": 1,
+  "chapters": [
+    653
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "王善": 1
+  },
+  "events": [
+    {
+      "seq": 653,
+      "events": [
+        "唐真见王善抱石，对话"
+      ]
+    }
+  ],
+  "id": "s855_悬空寺厢房外"
+}

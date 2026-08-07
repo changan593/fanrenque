@@ -1,0 +1,36 @@
+{
+  "name": "玉蟾宫",
+  "first_seq": 35,
+  "chapter_count": 1,
+  "chapters": [
+    35
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "午时": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 35,
+      "quote": "玉石垒制不染尘埃"
+    },
+    {
+      "seq": 35,
+      "quote": "其门内弟子多着白衣绘银纹"
+    }
+  ],
+  "characters": {
+    "玉蟾宫弟子": 1
+  },
+  "events": [
+    {
+      "seq": 35,
+      "events": [
+        "铃响，祖师令，弟子出动"
+      ]
+    }
+  ],
+  "id": "s298_玉蟾宫"
+}

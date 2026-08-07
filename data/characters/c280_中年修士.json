@@ -1,0 +1,51 @@
+{
+  "canonical_name": "中年修士",
+  "aliases": [
+    "中年男人"
+  ],
+  "first_seq": 343,
+  "last_seq": 344,
+  "chapter_count": 2,
+  "chapters": [
+    343,
+    344
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 343,
+      "quote": "身后则是俊逸的中年男子，怀中搂着浮尘。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 343,
+      "state": "白玉宫执事，对魏成愤怒"
+    },
+    {
+      "seq": 344,
+      "state": "冷言相讥，被白子鹤震慑"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 343,
+      "actions": [
+        "斥责魏成背信弃义",
+        "甩浮尘击碎冰面",
+        "跪拜红儿"
+      ]
+    },
+    {
+      "seq": 344,
+      "actions": [
+        "拍桌斥责念娘",
+        "冷声开口"
+      ]
+    }
+  ],
+  "id": "c280_中年修士"
+}

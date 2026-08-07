@@ -1,0 +1,30 @@
+{
+  "name": "三愿双心寺主殿",
+  "first_seq": 796,
+  "chapter_count": 1,
+  "chapters": [
+    796
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "善缘和尚": 1,
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 796,
+      "events": [
+        "善缘和尚游说姚安恕",
+        "姚安恕答应考虑",
+        "姚安恕离开大殿"
+      ]
+    }
+  ],
+  "id": "s1002_三愿双心寺主殿"
+}

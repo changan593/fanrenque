@@ -1,0 +1,29 @@
+{
+  "name": "污衙酒楼",
+  "first_seq": 690,
+  "chapter_count": 1,
+  "chapters": [
+    690
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "藿": 1,
+    "闻人哭": 1,
+    "污衙管事": 1
+  },
+  "events": [
+    {
+      "seq": 690,
+      "events": [
+        "藿与闻人哭交谈，闻人哭送雾帐球，藿回赠语镜，约定联系，藿离开"
+      ]
+    }
+  ],
+  "id": "s899_污衙酒楼"
+}

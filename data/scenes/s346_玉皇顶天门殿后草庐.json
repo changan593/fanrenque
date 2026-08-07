@@ -1,0 +1,38 @@
+{
+  "name": "玉皇顶天门殿后草庐",
+  "first_seq": 76,
+  "chapter_count": 1,
+  "chapters": [
+    76
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 76,
+      "quote": "大殿后，一处草庐旁"
+    },
+    {
+      "seq": 76,
+      "quote": "屋檐下"
+    }
+  ],
+  "characters": {
+    "中年汉子": 1,
+    "胡九": 1
+  },
+  "events": [
+    {
+      "seq": 76,
+      "events": [
+        "盟主锄地，与美妇人对话",
+        "提及金童峰闹事，玉屏山种竹子"
+      ]
+    }
+  ],
+  "id": "s346_玉皇顶天门殿后草庐"
+}

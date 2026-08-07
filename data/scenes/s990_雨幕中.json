@@ -1,0 +1,29 @@
+{
+  "name": "雨幕中",
+  "first_seq": 786,
+  "chapter_count": 1,
+  "chapters": [
+    786
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "南宁王": 1,
+    "尉天齐": 1,
+    "元永洁": 1
+  },
+  "events": [
+    {
+      "seq": 786,
+      "events": [
+        "尉天齐揭露螺生真相，南宁王反驳，元永洁崩溃"
+      ]
+    }
+  ],
+  "id": "s990_雨幕中"
+}

@@ -1,0 +1,23 @@
+{
+  "canonical_name": "高冠老儒",
+  "aliases": [],
+  "first_seq": 635,
+  "last_seq": 635,
+  "chapter_count": 1,
+  "chapters": [
+    635
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 635,
+      "state": "在茶摊饮茶，摇头评价"
+    }
+  ],
+  "actions": [],
+  "id": "c600_高冠老儒"
+}

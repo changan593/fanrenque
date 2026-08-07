@@ -1,0 +1,36 @@
+{
+  "canonical_name": "林哥儿",
+  "aliases": [],
+  "first_seq": 427,
+  "last_seq": 428,
+  "chapter_count": 2,
+  "chapters": [
+    427,
+    428
+  ],
+  "role_distribution": {
+    "参与": 1,
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 427,
+      "state": "恐惧，求饶"
+    },
+    {
+      "seq": 428,
+      "state": "被白子鹤一剑穿心而死"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 427,
+      "actions": [
+        "哭嚎求饶"
+      ]
+    }
+  ],
+  "id": "c285_林哥儿"
+}

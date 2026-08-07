@@ -1,0 +1,29 @@
+{
+  "name": "野山",
+  "first_seq": 957,
+  "chapter_count": 1,
+  "chapters": [
+    957
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "幺儿": 1,
+    "江流": 1
+  },
+  "events": [
+    {
+      "seq": 957,
+      "events": [
+        "周东东躲藏，幺儿抱怨，江流插嘴"
+      ]
+    }
+  ],
+  "id": "s1135_野山"
+}

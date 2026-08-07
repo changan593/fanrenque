@@ -1,0 +1,30 @@
+{
+  "name": "永和楼窗外",
+  "first_seq": 563,
+  "chapter_count": 1,
+  "chapters": [
+    563
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "幺儿": 1,
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 563,
+      "events": [
+        "幺儿窥视二人，向姚安饶揭示命相",
+        "幺儿透露七囚箱来历",
+        "尉天齐出现在窗边"
+      ]
+    }
+  ],
+  "id": "s768_永和楼窗外"
+}

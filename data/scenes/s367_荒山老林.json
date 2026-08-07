@@ -1,0 +1,33 @@
+{
+  "name": "荒山老林",
+  "first_seq": 96,
+  "chapter_count": 1,
+  "chapters": [
+    96
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 96,
+      "quote": "在这荒山老林里，对着一个黑漆漆的地下缝隙刨土"
+    }
+  ],
+  "characters": {
+    "姚安饶": 1,
+    "许行": 1
+  },
+  "events": [
+    {
+      "seq": 96,
+      "events": [
+        "姚安饶刨土，许行问路，姚安饶行礼，许行离开"
+      ]
+    }
+  ],
+  "id": "s367_荒山老林"
+}

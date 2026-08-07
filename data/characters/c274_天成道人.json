@@ -1,0 +1,40 @@
+{
+  "canonical_name": "天成道人",
+  "aliases": [
+    "天成道友"
+  ],
+  "first_seq": 212,
+  "last_seq": 213,
+  "chapter_count": 2,
+  "chapters": [
+    212,
+    213
+  ],
+  "role_distribution": {
+    "参与": 1,
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 212,
+      "state": "老牌天仙，被割喉，流血而死"
+    },
+    {
+      "seq": 213,
+      "state": "已死"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 212,
+      "actions": [
+        "否认知道领头者",
+        "被裴林剑揭穿徒弟，欲辩解",
+        "被偷袭割喉，最终死亡"
+      ]
+    }
+  ],
+  "id": "c274_天成道人"
+}

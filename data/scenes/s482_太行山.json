@@ -1,0 +1,28 @@
+{
+  "name": "太行山",
+  "first_seq": 219,
+  "chapter_count": 1,
+  "chapters": [
+    219
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "清晨": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 219,
+      "events": [
+        "大会暂停，裴林剑等天仙前往南海祭拜",
+        "唐真未去，在房间研究手骨"
+      ]
+    }
+  ],
+  "id": "s482_太行山"
+}

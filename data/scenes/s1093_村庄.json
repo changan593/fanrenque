@@ -1,0 +1,35 @@
+{
+  "name": "村庄",
+  "first_seq": 917,
+  "chapter_count": 1,
+  "chapters": [
+    917
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 917,
+      "quote": "村子里依然安静，没有人烟只有杂草。"
+    }
+  ],
+  "characters": {
+    "云儿": 1,
+    "小丫头": 1
+  },
+  "events": [
+    {
+      "seq": 917,
+      "events": [
+        "云儿寻找小丫头",
+        "发现红袄小丫头",
+        "被拉向村口"
+      ]
+    }
+  ],
+  "id": "s1093_村庄"
+}

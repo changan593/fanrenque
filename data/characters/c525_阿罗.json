@@ -1,0 +1,30 @@
+{
+  "canonical_name": "阿罗",
+  "aliases": [],
+  "first_seq": 465,
+  "last_seq": 465,
+  "chapter_count": 1,
+  "chapters": [
+    465
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 465,
+      "state": "汇报冲突"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 465,
+      "actions": [
+        "向帝后汇报冲突"
+      ]
+    }
+  ],
+  "id": "c525_阿罗"
+}

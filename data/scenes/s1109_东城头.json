@@ -1,0 +1,29 @@
+{
+  "name": "东城头",
+  "first_seq": 935,
+  "chapter_count": 1,
+  "chapters": [
+    935
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "左相": 1,
+    "元永洁": 1
+  },
+  "events": [
+    {
+      "seq": 935,
+      "events": [
+        "左相告知太子出战",
+        "左相劝元永洁撤离"
+      ]
+    }
+  ],
+  "id": "s1109_东城头"
+}

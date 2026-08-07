@@ -1,0 +1,34 @@
+{
+  "name": "皇都胡同与大户大院",
+  "first_seq": 591,
+  "chapter_count": 1,
+  "chapters": [
+    591
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "晨间": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 591,
+      "quote": "院子中央有着一座假山"
+    }
+  ],
+  "characters": {
+    "周东东": 1,
+    "吕藏锋": 1
+  },
+  "events": [
+    {
+      "seq": 591,
+      "events": [
+        "周东东带吕藏锋逃跑，躲入假山夹缝",
+        "施展隐匿功法"
+      ]
+    }
+  ],
+  "id": "s791_皇都胡同与大户大院"
+}

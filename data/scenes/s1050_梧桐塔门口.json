@@ -1,0 +1,29 @@
+{
+  "name": "梧桐塔门口",
+  "first_seq": 849,
+  "chapter_count": 1,
+  "chapters": [
+    849
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "左相": 1,
+    "钟鸾": 1,
+    "棋盘山修士": 1
+  },
+  "events": [
+    {
+      "seq": 849,
+      "events": [
+        "钟鸾见到左相，跪拜，左相询问战况和伤势"
+      ]
+    }
+  ],
+  "id": "s1050_梧桐塔门口"
+}

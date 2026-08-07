@@ -1,0 +1,34 @@
+{
+  "name": "林间小路",
+  "first_seq": 381,
+  "chapter_count": 1,
+  "chapters": [
+    381
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 381,
+      "quote": "清脆的响声一路在林间小路上回荡"
+    }
+  ],
+  "characters": {
+    "唐真": 1,
+    "唐假": 1,
+    "老五": 1
+  },
+  "events": [
+    {
+      "seq": 381,
+      "events": [
+        "唐假拨动祈愿木牌"
+      ]
+    }
+  ],
+  "id": "s611_林间小路"
+}

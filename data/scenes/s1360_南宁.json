@@ -1,0 +1,29 @@
+{
+  "name": "南宁",
+  "first_seq": 1200,
+  "chapter_count": 1,
+  "chapters": [
+    1200
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "程伊": 1,
+    "姜赢": 1,
+    "元永洁": 1
+  },
+  "events": [
+    {
+      "seq": 1200,
+      "events": [
+        "大秦立都南宁，姜赢为帝，奉程伊为帝师"
+      ]
+    }
+  ],
+  "id": "s1360_南宁"
+}

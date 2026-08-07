@@ -1,0 +1,30 @@
+{
+  "name": "坍塌的山岭",
+  "first_seq": 982,
+  "chapter_count": 1,
+  "chapters": [
+    982
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 982,
+      "quote": "晚风拂过坍塌的山岭，吹走了佛光，也吹走了雾气，只余下中洲惨淡的月色。"
+    }
+  ],
+  "characters": {},
+  "events": [
+    {
+      "seq": 982,
+      "events": [
+        "环境描写"
+      ]
+    }
+  ],
+  "id": "s1159_坍塌的山岭"
+}

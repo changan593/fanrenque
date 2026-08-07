@@ -12,6 +12,7 @@
     python pipeline/s3_validate_chapters.py --rerun-list   # 只输出待重跑的 seq
 """
 import argparse
+import re
 import statistics
 import sys
 from collections import Counter
@@ -25,6 +26,57 @@ from common.novel import load_novel
 
 REQUIRED_ANALYSIS_FIELDS = ["synopsis", "characters", "scenes", "dialogues",
                             "monologues", "narration", "beats"]
+
+
+# 泛称说话人：群众、无名龙套、以及「甲乙丙」这类编号角色。
+# 原文里确实有这些声音，但把「众人」「乞丐们」登记成人物才是错的——
+# 人物名单要的是有身份的角色。上一版逐个报警，1200 章里报出 379 章误报，
+# 把真正的 215 章缺陷淹掉了。
+_GENERIC_WORDS = (
+    # 群体
+    "众人", "众", "们", "人群", "群众", "队伍", "百姓", "村民", "百官",
+    # 无身份指代
+    "路人", "旁人", "他人", "某人", "有人", "来人", "那人", "此人", "凡人",
+    "老人", "老者", "男人", "女人", "男子", "女子", "青年", "少年", "少女",
+    "姑娘", "孩子", "孩童", "小孩", "妇人", "夫人", "中年",
+    # 仆役与随从
+    "乞丐", "护卫", "护院", "家丁", "小厮", "丫鬟", "婢女", "侍女", "侍从",
+    "下人", "杂役", "车夫", "船夫", "掌柜", "伙计", "商贩",
+    # 军伍
+    "兵士", "士兵", "官兵", "武将", "将领", "甲士", "兵卒", "守军", "铁骑",
+    "御林军", "玄甲军", "宫人", "官员",
+    # 修行界泛称
+    "弟子", "修士", "长老", "宿老", "仙师", "和尚", "道姑", "道人", "儒生",
+    "峰主", "楼主", "宗主", "掌门",
+    # 非人与虚指
+    "活尸", "纸人", "妖", "魔修", "魔", "虚影", "声音", "喊声", "黑狗", "土狗",
+    "唱名者", "说话者", "念信的人", "叙述者", "旁白",
+)
+# 结尾即可判定为泛称的字：编号龙套、集合名词
+_GENERIC_SUFFIX = ("甲", "乙", "丙", "丁", "戊", "己", "庚", "辛",
+                   "等人", "等", "军", "队", "众", "群")
+
+
+def _is_generic(name: str) -> bool:
+    """判断一个说话人是不是泛称。是的话不要求它出现在人物名单里。"""
+    n = (name or "").strip()
+    if not n:
+        return True
+    if any(n.endswith(suf) for suf in _GENERIC_SUFFIX):
+        return True
+    return any(w in n for w in _GENERIC_WORDS)
+
+
+def _known(name: str, known: set) -> bool:
+    """
+    人物名单里有 → 认；泛称 → 放行；
+    「姚安饶（二开分身）」这类带括号注记的，剥掉括号再比一次。
+    """
+    n = (name or "").strip()
+    if n in known or _is_generic(n):
+        return True
+    base = re.split(r"[（(]", n)[0].strip()
+    return bool(base) and base in known
 
 
 def check_one(doc: dict) -> dict:
@@ -65,11 +117,11 @@ def check_one(doc: dict) -> dict:
     for s in (a.get("scenes") or []):
         if not isinstance(s, dict):
             continue
-        unknown = [p for p in (s.get("present_characters") or []) if p not in known]
+        unknown = [p for p in (s.get("present_characters") or []) if not _known(p, known)]
         if unknown:
             problems.append(f"场景『{s.get('name')}』出现未登记人物：{unknown}")
     speakers = {d.get("speaker") for d in (a.get("dialogues") or []) if isinstance(d, dict)}
-    ghost = [s for s in speakers if s and s not in known and s != "未明说"]
+    ghost = [s for s in speakers if s and not _known(s, known) and s != "未明说"]
     if ghost:
         problems.append(f"说话人不在人物名单：{ghost}")
 
@@ -163,14 +215,42 @@ def main() -> None:
         for k, v in counter.most_common(12):
             print(f"  {v:5d}  {k}")
 
+    # 按严重程度分级。全部重跑既费钱又没必要——
+    # 「说话人是泛称」和「引用被改写一条」跟「臆造」不是一个量级的事。
+    tiers = {"T1_臆造": [], "T2_逐字或审查不达标": [], "T3_登记不全或简介短": []}
+    for r in bad:
+        ps = r["problems"]
+        if any("找不到" in p or "臆造" in p for p in ps):
+            tiers["T1_臆造"].append(r["seq"])
+        elif (any("逐字命中率" in p for p in ps)
+              or (r["structure_score"] or 99) < config.PASS_SCORE["structure_review"]
+              or (r["fidelity_score"] or 99) < config.PASS_SCORE["fidelity_review"]):
+            tiers["T2_逐字或审查不达标"].append(r["seq"])
+        else:
+            tiers["T3_登记不全或简介短"].append(r["seq"])
+
+    print("\n按严重程度分级：")
+    print(f"  T1 臆造（违反原则二，必须清零）      {len(tiers['T1_臆造']):4d} 章")
+    print(f"  T2 逐字率或审查分不达标              {len(tiers['T2_逐字或审查不达标']):4d} 章")
+    print(f"  T3 说话人未登记 / 简介过短 / 个别改写 {len(tiers['T3_登记不全或简介短']):4d} 章")
+
     out = paths.PLOT_DIR / "quality_report.json"
     write_json(out, {"total_chapters": total, "analyzed": len(results),
                      "missing": missing, "problem_count": len(bad),
-                     "rerun_seqs": rerun, "details": results})
+                     "rerun_seqs": rerun, "tiers": tiers, "details": results})
+    seq_file = paths.PLOT_DIR / "rerun_seqs.txt"
+    seq_file.write_text("\n".join(f"{k}: {' '.join(map(str, v))}"
+                                  for k, v in tiers.items() if v) + "\n",
+                        encoding="utf-8")
     print(f"\n完整报告：{out.relative_to(paths.ROOT)}")
-    if rerun:
-        print(f"重跑命令：python pipeline/s2_analyze_chapters.py --force --range "
-              f"{min(rerun)} {max(rerun)}")
+    print(f"分级清单：{seq_file.relative_to(paths.ROOT)}")
+    if tiers["T1_臆造"] or tiers["T2_逐字或审查不达标"]:
+        need = tiers["T1_臆造"] + tiers["T2_逐字或审查不达标"]
+        print(f"\n建议只重跑 T1+T2 共 {len(need)} 章（全量重跑没必要，也费钱）：")
+        print(f"    python pipeline/s2_analyze_chapters.py --force --seqs "
+              f"{','.join(map(str, sorted(need)[:12]))}"
+              f"{',...' if len(need) > 12 else ''}")
+        print(f"  完整 seq 见 {seq_file.name}")
 
 
 if __name__ == "__main__":

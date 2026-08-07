@@ -1,0 +1,42 @@
+{
+  "canonical_name": "白裙妇人",
+  "aliases": [
+    "白衣妇人"
+  ],
+  "first_seq": 494,
+  "last_seq": 494,
+  "chapter_count": 1,
+  "chapters": [
+    494
+  ],
+  "role_distribution": {
+    "次要": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 494,
+      "quote": "白裙妇人"
+    },
+    {
+      "seq": 494,
+      "quote": "白衣妇人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 494,
+      "state": "打酒，被带走"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 494,
+      "actions": [
+        "接过酒壶去打酒",
+        "随李一离开"
+      ]
+    }
+  ],
+  "id": "c537_白裙妇人"
+}

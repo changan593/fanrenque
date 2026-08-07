@@ -1,0 +1,28 @@
+{
+  "name": "城主府院子",
+  "first_seq": 20,
+  "chapter_count": 1,
+  "chapters": [
+    20
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 20,
+      "events": [
+        "唐真坐轮椅晒太阳"
+      ]
+    }
+  ],
+  "id": "s276_城主府院子"
+}

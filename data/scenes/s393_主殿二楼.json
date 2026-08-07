@@ -1,0 +1,25 @@
+{
+  "name": "主殿二楼",
+  "first_seq": 130,
+  "chapter_count": 1,
+  "chapters": [
+    130
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {},
+  "events": [
+    {
+      "seq": 130,
+      "events": [
+        "各大宗门对唐真的判断和算计"
+      ]
+    }
+  ],
+  "id": "s393_主殿二楼"
+}

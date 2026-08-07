@@ -1,0 +1,28 @@
+{
+  "name": "崖底",
+  "first_seq": 702,
+  "chapter_count": 1,
+  "chapters": [
+    702
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "巳时": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "盘膝而坐的修士": 1
+  },
+  "events": [
+    {
+      "seq": 702,
+      "events": [
+        "尉天齐落地，使用分身术"
+      ]
+    }
+  ],
+  "id": "s909_崖底"
+}

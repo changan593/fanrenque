@@ -1,0 +1,25 @@
+{
+  "canonical_name": "小女娃",
+  "aliases": [],
+  "first_seq": 796,
+  "last_seq": 796,
+  "chapter_count": 1,
+  "chapters": [
+    796
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 796,
+      "actions": [
+        "奔跑穿行，将信交给女子"
+      ]
+    }
+  ],
+  "id": "c667_小女娃"
+}

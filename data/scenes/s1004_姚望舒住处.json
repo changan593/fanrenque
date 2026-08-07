@@ -1,0 +1,29 @@
+{
+  "name": "姚望舒住处",
+  "first_seq": 800,
+  "chapter_count": 1,
+  "chapters": [
+    800
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 1,
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 800,
+      "events": [
+        "两人讨论海螺，推测其用途",
+        "姚望舒走出房门看月色"
+      ]
+    }
+  ],
+  "id": "s1004_姚望舒住处"
+}

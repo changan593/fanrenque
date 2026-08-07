@@ -1,0 +1,28 @@
+{
+  "name": "城中的巷子",
+  "first_seq": 664,
+  "chapter_count": 1,
+  "chapters": [
+    664
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 664,
+      "events": [
+        "唐真用隐匿术法行走，佛宗追索",
+        "唐真进入一间铺子"
+      ]
+    }
+  ],
+  "id": "s871_城中的巷子"
+}

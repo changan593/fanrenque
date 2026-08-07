@@ -1,0 +1,29 @@
+{
+  "name": "御林军大营",
+  "first_seq": 607,
+  "chapter_count": 1,
+  "chapters": [
+    607
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "董无": 1,
+    "御林军总将": 1
+  },
+  "events": [
+    {
+      "seq": 607,
+      "events": [
+        "御林军集结准备进城",
+        "董无求情，御林军暂缓"
+      ]
+    }
+  ],
+  "id": "s804_御林军大营"
+}

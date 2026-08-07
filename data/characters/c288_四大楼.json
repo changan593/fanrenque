@@ -1,0 +1,41 @@
+{
+  "canonical_name": "四大楼",
+  "aliases": [
+    "春台班",
+    "三庆班",
+    "四喜班",
+    "和安班",
+    "春伯等一众戏班骨干"
+  ],
+  "first_seq": 461,
+  "last_seq": 508,
+  "chapter_count": 2,
+  "chapters": [
+    461,
+    508
+  ],
+  "role_distribution": {
+    "提及": 2
+  },
+  "mentioned_only_count": 2,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 461,
+      "state": "先到畅音阁，各有角落"
+    },
+    {
+      "seq": 508,
+      "state": "火急火燎改戏本"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 508,
+      "actions": [
+        "修改戏文避免得罪长公主"
+      ]
+    }
+  ],
+  "id": "c288_四大楼"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "屏姐院外",
+  "first_seq": 218,
+  "chapter_count": 1,
+  "chapters": [
+    218
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "深夜": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "王玉屏": 1,
+    "萧不同": 1
+  },
+  "events": [
+    {
+      "seq": 218,
+      "events": [
+        "萧不同醉归",
+        "屏姐扶他进屋"
+      ]
+    }
+  ],
+  "id": "s481_屏姐院外"
+}

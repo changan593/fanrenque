@@ -1,0 +1,47 @@
+{
+  "canonical_name": "返虚境长老",
+  "aliases": [
+    "金童峰长老",
+    "老人"
+  ],
+  "first_seq": 101,
+  "last_seq": 103,
+  "chapter_count": 2,
+  "chapters": [
+    101,
+    103
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 101,
+      "state": "声音平淡"
+    },
+    {
+      "seq": 103,
+      "state": "金童峰返虚境长老，低眉不语，遵守潜规则"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 101,
+      "actions": [
+        "决定以境界压山"
+      ]
+    },
+    {
+      "seq": 103,
+      "actions": [
+        "救下金桧",
+        "介绍赵辞盈给魏成",
+        "低语建议闯竹林",
+        "质问吕藏锋"
+      ]
+    }
+  ],
+  "id": "c263_返虚境长老"
+}

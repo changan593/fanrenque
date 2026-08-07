@@ -1,0 +1,30 @@
+{
+  "name": "唐真住处（衣柜所在）",
+  "first_seq": 30,
+  "chapter_count": 1,
+  "chapters": [
+    30
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 30,
+      "events": [
+        "唐真让姚安饶钻衣柜",
+        "传授七囚箱术法",
+        "锁柜门后离开"
+      ]
+    }
+  ],
+  "id": "s291_唐真住处（衣柜所在）"
+}

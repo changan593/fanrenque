@@ -1,0 +1,29 @@
+{
+  "name": "梧桐塔外云层之上",
+  "first_seq": 909,
+  "chapter_count": 1,
+  "chapters": [
+    909
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 909,
+      "events": [
+        "姜羽看到唐真与妖物战斗",
+        "唐真劝姜羽回去"
+      ]
+    }
+  ],
+  "id": "s1090_梧桐塔外云层之上"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "唐真与天魔尊对话处",
+  "first_seq": 977,
+  "chapter_count": 1,
+  "chapters": [
+    977
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "天魔尊": 1
+  },
+  "events": [
+    {
+      "seq": 977,
+      "events": [
+        "唐真质问天魔尊，识破佛宗布局",
+        "天魔尊辩解，唐真指出迷藏"
+      ]
+    }
+  ],
+  "id": "s1157_唐真与天魔尊对话处"
+}

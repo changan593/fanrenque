@@ -1,0 +1,31 @@
+{
+  "name": "南瞻部洲西北部某小县城客栈",
+  "first_seq": 78,
+  "chapter_count": 1,
+  "chapters": [
+    78
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "幺儿": 1,
+    "胡九": 1
+  },
+  "events": [
+    {
+      "seq": 78,
+      "events": [
+        "周东东识破幺儿化形",
+        "幺儿焦虑",
+        "胡九安慰"
+      ]
+    }
+  ],
+  "id": "s348_南瞻部洲西北部某小县城客栈"
+}

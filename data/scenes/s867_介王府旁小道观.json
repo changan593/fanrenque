@@ -1,0 +1,29 @@
+{
+  "name": "介王府旁小道观",
+  "first_seq": 662,
+  "chapter_count": 1,
+  "chapters": [
+    662
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "袈裟和尚": 1,
+    "素衣老和尚": 1
+  },
+  "events": [
+    {
+      "seq": 662,
+      "events": [
+        "袈裟和尚来访，与素衣老和尚对话",
+        "素衣老和尚表示愿随二祖入魔"
+      ]
+    }
+  ],
+  "id": "s867_介王府旁小道观"
+}

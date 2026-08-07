@@ -1,0 +1,30 @@
+{
+  "canonical_name": "门房",
+  "aliases": [],
+  "first_seq": 680,
+  "last_seq": 680,
+  "chapter_count": 1,
+  "chapters": [
+    680
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 680,
+      "state": "在杜家大门打盹"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 680,
+      "actions": [
+        "指引尉天齐去旅馆"
+      ]
+    }
+  ],
+  "id": "c621_门房"
+}

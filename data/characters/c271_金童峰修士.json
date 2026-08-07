@@ -1,0 +1,46 @@
+{
+  "canonical_name": "金童峰修士",
+  "aliases": [],
+  "first_seq": 177,
+  "last_seq": 178,
+  "chapter_count": 2,
+  "chapters": [
+    177,
+    178
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 177,
+      "quote": "穿着金色道袍"
+    }
+  ],
+  "states": [
+    {
+      "seq": 177,
+      "state": "百无聊赖，大惊失色"
+    },
+    {
+      "seq": 178,
+      "state": "被知了和尚重伤"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 177,
+      "actions": [
+        "坐在河边踢石子，发现知了和尚并喝问"
+      ]
+    },
+    {
+      "seq": 178,
+      "actions": [
+        "被知了和尚重伤"
+      ]
+    }
+  ],
+  "id": "c271_金童峰修士"
+}

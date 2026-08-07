@@ -45,6 +45,49 @@ GENERIC = set("""老人 女人 男人 那人 此人 众人 有人 少年 少女 
 孩子 童子 弟子 长老 掌门 宫主 城主 护卫 侍女 丫鬟 和尚 道人 书生 乞丐 掌柜 伙计
 对方 双方 两人 三人 几人 大家 旁人 路人 某人 他 她 它 你 我""".split())
 
+# 泛称的**词根**。只做精确匹配拦不住「小丫头」「娇小的女孩」「野孩子们」「中年汉子」
+# 「老农」「男僧」这类带修饰的写法——实测正是它们把全书角色串成了一团。
+GENERIC_ROOTS = ("丫头", "丫鬟", "女孩", "男孩", "孩子", "小子", "少年", "少女",
+                 "老人", "老者", "老头", "老妇", "老农", "汉子", "男人", "女人",
+                 "男子", "女子", "青年", "中年", "书生", "和尚", "僧", "道人",
+                 "道姑", "乞丐", "护卫", "侍女", "弟子", "修士", "长老", "村民",
+                 "众人", "大家", "对方", "旁人", "路人", "某人", "那人", "此人",
+                 "来人", "有人", "群体", "们")
+# 一个称呼要以「正名」身份出现过这么多章，才算得上独立角色。
+# 定 5 是为了既挡住主角互相吞并，又不影响真正的别名归并（别名通常只作 alias 出现）。
+PRINCIPAL_MIN = 5
+
+
+def verified_identities() -> list[tuple[str, str]]:
+    """
+    人工核实过的身份对，来自 s8 的 PRESETS。返回 [(主名, 别名), ...]。
+
+    只取 `aliases`（确定是同一人）；`ambiguous` 一律不取——
+    那是「可能是本人也可能是别人」的跨人歧义（比如「姚姑娘」前期指姚安饶、
+    后期可能指姚望舒），并进来就会把两个人的戏搅成一个人。
+    """
+    try:
+        from s8_character_dossier import PRESETS
+    except Exception:
+        return []
+    out = []
+    for p in PRESETS.values():
+        canon = p["canonical"]
+        for a in p.get("aliases") or []:
+            if a and a != canon:
+                out.append((canon, a))
+    return out
+
+
+def is_generic(name: str) -> bool:
+    """泛称判定。精确表 + 词根后缀，两者任一命中即不参与归并。"""
+    n = (name or "").strip()
+    if not n or n in GENERIC:
+        return True
+    if n.endswith("（群体）") or n.endswith("(群体)"):
+        return True
+    return any(n.endswith(r) for r in GENERIC_ROOTS)
+
 SLUG_BAD = re.compile(r'[\\/:*?"<>|\s]')
 
 
@@ -97,31 +140,83 @@ def _strs(obj: dict, key: str) -> list[str]:
     return [x for x in v if isinstance(x, str) and x.strip()] if isinstance(v, list) else []
 
 
-def build_alias_map(docs: list[dict], merge: bool) -> tuple[dict[str, str], list[dict]]:
+def build_alias_map(docs: list[dict], merge: bool
+                    ) -> tuple[dict[str, str], list[dict], list[dict]]:
     """
-    返回 (任意称呼 -> 归并后的主名, 可疑簇列表)。
+    返回 (任意称呼 -> 归并后的主名, 可疑簇列表, 被拒绝的归并列表)。
 
     主名选取原则：簇内出现章节数最多的那个称呼。这样「唐真」会赢过「三只眼」，
     符合直觉。
     """
-    seen = Counter()                     # 称呼 -> 出现章节数
-    uf = Union()
+    # ---- 第一遍：只统计各称呼作为「正名」出现过多少章 ----
+    # 必须先统计完再归并。上一版边扫边并，导致一章里的一条错别名就能永久
+    # 把两个主角连起来——实测 seq369 把「求法真君」（唐真的名号）写成了
+    # 尉天齐的别名，再经由「少年」「女孩」这类泛称串联，全书 572 个角色
+    # 塌成了一个「唐真」，出场 1199 章。事后报警救不回来，必须事前拒绝。
+    seen = Counter()
     for d in docs:
         for ch in _items(d["analysis"], "characters"):
             name = (ch.get("name") or "").strip()
-            if not name:
-                continue
-            seen[name] += 1
-            uf.find(name)
-            if not merge:
+            if name:
+                seen[name] += 1
+
+    uf = Union()
+    for n in seen:
+        uf.find(n)
+    rejected: list[dict] = []
+    if not merge:
+        return {n: n for n in seen}, [], []
+
+    # ---- 第二遍：只做安全的归并 ----
+    # 闸门必须建在**簇**上，不能只做成对判断。并查集有传递性：
+    # 「唐真→某个只出现两章的杂名」和「尉天齐→同一个杂名」各自都通过了成对检查，
+    # 合起来照样把两个主角并成一个。所以给每个簇记住它已经含有哪些主名，
+    # 两个都含主名的簇一律不许合并。
+    principals = {n for n in seen if seen[n] >= PRINCIPAL_MIN}
+    cluster_principals: dict[str, set] = {
+        n: ({n} if n in principals else set()) for n in seen}
+
+    # ---- 先落人工核实过的身份 ----
+    # s8 的 PRESETS 是逐条查过原文才写下的（比如「求法真君」全书只有这一个名号前缀、
+    # 「姚红儿→姚望舒」有 seq320 的改名场景），比任何自动规则都可靠。
+    # 自动闸门本身无从判断「红儿」和「姚望舒」是不是一个人，只能保守地拒绝，
+    # 所以这些结论必须由人喂进来，且优先于自动归并。
+    verified_canon: set[str] = set()
+    for canon, alias in verified_identities():
+        verified_canon.add(canon)
+        for n in (canon, alias):
+            uf.find(n)
+            cluster_principals.setdefault(n, {n} if n in principals else set())
+        ra, rb = uf.find(canon), uf.find(alias)
+        if ra == rb:
+            continue
+        merged = cluster_principals[ra] | cluster_principals[rb]
+        uf.union(canon, alias)
+        cluster_principals[uf.find(canon)] = merged
+
+    for d in docs:
+        for ch in _items(d["analysis"], "characters"):
+            name = (ch.get("name") or "").strip()
+            if not name or is_generic(name):
                 continue
             for a in _strs(ch, "aliases"):
                 a = a.strip()
-                # 泛称不参与归并：它们会把不相干的人连成一团
-                if not a or a in GENERIC or name in GENERIC:
+                if not a or is_generic(a):     # 泛称不参与，它们会把不相干的人连成一团
                     continue
-                seen[a] += 0
+                seen.setdefault(a, 0)
+                ra, rb = uf.find(name), uf.find(a)
+                if ra == rb:
+                    continue
+                pa = cluster_principals.setdefault(ra, set())
+                pb = cluster_principals.setdefault(rb, set())
+                if pa and pb:
+                    rejected.append({
+                        "seq": d.get("seq"), "name": name, "alias": a,
+                        "name_side": sorted(pa), "alias_side": sorted(pb),
+                        "reason": "两边各自已包含独立主名，拒绝归并"})
+                    continue
                 uf.union(name, a)
+                cluster_principals[uf.find(name)] = pa | pb
 
     clusters: dict[str, list[str]] = defaultdict(list)
     for n in list(uf.parent):
@@ -129,16 +224,21 @@ def build_alias_map(docs: list[dict], merge: bool) -> tuple[dict[str, str], list
 
     alias_map, suspicious = {}, []
     for members in clusters.values():
-        canon = max(members, key=lambda n: (seen.get(n, 0), len(n)))
+        # 人工指定的主名优先。否则按出场章节数选——但那会让「红儿」(226章)
+        # 盖过「姚望舒」(129章)，而全书后半段她就叫姚望舒，档案也以此立名。
+        pinned = [m for m in members if m in verified_canon]
+        canon = (max(pinned, key=lambda n: seen.get(n, 0)) if pinned
+                 else max(members, key=lambda n: (seen.get(n, 0), len(n))))
         for m in members:
             alias_map[m] = canon
-        # 一个簇里出现多个「本身就很常见」的称呼，说明可能误并了
+        # 一个簇里出现多个「本身就很常见」的称呼，说明可能误并了。
+        # 但人工核实过的簇天然如此（唐真＝真君、红儿＝姚望舒），不必再报。
         strong = [m for m in members if seen.get(m, 0) >= 10]
-        if len(strong) > 1:
+        if len(strong) > 1 and not pinned:
             suspicious.append({"canonical": canon, "members": sorted(members),
                                "strong_members": sorted(strong),
                                "reason": "簇内有多个高频称呼，可能把不同角色并到了一起"})
-    return alias_map, suspicious
+    return alias_map, suspicious, rejected
 
 
 def build_characters(docs: list[dict], alias_map: dict[str, str]) -> list[dict]:
@@ -269,7 +369,7 @@ def main() -> None:
         print("请先跑：python pipeline/s2_analyze_chapters.py")
         return
 
-    alias_map, suspicious = build_alias_map(docs, merge=not args.no_merge)
+    alias_map, suspicious, rejected = build_alias_map(docs, merge=not args.no_merge)
     characters = build_characters(docs, alias_map)
     scenes = build_scenes(docs, alias_map)
     cooc = build_cooccurrence(docs, alias_map)
@@ -295,6 +395,7 @@ def main() -> None:
         "character_count": len(characters),
         "alias_merge": not args.no_merge,
         "suspicious_merges": suspicious,
+        "rejected_merges": rejected,
         "data_problems": problems,
         "characters": [{k: c[k] for k in light} for c in characters],
     })

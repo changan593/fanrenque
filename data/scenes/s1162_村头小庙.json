@@ -1,0 +1,29 @@
+{
+  "name": "村头小庙",
+  "first_seq": 985,
+  "chapter_count": 1,
+  "chapters": [
+    985
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "吕藏锋": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 985,
+      "events": [
+        "吕藏锋从菩提像手中取下剑尖",
+        "姚望舒问其几开"
+      ]
+    }
+  ],
+  "id": "s1162_村头小庙"
+}

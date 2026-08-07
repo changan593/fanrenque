@@ -1,0 +1,32 @@
+{
+  "name": "青茅山脉内",
+  "first_seq": 764,
+  "chapter_count": 1,
+  "chapters": [
+    764
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 764,
+      "quote": "男人坐在一个长满青苔的木桩上，手里提着一壶酒，仰着头看着天空中缓缓消散的异象"
+    }
+  ],
+  "characters": {
+    "男子": 1
+  },
+  "events": [
+    {
+      "seq": 764,
+      "events": [
+        "男子饮酒自语，质疑成为棋子"
+      ]
+    }
+  ],
+  "id": "s974_青茅山脉内"
+}

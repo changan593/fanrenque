@@ -1,0 +1,29 @@
+{
+  "name": "皇都旧址清水书院",
+  "first_seq": 1200,
+  "chapter_count": 1,
+  "chapters": [
+    1200
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "男孩": 1,
+    "程百尺": 1
+  },
+  "events": [
+    {
+      "seq": 1200,
+      "events": [
+        "姜羽遇到一个男孩"
+      ]
+    }
+  ],
+  "id": "s1361_皇都旧址清水书院"
+}

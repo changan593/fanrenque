@@ -1,0 +1,30 @@
+{
+  "name": "南洲界碑前",
+  "first_seq": 504,
+  "chapter_count": 1,
+  "chapters": [
+    504
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "怀素": 1,
+    "姚望舒": 1,
+    "施家老祖母": 1
+  },
+  "events": [
+    {
+      "seq": 504,
+      "events": [
+        "怀素与月牧讨价还价",
+        "揭示南生笔的来历与深意"
+      ]
+    }
+  ],
+  "id": "s727_南洲界碑前"
+}

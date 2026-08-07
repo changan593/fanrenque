@@ -1,0 +1,35 @@
+{
+  "canonical_name": "桐庐观众人",
+  "aliases": [
+    "活着之人",
+    "广场上的百十号人"
+  ],
+  "first_seq": 456,
+  "last_seq": 456,
+  "chapter_count": 1,
+  "chapters": [
+    456
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 456,
+      "state": "惶恐、哭嚎、求饶"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 456,
+      "actions": [
+        "伏地念叨",
+        "哭嚎求饶",
+        "有人暴起反抗"
+      ]
+    }
+  ],
+  "id": "c521_桐庐观众人"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "永和楼后胡同（续）",
+  "first_seq": 568,
+  "chapter_count": 1,
+  "chapters": [
+    568
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "深夜": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "幺儿": 1,
+    "程百尺": 1
+  },
+  "events": [
+    {
+      "seq": 568,
+      "events": [
+        "程百尺告知协议内容，幺儿感慨吴慢慢不想让皇都乱"
+      ]
+    }
+  ],
+  "id": "s771_永和楼后胡同（续）"
+}

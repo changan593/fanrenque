@@ -1,0 +1,29 @@
+{
+  "name": "无尽海",
+  "first_seq": 490,
+  "chapter_count": 1,
+  "chapters": [
+    490
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "男子": 1
+  },
+  "events": [
+    {
+      "seq": 490,
+      "events": [
+        "男子跪地不起，唐真询问",
+        "男子送信，唐真回信"
+      ]
+    }
+  ],
+  "id": "s714_无尽海"
+}

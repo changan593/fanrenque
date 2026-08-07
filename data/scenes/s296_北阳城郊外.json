@@ -1,0 +1,29 @@
+{
+  "name": "北阳城郊外",
+  "first_seq": 35,
+  "chapter_count": 1,
+  "chapters": [
+    35
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "太子": 1,
+    "师姐": 1
+  },
+  "events": [
+    {
+      "seq": 35,
+      "events": [
+        "太子被活尸背着逃亡",
+        "师姐追上，威胁太子炼尸"
+      ]
+    }
+  ],
+  "id": "s296_北阳城郊外"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "四师姐房",
+  "first_seq": 198,
+  "chapter_count": 1,
+  "chapters": [
+    198
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "姜羽": 1
+  },
+  "events": [
+    {
+      "seq": 198,
+      "events": [
+        "周东东闯进房，指着耳朵",
+        "姜羽说傻大姐生气了"
+      ]
+    }
+  ],
+  "id": "s460_四师姐房"
+}

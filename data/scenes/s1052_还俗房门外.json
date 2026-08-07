@@ -1,0 +1,30 @@
+{
+  "name": "还俗房门外",
+  "first_seq": 852,
+  "chapter_count": 1,
+  "chapters": [
+    852
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "入夜": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "还俗": 1,
+    "老僧": 1
+  },
+  "events": [
+    {
+      "seq": 852,
+      "events": [
+        "还俗等到老僧，分析三人异样",
+        "老僧承认拖延，还俗给出最后三天期限",
+        "老僧离去，还俗回身"
+      ]
+    }
+  ],
+  "id": "s1052_还俗房门外"
+}

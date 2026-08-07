@@ -1,0 +1,31 @@
+{
+  "name": "姚城主卧室",
+  "first_seq": 935,
+  "chapter_count": 1,
+  "chapters": [
+    935
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 2,
+    "姚城主": 1,
+    "姚安饶": 1,
+    "白子鹤": 1
+  },
+  "events": [
+    {
+      "seq": 935,
+      "events": [
+        "姚城主临终嘱咐",
+        "姚城主去世"
+      ]
+    }
+  ],
+  "id": "s1110_姚城主卧室"
+}

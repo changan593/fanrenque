@@ -1,0 +1,29 @@
+{
+  "name": "唐真所在处",
+  "first_seq": 1076,
+  "chapter_count": 1,
+  "chapters": [
+    1076
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 1076,
+      "events": [
+        "唐真查看洪洲情报",
+        "姚望舒汇报"
+      ]
+    }
+  ],
+  "id": "s1256_唐真所在处"
+}

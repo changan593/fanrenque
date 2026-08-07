@@ -1,0 +1,27 @@
+{
+  "name": "山林中",
+  "first_seq": 155,
+  "chapter_count": 1,
+  "chapters": [
+    155
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "知了和尚": 1
+  },
+  "events": [
+    {
+      "seq": 155,
+      "events": [
+        "知了和尚看到火线，察觉姜羽出事"
+      ]
+    }
+  ],
+  "id": "s415_山林中"
+}

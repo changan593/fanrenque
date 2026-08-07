@@ -1,0 +1,30 @@
+{
+  "name": "杜家祠堂",
+  "first_seq": 762,
+  "chapter_count": 1,
+  "chapters": [
+    762
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "杜文宗": 1,
+    "杜家众长老": 1
+  },
+  "events": [
+    {
+      "seq": 762,
+      "events": [
+        "长老们坐立不安",
+        "有人质疑",
+        "杜文宗解释老祖宗用意"
+      ]
+    }
+  ],
+  "id": "s970_杜家祠堂"
+}

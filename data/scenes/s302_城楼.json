@@ -1,0 +1,28 @@
+{
+  "name": "城楼",
+  "first_seq": 38,
+  "chapter_count": 1,
+  "chapters": [
+    38
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 38,
+      "events": [
+        "姚安饶分身关闭城门",
+        "与本体对视"
+      ]
+    }
+  ],
+  "id": "s302_城楼"
+}

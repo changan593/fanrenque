@@ -1,0 +1,48 @@
+{
+  "canonical_name": "望舒宫修士",
+  "aliases": [],
+  "first_seq": 963,
+  "last_seq": 983,
+  "chapter_count": 2,
+  "chapters": [
+    963,
+    983
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 983,
+      "quote": "几个穿着白色宫袍的修士"
+    }
+  ],
+  "states": [
+    {
+      "seq": 963,
+      "state": "部分被击碎明月守势，一剑封喉，几位天仙嘴角渗血"
+    },
+    {
+      "seq": 983,
+      "state": "在村外待命，发现姚安恕遁走后发信号追索"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 963,
+      "actions": [
+        "冲在最前，提供防卫，阻断进攻",
+        "被发丝击碎守势，被一剑封喉"
+      ]
+    },
+    {
+      "seq": 983,
+      "actions": [
+        "发现姚安恕消失，发信号传回宫内",
+        "执行全域搜索命令"
+      ]
+    }
+  ],
+  "id": "c316_望舒宫修士"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "还俗和尚住处",
+  "first_seq": 846,
+  "chapter_count": 1,
+  "chapters": [
+    846
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "还俗和尚": 1,
+    "老僧": 1
+  },
+  "events": [
+    {
+      "seq": 846,
+      "events": [
+        "老僧告知孩子们在悬空寺地牢",
+        "还俗和尚请求移出被拒",
+        "老僧同意派人照顾"
+      ]
+    }
+  ],
+  "id": "s1047_还俗和尚住处"
+}

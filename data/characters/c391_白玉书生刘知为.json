@@ -1,0 +1,30 @@
+{
+  "canonical_name": "白玉书生刘知为",
+  "aliases": [],
+  "first_seq": 120,
+  "last_seq": 120,
+  "chapter_count": 1,
+  "chapters": [
+    120
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 120,
+      "state": "瘦弱，跪倒"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 120,
+      "actions": [
+        "跪倒说‘小生愿以吾道换吾友！’"
+      ]
+    }
+  ],
+  "id": "c391_白玉书生刘知为"
+}

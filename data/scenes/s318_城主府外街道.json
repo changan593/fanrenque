@@ -1,0 +1,28 @@
+{
+  "name": "城主府外街道",
+  "first_seq": 48,
+  "chapter_count": 1,
+  "chapters": [
+    48
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "金丹魔修": 1
+  },
+  "events": [
+    {
+      "seq": 48,
+      "events": [
+        "周东东斩杀金丹魔修"
+      ]
+    }
+  ],
+  "id": "s318_城主府外街道"
+}

@@ -1,0 +1,23 @@
+{
+  "canonical_name": "知了大师",
+  "aliases": [],
+  "first_seq": 640,
+  "last_seq": 640,
+  "chapter_count": 1,
+  "chapters": [
+    640
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 640,
+      "state": "未出场"
+    }
+  ],
+  "actions": [],
+  "id": "c601_知了大师"
+}

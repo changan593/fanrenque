@@ -1,0 +1,33 @@
+{
+  "name": "山洞口",
+  "first_seq": 1009,
+  "chapter_count": 1,
+  "chapters": [
+    1009
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "雨天": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1009,
+      "quote": "看着外面深绿色的丛林，听着雨丝落下产生的哗啦啦的雨声"
+    }
+  ],
+  "characters": {
+    "刘知为": 1,
+    "古命好": 1
+  },
+  "events": [
+    {
+      "seq": 1009,
+      "events": [
+        "刘知为与古命好对话，古命好催促"
+      ]
+    }
+  ],
+  "id": "s1185_山洞口"
+}

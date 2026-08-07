@@ -1,0 +1,30 @@
+{
+  "name": "南宁军行帐阴影",
+  "first_seq": 939,
+  "chapter_count": 1,
+  "chapters": [
+    939
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "江流": 1
+  },
+  "events": [
+    {
+      "seq": 939,
+      "events": [
+        "二人潜伏，靠近大纛",
+        "回忆计划与动机",
+        "决定今夜行动"
+      ]
+    }
+  ],
+  "id": "s1116_南宁军行帐阴影"
+}

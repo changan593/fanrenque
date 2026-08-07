@@ -1,0 +1,28 @@
+{
+  "name": "朝阳城城头",
+  "first_seq": 35,
+  "chapter_count": 1,
+  "chapters": [
+    35
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "吴老鬼": 1,
+    "魔修": 1
+  },
+  "events": [
+    {
+      "seq": 35,
+      "events": [
+        "魔修对话，讨论《罗生门精解》"
+      ]
+    }
+  ],
+  "id": "s299_朝阳城城头"
+}

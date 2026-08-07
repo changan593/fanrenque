@@ -1,0 +1,28 @@
+{
+  "name": "帝后所在处",
+  "first_seq": 511,
+  "chapter_count": 1,
+  "chapters": [
+    511
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "帝后娘娘": 1,
+    "阿森": 1
+  },
+  "events": [
+    {
+      "seq": 511,
+      "events": [
+        "帝后与阿森商议长公主之事，安排官书"
+      ]
+    }
+  ],
+  "id": "s733_帝后所在处"
+}

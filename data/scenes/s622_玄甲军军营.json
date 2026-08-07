@@ -1,0 +1,28 @@
+{
+  "name": "玄甲军军营",
+  "first_seq": 387,
+  "chapter_count": 1,
+  "chapters": [
+    387
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "儒生": 1,
+    "玄甲军将领": 1
+  },
+  "events": [
+    {
+      "seq": 387,
+      "events": [
+        "儒生建议围困，将领拒绝"
+      ]
+    }
+  ],
+  "id": "s622_玄甲军军营"
+}

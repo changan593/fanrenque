@@ -1,0 +1,29 @@
+{
+  "name": "路上",
+  "first_seq": 31,
+  "chapter_count": 1,
+  "chapters": [
+    31
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "太子": 1,
+    "师姐": 1
+  },
+  "events": [
+    {
+      "seq": 31,
+      "events": [
+        "太子与师姐赶路",
+        "太子内心独白"
+      ]
+    }
+  ],
+  "id": "s293_路上"
+}

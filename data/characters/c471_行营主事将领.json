@@ -1,0 +1,23 @@
+{
+  "canonical_name": "行营主事将领",
+  "aliases": [],
+  "first_seq": 323,
+  "last_seq": 323,
+  "chapter_count": 1,
+  "chapters": [
+    323
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 323,
+      "state": "拒绝出兵"
+    }
+  ],
+  "actions": [],
+  "id": "c471_行营主事将领"
+}

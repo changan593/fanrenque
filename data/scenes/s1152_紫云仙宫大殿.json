@@ -1,0 +1,34 @@
+{
+  "name": "紫云仙宫大殿",
+  "first_seq": 975,
+  "chapter_count": 1,
+  "chapters": [
+    975
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 975,
+      "quote": "大殿里终于安静下来"
+    }
+  ],
+  "characters": {
+    "葛道人": 1,
+    "秦怀雀": 1
+  },
+  "events": [
+    {
+      "seq": 975,
+      "events": [
+        "文宗离开",
+        "葛道人与秦怀雀对话"
+      ]
+    }
+  ],
+  "id": "s1152_紫云仙宫大殿"
+}

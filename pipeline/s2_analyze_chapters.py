@@ -462,6 +462,9 @@ def main() -> None:
                     help="只做一次最小请求验证密钥/模型/网络，不跑章节")
     ap.add_argument("--range", nargs=2, type=int, metavar=("START", "END"),
                     help="只处理 seq 区间（含两端）")
+    ap.add_argument("--seqs", metavar="LIST",
+                    help="只处理这些 seq，逗号分隔。体检分级后精确重跑用，"
+                         "比 --range 省钱：不达标的章往往是散落的")
     ap.add_argument("--smoke", type=int, metavar="N", help="只跑前 N 章，验管道用")
     ap.add_argument("--phase", choices=["all", "review"], default="all",
                     help="all=完整跑；review=复用已有抽取结果，只重跑审查")
@@ -479,12 +482,24 @@ def main() -> None:
     if args.doctor:
         sys.exit(doctor())
     total = load_novel()["meta"]["unit_count"]
-    start, end = (args.range if args.range else (1, args.smoke or total))
-    chapters = list(iter_chapters(start, end))
+    if args.seqs:
+        # 精确重跑：体检分级后不达标的章往往散落在全书各处，
+        # 用 --range 会把中间几百章合格的也一起重跑，纯浪费钱。
+        want = {int(x) for x in args.seqs.replace(" ", ",").split(",") if x.strip()}
+        bad = sorted(s for s in want if not 1 <= s <= total)
+        if bad:
+            raise SystemExit(f"--seqs 里有越界的 seq（合法范围 1~{total}）：{bad[:10]}")
+        chapters = [c for c in iter_chapters(1, total) if c["seq"] in want]
+        start, end = min(want), max(want)
+        scope = f"指定 {len(chapters)} 章（seq {start}~{end} 之间挑出）"
+    else:
+        start, end = (args.range if args.range else (1, args.smoke or total))
+        chapters = list(iter_chapters(start, end))
+        scope = f"范围 seq {start}~{end}（{len(chapters)} 章）"
     todo, stats = select_todo(chapters, args.phase, args.force, args.redo_failed)
 
     print(config.describe())
-    print(f"阶段 {args.phase} | 范围 seq {start}~{end}（{len(chapters)} 章）")
+    print(f"阶段 {args.phase} | {scope}")
     print(f"续传状态：已完成 {stats['done']} | 未跑 {stats['missing']} | "
           f"残缺 {stats['incomplete']} | 未达标 {stats['failed']}")
     if stats["failed"] and not args.redo_failed and args.phase == "all" and not args.force:

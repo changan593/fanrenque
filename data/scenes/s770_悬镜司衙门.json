@@ -1,0 +1,27 @@
+{
+  "name": "悬镜司衙门",
+  "first_seq": 568,
+  "chapter_count": 1,
+  "chapters": [
+    568
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜深人静": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "吴慢慢": 1
+  },
+  "events": [
+    {
+      "seq": 568,
+      "events": [
+        "吴慢慢整理简历，内心独白揭示布局"
+      ]
+    }
+  ],
+  "id": "s770_悬镜司衙门"
+}

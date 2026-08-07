@@ -1,0 +1,28 @@
+{
+  "canonical_name": "白色小狐狸",
+  "aliases": [],
+  "first_seq": 493,
+  "last_seq": 493,
+  "chapter_count": 1,
+  "chapters": [
+    493
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 493,
+      "quote": "雪白色的小狐狸"
+    }
+  ],
+  "states": [
+    {
+      "seq": 493,
+      "state": "趴在李一膝上，被赶开。"
+    }
+  ],
+  "actions": [],
+  "id": "c536_白色小狐狸"
+}

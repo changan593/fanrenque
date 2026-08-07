@@ -1,0 +1,32 @@
+{
+  "name": "城主府议事堂",
+  "first_seq": 28,
+  "chapter_count": 1,
+  "chapters": [
+    28
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚城主": 1,
+    "大嗓门武将": 1,
+    "众人": 1
+  },
+  "events": [
+    {
+      "seq": 28,
+      "events": [
+        "唐真告知魔乱",
+        "众人争论",
+        "唐真提出以自身为饵"
+      ]
+    }
+  ],
+  "id": "s287_城主府议事堂"
+}

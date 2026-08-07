@@ -1,0 +1,28 @@
+{
+  "name": "小观",
+  "first_seq": 641,
+  "chapter_count": 1,
+  "chapters": [
+    641
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "程百尺": 1,
+    "老和尚": 1
+  },
+  "events": [
+    {
+      "seq": 641,
+      "events": [
+        "程百尺问话老和尚，得知准佛下落不明"
+      ]
+    }
+  ],
+  "id": "s843_小观"
+}

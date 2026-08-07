@@ -1,0 +1,32 @@
+{
+  "name": "紫云峰门楼",
+  "first_seq": 383,
+  "chapter_count": 1,
+  "chapters": [
+    383
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "秦怀雀": 1,
+    "幺儿": 1,
+    "江流": 1
+  },
+  "events": [
+    {
+      "seq": 383,
+      "events": [
+        "秦怀雀送三人到门楼",
+        "叮嘱三人",
+        "三人拜别"
+      ]
+    }
+  ],
+  "id": "s614_紫云峰门楼"
+}

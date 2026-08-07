@@ -1,0 +1,30 @@
+{
+  "name": "皇都（院子）",
+  "first_seq": 929,
+  "chapter_count": 1,
+  "chapters": [
+    929
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "古命好": 1
+  },
+  "events": [
+    {
+      "seq": 929,
+      "events": [
+        "古命好向唐真推销玉简",
+        "唐真拒绝后接受",
+        "两人分道扬镳"
+      ]
+    }
+  ],
+  "id": "s1103_皇都（院子）"
+}

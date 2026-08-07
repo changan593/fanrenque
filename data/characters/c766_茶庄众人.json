@@ -1,0 +1,31 @@
+{
+  "canonical_name": "茶庄众人",
+  "aliases": [],
+  "first_seq": 1083,
+  "last_seq": 1083,
+  "chapter_count": 1,
+  "chapters": [
+    1083
+  ],
+  "role_distribution": {
+    "配角": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1083,
+      "state": "茶庄伙计，对杜有才恭敬"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1083,
+      "actions": [
+        "向杜有才行礼",
+        "高呼东家来了"
+      ]
+    }
+  ],
+  "id": "c766_茶庄众人"
+}

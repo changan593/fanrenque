@@ -1,0 +1,30 @@
+{
+  "name": "街道旁",
+  "first_seq": 594,
+  "chapter_count": 1,
+  "chapters": [
+    594
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "余庆": 1
+  },
+  "events": [
+    {
+      "seq": 594,
+      "events": [
+        "周东东气喘吁吁，余庆笑着看他",
+        "余庆解释拦下他的原因",
+        "周东东质问幺儿下落"
+      ]
+    }
+  ],
+  "id": "s792_街道旁"
+}

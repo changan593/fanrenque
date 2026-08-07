@@ -1,0 +1,25 @@
+{
+  "canonical_name": "史家二郎",
+  "aliases": [
+    "史家娃娃"
+  ],
+  "first_seq": 603,
+  "last_seq": 603,
+  "chapter_count": 1,
+  "chapters": [
+    603
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 603,
+      "state": "上了书院，如今应是一个儒生，参与夜晚冲突"
+    }
+  ],
+  "actions": [],
+  "id": "c578_史家二郎"
+}

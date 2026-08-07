@@ -1,0 +1,29 @@
+{
+  "name": "城主府内室",
+  "first_seq": 19,
+  "chapter_count": 1,
+  "chapters": [
+    19
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚安饶": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 19,
+      "events": [
+        "姚安饶与红儿聊天，提及唐真与红儿心思",
+        "姚安饶告知红儿被收为义女"
+      ]
+    }
+  ],
+  "id": "s273_城主府内室"
+}

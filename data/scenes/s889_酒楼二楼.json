@@ -1,0 +1,31 @@
+{
+  "name": "酒楼二楼",
+  "first_seq": 676,
+  "chapter_count": 1,
+  "chapters": [
+    676
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "葵": 1
+  },
+  "events": [
+    {
+      "seq": 676,
+      "events": [
+        "尉天齐与葵交谈",
+        "葵提及藿与闻人哭",
+        "尉天齐提供情报",
+        "葵承诺相助"
+      ]
+    }
+  ],
+  "id": "s889_酒楼二楼"
+}

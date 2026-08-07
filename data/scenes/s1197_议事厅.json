@@ -1,0 +1,30 @@
+{
+  "name": "议事厅",
+  "first_seq": 1024,
+  "chapter_count": 1,
+  "chapters": [
+    1024
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "元永洁": 1,
+    "姜赢": 1,
+    "魏成": 1
+  },
+  "events": [
+    {
+      "seq": 1024,
+      "events": [
+        "讨论首魔尊伏诛消息",
+        "分析剑山力量外溢"
+      ]
+    }
+  ],
+  "id": "s1197_议事厅"
+}

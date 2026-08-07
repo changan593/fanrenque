@@ -1,0 +1,32 @@
+{
+  "name": "梧桐苑大门",
+  "first_seq": 440,
+  "chapter_count": 1,
+  "chapters": [
+    440
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "清晨": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "阿森": 1,
+    "赵姑姑": 1,
+    "李公公": 1
+  },
+  "events": [
+    {
+      "seq": 440,
+      "events": [
+        "姜羽打飞赵姑姑",
+        "姜羽推倒李公公",
+        "姜羽说“碍事”"
+      ]
+    }
+  ],
+  "id": "s660_梧桐苑大门"
+}

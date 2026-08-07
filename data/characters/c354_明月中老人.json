@@ -1,0 +1,30 @@
+{
+  "canonical_name": "明月中老人",
+  "aliases": [],
+  "first_seq": 56,
+  "last_seq": 56,
+  "chapter_count": 1,
+  "chapters": [
+    56
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 56,
+      "state": "愤怒"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 56,
+      "actions": [
+        "愤怒质问姜羽"
+      ]
+    }
+  ],
+  "id": "c354_明月中老人"
+}

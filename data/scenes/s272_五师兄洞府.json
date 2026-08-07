@@ -1,0 +1,31 @@
+{
+  "name": "五师兄洞府",
+  "first_seq": 15,
+  "chapter_count": 1,
+  "chapters": [
+    15
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "周东东": 1,
+    "秦怀雀": 1
+  },
+  "events": [
+    {
+      "seq": 15,
+      "events": [
+        "周东东讲述大殿之事",
+        "五师兄点明紫云剑来历",
+        "周东东决定速启程",
+        "五师兄写信给师姐"
+      ]
+    }
+  ],
+  "id": "s272_五师兄洞府"
+}

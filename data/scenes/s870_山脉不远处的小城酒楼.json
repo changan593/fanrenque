@@ -1,0 +1,33 @@
+{
+  "name": "山脉不远处的小城酒楼",
+  "first_seq": 664,
+  "chapter_count": 1,
+  "chapters": [
+    664
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 664,
+      "quote": "一间破败的酒楼里"
+    }
+  ],
+  "characters": {
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 664,
+      "events": [
+        "唐真吃花生，感叹差一步",
+        "唐真跳窗离开"
+      ]
+    }
+  ],
+  "id": "s870_山脉不远处的小城酒楼"
+}

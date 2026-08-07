@@ -1,0 +1,28 @@
+{
+  "name": "玉辇内",
+  "first_seq": 449,
+  "chapter_count": 1,
+  "chapters": [
+    449
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 1,
+    "于念娘": 1
+  },
+  "events": [
+    {
+      "seq": 449,
+      "events": [
+        "于念娘拉住姚望舒的手，称呼红儿姐"
+      ]
+    }
+  ],
+  "id": "s672_玉辇内"
+}

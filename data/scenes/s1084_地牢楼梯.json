@@ -1,0 +1,29 @@
+{
+  "name": "地牢楼梯",
+  "first_seq": 893,
+  "chapter_count": 1,
+  "chapters": [
+    893
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "王善": 1,
+    "老僧": 1
+  },
+  "events": [
+    {
+      "seq": 893,
+      "events": [
+        "王善疯狂逃命",
+        "老僧紧追不舍"
+      ]
+    }
+  ],
+  "id": "s1084_地牢楼梯"
+}

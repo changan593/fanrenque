@@ -1,0 +1,28 @@
+{
+  "name": "黑色马车内",
+  "first_seq": 711,
+  "chapter_count": 1,
+  "chapters": [
+    711
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "闻人哭": 1
+  },
+  "events": [
+    {
+      "seq": 711,
+      "events": [
+        "闻人哭反思，确认尉天齐未藏拙",
+        "掏出镜子"
+      ]
+    }
+  ],
+  "id": "s919_黑色马车内"
+}

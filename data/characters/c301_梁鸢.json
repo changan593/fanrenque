@@ -1,0 +1,28 @@
+{
+  "canonical_name": "梁鸢",
+  "aliases": [],
+  "first_seq": 719,
+  "last_seq": 720,
+  "chapter_count": 2,
+  "chapters": [
+    719,
+    720
+  ],
+  "role_distribution": {
+    "提及": 2
+  },
+  "mentioned_only_count": 2,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 719,
+      "state": "姜麟前世的爱人"
+    },
+    {
+      "seq": 720,
+      "state": "已死"
+    }
+  ],
+  "actions": [],
+  "id": "c301_梁鸢"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "大雨中",
+  "first_seq": 743,
+  "chapter_count": 1,
+  "chapters": [
+    743
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "木方生": 1,
+    "尉天齐": 1
+  },
+  "events": [
+    {
+      "seq": 743,
+      "events": [
+        "木方生质问尉天齐",
+        "尉天齐恐惧"
+      ]
+    }
+  ],
+  "id": "s952_大雨中"
+}

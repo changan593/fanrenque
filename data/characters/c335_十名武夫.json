@@ -1,0 +1,25 @@
+{
+  "canonical_name": "十名武夫",
+  "aliases": [],
+  "first_seq": 17,
+  "last_seq": 17,
+  "chapter_count": 1,
+  "chapters": [
+    17
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 17,
+      "actions": [
+        "演练剑法，吟唱《侠客行》"
+      ]
+    }
+  ],
+  "id": "c335_十名武夫"
+}

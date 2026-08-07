@@ -1,0 +1,31 @@
+{
+  "name": "钟鸾所在之处",
+  "first_seq": 882,
+  "chapter_count": 1,
+  "chapters": [
+    882
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "钟鸾": 1,
+    "姜赢": 1,
+    "元永洁": 1
+  },
+  "events": [
+    {
+      "seq": 882,
+      "events": [
+        "太子献剑",
+        "钟鸾被迫握剑",
+        "元永洁威胁"
+      ]
+    }
+  ],
+  "id": "s1072_钟鸾所在之处"
+}

@@ -1,0 +1,39 @@
+{
+  "canonical_name": "清水书院副院首",
+  "aliases": [
+    "老腐儒"
+  ],
+  "first_seq": 367,
+  "last_seq": 369,
+  "chapter_count": 2,
+  "chapters": [
+    367,
+    369
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 367,
+      "state": "笑容满面"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 367,
+      "actions": [
+        "携弟子朗诵《荀子修身》，入座"
+      ]
+    },
+    {
+      "seq": 369,
+      "actions": [
+        "代表儒门恭贺尉天齐"
+      ]
+    }
+  ],
+  "id": "c281_清水书院副院首"
+}

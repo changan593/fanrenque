@@ -1,0 +1,30 @@
+{
+  "name": "太行山首峰总堂",
+  "first_seq": 258,
+  "chapter_count": 1,
+  "chapters": [
+    258
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "次日": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "裴林剑": 1,
+    "姚望舒": 1,
+    "众人": 1
+  },
+  "events": [
+    {
+      "seq": 258,
+      "events": [
+        "众人怒骂唐真和红儿",
+        "裴林剑内心矛盾"
+      ]
+    }
+  ],
+  "id": "s519_太行山首峰总堂"
+}

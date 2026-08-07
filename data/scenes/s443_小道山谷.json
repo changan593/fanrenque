@@ -1,0 +1,38 @@
+{
+  "name": "小道山谷",
+  "first_seq": 183,
+  "chapter_count": 1,
+  "chapters": [
+    183
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 183,
+      "quote": "小道幽深僻静"
+    },
+    {
+      "seq": 183,
+      "quote": "黑漆漆的不见光亮，只有清凉的水声"
+    }
+  ],
+  "characters": {
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 183,
+      "events": [
+        "唐真走到山谷",
+        "发现鹿豚包围",
+        "进入溶洞"
+      ]
+    }
+  ],
+  "id": "s443_小道山谷"
+}

@@ -1,0 +1,42 @@
+{
+  "canonical_name": "小童",
+  "aliases": [],
+  "first_seq": 334,
+  "last_seq": 852,
+  "chapter_count": 2,
+  "chapters": [
+    334,
+    852
+  ],
+  "role_distribution": {
+    "参与": 1,
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 334,
+      "state": "报幕"
+    },
+    {
+      "seq": 852,
+      "state": "搀扶老人。"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 334,
+      "actions": [
+        "报幕，唱开场小段"
+      ]
+    },
+    {
+      "seq": 852,
+      "actions": [
+        "搀扶老人走向畅音阁"
+      ]
+    }
+  ],
+  "id": "c278_小童"
+}

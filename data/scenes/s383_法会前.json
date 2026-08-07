@@ -1,0 +1,29 @@
+{
+  "name": "法会前",
+  "first_seq": 119,
+  "chapter_count": 1,
+  "chapters": [
+    119
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 119,
+      "events": [
+        "唐真推断灵兽崖崖主是魔修",
+        "与红儿对话"
+      ]
+    }
+  ],
+  "id": "s383_法会前"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "海上木船",
+  "first_seq": 544,
+  "chapter_count": 1,
+  "chapters": [
+    544
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天至傍晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "第一大菩萨": 1,
+    "唐真": 1
+  },
+  "events": [
+    {
+      "seq": 544,
+      "events": [
+        "大菩萨告知知了和尚消息",
+        "唐真推测佛宗意图"
+      ]
+    }
+  ],
+  "id": "s753_海上木船"
+}

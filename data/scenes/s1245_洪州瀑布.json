@@ -1,0 +1,32 @@
+{
+  "name": "洪州瀑布",
+  "first_seq": 1067,
+  "chapter_count": 1,
+  "chapters": [
+    1067
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1067,
+      "quote": "姜羽站在那高耸的瀑布上，看着下方水雾蒸腾的天地"
+    }
+  ],
+  "characters": {
+    "姜羽": 1
+  },
+  "events": [
+    {
+      "seq": 1067,
+      "events": [
+        "姜羽心情不好，因洪州阻拦及唐真出现而不满"
+      ]
+    }
+  ],
+  "id": "s1245_洪州瀑布"
+}

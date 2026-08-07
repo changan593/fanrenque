@@ -1,0 +1,31 @@
+{
+  "name": "藿的房间",
+  "first_seq": 678,
+  "chapter_count": 1,
+  "chapters": [
+    678
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "葵": 1,
+    "藿": 1,
+    "闻人哭": 1
+  },
+  "events": [
+    {
+      "seq": 678,
+      "events": [
+        "葵怒斥闻人哭，扔纸张",
+        "闻人哭承认恶行并告别",
+        "藿被拽走，哭泣"
+      ]
+    }
+  ],
+  "id": "s890_藿的房间"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "姜羽所在之地",
+  "first_seq": 938,
+  "chapter_count": 1,
+  "chapters": [
+    938
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "元永洁": 1
+  },
+  "events": [
+    {
+      "seq": 938,
+      "events": [
+        "元永洁劝姜羽，姜羽答应去战场"
+      ]
+    }
+  ],
+  "id": "s1114_姜羽所在之地"
+}

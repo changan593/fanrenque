@@ -1,0 +1,37 @@
+{
+  "name": "皇宫门口",
+  "first_seq": 678,
+  "chapter_count": 1,
+  "chapters": [
+    678
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "午时": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 678,
+      "quote": "午时，天晴。"
+    }
+  ],
+  "characters": {
+    "姜羽": 1,
+    "阿森": 1,
+    "幺儿": 1,
+    "周东东": 1,
+    "江流": 1
+  },
+  "events": [
+    {
+      "seq": 678,
+      "events": [
+        "姜羽拒绝坐马车",
+        "红鸟冲天而起"
+      ]
+    }
+  ],
+  "id": "s892_皇宫门口"
+}

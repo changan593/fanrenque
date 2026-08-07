@@ -1,0 +1,28 @@
+{
+  "name": "紫云仙宫驻地",
+  "first_seq": 957,
+  "chapter_count": 1,
+  "chapters": [
+    957
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "秦怀雀": 1,
+    "执法长老": 1
+  },
+  "events": [
+    {
+      "seq": 957,
+      "events": [
+        "对话关于唐真行为，秦怀雀解释用意，决定飞过不理"
+      ]
+    }
+  ],
+  "id": "s1134_紫云仙宫驻地"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "御书房",
+  "first_seq": 465,
+  "chapter_count": 1,
+  "chapters": [
+    465
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "李三全": 1,
+    "人皇": 1
+  },
+  "events": [
+    {
+      "seq": 465,
+      "events": [
+        "李三全禀报打斗",
+        "人皇询问吴慢慢",
+        "人皇抱怨帝后",
+        "人皇命李三全去畅音阁"
+      ]
+    }
+  ],
+  "id": "s690_御书房"
+}

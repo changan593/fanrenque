@@ -1,0 +1,29 @@
+{
+  "name": "地牢入口",
+  "first_seq": 893,
+  "chapter_count": 1,
+  "chapters": [
+    893
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "王善": 1,
+    "两个老和尚": 1,
+    "十数个高僧": 1
+  },
+  "events": [
+    {
+      "seq": 893,
+      "events": [
+        "王善目睹虐杀"
+      ]
+    }
+  ],
+  "id": "s1085_地牢入口"
+}

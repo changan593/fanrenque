@@ -1,0 +1,31 @@
+{
+  "name": "水潭边",
+  "first_seq": 629,
+  "chapter_count": 1,
+  "chapters": [
+    629
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "葵": 1,
+    "藿": 1,
+    "闻人哭": 1
+  },
+  "events": [
+    {
+      "seq": 629,
+      "events": [
+        "葵询问水潭",
+        "闻人哭解释情报",
+        "三人跃入深潭"
+      ]
+    }
+  ],
+  "id": "s832_水潭边"
+}

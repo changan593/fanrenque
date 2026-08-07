@@ -1,0 +1,30 @@
+{
+  "name": "清流阁峰顶",
+  "first_seq": 178,
+  "chapter_count": 1,
+  "chapters": [
+    178
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "阎门主": 1,
+    "副门主": 1
+  },
+  "events": [
+    {
+      "seq": 178,
+      "events": [
+        "阎门主下令搜山",
+        "收到玉女峰命令",
+        "召集众人出发"
+      ]
+    }
+  ],
+  "id": "s436_清流阁峰顶"
+}

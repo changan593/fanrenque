@@ -1,0 +1,30 @@
+{
+  "name": "棋盘山",
+  "first_seq": 1009,
+  "chapter_count": 1,
+  "chapters": [
+    1009
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "野狐禅师": 1,
+    "吴慢慢": 1,
+    "云儿": 1,
+    "尉天齐": 1
+  },
+  "events": [
+    {
+      "seq": 1009,
+      "events": [
+        "野狐与吴慢慢喝茶对话，云儿照顾尉天齐"
+      ]
+    }
+  ],
+  "id": "s1186_棋盘山"
+}

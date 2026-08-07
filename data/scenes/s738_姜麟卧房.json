@@ -1,0 +1,33 @@
+{
+  "name": "姜麟卧房",
+  "first_seq": 516,
+  "chapter_count": 1,
+  "chapters": [
+    516
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 516,
+      "quote": "在无人注意的小小卧房里"
+    }
+  ],
+  "characters": {
+    "姜麟": 1
+  },
+  "events": [
+    {
+      "seq": 516,
+      "events": [
+        "姜麟用腰带抽打自己四十七下",
+        "抚摸纸鹤，呼唤亡母"
+      ]
+    }
+  ],
+  "id": "s738_姜麟卧房"
+}

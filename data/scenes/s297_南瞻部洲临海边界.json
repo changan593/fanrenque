@@ -1,0 +1,32 @@
+{
+  "name": "南瞻部洲临海边界",
+  "first_seq": 35,
+  "chapter_count": 1,
+  "chapters": [
+    35
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 35,
+      "quote": "远处海面上有黑线浮现"
+    }
+  ],
+  "characters": {
+    "周东东": 1
+  },
+  "events": [
+    {
+      "seq": 35,
+      "events": [
+        "周东东御剑飞行，感应魔气，加速"
+      ]
+    }
+  ],
+  "id": "s297_南瞻部洲临海边界"
+}

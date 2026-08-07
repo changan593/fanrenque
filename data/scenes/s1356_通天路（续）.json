@@ -1,0 +1,36 @@
+{
+  "name": "通天路（续）",
+  "first_seq": 1196,
+  "chapter_count": 1,
+  "chapters": [
+    1196
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1196,
+      "quote": "白色收缩而来的速度越来越快"
+    },
+    {
+      "seq": 1196,
+      "quote": "白雾充斥视野"
+    }
+  ],
+  "characters": {
+    "天魔尊": 1
+  },
+  "events": [
+    {
+      "seq": 1196,
+      "events": [
+        "灯圈回收，冲刺失败，怀疑通天路是天道，失重下坠"
+      ]
+    }
+  ],
+  "id": "s1356_通天路（续）"
+}

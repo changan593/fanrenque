@@ -1,0 +1,38 @@
+{
+  "name": "道祖殿",
+  "first_seq": 489,
+  "chapter_count": 1,
+  "chapters": [
+    489
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 489,
+      "quote": "夜色里灯火无声的摇曳"
+    },
+    {
+      "seq": 489,
+      "quote": "空荡荡的大殿"
+    }
+  ],
+  "characters": {
+    "尉天齐": 1,
+    "两松观观主": 1
+  },
+  "events": [
+    {
+      "seq": 489,
+      "events": [
+        "尉天齐询问观主问题",
+        "观主拒绝后同意"
+      ]
+    }
+  ],
+  "id": "s712_道祖殿"
+}

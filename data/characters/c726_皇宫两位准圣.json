@@ -1,0 +1,42 @@
+{
+  "canonical_name": "皇宫两位准圣",
+  "aliases": [
+    "皇宫那两位老的要死的准圣",
+    "两位皇宫供奉"
+  ],
+  "first_seq": 924,
+  "last_seq": 924,
+  "chapter_count": 1,
+  "chapters": [
+    924
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 924,
+      "quote": "他们走的很慢，拄着拐杖，远远看去那身形竟然比清水书院的准圣还要佝偻。"
+    },
+    {
+      "seq": 924,
+      "quote": "但身上的袍服却远比清水书院的老儒们华丽，那是皇宫的宫袍。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 924,
+      "state": "只剩半条命，太老，多年未斗法"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 924,
+      "actions": [
+        "蹒跚而来，完全无声"
+      ]
+    }
+  ],
+  "id": "c726_皇宫两位准圣"
+}

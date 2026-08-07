@@ -1,0 +1,30 @@
+{
+  "canonical_name": "魏福来",
+  "aliases": [
+    "魏老三"
+  ],
+  "first_seq": 166,
+  "last_seq": 1199,
+  "chapter_count": 2,
+  "chapters": [
+    166,
+    1199
+  ],
+  "role_distribution": {
+    "提及": 2
+  },
+  "mentioned_only_count": 2,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 166,
+      "state": "已死于花柳病"
+    },
+    {
+      "seq": 1199,
+      "state": "被提及，现实世界相关"
+    }
+  ],
+  "actions": [],
+  "id": "c269_魏福来"
+}

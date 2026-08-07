@@ -1,0 +1,32 @@
+{
+  "name": "蒲团处",
+  "first_seq": 1059,
+  "chapter_count": 1,
+  "chapters": [
+    1059
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "拂衣": 1,
+    "择荫": 1,
+    "佟鼎儿": 1
+  },
+  "events": [
+    {
+      "seq": 1059,
+      "events": [
+        "唐真与三个孩子对话",
+        "孩子们紧张",
+        "唐真允许提问"
+      ]
+    }
+  ],
+  "id": "s1240_蒲团处"
+}

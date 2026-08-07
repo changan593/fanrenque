@@ -1,0 +1,39 @@
+{
+  "canonical_name": "北洲女剑客",
+  "aliases": [
+    "女人",
+    "剑鬼创始人"
+  ],
+  "first_seq": 1132,
+  "last_seq": 1132,
+  "chapter_count": 1,
+  "chapters": [
+    1132
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 1132,
+      "quote": "身材健硕娇好，妥妥的北洲大姑娘"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1132,
+      "state": "已死，生前体内旧伤严重"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1132,
+      "actions": [
+        "将剑鬼之法交给紫云仙宫",
+        "托付改良功法"
+      ]
+    }
+  ],
+  "id": "c778_北洲女剑客"
+}

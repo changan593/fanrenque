@@ -1,0 +1,34 @@
+{
+  "name": "祠堂门口",
+  "first_seq": 39,
+  "chapter_count": 1,
+  "chapters": [
+    39
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "清晨": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 39,
+      "quote": "天终于亮了，寻常的太阳，温暖的光。"
+    }
+  ],
+  "characters": {
+    "老拐子": 1,
+    "干巴老头": 1
+  },
+  "events": [
+    {
+      "seq": 39,
+      "events": [
+        "老拐子晒太阳，遇到干巴老头",
+        "两人闲聊，干巴老头打听女孩下落"
+      ]
+    }
+  ],
+  "id": "s304_祠堂门口"
+}

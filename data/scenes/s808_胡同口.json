@@ -1,0 +1,28 @@
+{
+  "name": "胡同口",
+  "first_seq": 611,
+  "chapter_count": 1,
+  "chapters": [
+    611
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "清晨": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "史母": 1,
+    "儒生": 1
+  },
+  "events": [
+    {
+      "seq": 611,
+      "events": [
+        "史老太太遇到几位儒生，请求帮忙，他们答应"
+      ]
+    }
+  ],
+  "id": "s808_胡同口"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "永和楼台阶",
+  "first_seq": 365,
+  "chapter_count": 1,
+  "chapters": [
+    365
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "翌日": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "云儿": 1
+  },
+  "events": [
+    {
+      "seq": 365,
+      "events": [
+        "云儿失魂落魄",
+        "露出恨意跑向后院"
+      ]
+    }
+  ],
+  "id": "s600_永和楼台阶"
+}

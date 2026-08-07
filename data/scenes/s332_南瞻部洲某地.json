@@ -1,0 +1,31 @@
+{
+  "name": "南瞻部洲某地",
+  "first_seq": 61,
+  "chapter_count": 1,
+  "chapters": [
+    61
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "唐真": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 61,
+      "events": [
+        "姜羽与红儿争执",
+        "姜羽送走红儿",
+        "姜羽与唐真对话"
+      ]
+    }
+  ],
+  "id": "s332_南瞻部洲某地"
+}

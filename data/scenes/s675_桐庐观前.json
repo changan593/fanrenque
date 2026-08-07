@@ -1,0 +1,36 @@
+{
+  "name": "桐庐观前",
+  "first_seq": 452,
+  "chapter_count": 1,
+  "chapters": [
+    452
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 452,
+      "quote": "桐庐观前"
+    }
+  ],
+  "characters": {
+    "老人": 1,
+    "施北望": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 452,
+      "events": [
+        "老人求助",
+        "施公子自曝",
+        "姚望舒现身"
+      ]
+    }
+  ],
+  "id": "s675_桐庐观前"
+}

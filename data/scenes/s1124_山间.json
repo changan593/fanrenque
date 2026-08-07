@@ -1,0 +1,36 @@
+{
+  "name": "山间",
+  "first_seq": 949,
+  "chapter_count": 1,
+  "chapters": [
+    949
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 949,
+      "quote": "紫云落地时，是一处山间，云彩一碰到地面便立刻溃散了"
+    }
+  ],
+  "characters": {
+    "周东东": 1,
+    "江流": 1,
+    "幺儿": 1
+  },
+  "events": [
+    {
+      "seq": 949,
+      "events": [
+        "三小只落地",
+        "争吵",
+        "上药"
+      ]
+    }
+  ],
+  "id": "s1124_山间"
+}

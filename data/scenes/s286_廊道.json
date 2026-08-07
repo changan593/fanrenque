@@ -1,0 +1,32 @@
+{
+  "name": "廊道",
+  "first_seq": 28,
+  "chapter_count": 1,
+  "chapters": [
+    28
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "大雨天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "姚安饶": 1,
+    "姚望舒": 1,
+    "阿一": 1
+  },
+  "events": [
+    {
+      "seq": 28,
+      "events": [
+        "姚安饶与红儿伏杀阿一",
+        "红儿干呕",
+        "唐真点评"
+      ]
+    }
+  ],
+  "id": "s286_廊道"
+}

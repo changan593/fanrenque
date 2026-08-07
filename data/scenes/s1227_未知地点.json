@@ -1,0 +1,29 @@
+{
+  "name": "未知地点",
+  "first_seq": 1047,
+  "chapter_count": 1,
+  "chapters": [
+    1047
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "葵": 1,
+    "古命好": 1
+  },
+  "events": [
+    {
+      "seq": 1047,
+      "events": [
+        "葵被唤醒",
+        "古命好告知到达目的地"
+      ]
+    }
+  ],
+  "id": "s1227_未知地点"
+}

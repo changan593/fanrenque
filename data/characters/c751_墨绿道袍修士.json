@@ -1,0 +1,36 @@
+{
+  "canonical_name": "墨绿道袍修士",
+  "aliases": [],
+  "first_seq": 1048,
+  "last_seq": 1048,
+  "chapter_count": 1,
+  "chapters": [
+    1048
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1048,
+      "quote": "一队穿着墨绿色道袍的人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1048,
+      "state": "行礼问好"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1048,
+      "actions": [
+        "在码头等候，对古命好和葵藿行礼",
+        "护送众人进入建筑群"
+      ]
+    }
+  ],
+  "id": "c751_墨绿道袍修士"
+}

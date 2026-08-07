@@ -1,0 +1,35 @@
+{
+  "name": "草棚",
+  "first_seq": 648,
+  "chapter_count": 1,
+  "chapters": [
+    648
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 648,
+      "quote": "洁白的月光从草棚的缝隙中落下，化为一缕缕蒸腾的剑气"
+    }
+  ],
+  "characters": {
+    "魏成": 1,
+    "于密": 1,
+    "八字胡": 1
+  },
+  "events": [
+    {
+      "seq": 648,
+      "events": [
+        "魏成杀于密",
+        "八字胡递请柬"
+      ]
+    }
+  ],
+  "id": "s851_草棚"
+}

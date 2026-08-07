@@ -1,0 +1,33 @@
+{
+  "canonical_name": "阎门主",
+  "aliases": [
+    "门主"
+  ],
+  "first_seq": 178,
+  "last_seq": 178,
+  "chapter_count": 1,
+  "chapters": [
+    178
+  ],
+  "role_distribution": {
+    "主导": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 178,
+      "state": "年半百，支持旧派，担忧儿子，收到玉女峰命令后脸色大变"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 178,
+      "actions": [
+        "响应农圣号召，下令搜山",
+        "收到玉女峰命令后召集众人出发"
+      ]
+    }
+  ],
+  "id": "c412_阎门主"
+}

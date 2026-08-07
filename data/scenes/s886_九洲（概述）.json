@@ -1,0 +1,25 @@
+{
+  "name": "九洲（概述）",
+  "first_seq": 674,
+  "chapter_count": 1,
+  "chapters": [
+    674
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {},
+  "events": [
+    {
+      "seq": 674,
+      "events": [
+        "九洲意识到佛宗内乱，阿难失踪，迦叶成唯一大祖，密宗或将回归"
+      ]
+    }
+  ],
+  "id": "s886_九洲（概述）"
+}

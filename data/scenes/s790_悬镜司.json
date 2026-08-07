@@ -1,0 +1,29 @@
+{
+  "name": "悬镜司",
+  "first_seq": 591,
+  "chapter_count": 1,
+  "chapters": [
+    591
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "晨间": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "吴慢慢": 1
+  },
+  "events": [
+    {
+      "seq": 591,
+      "events": [
+        "尉天齐感知李一动静，苦笑",
+        "吴慢慢说晚了，拒绝说情"
+      ]
+    }
+  ],
+  "id": "s790_悬镜司"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "茅草建筑群",
+  "first_seq": 1001,
+  "chapter_count": 1,
+  "chapters": [
+    1001
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1001,
+      "quote": "山坳中的茅草建筑群"
+    },
+    {
+      "seq": 1001,
+      "quote": "潮湿简陋"
+    }
+  ],
+  "characters": {
+    "古命好": 1,
+    "藿": 1,
+    "杜有为": 1
+  },
+  "events": [
+    {
+      "seq": 1001,
+      "events": [
+        "杜有为安排二人歇息，古命好请求见杜圣"
+      ]
+    }
+  ],
+  "id": "s1177_茅草建筑群"
+}

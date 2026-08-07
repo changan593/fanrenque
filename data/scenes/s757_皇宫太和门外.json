@@ -1,0 +1,33 @@
+{
+  "name": "皇宫太和门外",
+  "first_seq": 548,
+  "chapter_count": 1,
+  "chapters": [
+    548
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "清晨": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 548,
+      "quote": "本该是百官上朝静候，但如今已经人烟寥寥"
+    }
+  ],
+  "characters": {
+    "尉天齐": 1,
+    "李三全": 1
+  },
+  "events": [
+    {
+      "seq": 548,
+      "events": [
+        "百官稀疏，尉天齐站在队伍中"
+      ]
+    }
+  ],
+  "id": "s757_皇宫太和门外"
+}

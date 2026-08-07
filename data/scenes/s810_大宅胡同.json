@@ -1,0 +1,34 @@
+{
+  "name": "大宅胡同",
+  "first_seq": 611,
+  "chapter_count": 1,
+  "chapters": [
+    611
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "辰时出头": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 611,
+      "quote": "大宅胡同是个荒僻的地方，住户少的可怜"
+    }
+  ],
+  "characters": {
+    "史母": 1,
+    "儒生": 1,
+    "众官吏": 1
+  },
+  "events": [
+    {
+      "seq": 611,
+      "events": [
+        "史母短暂休息后继续前行，到达污衙驻地"
+      ]
+    }
+  ],
+  "id": "s810_大宅胡同"
+}

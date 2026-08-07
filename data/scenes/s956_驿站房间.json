@@ -1,0 +1,29 @@
+{
+  "name": "驿站房间",
+  "first_seq": 745,
+  "chapter_count": 1,
+  "chapters": [
+    745
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "入夜": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "帝后娘娘": 1,
+    "阿森": 1
+  },
+  "events": [
+    {
+      "seq": 745,
+      "events": [
+        "帝后取出凤凰卵，决心养育",
+        "阿森被带入，帝后为其取名"
+      ]
+    }
+  ],
+  "id": "s956_驿站房间"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "法源寺地牢",
+  "first_seq": 654,
+  "chapter_count": 1,
+  "chapters": [
+    654
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 654,
+      "quote": "空空荡荡的牢房"
+    }
+  ],
+  "characters": {
+    "法源寺住持": 1,
+    "觉悔": 1
+  },
+  "events": [
+    {
+      "seq": 654,
+      "events": [
+        "发现知了逃跑",
+        "商议对策"
+      ]
+    }
+  ],
+  "id": "s856_法源寺地牢"
+}

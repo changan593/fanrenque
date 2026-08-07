@@ -1,0 +1,33 @@
+{
+  "name": "望舒宫剑圣头颅供奉处",
+  "first_seq": 1027,
+  "chapter_count": 1,
+  "chapters": [
+    1027
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "次日": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1027,
+      "quote": "周遭放了不少白色花卉"
+    }
+  ],
+  "characters": {
+    "吕藏锋": 1,
+    "刘全": 1
+  },
+  "events": [
+    {
+      "seq": 1027,
+      "events": [
+        "刘全拜见北海剑圣头颅，表达感谢"
+      ]
+    }
+  ],
+  "id": "s1200_望舒宫剑圣头颅供奉处"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "忘园空地",
+  "first_seq": 92,
+  "chapter_count": 1,
+  "chapters": [
+    92
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 92,
+      "quote": "风停云散，竹叶缓缓落回了忘园的空地上，月光皎洁"
+    }
+  ],
+  "characters": {
+    "唐真": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 92,
+      "events": [
+        "唐真问帅不帅，红儿点头",
+        "唐真走向竹屋"
+      ]
+    }
+  ],
+  "id": "s362_忘园空地"
+}

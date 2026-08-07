@@ -1,0 +1,28 @@
+{
+  "name": "望舒宫主殿",
+  "first_seq": 1078,
+  "chapter_count": 1,
+  "chapters": [
+    1078
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "吕藏锋": 1
+  },
+  "events": [
+    {
+      "seq": 1078,
+      "events": [
+        "唐真在主殿喝茶，吕藏锋寻来，两人交谈，吕藏锋询问玉屏山之事"
+      ]
+    }
+  ],
+  "id": "s1257_望舒宫主殿"
+}

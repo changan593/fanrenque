@@ -1,0 +1,23 @@
+{
+  "canonical_name": "小徒弟",
+  "aliases": [],
+  "first_seq": 307,
+  "last_seq": 307,
+  "chapter_count": 1,
+  "chapters": [
+    307
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 307,
+      "state": "失踪"
+    }
+  ],
+  "actions": [],
+  "id": "c468_小徒弟"
+}

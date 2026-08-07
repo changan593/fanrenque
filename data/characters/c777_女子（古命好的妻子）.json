@@ -1,0 +1,43 @@
+{
+  "canonical_name": "女子（古命好的妻子）",
+  "aliases": [
+    "她",
+    "我娘子"
+  ],
+  "first_seq": 1130,
+  "last_seq": 1130,
+  "chapter_count": 1,
+  "chapters": [
+    1130
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1130,
+      "quote": "蹲在身后看花的女子"
+    },
+    {
+      "seq": 1130,
+      "quote": "低头闻花的女子"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1130,
+      "state": "返虚境，命河干扰微弱"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1130,
+      "actions": [
+        "远远落在后面，看花蹲下研究",
+        "被古命好指为救他出桃花崖的人"
+      ]
+    }
+  ],
+  "id": "c777_女子（古命好的妻子）"
+}

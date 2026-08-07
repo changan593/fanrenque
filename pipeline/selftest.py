@@ -627,7 +627,7 @@ def test_asset_build() -> None:
             docs, problems = s4.load_chapters()
             check("跳过读不了的章节且留痕", len(docs) == 4 and len(problems) == 1)
 
-            amap, susp = s4.build_alias_map(docs, merge=True)
+            amap, susp, rej = s4.build_alias_map(docs, merge=True)
             check("别名归并到出场最多的主名",
                   amap.get("三只眼") == "唐真" and amap.get("唐真") == "唐真",
                   f"三只眼 -> {amap.get('三只眼')}")
@@ -662,13 +662,37 @@ def test_asset_build() -> None:
             pairs = {(p["a"], p["b"]): p["chapters"] for p in cooc["pairs"]}
             check("同框统计正确", pairs.get(("唐真", "老拐子")) == 2, str(pairs))
 
-            # 制造一次真会误并的情况，确认能被标出来
-            bad = [_fake_chapter(1, [{"name": "甲角色", "aliases": ["乙角色"]}], [])
-                   for _ in range(1)]
+            # 一章把乙角色错写成甲角色的别名，而两者各自都是独立主角。
+            # 正确行为是**事前拒绝**——事后标记救不回来，脏数据已经进了产物。
+            bad = [_fake_chapter(1, [{"name": "甲角色", "aliases": ["乙角色"]}], [])]
             bad += [_fake_chapter(i, [{"name": "甲角色"}, {"name": "乙角色"}], [])
                     for i in range(2, 14)]
-            _, susp2 = s4.build_alias_map(bad, merge=True)
-            check("可疑归并会被标记出来交人工复核", len(susp2) == 1, str(susp2[:1]))
+            amap3, _, rej3 = s4.build_alias_map(bad, merge=True)
+            check("两个独立主名不会被一条错别名并掉",
+                  amap3.get("甲角色") == "甲角色" and amap3.get("乙角色") == "乙角色",
+                  str({k: amap3.get(k) for k in ("甲角色", "乙角色")}))
+            check("拒绝归并会留痕待复核", len(rej3) == 1, str(rej3[:1]))
+
+            # 回归：并查集有传递性，两个主角各自并到同一个「杂名」上，
+            # 成对检查会全部放行，合起来照样塌成一个人。闸门必须建在簇上。
+            # 实测原始数据里正是这样把全书 572 个角色塌成了一个「唐真」。
+            chain = [_fake_chapter(1, [{"name": "甲角色", "aliases": ["杂名"]}], []),
+                     _fake_chapter(2, [{"name": "乙角色", "aliases": ["杂名"]}], [])]
+            chain += [_fake_chapter(i, [{"name": "甲角色"}, {"name": "乙角色"}], [])
+                      for i in range(3, 14)]
+            amap4, _, _ = s4.build_alias_map(chain, merge=True)
+            check("经由中间杂名也不能把两个主角串成一个",
+                  amap4.get("甲角色") != amap4.get("乙角色"),
+                  f"甲→{amap4.get('甲角色')} 乙→{amap4.get('乙角色')}")
+
+            # 人工核实的身份必须压过自动闸门：红儿与姚望舒各自都是主名，
+            # 自动规则无从判断，只有 s8 的 PRESETS 知道她们是一个人
+            pinned = [_fake_chapter(i, [{"name": "红儿"}], []) for i in range(1, 8)]
+            pinned += [_fake_chapter(i, [{"name": "姚望舒"}], []) for i in range(8, 15)]
+            amap5, _, _ = s4.build_alias_map(pinned, merge=True)
+            check("s8 核实过的身份优先于自动闸门",
+                  amap5.get("红儿") == "姚望舒" == amap5.get("姚望舒"),
+                  f"红儿→{amap5.get('红儿')}")
             check("--no-merge 时完全不归并",
                   s4.build_alias_map(docs, merge=False)[0].get("三只眼") == "三只眼")
         finally:

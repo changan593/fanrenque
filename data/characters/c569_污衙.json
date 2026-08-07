@@ -1,0 +1,30 @@
+{
+  "canonical_name": "污衙",
+  "aliases": [],
+  "first_seq": 586,
+  "last_seq": 586,
+  "chapter_count": 1,
+  "chapters": [
+    586
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 586,
+      "state": "皇都夜色中最可怕的人"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 586,
+      "actions": [
+        "在春台楼独自饮酒"
+      ]
+    }
+  ],
+  "id": "c569_污衙"
+}

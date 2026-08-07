@@ -1,0 +1,29 @@
+{
+  "name": "南洲北阳城",
+  "first_seq": 1200,
+  "chapter_count": 1,
+  "chapters": [
+    1200
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "齐渊": 1,
+    "道圣": 1,
+    "王箫": 1
+  },
+  "events": [
+    {
+      "seq": 1200,
+      "events": [
+        "人魔尊与道圣论道，王箫携友而来"
+      ]
+    }
+  ],
+  "id": "s1364_南洲北阳城"
+}

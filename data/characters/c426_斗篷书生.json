@@ -1,0 +1,35 @@
+{
+  "canonical_name": "斗篷书生",
+  "aliases": [],
+  "first_seq": 193,
+  "last_seq": 193,
+  "chapter_count": 1,
+  "chapters": [
+    193
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 193,
+      "quote": "穿着斗篷的书生躬身行礼"
+    }
+  ],
+  "states": [
+    {
+      "seq": 193,
+      "state": "行礼恭送月圣"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 193,
+      "actions": [
+        "躬身行礼，恭送月圣"
+      ]
+    }
+  ],
+  "id": "c426_斗篷书生"
+}

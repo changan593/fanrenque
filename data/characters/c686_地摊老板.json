@@ -1,0 +1,35 @@
+{
+  "canonical_name": "地摊老板",
+  "aliases": [],
+  "first_seq": 830,
+  "last_seq": 830,
+  "chapter_count": 1,
+  "chapters": [
+    830
+  ],
+  "role_distribution": {
+    "配角": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 830,
+      "quote": "那个地摊老板带着十数个佛兵便跑了过来！"
+    }
+  ],
+  "states": [
+    {
+      "seq": 830,
+      "state": "告密"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 830,
+      "actions": [
+        "向佛兵告发尉天齐"
+      ]
+    }
+  ],
+  "id": "c686_地摊老板"
+}

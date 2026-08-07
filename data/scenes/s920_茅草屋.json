@@ -1,0 +1,28 @@
+{
+  "name": "茅草屋",
+  "first_seq": 714,
+  "chapter_count": 1,
+  "chapters": [
+    714
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "子时未到": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "阿森": 1
+  },
+  "events": [
+    {
+      "seq": 714,
+      "events": [
+        "姜羽回来，阿森告知真君消息"
+      ]
+    }
+  ],
+  "id": "s920_茅草屋"
+}
