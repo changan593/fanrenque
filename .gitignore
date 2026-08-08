@@ -16,5 +16,9 @@ venv/
 production/style_test/out/
 production/style_test/sheets/
 
+# 参考片截图：第三方影片画面，只作分析与人眼比对基准，不入库。
+# 从它们得出的结论写进 doc/12_参考片画风研究.md，那份才是要留下来的东西。
+production/style_test/refs/
+
 # 系统
 .DS_Store
