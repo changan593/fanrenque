@@ -866,6 +866,56 @@ def test_episode_plan() -> None:
           s10.duration_penalty(s10.HARD_HI + 1) > 1e4)
 
 
+def test_season_roster() -> None:
+    print("\n[11] 按季资产清单的归属判定")
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import s13_season_roster as s13
+
+    # 造一份和真实索引同构、但把三种歧义都摆出来的假索引
+    fake = [
+        {"canonical_name": "姚望舒", "aliases": ["红儿", "小丫头", "师姐"]},
+        {"canonical_name": "师姐",   "aliases": ["红儿", "南红枝", "女人"]},
+        {"canonical_name": "唐真",   "aliases": ["三只眼", "小丫头"]},
+        {"canonical_name": "老拐子", "aliases": ["拐子"]},
+    ]
+    resolve, ambiguity = s13.build_resolver(fake)
+
+    # 1. 人工核实（PRESETS）压过索引：红儿被两个主名认领，但 s8 查证过它是姚望舒
+    check("PRESETS 优先于索引的别名认领", resolve("红儿") == ("姚望舒", False),
+          str(resolve("红儿")))
+    # 2. 只有一个主名认领的别名，可以放心并
+    check("唯一认领的别名照常归并", resolve("拐子") == ("老拐子", False))
+    # 3. 多方认领的名字不猜，原样保留并标存疑
+    check("多方认领不归并，标存疑", resolve("小丫头") == ("小丫头", True),
+          str(resolve("小丫头")))
+    # 4. 本身就是主名的别名，优先算它自己，但仍标存疑
+    check("既是主名又被别人认领时保留自己", resolve("师姐") == ("师姐", True),
+          str(resolve("师姐")))
+    # 5. 人工明说跨人的词，即使能查到也不并（姚姑娘 是 PRESETS 里 姚望舒 的 ambiguous）
+    check("PRESETS 标了存疑的词不归并", resolve("姚姑娘") == ("姚姑娘", True))
+    # 6. 索引里根本没有的名字，按字面走，不算存疑
+    check("索引外的名字按字面保留", resolve("张三") == ("张三", False))
+    check("歧义表列出了认领者", ambiguity.get("小丫头") == ["唐真", "姚望舒"],
+          str(ambiguity.get("小丫头")))
+
+    check("档位划分", (s13.tier(10), s13.tier(9), s13.tier(3), s13.tier(2))
+          == ("主要", "次要", "次要", "龙套"))
+
+    # 真实数据上的回归：这正是 s11 踩的那个坑
+    real = read_index_chars()
+    if real:
+        r2, _ = s13.build_resolver(real)
+        check("回归：红儿归到姚望舒而不是师姐", r2("红儿")[0] == "姚望舒", r2("红儿")[0])
+        check("回归：三只眼归到唐真", r2("三只眼")[0] == "唐真", r2("三只眼")[0])
+
+
+def read_index_chars():
+    p = paths.CHARACTERS_DIR / "index.json"
+    if not p.exists():
+        return None
+    return json.loads(p.read_text(encoding="utf-8"))["characters"]
+
+
 def main() -> None:
     print(config.describe())
     test_novel()
@@ -878,6 +928,7 @@ def main() -> None:
     test_asset_build()
     test_image_api()
     test_episode_plan()
+    test_season_roster()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")

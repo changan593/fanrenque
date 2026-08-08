@@ -21,6 +21,7 @@
 | `s10_episode_plan.py` | 分集规划（约束求解） | `data/plot/episodes.json` | |
 | `s11_episode_assets.py` | 算每集需要哪些角色与场景 | `data/plot/episode_assets.json` | |
 | `s12_detect_arcs.py` | 从人物更替中检测卷段边界 | `data/plot/arcs.json` | |
+| `s13_season_roster.py` | **按季汇总角色与场景清单**，归属判定比 `s11` 严格 | `data/plot/season_roster.json/.md` | |
 | `selftest.py` | 离线自测，用假模型跑通全流程 | | |
 | `config.py` | 所有可调参数的唯一来源（读 `.env`） | | |
 
@@ -391,6 +392,7 @@ python pipeline/s9_plot_digest.py        # 1200 份分析 → 34.9 万字摘要 
 python pipeline/s12_detect_arcs.py       # 检测卷段边界 → arcs.json（软约束）
 python pipeline/s10_episode_plan.py      # 分集求解 → episodes.json（268 集）
 python pipeline/s11_episode_assets.py    # 每集要哪些角色场景 → episode_assets.json
+python pipeline/s13_season_roster.py     # 按季汇总 → season_roster.json/.md
 ```
 
 `s10` 是个最短路求解器，目标函数 = 时长偏差惩罚 + 断点惩罚，
