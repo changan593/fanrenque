@@ -11,8 +11,9 @@ venv/
 .env
 *.key
 
-# 画风选型的出图与拼图产物：240 张 2K 图 + 19 张大图，几百 MB，
-# 且随时能由 matrix.json 重新生成。入库的只有 matrix.json 和 prompts.md
+# 画风选型的出图与拼图产物：330 张 2K 图 + 22 张大图，几百 MB，
+# 且随时能由 matrix.json 重新生成。
+# 入库的是 matrix.json、prompts.md 和 refs/（参考片截图，人工采集，重跑不出来）
 production/style_test/out/
 production/style_test/sheets/
 
