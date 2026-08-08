@@ -1,19 +1,28 @@
 # pipeline —— 脚本管道
 
-按编号顺序跑。每个脚本只做一件事，产物落到固定位置，可断点续跑。
+编号即执行顺序。每个脚本只做一件事，产物落到固定位置，可断点续跑。
 
-```
-s0_probe_text.py        原文结构探查 ─→ data/plot/text_probe.json （不调 API）
-s1_normalize_novel.py   原文 txt ──→ source/novel.json           （不调 API）
-s2_analyze_chapters.py  逐章分析 ──→ data/chapters/chXXXX.json   （调 API，每章 3~4 次）
-s3_validate_chapters.py 全量体检 ──→ data/plot/quality_report.json（不调 API）
-s4_build_assets.py      资产聚合 ──→ data/characters/、data/scenes/（不调 API）
+**只有 `s2` 和 `s6` 花 API 的钱**，其余全部是纯本地计算，随便重跑。
+每个脚本的产物字段含义见 [`../doc/09_数据字典.md`](../doc/09_数据字典.md)。
 
-selftest.py             离线自测，用假模型跑通全流程，不花 API 额度
-config.py               所有可调参数集中在这里
-```
-
-只有 `s2` 花钱。`s0` 不依赖任何分析结果，随时可跑；`s4` 在 `s2` 跑完后立刻可用。
+| 脚本 | 干什么 | 产物 | 花钱 |
+| --- | --- | --- | --- |
+| `s0_probe_text.py` | 纯原文结构探查（不依赖任何分析结果） | `data/plot/text_probe.json` | |
+| `s1_normalize_novel.py` | 原文 txt → 标准化 | `source/novel.json` | |
+| `s2_analyze_chapters.py` | **逐章分析**，每章 3~4 次调用 | `data/chapters/chNNNN.json` | 💰 |
+| `s2m_manual.py` | 把人工手写的分析稿装配成同格式 json | 同上 | |
+| `s3_validate_chapters.py` | 全量体检 | `data/plot/quality_report.json` | |
+| `s4_build_assets.py` | 聚合角色与场景资产 | `data/characters/`、`data/scenes/` | |
+| `s5_repair_quotes.py` | 把不逐字的引用**程序化对齐回原文** | 改写 `data/chapters/` | |
+| `s6_style_matrix.py` | 画风选型矩阵批量出图 | `production/style_test/out/` | 💰 |
+| `s7_contact_sheet.py` | 把矩阵图拼成对比大图 | `production/style_test/sheets/` | |
+| `s8_character_dossier.py` | 收集某角色的全书原文段落成卷宗 | `data/characters/dossier_*.json/.md` | |
+| `s9_plot_digest.py` | 把 1200 份分析压成剧情线的原材料 | `data/plot/digest_*.md`、`timeline.json` | |
+| `s10_episode_plan.py` | 分集规划（约束求解） | `data/plot/episodes.json` | |
+| `s11_episode_assets.py` | 算每集需要哪些角色与场景 | `data/plot/episode_assets.json` | |
+| `s12_detect_arcs.py` | 从人物更替中检测卷段边界 | `data/plot/arcs.json` | |
+| `selftest.py` | 离线自测，用假模型跑通全流程 | | |
+| `config.py` | 所有可调参数的唯一来源（读 `.env`） | | |
 
 支撑模块：
 
@@ -21,11 +30,27 @@ config.py               所有可调参数集中在这里
 common/paths.py      全项目路径的唯一来源，别在别处拼路径
 common/jsonio.py     原子写 JSON、从模型回复里抠 JSON
 common/novel.py      novel.json 的读取助手
-common/llm.py        DeepSeek 客户端：强制 JSON、退避重试、限速、用量统计
+common/llm.py        DeepSeek 客户端：显式声明思考模式、自适应降级重试、限速、用量统计
 common/verbatim.py   逐字核验器 —— 整条管道唯一不依赖模型判断的客观闸门
+common/progress.py   跑批时的原地刷新看板
 prompts/             四个提示词，纯文本，改了立即生效，不用动代码
 schemas/             章节分析 JSON 的结构约定
 ```
+
+## 依赖关系
+
+```
+s1 ──→ s2 ──→ s3 ──→ s5 ──┐
+       │                   ├──→ s4 ──→ s8
+       │                   └──→ s9 ──→ s12 ──┐
+       │                          └──────────┴──→ s10 ──→ s11
+       └──→（s0 与它并行，互不依赖，可当交叉校验源）
+
+s6 ──→ s7      画风选型，与上面整条链路完全独立
+```
+
+**改了 `data/chapters/` 之后，`s4`、`s9` 必须重跑**，否则下游拿的是旧资产。
+完整重跑链路见 [`../doc/10_交接说明.md`](../doc/10_交接说明.md) 第四节。
 
 ## 快速开始
 
@@ -40,8 +65,12 @@ python pipeline/s2_analyze_chapters.py --doctor    # ④ 验密钥/模型/网络
 python pipeline/s2_analyze_chapters.py --smoke 3   # ⑤ 先跑 3 章，人工看一眼质量
 python pipeline/s2_analyze_chapters.py             # ⑥ 跑全书，中断了重跑会自动续
 python pipeline/s3_validate_chapters.py            # ⑦ 体检，拿到需要重跑的章节列表
-python pipeline/s4_build_assets.py                 # ⑧ 聚合角色与场景资产
+python pipeline/s5_repair_quotes.py                # ⑧ 程序化修引用，不花钱
+python pipeline/s4_build_assets.py                 # ⑨ 聚合角色与场景资产
 ```
+
+以上第 ①~⑨ 步**都已经跑完，产物已入库**。现在拉下代码的人不需要重跑，
+只需要跑一次 `selftest.py` + `s3_validate_chapters.py` 确认数据完好。
 
 `s0_probe_text.py` 独立于以上流程，任何时候都能跑，用来在分析跑完前先摸清全书结构，
 以及在跑完后当独立交叉校验源。
@@ -153,7 +182,7 @@ python pipeline/s4_build_assets.py                 # ⑧ 聚合角色与场景�
 和「凭印象补一句没有的话」。让模型自己审自己抓不住这两类错，但字符串精确匹配一抓一个准。
 把这个客观结论喂给一致性审查员当证据，审查质量会显著高于让它裸审。
 
-## 常用参数
+## s2 常用参数
 
 | 命令 | 作用 |
 |---|---|
@@ -250,7 +279,7 @@ LLM_THINKING=1 python pipeline/s2_analyze_chapters.py --phase review --force
 实测开着思考模式时每次调用平均输出 5,300 token，其中绝大部分是思维链，
 单章能拖到 500~1100 秒，且大概率以空回复告终。
 
-## 成本估算
+## s2 成本估算
 
 全书 1200 章。每章输入约 3.5k token（原文 + 前文提要 + 解析结果回喂），
 输出约 2.5k token，三次调用合计输入约 10k、输出约 4k。
@@ -273,3 +302,112 @@ tail -f .run/logs/s2_calls.jsonl
 ```
 
 `.run/` 不入库。章节 json 里已经带了完整的审查留痕，日志只用于跑批时监控。
+
+---
+
+# 其余脚本
+
+上面全是 `s2` 的内容，因为只有它是长跑批、会出各种幺蛾子。
+下面这些都是几秒到几分钟跑完的本地计算，没有故障排查一说。
+
+## s5_repair_quotes —— 把不逐字的引用对齐回原文
+
+体检报告里「逐字命中率不到 100%」的章节，绝大多数不是模型编造，
+而是五类**机械性错误**。这个脚本逐类识别、逐条对齐，**不调 API**：
+
+| 修复类型 | 症状 |
+| --- | --- |
+| 拆分跨段 | 一条引用横跨原文两个自然段，被当成一条 |
+| 拆分拼接 | 把同一人相邻两句话拼成了一句 |
+| 剥离旁白 | 台词里混进了「他说道」这类叙述 |
+| 对齐原文 | 顺手改通顺了几个字（最常见） |
+| 补漏台词与人物 | 原文有这句话但没被抽出来 |
+
+```bash
+python pipeline/s5_repair_quotes.py --dry-run     # 只报会改什么，不落盘
+python pipeline/s5_repair_quotes.py               # 修全书
+python pipeline/s5_repair_quotes.py --seqs 9,90   # 只修指定章
+```
+
+每次修复都记进 `data/plot/quote_repair_log.json`，含改前改后原文，可逐条复核。
+
+> **对齐算法有个反直觉的坑**：单纯按相似度找最佳匹配会**奖励删字**——
+> `不知他怎么了` 与原文的相似度高于 `楼主不知他怎么了`，于是主语被吃掉。
+> 所以匹配时在 ±8 字窗口内搜索，并对「落在完整句读边界上」额外加分。
+> 改这个脚本前先读代码里 `_boundary_bonus` 的注释。
+
+## s6 / s7 —— 画风选型矩阵
+
+`s6` 出图（**花钱**），`s7` 把图拼成人眼可比的大图。配置在
+`production/style_test/matrix.json`：10 个画面目标 × 8 个画风 × 每格 3 张 = 240 张。
+
+```bash
+python pipeline/s6_style_matrix.py --doctor    # ① 阶梯式体检：连通/鉴权/模型/尺寸，四级里第一个失败的就是病因
+python pipeline/s6_style_matrix.py --dump      # ② 只导出 80 条提示词，人眼过一遍
+python pipeline/s6_style_matrix.py --targets T03 --styles S1,S6   # ③ 先试一格
+python pipeline/s6_style_matrix.py             # ④ 全量 240 张
+python pipeline/s7_contact_sheet.py            # ⑤ 拼对比大图
+```
+
+`s7 --only` 可选 `master`（总表）/ `target`（按画面目标）/ `style`（按画风）/ `all`。
+
+> **要改提示词请改 `matrix.json`，不要改 `prompts.md`**。
+> `prompts.md` 是 `--dump` 生成的产物，改了会被下次 dump 覆盖。
+
+> **最容易踩的是尺寸**：`1792x1024` 是 dall-e-3 的档位，gpt-image 系列不认，
+> 服务端可能直接回 502 而不是明确的参数错误。gpt-image 只接受
+> `1024x1024` / `1536x1024` / `1024x1536` / `auto`。脚本会在发图前先做一次
+> 尺寸预检并直接告诉你该填什么。
+
+## s8_character_dossier —— 角色卷宗
+
+**写任何角色文档之前必须先跑这一步。** 凭印象写人物等于把没验证过的东西往下游传，
+违反原则二。这个脚本把某角色在全书的每一次出现连同上下文收成一份卷宗。
+
+```bash
+python pipeline/s8_character_dossier.py --preset 唐真
+python pipeline/s8_character_dossier.py --name 某某 --aliases 甲,乙 --window 3
+```
+
+产两份：`dossier_名字.json`（机器读，含每段的 seq / 段号 / 上下文）和
+`dossier_名字.md`（人读，含别名词频、首现位置、戏份最重的章节）。
+
+别名分三档，这个分层是这个脚本的关键：
+
+| 档位 | 含义 | 例 |
+| --- | --- | --- |
+| `aliases` | 确定是本人 | 唐真、求法真君、狗安 |
+| `ambiguous` | 可能是本人也可能是别人，单独统计不混入 | 「大师兄」 |
+| `exclude` | 含别名字样但另有所指，先抹掉再匹配 | 含「魔尊」但不是齐渊的词组 |
+
+`PRESETS` 里已有 14 个核实过的角色，每个都带 `note` 写明别名边界是怎么核实的。
+新增角色时**必须**照这个格式写清依据——两个坑已经踩过：
+「执法堂长老」和「葛道人」是两个人不是一个人；「二小姐」指红儿不指姚安饶。
+
+## s9 / s10 / s11 / s12 —— 剧情线与分集
+
+```bash
+python pipeline/s9_plot_digest.py        # 1200 份分析 → 34.9 万字摘要 + timeline.json
+python pipeline/s12_detect_arcs.py       # 检测卷段边界 → arcs.json（软约束）
+python pipeline/s10_episode_plan.py      # 分集求解 → episodes.json（268 集）
+python pipeline/s11_episode_assets.py    # 每集要哪些角色场景 → episode_assets.json
+```
+
+`s10` 是个最短路求解器，目标函数 = 时长偏差惩罚 + 断点惩罚，
+时长模型是 `语音字数 ÷ 4.5 字/秒 × 1.20`（1.20 由 E01/E02 两集人工试点标定）。
+`--dry-run` 只看时长分布不落盘。
+
+`s12` 的产物**只作软约束**，它找的是「核心阵容换人的位置」，
+不是「一个故事讲完的位置」——人工回读第一季的 10 个边界只有约六成站得住。
+它的能力边界写在脚本头部的 docstring 里，用它的产物前请先读那段。
+
+`s9` 的分块摘要 `digest_p01..p06.md` 是给人（或模型）读来做卷段划分的原材料，
+`digest_all.md` 是全书合并版。方法与结论见
+[`../doc/08_全书剧情线.md`](../doc/08_全书剧情线.md)。
+
+## s2m_manual —— 人工分析装配器
+
+把手写的分析稿装配成与 `s2` 完全同格式的章节 json，用来产出**人工基准集**
+（现有 `production/s01/manual_analysis/` 的 8 章）。它的引用用**位置引用**
+（`{"para": N, "q": K}` ＝ 第 N 段的第 K 条引号内容）而不是抄原文，
+所以逐字命中率天然是 100%——人抄原文一定会抄错，让程序去取就不会。
