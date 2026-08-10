@@ -34,7 +34,7 @@
 程序靠这段文字把它和 `analysis.narration` 对上号。
 `※` 后面写保留理由（白描留声时必填），`★` 后面是导演备注，两者都不参与比对。
 
-**混合条允许拆开承载**（`doc/05` 5.3），但拆出来的几段必须在**同一个镜头**里，
+**混合条允许拆开承载**（`doc/05` 5.3），但拆出来的几段必须落在**同一个或相邻镜头**，
 且拼回去要**逐字等于原句**——程序会验这一条，蒸发一个字就报错。
 
 用法：
@@ -168,9 +168,12 @@ def main() -> int:
                 # 落在多处不一定是错——doc/05 5.3 允许「混合条拆条承载」。
                 # 判据：必须都在同一个镜头里，且拆出来的几段拼起来要
                 # 覆盖原句全部信息，一个字都不能在拆的过程中蒸发。
-                one_shot = len({s for s, _, _ in hits}) == 1
+                # 真正的安全性来自「拼回去逐字等于原句」；镜号只要求**相邻**，
+                # 因为「引出句 + 下一镜的字幕卡」是合法拆法。
+                nums = sorted({int(s) for s, _, _ in hits})
+                adjacent = all(b - a <= 1 for a, b in zip(nums, nums[1:]))
                 joined = "".join(norm(b) for _, _, b in hits)
-                if not (one_shot and joined == norm(n["text"])):
+                if not (adjacent and joined == norm(n["text"])):
                     multi.append((n, hits))
             disp = "／".join(sorted(MARKS.get(k, "内心音") for k in kinds))
         rows.append({**n, "hits": hits, "disposition": disp})
