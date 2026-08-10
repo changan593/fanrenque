@@ -59,7 +59,8 @@ def norm(s: str) -> str:
     s = re.split(r"[★※←]", s)[0]           # 编者按、保留理由、覆盖说明
     s = re.sub(r"（[^）]*）", "", s)        # 圆括号注
     s = re.sub(r"\[[^\]]*\]", "", s)       # [段号] / [24 节选]
-    return re.sub(r"[\s　。，、！？；：「」『』…·]", "", s)
+    # 引号必须全剥：原文用 ‘’ 而剧本常常不带，只差这一对就匹配不上
+    return re.sub(r"[\s　。，、！？；：…·「」『』‘’“”\"'《》〈〉（）()]", "", s)
 
 
 def parse_script(path: Path):
@@ -157,13 +158,9 @@ def main() -> int:
         rows.append({**n, "hits": hits, "disposition": disp})
 
     # 剧本里给了【白】但不属于关键旁白的——白描，按新口径多数该归画面
-    plain = []
-    for shot, mark, body in marks:
-        if mark not in ("白", "现"):
-            continue
-        if not any(norm(body) and (norm(body) in norm(n["text"]) or norm(n["text"]) in norm(body))
-                   for n in nar if len(norm(n["text"])) > 4):
-            plain.append((shot, body, "※" in body))
+    carried = {(s, m, b) for n in nar for s, m, b in match(n["text"], marks)}
+    plain = [(shot, body, "※" in body) for shot, mark, body in marks
+             if mark in ("白", "现") and (shot, mark, body) not in carried]
 
     voiced = sum(1 for r in rows if "唐假" in r["disposition"])
     deleted = sum(1 for r in rows if "建议删除" in r["disposition"])
