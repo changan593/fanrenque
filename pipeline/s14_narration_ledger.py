@@ -11,9 +11,11 @@
 1. `analysis.narration`（关键旁白，受原则二保护）的每一条，
    在剧本里**有且只有一个**承载标记
 2. 没有重复承载
-3. 删除率（N6 条数 ÷ 关键旁白条数），超过 15% 报警——判据用松了
-4. **现身次数**（只有现身档冻结世界，`doc/05` 5.7）
-5. 顺带报出剧本里**不属于关键旁白的 `【白】`**——
+3. **台词与心理活动的覆盖**——按分句回剧本逐字找。这一项**只报告不拦**，
+   因为「唐真如此评价自己」这类归属语自动判不出是漏还是已由结构表达
+4. 删除率（N6 条数 ÷ 关键旁白条数），超过 15% 报警——判据用松了
+5. **现身次数**（只有现身档冻结世界，`doc/05` 5.7）
+6. 顺带报出剧本里**不属于关键旁白的 `【白】`**——
    那些是环境／动作白描，按新口径绝大多数该归画面
 
 ## 剧本里的标记约定
@@ -25,6 +27,7 @@
 | `【卡】` | 字幕卡，**不冻结世界** | N5 |
 | `【画】` | 画面承载，无声 | N2 / N3 / N4 |
 | `【删】` | 建议删除，**必须写「被…覆盖」** | N6 |
+| `【台】` | 抽取误判：这条其实是现场台词，已作台词呈现 | —— |
 | `【心·某某】` | 角色内心音 | 不变 |
 
 `【画】` 与 `【删】` 后面要跟被承载的旁白原文（可用「节选」），
@@ -49,7 +52,7 @@ from common import paths
 from common.jsonio import read_json
 
 MARKS = {"现": "唐假现身", "白": "唐假声音", "卡": "字幕卡",
-         "画": "画面", "删": "建议删除"}
+         "画": "画面", "删": "建议删除", "台": "实为台词"}
 DELETE_RATE_ALARM = 0.15
 FREEZE_MAX = 6                    # doc/05 5.7：每集世界静止次数上限
 
@@ -63,11 +66,19 @@ def norm(s: str) -> str:
     return re.sub(r"[\s　。，、！？；：…·「」『』‘’“”\"'《》〈〉（）()]", "", s)
 
 
+def norm_all(s: str) -> str:
+    """整份文件用的正规化。与 norm() 的区别：**逐处**剥掉 ★／※ 注释，
+    而不是在第一个记号处整体截断——后者用在全文上会把剧本几乎全丢掉。"""
+    s = re.sub(r"[★※][^<|\n]*", "", s)
+    s = re.sub(r"（[^）]*）|\[[^\]]*\]", "", s)
+    return re.sub(r"[\s　。，、！？；：…·「」『』‘’“”\"\'《》〈〉（）()]", "", s)
+
+
 def parse_script(path: Path):
     """返回 [(镜号, 标记, 正文)]，镜号可能重复，所以用列表不用字典。"""
     out = []
-    for shot, line in re.findall(r"^\|\s*(\d{3})\s*\|([^\n]*)$", path.read_text(encoding="utf-8"), re.M):
-        for mark, body in re.findall(r"【(现|白|卡|画|删)】([^<|【]*)", line):
+    for shot, line in re.findall(r"^\|\s*\**(\d{3})\**\s*\|([^\n]*)$", path.read_text(encoding="utf-8"), re.M):
+        for mark, body in re.findall(r"【(现|白|卡|画|删|台)】([^<|【]*)", line):
             out.append((shot, mark, body.strip()))
         for who, body in re.findall(r"【心·([^】]+)】([^<|【]*)", line):
             out.append((shot, "心", body.strip()))
@@ -86,15 +97,22 @@ def load_narration(lo: int, hi: int):
     return rows
 
 
-def match(nar_text: str, marks) -> list:
+def match(nar_text: str, marks, para: int | None = None) -> list:
     """一条关键旁白落在哪些标记上。用双向包含匹配，容忍剧本里的「节选」。"""
     nt, raw = norm(nar_text), nar_text.strip()
     hits = []
     for shot, mark, body in marks:
         b = norm(body)
-        if len(nt) < 5 or len(b) < 5:
-            # 「。。。」这类，正规化后是空串，退回原文比对
-            if raw and raw in body:
+        tag = para is None or f"[{para}]" in body
+        if len(nt) < 5:
+            # 旁白本身就短（「砰！」「。。。」），正文比对会命中一片，
+            # 所以**必须同时对上段号**，否则无从区分。
+            if raw and raw in body and tag:
+                hits.append((shot, mark, body))
+            continue
+        if len(b) < 5:
+            # 拆条拆出来的短片段（「但。。。还活着。」），同样靠段号定位
+            if b and b in nt and tag:
                 hits.append((shot, mark, body))
             continue
         if nt in b or b in nt:
@@ -139,7 +157,7 @@ def main() -> int:
 
     rows, unaccounted, multi = [], [], []
     for n in nar:
-        hits = match(n["text"], marks)
+        hits = match(n["text"], marks, n["para"])
         kinds = {m for _, m, _ in hits}
         if not hits:
             unaccounted.append(n)
@@ -158,9 +176,28 @@ def main() -> int:
         rows.append({**n, "hits": hits, "disposition": disp})
 
     # 剧本里给了【白】但不属于关键旁白的——白描，按新口径多数该归画面
-    carried = {(s, m, b) for n in nar for s, m, b in match(n["text"], marks)}
+    carried = {(s, m, b) for n in nar for s, m, b in match(n["text"], marks, n["para"])}
     plain = [(shot, body, "※" in body) for shot, mark, body in marks
              if mark in ("白", "现") and (shot, mark, body) not in carried]
+
+    # 台词与心理活动：原则二对这两类没有口子，逐条回剧本正文找
+    scene_text = norm_all(script.read_text(encoding="utf-8"))
+    lost = {}
+    for seq in range(lo, hi + 1):
+        pth = paths.chapter_json_path(seq)
+        if not pth.exists():
+            continue
+        a = read_json(pth).get("analysis") or {}
+        for field in ("dialogues", "monologues"):
+            for it in a.get(field) or []:
+                # 按分句查，不按整段查。原文一段里常常「引号台词 + 叙述」混排，
+                # 剧本会把它拆到画面栏与声音栏两处——那是合法的，不算漏。
+                # 但每个分句都必须在剧本里找得到，少一句就是真漏。
+                gone = [f for f in re.split(r"[。！？；，]", it["text"])
+                        if len(norm_all(f)) >= 4 and norm_all(f) not in scene_text]
+                if gone:
+                    lost.setdefault(field, []).append(
+                        (seq, it["para"], "／".join(g.strip() for g in gone)))
 
     voiced = sum(1 for r in rows if "唐假" in r["disposition"])
     deleted = sum(1 for r in rows if "建议删除" in r["disposition"])
@@ -188,6 +225,15 @@ def main() -> int:
          f"{len(plain)} 处白描留声，其中 {len(unjust)} 处没写理由"
          if plain else "无白描留声")
 
+    if lost:
+        n = sum(len(v) for v in lost.values())
+        print(f"\n── ⚠ 台词／心理活动里没在剧本中逐字找到的片段（{n} 条）──")
+        print("  **这一项是报告，不是闸门**：自动判断分不清「真的漏了」和")
+        print("  「『唐真如此评价自己』这类归属语，内容已由剧本结构表达」。")
+        print("  逐条看，真漏的补进去，归属语可以放过。")
+        for field, items in lost.items():
+            for seq, para, text in items[:8]:
+                print(f"  [{field[:3]}] seq{seq}[{para}] {text[:46]}")
     if multi:
         print(f"\n── 承载有问题的（{len(multi)} 条）──")
         for n, hits in multi:
