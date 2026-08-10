@@ -22,6 +22,7 @@
 | `s11_episode_assets.py` | 算每集需要哪些角色与场景 | `data/plot/episode_assets.json` | |
 | `s12_detect_arcs.py` | 从人物更替中检测卷段边界 | `data/plot/arcs.json` | |
 | `s13_season_roster.py` | **按季汇总角色与场景清单**，归属判定比 `s11` 严格 | `data/plot/season_roster.json/.md` | |
+| `s14_narration_ledger.py` | **旁白承载账的闸门**：关键旁白有没有全部落到承载上 | 检查报告，可选 md | |
 | `selftest.py` | 离线自测，用假模型跑通全流程 | | |
 | `config.py` | 所有可调参数的唯一来源（读 `.env`） | | |
 
