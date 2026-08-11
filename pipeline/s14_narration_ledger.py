@@ -103,20 +103,23 @@ def match(nar_text: str, marks, para: int | None = None) -> list:
     hits = []
     for shot, mark, body in marks:
         b = norm(body)
-        tag = para is None or f"[{para}]" in body
+        # 段号写法有两种：`[24]` 和 `[24 节选]`。后缀要允许，但 `[240]` 不能算命中。
+        tag = para is None or re.search(rf"\[{para}(?:\D[^\]]*)?\]", body) is not None
         if len(nt) < 5:
             # 旁白本身就短（「砰！」「。。。」），正文比对会命中一片，
             # 所以**必须同时对上段号**，否则无从区分。
             if raw and raw in body and tag:
                 hits.append((shot, mark, body))
             continue
-        if len(b) < 5:
-            # 拆条拆出来的短片段（「但。。。还活着。」），同样靠段号定位
-            if b and b in nt and tag:
-                hits.append((shot, mark, body))
-            continue
-        if nt in b or b in nt:
+        if nt in b:
+            # 整条落在这一镜里（正文可以更长，容忍「节选」以外的补字）
             hits.append((shot, mark, body))
+        elif b and b in nt:
+            # 反向包含只可能是**拆条**拆出来的片段，而拆条片段一定带段号。
+            # 不查段号的话，别条旁白里凑巧出现的同样几个字也会命中——
+            # 例如「修整城隍庙」既是 seq22[1] 的一截，又原样出现在 seq22[27] 里。
+            if tag:
+                hits.append((shot, mark, body))
     return hits
 
 
@@ -251,10 +254,12 @@ def main() -> int:
     def mmss(s: int) -> str:
         return f"{s // 60}:{s % 60:02d}"
 
-    print(f"\n── 时长核对（报告，不是闸门）──")
-    line = f"  逐镜秒数合计 {mmss(shot_sec)}　幕标注合计 {mmss(act_sec)}"
+    print(f"\n── 时长（报告，不设预设值）──")
+    line = f"  逐镜秒数合计 {mmss(shot_sec)}"
+    if act_sec:
+        line += f"　幕标注合计 {mmss(act_sec)}"
     if planned:
-        line += f"　episodes.json 规划 {planned:.1f} 分"
+        line += f"　（s10 排分集用的估值 {planned:.1f} 分，非验收标准）"
     print(line)
     if act_sec and abs(shot_sec - act_sec) > 60:
         print(f"  ⚠ 逐镜与幕标注差 {mmss(abs(shot_sec - act_sec))}，剧本自己对不上自己")
@@ -265,9 +270,8 @@ def main() -> int:
             want = int(m.group(1)) * 60 + int(m.group(2))
             if abs(sec - want) > 30:
                 print(f"      {name.split('　')[0]}：标 {mmss(want)}，实 {mmss(sec)}")
-    if planned and abs(shot_sec - planned * 60) > 180:
-        print(f"  ⚠ 逐镜合计与规划差 {mmss(int(abs(shot_sec - planned * 60)))}，"
-              f"超出 doc/00 的 25~32 分规格就要重新配秒数")
+    # 规划分钟数只是 s10 排分集边界时用的估值，**不是成片验收标准**——
+    # doc/00 已决定不对时长做预设。所以这里只并排列出，不判它对错。
 
     if lost:
         n = sum(len(v) for v in lost.values())
