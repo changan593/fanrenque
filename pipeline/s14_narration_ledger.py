@@ -134,6 +134,7 @@ def main() -> int:
         if not e:
             raise SystemExit(f"episodes.json 里没有 {args.episode}")
         lo, hi = e["seq_start"], e["seq_end"]
+        planned = e.get("minutes")
         season = args.episode[1:3]
         script = args.script or (paths.PRODUCTION_DIR / f"s{season}" /
                                  f"E{args.episode[-2:]}_剧本.md")
@@ -141,6 +142,7 @@ def main() -> int:
         if not (args.script and args.seq):
             raise SystemExit("要么给 --episode，要么给 --script 加 --seq")
         lo, hi = (int(x) for x in args.seq.split("-"))
+        planned = None
         script = args.script
 
     if not script.exists():
@@ -207,7 +209,9 @@ def main() -> int:
     rate = deleted / len(nar) if nar else 0
     # 只有现身档冻结世界。声音档他只出声不出现，画面照常流动。
     # 见 production/s01/E01_剧本.md 附二与 doc/05 5.7。
-    freeze = by_mark.get("现", 0)
+    # 按**镜号**去重：一次静止里唐假连说两句，观众只被打断一次，算一次。
+    freeze_shots = sorted({shot for shot, mark, _ in marks if mark == "现"})
+    freeze = len(freeze_shots)
 
     print(f"\n── 闸门 ──")
     ok = True
@@ -227,6 +231,43 @@ def main() -> int:
     gate("派给唐假的白描都写了保留理由（※）", not unjust,
          f"{len(plain)} 处白描留声，其中 {len(unjust)} 处没写理由"
          if plain else "无白描留声")
+
+    # 时长核对：逐镜秒数之和 vs 幕标注之和 vs episodes.json 的规划分钟数。
+    # 三者本该一致，只报告不拦——秒数是估算，不是硬约束。
+    shot_sec, act_sec = 0, 0
+    per_act: list[tuple[str, int]] = []
+    for line in script.read_text(encoding="utf-8").split("\n"):
+        if line.startswith("## "):
+            per_act.append((line[3:].strip(), 0))
+        cells = line.split("|")
+        if len(cells) >= 5 and re.fullmatch(r"\d{3}", cells[1].strip().strip("*")):
+            m = re.search(r"(\d+)s", cells[2])
+            if m and per_act:
+                shot_sec += int(m.group(1))
+                per_act[-1] = (per_act[-1][0], per_act[-1][1] + int(m.group(1)))
+    for a, b in re.findall(r"约\s*(\d+):(\d+)", script.read_text(encoding="utf-8")):
+        act_sec += int(a) * 60 + int(b)
+
+    def mmss(s: int) -> str:
+        return f"{s // 60}:{s % 60:02d}"
+
+    print(f"\n── 时长核对（报告，不是闸门）──")
+    line = f"  逐镜秒数合计 {mmss(shot_sec)}　幕标注合计 {mmss(act_sec)}"
+    if planned:
+        line += f"　episodes.json 规划 {planned:.1f} 分"
+    print(line)
+    if act_sec and abs(shot_sec - act_sec) > 60:
+        print(f"  ⚠ 逐镜与幕标注差 {mmss(abs(shot_sec - act_sec))}，剧本自己对不上自己")
+        for name, sec in per_act:
+            m = re.search(r"约\s*(\d+):(\d+)", name)
+            if not m or not sec:
+                continue
+            want = int(m.group(1)) * 60 + int(m.group(2))
+            if abs(sec - want) > 30:
+                print(f"      {name.split('　')[0]}：标 {mmss(want)}，实 {mmss(sec)}")
+    if planned and abs(shot_sec - planned * 60) > 180:
+        print(f"  ⚠ 逐镜合计与规划差 {mmss(int(abs(shot_sec - planned * 60)))}，"
+              f"超出 doc/00 的 25~32 分规格就要重新配秒数")
 
     if lost:
         n = sum(len(v) for v in lost.values())
