@@ -97,9 +97,18 @@ def load_narration(lo: int, hi: int):
     return rows
 
 
-def match(nar_text: str, marks, para: int | None = None) -> list:
-    """一条关键旁白落在哪些标记上。用双向包含匹配，容忍剧本里的「节选」。"""
+def match(nar_text: str, marks, para: int | None = None,
+          others: set[str] | None = None) -> list:
+    """一条关键旁白落在哪些标记上。用双向包含匹配，容忍剧本里的「节选」。
+
+    `others` 是**别的**关键旁白的正规化文本集合。一个正文如果整条就是另一条
+    旁白，它就是那一条的承载，不是本条拆出来的片段——哪怕它字面上确实是
+    本条的一截。同段里出现两条旁白、短的那条又原样嵌在长的那条里时
+    （如 seq30[33] 的「七关。」与「开到第七层箱子，被叫做『七关』…」），
+    没有这一条会把长的那条同时算到两个镜头上。
+    """
     nt, raw = norm(nar_text), nar_text.strip()
+    others = others or set()
     hits = []
     for shot, mark, body in marks:
         b = norm(body)
@@ -114,7 +123,7 @@ def match(nar_text: str, marks, para: int | None = None) -> list:
         if nt in b:
             # 整条落在这一镜里（正文可以更长，容忍「节选」以外的补字）
             hits.append((shot, mark, body))
-        elif b and b in nt:
+        elif b and b in nt and b not in others:
             # 反向包含只可能是**拆条**拆出来的片段，而拆条片段一定带段号。
             # 不查段号的话，别条旁白里凑巧出现的同样几个字也会命中——
             # 例如「修整城隍庙」既是 seq22[1] 的一截，又原样出现在 seq22[27] 里。
@@ -160,9 +169,13 @@ def main() -> int:
     print(f"剧本标记：" + "　".join(
         f"{MARKS.get(k, '内心音')} {v}" for k, v in sorted(by_mark.items())))
 
+    # 每条旁白「别的旁白」的正规化文本，供 match() 排除误判的拆条片段
+    all_norms = [norm(n["text"]) for n in nar]
+
     rows, unaccounted, multi = [], [], []
-    for n in nar:
-        hits = match(n["text"], marks, n["para"])
+    for i, n in enumerate(nar):
+        others = {t for j, t in enumerate(all_norms) if j != i and t}
+        hits = match(n["text"], marks, n["para"], others)
         kinds = {m for _, m, _ in hits}
         if not hits:
             unaccounted.append(n)
@@ -184,9 +197,40 @@ def main() -> int:
         rows.append({**n, "hits": hits, "disposition": disp})
 
     # 剧本里给了【白】但不属于关键旁白的——白描，按新口径多数该归画面
-    carried = {(s, m, b) for n in nar for s, m, b in match(n["text"], marks, n["para"])}
+    carried = {(s, m, b)
+               for i, n in enumerate(nar)
+               for s, m, b in match(n["text"], marks, n["para"],
+                                    {t for j, t in enumerate(all_norms) if j != i and t})}
     plain = [(shot, body, "※" in body) for shot, mark, body in marks
              if mark in ("白", "现") and (shot, mark, body) not in carried]
+
+    # 导演备注跨 <br> 断行时忘了续写 ★／※ —— E05、E07、E08 各犯过一次。
+    # 后果不是内容错，而是那半句备注**混进了正文**，逐字覆盖检查会把它当台词报出来。
+    # 判据：一个 <br> 片段既没有任何标记，也不像台词（没有「某某：」冒号），
+    # 而它所在的单元格里前面已经出现过 ★／※。
+    raw_lines = script.read_text(encoding="utf-8").split("\n")
+    orphan_notes = []
+    for line in raw_lines:
+        cells = line.split("|")
+        if len(cells) < 5 or not re.fullmatch(r"\d{3}", cells[1].strip().strip("*")):
+            continue
+        seen_note = False
+        for frag in cells[4].split("<br>"):
+            f = frag.strip()
+            if not f:
+                continue
+            if re.match(r"^[★※]", f):
+                seen_note = True
+                continue
+            marked = f.startswith("【")
+            speech = re.match(r"^[^：:【】]{1,14}：", f)
+            if seen_note and not marked and not speech:
+                orphan_notes.append((cells[1].strip(), f[:44]))
+    if orphan_notes:
+        print(f"\n── ⚠ 疑似跨 <br> 掉了 ★／※ 的备注（{len(orphan_notes)} 处）──")
+        print("  这些片段会被当成正文参与逐字比对。补上记号即可。")
+        for shot, frag in orphan_notes:
+            print(f"  镜{shot}  {frag}")
 
     # 台词与心理活动：原则二对这两类没有口子，逐条回剧本正文找
     scene_text = norm_all(script.read_text(encoding="utf-8"))
