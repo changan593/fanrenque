@@ -75,13 +75,16 @@ def norm_all(s: str) -> str:
 
 
 def parse_script(path: Path):
-    """返回 [(镜号, 标记, 正文)]，镜号可能重复，所以用列表不用字典。"""
+    """返回 [(镜号, 标记, 正文)]，镜号可能重复，所以用列表不用字典。
+
+    **一次扫完一行，不分两轮**——拆条拼回去要按原句顺序，而顺序就是
+    标记在单元格里出现的先后。分两轮收（先收 `【画】` 再收 `【心·】`）
+    会把同一镜里「内心音 + 画面」这类混合拆条拼反，验不过 5.3 的等值检查。
+    """
     out = []
     for shot, line in re.findall(r"^\|\s*\**(\d{3})\**\s*\|([^\n]*)$", path.read_text(encoding="utf-8"), re.M):
-        for mark, body in re.findall(r"【(现|白|卡|画|删|台)】([^<|【]*)", line):
-            out.append((shot, mark, body.strip()))
-        for who, body in re.findall(r"【心·([^】]+)】([^<|【]*)", line):
-            out.append((shot, "心", body.strip()))
+        for mark, body in re.findall(r"【(现|白|卡|画|删|台|心·[^】]+)】([^<|【]*)", line):
+            out.append((shot, "心" if mark.startswith("心·") else mark, body.strip()))
     return out
 
 
