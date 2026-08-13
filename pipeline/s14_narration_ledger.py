@@ -198,8 +198,11 @@ def match(nar_text: str, marks, para: int | None = None,
             if raw and raw in body and tag and same_seq:
                 hits.append((shot, mark, body))
             continue
-        if nt in b:
-            # 整条落在这一镜里（正文可以更长，容忍「节选」以外的补字）
+        if nt in b and b not in others:
+            # 整条落在这一镜里（正文可以更长，容忍「节选」以外的补字）。
+            # 但正文如果整条就是**另一条**旁白，它是那一条的承载，不是本条的——
+            # E17 seq68[49]「朽木不可雕也。」与 seq68[57]「实在是朽木不可雕也。」
+            # 是两条旁白，短的那条整个嵌在长的那条里。
             hits.append((shot, mark, body))
         elif b and b in nt and b not in others:
             # 反向包含只可能是**拆条**拆出来的片段，而拆条片段一定带段号。
