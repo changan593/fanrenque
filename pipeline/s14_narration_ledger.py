@@ -100,8 +100,41 @@ def load_narration(lo: int, hi: int):
     return rows
 
 
+def shot_seq_map(path: Path, lo: int, hi: int) -> dict:
+    """每个镜头**属于哪一 seq**。
+
+    段号只记 `para` 不记 `seq`，一集横跨四五章，跨章撞号是必然的。
+    章的正文是现成的判据：把一镜声音栏里够长的片段拿去各章 `raw_text` 里找，
+    找得到就是那一章的镜头。**整栏都要看，不只看带标记的**——
+    E13 镜083 只有一条 `【画】唐真。。。`（太短判不了），
+    真正认得出这一镜的是同栏那句没有标记的台词。
+    找不到（纯字幕卡、纯改写的画面提示）就留空，
+    调用方遇到空集时不做过滤——宁可放过，不可错杀。
+    """
+    raws = {}
+    for seq in range(lo, hi + 1):
+        p = paths.chapter_json_path(seq)
+        if p.exists():
+            raws[seq] = norm(read_json(p).get("raw_text", ""))
+    out = {}
+    for shot, line in re.findall(r"^\|\s*\**(\d{3})\**\s*\|([^\n]*)$",
+                                 path.read_text(encoding="utf-8"), re.M):
+        cells = line.split("|")
+        while cells and not cells[-1].strip():
+            cells.pop()                       # 行尾那根竖线切出来的空串
+        for frag in (cells[-1] if cells else "").split("<br>"):
+            frag = re.sub(r"^\s*【[^】]*】", "", frag.strip())
+            frag = re.sub(r"^[^：:【】]{1,14}：", "", frag)   # 「吴慢慢：」这类说话人前缀
+            b = norm(frag)
+            if len(b) < 6:
+                continue
+            out.setdefault(shot, set()).update(s for s, r in raws.items() if b in r)
+    return {k: v for k, v in out.items() if v}
+
+
 def match(nar_text: str, marks, para: int | None = None,
-          others: set[str] | None = None) -> list:
+          others: set[str] | None = None, seq: int | None = None,
+          shot_seqs: dict | None = None) -> list:
     """一条关键旁白落在哪些标记上。用双向包含匹配，容忍剧本里的「节选」。
 
     `others` 是**别的**关键旁白的正规化文本集合。一个正文如果整条就是另一条
@@ -112,6 +145,7 @@ def match(nar_text: str, marks, para: int | None = None,
     """
     nt, raw = norm(nar_text), nar_text.strip()
     others = others or set()
+    shot_seqs = shot_seqs or {}
     hits = []
     for shot, mark, body in marks:
         b = norm(body)
@@ -130,7 +164,13 @@ def match(nar_text: str, marks, para: int | None = None,
             # 反向包含只可能是**拆条**拆出来的片段，而拆条片段一定带段号。
             # 不查段号的话，别条旁白里凑巧出现的同样几个字也会命中——
             # 例如「修整城隍庙」既是 seq22[1] 的一截，又原样出现在 seq22[27] 里。
-            if tag:
+            #
+            # 段号还不够，因为它只记 para 不记 seq，一集跨几章必然撞号：
+            # E13 镜083 是 seq51[35]（「唐真。。。」），却因为「唐真」二字也在
+            # seq50[35] 里、段号同为 35，被算成 seq50[35] 的拆条。
+            # 所以再问一句这一镜到底在哪一章（`shot_seq_map`）。
+            here = shot_seqs.get(shot)
+            if tag and (seq is None or not here or seq in here):
                 hits.append((shot, mark, body))
     return hits
 
@@ -174,11 +214,12 @@ def main() -> int:
 
     # 每条旁白「别的旁白」的正规化文本，供 match() 排除误判的拆条片段
     all_norms = [norm(n["text"]) for n in nar]
+    shot_seqs = shot_seq_map(script, lo, hi)
 
     rows, unaccounted, multi = [], [], []
     for i, n in enumerate(nar):
         others = {t for j, t in enumerate(all_norms) if j != i and t}
-        hits = match(n["text"], marks, n["para"], others)
+        hits = match(n["text"], marks, n["para"], others, n["seq"], shot_seqs)
         kinds = {m for _, m, _ in hits}
         if not hits:
             unaccounted.append(n)
@@ -203,7 +244,8 @@ def main() -> int:
     carried = {(s, m, b)
                for i, n in enumerate(nar)
                for s, m, b in match(n["text"], marks, n["para"],
-                                    {t for j, t in enumerate(all_norms) if j != i and t})}
+                                    {t for j, t in enumerate(all_norms) if j != i and t},
+                                    n["seq"], shot_seqs)}
     plain = [(shot, body, "※" in body) for shot, mark, body in marks
              if mark in ("白", "现") and (shot, mark, body) not in carried]
 

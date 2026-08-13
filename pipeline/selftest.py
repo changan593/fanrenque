@@ -14,6 +14,7 @@
 """
 import json
 import sys
+import tempfile
 import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -909,6 +910,47 @@ def test_season_roster() -> None:
         check("回归：三只眼归到唐真", r2("三只眼")[0] == "唐真", r2("三只眼")[0])
 
 
+def test_narration_ledger() -> None:
+    print("\n[12] 旁白承载账的匹配口径")
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import s14_narration_ledger as s14
+
+    # 拆条承载：一句旁白拆到相邻两镜，两片都要认出来
+    marks = [("012", "白", "《侠客行》乃是李家剑仙所留诗篇，故而有言：[8]"),
+             ("013", "卡", "凡天下用剑之人，吟我剑者。[8]")]
+    full = "《侠客行》乃是李家剑仙所留诗篇，故而有言：凡天下用剑之人，吟我剑者。"
+    check("拆条两片都认", len(s14.match(full, marks, 8)) == 2)
+
+    # 段号后缀 `[24 节选]` 要认，`[240]` 不能认
+    check("段号容忍「节选」后缀",
+          len(s14.match(full, marks[:1] + [("013", "卡", "凡天下用剑之人，吟我剑者。[8 节选]")], 8)) == 2)
+    check("段号不做前缀匹配",
+          len(s14.match(full, marks[:1] + [("013", "卡", "凡天下用剑之人，吟我剑者。[80]")], 8)) == 1)
+
+    # 另一条旁白原样嵌在本条里时，那一镜是**它**的承载，不是本条的拆条
+    check("整条等于别条旁白的正文不算本条拆条",
+          len(s14.match(full, marks, 8, {s14.norm("凡天下用剑之人，吟我剑者。")})) == 1)
+
+    # 跨 seq 撞段号：段号只记 para，同一集里第 35 段有好几个
+    # （E13 镜083 是 seq51[35]，却差点被算成 seq50[35] 的拆条）
+    long_nar = "红儿是则勉力趴附在熊背上，如此才好开口打断唐真。"
+    m2 = [("028", "画", long_nar + "[35]"), ("083", "画", "唐真。。。[35]")]
+    check("不给 seq 时按老口径，两处都算", len(s14.match(long_nar, m2, 35)) == 2)
+    check("给了 seq 就把别章那一镜排除",
+          len(s14.match(long_nar, m2, 35, None, 50, {"028": {50}, "083": {51}})) == 1)
+    check("查不出属于哪一章的镜头不做排除",
+          len(s14.match(long_nar, m2, 35, None, 50, {"028": {50}})) == 2)
+
+    # 同一格里「内心音 + 画面」混排，拆条要按出现先后拼，不能按标记种类分轮收
+    tmp = Path(tempfile.mkdtemp()) / "E_fake.md"
+    tmp.write_text("| 镜号 | 景别 | 表演 | 声音 |\n"
+                   "| --- | --- | --- | --- |\n"
+                   "| 108 | 近景 8s | — | 【心·唐真】前半句，[5]<br>【画】后半句。[5] |\n",
+                   encoding="utf-8")
+    got = [b for _, _, b in s14.parse_script(tmp)]
+    check("同格混排按出现顺序收", got == ["前半句，[5]", "后半句。[5]"], str(got))
+
+
 def read_index_chars():
     p = paths.CHARACTERS_DIR / "index.json"
     if not p.exists():
@@ -929,6 +971,7 @@ def main() -> None:
     test_image_api()
     test_episode_plan()
     test_season_roster()
+    test_narration_ledger()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")
