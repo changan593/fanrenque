@@ -74,6 +74,16 @@ def norm_all(s: str) -> str:
     return re.sub(r"[\s　。，、！？；：…·「」『』‘’“”\"\'《》〈〉（）()]", "", s)
 
 
+def body_of(path: Path) -> str:
+    """只要正片，不要附表。
+
+    附表里「| 058 | seq55[65] | …… |」这样的行，首格也是三位数字，
+    正文里再出现一个 `【白】` 就会被当成一条真标记收进来——E14 的附四
+    正是这样多出过一条没写 `※` 的白描留声。以第一个 `## 附` 为界切掉。
+    """
+    return path.read_text(encoding="utf-8").split("\n## 附")[0]
+
+
 def parse_script(path: Path):
     """返回 [(镜号, 标记, 正文)]，镜号可能重复，所以用列表不用字典。
 
@@ -82,7 +92,7 @@ def parse_script(path: Path):
     会把同一镜里「内心音 + 画面」这类混合拆条拼反，验不过 5.3 的等值检查。
     """
     out = []
-    for shot, line in re.findall(r"^\|\s*\**(\d{3})\**\s*\|([^\n]*)$", path.read_text(encoding="utf-8"), re.M):
+    for shot, line in re.findall(r"^\|\s*\**(\d{3})\**\s*\|([^\n]*)$", body_of(path), re.M):
         for mark, body in re.findall(r"【(现|白|卡|画|删|台|心·[^】]+)】([^<|【]*)", line):
             out.append((shot, "心" if mark.startswith("心·") else mark, body.strip()))
     return out
@@ -118,7 +128,7 @@ def shot_seq_map(path: Path, lo: int, hi: int) -> dict:
             raws[seq] = norm(read_json(p).get("raw_text", ""))
     out = {}
     for shot, line in re.findall(r"^\|\s*\**(\d{3})\**\s*\|([^\n]*)$",
-                                 path.read_text(encoding="utf-8"), re.M):
+                                 body_of(path), re.M):
         cells = line.split("|")
         while cells and not cells[-1].strip():
             cells.pop()                       # 行尾那根竖线切出来的空串
@@ -253,7 +263,7 @@ def main() -> int:
     # 后果不是内容错，而是那半句备注**混进了正文**，逐字覆盖检查会把它当台词报出来。
     # 判据：一个 <br> 片段既没有任何标记，也不像台词（没有「某某：」冒号），
     # 而它所在的单元格里前面已经出现过 ★／※。
-    raw_lines = script.read_text(encoding="utf-8").split("\n")
+    raw_lines = body_of(script).split("\n")
     orphan_notes = []
     for line in raw_lines:
         cells = line.split("|")
@@ -278,7 +288,7 @@ def main() -> int:
             print(f"  镜{shot}  {frag}")
 
     # 台词与心理活动：原则二对这两类没有口子，逐条回剧本正文找
-    scene_text = norm_all(script.read_text(encoding="utf-8"))
+    scene_text = norm_all(body_of(script))
     lost = {}
     for seq in range(lo, hi + 1):
         pth = paths.chapter_json_path(seq)
