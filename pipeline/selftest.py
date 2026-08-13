@@ -941,6 +941,12 @@ def test_narration_ledger() -> None:
     check("查不出属于哪一章的镜头不做排除",
           len(s14.match(long_nar, m2, 35, None, 50, {"028": {50}})) == 2)
 
+    # 短旁白（「。」「。。。」）同样会跨 seq 撞号，段号挡不住，只能靠 seq
+    dots = [("039", "删", "。。。[39]"), ("214", "删", "。。。[39]")]
+    check("短旁白不给 seq 时两处都算", len(s14.match("。。。", dots, 39)) == 2)
+    check("短旁白给了 seq 只剩本章那一镜",
+          len(s14.match("。。。", dots, 39, None, 62, {"039": {62}, "214": {64}})) == 1)
+
     # 同一格里「内心音 + 画面」混排，拆条要按出现先后拼，不能按标记种类分轮收
     tmp = Path(tempfile.mkdtemp()) / "E_fake.md"
     tmp.write_text("| 镜号 | 景别 | 表演 | 声音 |\n"
@@ -949,6 +955,29 @@ def test_narration_ledger() -> None:
                    encoding="utf-8")
     got = [b for _, _, b in s14.parse_script(tmp)]
     check("同格混排按出现顺序收", got == ["前半句，[5]", "后半句。[5]"], str(got))
+
+    # 镜头属于哪一章：认不出来的靠前后邻居补，两章都认得的靠邻居收窄
+    tmp2 = Path(tempfile.mkdtemp()) / "E_seq.md"
+    tmp2.write_text("| 镜号 | 景别 | 表演 | 声音 |\n"
+                    "| --- | --- | --- | --- |\n"
+                    "| 001 | 中景 8s | — | 【画】只属于甲章的一句话。[1] |\n"
+                    "| 002 | 转场 4s | — | 【删】。。。[9] |\n"
+                    "| 003 | 中景 8s | — | 【画】也只属于甲章的另一句。[3] |\n",
+                    encoding="utf-8")
+    real = s14.body_of
+    try:
+        # 造两章假正文：第二章不含任何一句，第一章两句都含
+        raws = {1: "只属于甲章的一句话。也只属于甲章的另一句。", 2: "毫不相干。"}
+        import types
+        orig_read, orig_path = s14.read_json, s14.paths.chapter_json_path
+        s14.paths.chapter_json_path = lambda n: Path(f"__fake{n}")
+        s14.read_json = lambda p: {"raw_text": raws[int(str(p)[-1])]}
+        Path.exists_orig, Path.exists = Path.exists, lambda self: str(self).startswith("__fake") or Path.exists_orig(self)
+        m = s14.shot_seq_map(tmp2, 1, 2)
+    finally:
+        Path.exists = Path.exists_orig
+        s14.read_json, s14.paths.chapter_json_path = orig_read, orig_path
+    check("认不出来的镜头继承邻居", m.get("002") == {1}, str(m.get("002")))
 
 
 def read_index_chars():

@@ -139,7 +139,35 @@ def shot_seq_map(path: Path, lo: int, hi: int) -> dict:
             if len(b) < 6:
                 continue
             out.setdefault(shot, set()).update(s for s, r in raws.items() if b in r)
-    return {k: v for k, v in out.items() if v}
+    out = {k: v for k, v in out.items() if v}
+
+    # 光看正文还不够，**镜头是按叙事顺序排的**，前后邻居能再收紧一次。
+    # 两种情况都靠邻居解决，判据都是「前后两镜指向同一章」：
+    #   收窄：一句话在两章里都出现过（E16 镜248「红儿摇了摇头。」既在
+    #         seq62[36] 又在 seq64[73]），取与邻居一致的那一个；
+    #   补空：整镜认不出来（E16 镜039 与镜214 都只有一个 `【删】。。。`，
+    #         段号又都是 39），直接继承邻居。
+    order = [sh for sh, _ in re.findall(r"^\|\s*\**(\d{3})\**\s*\|([^\n]*)$",
+                                        body_of(path), re.M)]
+    solid = {k: v for k, v in out.items() if len(v) == 1}
+
+    def neighbors(i):
+        prev = next((solid[x] for x in reversed(order[:i]) if x in solid), None)
+        nxt = next((solid[x] for x in order[i + 1:] if x in solid), None)
+        return prev if prev and prev == nxt else None
+
+    for i, sh in enumerate(order):
+        cur = out.get(sh)
+        if cur and len(cur) == 1:
+            continue
+        near = neighbors(i)
+        if not near:
+            continue
+        if cur is None:
+            out[sh] = set(near)
+        elif near <= cur:
+            out[sh] = set(near)
+    return out
 
 
 def match(nar_text: str, marks, para: int | None = None,
@@ -161,10 +189,13 @@ def match(nar_text: str, marks, para: int | None = None,
         b = norm(body)
         # 段号写法有两种：`[24]` 和 `[24 节选]`。后缀要允许，但 `[240]` 不能算命中。
         tag = para is None or re.search(rf"\[{para}(?:\D[^\]]*)?\]", body) is not None
+        here = shot_seqs.get(shot)
+        same_seq = seq is None or not here or seq in here
         if len(nt) < 5:
-            # 旁白本身就短（「砰！」「。。。」），正文比对会命中一片，
-            # 所以**必须同时对上段号**，否则无从区分。
-            if raw and raw in body and tag:
+            # 旁白本身就短（「砰！」「。。。」「。」），正文比对会命中一片，
+            # 所以**必须同时对上段号**，否则无从区分。段号还不够——
+            # 一集跨三章，第 39 段有三个，所以也要问这一镜属于哪一章。
+            if raw and raw in body and tag and same_seq:
                 hits.append((shot, mark, body))
             continue
         if nt in b:
@@ -179,8 +210,7 @@ def match(nar_text: str, marks, para: int | None = None,
             # E13 镜083 是 seq51[35]（「唐真。。。」），却因为「唐真」二字也在
             # seq50[35] 里、段号同为 35，被算成 seq50[35] 的拆条。
             # 所以再问一句这一镜到底在哪一章（`shot_seq_map`）。
-            here = shot_seqs.get(shot)
-            if tag and (seq is None or not here or seq in here):
+            if tag and same_seq:
                 hits.append((shot, mark, body))
     return hits
 
