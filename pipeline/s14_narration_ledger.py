@@ -198,11 +198,18 @@ def match(nar_text: str, marks, para: int | None = None,
             if raw and raw in body and tag and same_seq:
                 hits.append((shot, mark, body))
             continue
-        if nt in b and b not in others:
+        if nt in b and b not in others and tag and same_seq:
             # 整条落在这一镜里（正文可以更长，容忍「节选」以外的补字）。
             # 但正文如果整条就是**另一条**旁白，它是那一条的承载，不是本条的——
             # E17 seq68[49]「朽木不可雕也。」与 seq68[57]「实在是朽木不可雕也。」
             # 是两条旁白，短的那条整个嵌在长的那条里。
+            #
+            # 段号也要对上。`others` 只挡得住「正文整条等于另一条**旁白**」，
+            # 挡不住「正文整条等于另一条**心理活动**、而那条心理活动又原样
+            # 引用了本条旁白」——E34 seq137[90]「一个大巴掌。」整个嵌在
+            # seq137[93]「其实不是一个大巴掌，更像是扔开什么垃圾一样。」里，
+            # 后者是 monologues 不是 narration，于是 [90] 被算到了两个镜头上。
+            # 正向包含加查段号即可：承载本条的镜头一定写着本条的段号。
             hits.append((shot, mark, body))
         elif b and b in nt and b not in others:
             # 反向包含只可能是**拆条**拆出来的片段，而拆条片段一定带段号。
