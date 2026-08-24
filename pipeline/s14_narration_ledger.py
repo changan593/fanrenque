@@ -39,7 +39,7 @@
 
 用法：
     python pipeline/s14_narration_ledger.py --episode S01E01
-    python pipeline/s14_narration_ledger.py --script production/s01/E01_剧本.md --seq 1-4
+    python pipeline/s14_narration_ledger.py --script production/s01/E01/剧本.md --seq 1-4
 """
 import argparse
 import re
@@ -242,7 +242,7 @@ def main() -> int:
         planned = e.get("minutes")
         season = args.episode[1:3]
         script = args.script or (paths.PRODUCTION_DIR / f"s{season}" /
-                                 f"E{args.episode[-2:]}_剧本.md")
+                                 f"E{args.episode[-2:]}" / "剧本.md")
     else:
         if not (args.script and args.seq):
             raise SystemExit("要么给 --episode，要么给 --script 加 --seq")
@@ -350,7 +350,7 @@ def main() -> int:
     deleted = sum(1 for r in rows if "建议删除" in r["disposition"])
     rate = deleted / len(nar) if nar else 0
     # 只有现身档冻结世界。声音档他只出声不出现，画面照常流动。
-    # 见 production/s01/E01_剧本.md 附二与 doc/05 5.7。
+    # 见 production/s01/E01/剧本.md 附二与 doc/05 5.7。
     # 按**镜号**去重：一次静止里唐假连说两句，观众只被打断一次，算一次。
     freeze_shots = sorted({shot for shot, mark, _ in marks if mark == "现"})
     freeze = len(freeze_shots)

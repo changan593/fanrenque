@@ -23,6 +23,8 @@
 | `s12_detect_arcs.py` | 从人物更替中检测卷段边界 | `data/plot/arcs.json` | |
 | `s13_season_roster.py` | **按季汇总角色与场景清单**，归属判定比 `s11` 严格 | `data/plot/season_roster.json/.md` | |
 | `s14_narration_ledger.py` | **旁白承载账的闸门**：关键旁白有没有全部落到承载上 | 检查报告，可选 md | |
+| `s15_style_guard.py` | **画风金标准的闸门**：提示词里有没有与国风三维冲突的载体声明 | 检查报告 | |
+| `s16_shot_pack.py` | **按幕装配出图包**：剧本＋幕提示词＋角色卡＋场景卡＋风格段 | 一份可直接开工的 md | |
 | `selftest.py` | 离线自测，用假模型跑通全流程 | | |
 | `config.py` | 所有可调参数的唯一来源（读 `.env`） | | |
 
@@ -414,3 +416,46 @@ python pipeline/s13_season_roster.py     # 按季汇总 → season_roster.json/.
 （现有 `production/s01/manual_analysis/` 的 8 章）。它的引用用**位置引用**
 （`{"para": N, "q": K}` ＝ 第 N 段的第 K 条引号内容）而不是抄原文，
 所以逐字命中率天然是 100%——人抄原文一定会抄错，让程序去取就不会。
+
+## s15_style_guard —— 画风金标准闸门
+
+`doc/04_风格规范.md` 3.1 把画风载体定为**国风三维**，这是全项目的金标准。
+`s15` 把「不许和它冲突」这条规矩做成每次都能重跑的检查，不靠人肉 grep。
+
+```bash
+python pipeline/s15_style_guard.py                       # 全量，有违规退出码 1
+python pipeline/s15_style_guard.py --show-legacy         # 连留痕豁免文件一起列
+python pipeline/s15_style_guard.py --path production/s01/E01
+```
+
+**它只扫会被喂给模型的区域**——围栏代码块与引用块。散文、表格、说明性文字不扫：
+`doc/04` 里「厚涂的笔触每次重画都是一次重新解释」是定稿理由，不是指令，报它是噪音。
+
+**负面写法是对的，不报。** 判据是按句子看否定词在不在词的前面：
+「不做蜡像、塑料、二维厚涂、水墨」整句受「不做」管辖，全句放行；
+「风格：半写实厚涂，笔触可见」没有否定，报。
+
+**留痕豁免**在脚本的 `LEGACY_ALLOW` 里，每条都写了理由——
+选型过程的文档与配置故意保留旧载体的名字，那是证据不是指令。
+加新的豁免要连理由一起写，不要只加路径。
+
+新写角色卡、场景卡、分镜提示词之后跑一次；改风格段之后也跑一次。
+
+## s16_shot_pack —— 按幕装配出图包
+
+做某一幕的图时要的东西散在五处：剧本、幕提示词、角色卡、场景卡、风格段。
+手工凑一次要翻十几个文件，还容易漏掉克制版约束或用错状态卡。
+
+```bash
+python pipeline/s16_shot_pack.py --list s01/E01              # 这一集有哪些幕
+python pipeline/s16_shot_pack.py s01/E01/01_第一幕_北阳城城隍庙
+python pipeline/s16_shot_pack.py s01/E01/01_第一幕_北阳城城隍庙 -o pack.md
+python pipeline/s16_shot_pack.py s01/E01/01_第一幕_北阳城城隍庙 --refs-only
+```
+
+它从幕提示词的「本幕人物与状态」表里读角色名，从正文里读场景码 `SNN`，
+再去 `production/characters/` 与 `production/scenes/` 找对应的卡，
+按 `production/style_assets/README.md` 的九步顺序装配。
+
+**匹配不上的卡会明确报出来，不会静默跳过**——漏一张卡比报一次错危险得多。
+次要角色/群像匹配不上是正常的，它们只有紧凑卡；主要角色匹配不上就是真的没建。
