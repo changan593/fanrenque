@@ -13,7 +13,7 @@
 1. **载体声明冲突**：提示词里出现「厚涂／笔触／赛璐璐／平涂／水墨／二维／
    线稿／描边／概念设定图／painterly／brushwork／cel shading…」等**非三维载体**的
    正向声明。负面写法（「不做水墨」「禁描边」「no 2D anime」）是**对的**，不报。
-2. **风格词入侵内容层**：`production/s01/prompts/` 是画面内容层，
+2. **风格词入侵内容层**：`production/s01/` 是画面内容层，
    按 `prompts/00_总则与模板.md` 第一节，任何风格词都不许出现在正向提示词里
    ——风格段由程序统一追加。这一项按那份文档自己的黑名单查。
 3. **金标准锚点在不在**：`production/style_assets/` 的两份统一提示词必须存在，
@@ -36,7 +36,7 @@
 
     python pipeline/s15_style_guard.py              # 全量检查，有违规则退出码 1
     python pipeline/s15_style_guard.py --show-legacy # 连留痕文件一起列出来
-    python pipeline/s15_style_guard.py --path production/s01/prompts/E01
+    python pipeline/s15_style_guard.py --path production/s01/E01
 """
 from __future__ import annotations
 
@@ -103,7 +103,7 @@ LEGACY_ALLOW = {
 }
 
 # ── 内容层：风格词一律不许出现（黑名单来自 prompts/00_总则与模板.md 第 1.1 节）──
-CONTENT_LAYER = "production/s01/prompts"
+CONTENT_LAYER = "production/s01"
 STYLE_WORDS_IN_CONTENT = [
     "厚涂", "笔触", "半写实", "水墨", "油画", "插画", "赛璐璐",
     "二次元", "动漫", "漫画风", "三渲二", "建模", "滤镜", "胶片", "颗粒感",
