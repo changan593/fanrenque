@@ -55,6 +55,16 @@ STYLE = PROD / "style_assets"
 
 IMG_EXT = {".png", ".jpg", ".jpeg", ".webp", ".svg"}
 
+# ── 不建卡是对的：这些名字匹配不上是设计，不是遗漏 ──────────────────
+# 每条都写清楚规格在哪，免得后人以为是漏了
+NO_CARD_BY_DESIGN = {
+    "唐假": "Q 版旁白装置，规格在 doc/05_唐假旁白系统.md 第 4.2 节（二头身，脚下无影）",
+    "人魔尊": "即齐渊，规格在 production/s01/02_角色资产.md C05；E01 只有一帧模糊剪影",
+    "雪中身影": "就是唐真本人（两年前的闪回），用 C01_唐真 + S01·04 雪门口闪回",
+    "店铺掌柜": "纯背景虚化人物，原文无描写，按 doc/04 第五节不发挥",
+    "硕大的人头": "身份原文未明，处理为极远景剪影，见 02_角色资产.md 次要角色卡",
+}
+
 
 # ── 找卡 ──────────────────────────────────────────────────────────────
 def card_dirs(root: Path) -> dict[str, Path]:
@@ -180,14 +190,25 @@ def build(act_dir: Path, refs_only: bool = False) -> tuple[str, list[str]]:
     if miss_c or miss_s:
         out += ["> ## ⚠ 有卡没找到", ">"]
         if miss_c:
-            out += [f"> **角色**：{'、'.join(miss_c)}", ">",
-                    "> 这些多半是次要角色／群像，规格在 "
-                    "`production/s01/02_角色资产.md` 的紧凑卡里；"
-                    "若是主要角色，说明还没建 `production/characters/CNN_名字/`。", ">"]
+            real = [n for n in miss_c if n not in NO_CARD_BY_DESIGN]
+            byd = [n for n in miss_c if n in NO_CARD_BY_DESIGN]
+            if real:
+                out += [f"> **角色（真的缺卡）**：{'、'.join(real)}", ">",
+                        "> 这些多半是次要角色／群像，规格在 "
+                        "`production/s01/02_角色资产.md` 的紧凑卡里；"
+                        "若是主要角色或成组出现的龙套，"
+                        "该建 `production/characters/` 下的卡。", ">"]
+            if byd:
+                out += ["> **角色（不建卡是对的）**：", ">"]
+                out += [f"> - **{n}**：{NO_CARD_BY_DESIGN[n]}" for n in byd]
+                out += [">"]
         if miss_s:
             out += [f"> **场景**：{'、'.join(miss_s)}", ">",
                     "> 说明还没建 `production/scenes/SNN_名字/`。", ">"]
-        out += ["> **不要当它不存在就开工**——先补卡，或确认它确实只需要紧凑卡。", ""]
+        if [n for n in miss_c if n not in NO_CARD_BY_DESIGN] or miss_s:
+            out += ["> **不要当它不存在就开工**——先补卡，或确认它确实只需要紧凑卡。", ""]
+        else:
+            out += ["> 以上都有明确去处，可以开工。", ""]
 
     out.append("## 拼装顺序")
     out.append("")
