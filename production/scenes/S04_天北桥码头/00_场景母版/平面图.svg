@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 651" width="840" height="651" font-family="ui-sans-serif,-apple-system,'PingFang SC','Noto Sans CJK SC',sans-serif">
+<rect width="840" height="651" fill="#faf9f7"/>
+<text x="68" y="30" font-size="17" font-weight="700" fill="#1c1917">S04 天北桥码头　平面图（俯视）</text>
+<text x="68" y="49" font-size="10.5" fill="#78716c">★ 凉棚是全码头唯一遮荫处，位置固定——它本身就是阶层的表达｜与 S03 同属一条河</text>
+<polygon points="68.0,583.3 772.0,583.3 772.0,372.1 68.0,372.1" fill="#0369a1" opacity="0.1"/>
+<polyline points="68.0,372.1 772.0,372.1" fill="none" stroke="#0369a1" stroke-width="2.2" opacity="0.75"/>
+<text x="185.3" y="489.5" font-size="10.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">河（内河，水色浑浊偏绿）</text>
+<text x="625.3" y="542.3" font-size="9.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">→ 远处三孔石拱桥（S03）</text>
+<polyline points="701.6,372.1 754.4,372.1" fill="none" stroke="#0369a1" stroke-width="3.4" opacity="0.9"/>
+<polygon points="332.0,524.7 402.4,524.7 402.4,372.1 332.0,372.1" fill="none" stroke="#1c1917" stroke-width="2.8" opacity="1" stroke-linejoin="miter"/>
+<text x="367.2" y="348.7" font-size="9.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">★ 木栈桥 2.4×5.2m　伸入河面</text>
+<circle cx="342.3" cy="512.9" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="342.3" cy="512.9" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<circle cx="392.1" cy="512.9" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="392.1" cy="512.9" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<circle cx="342.3" cy="477.7" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="342.3" cy="477.7" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<circle cx="392.1" cy="477.7" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="392.1" cy="477.7" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<circle cx="342.3" cy="442.5" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="342.3" cy="442.5" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<circle cx="392.1" cy="442.5" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="392.1" cy="442.5" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<circle cx="342.3" cy="407.3" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="342.3" cy="407.3" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<circle cx="392.1" cy="407.3" r="5.9" fill="#1c1917" opacity="0.35"/>
+<circle cx="392.1" cy="407.3" r="5.9" fill="none" stroke="#1c1917" stroke-width="1.6" opacity="0.95"/>
+<text x="461.1" y="448.4" font-size="9" text-anchor="start" fill="#57534e" opacity="0.85" font-weight="400">● 桩柱：下部有明显水线与青苔</text>
+<polygon points="202.9,512.9 332.0,502.7 334.9,468.9 205.9,477.7" fill="none" stroke="#1c1917" stroke-width="2.0" opacity="0.9"/>
+<polygon points="202.9,512.9 332.0,502.7 334.9,468.9 205.9,477.7" fill="#1c1917" opacity="0.07"/>
+<polygon points="455.2,501.2 584.3,490.9 587.2,457.2 458.1,466.0" fill="none" stroke="#1c1917" stroke-width="2.0" opacity="0.9"/>
+<polygon points="455.2,501.2 584.3,490.9 587.2,457.2 458.1,466.0" fill="#1c1917" opacity="0.07"/>
+<text x="267.5" y="527.6" font-size="8.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">平底木货船（补丁・吃水线）</text>
+<text x="519.7" y="515.9" font-size="8.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">货船</text>
+<polygon points="543.2,307.6 648.8,307.6 648.8,231.3 543.2,231.3" fill="#b45309" opacity="0.1"/>
+<polygon points="543.2,307.6 648.8,307.6 648.8,231.3 543.2,231.3" fill="none" stroke="#b45309" stroke-width="2.4" opacity="1"/>
+<circle cx="543.2" cy="307.6" r="4.4" fill="#1c1917" opacity="0.5"/>
+<circle cx="543.2" cy="307.6" r="4.4" fill="none" stroke="#1c1917" stroke-width="2.0" opacity="1"/>
+<circle cx="648.8" cy="307.6" r="4.4" fill="#1c1917" opacity="0.5"/>
+<circle cx="648.8" cy="307.6" r="4.4" fill="none" stroke="#1c1917" stroke-width="2.0" opacity="1"/>
+<circle cx="543.2" cy="231.3" r="4.4" fill="#1c1917" opacity="0.5"/>
+<circle cx="543.2" cy="231.3" r="4.4" fill="none" stroke="#1c1917" stroke-width="2.0" opacity="1"/>
+<circle cx="648.8" cy="231.3" r="4.4" fill="#1c1917" opacity="0.5"/>
+<circle cx="648.8" cy="231.3" r="4.4" fill="none" stroke="#1c1917" stroke-width="2.0" opacity="1"/>
+<polygon points="566.7,284.1 625.3,284.1 625.3,266.5 566.7,266.5" fill="#57534e" opacity="0.1"/>
+<polygon points="566.7,284.1 625.3,284.1 625.3,266.5 566.7,266.5" fill="none" stroke="#57534e" stroke-width="1.5" opacity="0.9"/>
+<text x="596.0" y="263.6" font-size="8.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">旧木桌＋算盘账册</text>
+<text x="596.0" y="213.7" font-size="9.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">★ 凉棚 3.6×2.6　全码头唯一遮荫处</text>
+<circle cx="596.0" cy="269.5" r="55.7" fill="#78716c" opacity="0.1"/>
+<circle cx="596.0" cy="269.5" r="55.7" fill="none" stroke="#78716c" stroke-width="1.2" opacity="0.6"/>
+<polygon points="126.7,331.1 220.5,331.1 220.5,272.4 126.7,272.4" fill="#78716c" opacity="0.07"/>
+<polygon points="126.7,331.1 220.5,331.1 220.5,272.4 126.7,272.4" fill="none" stroke="#78716c" stroke-width="1.3" opacity="0.75"/>
+<polygon points="249.9,336.9 326.1,336.9 326.1,284.1 249.9,284.1" fill="#78716c" opacity="0.07"/>
+<polygon points="249.9,336.9 326.1,336.9 326.1,284.1 249.9,284.1" fill="none" stroke="#78716c" stroke-width="1.3" opacity="0.75"/>
+<polygon points="144.3,243.1 226.4,243.1 226.4,190.3 144.3,190.3" fill="#78716c" opacity="0.07"/>
+<polygon points="144.3,243.1 226.4,243.1 226.4,190.3 144.3,190.3" fill="none" stroke="#78716c" stroke-width="1.3" opacity="0.75"/>
+<polygon points="244.0,248.9 332.0,248.9 332.0,190.3 244.0,190.3" fill="#78716c" opacity="0.07"/>
+<polygon points="244.0,248.9 332.0,248.9 332.0,190.3 244.0,190.3" fill="none" stroke="#78716c" stroke-width="1.3" opacity="0.75"/>
+<polygon points="373.1,319.3 449.3,319.3 449.3,272.4 373.1,272.4" fill="#78716c" opacity="0.07"/>
+<polygon points="373.1,319.3 449.3,319.3 449.3,272.4 373.1,272.4" fill="none" stroke="#78716c" stroke-width="1.3" opacity="0.75"/>
+<polygon points="384.8,231.3 455.2,231.3 455.2,181.5 384.8,181.5" fill="#78716c" opacity="0.07"/>
+<polygon points="384.8,231.3 455.2,231.3 455.2,181.5 384.8,181.5" fill="none" stroke="#78716c" stroke-width="1.3" opacity="0.75"/>
+<text x="244.0" y="163.9" font-size="9.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">岸上货堆：麻袋・木箱・陶瓮，草绳捆扎，堆放杂乱（高低不齐）</text>
+<polyline points="85.6,348.7 519.7,360.4" fill="none" stroke="#78716c" stroke-width="1.4" stroke-dasharray="14 8" opacity="0.4"/>
+<polyline points="85.6,272.4 519.7,284.1" fill="none" stroke="#78716c" stroke-width="1.4" stroke-dasharray="14 8" opacity="0.4"/>
+<polyline points="85.6,190.3 519.7,202.0" fill="none" stroke="#78716c" stroke-width="1.4" stroke-dasharray="14 8" opacity="0.4"/>
+<text x="103.2" y="137.5" font-size="9" text-anchor="start" fill="#57534e" opacity="0.85" font-weight="400">夯土地面：被货物与车轮压出深辙与坑洼</text>
+<polygon points="684.0,219.6 760.3,231.3 760.3,137.5 672.3,131.6" fill="none" stroke="#78716c" stroke-width="2.0" opacity="0.9"/>
+<polygon points="684.0,219.6 760.3,231.3 760.3,137.5 672.3,131.6" fill="#78716c" opacity="0.12"/>
+<text x="719.2" y="181.5" font-size="8.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">★ 状态05
+背阳土坡</text>
+<circle cx="420.0" cy="128.7" r="10.0" fill="#f59e0b" opacity="0.18"/>
+<circle cx="420.0" cy="128.7" r="10.0" fill="none" stroke="#b45309" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="420.0" y="132.2" font-size="10" text-anchor="middle" fill="#b45309" font-weight="700">☀</text>
+<text x="420.0" y="111.7" font-size="9" text-anchor="middle" fill="#b45309" font-weight="600">正午顶光（暴晒，影短而浓）</text>
+<circle cx="103.2" cy="466.0" r="10.0" fill="#f59e0b" opacity="0.18"/>
+<circle cx="103.2" cy="466.0" r="10.0" fill="none" stroke="#b45309" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="103.2" y="469.5" font-size="10" text-anchor="middle" fill="#b45309" font-weight="700">☀</text>
+<text x="103.2" y="449.0" font-size="9" text-anchor="middle" fill="#b45309" font-weight="600">状态02：日落在此方位，倒影朝镜头拉长</text>
+<line x1="103.2" y1="466.0" x2="147.2" y2="466.0" stroke="#b45309" stroke-width="1.4" opacity="0.8"/>
+<line x1="147.2" y1="466.0" x2="140.3" y2="470.1" stroke="#b45309" stroke-width="1.4" opacity="0.8"/>
+<line x1="147.2" y1="466.0" x2="140.3" y2="461.9" stroke="#b45309" stroke-width="1.4" opacity="0.8"/>
+<polygon points="367.2,178.5 322.1,211.3 380.7,232.6" fill="#0369a1" opacity="0.10"/>
+<polyline points="322.1,211.3 367.2,178.5 380.7,232.6" fill="none" stroke="#0369a1" stroke-width="1.1" opacity="0.6"/>
+<circle cx="367.2" cy="178.5" r="11" fill="#fff" stroke="#0369a1" stroke-width="1.8"/>
+<text x="367.2" y="182.1" font-size="11" text-anchor="middle" fill="#0369a1" font-weight="700">1</text>
+<text x="367.2" y="202.5" font-size="8.5" text-anchor="middle" fill="#0369a1" opacity="0.85">岸上向河（主机位）</text>
+<polygon points="601.9,160.9 546.1,161.9 581.9,213.0" fill="#0369a1" opacity="0.10"/>
+<polyline points="546.1,161.9 601.9,160.9 581.9,213.0" fill="none" stroke="#0369a1" stroke-width="1.1" opacity="0.6"/>
+<circle cx="601.9" cy="160.9" r="11" fill="#fff" stroke="#0369a1" stroke-width="1.8"/>
+<text x="601.9" y="164.5" font-size="11" text-anchor="middle" fill="#0369a1" font-weight="700">2</text>
+<text x="601.9" y="184.9" font-size="8.5" text-anchor="middle" fill="#0369a1" opacity="0.85">凉棚侧</text>
+<polygon points="367.2,319.3 336.0,365.5 398.4,365.5" fill="#0369a1" opacity="0.10"/>
+<polyline points="336.0,365.5 367.2,319.3 398.4,365.5" fill="none" stroke="#0369a1" stroke-width="1.1" opacity="0.6"/>
+<circle cx="367.2" cy="319.3" r="11" fill="#fff" stroke="#0369a1" stroke-width="1.8"/>
+<text x="367.2" y="322.9" font-size="11" text-anchor="middle" fill="#0369a1" font-weight="700">3</text>
+<text x="367.2" y="343.3" font-size="8.5" text-anchor="middle" fill="#0369a1" opacity="0.85">栈桥轴线向河（状态02 落日机位）</text>
+<polygon points="725.1,166.8 671.0,153.3 692.3,211.9" fill="#0369a1" opacity="0.10"/>
+<polyline points="671.0,153.3 725.1,166.8 692.3,211.9" fill="none" stroke="#0369a1" stroke-width="1.1" opacity="0.6"/>
+<circle cx="725.1" cy="166.8" r="11" fill="#fff" stroke="#0369a1" stroke-width="1.8"/>
+<text x="725.1" y="170.4" font-size="11" text-anchor="middle" fill="#0369a1" font-weight="700">4</text>
+<text x="725.1" y="190.8" font-size="8.5" text-anchor="middle" fill="#0369a1" opacity="0.85">土坡（前暗后亮）</text>
+<text x="68" y="635" font-size="9.5" fill="#78716c">● 柱位／树位　▭ 构筑物　橙 ＝ 光源与光斑　蓝圈 ＝ 固定机位与视锥　灰虚线 ＝ 边界或投影</text>
+</svg>

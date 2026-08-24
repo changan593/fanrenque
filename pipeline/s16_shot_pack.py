@@ -53,7 +53,7 @@ CHARS = PROD / "characters"
 SCENES = PROD / "scenes"
 STYLE = PROD / "style_assets"
 
-IMG_EXT = {".png", ".jpg", ".jpeg", ".webp"}
+IMG_EXT = {".png", ".jpg", ".jpeg", ".webp", ".svg"}
 
 
 # ── 找卡 ──────────────────────────────────────────────────────────────
@@ -150,9 +150,21 @@ def build(act_dir: Path, refs_only: bool = False) -> tuple[str, list[str]]:
         (hit_s.append((code, m[0])) if m else miss_s.append(code))
 
     ref_imgs: list[str] = []
+    # 本幕自己的分镜草图（构图与运镜锁）
+    sb = act_dir / "分镜草图.svg"
+    if sb.exists():
+        ref_imgs.append(str(sb.relative_to(paths.ROOT)))
+    # 角色与场景卡的图（角色卡 PNG、场景平面图 SVG、场景卡 PNG）
     for _, d in hit_c + hit_s:
         for st in states_of(d):
             ref_imgs += [str(p.relative_to(paths.ROOT)) for p in imgs_of(st)]
+
+    # 去重（保序）
+    seen, uniq = set(), []
+    for x in ref_imgs:
+        if x not in seen:
+            seen.add(x); uniq.append(x)
+    ref_imgs = uniq
 
     if refs_only:
         return "", ref_imgs
