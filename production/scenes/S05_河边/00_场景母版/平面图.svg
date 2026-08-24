@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 611" width="760" height="611" font-family="ui-sans-serif,-apple-system,'PingFang SC','Noto Sans CJK SC',sans-serif">
+<rect width="760" height="611" fill="#faf9f7"/>
+<text x="68" y="30" font-size="17" font-weight="700" fill="#1c1917">S05 河边（僻静河湾）　平面图（俯视）</text>
+<text x="68" y="49" font-size="10.5" fill="#78716c">★ 遮挡关系是本场景的全部要点：从主河道走过看不见这里</text>
+<polygon points="68.0,543.0 692.0,543.0 692.0,363.6 68.0,363.6" fill="#0369a1" opacity="0.1"/>
+<text x="380.0" y="480.6" font-size="10.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">主河道</text>
+<polyline points="68.0,363.6 231.8,355.8 302.0,293.4 442.4,277.8 528.2,332.4 692.0,355.8" fill="none" stroke="#0369a1" stroke-width="2.4" opacity="0.8"/>
+<polygon points="231.8,355.8 302.0,293.4 442.4,277.8 528.2,332.4 528.2,363.6 231.8,363.6" fill="#0369a1" opacity="0.14"/>
+<text x="380.0" y="324.6" font-size="10" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">★ 内凹河湾　水面平静</text>
+<text x="380.0" y="385.1" font-size="9" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">浅水处可见河底卵石与淤泥</text>
+<circle cx="208.4" cy="301.2" r="16.4" fill="#166534" opacity="0.1"/>
+<circle cx="208.4" cy="301.2" r="16.4" fill="none" stroke="#166534" stroke-width="1.3" opacity="0.7"/>
+<circle cx="239.6" cy="301.2" r="16.4" fill="#166534" opacity="0.1"/>
+<circle cx="239.6" cy="301.2" r="16.4" fill="none" stroke="#166534" stroke-width="1.3" opacity="0.7"/>
+<circle cx="270.8" cy="301.2" r="16.4" fill="#166534" opacity="0.1"/>
+<circle cx="270.8" cy="301.2" r="16.4" fill="none" stroke="#166534" stroke-width="1.3" opacity="0.7"/>
+<circle cx="481.4" cy="301.2" r="16.4" fill="#166534" opacity="0.1"/>
+<circle cx="481.4" cy="301.2" r="16.4" fill="none" stroke="#166534" stroke-width="1.3" opacity="0.7"/>
+<circle cx="512.6" cy="301.2" r="16.4" fill="#166534" opacity="0.1"/>
+<circle cx="512.6" cy="301.2" r="16.4" fill="none" stroke="#166534" stroke-width="1.3" opacity="0.7"/>
+<circle cx="543.8" cy="301.2" r="16.4" fill="#166534" opacity="0.1"/>
+<circle cx="543.8" cy="301.2" r="16.4" fill="none" stroke="#166534" stroke-width="1.3" opacity="0.7"/>
+<text x="239.6" y="258.3" font-size="9" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">芦苇丛（高过人）</text>
+<text x="512.6" y="258.3" font-size="9" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">芦苇丛</text>
+<circle cx="317.6" cy="231.0" r="44.8" fill="#166534" opacity="0.07"/>
+<circle cx="317.6" cy="231.0" r="44.8" fill="none" stroke="#166534" stroke-width="1.2" opacity="0.5"/>
+<circle cx="317.6" cy="231.0" r="6.6" fill="#1c1917" opacity="0.5"/>
+<circle cx="317.6" cy="231.0" r="6.6" fill="none" stroke="#1c1917" stroke-width="1.8" opacity="1"/>
+<circle cx="419.0" cy="231.0" r="44.8" fill="#166534" opacity="0.07"/>
+<circle cx="419.0" cy="231.0" r="44.8" fill="none" stroke="#166534" stroke-width="1.2" opacity="0.5"/>
+<circle cx="419.0" cy="231.0" r="6.6" fill="#1c1917" opacity="0.5"/>
+<circle cx="419.0" cy="231.0" r="6.6" fill="none" stroke="#1c1917" stroke-width="1.8" opacity="1"/>
+<text x="368.3" y="172.5" font-size="9.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">低垂柳枝　★ 与芦苇共同形成遮挡</text>
+<circle cx="337.1" cy="273.9" r="16.4" fill="#78716c" opacity="0.14"/>
+<circle cx="337.1" cy="273.9" r="16.4" fill="none" stroke="#78716c" stroke-width="1.6" opacity="0.9"/>
+<circle cx="391.7" cy="262.2" r="13.3" fill="#78716c" opacity="0.14"/>
+<circle cx="391.7" cy="262.2" r="13.3" fill="none" stroke="#78716c" stroke-width="1.6" opacity="0.9"/>
+<circle cx="434.6" cy="273.9" r="11.7" fill="#78716c" opacity="0.14"/>
+<circle cx="434.6" cy="273.9" r="11.7" fill="none" stroke="#78716c" stroke-width="1.6" opacity="0.9"/>
+<text x="387.8" y="231.0" font-size="8.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">被水磨圆的灰白大石（石上有水线）</text>
+<polyline points="107.0,472.8 325.4,309.0" fill="none" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="6 4" opacity="0.7"/>
+<polyline points="653.0,472.8 504.8,316.8" fill="none" stroke="#b91c1c" stroke-width="1.6" stroke-dasharray="6 4" opacity="0.7"/>
+<text x="161.6" y="410.4" font-size="8.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">✗ 从主河道
+看不进来</text>
+<text x="637.4" y="426.0" font-size="8.5" text-anchor="middle" fill="#57534e" opacity="0.85" font-weight="400">→ 远处隐约
+可见 S04 码头轮廓</text>
+<circle cx="380.0" cy="137.4" r="11.7" fill="#f59e0b" opacity="0.18"/>
+<circle cx="380.0" cy="137.4" r="11.7" fill="none" stroke="#b45309" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="380.0" y="140.9" font-size="10" text-anchor="middle" fill="#b45309" font-weight="700">☀</text>
+<text x="380.0" y="118.7" font-size="9" text-anchor="middle" fill="#b45309" font-weight="600">盛夏正午强光（水面细碎反光，不做粼粼波光）</text>
+<polygon points="380.0,160.8 338.6,222.2 421.4,222.2" fill="#0369a1" opacity="0.10"/>
+<polyline points="338.6,222.2 380.0,160.8 421.4,222.2" fill="none" stroke="#0369a1" stroke-width="1.1" opacity="0.6"/>
+<circle cx="380.0" cy="160.8" r="11" fill="#fff" stroke="#0369a1" stroke-width="1.8"/>
+<text x="380.0" y="164.4" font-size="11" text-anchor="middle" fill="#0369a1" font-weight="700">1</text>
+<text x="380.0" y="184.8" font-size="8.5" text-anchor="middle" fill="#0369a1" opacity="0.85">岸上向水</text>
+<polygon points="590.6,215.4 516.5,216.7 564.0,284.6" fill="#0369a1" opacity="0.10"/>
+<polyline points="516.5,216.7 590.6,215.4 564.0,284.6" fill="none" stroke="#0369a1" stroke-width="1.1" opacity="0.6"/>
+<circle cx="590.6" cy="215.4" r="11" fill="#fff" stroke="#0369a1" stroke-width="1.8"/>
+<text x="590.6" y="219.0" font-size="11" text-anchor="middle" fill="#0369a1" font-weight="700">2</text>
+<text x="590.6" y="239.4" font-size="8.5" text-anchor="middle" fill="#0369a1" opacity="0.85">斜侧（含遮挡前景）</text>
+<text x="68" y="595" font-size="9.5" fill="#78716c">● 柱位／树位　▭ 构筑物　橙 ＝ 光源与光斑　蓝圈 ＝ 固定机位与视锥　灰虚线 ＝ 边界或投影</text>
+</svg>
