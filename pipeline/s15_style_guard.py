@@ -254,6 +254,47 @@ def check_render_locks() -> list[str]:
     return problems
 
 
+def check_homology_locks() -> list[str]:
+    """同源锁逐字共用：两张卡共用的段落必须与权威文件一字不差。
+
+    第一把是眉眼同源锁（南红枝 × 红儿）：原文把「眉眼相像」当叙事工具用了
+    91 章，相像的那部分若靠两张卡各写各的形容词，出图三张就散了。
+    机制与渲染锁完全一致：权威在 production/characters/_*同源锁*.md，
+    卡里只许原样抄。
+    """
+    problems = []
+    root = paths.PRODUCTION_DIR / "characters"
+    if not root.exists():
+        return problems
+    for f in sorted(root.glob("_*同源锁*.md")):
+        text = f.read_text(encoding="utf-8")
+        rel_f = str(f.relative_to(paths.ROOT))
+        m = re.search(r"绑定[：:]\s*(.+)", text)
+        if not m:
+            problems.append(f"{rel_f}：缺「绑定：」行")
+            continue
+        dirs = re.findall(r"`([^`]+)`", m.group(1))
+        blocks = re.findall(r"```text\n(.*?)\n```", text, re.S)
+        if not dirs or not blocks:
+            problems.append(f"{rel_f}：绑定卡或 ```text 同源段为空")
+            continue
+        for d in dirs:
+            cards = sorted((root / d / "00_身份母版").glob("*_超详细提示词.md"))                 if (root / d / "00_身份母版").exists() else []
+            if not cards:
+                problems.append(f"{rel_f}：绑定的 {d} 找不到身份母版卡")
+                continue
+            ct = cards[0].read_text(encoding="utf-8")
+            rel_c = str(cards[0].relative_to(paths.ROOT))
+            for bi, b in enumerate(blocks, 1):
+                if b in ct:
+                    continue
+                bad = next((ln for ln in b.splitlines()
+                            if ln.strip() and ln not in ct), b.splitlines()[0])
+                problems.append(f"{rel_c}：缺同源段{bi}（或被改过）"
+                                f"——第一处对不上的行：「{bad[:24]}…」")
+    return problems
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="画风金标准闸门：国风三维")
     ap.add_argument("--path", type=Path, default=None,
@@ -279,6 +320,16 @@ def main() -> int:
         print("     短版与克制版**原样**复制进卡里。要改风格改那份文件，不要改单张卡。")
     else:
         print("\n✓ 渲染锁逐字共用：全部角色卡一致")
+
+    homology_problems = check_homology_locks()
+    if homology_problems:
+        print(f"\n🔴 同源锁逐字共用：{len(homology_problems)} 处不一致\n")
+        for p in homology_problems:
+            print(f"     {p}")
+        print("\n     改法：改 production/characters/ 下的 _*同源锁*.md 权威文件，")
+        print("     然后把新段**原样**抄进绑定的每张卡。单独改一张卡就是漂移。")
+    else:
+        print("\n✓ 同源锁逐字共用：绑定卡全部一致")
 
     roots = ([args.path.resolve()] if args.path
              else [paths.PRODUCTION_DIR, paths.ROOT / "doc"])
@@ -327,7 +378,7 @@ def main() -> int:
         print("\n改法：正向提示词里删掉载体词，风格段统一由")
         print("      production/style_assets/ 的两份文件在出图时追加。")
         print("      负面清单里保留这些词是对的——那是在禁止它们。")
-    if violations or lock_problems or anchor_problems:
+    if violations or lock_problems or homology_problems or anchor_problems:
         return 1
     print("\n✓ 全绿")
     return 0
