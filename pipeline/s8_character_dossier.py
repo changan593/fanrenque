@@ -246,6 +246,9 @@ def collect(units, canon: str, aliases: list[str], ambiguous: list[str],
     for u in units:
         paras = u["paragraphs"]
         hits, amb_hits = [], []
+        # ★ 段号对外一律 1 基（与 s2_analyze_chapters.numbered_text 的
+        #   enumerate(..., 1) 一致，也就是全项目所有 seqN[i] 引用的基准）。
+        #   i 在这里保持 0 基，因为它同时用来切上下文窗口；只在输出时 +1。
         for i, p in enumerate(paras):
             c = scan(p, m_sure, m_ex)
             if c:
@@ -256,7 +259,7 @@ def collect(units, canon: str, aliases: list[str], ambiguous: list[str],
                 hits.append({"para": i, "text": p, "aliases": dict(c), "tags": tags,
                              "speech": speech_in(p, m_sure)})
                 for t in tags:
-                    tag_index[t].append({"seq": u["seq"], "para": i})
+                    tag_index[t].append({"seq": u["seq"], "para": i + 1})
             ca = scan(p, m_amb, m_ex)
             if ca and not c:          # 已确认命中的段不用再进存疑
                 amb_total.update(ca)
@@ -278,7 +281,7 @@ def collect(units, canon: str, aliases: list[str], ambiguous: list[str],
             "ambiguous_paras": [h["para"] for h in amb_hits],
             "hits": hits,
             "ambiguous": amb_hits,
-            "context": [{"para": i, "text": paras[i],
+            "context": [{"para": i + 1, "text": paras[i],
                          "hit": i in hit_set, "ambiguous": i in amb_set}
                         for i in sorted(keep)],
         })
@@ -318,7 +321,7 @@ def write_digest(d: dict, path: Path, quote_min: int = 2) -> None:
          f"（seq{st['first_seq']} ~ seq{st['last_seq']}）",
          f"- 各别名：{st['by_alias']}",
          f"- 各别名首现：" + "；".join(
-             f"{k} seq{v['seq']}段{v['para']}" for k, v in st["alias_first_seen"].items()),
+             f"{k} seq{v['seq']}段{v['para'] + 1}" for k, v in st["alias_first_seen"].items()),
          f"- 主题命中：{st['by_tag']}", "",
          "戏份最重的章节：",
          "".join(f"\n  - seq{c['seq']} {c['title']}（{c['hits']} 次）"
@@ -329,7 +332,7 @@ def write_digest(d: dict, path: Path, quote_min: int = 2) -> None:
         L.append("")
         for h in c["hits"]:
             tags = f"　{'/'.join(h['tags'])}" if h["tags"] else ""
-            L.append(f"**[{h['para']}]**{tags}　{h['text']}")
+            L.append(f"**[{h['para'] + 1}]**{tags}　{h['text']}")
             for s in h["speech"]:
                 if len(s["quote"]) >= quote_min:
                     L.append(f"    └ 台词（{s['likely_speaker']}是她）：「{s['quote']}」")
@@ -337,7 +340,7 @@ def write_digest(d: dict, path: Path, quote_min: int = 2) -> None:
         if c["ambiguous"]:
             L.append(f"> 存疑（{'、'.join(d['ambiguous_aliases'])}，未必是本人）：")
             for h in c["ambiguous"]:
-                L.append(f"> [{h['para']}] {h['text']}")
+                L.append(f"> [{h['para'] + 1}] {h['text']}")
             L.append("")
     path.write_text("\n".join(L), encoding="utf-8")
 

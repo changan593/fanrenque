@@ -109,7 +109,7 @@ cp .env.example .env          # 填 DEEPSEEK_API_KEY / IMAGE_API_KEY，.env 不�
 python pipeline/selftest.py   # 离线自测，验管道通不通，不花额度
 ```
 
-想确认现有数据是否完好（三条命令，都不花钱，约一分钟）：
+想确认现有数据是否完好（四条命令，都不花钱，约一分钟）：
 
 > ⚠ 别拿 `s10_episode_plan.py` 当自检——它会**改写** `data/plot/episodes.json`，
 > 而且实测重跑会得到 267 集而不是库里的 268 集。第一季 47 集剧本都建立在现有边界上，
@@ -117,7 +117,8 @@ python pipeline/selftest.py   # 离线自测，验管道通不通，不花额度
 
 ```bash
 python pipeline/s3_validate_chapters.py     # 期望：问题章 0
-python pipeline/s15_style_guard.py          # 期望：画风冲突 0
+python pipeline/s15_style_guard.py          # 期望：画风冲突 0、渲染锁逐字一致
+python pipeline/s17_citation_check.py       # 期望：production/characters 与 scenes 全绿
 python pipeline/selftest.py                 # 期望：全部通过
 ```
 

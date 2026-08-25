@@ -25,6 +25,7 @@
 | `s14_narration_ledger.py` | **旁白承载账的闸门**：关键旁白有没有全部落到承载上 | 检查报告，可选 md | |
 | `s15_style_guard.py` | **画风金标准的闸门**：提示词里有没有与国风三维冲突的载体声明 | 检查报告 | |
 | `s16_shot_pack.py` | **按幕装配出图包**：剧本＋幕提示词＋角色卡＋场景卡＋风格段 | 一份可直接开工的 md | |
+| `s17_citation_check.py` | **原文引用的闸门**：每处 `【原】「…」` 的段号拿去和原文逐字对 | 检查报告，可自动修 | |
 | `selftest.py` | 离线自测，用假模型跑通全流程 | | |
 | `config.py` | 所有可调参数的唯一来源（读 `.env`） | | |
 
@@ -459,3 +460,45 @@ python pipeline/s16_shot_pack.py s01/E01/01_第一幕_北阳城城隍庙 --refs-
 
 **匹配不上的卡会明确报出来，不会静默跳过**——漏一张卡比报一次错危险得多。
 次要角色/群像匹配不上是正常的，它们只有紧凑卡；主要角色匹配不上就是真的没建。
+
+---
+
+## s17_citation_check —— 原文引用闸门
+
+原则二此前只有 `s3` 在管**章节分析**那一层。人工写的角色卡、场景卡、幕文档里的
+`seqN[i]` 从来没被机器查过——这道闸门补上。
+
+**判据**：一行里同时出现 `seqN[i]` 和 `【原】「…」` 时，
+把那条引文拿去和 `source/novel.json` 的第 i 段（**1 基**）逐字比对
+（归一化口径同 `doc/02` 第二节：去空白与标点）。
+只认 `【原】` 之后的引号——`【补】` 是推导，负面清单词与文档自述都不是原文。
+
+```bash
+python pipeline/s17_citation_check.py                     # 全量
+python pipeline/s17_citation_check.py --path production/characters
+python pipeline/s17_citation_check.py --fix               # 只改「差一位」
+python pipeline/s17_citation_check.py --relocate          # 引文全书唯一落点时改段号
+python pipeline/s17_citation_check.py --show-ok           # 把命中的也列出来
+```
+
+### 它抓到的第一个真问题
+
+`s8_character_dossier.py` 用 `enumerate(paras)` 输出 **0 基**段号，
+而 `s2_analyze_chapters.numbered_text` 用的是 `enumerate(paragraphs, 1)`——
+**全项目其余 1200 多条引用都是 1 基**。照着卷宗写角色卡的人，
+会把整张卡的段号写成偏移 1 的值，而且看不出来。
+
+已修：s8 改成对外 1 基（内部索引仍是 0 基，只在输出时 +1，见该文件第 249 行注释），
+17 份卷宗全部重跑，`production/characters/` 与 `production/scenes/` 的
+**286 条引用现已全部逐字命中**。
+
+### 已知未清的欠账
+
+`production/s01/` 里还有约 56 处对不上，集中在
+`_视觉基准_E03-E10补充.md` 与几份剧本。它们用了两种本闸门刻意不自动改的写法：
+
+- `seq7[2][33]`——一行挂两段
+- `seq3[18-19]`——区间
+
+自动改会把这两种写法改坏（第一次尝试就改坏了两处，已回滚），
+所以 `--fix` 明确跳过它们，留给人处理。跑一次 `s17` 就有完整清单。

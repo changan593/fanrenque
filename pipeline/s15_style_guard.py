@@ -197,6 +197,63 @@ def check_anchors() -> list[str]:
     return problems
 
 
+
+def canonical_blocks() -> dict[str, str]:
+    """从 style_assets/统一角色提示词.md 取出规范段落（短版 / 克制版）。"""
+    f = paths.PRODUCTION_DIR / "style_assets" / "统一角色提示词.md"
+    if not f.exists():
+        return {}
+    blocks = re.findall(r"```text\n(.*?)\n```", f.read_text(encoding="utf-8"), re.S)
+    out = {}
+    for b in blocks:
+        if b.startswith("高预算中国院线3D动画电影人物"):
+            out["短版"] = b
+        elif b.startswith("服从《凡人阙》"):
+            out["克制版"] = b
+    return out
+
+
+def check_render_locks() -> list[str]:
+    """渲染锁逐字共用：卡里每一处渲染锁都必须与统一文件一字不差。
+
+    s15 的载体词扫描只抓「正向声明了别的画风」；
+    一张卡自己手写一段渲染锁、词都不犯规但和统一文件不一致，
+    照样是画风漂移——C01 唐真曾经三个阶段卡三种写法。
+
+    检查两件事：
+      ① 短版与克制版**都在**（缺一不可）；
+      ② 卡里**任何一行**以规范段落开头的文字，必须与规范段落完全相同。
+         ② 是必要的：一张卡通常有两份短版（渲染锁一份、拼进英文提示词一份），
+         只查「在不在」的话，改坏其中一份也查不出来。
+    """
+    canon = canonical_blocks()
+    if not canon:
+        return ["读不到 style_assets/统一角色提示词.md 的规范段落"]
+    heads = {name: block[:14] for name, block in canon.items()}
+    problems = []
+    root = paths.PRODUCTION_DIR / "characters"
+    if not root.exists():
+        return problems
+    for card in sorted(root.rglob("*_超详细提示词.md")):
+        text = card.read_text(encoding="utf-8")
+        rel = str(card.relative_to(paths.ROOT))
+        for name, block in canon.items():
+            if block not in text:
+                problems.append(f"{rel}：缺{name}")
+        for lineno, line in enumerate(text.splitlines(), 1):
+            s = line.strip()
+            for name, head in heads.items():
+                if s.startswith(head) and s != canon[name]:
+                    want = canon[name]
+                    k = next((i for i, (a, b) in enumerate(zip(s, want))
+                              if a != b), min(len(s), len(want)))
+                    problems.append(
+                        f"{rel}:{lineno}：{name}被改过，不是逐字"
+                        f"（第 {k + 1} 字起：卡里「{s[k:k + 12]}」"
+                        f"／应为「{want[k:k + 12]}」）")
+    return problems
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="画风金标准闸门：国风三维")
     ap.add_argument("--path", type=Path, default=None,
@@ -209,8 +266,19 @@ def main() -> int:
     print("画风金标准闸门　国风三维（doc/04 第 3.1 节）")
     print("=" * 62)
 
-    for p in check_anchors():
+    anchor_problems = check_anchors()
+    for p in anchor_problems:
         print(f"  ✗ 锚点：{p}")
+
+    lock_problems = check_render_locks()
+    if lock_problems:
+        print(f"\n🔴 渲染锁逐字共用：{len(lock_problems)} 处不一致\n")
+        for p in lock_problems:
+            print(f"     {p}")
+        print("\n     改法：把 production/style_assets/统一角色提示词.md 的")
+        print("     短版与克制版**原样**复制进卡里。要改风格改那份文件，不要改单张卡。")
+    else:
+        print("\n✓ 渲染锁逐字共用：全部角色卡一致")
 
     roots = ([args.path.resolve()] if args.path
              else [paths.PRODUCTION_DIR, paths.ROOT / "doc"])
@@ -259,6 +327,7 @@ def main() -> int:
         print("\n改法：正向提示词里删掉载体词，风格段统一由")
         print("      production/style_assets/ 的两份文件在出图时追加。")
         print("      负面清单里保留这些词是对的——那是在禁止它们。")
+    if violations or lock_problems or anchor_problems:
         return 1
     print("\n✓ 全绿")
     return 0
