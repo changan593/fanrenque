@@ -17,5 +17,11 @@ venv/
 production/style_test/out/
 production/style_test/sheets/
 
+# 镜头成品图：第一季 12,958 镜、一镜 2~3 版，50GB 以上，
+# 且由「角色卡 + 场景卡 + 幕提示词 + 风格段」确定地推导得出。
+# 入库的是每集的「出图台账.md」——用了哪一版、谁验收的，那才是删了就没的东西。
+# 规范见 doc/13_出图工序规范.md 第一节。
+production/s01/*/*/frames/
+
 # 系统
 .DS_Store

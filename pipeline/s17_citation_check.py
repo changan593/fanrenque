@@ -7,7 +7,7 @@ s17 —— 原文引用闸门
 所以全项目所有 `seqN[i]` 段号**都是 1 基**。
 
 但人工写的角色卡、场景卡、幕文档里的 `seqN[i]` 从来没有被机器查过。
-本闸门补上这一段：**凡是一行里同时出现 `seqN[i]` 和 `【原】「…」`，
+本闸门补上这一段：**凡是一行里同时出现 `seqN[i]`（含 `seqN[i][j]` 与 `seqN[i-j]`）和 `【原】「…」`，
 就把那段引文拿去和 `source/novel.json` 的第 i 段（1 基）逐字比对。**
 
 它抓到过的真问题：
@@ -35,7 +35,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import paths  # noqa: E402
 
-CITE = re.compile(r"seq(\d+)\[(\d+)(?:[-–](\d+))?\]")
+# 段号有三种写法，三种都要认：
+#   seq13[1]        单段
+#   seq3[18-19]     区间
+#   seq13[1][2]     ★ 一行挂两段（取证表里很常见）
+# 第三种一度不被识别——只认出 seq13[1]，于是第二条引文被判成「差一位」。
+# 全库 56 处报错里有 41 处是这么来的，是**工具读不懂**，不是引用写错了。
+CITE = re.compile(r"seq(\d+)((?:\[\d+(?:[-–]\d+)?\])+)")
+BRACKET = re.compile(r"\[(\d+)(?:[-–](\d+))?\]")
 QUOTE = re.compile(r"「([^」]+)」")
 PUNCT = str.maketrans("", "", "　 \t\n．，、。！？；：（）()《》〈〉「」『』…—-·\"'“”‘’")
 
@@ -147,10 +154,11 @@ def main() -> int:
             # 而不是「每个段号都要有引文对上」——后者会把
             # 「两个段号 + 一条够长的引文」这种正常写法误报成错。
             spans = []
-            for seq_s, i_s, j_s in cites:
-                seq, i0 = int(seq_s), int(i_s)
-                i1 = int(j_s) if j_s else i0
-                spans.append((seq, i0, i1))
+            for seq_s, brackets in cites:
+                seq = int(seq_s)
+                for i_s, j_s in BRACKET.findall(brackets):
+                    i0 = int(i_s)
+                    spans.append((seq, i0, int(j_s) if j_s else i0))
             for q in qs:
                 hit = None
                 for seq, i0, i1 in spans:
@@ -192,7 +200,7 @@ def main() -> int:
                 note = ""
                 if near:
                     note = f"　→ 同章 [{near[2]}]"
-                    if len(cites) == 1 and len(qs) == 1:
+                    if len(spans) == 1 and len(qs) == 1:
                         relocs.setdefault(f, []).append(
                             (lineno, f"seq{near[0]}[{near[1]}]",
                              f"seq{near[0]}[{near[2]}]"))
@@ -200,7 +208,7 @@ def main() -> int:
                     loc = whereis(index, q)
                     if len(loc) == 1:
                         note = f"　→ 全书唯一落点 seq{loc[0][0]}[{loc[0][1]}]"
-                        if len(cites) == 1 and len(qs) == 1:
+                        if len(spans) == 1 and len(qs) == 1:
                             relocs.setdefault(f, []).append(
                                 (lineno, f"seq{spans[0][0]}[{spans[0][1]}]",
                                  f"seq{loc[0][0]}[{loc[0][1]}]"))
