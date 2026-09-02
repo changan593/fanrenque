@@ -48,7 +48,7 @@ def _log_call(attempt: int, status: int | None, elapsed: float,
               chars: int, error: str | None) -> None:
     from . import paths
     try:
-        append_jsonl(paths.LOG_DIR / "s2_calls.jsonl", {
+        append_jsonl(paths.LOG_DIR / "llm_calls.jsonl", {
             "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
             **getattr(_local, "ctx", {}),
             "attempt": attempt, "http": status,

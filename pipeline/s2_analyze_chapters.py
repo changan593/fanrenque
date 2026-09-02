@@ -11,6 +11,11 @@
 
 ②③ 之间夹了一道**程序逐字核验**：把模型摘出来的每条引用回原文做字符串精确匹配。
 这是唯一不依赖模型判断的客观闸门，一致性审查员必须采信它的结论。
+闸门本身在 common/quality.py（s2 / s2m / s5 共用同一份）。
+
+留痕：每次模型调用都在 reviews 里有一条记录——抽取那一次记为 stage=extract_meta
+（只有用量 / 重试 / 降级，没有分数），两类审查与修订各一条。run.llm_calls 与记录条数对得上。
+--phase review 是在原结果上**追加**一轮审查：旧记录与旧调用数保留，不另起一份。
 
 密钥放项目根目录的 .env（cp .env.example .env），不用每次 export。
 
@@ -26,6 +31,7 @@
     python pipeline/s2_analyze_chapters.py --phase review --force  # 全书补跑审查
 """
 import argparse
+import json
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -34,7 +40,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config
-from common import paths, verbatim
+from common import paths, quality
 from common.jsonio import append_jsonl, read_json, write_json
 from common import llm
 from common.llm import USAGE, LLMError, chat_json
@@ -136,7 +142,6 @@ def call_extract(ch: dict, registry: list[str], prevs: list[dict]) -> tuple[dict
 
 
 def call_structure_review(ch: dict, analysis: dict, prevs: list[dict]) -> tuple[dict, dict]:
-    import json
     user = "\n\n".join([
         "【前文提要】\n" + ("\n".join(f"{p['label']}：{p['synopsis']}" for p in prevs)
                             or "（本章为开篇或前文尚未解析，无需做跨章连贯性判断，"
@@ -149,7 +154,6 @@ def call_structure_review(ch: dict, analysis: dict, prevs: list[dict]) -> tuple[
 
 
 def call_fidelity_review(ch: dict, analysis: dict, vb: dict, cov: dict) -> tuple[dict, dict]:
-    import json
     report = {"逐字核验": vb, "台词覆盖率": cov}
     user = "\n\n".join([
         f"【本章原文】{chapter_label(ch)}\n" + numbered_text(ch),
@@ -162,7 +166,6 @@ def call_fidelity_review(ch: dict, analysis: dict, vb: dict, cov: dict) -> tuple
 
 
 def call_repair(ch: dict, analysis: dict, sr: dict, fr: dict, vb: dict) -> tuple[dict, dict]:
-    import json
     user = "\n\n".join([
         f"【本章原文】{chapter_label(ch)}\n" + numbered_text(ch),
         "【原解析结果】\n" + json.dumps(analysis, ensure_ascii=False, indent=1),
@@ -199,22 +202,21 @@ def review_record(stage: str, rnd: int, obj: dict, meta: dict) -> dict:
     }
 
 
-def quality_gate(sr: dict, fr: dict, vb: dict) -> tuple[bool, list[str]]:
-    """三个门槛：结构分、一致性分、程序逐字命中率。任一不过就要修。"""
-    reasons = []
-    s, f = sr.get("score") or 0, fr.get("score") or 0
-    if s < config.PASS_SCORE["structure_review"]:
-        reasons.append(f"结构分 {s} < {config.PASS_SCORE['structure_review']}")
-    if f < config.PASS_SCORE["fidelity_review"]:
-        reasons.append(f"一致性分 {f} < {config.PASS_SCORE['fidelity_review']}")
-    if vb["verbatim_rate"] < config.VERBATIM_PASS_RATE:
-        reasons.append(f"逐字命中率 {vb['verbatim_rate']:.2%} < {config.VERBATIM_PASS_RATE:.0%}")
-    if vb["counts"]["miss"] > 0:
-        reasons.append(f"存在 {vb['counts']['miss']} 条原文找不到的引用（臆造）")
-    return (not reasons), reasons
+def quality_gate(sr: dict, fr: dict, vb: dict, cov: dict) -> tuple[bool, list[str]]:
+    """结构分 / 一致性分 / 逐字命中率 / 臆造 / 台词覆盖率，任一不过就要修。
+    实现在 common/quality.py，s2m 与 s5 用的是同一份。"""
+    return quality.gate(sr.get("score"), fr.get("score"), vb, cov)
 
 
-BASE_STEPS = 4          # 抽取 / 逐字核验 / 结构审查 / 一致性审查
+def extract_record(meta: dict) -> dict:
+    """抽取那一次调用的元信息（用量 / 重试 / 降级）。
+    以前直接丢掉：llm_calls 里算了它，reviews 里却没有它，事后核对不了某章的成本和降级。"""
+    return {"stage": "extract_meta", "round": 0, "model": config.MODEL,
+            "tokens": meta.get("tokens", {}), "attempts": meta.get("attempts"),
+            "adapted": meta.get("adapted") or [], "reviewed_at": _now()}
+
+
+BASE_STEPS = 5          # 抽取(或载入) / 逐字核验 / 结构审查 / 一致性审查 / 写入
 STEPS_PER_REPAIR = 2    # 每轮修订额外加：修订 + 复核
 
 
@@ -227,22 +229,28 @@ def analyze_chapter(ch: dict, phase: str = "all",
     prevs = prev_synopses(seq)
     reviews: list[dict] = []
     calls = 0
+    prior_rounds = 0
 
     # ① 抽取（phase=review 时复用已有结果，只重跑审查）
     if phase == "review":
         on_stage("载入已有解析")
         prev_doc = read_json(paths.chapter_json_path(seq))
         analysis = prev_doc["analysis"]
-        reviews = [r for r in prev_doc.get("reviews", []) if r.get("stage") == "extract_meta"]
+        # 旧审查、旧调用数、旧修订轮数一并继承：复审是在原结果上追加一轮，不是另起一份。
+        # 以前这里把旧 reviews 丢光、calls 从 0 数起，复审过的章 llm_calls=2，
+        # 抽取那次调用就从账上消失了。
+        reviews = list(prev_doc.get("reviews") or [])
+        calls = int((prev_doc.get("run") or {}).get("llm_calls") or 0)
+        prior_rounds = int((prev_doc.get("quality") or {}).get("repair_rounds") or 0)
     else:
         on_stage("抽取")
         analysis, meta = call_extract(ch, alias_registry(seq), prevs)
+        reviews.append(extract_record(meta))
         calls += 1
 
     # 程序逐字核验（客观闸门）
     on_stage("逐字核验")
-    vb = verbatim.check_analysis(analysis, paras)
-    cov = verbatim.coverage_report(analysis, paras)
+    vb, cov = quality.measure(analysis, paras)
 
     # ② 结构与上下文审查
     on_stage("结构审查")
@@ -257,7 +265,7 @@ def analyze_chapter(ch: dict, phase: str = "all",
     calls += 1
 
     # ④ 不达标则修订，修完重新核验 + 重新审一致性
-    passed, reasons = quality_gate(sr_obj, fr_obj, vb)
+    passed, reasons = quality_gate(sr_obj, fr_obj, vb, cov)
     rounds = 0
     while not passed and rounds < config.MAX_REPAIR_ROUNDS:
         rounds += 1
@@ -270,12 +278,11 @@ def analyze_chapter(ch: dict, phase: str = "all",
                             "reviewed_at": _now()})
             break
         on_stage(f"复核 第{rounds}轮")
-        vb = verbatim.check_analysis(analysis, paras)
-        cov = verbatim.coverage_report(analysis, paras)
+        vb, cov = quality.measure(analysis, paras)
         fr_obj, fr_meta = call_fidelity_review(ch, analysis, vb, cov)
         reviews.append(review_record("fidelity_review", rounds, fr_obj, fr_meta))
         calls += 1
-        passed, reasons = quality_gate(sr_obj, fr_obj, vb)
+        passed, reasons = quality_gate(sr_obj, fr_obj, vb, cov)
 
     return {
         "schema_version": SCHEMA_VERSION,
@@ -300,7 +307,7 @@ def analyze_chapter(ch: dict, phase: str = "all",
             "fidelity_score": fr_obj.get("score"),
             "verbatim": vb,
             "coverage": cov,
-            "repair_rounds": rounds,
+            "repair_rounds": prior_rounds + rounds,
             "context_chapters_used": [p["seq"] for p in prevs],
         },
         "reviews": reviews,
@@ -393,8 +400,6 @@ def doctor() -> int:
     开跑前的连通性自检：一次最小请求，把密钥、模型名、网络、延迟一次性验清楚。
     比在跑批里盯着不动的进度条猜要快得多。
     """
-    import json as _json
-
     print(config.describe())
     print(f"接口地址 {config.API_BASE} | 流式 {'开' if config.STREAM else '关'} | "
           f"建连超时 {config.CONNECT_TIMEOUT}s | 静默超时 {config.STALL_TIMEOUT}s\n")
@@ -423,7 +428,7 @@ def doctor() -> int:
         print("  · HTTP 401/403  → .env 里的 DEEPSEEK_API_KEY 不对或没权限")
         print(f"  · HTTP 400/404  → 模型名可能不对，当前 DEEPSEEK_MODEL={config.MODEL}")
         print("  · 连接超时/SSL  → 检查网络与代理")
-        print(f"  · 详细调用记录：{paths.LOG_DIR / 's2_calls.jsonl'}")
+        print(f"  · 详细调用记录：{paths.LOG_DIR / 'llm_calls.jsonl'}")
         return 1
 
     dt = time.time() - t0
@@ -431,7 +436,7 @@ def doctor() -> int:
     gen = [t for t in ticks if t[1] == "生成中"]
     first = ticks[1][0] if len(ticks) > 1 else None
     print(f"\n✓ 成功  总耗时 {dt:.1f}s" + (f"  首字节 {first:.1f}s" if first else ""))
-    print(f"  返回  {_json.dumps(obj, ensure_ascii=False)[:120]}")
+    print(f"  返回  {json.dumps(obj, ensure_ascii=False)[:120]}")
     print(f"  用量  {meta['tokens']}  请求次数 {meta['attempts']}")
 
     if meta.get("adapted"):
@@ -455,17 +460,18 @@ def doctor() -> int:
     return 0
 
 
-def main() -> None:
+def main() -> int:
     ap = argparse.ArgumentParser(
         description="逐章分析（三次调用 + 可选修订轮）。支持并发、断点续传。")
     ap.add_argument("--doctor", action="store_true",
                     help="只做一次最小请求验证密钥/模型/网络，不跑章节")
-    ap.add_argument("--range", nargs=2, type=int, metavar=("START", "END"),
-                    help="只处理 seq 区间（含两端）")
-    ap.add_argument("--seqs", metavar="LIST",
-                    help="只处理这些 seq，逗号分隔。体检分级后精确重跑用，"
-                         "比 --range 省钱：不达标的章往往是散落的")
-    ap.add_argument("--smoke", type=int, metavar="N", help="只跑前 N 章，验管道用")
+    scope_g = ap.add_mutually_exclusive_group()   # 三种选章方式只能给一个，以前静默按优先级取
+    scope_g.add_argument("--range", nargs=2, type=int, metavar=("START", "END"),
+                         help="只处理 seq 区间（含两端）")
+    scope_g.add_argument("--seqs", metavar="LIST",
+                         help="只处理这些 seq，逗号分隔。体检分级后精确重跑用，"
+                              "比 --range 省钱：不达标的章往往是散落的")
+    scope_g.add_argument("--smoke", type=int, metavar="N", help="只跑前 N 章，验管道用")
     ap.add_argument("--phase", choices=["all", "review"], default="all",
                     help="all=完整跑；review=复用已有抽取结果，只重跑审查")
     ap.add_argument("--force", action="store_true",
@@ -480,7 +486,7 @@ def main() -> None:
 
     paths.ensure_dirs()
     if args.doctor:
-        sys.exit(doctor())
+        return doctor()
     total = load_novel()["meta"]["unit_count"]
     if args.seqs:
         # 精确重跑：体检分级后不达标的章往往散落在全书各处，
@@ -507,7 +513,7 @@ def main() -> None:
     print(f"本次待处理 {len(todo)} 章\n")
     if not todo:
         print("没有需要处理的章节。")
-        return
+        return 0
 
     prog = Progress(total=len(todo), workers=args.workers,
                     done_already=len(chapters) - len(todo), force_plain=args.plain)
@@ -529,13 +535,14 @@ def main() -> None:
     print(f"\n用时 {fmt_dur(time.time() - t0)} | {USAGE.summary()}")
     if interrupted:
         print("已中断。已完成的章节都已落盘，直接重跑同一条命令即可从断点继续。")
-        return
+        return 130
     print(f"日志：{(paths.LOG_DIR / 's2_runs.jsonl').relative_to(paths.ROOT)}")
     if prog.failed:
         print(f"有 {prog.failed} 章未达标或出错，重跑：")
         print("    python pipeline/s2_analyze_chapters.py --redo-failed")
     print("下一步：python pipeline/s3_validate_chapters.py")
+    return 1 if prog.failed else 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

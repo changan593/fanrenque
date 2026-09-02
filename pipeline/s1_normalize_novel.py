@@ -22,6 +22,7 @@
 import argparse
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -198,7 +199,6 @@ def health_report(novel: dict) -> list[str]:
     short = [c for c in ch if c["char_count"] < 800]
     out.append(f"正文<800字的单元: {len(short)} 个" +
                (f" -> {[c['chapter_id'] for c in short]}" if short else ""))
-    from collections import Counter
     kinds = Counter(x["kind"] for c in ch for x in c["stripped_lines"])
     out.append("剔除的抓取垃圾  : " + (", ".join(f"{k} {v} 行" for k, v in kinds.items())
                                        or "无"))
@@ -216,23 +216,23 @@ def health_report(novel: dict) -> list[str]:
     return out
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
+def main() -> int:
+    ap = argparse.ArgumentParser(description="原文 txt → 标准化 novel.json（只在原文更新时才需要重跑）")
     ap.add_argument("--check", action="store_true", help="只体检，不写文件")
     args = ap.parse_args()
 
-    paths.ensure_dirs()
     novel = normalize()
     print("\n".join(health_report(novel)))
     if args.check:
-        return
+        return 0
     write_json(paths.NOVEL_JSON, novel)
     write_json(paths.NOVEL_INDEX, build_index(novel))
     print(f"\n已写出 {paths.NOVEL_JSON.relative_to(paths.ROOT)} "
           f"({paths.NOVEL_JSON.stat().st_size / 1024 / 1024:.1f} MB)")
     print(f"已写出 {paths.NOVEL_INDEX.relative_to(paths.ROOT)} "
           f"({paths.NOVEL_INDEX.stat().st_size / 1024:.0f} KB)")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

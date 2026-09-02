@@ -112,7 +112,7 @@ def cast_timeline(names: list[dict], total: int, bucket: int = 25) -> list[dict]
     return out
 
 
-def main() -> None:
+def main() -> int:
     ap = argparse.ArgumentParser(description="纯原文结构探查（不调 API）")
     ap.add_argument("--top", type=int, default=40, help="终端里展示多少个角色")
     ap.add_argument("--min-hits", type=int, default=100)
@@ -152,7 +152,7 @@ def main() -> None:
         print(f"  seq {b['range'][0]:>4}~{b['range'][1]:<4} "
               f"新增 {b['new_characters']} 人：{'、'.join(b['names'][:6])}")
 
-    out = paths.PLOT_DIR / "text_probe.json"
+    out = paths.TEXT_PROBE_JSON
     write_json(out, {
         "source": "纯原文统计，未使用模型",
         "method": "引号后字串 + 后接字多样性挖角色名；正则统计篇幅与对话密度",
@@ -167,7 +167,8 @@ def main() -> None:
         "cast_timeline": timeline,
     })
     print(f"\n已写出 {out.relative_to(paths.ROOT)}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

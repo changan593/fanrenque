@@ -30,9 +30,14 @@
 - 一集**不跨季**
 - 一集**不跨卷段的硬断点**（硬断点是人物死亡、地点彻底更换、大矛盾了结）
 
+⚠ 它会**改写** data/plot/episodes.json。第一季 47 集剧本都建立在现有边界上；
+   已写剧本的集（production/sNN/ENN/剧本.md 存在）边界锁定不重排；其余集改了
+   seasons.json / arcs.json / 时长参数 / 章节数据后边界会变，
+   跑之前先确认你真的想重算。只想看分布用 --dry-run。
+
 用法：
-    python pipeline/s10_episode_plan.py --dry-run       # 只看时长分布
-    python pipeline/s10_episode_plan.py --seasons data/plot/seasons.json
+    python pipeline/s10_episode_plan.py --dry-run       # 只看时长分布，不落盘
+    python pipeline/s10_episode_plan.py                 # 按 data/manual/seasons.json 排六季
 """
 import argparse
 import json
@@ -41,21 +46,20 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import config
 from common import paths
 from common.jsonio import read_json, write_json
+from common.novel import load_index
 
-# 试点标定：E01 语音 6342 字实测成片约 28 分、E02 语音 6901 字约 31 分，
-# 折算停顿/动作/转场系数 1.19~1.21，取 1.20。
-CHARS_PER_SEC = 4.5
-PAUSE_FACTOR = 1.20
-
-TARGET_MIN = 28.0        # 目标时长（分钟）
-SOFT_LO, SOFT_HI = 25.0, 32.0    # 舒适区间，用户已定「质量优先，超时无妨」
-HARD_LO, HARD_HI = 18.0, 42.0    # 越过这条罚到几乎不可选
-# 每集章数范围。下限给到 2 是必要的：全书有一处（seq655~659）连续三章
-# 加起来就 42~44 分，卡死 3 章下限只能做出一个超长集。允许 2 章的集，
-# 求解器才有余地把这种地方切开。上限 5 是为了不让一集稀释成流水账。
-MIN_CH, MAX_CH = 2, 5
+# 参数全部在 config.py「分集求解（s10）」一节；这里只取别名，便于阅读。
+# 时长模型的系数 1.20 由 E01/E02 两集人工试点标定（doc/08 第五节）。
+# 这些时长只是**排分集边界用的估值**，doc/00 已决定不对成片时长做预设。
+CHARS_PER_SEC = config.CHARS_PER_SEC
+PAUSE_FACTOR = config.PAUSE_FACTOR
+TARGET_MIN = config.EPISODE_TARGET_MIN
+SOFT_LO, SOFT_HI = config.EPISODE_SOFT_RANGE
+HARD_LO, HARD_HI = config.EPISODE_HARD_RANGE
+MIN_CH, MAX_CH = config.EPISODE_CHAPTERS
 
 
 def chapter_minutes(seq: int) -> float:
@@ -103,17 +107,21 @@ def plan_range(lo: int, hi: int, minutes: list[float],
             if end_seq in hard_cuts or end_seq == hi:
                 pass
             elif end_seq in soft_cuts:
-                c += 8
+                c += config.CUT_PENALTY_SOFT
             else:
-                c += 25
+                c += config.CUT_PENALTY_NONE
             # 一集内部不许跨硬断点——那等于把一个了结的矛盾拖进下一集
             if any(s in hard_cuts for s in range(lo + i, end_seq)):
                 continue
             if cost[i] + c < cost[j]:
                 cost[j] = cost[i] + c
                 prev[j] = i
-    if cost[n] == INF:                 # 约束太紧解不出来，放宽章数范围重来
-        return []
+    if cost[n] == INF:
+        # 约束太紧解不出来（比如两个硬断点只隔一章）。不能静默返回空列表——
+        # 那会让这一季悄悄变成 0 集，下游 s11/s13/s14 全部对不上。
+        raise SystemExit(f"seq {lo}~{hi} 在每集 {MIN_CH}~{MAX_CH} 章的约束下无解。"
+                         f"检查该区间的硬断点（arcs.json 里 cut=硬断）是否挨得太近，"
+                         f"或放宽 config.EPISODE_CHAPTERS。")
     cuts, j = [], n
     while j > 0:
         cuts.append((prev[j], j))
@@ -130,18 +138,49 @@ def plan_range(lo: int, hi: int, minutes: list[float],
     return out
 
 
+def plan_season(lo: int, hi: int, minutes: list[float], hard_cuts: set, soft_cuts: set,
+                fixed: list[dict]) -> list[dict]:
+    """
+    排一季。`fixed` 是这一季里**已经写了剧本的集**（上一版分集表里的原条目），边界原样保留，
+    求解器只排它们之间的空档。
+
+    分集表是求解出来的：时长参数、卷段断点、章节数据任何一样变了，边界都会移动。
+    但剧本是按上一版边界写的，每集的 seq 范围就是那份剧本的合同（s14 也按它对账）。
+    实测这次重构后 timeline 变了，S01 有 16 集的边界跟着动了——而 S01 的 47 集剧本早已写完。
+    所以有剧本的集一律锁死，只重排还没写剧本的部分。
+    """
+    fixed = sorted(fixed, key=lambda e: e["seq_start"])
+    for f in fixed:
+        if not lo <= f["seq_start"] <= f["seq_end"] <= hi:
+            raise SystemExit(f"{f['code']}（seq {f['seq_start']}~{f['seq_end']}）不在本季范围 {lo}~{hi} 内，"
+                             f"分季表改了？有剧本的集不能跨季移动。")
+    eps, cursor = [], lo
+    for f in fixed:
+        if cursor < f["seq_start"]:
+            eps += plan_range(cursor, f["seq_start"] - 1, minutes, hard_cuts, soft_cuts)
+        e = {k: f[k] for k in ("seq_start", "seq_end", "cut") if k in f}
+        e["chapters"] = f["seq_end"] - f["seq_start"] + 1
+        e["minutes"] = round(sum(minutes[f["seq_start"] - 1:f["seq_end"]]), 1)
+        e["locked"] = True
+        eps.append(e)
+        cursor = f["seq_end"] + 1
+    if cursor <= hi:
+        eps += plan_range(cursor, hi, minutes, hard_cuts, soft_cuts)
+    return eps
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="分集规划（时长/断点约束求解）")
-    ap.add_argument("--seasons", type=Path,
+    ap.add_argument("--seasons", type=Path, default=paths.SEASONS_JSON,
                     help="分季定义 json：[{name, seq_start, seq_end}, ...]。"
-                         "不给就把全书当一季排，用于先看时长分布")
-    ap.add_argument("--arcs", type=Path, default=paths.PLOT_DIR / "arcs.json",
+                         f"默认 {paths.SEASONS_JSON.relative_to(paths.ROOT)}；传 none 把全书当一季排")
+    ap.add_argument("--arcs", type=Path, default=paths.ARCS_JSON,
                     help="卷段定义 json，含 hard_cuts / soft_cuts")
-    ap.add_argument("--out", type=Path, default=paths.PLOT_DIR / "episodes.json")
+    ap.add_argument("--out", type=Path, default=paths.EPISODES_JSON)
     ap.add_argument("--dry-run", action="store_true", help="只报时长分布，不排集")
     args = ap.parse_args()
 
-    total = read_json(paths.NOVEL_INDEX)["meta"]["unit_count"]
+    total = load_index()["meta"]["unit_count"]
     minutes = load_minutes(total)
 
     print(f"全书 {total} 章｜纯语音 {sum(minutes) / PAUSE_FACTOR / 60:.0f} 小时"
@@ -161,20 +200,35 @@ def main() -> int:
     else:
         print(f"⚠ 未找到 {args.arcs}，本次不带断点约束，只按时长排")
 
-    if args.seasons and args.seasons.exists():
+    if str(args.seasons).lower() != "none" and args.seasons.exists():
         seasons = read_json(args.seasons)
     else:
         seasons = [{"name": "全书（未分季）", "seq_start": 1, "seq_end": total}]
         print("⚠ 未给分季定义，按整本排，仅供看总集数")
 
+    # 已写剧本的集从上一版分集表里原样搬过来，边界不动（见 plan_season）
+    locked: dict[int, list[dict]] = {}
+    if args.out.exists():
+        for e in (read_json(args.out).get("episodes") or []):
+            if paths.script_path(e["code"]).exists():
+                locked.setdefault(e["season"], []).append(e)
+    if locked:
+        print(f"已有剧本的集：{sum(map(len, locked.values()))} 集，边界锁定不重排")
+
     all_eps, rows = [], []
     for si, s in enumerate(seasons, 1):
-        eps = plan_range(s["seq_start"], s["seq_end"], minutes, hard_cuts, soft_cuts)
+        fixed = locked.get(si, [])
+        eps = plan_season(s["seq_start"], s["seq_end"], minutes, hard_cuts, soft_cuts, fixed)
         for ei, e in enumerate(eps, 1):
             e["season"] = si
             e["season_name"] = s.get("name", "")
             e["episode"] = ei
             e["code"] = f"S{si:02d}E{ei:02d}"
+        renamed = [(f["code"], e["code"]) for f in fixed for e in eps
+                   if e.get("locked") and e["seq_start"] == f["seq_start"] and e["code"] != f["code"]]
+        if renamed:
+            raise SystemExit(f"第 {si} 季有剧本的集会被重新编号：{renamed[:5]}——"
+                             f"剧本目录按集号命名，重编号会对不上。先处理前面空档的排法。")
         all_eps += eps
         ms = [e["minutes"] for e in eps]
         rows.append((si, s.get("name", ""), len(eps),

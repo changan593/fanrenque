@@ -48,28 +48,18 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import config
 from common import paths
 from common.jsonio import read_json
+from common.names import canon_text as canon
 
 MARKS = {"现": "唐假现身", "白": "唐假声音", "卡": "字幕卡",
          "画": "画面", "删": "建议删除", "台": "实为台词"}
-DELETE_RATE_ALARM = 0.15
-FREEZE_MAX = 6                    # doc/05 5.7：每集世界静止次数上限
+DELETE_RATE_ALARM = config.DELETE_RATE_ALARM   # doc/05 5.8
+FREEZE_MAX = config.FREEZE_MAX                 # doc/05 5.7：每集世界静止次数上限
 
-
-# 全剧对原文**唯一一处更名**（人工裁定，记录在
-# production/characters/C09_南季礼/00_身份母版/ 卡首「异名已裁定」）：
-# seq15[4] 原文作「南天礼」，全书仅此一次（对 270 次「南季礼」），几乎可断定是笔误；
-# 但它落在 E04 镜120 全剧第一次报宫主全名的旁白里，照抄观众会听到两个名字。
-# 裁定 B：成片一律读「南季礼」，剧本已改口并加 ★ 注；证据层（source/、dossier、
-# 承载账引文）保持原文不动。这里在比对前把两个写法归一，否则该条旁白会被判无承载。
-RENAME_CANON = {"南天礼": "南季礼"}
-
-
-def canon(s: str) -> str:
-    for old, new in RENAME_CANON.items():
-        s = s.replace(old, new)
-    return s
+# 全剧对原文唯一一处更名（南天礼 → 南季礼，裁定 B）在 common/names.RENAME_CANON，
+# 比对前先归一，否则 E04 那条旁白会被判无承载。
 
 
 def norm(s: str) -> str:
@@ -251,15 +241,13 @@ def main() -> int:
     args = ap.parse_args()
 
     if args.episode:
-        eps = read_json(paths.PLOT_DIR / "episodes.json")["episodes"]
+        eps = read_json(paths.EPISODES_JSON)["episodes"]
         e = next((x for x in eps if x["code"] == args.episode), None)
         if not e:
             raise SystemExit(f"episodes.json 里没有 {args.episode}")
         lo, hi = e["seq_start"], e["seq_end"]
         planned = e.get("minutes")
-        season = args.episode[1:3]
-        script = args.script or (paths.PRODUCTION_DIR / f"s{season}" /
-                                 f"E{args.episode[-2:]}" / "剧本.md")
+        script = args.script or paths.script_path(args.episode)
     else:
         if not (args.script and args.seq):
             raise SystemExit("要么给 --episode，要么给 --script 加 --seq")
@@ -364,7 +352,10 @@ def main() -> int:
                         (seq, it["para"], "／".join(g.strip() for g in gone)))
 
     voiced = sum(1 for r in rows if "唐假" in r["disposition"])
-    deleted = sum(1 for r in rows if "建议删除" in r["disposition"])
+    # N0 无效条目（原文残留的「。。。」这类）用 `【删】…※ N0` 登记，它不是 N6 判删，
+    # 不该算进删除率——删除率报警防的是「判据用松了」，与剔除排版记号无关。
+    deleted = sum(1 for r in rows if "建议删除" in r["disposition"]
+                  and not any("N0" in b for _, m, b in r["hits"] if m == "删"))
     rate = deleted / len(nar) if nar else 0
     # 只有现身档冻结世界。声音档他只出声不出现，画面照常流动。
     # 见 production/s01/E01/剧本.md 附二与 doc/05 5.7。
@@ -372,7 +363,7 @@ def main() -> int:
     freeze_shots = sorted({shot for shot, mark, _ in marks if mark == "现"})
     freeze = len(freeze_shots)
 
-    print(f"\n── 闸门 ──")
+    print(f"\n── 闸门（口径：doc/05 第五节；标记定义：doc/13 剧本格式规范）──")
     ok = True
     def gate(name, cond, detail=""):
         nonlocal ok

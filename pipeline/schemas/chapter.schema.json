@@ -1,9 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "章节分析 JSON",
-  "description": "data/chapters/chXXXX.json 的结构约定。一章一个文件，seq 为唯一主键。",
+  "description": "data/chapters/chXXXX.json 的结构约定。一章一个文件，seq 为唯一主键。由 s2（模型）或 s2m（人工稿）写出，s5 可就地修补。程序校验在 s3，本文件是字段口径的说明书，不做运行时校验。",
   "type": "object",
-  "required": ["schema_version", "seq", "chapter_id", "declared_num", "title",
+  "required": ["schema_version", "seq", "chapter_id", "declared_num", "title", "label",
+               "merged_titles", "is_merged", "source",
                "raw_text", "paragraphs", "analysis", "quality", "reviews", "run"],
   "properties": {
     "schema_version": {"type": "string"},
@@ -28,13 +29,13 @@
       "properties": {
         "line_start": {"type": "integer"},
         "line_end": {"type": "integer"},
-        "char_count": {"type": "integer"},
+        "char_count": {"type": "integer", "description": "正文字数（不含空白）。s9/s10 的时长估算以它为准"},
         "paragraph_count": {"type": "integer"}
       }
     },
-    "raw_text": {"type": "string", "description": "章节原文全文"},
+    "raw_text": {"type": "string", "description": "章节原文全文。故意冗余：章节 json 是分析时刻的完整快照，不依赖 novel.json 还在"},
     "paragraphs": {"type": "array", "items": {"type": "string"},
-                   "description": "分段原文，引用里的 para 是这个数组的 1 起下标"},
+                   "description": "分段原文。全项目段号一律 1 基：模型看到的 [n]、这里的 para、s8 卷宗、取证文档里的 seqN[i] 都指这个数组的第 n 项（下标 n-1）"},
 
     "analysis": {
       "type": "object",
@@ -42,7 +43,7 @@
                    "narration", "beats"],
       "properties": {
         "one_line": {"type": "string"},
-        "synopsis": {"type": "string", "description": "章节剧情简介"},
+        "synopsis": {"type": "string", "description": "章节剧情简介，≥ config.SYNOPSIS_MIN_CHARS 字且以句读收尾"},
         "time_setting": {"type": "string"},
         "emotional_tone": {"type": "string"},
         "characters": {
@@ -53,12 +54,14 @@
             "properties": {
               "name": {"type": "string"},
               "aliases": {"type": "array", "items": {"type": "string"}},
-              "role_in_chapter": {"enum": ["主导", "参与", "提及"]},
+              "role_in_chapter": {"type": "string",
+                                  "description": "建议值：主导 / 参与 / 提及。模型不严格守枚举，s3 只统计偏离不判错"},
               "mentioned_only": {"type": "boolean"},
               "appearance_quotes": {"type": "array", "items": {"type": "string"},
                                     "description": "原文对该人物外貌/服饰的描写，必须逐字"},
               "state": {"type": "string"},
-              "actions": {"type": "array", "items": {"type": "string"}}
+              "actions": {"type": "array", "items": {"type": "string"}},
+              "_filled": {"type": "boolean", "description": "s5 按原文补登的人物（说话人不在名单里）"}
             }
           }
         },
@@ -69,13 +72,13 @@
             "required": ["name", "type"],
             "properties": {
               "name": {"type": "string"},
-              "type": {"enum": ["室内", "室外", "幻境梦境", "秘境", "其他"]},
+              "type": {"type": "string", "description": "建议值：室内 / 室外 / 幻境梦境 / 秘境 / 其他"},
               "time_of_day": {"type": "string"},
               "description_quotes": {"type": "array", "items": {"type": "string"},
                                      "description": "原文场景描写，必须逐字"},
               "present_characters": {"type": "array", "items": {"type": "string"}},
               "events": {"type": "array", "items": {"type": "string"}},
-              "para_range": {"type": "array", "items": {"type": "integer"},
+              "para_range": {"type": "array", "items": {"type": "integer", "minimum": 1},
                              "minItems": 2, "maxItems": 2}
             }
           }
@@ -90,7 +93,8 @@
               "speaker": {"type": "string"},
               "addressee": {"type": "string"},
               "text": {"type": "string", "description": "台词原文，必须逐字"},
-              "manner": {"type": "string"}
+              "manner": {"type": "string"},
+              "_filled": {"type": "boolean", "description": "s5 按原文补进来的漏抽台词，speaker 待人核"}
             }
           }
         },
@@ -103,20 +107,21 @@
               "para": {"type": "integer", "minimum": 1},
               "character": {"type": "string"},
               "text": {"type": "string", "description": "心理活动原文，必须逐字"},
-              "kind": {"enum": ["心理活动", "回忆", "判断推理", "情绪感受"]}
+              "kind": {"type": "string", "description": "建议值：心理活动 / 回忆 / 判断推理 / 情绪感受"}
             }
           }
         },
         "narration": {
           "type": "array",
+          "description": "关键旁白。只收有信息量的叙述句，不是全文转写",
           "items": {
             "type": "object",
             "required": ["para", "text"],
             "properties": {
               "para": {"type": "integer", "minimum": 1},
-              "text": {"type": "string", "description": "关键旁白原文，必须逐字"},
-              "function": {"enum": ["世界观设定", "人物背景", "时间推移", "伏笔",
-                                    "情节交代", "环境渲染"]}
+              "text": {"type": "string", "description": "旁白原文，必须逐字"},
+              "function": {"type": "string",
+                           "description": "建议值：世界观设定 / 人物背景 / 时间推移 / 伏笔 / 情节交代 / 环境渲染。实测全书出现过 112 种写法，故不做枚举"}
             }
           }
         },
@@ -128,10 +133,10 @@
             "required": ["order", "summary"],
             "properties": {
               "order": {"type": "integer"},
-              "para_range": {"type": "array", "items": {"type": "integer"},
+              "para_range": {"type": "array", "items": {"type": "integer", "minimum": 1},
                              "minItems": 2, "maxItems": 2},
               "scene": {"type": "string"},
-              "beat_type": {"enum": ["铺垫", "冲突", "转折", "情绪", "揭示", "收束"]},
+              "beat_type": {"type": "string", "description": "建议值：铺垫 / 冲突 / 转折 / 情绪 / 揭示 / 收束"},
               "summary": {"type": "string"}
             }
           }
@@ -151,46 +156,63 @@
 
     "quality": {
       "type": "object",
-      "required": ["passed", "structure_score", "fidelity_score", "verbatim"],
+      "description": "质量块。verbatim / coverage / passed / fail_reasons 由 common/quality.refresh 按当前 analysis 重算，谁改了 analysis 都要调它",
+      "required": ["passed", "fail_reasons", "structure_score", "fidelity_score", "verbatim", "coverage"],
       "properties": {
-        "passed": {"type": "boolean"},
+        "passed": {"type": "boolean", "description": "闸门结论，判据见 common/quality.gate"},
         "fail_reasons": {"type": "array", "items": {"type": "string"}},
-        "structure_score": {"type": ["integer", "null"], "minimum": 0, "maximum": 100},
+        "structure_score": {"type": ["integer", "null"], "minimum": 0, "maximum": 100,
+                            "description": "人工稿（run.model == 人工）为 null"},
         "fidelity_score": {"type": ["integer", "null"], "minimum": 0, "maximum": 100},
         "verbatim": {
           "type": "object",
           "description": "程序逐字核验：把每条引用回原文做精确匹配的客观结果",
           "properties": {
             "total_quotes": {"type": "integer"},
-            "counts": {"type": "object"},
+            "counts": {"type": "object", "description": "exact / near / miss / empty 各多少条"},
             "verbatim_rate": {"type": "number"},
             "misplaced_para_count": {"type": "integer"},
-            "problems": {"type": "array"}
+            "problems": {"type": "array", "description": "只留 near / miss / empty 项，最多 80 条"}
           }
         },
-        "coverage": {"type": "object", "description": "台词覆盖率，专盯遗漏"},
-        "repair_rounds": {"type": "integer"},
-        "context_chapters_used": {"type": "array", "items": {"type": "integer"}}
+        "coverage": {
+          "type": "object",
+          "description": "台词覆盖率，专盯遗漏",
+          "properties": {
+            "raw_speech_count": {"type": "integer"},
+            "extracted_dialogue_count": {"type": "integer"},
+            "missed_count": {"type": "integer"},
+            "dialogue_coverage": {"type": "number"},
+            "missed_samples": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "repair_rounds": {"type": "integer", "description": "模型修订轮数累计（--phase review 会在旧值上累加）"},
+        "context_chapters_used": {"type": "array", "items": {"type": "integer"}},
+        "repaired_by": {"type": "string", "description": "被哪个脚本就地修补过，如 s5_repair_quotes"}
       }
     },
 
     "reviews": {
       "type": "array",
-      "description": "审查留痕。每条至少含 score 与 analysis 两项输出。",
+      "description": "每次模型调用一条留痕。extract_meta 只有用量没有分数；两类审查有 score 与 analysis；repair 只在出错时留一条 error。--phase review 追加在旧记录之后。",
       "items": {
         "type": "object",
         "required": ["stage"],
         "properties": {
-          "stage": {"enum": ["structure_review", "fidelity_review", "repair", "extract_meta"]},
-          "round": {"type": "integer"},
+          "stage": {"enum": ["extract_meta", "structure_review", "fidelity_review", "repair"]},
+          "round": {"type": "integer", "description": "0 = 首轮，n = 第 n 轮修订后的复核"},
           "score": {"type": ["integer", "null"]},
           "verdict": {"enum": ["pass", "revise", "fail", null]},
-          "analysis": {"type": "string", "description": "审查详细分析"},
+          "analysis": {"type": "string", "description": "审查详细分析，≥ config.REVIEW_ANALYSIS_MIN_CHARS 字"},
           "issues": {"type": "array"},
           "checked_items": {"type": "object"},
-          "missing_items": {"type": "object"},
+          "missing_items": {"type": "object", "description": "一致性审查员列出的遗漏项。非空即不过闸门"},
           "model": {"type": "string"},
           "tokens": {"type": "object"},
+          "attempts": {"type": ["integer", "null"], "description": "这次调用发了几次请求"},
+          "adapted": {"type": "array", "items": {"type": "string"},
+                      "description": "靠哪些降级才成功（关 JSON 模式 / 关思考 / 加额度）"},
+          "error": {"type": "string", "description": "仅 stage=repair 出错时"},
           "reviewed_at": {"type": "string"}
         }
       }
@@ -198,13 +220,15 @@
 
     "run": {
       "type": "object",
+      "required": ["pipeline_version", "model", "phase", "llm_calls", "finished_at"],
       "properties": {
         "pipeline_version": {"type": "string"},
-        "model": {"type": "string"},
-        "phase": {"type": "string"},
-        "llm_calls": {"type": "integer", "minimum": 3},
+        "model": {"type": "string", "description": "模型名；人工稿为「人工」"},
+        "phase": {"type": "string", "description": "all / review / manual"},
+        "thinking": {"type": ["string", "boolean"], "description": "思考模式：false 或 effort 档位"},
+        "llm_calls": {"type": "integer", "minimum": 0, "description": "模型调用累计（人工稿为 0）。与 reviews 条数对得上"},
         "started_at": {"type": "string"},
-        "finished_at": {"type": "string"},
+        "finished_at": {"type": "string", "description": "缺失即视为写到一半被打断，s2 续传时重跑"},
         "elapsed_sec": {"type": "number"}
       }
     }

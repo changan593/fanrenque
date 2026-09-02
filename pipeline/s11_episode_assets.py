@@ -26,65 +26,70 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import config
 from common import paths
 from common.jsonio import read_json, write_json
+from common.names import build_resolver
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="每集的角色/场景资产需求")
-    ap.add_argument("--episodes", type=Path, default=paths.PLOT_DIR / "episodes.json")
+    ap.add_argument("--episodes", type=Path, default=paths.EPISODES_JSON)
     ap.add_argument("--min-chapters", type=int, default=2,
                     help="只统计出场≥N章的角色。1 会把一次性龙套全算进来")
-    ap.add_argument("--out", type=Path, default=paths.PLOT_DIR / "episode_assets.json")
+    ap.add_argument("--out", type=Path, default=paths.EPISODE_ASSETS_JSON)
     args = ap.parse_args()
 
     if not args.episodes.exists():
         raise SystemExit(f"先跑 s10_episode_plan.py 生成 {args.episodes}")
     eps = read_json(args.episodes)["episodes"]
 
-    cidx = read_json(paths.CHARACTERS_DIR / "index.json")["characters"]
-    amap, keep = {}, set()
-    for c in cidx:
-        canon = c["canonical_name"]
-        if c["chapter_count"] >= args.min_chapters:
-            keep.add(canon)
-        amap[canon] = canon
-        for a in c.get("aliases") or []:
-            amap[a] = canon
+    cidx = read_json(paths.CHAR_INDEX)["characters"]
+    # 别名 → 主名用 common/names 的三级判定（人工核实 > 唯一认领 > 不并）。
+    # 早先这里把别名表拉平成字典、后写覆盖先写：`红儿` 同时被 `姚望舒`（380 章）
+    # 和 `师姐`（26 章）认领，拉平后落到了 `师姐` 头上，S01E01 的角色表里就有
+    # 「师姐」而没有姚望舒。多方认领的名字现在按字面保留并标存疑，不猜。
+    resolve, _ambiguity = build_resolver(cidx)
+    keep = {c["canonical_name"] for c in cidx if c["chapter_count"] >= args.min_chapters}
 
     # 逐章取人物与场景
     per_ch: dict[int, tuple[set, set]] = {}
     for p in sorted(paths.CHAPTERS_DIR.glob("ch*.json")):
         d = read_json(p)
         a = d.get("analysis") or {}
-        chars = set()
+        chars, doubtful = set(), set()
         for c in a.get("characters") or []:
             if not isinstance(c, dict) or c.get("mentioned_only"):
                 continue
-            n = amap.get((c.get("name") or "").strip(), (c.get("name") or "").strip())
+            n, doubt = resolve((c.get("name") or "").strip())
             if n in keep:
                 chars.add(n)
+                if doubt:
+                    doubtful.add(n)
         scenes = {s.get("name") for s in a.get("scenes") or []
                   if isinstance(s, dict) and s.get("name")}
-        per_ch[d["seq"]] = (chars, scenes)
+        per_ch[d["seq"]] = (chars, scenes, doubtful)
 
     seen_c: set[str] = set()
     seen_s: set[str] = set()
     rows = []
     for e in eps:
-        chars, scenes = set(), set()
+        chars, scenes, doubtful = set(), set(), set()
         for s in range(e["seq_start"], e["seq_end"] + 1):
-            c, sc = per_ch.get(s, (set(), set()))
+            c, sc, db = per_ch.get(s, (set(), set(), set()))
             chars |= c
             scenes |= sc
+            doubtful |= db
         new_c = sorted(chars - seen_c)
         new_s = sorted(scenes - seen_s)
         seen_c |= chars
         seen_s |= scenes
         rows.append({**e,
                      "characters": sorted(chars), "scenes": sorted(scenes),
+                     # 归属存疑的名字（多方认领 / 泛称），按字面保留，做资产时逐场确认指谁
+                     "ambiguous_characters": sorted(doubtful),
                      "new_characters": new_c, "new_scenes": new_s,
-                     "asset_load": len(new_c) * 2 + len(new_s)})
+                     "asset_load": len(new_c) * config.ASSET_LOAD_CHAR_WEIGHT + len(new_s)})
 
     write_json(args.out, {"meta": {"episodes": len(rows),
                                    "min_chapters": args.min_chapters},

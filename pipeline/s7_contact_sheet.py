@@ -11,7 +11,7 @@
 
 产出（默认在 production/style_test/sheets/）：
 
-    master.jpg              总表，10 目标 × 8 画风
+    master.jpg              总表，画面目标 × 画风（规模以 matrix.json 为准）
     by_target/T03_*.jpg     单目标横向对比，图更大，判生死用这个
     by_style/S6_*.jpg       单画风纵向体检，看这个画风有没有短板
 
@@ -33,7 +33,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config
 from common import paths
 
-STYLE_DIR = paths.PRODUCTION_DIR / "style_test"
+STYLE_DIR = paths.STYLE_TEST_DIR
 OUT_DIR = STYLE_DIR / "out"
 SHEET_DIR = STYLE_DIR / "sheets"
 
@@ -295,7 +295,11 @@ def main() -> int:
     args.out.mkdir(parents=True, exist_ok=True)
 
     ver = matrix["meta"].get("version", "")
-    foot = (f"{config.IMAGE_MODEL} · {config.IMAGE_SIZE} · 每格 {repeats} 张 · "
+    # 页脚标的模型与尺寸要来自**实际出图时**的 manifest，不是当前 .env——改过配置再拼图会标错
+    mf = args.images / "manifest.json"
+    meta = json.loads(mf.read_text(encoding="utf-8")).get("meta", {}) if mf.exists() else {}
+    foot = (f"{meta.get('model', config.IMAGE_MODEL + '（未记录，取当前配置）')} · "
+            f"{meta.get('size', config.IMAGE_SIZE)} · 每格 {repeats} 张 · "
             f"矩阵 v{ver}　｜　行首标 ★ 的是关键判据，先看它")
 
     if args.only in ("master", "all"):
@@ -311,7 +315,7 @@ def main() -> int:
         print("单目标横向对比：")
         for t in targets:
             sheet = build_sheet(matrix, [t], styles,
-                                title=f"{t['id']}　{t['name']}　八种画风对比",
+                                title=f"{t['id']}　{t['name']}　{len(styles)} 种画风对比",
                                 subtitle=f"{t.get('why','')}　｜　看什么：{t.get('key_check','')}",
                                 thumb_w=int(args.thumb * 1.35), repeats=repeats,
                                 fonts=big, out_dir=args.images)
@@ -323,7 +327,7 @@ def main() -> int:
             sheet = build_sheet(matrix, targets, [s],
                                 title=f"{s['id']}　{s['name']}"
                                       f"{'（' + s['ref'] + '）' if s.get('ref') else ''}"
-                                      f"　十种画面体检",
+                                      f"　{len(targets)} 种画面体检",
                                 subtitle=s.get("brief", "") + "　｜　"
                                          "看这个画风有没有撑不住的画面类型",
                                 thumb_w=int(args.thumb * 0.92), repeats=repeats,

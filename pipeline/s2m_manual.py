@@ -18,8 +18,8 @@
 
 手写稿格式（production/s01/manual_analysis/chNNNN.analysis.json）：
 
-    "dialogues":  [{"para": 13, "q": 0, "speaker": "老拐子", "addressee": "唐真",
-                    "manner": "打趣"}]          // q = 该段第几条引号内容，0 起
+    "dialogues":  [{"para": 13, "q": 1, "speaker": "老拐子", "addressee": "唐真",
+                    "manner": "打趣"}]          // q = 该段第几条引号内容，**1 起**（与 para 同基准）
     "monologues": [{"para": 19, "character": "唐真", "kind": "心理活动"}]
                                                 // 不给 text 就取整段
     "narration":  [{"para": 4, "function": "情节交代"}]
@@ -37,11 +37,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import paths, verbatim
+import config
+from common import paths, quality
 from common.jsonio import read_json, write_json
 from common.novel import chapter_label, chapter_text, get_chapter
 
-MANUAL_DIR = paths.ROOT / "production" / "s01" / "manual_analysis"
+MANUAL_DIR = paths.MANUAL_ANALYSIS_DIR
 QUOTE_RE = re.compile(r"[“](.+?)[”]")
 SCHEMA_VERSION = "1.0"
 
@@ -53,8 +54,8 @@ def quotes_in(par: str) -> list[str]:
 
 def pick_text(paras: list[str], ref: dict, what: str) -> str:
     """
-    按引用规格取原文。三种写法：
-      {"para": N, "q": K}  取该段第 K 条引号内容
+    按引用规格取原文。三种写法（段号与引号序号都是 1 基，与全项目 seqN[i] 同基准）：
+      {"para": N, "q": K}  取该段第 K 条引号内容（K 从 1 起）
       {"para": N}          取整段
       {"para": N, "text":} 取指定子串，并校验它确实是该段的子串
     """
@@ -65,9 +66,10 @@ def pick_text(paras: list[str], ref: dict, what: str) -> str:
     if "q" in ref:
         qs = quotes_in(par)
         k = ref["q"]
-        if not 0 <= k < len(qs):
-            raise ValueError(f"{what}: 第{i}段只有 {len(qs)} 条引号，取不到 q={k}\n  段落：{par[:70]}")
-        return qs[k]
+        if not isinstance(k, int) or not 1 <= k <= len(qs):
+            raise ValueError(f"{what}: 第{i}段只有 {len(qs)} 条引号（1~{len(qs)}），取不到 q={k}\n"
+                             f"  段落：{par[:70]}")
+        return qs[k - 1]
     if "text" in ref:
         t = ref["text"]
         if t not in par:
@@ -122,13 +124,8 @@ def assemble(seq: int) -> dict:
     paras = ch["paragraphs"]
     analysis = build_analysis(src, paras)
 
-    vb = verbatim.check_analysis(analysis, paras)
-    cov = verbatim.coverage_report(analysis, paras)
-    reasons = []
-    if vb["counts"]["miss"] or vb["counts"]["near"]:
-        reasons.append(f"逐字异常 miss={vb['counts']['miss']} near={vb['counts']['near']}")
-    if cov["dialogue_coverage"] < 0.95:
-        reasons.append(f"台词覆盖率 {cov['dialogue_coverage']:.1%} < 95%")
+    vb, cov = quality.measure(analysis, paras)
+    passed, reasons = quality.gate(None, None, vb, cov, manual=True)
 
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     return {
@@ -143,7 +140,7 @@ def assemble(seq: int) -> dict:
         "raw_text": chapter_text(ch), "paragraphs": paras,
         "analysis": analysis,
         "quality": {
-            "passed": not reasons, "fail_reasons": reasons,
+            "passed": passed, "fail_reasons": reasons,
             "structure_score": None, "fidelity_score": None,
             "verbatim": vb, "coverage": cov,
             "repair_rounds": 0, "context_chapters_used": [],
@@ -166,7 +163,7 @@ def assemble(seq: int) -> dict:
     }
 
 
-def main() -> None:
+def main() -> int:
     ap = argparse.ArgumentParser(description="装配人工分析稿为标准章节 json")
     ap.add_argument("--check", action="store_true", help="只核验不落盘")
     args = ap.parse_args()
@@ -202,8 +199,8 @@ def main() -> None:
             write_json(paths.chapter_json_path(seq), doc)
     if not args.check:
         print(f"\n已写出 {len(files)} 份到 {paths.CHAPTERS_DIR.relative_to(paths.ROOT)}/")
-    sys.exit(0 if ok else 1)
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

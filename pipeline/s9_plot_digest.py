@@ -8,8 +8,7 @@
 
 产出：
 
-    data/plot/digest_all.md          全书摘要，一章一行，供人通读
-    data/plot/digest_p01..p06.md     切成 6 块，每块 200 章，供分头分析
+    data/plot/digest_p01..p06.md     全书摘要切成 6 块，每块 200 章，一章一行，供人（或模型）分头读
     data/plot/timeline.json          机器读：每章的人物/场景/伏笔/情绪
 
 每行的信息密度是刻意压到最低的——分卷段靠的是**主要人物的进出**和
@@ -25,23 +24,10 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import config
 from common import paths
 from common.jsonio import read_json, write_json
-
-
-def load_alias_map() -> dict:
-    """复用 s4 归并好的别名表，让摘要里的人名前后一致。"""
-    p = paths.CHARACTERS_DIR / "index.json"
-    if not p.exists():
-        return {}
-    idx = read_json(p)
-    m = {}
-    for c in idx.get("characters") or []:
-        canon = c["canonical_name"]
-        m[canon] = canon
-        for a in c.get("aliases") or []:
-            m[a] = canon
-    return m
+from common.names import build_resolver
 
 
 def main() -> int:
@@ -50,11 +36,15 @@ def main() -> int:
     ap.add_argument("--top-chars", type=int, default=5, help="每章列几个主要人物")
     args = ap.parse_args()
 
-    amap = load_alias_map()
+    if not paths.CHAR_INDEX.exists():
+        raise SystemExit(f"缺 {paths.CHAR_INDEX.relative_to(paths.ROOT)}，先跑 s4_build_assets.py")
+    cidx = read_json(paths.CHAR_INDEX)["characters"]
+    # 别名 → 主名用 common/names 的三级判定（人工核实 > 唯一认领 > 不并），
+    # 不再把别名表拉平成字典后写覆盖——那正是 s11 踩过的坑（红儿被算成师姐）。
+    resolve, _ = build_resolver(cidx)
     # 只有出场够多的角色才配进摘要——龙套进来会把主线淹掉
-    major = {c["canonical_name"] for c in
-             (read_json(paths.CHARACTERS_DIR / "index.json").get("characters") or [])
-             if c["chapter_count"] >= 8}
+    major = {c["canonical_name"] for c in cidx
+             if c["chapter_count"] >= config.DIGEST_MAJOR_MIN_CHAPTERS}
 
     rows, timeline = [], []
     for p in sorted(paths.CHAPTERS_DIR.glob("ch*.json")):
@@ -66,7 +56,7 @@ def main() -> int:
         for c in a.get("characters") or []:
             if not isinstance(c, dict) or c.get("mentioned_only"):
                 continue
-            n = amap.get((c.get("name") or "").strip(), (c.get("name") or "").strip())
+            n, _doubt = resolve((c.get("name") or "").strip())
             if n and n in major and n not in names:
                 names.append(n)
         scenes = [s.get("name") for s in a.get("scenes") or []
@@ -91,15 +81,14 @@ def main() -> int:
                          "foreshadows": fore, "reveals": reveal,
                          "beat_count": len(a.get("beats") or []),
                          "dialogue_count": len(a.get("dialogues") or []),
-                         "char_count": d.get("char_count", 0)})
+                         "char_count": (d.get("source") or {}).get("char_count", 0)})
 
     paths.PLOT_DIR.mkdir(parents=True, exist_ok=True)
     head = ("# 全书章节摘要（剧情线分析原材料）\n\n"
             "格式：`[seq] 标题` / 简介 / 主要人物·场景·基调 / 伏笔埋收\n"
-            "人名已按 s4 的别名表归一。只列出场 ≥8 章的角色，龙套不入。\n\n")
-    (paths.PLOT_DIR / "digest_all.md").write_text(head + "\n".join(rows) + "\n",
-                                                  encoding="utf-8")
-
+            f"人名已按 common/names 的别名解析归一。只列出场 ≥{config.DIGEST_MAJOR_MIN_CHAPTERS} 章的角色，龙套不入。\n\n")
+    # 只写分块，不再另写全书合并版——那是六块的逐字重复（0.99 MB），人读分块就够，
+    # 机器读 timeline.json。
     size = -(-len(rows) // args.chunks)
     for i in range(args.chunks):
         part = rows[i * size:(i + 1) * size]
@@ -111,14 +100,13 @@ def main() -> int:
             f"# 章节摘要 第 {i + 1}/{args.chunks} 块　seq {lo}~{hi}\n\n"
             + head.split("\n\n", 1)[1] + "\n".join(part) + "\n", encoding="utf-8")
 
-    write_json(paths.PLOT_DIR / "timeline.json", timeline)
+    write_json(paths.TIMELINE_JSON, timeline)
 
     tot = sum(len(r) for r in rows)
     print(f"摘要 {len(rows)} 章，共 {tot:,} 字，切成 {args.chunks} 块")
-    print(f"  data/plot/digest_all.md         （{tot // 1000}K 字）")
     print(f"  data/plot/digest_p01..p{args.chunks:02d}.md  （每块约 {tot // args.chunks // 1000}K 字）")
     print(f"  data/plot/timeline.json")
-    print(f"\n入选主要人物 {len(major)} 个（出场≥8章）")
+    print(f"\n入选主要人物 {len(major)} 个（出场≥{config.DIGEST_MAJOR_MIN_CHAPTERS}章）")
     tone = Counter(t["tone"] for t in timeline if t["tone"])
     print("基调分布：", dict(tone.most_common(8)))
     return 0

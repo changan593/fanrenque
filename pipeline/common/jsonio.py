@@ -6,6 +6,13 @@ from pathlib import Path
 from typing import Any
 
 
+def _umask() -> int:
+    """读当前 umask（os.umask 只能「设置并返回旧值」，所以设一次再改回去）。"""
+    old = os.umask(0)
+    os.umask(old)
+    return old
+
+
 def read_json(path: Path) -> Any:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -21,6 +28,9 @@ def write_json(path: Path, obj: Any, indent: int = 2) -> None:
             json.dump(obj, f, ensure_ascii=False, indent=indent)
             f.flush()
             os.fsync(f.fileno())
+        # mkstemp 建的临时文件是 0600，直接 rename 会让每个重生成的 json 都变成只有自己可读。
+        # 按 umask 放回常规权限，重跑不该改变文件的可读性。
+        os.chmod(tmp, 0o666 & ~_umask())
         os.replace(tmp, path)
     except BaseException:
         if os.path.exists(tmp):

@@ -1,14 +1,23 @@
 #!/usr/bin/env python3
 """
-离线自测：不花一分钱 API 额度，验证整条管道能不能跑通。
+离线自测：不花一分钱 API 额度，不碰真实数据目录，验证整条管道能不能跑通。
 
-用假的模型回复替换真实调用，检查三件事：
-  1. novel.json 结构完整、正文能对上原文
-  2. 逐字核验器能正确区分「逐字 / 改写 / 臆造」，能抓出段号标错
-  3. 单章分析全流程（三次调用 + 质量闸门 + 修订轮）能产出合规的章节 json，
-     并能通过 s3 的体检
+用假的模型回复替换真实调用，检查：
+   1. novel.json 结构完整、正文能对上原文
+   2. 逐字核验器能正确区分「逐字 / 改写 / 臆造」，能抓出段号标错
+   3. 单章分析全流程（抽取 + 两审 + 质量闸门 + 修订轮）能产出合规的章节 json，并能通过 s3 的体检
+   4. .env 密钥管理与配置解析
+   5. 并发跑批、断点续传、复审阶段的记账
+   6. 进度看板
+   7. 流式接收与各种接口故障（本地假接口）
+   8. 角色/场景资产聚合与别名归并的闸门
+   9. 出图接口（裁图与假接口出图需要 Pillow，没装就跳过那两项）
+  10. 分集规划求解器
+  11. 按季资产清单的归属判定
+  12. 旁白承载账的匹配口径
+  13. 公共模块：命名 / 引用记法 / 卡目录 / 质量块 / 原子写
 
-跑通了再去配 DEEPSEEK_API_KEY 跑真的。
+跑通了再去配 DEEPSEEK_API_KEY 跑真的。一条命令跑全部闸门：python pipeline/check_all.py
 
 用法：python pipeline/selftest.py
 """
@@ -19,6 +28,7 @@ import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import config
@@ -95,11 +105,10 @@ def build_fake_analysis(ch: dict, flawed: bool) -> dict:
     台词按原文所有引号内容逐字抄全，否则会被 s3 的台词覆盖率判为漏抽。
     flawed=True 时额外掺一条臆造台词，用来验证核验器能不能抓住。
     """
-    import re
     P = ch["paragraphs"]
     dial = []
     for i, p in enumerate(P, 1):
-        for s in re.findall(r"“([^”]{2,})”", p):
+        for s in verbatim.find_speech([p]):          # 与覆盖率闸门同一口径
             dial.append({"para": i, "speaker": "唐真", "addressee": "众人",
                          "text": s, "manner": ""})
     if flawed:
@@ -133,12 +142,13 @@ def test_pipeline() -> None:
 
     def fake_chat_json(system: str, user: str, temperature: float, max_tokens=None):
         meta = {"tokens": {"prompt_tokens": 100, "completion_tokens": 50}, "attempts": 1}
-        if "原文解析员" in system:
+        role = system.splitlines()[0]        # 提示词首行点明角色；正文里会互相提及别的角色
+        if "原文解析员" in role:
             return build_fake_analysis(ch, flawed=True), meta
-        if "修订员" in system:
+        if "修订员" in role:
             state["repaired"] = True
             return build_fake_analysis(ch, flawed=False), meta   # 修订后去掉臆造
-        stage = "结构与上下文审查员" in system
+        stage = "结构与上下文审查员" in role
         return {
             "score": 96 if stage else (55 if not state["repaired"] else 97),
             "verdict": "pass" if state["repaired"] or stage else "revise",
@@ -163,11 +173,15 @@ def test_pipeline() -> None:
     check("原文字段与 novel.json 一致", doc["raw_text"] == novel.chapter_text(ch))
     check("臆造被逐字核验抓到", state["repaired"], "触发了修订轮")
     check("修订后质量闸门放行", q["passed"], f"修订 {q['repair_rounds']} 轮")
-    check("调用次数 ≥3", doc["run"]["llm_calls"] >= 3, f"{doc['run']['llm_calls']} 次")
+    check("调用次数按实际记账（抽取 + 两审 + 修订 + 复核 = 5）",
+          doc["run"]["llm_calls"] == 5, f"{doc['run']['llm_calls']} 次")
 
     stages = [r["stage"] for r in doc["reviews"]]
     check("两类审查记录齐全",
           "structure_review" in stages and "fidelity_review" in stages, str(stages))
+    check("抽取那次调用也有留痕（extract_meta 带用量）",
+          any(r["stage"] == "extract_meta" and r.get("tokens") for r in doc["reviews"]),
+          str(stages))
     check("每条审查都有分数和详细分析",
           all(r.get("score") is not None and len(r.get("analysis", "")) >= 100
               for r in doc["reviews"] if r["stage"].endswith("_review")))
@@ -280,12 +294,15 @@ def test_resume_and_concurrency() -> None:
 
     import s2_analyze_chapters as s2
 
-    ch1 = novel.get_chapter(1)
+    chapters = [novel.get_chapter(i) for i in range(1, 7)]
 
     def fake_chat_json(system, user, temperature, max_tokens=None):
         meta = {"tokens": {"prompt_tokens": 10, "completion_tokens": 5}, "attempts": 1}
-        if "原文解析员" in system:
-            return build_fake_analysis(ch1, flawed=False), meta
+        if "原文解析员" in system.splitlines()[0]:
+            # 提示词里带着「【本章】章名」，据此给对应章造结果——台词得是本章的，覆盖率闸门才能过。
+            # 必须连「【本章】」一起匹配：前文提要里也列着前几章的章名。
+            ch = next(c for c in chapters if f"【本章】{novel.chapter_label(c)}" in user)
+            return build_fake_analysis(ch, flawed=False), meta
         return {"score": 97, "verdict": "pass", "analysis": "自测假审查。" * 20,
                 "issues": [], "checked_items": {}, "missing_items": {}}, meta
 
@@ -295,8 +312,6 @@ def test_resume_and_concurrency() -> None:
         paths.CHAPTERS_DIR = tmp
         s2.chat_json = fake_chat_json
         try:
-            chapters = [novel.get_chapter(i) for i in range(1, 7)]
-
             # 首轮：全新，6 章都要跑
             todo, stats = s2.select_todo(chapters, "all", False, False)
             check("首轮识别出全部未跑", len(todo) == 6 and stats["missing"] == 6)
@@ -314,6 +329,16 @@ def test_resume_and_concurrency() -> None:
                   f"成功 {prog.ok}")
             check("6 个章节 json 已落盘", len(list(tmp.glob("ch*.json"))) == 6)
             check("章内步骤已走完（无残留活动槽）", not prog.active)
+
+            # 复审：在原结果上追加一轮，旧审查与旧调用数都要保留。
+            # 以前复审把旧记录丢光、从 0 数起，复审过的章 llm_calls=2，抽取那次就消失了。
+            doc_r = s2.analyze_chapter(chapters[0], phase="review")
+            stages_r = [r["stage"] for r in doc_r["reviews"]]
+            check("复审保留旧记录并追加新一轮",
+                  stages_r == ["extract_meta", "structure_review", "fidelity_review",
+                               "structure_review", "fidelity_review"], str(stages_r))
+            check("复审累计调用数（3 + 2）", doc_r["run"]["llm_calls"] == 5,
+                  str(doc_r["run"]["llm_calls"]))
 
             # 二轮：断点续传，应当全部跳过
             todo2, stats2 = s2.select_todo(chapters, "all", False, False)
@@ -707,13 +732,9 @@ def test_image_api() -> None:
     import base64
     import io
     import json as _j
-    import os
     import threading
     from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-    from PIL import Image
-
-    sys.path.insert(0, str(Path(__file__).resolve().parent))
     import s6_style_matrix as s6
 
     # ---- 尺寸自查：本地就能判死的，不该花一次请求去换一个 502 ----
@@ -742,7 +763,26 @@ def test_image_api() -> None:
           set(s6.build_payload("x", 1, "m", "s", extras=False)) ==
           {"model", "prompt", "n", "size"})
 
-    # ---- 裁 16:9 ----
+    # ---- 提示词拼装：单一变量原则 ----
+    mx = _j.loads((paths.STYLE_TEST_DIR / "matrix.json")
+                  .read_text(encoding="utf-8"))
+    t, s1, s2 = mx["targets"][0], mx["styles"][0], mx["styles"][1]
+    a, b = (s6.compose_prompt(mx, t, s1), s6.compose_prompt(mx, t, s2))
+    check("同一目标在不同画风下，画面描述逐字相同",
+          t["desc"] in a and t["desc"] in b)
+    check("画风段确实换掉了", s1["suffix"] in a and s1["suffix"] not in b)
+    check("接口没有 negative 字段，反面词折进正文",
+          "务必避免出现以下要素" in a and "negative" not in s6.build_payload(a, 1, "m", "s"))
+    ids = {t["id"] for t in mx["targets"]} | {s["id"] for s in mx["styles"]}
+    check("矩阵 id 无重复", len(ids) == len(mx["targets"]) + len(mx["styles"]))
+
+    # ---- 裁 16:9（需要 Pillow）----
+    try:
+        from PIL import Image
+    except ImportError:
+        print("  – 未安装 Pillow，跳过裁图与假接口出图两项（pip install Pillow）")
+        return
+
     def blob(w, h):
         b = io.BytesIO()
         Image.new("RGB", (w, h), (10, 20, 30)).save(b, "PNG")
@@ -797,18 +837,6 @@ def test_image_api() -> None:
          config.IMAGE_OUTPUT_FORMAT, config.IMAGE_BACKGROUND) = saved
         srv.shutdown()
 
-    # ---- 提示词拼装：单一变量原则 ----
-    mx = _j.loads((paths.PRODUCTION_DIR / "style_test" / "matrix.json")
-                  .read_text(encoding="utf-8"))
-    t, s1, s2 = mx["targets"][0], mx["styles"][0], mx["styles"][1]
-    a, b = (s6.compose_prompt(mx, t, s1), s6.compose_prompt(mx, t, s2))
-    check("同一目标在不同画风下，画面描述逐字相同",
-          t["desc"] in a and t["desc"] in b)
-    check("画风段确实换掉了", s1["suffix"] in a and s1["suffix"] not in b)
-    check("接口没有 negative 字段，反面词折进正文",
-          "务必避免出现以下要素" in a and "negative" not in s6.build_payload(a, 1, "m", "s"))
-    ids = {t["id"] for t in mx["targets"]} | {s["id"] for s in mx["styles"]}
-    check("矩阵 id 无重复", len(ids) == len(mx["targets"]) + len(mx["styles"]))
 
 
 # ------------------------------------------------------------------ 10. 分集求解
@@ -859,6 +887,21 @@ def test_episode_plan() -> None:
     on = sum(1 for e in eps4 if e["seq_end"] in soft or e["seq_end"] == 40)
     check("尽量收在断点上", on >= len(eps4) - 1, f"{on}/{len(eps4)} 集收在断点")
 
+    # 已写剧本的集锁定：边界原样保留，只排空档，且全季不重不漏
+    fixed = [{"code": "S01E02", "seq_start": 5, "seq_end": 8, "cut": "软断"},
+             {"code": "S01E04", "seq_start": 13, "seq_end": 16, "cut": "无"}]
+    eps5 = s10.plan_season(1, 40, even, set(), set(), fixed)
+    got = [(e["seq_start"], e["seq_end"]) for e in eps5 if e.get("locked")]
+    check("有剧本的集边界原样保留", got == [(5, 8), (13, 16)], str(got))
+    check("锁定后仍覆盖全季不重不漏",
+          [s for e in eps5 for s in range(e["seq_start"], e["seq_end"] + 1)] == list(range(1, 41)))
+    check("空档照常按时长排", all(not e.get("locked") for e in eps5 if e["seq_start"] in (1, 9, 17)))
+    try:
+        s10.plan_season(1, 10, even, set(), set(), [{"code": "S01E09", "seq_start": 30, "seq_end": 33}])
+        check("有剧本的集跨出本季范围时报错", False)
+    except SystemExit as e:
+        check("有剧本的集跨出本季范围时报错", "不在本季范围" in str(e))
+
     # 时长惩罚的形状
     check("目标时长罚分最低",
           s10.duration_penalty(s10.TARGET_MIN) < s10.duration_penalty(s10.SOFT_LO)
@@ -871,6 +914,7 @@ def test_season_roster() -> None:
     print("\n[11] 按季资产清单的归属判定")
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import s13_season_roster as s13
+    from common.names import build_resolver
 
     # 造一份和真实索引同构、但把三种歧义都摆出来的假索引
     fake = [
@@ -879,7 +923,7 @@ def test_season_roster() -> None:
         {"canonical_name": "唐真",   "aliases": ["三只眼", "小丫头"]},
         {"canonical_name": "老拐子", "aliases": ["拐子"]},
     ]
-    resolve, ambiguity = s13.build_resolver(fake)
+    resolve, ambiguity = build_resolver(fake)
 
     # 1. 人工核实（PRESETS）压过索引：红儿被两个主名认领，但 s8 查证过它是姚望舒
     check("PRESETS 优先于索引的别名认领", resolve("红儿") == ("姚望舒", False),
@@ -905,7 +949,7 @@ def test_season_roster() -> None:
     # 真实数据上的回归：这正是 s11 踩的那个坑
     real = read_index_chars()
     if real:
-        r2, _ = s13.build_resolver(real)
+        r2, _ = build_resolver(real)
         check("回归：红儿归到姚望舒而不是师姐", r2("红儿")[0] == "姚望舒", r2("红儿")[0])
         check("回归：三只眼归到唐真", r2("三只眼")[0] == "唐真", r2("三只眼")[0])
 
@@ -957,44 +1001,156 @@ def test_narration_ledger() -> None:
     check("短旁白给了 seq 只剩本章那一镜",
           len(s14.match("。。。", dots, 39, None, 62, {"039": {62}, "214": {64}})) == 1)
 
-    # 同一格里「内心音 + 画面」混排，拆条要按出现先后拼，不能按标记种类分轮收
-    tmp = Path(tempfile.mkdtemp()) / "E_fake.md"
-    tmp.write_text("| 镜号 | 景别 | 表演 | 声音 |\n"
-                   "| --- | --- | --- | --- |\n"
-                   "| 108 | 近景 8s | — | 【心·唐真】前半句，[5]<br>【画】后半句。[5] |\n",
-                   encoding="utf-8")
-    got = [b for _, _, b in s14.parse_script(tmp)]
-    check("同格混排按出现顺序收", got == ["前半句，[5]", "后半句。[5]"], str(got))
+    from common.jsonio import write_json
+    with tempfile.TemporaryDirectory() as d:
+        # 同一格里「内心音 + 画面」混排，拆条要按出现先后拼，不能按标记种类分轮收
+        tmp = Path(d) / "E_fake.md"
+        tmp.write_text("| 镜号 | 景别 | 表演 | 声音 |\n"
+                       "| --- | --- | --- | --- |\n"
+                       "| 108 | 近景 8s | — | 【心·唐真】前半句，[5]<br>【画】后半句。[5] |\n",
+                       encoding="utf-8")
+        got = [b for _, _, b in s14.parse_script(tmp)]
+        check("同格混排按出现顺序收", got == ["前半句，[5]", "后半句。[5]"], str(got))
 
-    # 镜头属于哪一章：认不出来的靠前后邻居补，两章都认得的靠邻居收窄
-    tmp2 = Path(tempfile.mkdtemp()) / "E_seq.md"
-    tmp2.write_text("| 镜号 | 景别 | 表演 | 声音 |\n"
-                    "| --- | --- | --- | --- |\n"
-                    "| 001 | 中景 8s | — | 【画】只属于甲章的一句话。[1] |\n"
-                    "| 002 | 转场 4s | — | 【删】。。。[9] |\n"
-                    "| 003 | 中景 8s | — | 【画】也只属于甲章的另一句。[3] |\n",
-                    encoding="utf-8")
-    real = s14.body_of
-    try:
-        # 造两章假正文：第二章不含任何一句，第一章两句都含
-        raws = {1: "只属于甲章的一句话。也只属于甲章的另一句。", 2: "毫不相干。"}
-        import types
-        orig_read, orig_path = s14.read_json, s14.paths.chapter_json_path
-        s14.paths.chapter_json_path = lambda n: Path(f"__fake{n}")
-        s14.read_json = lambda p: {"raw_text": raws[int(str(p)[-1])]}
-        Path.exists_orig, Path.exists = Path.exists, lambda self: str(self).startswith("__fake") or Path.exists_orig(self)
-        m = s14.shot_seq_map(tmp2, 1, 2)
-    finally:
-        Path.exists = Path.exists_orig
-        s14.read_json, s14.paths.chapter_json_path = orig_read, orig_path
+        # 镜头属于哪一章：认不出来的靠前后邻居补，两章都认得的靠邻居收窄
+        tmp2 = Path(d) / "E_seq.md"
+        tmp2.write_text("| 镜号 | 景别 | 表演 | 声音 |\n"
+                        "| --- | --- | --- | --- |\n"
+                        "| 001 | 中景 8s | — | 【画】只属于甲章的一句话。[1] |\n"
+                        "| 002 | 转场 4s | — | 【删】。。。[9] |\n"
+                        "| 003 | 中景 8s | — | 【画】也只属于甲章的另一句。[3] |\n",
+                        encoding="utf-8")
+        # 造两章假正文：第二章不含任何一句，第一章两句都含。
+        # 直接落成临时目录里的章节 json，s14 走真实读取路径，不用猴子补丁 Path.exists。
+        write_json(Path(d) / "ch0001.json", {"raw_text": "只属于甲章的一句话。也只属于甲章的另一句。"})
+        write_json(Path(d) / "ch0002.json", {"raw_text": "毫不相干。"})
+        with patch.object(paths, "CHAPTERS_DIR", Path(d)):
+            m = s14.shot_seq_map(tmp2, 1, 2)
     check("认不出来的镜头继承邻居", m.get("002") == {1}, str(m.get("002")))
 
 
+def test_common_modules() -> None:
+    print("\n[13] 公共模块：命名 / 引用记法 / 卡目录 / 质量块 / 原子写")
+    import os
+    import stat
+
+    from common import cite, jsonio, names, production, quality
+
+    # ---- names：泛称、括号注记、核实身份、更名裁定
+    check("泛称：精确表", names.is_generic("老人") and names.is_generic("众人"))
+    check("泛称：带修饰的词根",
+          names.is_generic("小丫头") and names.is_generic("野孩子们") and names.is_generic("中年汉子"))
+    check("泛称：具名不算", not names.is_generic("唐真") and not names.is_generic("老拐子"))
+    check("括号注记剥离", names.base_name("姚安饶（二开分身）") == "姚安饶")
+    check("名单判定认括号注记",
+          names.is_known("姚安饶（二开分身）", {"姚安饶"}) and not names.is_known("张三", {"姚安饶"}))
+    pairs = set(names.verified_pairs())
+    check("核实身份只取 aliases 不取 ambiguous",
+          ("姚望舒", "红儿") in pairs and ("姚望舒", "姚姑娘") not in pairs)
+    check("更名裁定只有南天礼一条",
+          names.canon_text("紫华圣人南天礼") == "紫华圣人南季礼"
+          and names.RENAME_CANON == {"南天礼": "南季礼"})
+    check("幕文档排行对到具名角色",
+          names.CARD_ALIASES["大师兄"] == "唐真" and names.CARD_ALIASES["六师弟"] == "周东东")
+
+    # ---- cite：seqN[i] 记法与【原】引文
+    check("一行挂多段：seq2[1][18] 展开成两处",
+          cite.parse_cites("seq2[1][18]") == [(2, 1, 1), (2, 18, 18)])
+    check("区间引用", cite.parse_cites("见 seq3[18-19]") == [(3, 18, 19)])
+    check("只认【原】之后的引文",
+          cite.quotes_after_marker("【补】「不是引文的注记」【原】「这是逐字引用的原文」")
+          == ["这是逐字引用的原文"])
+    check("无【原】标记则不算引文", cite.quotes_after_marker("「多余手指」") == [])
+    para = "他满脸严肃，装出一副小大人的表情，对着老拐子说话。"
+    check("省略号跨过的部分不参与比对", cite.quote_in("满脸严肃……小大人的表情", para))
+    check("片段顺序反了不算命中", not cite.quote_in("小大人的表情……满脸严肃", para))
+    check("标点全半角差异不影响", cite.quote_in("对着老拐子说话.", para))
+    paras = ["第一段。", para, "第三段。"]
+    check("段号定位 1 基",
+          cite.locate(paras, "满脸严肃", 2) == 2 and cite.locate(paras, "满脸严肃", 1) is None)
+    check("允许窄窗口找邻段", cite.locate(paras, "满脸严肃", 1, window=1) == 2)
+
+    # ---- production：卡目录索引（s13 / s16 共用）
+    import s13_season_roster as s13
+    with tempfile.TemporaryDirectory() as d:
+        root = Path(d)
+        (root / "C01_唐真" / "00_身份母版").mkdir(parents=True)
+        (root / "C01_唐真" / "00_身份母版" / "唐真_身份母版_超详细提示词.md").write_text("x", encoding="utf-8")
+        (root / "C02_老拐子" / "00_身份母版").mkdir(parents=True)     # 只有目录，没有提示词
+        (root / "_深度档案").mkdir()
+        (root / "C01_重号").mkdir()
+        cards = production.card_dirs(root)
+        check("卡目录按名字索引，下划线目录不算",
+              set(cards) == {"唐真", "老拐子", "重号"}, str(sorted(cards)))
+        check("有母版提示词才算建了卡",
+              production.has_master_prompt(cards["唐真"])
+              and not production.has_master_prompt(cards["老拐子"]))
+        check("编号索引", set(production.card_codes(root)) == {"C01", "C02"})
+        check("同一编号两个目录会被揪出", set(production.duplicate_codes(root)) == {"C01"})
+        check("s13 按母版提示词判有卡",
+              s13.card_status(root) == {"唐真": True, "老拐子": False, "重号": False},
+              str(s13.card_status(root)))
+
+    # ---- s16 场景码
+    import s16_shot_pack as s16
+    found = {m.group(1) for m in s16.SCENE_CODE.finditer("场景S01城隍庙（S06卡注明）S12-x PS03 S123 S01E03")}
+    check("场景码：中文紧邻也认；前缀字母、三位数、集号不认",
+          found == {"01", "06", "12"}, str(sorted(found)))
+
+    # ---- quality：闸门与重算
+    P = novel.get_chapter(1)["paragraphs"]
+    line = "又来了！又来了！我早就说了嘛，白天睡觉容易做噩梦的啦！"
+    para_no = next(i for i, p in enumerate(P, 1) if line in p)
+    good = {"dialogues": [{"para": para_no, "text": line}], "characters": [],
+            "scenes": [], "monologues": [], "narration": []}
+    vb, cov = quality.measure(good, P)
+    full = {"dialogues": [{"para": i, "text": s} for i, p in enumerate(P, 1)
+                          for s in verbatim.find_speech([p])],
+            "characters": [], "scenes": [], "monologues": [], "narration": []}
+    vb_f, cov_f = quality.measure(full, P)
+    check("闸门：分数、逐字、覆盖都达标则放行", quality.gate(95, 95, vb_f, cov_f)[0],
+          str(quality.gate(95, 95, vb_f, cov_f)[1]))
+    ok, reasons = quality.gate(95, 95, vb, cov)
+    check("闸门：只抽了一句台词，覆盖率闸门拦下（盯漏靠程序，不靠审查员印象）",
+          not ok and any("台词覆盖率" in r for r in reasons), str(reasons))
+    ok_m, reasons_m = quality.gate(None, None, vb, cov, manual=True)
+    check("闸门：人工稿不看模型分数，只看覆盖与逐字",
+          not ok_m and any("覆盖率" in r for r in reasons_m) and not any("结构分" in r for r in reasons_m),
+          str(reasons_m))
+    doc = {"analysis": dict(full, dialogues=[dict(d) for d in full["dialogues"]]),
+           "paragraphs": P, "quality": {"structure_score": 95, "fidelity_score": 95},
+           "reviews": [], "run": {"model": "x"}}
+    hit = next(d for d in doc["analysis"]["dialogues"] if d["text"] == line)
+    hit["text"] = line.replace("容易", "最容易")
+    quality.refresh(doc)
+    check("refresh：改写被记成 near 并进问题清单",
+          doc["quality"]["verbatim"]["counts"]["near"] == 1
+          and doc["quality"]["verbatim"]["problems"][0]["status"] == "near")
+    hit["text"] = "这天地终将由我改写！"
+    quality.refresh(doc)
+    check("refresh：臆造会把 passed 打回", doc["quality"]["passed"] is False
+          and any("臆造" in r for r in doc["quality"]["fail_reasons"]),
+          str(doc["quality"]["fail_reasons"]))
+    hit["text"] = line
+    quality.refresh(doc)
+    check("refresh：修回原文后 verbatim / coverage / passed 一起重算",
+          doc["quality"]["passed"] is True and doc["quality"]["verbatim"]["counts"]["miss"] == 0
+          and "dialogue_coverage" in doc["quality"]["coverage"])
+
+    # ---- jsonio：原子写不能把文件权限变成 0600
+    with tempfile.TemporaryDirectory() as d:
+        f = Path(d) / "x.json"
+        jsonio.write_json(f, {"a": 1})
+        mode = stat.S_IMODE(os.stat(f).st_mode)
+        want = 0o666 & ~jsonio._umask()
+        check("原子写后的文件权限按 umask 而非 0600", mode == want, f"{oct(mode)} vs {oct(want)}")
+        check("原子写不留临时文件", [q.name for q in Path(d).iterdir()] == ["x.json"])
+
+
 def read_index_chars():
-    p = paths.CHARACTERS_DIR / "index.json"
-    if not p.exists():
+    if not paths.CHAR_INDEX.exists():
         return None
-    return json.loads(p.read_text(encoding="utf-8"))["characters"]
+    return json.loads(paths.CHAR_INDEX.read_text(encoding="utf-8"))["characters"]
 
 
 def main() -> None:
@@ -1011,6 +1167,7 @@ def main() -> None:
     test_episode_plan()
     test_season_roster()
     test_narration_ledger()
+    test_common_modules()
     print(f"\n{'=' * 50}")
     if FAIL:
         print(f"✗ {len(FAIL)} 项未通过：{FAIL}")

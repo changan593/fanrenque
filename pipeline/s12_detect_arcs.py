@@ -54,10 +54,11 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import config
 from common import paths
 from common.jsonio import read_json, write_json
 
-MIN_ARC, MAX_ARC = 10, 50
+MIN_ARC, MAX_ARC = config.ARC_CHAPTERS
 
 
 def jaccard(a: set, b: set) -> float:
@@ -91,7 +92,8 @@ def change_curve(tl: list[dict], w: int, min_hits: int = 3) -> list[float]:
         pc, nc = _core(ch[lo:i + 1], min_hits), _core(ch[i + 1:hi], min_hits)
         ps, ns = _core(sc[lo:i + 1], 2), _core(sc[i + 1:hi], 2)
         # 人的权重高于景：观众跟的是人。同一批人换个地方还是同一段戏。
-        out[i] = 0.65 * (1 - jaccard(pc, nc)) + 0.35 * (1 - jaccard(ps, ns))
+        cw = config.ARC_CHAR_WEIGHT
+        out[i] = cw * (1 - jaccard(pc, nc)) + (1 - cw) * (1 - jaccard(ps, ns))
     return out
 
 
@@ -136,27 +138,29 @@ def main() -> int:
     ap.add_argument("--window", type=int, default=8, help="前后各看几章")
     ap.add_argument("--min-hits", type=int, default=3,
                     help="角色在窗口内出现几次才算核心阵容")
-    ap.add_argument("--seasons", type=Path, default=paths.PLOT_DIR / "seasons.json")
-    ap.add_argument("--out", type=Path, default=paths.PLOT_DIR / "arcs.json")
+    ap.add_argument("--seasons", type=Path, default=paths.SEASONS_JSON)
+    ap.add_argument("--out", type=Path, default=paths.ARCS_JSON)
     ap.add_argument("--cut-cost", type=float, default=None,
                     help="每刀的固定成本。不给就自动定在变更分的均值上")
     ap.add_argument("--verify", action="store_true", help="打印每个边界处的章节标题供人工确认")
     args = ap.parse_args()
 
-    tl = read_json(paths.PLOT_DIR / "timeline.json")
+    for f in (paths.TIMELINE_JSON, paths.CHAR_INDEX):
+        if not f.exists():
+            raise SystemExit(f"缺 {f.relative_to(paths.ROOT)}，先跑 s9 / s4")
+    tl = read_json(paths.TIMELINE_JSON)
     score = change_curve(tl, args.window, args.min_hits)
 
     # 主要角色的末现——这一章之后他再也不出现了，是最硬的断点信号
-    idx = read_json(paths.CHARACTERS_DIR / "index.json")["characters"]
+    idx = read_json(paths.CHAR_INDEX)["characters"]
     last_seen = {}
     for c in idx:
-        if c["chapter_count"] >= 15:
+        if c["chapter_count"] >= config.ARC_EXIT_MIN_CHAPTERS:
             last_seen.setdefault(c["last_seq"], []).append(c["canonical_name"])
 
     seasons = (read_json(args.seasons) if args.seasons.exists()
                else [{"name": "全书", "seq_start": 1, "seq_end": len(tl)}])
 
-    hi_thresh = statistics.quantiles(score, n=100)[84]      # 前 15%
     cut_cost = (args.cut_cost if args.cut_cost is not None
                 else statistics.mean(score))
     arcs = []
@@ -183,8 +187,11 @@ def main() -> int:
                          "title_at_cut": tl[c - 1]["title"]})
             start = c + 1
 
-    write_json(args.out, {"meta": {"window": args.window,
-                                   "hard_threshold": round(hi_thresh, 3),
+    # 硬断只认「有主要角色从此不再出现」，不看变更分高低——
+    # 所以 meta 里不再写 hard_threshold（早先写了一个 0.964，读者会误以为它参与了判定）。
+    write_json(args.out, {"meta": {"window": args.window, "min_hits": args.min_hits,
+                                   "cut_cost": round(cut_cost, 3),
+                                   "exit_min_chapters": config.ARC_EXIT_MIN_CHAPTERS,
                                    "arc_count": len(arcs)}, "arcs": arcs})
 
     lens = [a["chapters"] for a in arcs]

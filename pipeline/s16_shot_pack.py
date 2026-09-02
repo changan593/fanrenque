@@ -46,76 +46,35 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import paths  # noqa: E402
+from common import paths, production  # noqa: E402
+from common.names import CARD_ALIASES  # noqa: E402
 
 PROD = paths.PRODUCTION_DIR
-CHARS = PROD / "characters"
-SCENES = PROD / "scenes"
-STYLE = PROD / "style_assets"
-
-IMG_EXT = {".png", ".jpg", ".jpeg", ".webp", ".svg"}
+STYLE = paths.STYLE_ASSETS_DIR
 
 # ── 不建卡是对的：这些名字匹配不上是设计，不是遗漏 ──────────────────
 # 每条都写清楚规格在哪，免得后人以为是漏了
 NO_CARD_BY_DESIGN = {
     "唐假": "Q 版旁白装置，规格在 doc/05_唐假旁白系统.md 第 4.2 节（二头身，脚下无影）",
-    "人魔尊": "即齐渊，规格在 production/s01/02_角色资产.md C05；E01 只有一帧模糊剪影",
+    "人魔尊": "即齐渊，取证在 production/s01/02_角色资产.md C05；E01 只有一帧模糊剪影",
     "雪中身影": "就是唐真本人（两年前的闪回），用 C01_唐真 + S01·04 雪门口闪回",
     "店铺掌柜": "纯背景虚化人物，原文无描写，按 doc/04 第五节不发挥",
     "硕大的人头": "身份原文未明，处理为极远景剪影，见 02_角色资产.md 次要角色卡",
+    "老赵": "不是赵护卫——北阳城守兵，凡人，seq26／seq31 雨夜巡城后被行尸咬死；取证在 04_视觉基准 C21，分辨表在 C07 卡末",
 }
 
 
-# ── 找卡 ──────────────────────────────────────────────────────────────
-def card_dirs(root: Path) -> dict[str, Path]:
-    """{`C01_唐真` -> 路径}"""
-    if not root.is_dir():
-        return {}
-    return {p.name: p for p in sorted(root.iterdir()) if p.is_dir()}
-
-
-def states_of(card: Path) -> list[Path]:
-    return [p for p in sorted(card.iterdir()) if p.is_dir()]
-
-
-def md_of(state: Path) -> Path | None:
-    hits = sorted(state.glob("*超详细提示词.md"))
-    return hits[0] if hits else None
-
-
-def imgs_of(state: Path) -> list[Path]:
-    return [p for p in sorted(state.iterdir()) if p.suffix.lower() in IMG_EXT]
-
+# ── 找卡：目录索引与状态/图片读取都在 common/production.py ────────────
+states_of, md_of, imgs_of = production.states_of, production.md_of, production.imgs_of
 
 # ── 解析幕文档 ────────────────────────────────────────────────────────
-# 幕文档里的写法与卡目录名对不上的，在这里对齐一次，
-# 免得每份幕文档都要迁就目录名。
-ROSTER_ALIAS = {
-    # 紫云仙宫弟子群像（G05）
-    "匿名弟子": "紫云仙宫弟子群像",
-    "师弟师妹们": "紫云仙宫弟子群像",
-    "三师弟与师弟妹": "紫云仙宫弟子群像",
-    "其他师兄": "紫云仙宫弟子群像",
-    "紫云仙宫弟子": "紫云仙宫弟子群像",
-    # 紫云峰门内排行 → 具名角色（幕文档常按排行称呼）
-    "大师兄": "唐真",
-    "二师姐": "南红枝",
-    "三师兄": "余庆",
-    "三师弟": "余庆",
-    "四师姐": "姜羽",
-    "五师兄": "秦怀雀",
-    "六师弟": "周东东",
-    "小师弟": "周东东",
-    # 同一人的别写法
-    "紫华圣人南天礼": "南季礼",   # 原文 seq15[4] 仅此一次的异名，同一人
-    "紫华圣人": "南季礼",
-    "紫云仙宫宫主": "南季礼",
-    "执法堂长老与众长老": "执法堂长老",
-}
-
+# 幕文档里的写法与卡目录名对不上的（排行、群像别称、异名），对齐表在 common/names.CARD_ALIASES。
 ROSTER_HEAD = re.compile(r"^##\s*本幕人物与状态\s*$")
 NEXT_HEAD = re.compile(r"^##\s")
-SCENE_CODE = re.compile(r"\bS(\d{2})\b")
+# 场景码 SNN。不能用 \b：中文字符属于 \w，「场景S01城隍庙」里的 S01 会被 \b 拒掉——
+# E01 第八幕的「（S06卡注明）」就这样漏装了 S06 卡。只要求前后不是 ASCII 字母数字：
+# 「PS03」「S123」不算，集号「S01E03」也不算（幕文档里目前没有集号，这是防将来）。
+SCENE_CODE = re.compile(r"(?<![A-Za-z0-9])S(\d{2})(?![0-9A-Za-z])")
 
 
 def parse_act(act_md: Path):
@@ -146,7 +105,7 @@ def parse_act(act_md: Path):
                 continue
             # 「红儿（小丫鬟）」「唐真（梦中·仙宫期）」→ 取括号前的主名
             name = re.split(r"[（(]", raw)[0].strip().strip("*")
-            name = ROSTER_ALIAS.get(name, name)
+            name = CARD_ALIASES.get(name, name)
             names.append(name)
             pairing[name] = cells[1]
 
@@ -169,26 +128,26 @@ def build(act_dir: Path, refs_only: bool = False) -> tuple[str, list[str]]:
         raise SystemExit(f"找不到幕提示词：{act_md}")
 
     names, pairing, scodes, title, script_ref = parse_act(act_md)
-    chars, scenes = card_dirs(CHARS), card_dirs(SCENES)
+    chars, scenes = production.character_cards(), production.card_codes(paths.PROD_SCENES_DIR)
 
     # 同一角色可能在名册里出现多行（如「唐真（梦中）」「唐真（惊醒）」），按卡目录去重
     hit_c, miss_c, seen_c = [], [], set()
     for n in names:
-        m = [d for k, d in chars.items() if k.split("_", 1)[-1] == n]
-        if not m:
+        d = chars.get(n)
+        if not d:
             if n not in miss_c:
                 miss_c.append(n)
             continue
-        if m[0] in seen_c:
+        if d in seen_c:
             pairing.setdefault(n, "")      # 同卡的第二行，只并对位说明
             continue
-        seen_c.add(m[0])
-        hit_c.append((n, m[0]))
+        seen_c.add(d)
+        hit_c.append((n, d))
 
     hit_s, miss_s = [], []
     for code in scodes:
-        m = [d for k, d in scenes.items() if k.split("_", 1)[0] == code]
-        (hit_s.append((code, m[0])) if m else miss_s.append(code))
+        d = scenes.get(code)
+        (hit_s.append((code, d)) if d else miss_s.append(code))
 
     ref_imgs: list[str] = []
     # 本幕自己的分镜草图（构图与运镜锁）
@@ -225,8 +184,8 @@ def build(act_dir: Path, refs_only: bool = False) -> tuple[str, list[str]]:
             byd = [n for n in miss_c if n in NO_CARD_BY_DESIGN]
             if real:
                 out += [f"> **角色（真的缺卡）**：{'、'.join(real)}", ">",
-                        "> 这些多半是次要角色／群像，规格在 "
-                        "`production/s01/02_角色资产.md` 的紧凑卡里；"
+                        "> 这些多半是次要角色／群像，原文取证在 "
+                        "`production/s01/02_角色资产.md` 或 `04_视觉基准_E03-E10补充.md`；"
                         "若是主要角色或成组出现的龙套，"
                         "该建 `production/characters/` 下的卡。", ">"]
             if byd:
@@ -235,7 +194,7 @@ def build(act_dir: Path, refs_only: bool = False) -> tuple[str, list[str]]:
                 out += [">"]
         if miss_s:
             out += [f"> **场景**：{'、'.join(miss_s)}", ">",
-                    "> 说明还没建 `production/scenes/SNN_名字/`。", ">"]
+                    "> 说明还没建 `production/scenes/SNN_名字/`（取证在 `03_场景资产.md` / `04_视觉基准_E03-E10补充.md`）。", ">"]
         if [n for n in miss_c if n not in NO_CARD_BY_DESIGN] or miss_s:
             out += ["> **不要当它不存在就开工**——先补卡，或确认它确实只需要紧凑卡。", ""]
         else:
@@ -338,7 +297,7 @@ def main() -> int:
         if not ep.is_dir():
             raise SystemExit(f"找不到 {ep}")
         print(f"{args.list} 的幕：")
-        for d in sorted(p for p in ep.iterdir() if p.is_dir()):
+        for d in sorted(p for p in ep.iterdir() if p.is_dir() and not p.name.startswith("_")):
             has = "✓" if (d / "提示词.md").exists() else "✗ 无提示词"
             sk = "✓" if (d / "分镜草图.svg").exists() else "－无草图"
             print(f"  {has}  {sk}  {d.name}")

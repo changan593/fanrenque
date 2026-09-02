@@ -3,8 +3,12 @@
 步骤 6：画风选型矩阵批量出图。
 
 读 `production/style_test/matrix.json`，把「画面目标 × 画风」两两组合成完整
-提示词，调 image-2.0（兼容 OpenAI Images API）出图，每格 N 张，落到
-`production/style_test/out/`，文件名 `T03_S6_2.png` = 目标 T03 × 画风 S6 的第 2 张。
+提示词，调 OpenAI Images API 兼容接口（模型由 .env 的 IMAGE_MODEL 指定）出图，每格 N 张，
+落到 `production/style_test/out/`，文件名 `T03_S6_2.png` = 目标 T03 × 画风 S6 的第 2 张。
+规模以 matrix.json 为准（当前 10 个画面目标 × 11 个画风 × 3 张）。
+
+**选型已结束**（结论国风三维，见 doc/04 3.1）。本脚本与 matrix.json 保留作留痕，
+以后要复盘或重跑对比时不用重建。
 
 出完图跑 `s7_contact_sheet.py` 拼成大图对比。
 
@@ -32,10 +36,10 @@
   400         参数或提示词被拒     → 只废掉这一格，其余继续，并打印出提示词
 
 用法：
-    python pipeline/s6_style_matrix.py --dump            # 只导出 80 条提示词，不出图
+    python pipeline/s6_style_matrix.py --dump            # 只导出全部提示词到 prompts.md，不出图
     python pipeline/s6_style_matrix.py --dry-run         # 只算要发多少请求
     python pipeline/s6_style_matrix.py --targets T03 --styles S1,S6   # 先小范围试水
-    python pipeline/s6_style_matrix.py                   # 全量 10×8×3 = 240 张
+    python pipeline/s6_style_matrix.py                   # 全量
 """
 import argparse
 import base64
@@ -57,9 +61,9 @@ from common import paths
 from common.jsonio import append_jsonl, write_json
 from common.progress import Heartbeat, Progress, fmt_dur
 
-MATRIX_JSON = paths.PRODUCTION_DIR / "style_test" / "matrix.json"
-OUT_DIR = paths.PRODUCTION_DIR / "style_test" / "out"
-PROMPTS_MD = paths.PRODUCTION_DIR / "style_test" / "prompts.md"
+MATRIX_JSON = paths.STYLE_TEST_DIR / "matrix.json"
+OUT_DIR = paths.STYLE_TEST_DIR / "out"
+PROMPTS_MD = paths.STYLE_TEST_DIR / "prompts.md"
 CALL_LOG = paths.LOG_DIR / "s6_images.jsonl"
 
 # 可重试：限流与上游故障，按文档这些都不扣费

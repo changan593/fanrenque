@@ -20,7 +20,7 @@
 2. **别名归并**。同一个人在不同章可能叫「唐真」「三只眼」。用并查集把
    name↔aliases 连起来归成一个角色。但归并有风险：「老人」「那人」这类泛称
    会把不同人误并成一个。所以泛称不参与归并，可疑簇会被标记出来交人工复核，
-   绝不静默合并。
+   绝不静默合并。泛称表与人工核实的身份都在 `common/names.py`。
 
 3. **对残缺数据容忍**。真实模型输出难免有字段缺失或类型不对，
    这里一律跳过并计数，不让一章的脏数据把整次聚合搞崩。
@@ -37,56 +37,16 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import config
 from common import paths
 from common.jsonio import read_json, write_json
+from common.names import is_generic, verified_pairs
 
-# 泛称：不参与别名归并，否则会把不同人误并成一个
-GENERIC = set("""老人 女人 男人 那人 此人 众人 有人 少年 少女 中年 青年 老者 老头 老妇
-孩子 童子 弟子 长老 掌门 宫主 城主 护卫 侍女 丫鬟 和尚 道人 书生 乞丐 掌柜 伙计
-对方 双方 两人 三人 几人 大家 旁人 路人 某人 他 她 它 你 我""".split())
-
-# 泛称的**词根**。只做精确匹配拦不住「小丫头」「娇小的女孩」「野孩子们」「中年汉子」
-# 「老农」「男僧」这类带修饰的写法——实测正是它们把全书角色串成了一团。
-GENERIC_ROOTS = ("丫头", "丫鬟", "女孩", "男孩", "孩子", "小子", "少年", "少女",
-                 "老人", "老者", "老头", "老妇", "老农", "汉子", "男人", "女人",
-                 "男子", "女子", "青年", "中年", "书生", "和尚", "僧", "道人",
-                 "道姑", "乞丐", "护卫", "侍女", "弟子", "修士", "长老", "村民",
-                 "众人", "大家", "对方", "旁人", "路人", "某人", "那人", "此人",
-                 "来人", "有人", "群体", "们")
-# 一个称呼要以「正名」身份出现过这么多章，才算得上独立角色。
-# 定 5 是为了既挡住主角互相吞并，又不影响真正的别名归并（别名通常只作 alias 出现）。
-PRINCIPAL_MIN = 5
-
-
-def verified_identities() -> list[tuple[str, str]]:
-    """
-    人工核实过的身份对，来自 s8 的 PRESETS。返回 [(主名, 别名), ...]。
-
-    只取 `aliases`（确定是同一人）；`ambiguous` 一律不取——
-    那是「可能是本人也可能是别人」的跨人歧义（比如「姚姑娘」前期指姚安饶、
-    后期可能指姚望舒），并进来就会把两个人的戏搅成一个人。
-    """
-    try:
-        from s8_character_dossier import PRESETS
-    except Exception:
-        return []
-    out = []
-    for p in PRESETS.values():
-        canon = p["canonical"]
-        for a in p.get("aliases") or []:
-            if a and a != canon:
-                out.append((canon, a))
-    return out
-
-
-def is_generic(name: str) -> bool:
-    """泛称判定。精确表 + 词根后缀，两者任一命中即不参与归并。"""
-    n = (name or "").strip()
-    if not n or n in GENERIC:
-        return True
-    if n.endswith("（群体）") or n.endswith("(群体)"):
-        return True
-    return any(n.endswith(r) for r in GENERIC_ROOTS)
+# 泛称判定与人工核实的身份都在 common/names.py（以前这里和 s3 各维护一张泛称表，
+# 判据还不一样；人工身份要 import s8）。归并只用两条：
+#   泛称不参与归并——「老人」「那人」会把不同人误并成一个；
+#   人工核实过的身份优先落下，且拒绝把两个独立主名并到一起。
+PRINCIPAL_MIN = config.PRINCIPAL_MIN_CHAPTERS
 
 SLUG_BAD = re.compile(r'[\\/:*?"<>|\s]')
 
@@ -182,7 +142,7 @@ def build_alias_map(docs: list[dict], merge: bool
     # 自动闸门本身无从判断「红儿」和「姚望舒」是不是一个人，只能保守地拒绝，
     # 所以这些结论必须由人喂进来，且优先于自动归并。
     verified_canon: set[str] = set()
-    for canon, alias in verified_identities():
+    for canon, alias in verified_pairs():
         verified_canon.add(canon)
         for n in (canon, alias):
             uf.find(n)
@@ -233,7 +193,7 @@ def build_alias_map(docs: list[dict], merge: bool
             alias_map[m] = canon
         # 一个簇里出现多个「本身就很常见」的称呼，说明可能误并了。
         # 但人工核实过的簇天然如此（唐真＝真君、红儿＝姚望舒），不必再报。
-        strong = [m for m in members if seen.get(m, 0) >= 10]
+        strong = [m for m in members if seen.get(m, 0) >= config.SUSPICIOUS_STRONG_MIN]
         if len(strong) > 1 and not pinned:
             suspicious.append({"canonical": canon, "members": sorted(members),
                                "strong_members": sorted(strong),
@@ -352,10 +312,10 @@ def build_cooccurrence(docs: list[dict], alias_map: dict[str, str]) -> dict:
             for y in names[i + 1:]:
                 pair[(x, y)] += 1
     return {"pairs": [{"a": a, "b": b, "chapters": n}
-                      for (a, b), n in pair.most_common(3000)]}
+                      for (a, b), n in pair.most_common(config.COOCCURRENCE_TOP)]}
 
 
-def main() -> None:
+def main() -> int:
     ap = argparse.ArgumentParser(description="聚合角色与场景资产（不调 API）")
     ap.add_argument("--min-chapters", type=int, default=1,
                     help="出场章节数低于此值的角色/场景不单独出文件（仍留在总表）")
@@ -367,7 +327,7 @@ def main() -> None:
     if not docs:
         print(f"{paths.CHAPTERS_DIR.relative_to(paths.ROOT)} 里没有可用的章节分析。")
         print("请先跑：python pipeline/s2_analyze_chapters.py")
-        return
+        return 2
 
     alias_map, suspicious, rejected = build_alias_map(docs, merge=not args.no_merge)
     characters = build_characters(docs, alias_map)
@@ -390,7 +350,7 @@ def main() -> None:
 
     light = ["id", "canonical_name", "aliases", "first_seq", "last_seq",
              "chapter_count", "role_distribution"]
-    write_json(paths.CHARACTERS_DIR / "index.json", {
+    write_json(paths.CHAR_INDEX, {
         "built_from_chapters": len(docs),
         "character_count": len(characters),
         "alias_merge": not args.no_merge,
@@ -399,13 +359,13 @@ def main() -> None:
         "data_problems": problems,
         "characters": [{k: c[k] for k in light} for c in characters],
     })
-    write_json(paths.SCENES_DIR / "index.json", {
+    write_json(paths.SCENE_INDEX, {
         "built_from_chapters": len(docs),
         "scene_count": len(scenes),
         "scenes": [{k: s[k] for k in ("id", "name", "first_seq",
                                       "chapter_count", "types")} for s in scenes],
     })
-    write_json(paths.PLOT_DIR / "cooccurrence.json", cooc)
+    write_json(paths.COOCCURRENCE_JSON, cooc)
 
     print(f"读入章节分析 {len(docs)} 份" + (f"（{len(problems)} 份有问题）" if problems else ""))
     print(f"角色 {len(characters)} 个 | 场景 {len(scenes)} 个 | "
@@ -428,8 +388,11 @@ def main() -> None:
         print(f"\n⚠ {len(problems)} 份章节数据有问题：{problems[:3]}")
     print(f"\n产物：{paths.CHARACTERS_DIR.relative_to(paths.ROOT)}/、"
           f"{paths.SCENES_DIR.relative_to(paths.ROOT)}/、"
-          f"{(paths.PLOT_DIR / 'cooccurrence.json').relative_to(paths.ROOT)}")
+          f"{paths.COOCCURRENCE_JSON.relative_to(paths.ROOT)}")
+
+
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

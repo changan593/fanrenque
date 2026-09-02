@@ -39,8 +39,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import paths, verbatim
+from common import paths, quality, verbatim
 from common.jsonio import read_json, write_json
+from common.names import base_name, is_unnamed
 
 # 一段里的各条引语。与 verbatim._SPEECH_RE 同源：不要求闭引号配对，
 # 因为原文里确有 `？“` 这种收尾误用左引号的地方。
@@ -268,14 +269,15 @@ def fill_missing_characters(doc: dict) -> list[str]:
             names += [p.strip() for p in (sc.get("present_characters") or [])
                       if isinstance(p, str)]
     for sp in names:
-        if not sp or sp == "未明说" or sp in known or s3_generic(sp):
+        if not sp or sp == "未明说" or sp in known or is_unnamed(sp):
             continue
-        base = re.split(r"[（(]", sp)[0].strip()
-        if base in known:
+        if base_name(sp) in known:
             continue
         known.add(sp)
         added.append(sp)
-        chars.append({"name": sp, "aliases": [], "role_in_chapter": "出场",
+        # role_in_chapter 用枚举内的「参与」：这个人在本章说过话或在场，正是「参与」的定义。
+        # 早先写的「出场」不在 schema/提示词的枚举里，曾污染 286 条，已迁移。
+        chars.append({"name": sp, "aliases": [], "role_in_chapter": "参与",
                       "mentioned_only": False, "appearance_quotes": [],
                       "state": "", "actions": [], "_filled": True})
     return added
@@ -295,21 +297,12 @@ def has_unregistered(doc: dict) -> bool:
             names += [p for p in (sc.get("present_characters") or []) if isinstance(p, str)]
     for n in names:
         n = (n or "").strip()
-        if not n or n == "未明说" or n in known or s3_generic(n):
+        if not n or n == "未明说" or n in known or is_unnamed(n):
             continue
-        if re.split(r"[（(]", n)[0].strip() in known:
+        if base_name(n) in known:
             continue
         return True
     return False
-
-
-def s3_generic(name: str) -> bool:
-    """复用 s3 的泛称判定，避免把「众人」「乞丐们」登记成人物。"""
-    try:
-        import s3_validate_chapters as s3
-        return s3._is_generic(name)
-    except Exception:
-        return False
 
 
 def repair_chapter(doc: dict) -> tuple[dict, list[dict]]:
@@ -452,8 +445,9 @@ def main() -> int:
               f"  台词覆盖 {c0['dialogue_coverage']:6.1%}→{c1['dialogue_coverage']:6.1%}"
               f"  修 {len(log)} 处")
         if not args.dry_run:
-            # 修完的引用重新落一次核验结果，别让 quality 字段与正文对不上
-            fixed.setdefault("quality", {})["verbatim"] = v1
+            # 修完整块重算 quality（逐字、覆盖、passed、fail_reasons），别让它与正文对不上。
+            # 早先只回写 verbatim，留下 374 份过期的 coverage 与 31 份该翻绿的 passed。
+            quality.refresh(fixed)
             fixed["quality"]["repaired_by"] = "s5_repair_quotes"
             write_json(p, fixed)
 
@@ -463,7 +457,7 @@ def main() -> int:
     if reverted:
         print(f"⚠ {len(reverted)} 章修复后未变好，已整章回滚：{reverted}")
     if all_log and not args.dry_run:
-        out = paths.PLOT_DIR / "quote_repair_log.json"
+        out = paths.QUOTE_REPAIR_LOG
         write_json(out, all_log)
         print(f"修改留痕：{out.relative_to(paths.ROOT)}")
     return 0

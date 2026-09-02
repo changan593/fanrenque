@@ -197,9 +197,11 @@ def coverage_report(analysis: dict, paragraphs: list[str]) -> dict:
     漏台词和编台词一样致命，这项专门盯漏。
     """
     speech = find_speech(paragraphs)
-    got = {norm(d.get("text", "")) for d in (analysis.get("dialogues") or [])
-           if isinstance(d, dict)}
-    got_all = "".join(got)
+    # 把抽出的台词按文件顺序拼成一串再做子串查找，是有意的：模型常把一句拆成两条，
+    # 拼起来才对得上。以前用 set 拼，顺序随哈希变，同一份数据两次跑出的覆盖率可能不同；
+    # 现在按列表顺序拼，结果可复现。
+    got_all = "".join(norm(d.get("text", "")) for d in (analysis.get("dialogues") or [])
+                      if isinstance(d, dict))
     missed = [s for s in speech if norm(s) not in got_all]
     return {
         "raw_speech_count": len(speech),

@@ -14,7 +14,7 @@
    线稿／描边／概念设定图／painterly／brushwork／cel shading…」等**非三维载体**的
    正向声明。负面写法（「不做水墨」「禁描边」「no 2D anime」）是**对的**，不报。
 2. **风格词入侵内容层**：`production/s01/` 是画面内容层，
-   按 `prompts/00_总则与模板.md` 第一节，任何风格词都不许出现在正向提示词里
+   按 `production/s01/01_总则与模板.md` 第一节，任何风格词都不许出现在正向提示词里
    ——风格段由程序统一追加。这一项按那份文档自己的黑名单查。
 3. **金标准锚点在不在**：`production/style_assets/` 的两份统一提示词必须存在，
    且都声明为已定稿。
@@ -84,11 +84,11 @@ NEG_BLOCK_CUE = re.compile(
 
 # ── 留痕豁免：选型过程的证据，不是指令 ────────────────────────────────
 LEGACY_ALLOW = {
-    "doc/06_画风与画幅选型.md":
+    "doc/archive/06_画风与画幅选型.md":
         "选型分析留痕。头部已标注『结论是国风三维，本文推荐的 A 已作废』",
-    "doc/07_画风矩阵测试.md":
+    "doc/archive/07_画风矩阵测试.md":
         "矩阵操作手册留痕。头部已标注『选型已结束』",
-    "doc/12_参考片画风研究.md":
+    "doc/archive/12_参考片画风研究.md":
         "参考片拆解留痕，是 3.1 定稿的推导过程。头部已标注结论",
     "production/style_test/matrix.json":
         "选型矩阵配置，11 个画风候选按定义就该列出旧载体",
@@ -102,7 +102,7 @@ LEGACY_ALLOW = {
         "本文件。检查器自己必须写出被禁的词",
 }
 
-# ── 内容层：风格词一律不许出现（黑名单来自 prompts/00_总则与模板.md 第 1.1 节）──
+# ── 内容层：风格词一律不许出现（黑名单来自 production/s01/01_总则与模板.md 第 1.1 节）──
 CONTENT_LAYER = "production/s01"
 STYLE_WORDS_IN_CONTENT = [
     "厚涂", "笔触", "半写实", "水墨", "油画", "插画", "赛璐璐",
@@ -113,7 +113,7 @@ STYLE_WORDS_IN_CONTENT = [
 # 说明：黑名单原文还含「CG / 渲染 / 写实 / 高清 / 4k / 8k / 低饱和 / 饱和度 /
 # 调色 / 色调统一 / 风格 / style」等。其中一部分在中文里是常用字
 # （「渲染气氛」「色调」「风格化」），逐字查会淹没在误报里。
-# 这里只查歧义低的那批；完整黑名单仍以 00_总则与模板.md 为准，人工复核时对照。
+# 这里只查歧义低的那批；完整黑名单仍以 01_总则与模板.md 为准，人工复核时对照。
 
 
 def prompt_regions(text: str):
@@ -147,7 +147,7 @@ def prompt_regions(text: str):
     return out
 
 
-def scan_file(path: Path, rel: str, content_layer: bool):
+def scan_file(path: Path, content_layer: bool):
     """返回 [(行号, 词, 片段, 类别)]，只扫提示词区域。"""
     hits = []
     try:
@@ -174,7 +174,7 @@ def scan_file(path: Path, rel: str, content_layer: bool):
                 hl = head.lower()
                 if any(n in head or n in hl for n in NEGATIONS):
                     continue          # 否定在前，是负面清单写法
-                hits.append((lineno, t, sent.strip()[:110], 
+                hits.append((lineno, t, sent.strip()[:110],
                              "载体冲突" if t in CARRIER_TERMS else "风格词入侵内容层"))
                 break
     return hits
@@ -183,15 +183,14 @@ def scan_file(path: Path, rel: str, content_layer: bool):
 def check_anchors() -> list[str]:
     """金标准锚点必须在，且声明为已定稿。"""
     problems = []
-    base = paths.PRODUCTION_DIR / "style_assets"
     for name in ("统一风格提示词.md", "统一角色提示词.md"):
-        f = base / name
+        f = paths.STYLE_ASSETS_DIR / name
         if not f.exists():
             problems.append(f"缺失：{f.relative_to(paths.ROOT)}")
             continue
         if "定稿" not in f.read_text(encoding="utf-8"):
             problems.append(f"未声明定稿：{f.relative_to(paths.ROOT)}")
-    spec = paths.ROOT / "doc" / "04_风格规范.md"
+    spec = paths.DOC_DIR / "04_风格规范.md"
     if spec.exists() and "国风三维" not in spec.read_text(encoding="utf-8"):
         problems.append("doc/04_风格规范.md 里找不到「国风三维」——3.1 载体没落地？")
     return problems
@@ -200,7 +199,7 @@ def check_anchors() -> list[str]:
 
 def canonical_blocks() -> dict[str, str]:
     """从 style_assets/统一角色提示词.md 取出规范段落（短版 / 克制版）。"""
-    f = paths.PRODUCTION_DIR / "style_assets" / "统一角色提示词.md"
+    f = paths.STYLE_ASSETS_DIR / "统一角色提示词.md"
     if not f.exists():
         return {}
     blocks = re.findall(r"```text\n(.*?)\n```", f.read_text(encoding="utf-8"), re.S)
@@ -231,7 +230,7 @@ def check_render_locks() -> list[str]:
         return ["读不到 style_assets/统一角色提示词.md 的规范段落"]
     heads = {name: block[:14] for name, block in canon.items()}
     problems = []
-    root = paths.PRODUCTION_DIR / "characters"
+    root = paths.PROD_CHARACTERS_DIR
     if not root.exists():
         return problems
     for card in sorted(root.rglob("*_超详细提示词.md")):
@@ -263,7 +262,7 @@ def check_homology_locks() -> list[str]:
     卡里只许原样抄。
     """
     problems = []
-    root = paths.PRODUCTION_DIR / "characters"
+    root = paths.PROD_CHARACTERS_DIR
     if not root.exists():
         return problems
     for f in sorted(root.glob("_*同源锁*.md")):
@@ -279,7 +278,8 @@ def check_homology_locks() -> list[str]:
             problems.append(f"{rel_f}：绑定卡或 ```text 同源段为空")
             continue
         for d in dirs:
-            cards = sorted((root / d / "00_身份母版").glob("*_超详细提示词.md"))                 if (root / d / "00_身份母版").exists() else []
+            master = root / d / "00_身份母版"
+            cards = sorted(master.glob("*_超详细提示词.md")) if master.exists() else []
             if not cards:
                 problems.append(f"{rel_f}：绑定的 {d} 找不到身份母版卡")
                 continue
@@ -332,7 +332,7 @@ def main() -> int:
         print("\n✓ 同源锁逐字共用：绑定卡全部一致")
 
     roots = ([args.path.resolve()] if args.path
-             else [paths.PRODUCTION_DIR, paths.ROOT / "doc"])
+             else [paths.PRODUCTION_DIR, paths.DOC_DIR])
     files: list[Path] = []
     for r in roots:
         if r.is_file():
@@ -345,7 +345,7 @@ def main() -> int:
     violations, legacy_hits, scanned = {}, {}, 0
     for f in files:
         rel = str(f.relative_to(paths.ROOT))
-        hits = scan_file(f, rel, content_layer=rel.startswith(CONTENT_LAYER))
+        hits = scan_file(f, content_layer=rel.startswith(CONTENT_LAYER))
         scanned += 1
         if not hits:
             continue
