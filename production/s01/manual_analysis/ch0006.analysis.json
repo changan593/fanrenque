@@ -150,17 +150,10 @@
   "dialogues": [
     {
       "para": 4,
-      "q": 0,
+      "q": 1,
       "speaker": "唐真",
       "addressee": "南红枝",
       "manner": "声音有些冷"
-    },
-    {
-      "para": 5,
-      "q": 0,
-      "speaker": "南红枝",
-      "addressee": "唐真",
-      "manner": "抬起头笑了起来"
     },
     {
       "para": 5,
@@ -170,106 +163,113 @@
       "manner": "抬起头笑了起来"
     },
     {
+      "para": 5,
+      "q": 2,
+      "speaker": "南红枝",
+      "addressee": "唐真",
+      "manner": "抬起头笑了起来"
+    },
+    {
       "para": 7,
-      "q": 0,
+      "q": 1,
       "speaker": "南红枝",
       "addressee": "唐真",
       "manner": "指了指身后的大树，一边说一边笑弯了眼"
     },
     {
       "para": 10,
-      "q": 0,
+      "q": 1,
       "speaker": "南红枝",
       "addressee": "唐真",
       "manner": "泪如雨下"
     },
     {
       "para": 18,
-      "q": 0,
+      "q": 1,
       "speaker": "唐真",
       "addressee": "南红枝",
       "manner": "仰躺在摇椅上"
     },
     {
       "para": 20,
-      "q": 0,
+      "q": 1,
       "speaker": "未明说",
       "addressee": "在场众人",
       "manner": "南红枝心中所想的画本比方里的假想台词"
     },
     {
       "para": 29,
-      "q": 0,
+      "q": 1,
       "speaker": "南红枝",
       "addressee": "唐真",
       "manner": "微微向下俯身，声音依旧很轻有些坏又有些怯"
     },
     {
       "para": 30,
-      "q": 0,
+      "q": 1,
       "speaker": "唐真",
       "addressee": "南红枝",
       "manner": "故作随意"
     },
     {
       "para": 31,
-      "q": 0,
+      "q": 1,
       "speaker": "南红枝",
       "addressee": "唐真",
       "manner": "一边说一边更低了，明亮温柔的眼睛里似乎倒映出了唐真的身影"
     },
     {
       "para": 32,
-      "q": 0,
+      "q": 1,
       "speaker": "唐真",
       "addressee": "南红枝",
       "manner": "话没有说完，嘴被堵住"
     },
     {
       "para": 63,
-      "q": 0,
+      "q": 1,
       "speaker": "齐渊",
       "addressee": "唐真",
       "manner": "微微叹气，声音有些落寞和惭愧"
     },
     {
       "para": 67,
-      "q": 0,
+      "q": 1,
       "speaker": "齐渊",
       "addressee": "唐真",
       "manner": "微微躬身"
     },
     {
       "para": 72,
-      "q": 0,
+      "q": 1,
       "speaker": "南红枝",
       "addressee": "唐真",
       "manner": "声音很轻，像是怕惊动沉睡的魔鬼"
     },
     {
       "para": 75,
-      "q": 0,
+      "q": 1,
       "speaker": "唐真",
       "addressee": "齐渊",
       "manner": "从摇椅上站起，认真行礼"
     },
     {
       "para": 76,
-      "q": 0,
+      "q": 1,
       "speaker": "齐渊",
       "addressee": "唐真",
       "manner": "缓缓摇头，面带苦色"
     },
     {
       "para": 86,
-      "q": 0,
+      "q": 1,
       "speaker": "唐真",
       "addressee": "齐渊",
       "manner": "露出笑脸，想拖延时间"
     },
     {
       "para": 88,
-      "q": 0,
+      "q": 1,
       "speaker": "齐渊",
       "addressee": "在场众人",
       "manner": "张嘴轻轻吟唱"

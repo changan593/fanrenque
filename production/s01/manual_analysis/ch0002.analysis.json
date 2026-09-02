@@ -3,171 +3,651 @@
   "synopsis": "施粥现场，姚安饶对每个接粥的乞丐都露出笑容，红儿好奇地问赵护卫这里有没有身世特殊的乞丐，赵护卫说都是灾民流民罢了。粥散完，两方人马各自离去。唐真怅然看着马车远去，脱力坐倒在墙边。红儿折返回来，转述姚安饶的话责他空流泪如何算男儿，扔给他一块银子，让他换身衣服去天北桥码头帮工，报小红儿的名号，赚了钱再还。唐真想拒绝，老拐子抢先应下并道谢。红儿走后唐真说不需要，老拐子操起木棍狠狠抽打他，骂他不珍惜老天爷给的机会，说活下去，像个人一样活下去。唐真被打得连滚带爬，最终答应。另一头，车队里赵护卫提醒姚安饶小善无意义，姚安饶说自己会把握尺度，心中记着粥棚边那个额头有黑印、腰别枯枝、远远看着自己流泪的少年。",
   "time_setting": "承接上一章，同日正午施粥结束后至傍晚前",
   "emotional_tone": "怅惘转为粗粝的温情，收在姚安饶一句未尽的疑虑",
-
   "characters": [
-    {"name": "唐真", "aliases": ["三只眼", "小乞丐", "后生"], "role_in_chapter": "主导", "mentioned_only": false,
-     "appearance_quotes": [
-       {"para": 1, "text": "只有两行泪水在满是尘土的脸上留下丢人的痕迹"},
-       {"para": 11, "text": "只好用干枯的手去揉了揉唐真乱糟糟的头发"},
-       {"para": 18, "text": "他用手背抹了抹脸上的泪痕，可惜积尘太多，反而花了脸"}],
-     "state": "修为尽失的落魄状态，见姚安饶而想起故人落泪，被老拐子打服后答应去码头做工",
-     "actions": ["怅然看着马车离开", "脱力坐倒在墙边", "向红儿致歉解释", "推拒银子", "挨老拐子木棍抽打", "答应去码头"]},
-
-    {"name": "红儿", "aliases": ["小丫鬟", "小红儿", "小仙子", "小丫头"], "role_in_chapter": "主导", "mentioned_only": false,
-     "appearance_quotes": [
-       {"para": 13, "text": "看起来有些凶，梳了两个圆圆的丸子头，漂亮的马面裙上绣着成片的木棉花，她歪着头看着唐真，眼里莫名有几分责备"}],
-     "state": "姚安饶的贴身丫鬟，最近痴迷话本小说",
-     "actions": ["向赵护卫打听有没有身世特殊的乞丐", "折返找唐真", "转述姚安饶的话", "扔给唐真一块银子并指点去码头帮工"]},
-
-    {"name": "老拐子", "aliases": ["老家伙"], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [
-       {"para": 33, "text": "近乎凶恶的张开嘴，嘴里的臭气都喷到了唐真脸上"},
-       {"para": 35, "text": "老拐子用干枯的手一下下捶打着唐真，力道不大，但干瘪的骨头硌唐真心疼"},
-       {"para": 38, "text": "老拐子裂开嘴，在达成目的后他的情绪转的飞快，又变回了那个无耻的老乞丐"}],
-     "state": "为唐真的机会激动到失态，第一次说出自己不信下辈子的话",
-     "actions": ["揉唐真的头发", "抢先替唐真应下红儿的安排", "用木棍抽打唐真", "喊出活下去像个人一样活下去"]},
-
-    {"name": "姚安饶", "aliases": ["小姐", "安小姐"], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [{"para": 4, "text": "她的笑容很淡，但是很真诚，她对每一个接过粥碗的乞丐都露出笑容，像是位庙里的菩萨"}],
-     "state": "主持施粥，注意到了粥棚边的唐真",
-     "actions": ["给每个接粥的乞丐笑容", "默许红儿去给乞丐送东西", "在车中回想那个额头有黑印的少年"]},
-
-    {"name": "赵护卫", "aliases": ["赵叔"], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [{"para": 2, "text": "高大的身躯和锋利的眼神约束着这些低贱的乞丐"}],
-     "state": "护卫在姚安饶身边",
-     "actions": ["喝止乞丐", "回答红儿的打听", "提醒姚安饶小善无意义大善反成仇"]},
-
-    {"name": "乞丐们", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [{"para": 5, "text": "而且都长一个模样，脸上黑乎乎一片，头发打着缕，根本分不清谁是谁"}],
-     "state": "领粥后散去",
-     "actions": ["低头领粥", "散去"]}
+    {
+      "name": "唐真",
+      "aliases": [
+        "三只眼",
+        "小乞丐",
+        "后生"
+      ],
+      "role_in_chapter": "主导",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 1,
+          "text": "只有两行泪水在满是尘土的脸上留下丢人的痕迹"
+        },
+        {
+          "para": 11,
+          "text": "只好用干枯的手去揉了揉唐真乱糟糟的头发"
+        },
+        {
+          "para": 18,
+          "text": "他用手背抹了抹脸上的泪痕，可惜积尘太多，反而花了脸"
+        }
+      ],
+      "state": "修为尽失的落魄状态，见姚安饶而想起故人落泪，被老拐子打服后答应去码头做工",
+      "actions": [
+        "怅然看着马车离开",
+        "脱力坐倒在墙边",
+        "向红儿致歉解释",
+        "推拒银子",
+        "挨老拐子木棍抽打",
+        "答应去码头"
+      ]
+    },
+    {
+      "name": "红儿",
+      "aliases": [
+        "小丫鬟",
+        "小红儿",
+        "小仙子",
+        "小丫头"
+      ],
+      "role_in_chapter": "主导",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 13,
+          "text": "看起来有些凶，梳了两个圆圆的丸子头，漂亮的马面裙上绣着成片的木棉花，她歪着头看着唐真，眼里莫名有几分责备"
+        }
+      ],
+      "state": "姚安饶的贴身丫鬟，最近痴迷话本小说",
+      "actions": [
+        "向赵护卫打听有没有身世特殊的乞丐",
+        "折返找唐真",
+        "转述姚安饶的话",
+        "扔给唐真一块银子并指点去码头帮工"
+      ]
+    },
+    {
+      "name": "老拐子",
+      "aliases": [
+        "老家伙"
+      ],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 33,
+          "text": "近乎凶恶的张开嘴，嘴里的臭气都喷到了唐真脸上"
+        },
+        {
+          "para": 35,
+          "text": "老拐子用干枯的手一下下捶打着唐真，力道不大，但干瘪的骨头硌唐真心疼"
+        },
+        {
+          "para": 38,
+          "text": "老拐子裂开嘴，在达成目的后他的情绪转的飞快，又变回了那个无耻的老乞丐"
+        }
+      ],
+      "state": "为唐真的机会激动到失态，第一次说出自己不信下辈子的话",
+      "actions": [
+        "揉唐真的头发",
+        "抢先替唐真应下红儿的安排",
+        "用木棍抽打唐真",
+        "喊出活下去像个人一样活下去"
+      ]
+    },
+    {
+      "name": "姚安饶",
+      "aliases": [
+        "小姐",
+        "安小姐"
+      ],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 4,
+          "text": "她的笑容很淡，但是很真诚，她对每一个接过粥碗的乞丐都露出笑容，像是位庙里的菩萨"
+        }
+      ],
+      "state": "主持施粥，注意到了粥棚边的唐真",
+      "actions": [
+        "给每个接粥的乞丐笑容",
+        "默许红儿去给乞丐送东西",
+        "在车中回想那个额头有黑印的少年"
+      ]
+    },
+    {
+      "name": "赵护卫",
+      "aliases": [
+        "赵叔"
+      ],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 2,
+          "text": "高大的身躯和锋利的眼神约束着这些低贱的乞丐"
+        }
+      ],
+      "state": "护卫在姚安饶身边",
+      "actions": [
+        "喝止乞丐",
+        "回答红儿的打听",
+        "提醒姚安饶小善无意义大善反成仇"
+      ]
+    },
+    {
+      "name": "乞丐们",
+      "aliases": [],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 5,
+          "text": "而且都长一个模样，脸上黑乎乎一片，头发打着缕，根本分不清谁是谁"
+        }
+      ],
+      "state": "领粥后散去",
+      "actions": [
+        "低头领粥",
+        "散去"
+      ]
+    }
   ],
-
   "scenes": [
-    {"name": "城隍庙外施粥处", "type": "室外", "time_of_day": "正午",
-     "description_quotes": [
-       {"para": 5, "text": "要说可怜也可怜，但呼啦啦一大片，反而没法将怜悯之心投射上去"},
-       {"para": 9, "text": "粥水散完，乞丐们很快散去，家丁和护卫收拾好一切便也匆匆离开"}],
-     "present_characters": ["唐真", "姚安饶", "红儿", "赵护卫", "乞丐们"],
-     "events": ["姚安饶给每个乞丐笑容", "红儿向赵护卫打听身世特殊的乞丐", "粥散人去"],
-     "para_range": [1, 9]},
-
-    {"name": "施粥处旁的墙边", "type": "室外", "time_of_day": "正午过后",
-     "description_quotes": [],
-     "present_characters": ["唐真", "老拐子", "红儿"],
-     "events": ["唐真脱力坐倒", "红儿折返责问并扔下银子指路", "老拐子替他应下", "老拐子木棍抽打唐真逼他去码头", "唐真答应"],
-     "para_range": [10, 39]},
-
-    {"name": "城主家的车队与马车内", "type": "室外", "time_of_day": "正午过后",
-     "description_quotes": [{"para": 49, "text": "车厢里，姚安饶正用手帕擦着手"}],
-     "present_characters": ["姚安饶", "赵护卫"],
-     "events": ["赵护卫询问红儿去向", "赵护卫劝谏小善无意义", "姚安饶回想粥棚边的一老一少"],
-     "para_range": [41, 52]}
+    {
+      "name": "城隍庙外施粥处",
+      "type": "室外",
+      "time_of_day": "正午",
+      "description_quotes": [
+        {
+          "para": 5,
+          "text": "要说可怜也可怜，但呼啦啦一大片，反而没法将怜悯之心投射上去"
+        },
+        {
+          "para": 9,
+          "text": "粥水散完，乞丐们很快散去，家丁和护卫收拾好一切便也匆匆离开"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "姚安饶",
+        "红儿",
+        "赵护卫",
+        "乞丐们"
+      ],
+      "events": [
+        "姚安饶给每个乞丐笑容",
+        "红儿向赵护卫打听身世特殊的乞丐",
+        "粥散人去"
+      ],
+      "para_range": [
+        1,
+        9
+      ]
+    },
+    {
+      "name": "施粥处旁的墙边",
+      "type": "室外",
+      "time_of_day": "正午过后",
+      "description_quotes": [],
+      "present_characters": [
+        "唐真",
+        "老拐子",
+        "红儿"
+      ],
+      "events": [
+        "唐真脱力坐倒",
+        "红儿折返责问并扔下银子指路",
+        "老拐子替他应下",
+        "老拐子木棍抽打唐真逼他去码头",
+        "唐真答应"
+      ],
+      "para_range": [
+        10,
+        39
+      ]
+    },
+    {
+      "name": "城主家的车队与马车内",
+      "type": "室外",
+      "time_of_day": "正午过后",
+      "description_quotes": [
+        {
+          "para": 49,
+          "text": "车厢里，姚安饶正用手帕擦着手"
+        }
+      ],
+      "present_characters": [
+        "姚安饶",
+        "赵护卫"
+      ],
+      "events": [
+        "赵护卫询问红儿去向",
+        "赵护卫劝谏小善无意义",
+        "姚安饶回想粥棚边的一老一少"
+      ],
+      "para_range": [
+        41,
+        52
+      ]
+    }
   ],
-
   "dialogues": [
-    {"para": 2,  "q": 0, "speaker": "赵护卫", "addressee": "乞丐们", "manner": "守在姚安饶身边约束乞丐"},
-    {"para": 3,  "q": 0, "speaker": "红儿", "addressee": "姚安饶", "manner": "一边帮着打下手一边小声叮嘱"},
-    {"para": 4,  "q": 0, "speaker": "姚安饶", "addressee": "红儿", "manner": "声音很轻，语气平缓"},
-    {"para": 6,  "q": 0, "speaker": "红儿", "addressee": "赵护卫", "manner": "有些好奇"},
-    {"para": 7,  "q": 0, "speaker": "赵护卫", "addressee": "红儿", "manner": "想都没想"},
-    {"para": 8,  "q": 0, "speaker": "红儿", "addressee": "赵护卫", "manner": "有些遗憾的点点头"},
-    {"para": 11, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "用干枯的手揉唐真的头发"},
-    {"para": 12, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "脆生生的响起"},
-    {"para": 14, "q": 0, "speaker": "老拐子", "addressee": "红儿", "manner": "最先反应过来，赶忙鞠躬问好"},
-    {"para": 16, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "掐着腰装模作样"},
-    {"para": 18, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "抹了抹脸上的泪痕，声音平静下来"},
-    {"para": 20, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "随手将一小块银子扔进唐真怀里"},
-    {"para": 22, "q": 0, "speaker": "老拐子", "addressee": "红儿", "manner": "一巴掌糊在唐真后脑上，一边鞠躬一边道谢"},
-    {"para": 25, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "低声说"},
-    {"para": 29, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "大骂一句，挥起木棍狠狠抽打"},
-    {"para": 30, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "被打蒙了，连滚带爬在地上转圈跑"},
-    {"para": 31, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "咬着牙切齿大骂"},
-    {"para": 31, "q": 1, "speaker": "老拐子", "addressee": "唐真", "manner": "咬着牙切齿大骂"},
-    {"para": 32, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "担心老拐子背过气去"},
-    {"para": 33, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "揪住唐真衣领，近乎凶恶"},
-    {"para": 35, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "用干枯的手一下下捶打着唐真"},
-    {"para": 37, "q": 0, "speaker": "唐真", "addressee": "老拐子", "manner": "无奈又感动"},
-    {"para": 38, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "裂开嘴，情绪转的飞快"},
-    {"para": 42, "q": 0, "speaker": "赵护卫", "addressee": "姚安饶", "manner": "敲了敲马车的窗户"},
-    {"para": 43, "q": 0, "speaker": "姚安饶", "addressee": "赵护卫", "manner": "车里传来的声音"},
-    {"para": 44, "q": 0, "speaker": "赵护卫", "addressee": "姚安饶", "manner": "微微皱起眉头"},
-    {"para": 45, "q": 0, "speaker": "姚安饶", "addressee": "赵护卫", "manner": "应答"},
-    {"para": 46, "q": 0, "speaker": "赵护卫", "addressee": "姚安饶", "manner": "劝谏"},
-    {"para": 47, "q": 0, "speaker": "姚安饶", "addressee": "赵护卫", "manner": "平静回应"},
-    {"para": 48, "q": 0, "speaker": "赵护卫", "addressee": "姚安饶", "manner": "不再多说"}
+    {
+      "para": 2,
+      "q": 1,
+      "speaker": "赵护卫",
+      "addressee": "乞丐们",
+      "manner": "守在姚安饶身边约束乞丐"
+    },
+    {
+      "para": 3,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "姚安饶",
+      "manner": "一边帮着打下手一边小声叮嘱"
+    },
+    {
+      "para": 4,
+      "q": 1,
+      "speaker": "姚安饶",
+      "addressee": "红儿",
+      "manner": "声音很轻，语气平缓"
+    },
+    {
+      "para": 6,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "赵护卫",
+      "manner": "有些好奇"
+    },
+    {
+      "para": 7,
+      "q": 1,
+      "speaker": "赵护卫",
+      "addressee": "红儿",
+      "manner": "想都没想"
+    },
+    {
+      "para": 8,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "赵护卫",
+      "manner": "有些遗憾的点点头"
+    },
+    {
+      "para": 11,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "用干枯的手揉唐真的头发"
+    },
+    {
+      "para": 12,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "脆生生的响起"
+    },
+    {
+      "para": 14,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "红儿",
+      "manner": "最先反应过来，赶忙鞠躬问好"
+    },
+    {
+      "para": 16,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "掐着腰装模作样"
+    },
+    {
+      "para": 18,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "抹了抹脸上的泪痕，声音平静下来"
+    },
+    {
+      "para": 20,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "随手将一小块银子扔进唐真怀里"
+    },
+    {
+      "para": 22,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "红儿",
+      "manner": "一巴掌糊在唐真后脑上，一边鞠躬一边道谢"
+    },
+    {
+      "para": 25,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "老拐子",
+      "manner": "低声说"
+    },
+    {
+      "para": 29,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "大骂一句，挥起木棍狠狠抽打"
+    },
+    {
+      "para": 30,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "老拐子",
+      "manner": "被打蒙了，连滚带爬在地上转圈跑"
+    },
+    {
+      "para": 31,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "咬着牙切齿大骂"
+    },
+    {
+      "para": 31,
+      "q": 2,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "咬着牙切齿大骂"
+    },
+    {
+      "para": 32,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "老拐子",
+      "manner": "担心老拐子背过气去"
+    },
+    {
+      "para": 33,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "揪住唐真衣领，近乎凶恶"
+    },
+    {
+      "para": 35,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "用干枯的手一下下捶打着唐真"
+    },
+    {
+      "para": 37,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "老拐子",
+      "manner": "无奈又感动"
+    },
+    {
+      "para": 38,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "裂开嘴，情绪转的飞快"
+    },
+    {
+      "para": 42,
+      "q": 1,
+      "speaker": "赵护卫",
+      "addressee": "姚安饶",
+      "manner": "敲了敲马车的窗户"
+    },
+    {
+      "para": 43,
+      "q": 1,
+      "speaker": "姚安饶",
+      "addressee": "赵护卫",
+      "manner": "车里传来的声音"
+    },
+    {
+      "para": 44,
+      "q": 1,
+      "speaker": "赵护卫",
+      "addressee": "姚安饶",
+      "manner": "微微皱起眉头"
+    },
+    {
+      "para": 45,
+      "q": 1,
+      "speaker": "姚安饶",
+      "addressee": "赵护卫",
+      "manner": "应答"
+    },
+    {
+      "para": 46,
+      "q": 1,
+      "speaker": "赵护卫",
+      "addressee": "姚安饶",
+      "manner": "劝谏"
+    },
+    {
+      "para": 47,
+      "q": 1,
+      "speaker": "姚安饶",
+      "addressee": "赵护卫",
+      "manner": "平静回应"
+    },
+    {
+      "para": 48,
+      "q": 1,
+      "speaker": "赵护卫",
+      "addressee": "姚安饶",
+      "manner": "不再多说"
+    }
   ],
-
   "monologues": [
-    {"para": 1,  "character": "唐真", "kind": "回忆"},
-    {"para": 10, "character": "唐真", "kind": "情绪感受"},
-    {"para": 11, "character": "老拐子", "kind": "判断推理",
-     "text": "老拐子不知他想起了什么伤心事，但大抵猜到和女人有关，可是老拐子说不出什么安慰的话"},
-    {"para": 17, "character": "唐真", "kind": "心理活动"},
-    {"para": 19, "character": "唐真", "kind": "心理活动"},
-    {"para": 21, "character": "唐真", "kind": "心理活动"},
-    {"para": 24, "character": "唐真", "kind": "情绪感受"},
-    {"para": 26, "character": "唐真", "kind": "回忆"},
-    {"para": 28, "character": "唐真", "kind": "心理活动"},
-    {"para": 34, "character": "唐真", "kind": "心理活动"},
-    {"para": 36, "character": "唐真", "kind": "情绪感受"},
-    {"para": 48, "character": "赵护卫", "kind": "心理活动",
-     "text": "小姐从小就有主见，他只负责提醒一二"},
-    {"para": 49, "character": "姚安饶", "kind": "回忆"},
-    {"para": 50, "character": "姚安饶", "kind": "判断推理"},
-    {"para": 51, "character": "姚安饶", "kind": "判断推理"}
+    {
+      "para": 1,
+      "character": "唐真",
+      "kind": "回忆"
+    },
+    {
+      "para": 10,
+      "character": "唐真",
+      "kind": "情绪感受"
+    },
+    {
+      "para": 11,
+      "character": "老拐子",
+      "kind": "判断推理",
+      "text": "老拐子不知他想起了什么伤心事，但大抵猜到和女人有关，可是老拐子说不出什么安慰的话"
+    },
+    {
+      "para": 17,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 19,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 21,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 24,
+      "character": "唐真",
+      "kind": "情绪感受"
+    },
+    {
+      "para": 26,
+      "character": "唐真",
+      "kind": "回忆"
+    },
+    {
+      "para": 28,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 34,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 36,
+      "character": "唐真",
+      "kind": "情绪感受"
+    },
+    {
+      "para": 48,
+      "character": "赵护卫",
+      "kind": "心理活动",
+      "text": "小姐从小就有主见，他只负责提醒一二"
+    },
+    {
+      "para": 49,
+      "character": "姚安饶",
+      "kind": "回忆"
+    },
+    {
+      "para": 50,
+      "character": "姚安饶",
+      "kind": "判断推理"
+    },
+    {
+      "para": 51,
+      "character": "姚安饶",
+      "kind": "判断推理"
+    }
   ],
-
   "narration": [
-    {"para": 5,  "function": "环境渲染"},
-    {"para": 9,  "function": "情节交代"},
-    {"para": 27, "function": "人物背景"},
-    {"para": 52, "function": "伏笔"}
+    {
+      "para": 5,
+      "function": "环境渲染"
+    },
+    {
+      "para": 9,
+      "function": "情节交代"
+    },
+    {
+      "para": 27,
+      "function": "人物背景"
+    },
+    {
+      "para": 52,
+      "function": "伏笔"
+    }
   ],
-
   "beats": [
-    {"order": 1, "para_range": [1, 9],   "scene": "城隍庙外施粥处", "beat_type": "铺垫",
-     "summary": "姚安饶施粥待人以笑，红儿向赵护卫打听身世特殊的乞丐"},
-    {"order": 2, "para_range": [10, 19], "scene": "施粥处旁的墙边", "beat_type": "转折",
-     "summary": "唐真脱力坐倒，红儿折返责问，他抹泪致歉"},
-    {"order": 3, "para_range": [20, 24], "scene": "施粥处旁的墙边", "beat_type": "揭示",
-     "summary": "红儿扔下银子，指他去天北桥码头帮工，老拐子抢先应下"},
-    {"order": 4, "para_range": [25, 28], "scene": "施粥处旁的墙边", "beat_type": "情绪",
-     "summary": "唐真说不需要，交代他这一路自我抛弃、一无所有"},
-    {"order": 5, "para_range": [29, 39], "scene": "施粥处旁的墙边", "beat_type": "冲突",
-     "summary": "老拐子木棍抽打唐真，喊出活下去像个人一样活下去，唐真答应"},
-    {"order": 6, "para_range": [41, 52], "scene": "城主家的车队与马车内", "beat_type": "收束",
-     "summary": "赵护卫劝谏小善无意义，姚安饶记下那个流泪的少年，只希望对方是个懂事的人"}
+    {
+      "order": 1,
+      "para_range": [
+        1,
+        9
+      ],
+      "scene": "城隍庙外施粥处",
+      "beat_type": "铺垫",
+      "summary": "姚安饶施粥待人以笑，红儿向赵护卫打听身世特殊的乞丐"
+    },
+    {
+      "order": 2,
+      "para_range": [
+        10,
+        19
+      ],
+      "scene": "施粥处旁的墙边",
+      "beat_type": "转折",
+      "summary": "唐真脱力坐倒，红儿折返责问，他抹泪致歉"
+    },
+    {
+      "order": 3,
+      "para_range": [
+        20,
+        24
+      ],
+      "scene": "施粥处旁的墙边",
+      "beat_type": "揭示",
+      "summary": "红儿扔下银子，指他去天北桥码头帮工，老拐子抢先应下"
+    },
+    {
+      "order": 4,
+      "para_range": [
+        25,
+        28
+      ],
+      "scene": "施粥处旁的墙边",
+      "beat_type": "情绪",
+      "summary": "唐真说不需要，交代他这一路自我抛弃、一无所有"
+    },
+    {
+      "order": 5,
+      "para_range": [
+        29,
+        39
+      ],
+      "scene": "施粥处旁的墙边",
+      "beat_type": "冲突",
+      "summary": "老拐子木棍抽打唐真，喊出活下去像个人一样活下去，唐真答应"
+    },
+    {
+      "order": 6,
+      "para_range": [
+        41,
+        52
+      ],
+      "scene": "城主家的车队与马车内",
+      "beat_type": "收束",
+      "summary": "赵护卫劝谏小善无意义，姚安饶记下那个流泪的少年，只希望对方是个懂事的人"
+    }
   ],
-
   "props": [
-    {"name": "银子", "note": "红儿扔给唐真的一小块银子，言明是借的，赚了钱要还给姚安饶"},
-    {"name": "木棍", "note": "老拐子随身的棍子，用来抽打唐真"},
-    {"name": "枯树枝", "note": "姚安饶远远看见唐真腰间别着一根枯树枝"}
+    {
+      "name": "银子",
+      "note": "红儿扔给唐真的一小块银子，言明是借的，赚了钱要还给姚安饶"
+    },
+    {
+      "name": "木棍",
+      "note": "老拐子随身的棍子，用来抽打唐真"
+    },
+    {
+      "name": "枯树枝",
+      "note": "姚安饶远远看见唐真腰间别着一根枯树枝"
+    }
   ],
-
   "terms": [
-    {"term": "天北桥", "note": "北阳城的码头所在，红儿指点唐真去帮工的地方"},
-    {"term": "城主府", "note": "姚安饶与红儿所属"},
-    {"term": "无尽海", "note": "唐真离开紫云仙宫后徒步要去的方向"},
-    {"term": "紫云仙宫", "note": "唐真犯错后离开的宗门"}
+    {
+      "term": "天北桥",
+      "note": "北阳城的码头所在，红儿指点唐真去帮工的地方"
+    },
+    {
+      "term": "城主府",
+      "note": "姚安饶与红儿所属"
+    },
+    {
+      "term": "无尽海",
+      "note": "唐真离开紫云仙宫后徒步要去的方向"
+    },
+    {
+      "term": "紫云仙宫",
+      "note": "唐真犯错后离开的宗门"
+    }
   ],
-
   "continuity": {
     "inherits": [
       "承接上一章施粥现场，唐真见姚安饶失神",
       "老拐子上一章劝进未果，本章改用暴力",
-      "腰间枯树枝继续出现，仍未交代来历"],
+      "腰间枯树枝继续出现，仍未交代来历"
+    ],
     "foreshadows": [
       "姚安饶那句未说完的『不然。。。』",
       "红儿指的码头帮工，将成为唐真融入凡人生活的入口",
-      "唐真心中『她留给自己的那根枯木桃枝』首次点明枯枝来自一位已死的女子"],
+      "唐真心中『她留给自己的那根枯木桃枝』首次点明枯枝来自一位已死的女子"
+    ],
     "reveals": [
       "小丫鬟名叫红儿，姚安饶的贴身丫鬟，痴迷话本小说",
       "唐真离开宗门后一路徒步走向无尽海，晕倒在北阳城",
       "唐真爱的人已死，恨的人太高，若非那根枯木桃枝早已自我了断",
-      "老拐子并不真信下辈子享福那套话"]
+      "老拐子并不真信下辈子享福那套话"
+    ]
   },
-
   "review_note": "人工分析。引用由程序按段号与引号序号从原文精确取出。台词 30 条全数收录，与原文引号数一致。红儿在本章由旁白点明姓名（第6段『叫做红儿的丫鬟』），故 name 用红儿，并把上一章的『小丫鬟』收进 aliases，供跨章归并。第1段『曾经那个在桃树下对自己笑的女孩』原文未点名，不写作南红枝，仅在 continuity 中记录。第40段与第67段为省略号分隔符，不计入任何字段。"
 }

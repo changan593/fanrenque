@@ -3,214 +3,844 @@
   "synopsis": "唐真到天北桥集市，从一个自己穿草鞋却给儿子纳皮底鞋的农妇手里买了全套粗麻行头，又到河里搓洗干净换上。他到码头报小红儿的名号讨了份计数的活，日结二钱。收工时他坐在码头看落日，觉得这小城晚霞比他见过的一切绝景都更有实感。红儿拎着点心匣子出现，得知他在等工钱后又催他更努力些，之后不声不响站着不走，唐真才反应过来她是怕天黑，便送她回城主府。路上红儿一路发问，唐真只答嗯。到府门口红儿塞给他一块藕粉糕当奖励。唐真回程花十二文买了一桶羊下水，那晚破庙里半缸白水煮下水，香得庙外野狗吠了一夜。他把藕粉糕喂给老拐子，老拐子吃过羊下水后已尝不出清甜，只说软的软的跟热馒头一样软。",
   "time_setting": "次日，盛夏正午至入夜",
   "emotional_tone": "从落魄转入烟火气的踏实，收在一处轻快的酸楚",
-
   "characters": [
-    {"name": "唐真", "aliases": ["三只眼", "小伙子", "小乞丐"], "role_in_chapter": "主导", "mentioned_only": false,
-     "appearance_quotes": [
-       {"para": 14, "text": "换上了新衣服，尺寸并不合身，袖子衣摆有些长，裤子收口有些宽，但毕竟是新的，穿上后还是显得人精神了许多"},
-       {"para": 15, "text": "唐真俯身去看湖面倒影，里面的少年郎既陌生又熟悉"},
-       {"para": 16, "text": "那绝不是青云榜榜首的修道者，也不像城隍庙的小乞丐，只是个普普通通的凡人而已"}],
-     "state": "以三只眼之名在码头上工，第一次靠自己挣到工钱",
-     "actions": ["买粗麻行头", "在河里搓洗换新衣", "报小红儿的名号讨活", "在码头计数", "送红儿回城主府", "买羊下水请破庙众人"]},
-
-    {"name": "红儿", "aliases": ["红儿姑娘", "红儿姐", "小丫头"], "role_in_chapter": "主导", "mentioned_only": false,
-     "appearance_quotes": [
-       {"para": 31, "text": "一个穿马面裙的丫鬟拎着点心匣子正掐着腰站在他身后，小丫头皱着眉带着怒意"},
-       {"para": 42, "text": "她一说话满嘴的藕粉噗噗往外飞，她又赶忙用手捂，像个偷东西的兔子"}],
-     "state": "出府买糕点，顺路来看白天的小乞丐，因怕黑而等唐真送她回府",
-     "actions": ["质问唐真为何坐着发呆", "不声不响站着等唐真", "一路发问", "塞给唐真一块藕粉糕"]},
-
-    {"name": "农妇", "aliases": ["妇人"], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [
-       {"para": 2, "text": "一个农妇带着自家儿子正在那里卖一些自己缝的衣料布碎"},
-       {"para": 8, "text": "可是妇人自己穿的却还是草鞋，想来是没舍得给自己做，但用边角料给儿子纳了一双"}],
-     "state": "在集市角落摆摊卖自缝衣料",
-     "actions": ["报价", "展示牛皮底布鞋", "验银找钱"]},
-
-    {"name": "小男孩", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [{"para": 7, "text": "旁边的小男孩伸出脚，炫耀似的给唐真看自己的小鞋，巴掌大的小鞋也是皮底子"}],
-     "state": "农妇的儿子",
-     "actions": ["炫耀自己的皮底小鞋", "帮母亲数钱"]},
-
-    {"name": "码头管事", "aliases": ["管事的", "中年汉子", "掌事"], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [{"para": 18, "text": "并不费力就在最舒服的凉棚下找到了管事的"}],
-     "state": "天北桥码头管事",
-     "actions": ["问姓名与会不会用毛笔", "安排唐真去计数", "喊收工"]},
-
-    {"name": "老拐子", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [{"para": 71, "text": "老拐子乐得合不拢嘴，一边用冷馒头沾羊汤，一边说着死了也值"}],
-     "state": "在破庙享用羊下水",
-     "actions": ["吃羊下水", "吃掉唐真给的藕粉糕却尝不出清甜"]},
-
-    {"name": "家丁", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [{"para": 59, "text": "远远的就看见几个家丁正举着灯笼站在门口"}],
-     "state": "城主府门口值守",
-     "actions": ["询问红儿为何回来这么晚", "讨要藕粉糕"]},
-
-    {"name": "姚安饶", "aliases": ["小姐"], "role_in_chapter": "提及", "mentioned_only": true,
-     "appearance_quotes": [], "state": "在府中，被红儿与家丁提及", "actions": []},
-
-    {"name": "乞丐们", "aliases": [], "role_in_chapter": "参与", "mentioned_only": false,
-     "appearance_quotes": [], "state": "在破庙分食羊下水", "actions": ["在破庙吃羊下水"]}
+    {
+      "name": "唐真",
+      "aliases": [
+        "三只眼",
+        "小伙子",
+        "小乞丐"
+      ],
+      "role_in_chapter": "主导",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 14,
+          "text": "换上了新衣服，尺寸并不合身，袖子衣摆有些长，裤子收口有些宽，但毕竟是新的，穿上后还是显得人精神了许多"
+        },
+        {
+          "para": 15,
+          "text": "唐真俯身去看湖面倒影，里面的少年郎既陌生又熟悉"
+        },
+        {
+          "para": 16,
+          "text": "那绝不是青云榜榜首的修道者，也不像城隍庙的小乞丐，只是个普普通通的凡人而已"
+        }
+      ],
+      "state": "以三只眼之名在码头上工，第一次靠自己挣到工钱",
+      "actions": [
+        "买粗麻行头",
+        "在河里搓洗换新衣",
+        "报小红儿的名号讨活",
+        "在码头计数",
+        "送红儿回城主府",
+        "买羊下水请破庙众人"
+      ]
+    },
+    {
+      "name": "红儿",
+      "aliases": [
+        "红儿姑娘",
+        "红儿姐",
+        "小丫头"
+      ],
+      "role_in_chapter": "主导",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 31,
+          "text": "一个穿马面裙的丫鬟拎着点心匣子正掐着腰站在他身后，小丫头皱着眉带着怒意"
+        },
+        {
+          "para": 42,
+          "text": "她一说话满嘴的藕粉噗噗往外飞，她又赶忙用手捂，像个偷东西的兔子"
+        }
+      ],
+      "state": "出府买糕点，顺路来看白天的小乞丐，因怕黑而等唐真送她回府",
+      "actions": [
+        "质问唐真为何坐着发呆",
+        "不声不响站着等唐真",
+        "一路发问",
+        "塞给唐真一块藕粉糕"
+      ]
+    },
+    {
+      "name": "农妇",
+      "aliases": [
+        "妇人"
+      ],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 2,
+          "text": "一个农妇带着自家儿子正在那里卖一些自己缝的衣料布碎"
+        },
+        {
+          "para": 8,
+          "text": "可是妇人自己穿的却还是草鞋，想来是没舍得给自己做，但用边角料给儿子纳了一双"
+        }
+      ],
+      "state": "在集市角落摆摊卖自缝衣料",
+      "actions": [
+        "报价",
+        "展示牛皮底布鞋",
+        "验银找钱"
+      ]
+    },
+    {
+      "name": "小男孩",
+      "aliases": [],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 7,
+          "text": "旁边的小男孩伸出脚，炫耀似的给唐真看自己的小鞋，巴掌大的小鞋也是皮底子"
+        }
+      ],
+      "state": "农妇的儿子",
+      "actions": [
+        "炫耀自己的皮底小鞋",
+        "帮母亲数钱"
+      ]
+    },
+    {
+      "name": "码头管事",
+      "aliases": [
+        "管事的",
+        "中年汉子",
+        "掌事"
+      ],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 18,
+          "text": "并不费力就在最舒服的凉棚下找到了管事的"
+        }
+      ],
+      "state": "天北桥码头管事",
+      "actions": [
+        "问姓名与会不会用毛笔",
+        "安排唐真去计数",
+        "喊收工"
+      ]
+    },
+    {
+      "name": "老拐子",
+      "aliases": [],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 71,
+          "text": "老拐子乐得合不拢嘴，一边用冷馒头沾羊汤，一边说着死了也值"
+        }
+      ],
+      "state": "在破庙享用羊下水",
+      "actions": [
+        "吃羊下水",
+        "吃掉唐真给的藕粉糕却尝不出清甜"
+      ]
+    },
+    {
+      "name": "家丁",
+      "aliases": [],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [
+        {
+          "para": 59,
+          "text": "远远的就看见几个家丁正举着灯笼站在门口"
+        }
+      ],
+      "state": "城主府门口值守",
+      "actions": [
+        "询问红儿为何回来这么晚",
+        "讨要藕粉糕"
+      ]
+    },
+    {
+      "name": "姚安饶",
+      "aliases": [
+        "小姐"
+      ],
+      "role_in_chapter": "提及",
+      "mentioned_only": true,
+      "appearance_quotes": [],
+      "state": "在府中，被红儿与家丁提及",
+      "actions": []
+    },
+    {
+      "name": "乞丐们",
+      "aliases": [],
+      "role_in_chapter": "参与",
+      "mentioned_only": false,
+      "appearance_quotes": [],
+      "state": "在破庙分食羊下水",
+      "actions": [
+        "在破庙吃羊下水"
+      ]
+    }
   ],
-
   "scenes": [
-    {"name": "天北桥集市", "type": "室外", "time_of_day": "盛夏正午",
-     "description_quotes": [
-       {"para": 1, "text": "天北桥是北阳城的标志性建筑，因为有码头的缘故，也是北阳城最大的集市，往来行人，酒肆茶摊、杂耍卖艺，力活苦工应有尽有"},
-       {"para": 2, "text": "此时正值盛夏，虫鸣人声嘈杂在一起，乱哄哄的让人头晕，唐真沿着路边的树荫一路走来，远远的就能听到码头漕工们呼喊的号子声"}],
-     "present_characters": ["唐真", "农妇", "小男孩"],
-     "events": ["唐真挑选行头", "农妇展示牛皮底鞋", "以成色差的银锭换六十文并买下衣裤鞋"],
-     "para_range": [1, 12]},
-
-    {"name": "河边", "type": "室外", "time_of_day": "盛夏正午",
-     "description_quotes": [{"para": 13, "text": "正值盛夏正午，河水表面带着温热从他身躯上拂过，像在洗涤人的灵魂"}],
-     "present_characters": ["唐真"],
-     "events": ["唐真下河搓洗换新衣", "看湖面倒影认不出自己"],
-     "para_range": [13, 16]},
-
-    {"name": "天北桥码头", "type": "室外", "time_of_day": "午后至日落",
-     "description_quotes": [
-       {"para": 24, "text": "码头的阳光格外的暴晒，站在一大群干苦工的汉子中间更是让人难熬"},
-       {"para": 27, "text": "人群乌泱泱的排队到凉棚结算工钱，笑声骂声抱怨声四起，好一片热闹"},
-       {"para": 28, "text": "那湖水的倒影里红色的落日被拉的长长的，像是一条抖动的小路"}],
-     "present_characters": ["唐真", "码头管事", "红儿"],
-     "events": ["唐真报名领活", "整个下午计数", "收工看落日", "红儿出现质问", "唐真察觉她怕黑答应送她"],
-     "para_range": [18, 49]},
-
-    {"name": "回城主府的街道", "type": "室外", "time_of_day": "入夜前",
-     "description_quotes": [{"para": 44, "text": "此时天色已经开始暗淡，只有最远的天边才有一片暖橘色的云彩"}],
-     "present_characters": ["唐真", "红儿"],
-     "events": ["红儿一路发问", "唐真只答嗯"],
-     "para_range": [50, 58]},
-
-    {"name": "城主府门外", "type": "室外", "time_of_day": "入夜",
-     "description_quotes": [{"para": 59, "text": "北阳城并不大，城主府也不远，转了几个街道就看到了大门"}],
-     "present_characters": ["唐真", "红儿", "家丁"],
-     "events": ["红儿塞给唐真一块藕粉糕", "家丁与红儿说笑", "唐真转身离开"],
-     "para_range": [59, 68]},
-
-    {"name": "北阳城城隍庙", "type": "室内", "time_of_day": "夜",
-     "description_quotes": [{"para": 70, "text": "那一晚破庙里歌舞升平，半缸白水煮羊下水，香味和膻味浓的连庙外面的野狗都能闻到，一晚上吠个不停"}],
-     "present_characters": ["唐真", "老拐子", "乞丐们"],
-     "events": ["半缸白水煮羊下水", "老拐子说死了也值", "藕粉糕被当成热馒头一样软的东西"],
-     "para_range": [69, 73]}
+    {
+      "name": "天北桥集市",
+      "type": "室外",
+      "time_of_day": "盛夏正午",
+      "description_quotes": [
+        {
+          "para": 1,
+          "text": "天北桥是北阳城的标志性建筑，因为有码头的缘故，也是北阳城最大的集市，往来行人，酒肆茶摊、杂耍卖艺，力活苦工应有尽有"
+        },
+        {
+          "para": 2,
+          "text": "此时正值盛夏，虫鸣人声嘈杂在一起，乱哄哄的让人头晕，唐真沿着路边的树荫一路走来，远远的就能听到码头漕工们呼喊的号子声"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "农妇",
+        "小男孩"
+      ],
+      "events": [
+        "唐真挑选行头",
+        "农妇展示牛皮底鞋",
+        "以成色差的银锭换六十文并买下衣裤鞋"
+      ],
+      "para_range": [
+        1,
+        12
+      ]
+    },
+    {
+      "name": "河边",
+      "type": "室外",
+      "time_of_day": "盛夏正午",
+      "description_quotes": [
+        {
+          "para": 13,
+          "text": "正值盛夏正午，河水表面带着温热从他身躯上拂过，像在洗涤人的灵魂"
+        }
+      ],
+      "present_characters": [
+        "唐真"
+      ],
+      "events": [
+        "唐真下河搓洗换新衣",
+        "看湖面倒影认不出自己"
+      ],
+      "para_range": [
+        13,
+        16
+      ]
+    },
+    {
+      "name": "天北桥码头",
+      "type": "室外",
+      "time_of_day": "午后至日落",
+      "description_quotes": [
+        {
+          "para": 24,
+          "text": "码头的阳光格外的暴晒，站在一大群干苦工的汉子中间更是让人难熬"
+        },
+        {
+          "para": 27,
+          "text": "人群乌泱泱的排队到凉棚结算工钱，笑声骂声抱怨声四起，好一片热闹"
+        },
+        {
+          "para": 28,
+          "text": "那湖水的倒影里红色的落日被拉的长长的，像是一条抖动的小路"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "码头管事",
+        "红儿"
+      ],
+      "events": [
+        "唐真报名领活",
+        "整个下午计数",
+        "收工看落日",
+        "红儿出现质问",
+        "唐真察觉她怕黑答应送她"
+      ],
+      "para_range": [
+        18,
+        49
+      ]
+    },
+    {
+      "name": "回城主府的街道",
+      "type": "室外",
+      "time_of_day": "入夜前",
+      "description_quotes": [
+        {
+          "para": 44,
+          "text": "此时天色已经开始暗淡，只有最远的天边才有一片暖橘色的云彩"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "红儿"
+      ],
+      "events": [
+        "红儿一路发问",
+        "唐真只答嗯"
+      ],
+      "para_range": [
+        50,
+        58
+      ]
+    },
+    {
+      "name": "城主府门外",
+      "type": "室外",
+      "time_of_day": "入夜",
+      "description_quotes": [
+        {
+          "para": 59,
+          "text": "北阳城并不大，城主府也不远，转了几个街道就看到了大门"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "红儿",
+        "家丁"
+      ],
+      "events": [
+        "红儿塞给唐真一块藕粉糕",
+        "家丁与红儿说笑",
+        "唐真转身离开"
+      ],
+      "para_range": [
+        59,
+        68
+      ]
+    },
+    {
+      "name": "北阳城城隍庙",
+      "type": "室内",
+      "time_of_day": "夜",
+      "description_quotes": [
+        {
+          "para": 70,
+          "text": "那一晚破庙里歌舞升平，半缸白水煮羊下水，香味和膻味浓的连庙外面的野狗都能闻到，一晚上吠个不停"
+        }
+      ],
+      "present_characters": [
+        "唐真",
+        "老拐子",
+        "乞丐们"
+      ],
+      "events": [
+        "半缸白水煮羊下水",
+        "老拐子说死了也值",
+        "藕粉糕被当成热馒头一样软的东西"
+      ],
+      "para_range": [
+        69,
+        73
+      ]
+    }
   ],
-
   "dialogues": [
-    {"para": 3,  "q": 0, "speaker": "唐真", "addressee": "农妇", "manner": "蹲下随意翻了翻"},
-    {"para": 4,  "q": 0, "speaker": "农妇", "addressee": "唐真", "manner": "见是个小乞丐，皱眉"},
-    {"para": 5,  "q": 0, "speaker": "唐真", "addressee": "农妇", "manner": "觉得有些贵"},
-    {"para": 6,  "q": 0, "speaker": "农妇", "addressee": "唐真", "manner": "从篮子里拿出布鞋展示黄褐色鞋底"},
-    {"para": 7,  "q": 0, "speaker": "小男孩", "addressee": "唐真", "manner": "伸出脚炫耀似的"},
-    {"para": 9,  "q": 0, "speaker": "唐真", "addressee": "农妇", "manner": "随手递上银子"},
-    {"para": 10, "q": 0, "speaker": "农妇", "addressee": "唐真", "manner": "眼睛一亮，用手指扣了扣银子"},
-    {"para": 19, "q": 0, "speaker": "码头管事", "addressee": "唐真", "manner": "头都没抬"},
-    {"para": 20, "q": 0, "speaker": "唐真", "addressee": "码头管事", "manner": "报名"},
-    {"para": 21, "q": 0, "speaker": "码头管事", "addressee": "唐真", "manner": "追问"},
-    {"para": 22, "q": 0, "speaker": "唐真", "addressee": "码头管事", "manner": "点头"},
-    {"para": 23, "q": 0, "speaker": "码头管事", "addressee": "唐真", "manner": "随手一指旁边卸货的伙计"},
-    {"para": 27, "q": 0, "speaker": "码头管事", "addressee": "在场众人", "manner": "大喊"},
-    {"para": 30, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "清脆的女声响起"},
-    {"para": 32, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "愣了愣"},
-    {"para": 33, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "怒气冲冲的质问"},
-    {"para": 34, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "指了指排长队的工人们"},
-    {"para": 35, "q": 0, "speaker": "红儿", "addressee": "自己", "manner": "一愣"},
-    {"para": 36, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "转口"},
-    {"para": 37, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "笑了笑，随口问"},
-    {"para": 38, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "掐着腰，提起小姐语气里带上几分骄傲"},
-    {"para": 40, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "半晌回过头"},
-    {"para": 42, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "满嘴藕粉噗噗往外飞，赶忙用手捂"},
-    {"para": 43, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "挠头"},
-    {"para": 45, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "站起身拍了拍裤子"},
-    {"para": 50, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "咬着藕粉糕搭话"},
-    {"para": 51, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "走在路的另一侧有一搭没一搭的回话"},
-    {"para": 52, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "发问"},
-    {"para": 53, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "应答"},
-    {"para": 54, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "发问"},
-    {"para": 55, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "应答"},
-    {"para": 56, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "发问"},
-    {"para": 57, "q": 0, "speaker": "唐真", "addressee": "红儿", "manner": "应答"},
-    {"para": 60, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "转身说道"},
-    {"para": 62, "q": 0, "speaker": "红儿", "addressee": "唐真", "manner": "从匣子里掏出藕粉糕塞进唐真手里，然后摆摆手小跑"},
-    {"para": 63, "q": 0, "speaker": "家丁", "addressee": "红儿", "manner": "叽叽喳喳的说话声"},
-    {"para": 64, "q": 0, "speaker": "红儿", "addressee": "家丁", "manner": "笑答"},
-    {"para": 65, "q": 0, "speaker": "家丁", "addressee": "红儿", "manner": "讨要"},
-    {"para": 66, "q": 0, "speaker": "红儿", "addressee": "家丁", "manner": "回绝"},
-    {"para": 72, "q": 0, "speaker": "老拐子", "addressee": "唐真", "manner": "嚼了两下也没分出个好赖，只点头"}
+    {
+      "para": 3,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "农妇",
+      "manner": "蹲下随意翻了翻"
+    },
+    {
+      "para": 4,
+      "q": 1,
+      "speaker": "农妇",
+      "addressee": "唐真",
+      "manner": "见是个小乞丐，皱眉"
+    },
+    {
+      "para": 5,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "农妇",
+      "manner": "觉得有些贵"
+    },
+    {
+      "para": 6,
+      "q": 1,
+      "speaker": "农妇",
+      "addressee": "唐真",
+      "manner": "从篮子里拿出布鞋展示黄褐色鞋底"
+    },
+    {
+      "para": 7,
+      "q": 1,
+      "speaker": "小男孩",
+      "addressee": "唐真",
+      "manner": "伸出脚炫耀似的"
+    },
+    {
+      "para": 9,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "农妇",
+      "manner": "随手递上银子"
+    },
+    {
+      "para": 10,
+      "q": 1,
+      "speaker": "农妇",
+      "addressee": "唐真",
+      "manner": "眼睛一亮，用手指扣了扣银子"
+    },
+    {
+      "para": 19,
+      "q": 1,
+      "speaker": "码头管事",
+      "addressee": "唐真",
+      "manner": "头都没抬"
+    },
+    {
+      "para": 20,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "码头管事",
+      "manner": "报名"
+    },
+    {
+      "para": 21,
+      "q": 1,
+      "speaker": "码头管事",
+      "addressee": "唐真",
+      "manner": "追问"
+    },
+    {
+      "para": 22,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "码头管事",
+      "manner": "点头"
+    },
+    {
+      "para": 23,
+      "q": 1,
+      "speaker": "码头管事",
+      "addressee": "唐真",
+      "manner": "随手一指旁边卸货的伙计"
+    },
+    {
+      "para": 27,
+      "q": 1,
+      "speaker": "码头管事",
+      "addressee": "在场众人",
+      "manner": "大喊"
+    },
+    {
+      "para": 30,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "清脆的女声响起"
+    },
+    {
+      "para": 32,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "愣了愣"
+    },
+    {
+      "para": 33,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "怒气冲冲的质问"
+    },
+    {
+      "para": 34,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "指了指排长队的工人们"
+    },
+    {
+      "para": 35,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "自己",
+      "manner": "一愣"
+    },
+    {
+      "para": 36,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "转口"
+    },
+    {
+      "para": 37,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "笑了笑，随口问"
+    },
+    {
+      "para": 38,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "掐着腰，提起小姐语气里带上几分骄傲"
+    },
+    {
+      "para": 40,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "半晌回过头"
+    },
+    {
+      "para": 42,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "满嘴藕粉噗噗往外飞，赶忙用手捂"
+    },
+    {
+      "para": 43,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "挠头"
+    },
+    {
+      "para": 45,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "站起身拍了拍裤子"
+    },
+    {
+      "para": 50,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "咬着藕粉糕搭话"
+    },
+    {
+      "para": 51,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "走在路的另一侧有一搭没一搭的回话"
+    },
+    {
+      "para": 52,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "发问"
+    },
+    {
+      "para": 53,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "应答"
+    },
+    {
+      "para": 54,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "发问"
+    },
+    {
+      "para": 55,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "应答"
+    },
+    {
+      "para": 56,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "发问"
+    },
+    {
+      "para": 57,
+      "q": 1,
+      "speaker": "唐真",
+      "addressee": "红儿",
+      "manner": "应答"
+    },
+    {
+      "para": 60,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "转身说道"
+    },
+    {
+      "para": 62,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "唐真",
+      "manner": "从匣子里掏出藕粉糕塞进唐真手里，然后摆摆手小跑"
+    },
+    {
+      "para": 63,
+      "q": 1,
+      "speaker": "家丁",
+      "addressee": "红儿",
+      "manner": "叽叽喳喳的说话声"
+    },
+    {
+      "para": 64,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "家丁",
+      "manner": "笑答"
+    },
+    {
+      "para": 65,
+      "q": 1,
+      "speaker": "家丁",
+      "addressee": "红儿",
+      "manner": "讨要"
+    },
+    {
+      "para": 66,
+      "q": 1,
+      "speaker": "红儿",
+      "addressee": "家丁",
+      "manner": "回绝"
+    },
+    {
+      "para": 72,
+      "q": 1,
+      "speaker": "老拐子",
+      "addressee": "唐真",
+      "manner": "嚼了两下也没分出个好赖，只点头"
+    }
   ],
-
   "monologues": [
-    {"para": 8,  "character": "唐真", "kind": "判断推理"},
-    {"para": 11, "character": "唐真", "kind": "心理活动"},
-    {"para": 15, "character": "唐真", "kind": "情绪感受"},
-    {"para": 16, "character": "唐真", "kind": "心理活动"},
-    {"para": 25, "character": "唐真", "kind": "判断推理"},
-    {"para": 29, "character": "唐真", "kind": "回忆"},
-    {"para": 32, "character": "唐真", "kind": "心理活动",
-     "text": "他总觉得这一幕前不久刚发生过"},
-    {"para": 35, "character": "红儿", "kind": "心理活动",
-     "text": "她本来以为这个家伙嫌弃在码头干活累，在这里偷懒，没想到冤枉了他"},
-    {"para": 43, "character": "唐真", "kind": "心理活动",
-     "text": "他和红儿并不相熟，至于再造之恩什么的，更是对方一厢情愿"},
-    {"para": 46, "character": "唐真", "kind": "心理活动"},
-    {"para": 48, "character": "红儿", "kind": "心理活动"},
-    {"para": 73, "character": "唐真", "kind": "心理活动"}
+    {
+      "para": 8,
+      "character": "唐真",
+      "kind": "判断推理"
+    },
+    {
+      "para": 11,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 15,
+      "character": "唐真",
+      "kind": "情绪感受"
+    },
+    {
+      "para": 16,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 25,
+      "character": "唐真",
+      "kind": "判断推理"
+    },
+    {
+      "para": 29,
+      "character": "唐真",
+      "kind": "回忆"
+    },
+    {
+      "para": 32,
+      "character": "唐真",
+      "kind": "心理活动",
+      "text": "他总觉得这一幕前不久刚发生过"
+    },
+    {
+      "para": 35,
+      "character": "红儿",
+      "kind": "心理活动",
+      "text": "她本来以为这个家伙嫌弃在码头干活累，在这里偷懒，没想到冤枉了他"
+    },
+    {
+      "para": 43,
+      "character": "唐真",
+      "kind": "心理活动",
+      "text": "他和红儿并不相熟，至于再造之恩什么的，更是对方一厢情愿"
+    },
+    {
+      "para": 46,
+      "character": "唐真",
+      "kind": "心理活动"
+    },
+    {
+      "para": 48,
+      "character": "红儿",
+      "kind": "心理活动"
+    },
+    {
+      "para": 73,
+      "character": "唐真",
+      "kind": "心理活动"
+    }
   ],
-
   "narration": [
-    {"para": 1,  "function": "世界观设定"},
-    {"para": 17, "function": "时间推移"},
-    {"para": 24, "function": "情节交代"},
-    {"para": 49, "function": "情节交代"},
-    {"para": 69, "function": "情节交代"},
-    {"para": 70, "function": "环境渲染"}
+    {
+      "para": 1,
+      "function": "世界观设定"
+    },
+    {
+      "para": 17,
+      "function": "时间推移"
+    },
+    {
+      "para": 24,
+      "function": "情节交代"
+    },
+    {
+      "para": 49,
+      "function": "情节交代"
+    },
+    {
+      "para": 69,
+      "function": "情节交代"
+    },
+    {
+      "para": 70,
+      "function": "环境渲染"
+    }
   ],
-
   "beats": [
-    {"order": 1, "para_range": [1, 12],  "scene": "天北桥集市", "beat_type": "铺垫",
-     "summary": "唐真在集市买全套粗麻行头，农妇自己穿草鞋却给儿子纳了皮底鞋"},
-    {"order": 2, "para_range": [13, 16], "scene": "河边", "beat_type": "情绪",
-     "summary": "河里搓洗换新衣，倒影里的少年既非榜首也非乞丐，只是个凡人"},
-    {"order": 3, "para_range": [18, 25], "scene": "天北桥码头", "beat_type": "铺垫",
-     "summary": "报小红儿的名号讨到计数的活，日结二钱"},
-    {"order": 4, "para_range": [26, 29], "scene": "天北桥码头", "beat_type": "情绪",
-     "summary": "收工看落日，见过无数绝景反倒是这小城晚霞让他有了实感"},
-    {"order": 5, "para_range": [30, 49], "scene": "天北桥码头", "beat_type": "转折",
-     "summary": "红儿出现质问又赖着不走，唐真才明白她怕黑"},
-    {"order": 6, "para_range": [50, 68], "scene": "回城主府的街道", "beat_type": "情绪",
-     "summary": "一路只答嗯，到府门口得了一块藕粉糕"},
-    {"order": 7, "para_range": [69, 73], "scene": "北阳城城隍庙", "beat_type": "收束",
-     "summary": "十二文一桶羊下水，破庙歌舞升平，藕粉糕在老拐子嘴里只是软的"}
+    {
+      "order": 1,
+      "para_range": [
+        1,
+        12
+      ],
+      "scene": "天北桥集市",
+      "beat_type": "铺垫",
+      "summary": "唐真在集市买全套粗麻行头，农妇自己穿草鞋却给儿子纳了皮底鞋"
+    },
+    {
+      "order": 2,
+      "para_range": [
+        13,
+        16
+      ],
+      "scene": "河边",
+      "beat_type": "情绪",
+      "summary": "河里搓洗换新衣，倒影里的少年既非榜首也非乞丐，只是个凡人"
+    },
+    {
+      "order": 3,
+      "para_range": [
+        18,
+        25
+      ],
+      "scene": "天北桥码头",
+      "beat_type": "铺垫",
+      "summary": "报小红儿的名号讨到计数的活，日结二钱"
+    },
+    {
+      "order": 4,
+      "para_range": [
+        26,
+        29
+      ],
+      "scene": "天北桥码头",
+      "beat_type": "情绪",
+      "summary": "收工看落日，见过无数绝景反倒是这小城晚霞让他有了实感"
+    },
+    {
+      "order": 5,
+      "para_range": [
+        30,
+        49
+      ],
+      "scene": "天北桥码头",
+      "beat_type": "转折",
+      "summary": "红儿出现质问又赖着不走，唐真才明白她怕黑"
+    },
+    {
+      "order": 6,
+      "para_range": [
+        50,
+        68
+      ],
+      "scene": "回城主府的街道",
+      "beat_type": "情绪",
+      "summary": "一路只答嗯，到府门口得了一块藕粉糕"
+    },
+    {
+      "order": 7,
+      "para_range": [
+        69,
+        73
+      ],
+      "scene": "北阳城城隍庙",
+      "beat_type": "收束",
+      "summary": "十二文一桶羊下水，破庙歌舞升平，藕粉糕在老拐子嘴里只是软的"
+    }
   ],
-
   "props": [
-    {"name": "粗麻行头", "note": "上衣、裤子、布鞋，鞋底是农妇用自家养的牛的皮子镶的"},
-    {"name": "毛笔与黑墨", "note": "码头计数用，卸一件货在工牌上画一横"},
-    {"name": "藕粉糕", "note": "马家铺子的糕点，红儿给唐真的奖励，最后被喂给老拐子"},
-    {"name": "羊下水", "note": "唐真花十二文买的一桶，未处理过，一路嘀嗒着血水回破庙"}
+    {
+      "name": "粗麻行头",
+      "note": "上衣、裤子、布鞋，鞋底是农妇用自家养的牛的皮子镶的"
+    },
+    {
+      "name": "毛笔与黑墨",
+      "note": "码头计数用，卸一件货在工牌上画一横"
+    },
+    {
+      "name": "藕粉糕",
+      "note": "马家铺子的糕点，红儿给唐真的奖励，最后被喂给老拐子"
+    },
+    {
+      "name": "羊下水",
+      "note": "唐真花十二文买的一桶，未处理过，一路嘀嗒着血水回破庙"
+    }
   ],
-
   "terms": [
-    {"term": "天北桥", "note": "北阳城标志性建筑，有码头，也是最大的集市"},
-    {"term": "漕工", "note": "码头上喊号子搬货的苦力"},
-    {"term": "青云榜榜首", "note": "唐真旧日身份，与湖面倒影里的凡人形成对照"},
-    {"term": "马记糕点铺", "note": "红儿常去的糕点铺，另有称马家铺子"}
+    {
+      "term": "天北桥",
+      "note": "北阳城标志性建筑，有码头，也是最大的集市"
+    },
+    {
+      "term": "漕工",
+      "note": "码头上喊号子搬货的苦力"
+    },
+    {
+      "term": "青云榜榜首",
+      "note": "唐真旧日身份，与湖面倒影里的凡人形成对照"
+    },
+    {
+      "term": "马记糕点铺",
+      "note": "红儿常去的糕点铺，另有称马家铺子"
+    }
   ],
-
   "continuity": {
     "inherits": [
       "承接红儿指点的码头帮工与那块银子",
       "老拐子上一章逼他去码头，本章他真的去了",
-      "上一章埋的『下辈子天天吃羊下水』在本章以真的羊下水兑现"],
+      "上一章埋的『下辈子天天吃羊下水』在本章以真的羊下水兑现"
+    ],
     "foreshadows": [
       "红儿反复出现在码头，两人关系开始生长",
-      "唐真对小城晚霞产生实感，暗示他正在接受凡人生活"],
+      "唐真对小城晚霞产生实感，暗示他正在接受凡人生活"
+    ],
     "reveals": [
       "唐真会写字，因而得了码头最清闲的计数活",
       "他见过无数惊天动地的绝景，如今反倒是这小城晚霞才有实感",
-      "红儿怕黑"]
+      "红儿怕黑"
+    ]
   },
-
   "review_note": "人工分析。引用由程序精确取出，台词 40 条全数收录。第17段与第58段、第67段为省略号分隔符，仅第17段作为时间推移记入 narration，其余不计。第4段与第42段原文含冒号错位与颜文字（『:-O喔等你呢』），属作者原稿或抓取所致，一律照录不作修正，符合严格遵守原文的要求。"
 }
