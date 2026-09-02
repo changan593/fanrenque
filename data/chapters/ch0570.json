@@ -654,13 +654,10 @@
     },
     "coverage": {
       "raw_speech_count": 26,
-      "extracted_dialogue_count": 24,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "这么大年纪了，这么晚还不睡觉。",
-        "别怕，慢慢说。"
-      ]
+      "extracted_dialogue_count": 26,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

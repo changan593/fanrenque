@@ -567,12 +567,10 @@
     },
     "coverage": {
       "raw_speech_count": 23,
-      "extracted_dialogue_count": 22,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9565,
-      "missed_samples": [
-        "蟾宫也确实无法复兴。"
-      ]
+      "extracted_dialogue_count": 23,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

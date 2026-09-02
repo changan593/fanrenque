@@ -604,12 +604,10 @@
     },
     "coverage": {
       "raw_speech_count": 13,
-      "extracted_dialogue_count": 12,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "你是本体还是分身"
-      ]
+      "extracted_dialogue_count": 13,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

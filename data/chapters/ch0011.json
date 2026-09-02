@@ -700,12 +700,10 @@
     },
     "coverage": {
       "raw_speech_count": 35,
-      "extracted_dialogue_count": 34,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9714,
-      "missed_samples": [
-        "：前些天晚上，我半夜听到小姐叫我，于是开门查看，正好从屏风上的影子看到小姐坐了起来，我以为小姐病好了，赶忙跑过去！"
-      ]
+      "extracted_dialogue_count": 36,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

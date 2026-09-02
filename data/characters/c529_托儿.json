@@ -1,0 +1,33 @@
+{
+  "canonical_name": "托儿",
+  "aliases": [
+    "那个托儿"
+  ],
+  "first_seq": 287,
+  "last_seq": 287,
+  "chapter_count": 1,
+  "chapters": [
+    287
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 287,
+      "state": "被架在赌桌上，脸涨红"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 287,
+      "actions": [
+        "四下张望",
+        "拍桌大喊合兵"
+      ]
+    }
+  ],
+  "id": "c529_托儿"
+}

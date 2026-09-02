@@ -1,0 +1,37 @@
+{
+  "canonical_name": "斥候",
+  "aliases": [],
+  "first_seq": 246,
+  "last_seq": 748,
+  "chapter_count": 2,
+  "chapters": [
+    246,
+    748
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 748,
+      "state": "不断奔跑进出，有的手在抖"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 246,
+      "actions": [
+        "骑马奔驰到宗将军身侧耳语"
+      ]
+    },
+    {
+      "seq": 748,
+      "actions": [
+        "传递急报，最后送来叛徒密信"
+      ]
+    }
+  ],
+  "id": "c289_斥候"
+}

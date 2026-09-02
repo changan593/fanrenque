@@ -1,0 +1,26 @@
+{
+  "canonical_name": "三小只",
+  "aliases": [],
+  "first_seq": 678,
+  "last_seq": 1030,
+  "chapter_count": 3,
+  "chapters": [
+    678,
+    709,
+    1030
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1030,
+      "state": "哭哭啼啼吵吵闹闹"
+    }
+  ],
+  "actions": [],
+  "id": "c244_三小只"
+}

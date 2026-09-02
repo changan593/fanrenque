@@ -1,0 +1,48 @@
+{
+  "canonical_name": "大妈",
+  "aliases": [
+    "大嗓门的中年妇女",
+    "妇人",
+    "女人",
+    "大嗓门的女人"
+  ],
+  "first_seq": 927,
+  "last_seq": 928,
+  "chapter_count": 2,
+  "chapters": [
+    927,
+    928
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 927,
+      "state": "着急，后茫然"
+    },
+    {
+      "seq": 928,
+      "state": "焦急"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 927,
+      "actions": [
+        "帮忙喊接生婆",
+        "质疑道士，催促接生",
+        "被唐真定住，失去焦点"
+      ]
+    },
+    {
+      "seq": 928,
+      "actions": [
+        "扶孕妇，怀疑道士偷孩子"
+      ]
+    }
+  ],
+  "id": "c339_大妈"
+}

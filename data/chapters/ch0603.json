@@ -659,12 +659,10 @@
     },
     "coverage": {
       "raw_speech_count": 34,
-      "extracted_dialogue_count": 33,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9706,
-      "missed_samples": [
-        "哎！爱之吾妻！莫气恼夫嘴笨话少，要平安落叶已打干。知汝想为夫英雄相，可英雄只能热豆浆？"
-      ]
+      "extracted_dialogue_count": 34,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

@@ -616,14 +616,10 @@
     },
     "coverage": {
       "raw_speech_count": 23,
-      "extracted_dialogue_count": 20,
-      "missed_count": 3,
-      "dialogue_coverage": 0.8696,
-      "missed_samples": [
-        "大家都在那里，快走！快去看看！",
-        "这里太苦了。",
-        "我姓齐，你可以叫我齐哥。"
-      ]
+      "extracted_dialogue_count": 23,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

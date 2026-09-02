@@ -1,0 +1,46 @@
+{
+  "canonical_name": "春伯",
+  "aliases": [
+    "春台班副班主",
+    "春台楼管事",
+    "掌柜"
+  ],
+  "first_seq": 467,
+  "last_seq": 587,
+  "chapter_count": 2,
+  "chapters": [
+    467,
+    587
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 467,
+      "state": "年迈，热情"
+    },
+    {
+      "seq": 587,
+      "state": "急切，后因闻人哭眼神而退下"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 467,
+      "actions": [
+        "邀请尉天齐加入春台班"
+      ]
+    },
+    {
+      "seq": 587,
+      "actions": [
+        "试图阻拦两位姑娘",
+        "被闻人哭眼神吓退"
+      ]
+    }
+  ],
+  "id": "c306_春伯"
+}

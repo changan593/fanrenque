@@ -569,13 +569,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 13,
+      "raw_speech_count": 12,
       "extracted_dialogue_count": 12,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "仙女照壁"
-      ]
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": []

@@ -1,0 +1,58 @@
+{
+  "canonical_name": "剑山长老",
+  "aliases": [
+    "剑三长老",
+    "金丹境长老"
+  ],
+  "first_seq": 86,
+  "last_seq": 91,
+  "chapter_count": 3,
+  "chapters": [
+    86,
+    89,
+    91
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 86,
+      "state": "微微抬头，不在意一剑两剑"
+    },
+    {
+      "seq": 89,
+      "state": "吕藏锋的师父，对弟子关怀，点醒其剑心问题"
+    },
+    {
+      "seq": 91,
+      "state": "受伤，但强撑"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 86,
+      "actions": [
+        "摇头，低语只要能有所得便好"
+      ]
+    },
+    {
+      "seq": 89,
+      "actions": [
+        "称赞百剑峰剑道",
+        "点醒吕藏锋剑上缠线",
+        "阻止百剑峰峰主劝解"
+      ]
+    },
+    {
+      "seq": 91,
+      "actions": [
+        "挑战失败，认输",
+        "离开天门山脉"
+      ]
+    }
+  ],
+  "id": "c228_剑山长老"
+}

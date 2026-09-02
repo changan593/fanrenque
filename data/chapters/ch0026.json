@@ -755,14 +755,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 48,
-      "extracted_dialogue_count": 45,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9583,
-      "missed_samples": [
-        "直娘贼！",
-        "那我们先出去，让他先休养好了精神再来细细询问。"
-      ]
+      "raw_speech_count": 47,
+      "extracted_dialogue_count": 47,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

@@ -1,0 +1,60 @@
+{
+  "canonical_name": "宫人",
+  "aliases": [
+    "领路宫人",
+    "穿着华贵的宫人"
+  ],
+  "first_seq": 461,
+  "last_seq": 510,
+  "chapter_count": 3,
+  "chapters": [
+    461,
+    465,
+    510
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "背景": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 510,
+      "quote": "穿着华贵的宫人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 461,
+      "state": "负责引路和检查"
+    },
+    {
+      "seq": 465,
+      "state": "催促饶儿班"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 461,
+      "actions": [
+        "交代注意事项",
+        "带众人过门槛",
+        "吩咐众人站到池边",
+        "统计剧目，宣布准备时间"
+      ]
+    },
+    {
+      "seq": 465,
+      "actions": [
+        "催促饶儿班"
+      ]
+    },
+    {
+      "seq": 510,
+      "actions": [
+        "冲进房间报信李总管死了"
+      ]
+    }
+  ],
+  "id": "c240_宫人"
+}

@@ -1,0 +1,73 @@
+{
+  "canonical_name": "传令兵",
+  "aliases": [],
+  "first_seq": 748,
+  "last_seq": 903,
+  "chapter_count": 6,
+  "chapters": [
+    748,
+    810,
+    811,
+    834,
+    841,
+    903
+  ],
+  "role_distribution": {
+    "参与": 5,
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 834,
+      "quote": "肩膀处绑着绷带，血液丝丝的渗了出来"
+    }
+  ],
+  "states": [
+    {
+      "seq": 748,
+      "state": "在门口高声报告"
+    },
+    {
+      "seq": 810,
+      "state": "普通士兵。"
+    },
+    {
+      "seq": 811,
+      "state": "呆愣"
+    },
+    {
+      "seq": 834,
+      "state": "受伤"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 748,
+      "actions": [
+        "传递两松观观主消息"
+      ]
+    },
+    {
+      "seq": 810,
+      "actions": [
+        "传递书信",
+        "报告敌军动向"
+      ]
+    },
+    {
+      "seq": 811,
+      "actions": [
+        "询问是否开城门",
+        "被命令求援"
+      ]
+    },
+    {
+      "seq": 834,
+      "actions": [
+        "汇报真君和长公主情况"
+      ]
+    }
+  ],
+  "id": "c178_传令兵"
+}

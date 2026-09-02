@@ -1,0 +1,67 @@
+{
+  "canonical_name": "运粮官",
+  "aliases": [
+    "中年男人",
+    "大叔",
+    "人贩子",
+    "姓叫齐的运粮官"
+  ],
+  "first_seq": 914,
+  "last_seq": 918,
+  "chapter_count": 3,
+  "chapters": [
+    914,
+    915,
+    918
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 914,
+      "quote": "穿着华丽官袍的大叔"
+    },
+    {
+      "seq": 914,
+      "quote": "他手里拿着一颗颗白色的糖"
+    }
+  ],
+  "states": [
+    {
+      "seq": 914,
+      "state": "疑似人贩子"
+    },
+    {
+      "seq": 915,
+      "state": "被云儿识破为人贩子"
+    },
+    {
+      "seq": 918,
+      "state": "未明确"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 914,
+      "actions": [
+        "在村口发糖，吸引孩子"
+      ]
+    },
+    {
+      "seq": 915,
+      "actions": [
+        "在村口与孩子们玩耍，举糖问谁想要"
+      ]
+    },
+    {
+      "seq": 918,
+      "actions": [
+        "伸出两只胳膊轻拂两个小丫头的后背，点头后转身离去"
+      ]
+    }
+  ],
+  "id": "c255_运粮官"
+}

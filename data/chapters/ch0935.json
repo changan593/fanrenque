@@ -1148,13 +1148,10 @@
     },
     "coverage": {
       "raw_speech_count": 53,
-      "extracted_dialogue_count": 51,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9623,
-      "missed_samples": [
-        "那便好，那便好。",
-        "哈——嘶！"
-      ]
+      "extracted_dialogue_count": 53,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

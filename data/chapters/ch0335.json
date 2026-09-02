@@ -668,14 +668,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 27,
-      "extracted_dialogue_count": 25,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9259,
-      "missed_samples": [
-        "tt-title",
-        "小老虎"
-      ]
+      "raw_speech_count": 26,
+      "extracted_dialogue_count": 26,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

@@ -763,12 +763,10 @@
     },
     "coverage": {
       "raw_speech_count": 57,
-      "extracted_dialogue_count": 56,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9825,
-      "missed_samples": [
-        "终究修行到了准佛之境。"
-      ]
+      "extracted_dialogue_count": 57,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

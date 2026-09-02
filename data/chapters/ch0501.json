@@ -509,12 +509,10 @@
     },
     "coverage": {
       "raw_speech_count": 19,
-      "extracted_dialogue_count": 18,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9474,
-      "missed_samples": [
-        "师姐天纵奇才胜我许多，但书道与儒学相通甚少，我讲了你未必听得懂，你想的也不会是我要的。"
-      ]
+      "extracted_dialogue_count": 19,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

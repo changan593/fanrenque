@@ -592,12 +592,10 @@
     },
     "coverage": {
       "raw_speech_count": 9,
-      "extracted_dialogue_count": 8,
-      "missed_count": 1,
-      "dialogue_coverage": 0.8889,
-      "missed_samples": [
-        "他的怨气太重，已经不是单独对人皇陛下的怨气了，而是对整个姜家血脉乃至皇宫的怨气，若是不为人知还好，但偏偏知道的人说多不多说少不少，儒门和皇宫都不会希望一位带着报复之心的帝王出现的，他可能为了年少的遗憾，而把整个大夏带向毁灭。"
-      ]
+      "extracted_dialogue_count": 9,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

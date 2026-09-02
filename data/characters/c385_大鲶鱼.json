@@ -1,0 +1,39 @@
+{
+  "canonical_name": "大鲶鱼",
+  "aliases": [],
+  "first_seq": 59,
+  "last_seq": 59,
+  "chapter_count": 1,
+  "chapters": [
+    59
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 59,
+      "quote": "一条二层楼高的大鲶鱼"
+    },
+    {
+      "seq": 59,
+      "quote": "黑色的大尾巴"
+    }
+  ],
+  "states": [
+    {
+      "seq": 59,
+      "state": "被唐真指认，被姜羽追杀"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 59,
+      "actions": [
+        "逃出城门，扎入河流，土遁消失"
+      ]
+    }
+  ],
+  "id": "c385_大鲶鱼"
+}

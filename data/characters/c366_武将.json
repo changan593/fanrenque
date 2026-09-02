@@ -1,0 +1,38 @@
+{
+  "canonical_name": "武将",
+  "aliases": [
+    "大嗓门的武将",
+    "那汉子"
+  ],
+  "first_seq": 23,
+  "last_seq": 23,
+  "chapter_count": 1,
+  "chapters": [
+    23
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 23,
+      "quote": "披着甲胄沉着脸大步走过前堂"
+    }
+  ],
+  "states": [
+    {
+      "seq": 23,
+      "state": "生气"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 23,
+      "actions": [
+        "抱怨河漂子事件"
+      ]
+    }
+  ],
+  "id": "c366_武将"
+}

@@ -1,0 +1,37 @@
+{
+  "canonical_name": "红裙女子",
+  "aliases": [
+    "姐姐"
+  ],
+  "first_seq": 822,
+  "last_seq": 822,
+  "chapter_count": 1,
+  "chapters": [
+    822
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 822,
+      "quote": "城头上红裙的女子安静的盘坐，她的发丝安静的在空中飞舞，源源不断的灵气与她交汇又分离"
+    }
+  ],
+  "states": [
+    {
+      "seq": 822,
+      "state": "掌控西城门外一切"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 822,
+      "actions": [
+        "盘坐城头，掌控西城门"
+      ]
+    }
+  ],
+  "id": "c834_红裙女子"
+}

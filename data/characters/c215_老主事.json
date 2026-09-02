@@ -1,0 +1,57 @@
+{
+  "canonical_name": "老主事",
+  "aliases": [],
+  "first_seq": 1085,
+  "last_seq": 1088,
+  "chapter_count": 4,
+  "chapters": [
+    1085,
+    1086,
+    1087,
+    1088
+  ],
+  "role_distribution": {
+    "参与": 3,
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1085,
+      "state": "正常，负责带队"
+    },
+    {
+      "seq": 1087,
+      "state": "陪笑，递灵茶尖讨好泉小郎君"
+    },
+    {
+      "seq": 1088,
+      "state": "未明确"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1085,
+      "actions": [
+        "点燃石灯，拜石灯",
+        "宣布原地休息",
+        "带领队伍上山，指引镜湖"
+      ]
+    },
+    {
+      "seq": 1087,
+      "actions": [
+        "与泉小郎君寒暄，递灵茶尖",
+        "招呼众人进入茶庄"
+      ]
+    },
+    {
+      "seq": 1088,
+      "actions": [
+        "附和泉小郎君的话"
+      ]
+    }
+  ],
+  "id": "c215_老主事"
+}

@@ -1,0 +1,25 @@
+{
+  "canonical_name": "属下",
+  "aliases": [],
+  "first_seq": 556,
+  "last_seq": 556,
+  "chapter_count": 1,
+  "chapters": [
+    556
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 556,
+      "actions": [
+        "回答闻人哭关于春伯的问题"
+      ]
+    }
+  ],
+  "id": "c674_属下"
+}

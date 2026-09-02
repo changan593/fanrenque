@@ -631,13 +631,10 @@
     },
     "coverage": {
       "raw_speech_count": 31,
-      "extracted_dialogue_count": 29,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9355,
-      "missed_samples": [
-        "这是幻境？",
-        "她爸提出的这个计划？"
-      ]
+      "extracted_dialogue_count": 31,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

@@ -1,0 +1,41 @@
+{
+  "canonical_name": "黄袍少年",
+  "aliases": [
+    "黄袍人",
+    "年轻的男人",
+    "黄袍少男"
+  ],
+  "first_seq": 813,
+  "last_seq": 813,
+  "chapter_count": 1,
+  "chapters": [
+    813
+  ],
+  "role_distribution": {
+    "主导": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 813,
+      "quote": "那是个年轻的男人，满脸的贵气，腰间有着一把格外华丽的剑"
+    }
+  ],
+  "states": [
+    {
+      "seq": 813,
+      "state": "被猴王袭击时受惊，后镇定"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 813,
+      "actions": [
+        "安坐桌旁，设伏",
+        "被猴王袭击时后倾欲退",
+        "起身感慨妖猴中计"
+      ]
+    }
+  ],
+  "id": "c829_黄袍少年"
+}

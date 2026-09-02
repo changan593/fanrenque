@@ -181,7 +181,7 @@
       {
         "name": "残疾丈夫",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -191,7 +191,7 @@
       {
         "name": "怀孕妻子",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -201,7 +201,7 @@
       {
         "name": "女儿",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -211,7 +211,7 @@
       {
         "name": "家人",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",

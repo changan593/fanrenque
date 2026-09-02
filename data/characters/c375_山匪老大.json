@@ -1,0 +1,33 @@
+{
+  "canonical_name": "山匪老大",
+  "aliases": [
+    "老大"
+  ],
+  "first_seq": 42,
+  "last_seq": 42,
+  "chapter_count": 1,
+  "chapters": [
+    42
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 42,
+      "state": "筑基境，谨慎但贪婪"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 42,
+      "actions": [
+        "带领手下围堵周东东",
+        "被周东东杀死"
+      ]
+    }
+  ],
+  "id": "c375_山匪老大"
+}

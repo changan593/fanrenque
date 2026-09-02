@@ -620,15 +620,10 @@
     },
     "coverage": {
       "raw_speech_count": 20,
-      "extracted_dialogue_count": 16,
-      "missed_count": 4,
-      "dialogue_coverage": 0.8,
-      "missed_samples": [
-        "你我相聚二十步。",
-        "不能过线，但已无线。",
-        "南姑娘，灯。",
-        "你尽力了。"
-      ]
+      "extracted_dialogue_count": 20,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

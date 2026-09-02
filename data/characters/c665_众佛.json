@@ -1,0 +1,30 @@
+{
+  "canonical_name": "众佛",
+  "aliases": [],
+  "first_seq": 535,
+  "last_seq": 535,
+  "chapter_count": 1,
+  "chapters": [
+    535
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 535,
+      "state": "佛宗弟子，响应二祖命令"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 535,
+      "actions": [
+        "谨遵二祖令"
+      ]
+    }
+  ],
+  "id": "c665_众佛"
+}

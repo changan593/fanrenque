@@ -629,14 +629,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 26,
-      "extracted_dialogue_count": 24,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "都是。。。都是从上游朝阳城那边飘过来的！",
-        "妖魔作祟"
-      ]
+      "raw_speech_count": 25,
+      "extracted_dialogue_count": 25,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

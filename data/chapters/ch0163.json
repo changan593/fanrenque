@@ -480,13 +480,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 6,
-      "extracted_dialogue_count": 5,
-      "missed_count": 1,
-      "dialogue_coverage": 0.8333,
-      "missed_samples": [
-        "这活呀，不是这么干的！"
-      ]
+      "raw_speech_count": 5,
+      "extracted_dialogue_count": 6,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

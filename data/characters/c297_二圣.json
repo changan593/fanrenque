@@ -1,0 +1,28 @@
+{
+  "canonical_name": "二圣",
+  "aliases": [],
+  "first_seq": 378,
+  "last_seq": 575,
+  "chapter_count": 2,
+  "chapters": [
+    378,
+    575
+  ],
+  "role_distribution": {
+    "提及": 2
+  },
+  "mentioned_only_count": 2,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 378,
+      "state": "阻拦姚安饶破境"
+    },
+    {
+      "seq": 575,
+      "state": "对佛宗和婆娑洲掌握和影响说一不二"
+    }
+  ],
+  "actions": [],
+  "id": "c297_二圣"
+}

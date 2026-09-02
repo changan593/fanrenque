@@ -469,13 +469,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 9,
+      "raw_speech_count": 8,
       "extracted_dialogue_count": 8,
-      "missed_count": 1,
-      "dialogue_coverage": 0.8889,
-      "missed_samples": [
-        "问个清楚"
-      ]
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": []

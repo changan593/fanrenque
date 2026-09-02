@@ -1,0 +1,79 @@
+{
+  "canonical_name": "乞丐们",
+  "aliases": [
+    "其他乞丐",
+    "众乞丐"
+  ],
+  "first_seq": 1,
+  "last_seq": 20,
+  "chapter_count": 4,
+  "chapters": [
+    1,
+    2,
+    3,
+    20
+  ],
+  "role_distribution": {
+    "参与": 4
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1,
+      "quote": "其他乞丐一边挑着彼此身上的虱子一边打趣"
+    },
+    {
+      "seq": 2,
+      "quote": "而且都长一个模样，脸上黑乎乎一片，头发打着缕，根本分不清谁是谁"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1,
+      "state": "城隍庙里的一群乞丐"
+    },
+    {
+      "seq": 2,
+      "state": "领粥后散去"
+    },
+    {
+      "seq": 3,
+      "state": "在破庙分食羊下水"
+    },
+    {
+      "seq": 20,
+      "state": "为唐真担心，后因翻新计划而拜谢"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1,
+      "actions": [
+        "取笑唐真做噩梦",
+        "起哄要唐真讲梦",
+        "排队领粥"
+      ]
+    },
+    {
+      "seq": 2,
+      "actions": [
+        "低头领粥",
+        "散去"
+      ]
+    },
+    {
+      "seq": 3,
+      "actions": [
+        "在破庙吃羊下水"
+      ]
+    },
+    {
+      "seq": 20,
+      "actions": [
+        "讨论唐真下落",
+        "拜谢姚安饶"
+      ]
+    }
+  ],
+  "id": "c193_乞丐们"
+}

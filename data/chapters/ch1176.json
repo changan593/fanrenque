@@ -704,13 +704,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 31,
+      "raw_speech_count": 29,
       "extracted_dialogue_count": 30,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9677,
-      "missed_samples": [
-        "啾啾啾"
-      ]
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

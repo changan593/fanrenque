@@ -1,0 +1,23 @@
+{
+  "canonical_name": "神佛们",
+  "aliases": [],
+  "first_seq": 661,
+  "last_seq": 661,
+  "chapter_count": 1,
+  "chapters": [
+    661
+  ],
+  "role_distribution": {
+    "背景": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 661,
+      "state": "在佛宗大道上，部分被血色浸染。"
+    }
+  ],
+  "actions": [],
+  "id": "c740_神佛们"
+}

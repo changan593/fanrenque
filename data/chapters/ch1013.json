@@ -820,14 +820,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 36,
-      "extracted_dialogue_count": 34,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9444,
-      "missed_samples": [
-        "潜藏的细节",
-        "他心忧天道坍塌，可当他看着一个女孩在自己膝下长大，却又无可奈何间生了几分私心。"
-      ]
+      "raw_speech_count": 35,
+      "extracted_dialogue_count": 35,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

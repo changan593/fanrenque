@@ -1,0 +1,27 @@
+{
+  "canonical_name": "姜鳞",
+  "aliases": [
+    "四皇子",
+    "老四",
+    "四哥"
+  ],
+  "first_seq": 719,
+  "last_seq": 719,
+  "chapter_count": 1,
+  "chapters": [
+    719
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 719,
+      "state": "已死，为姜麟前世"
+    }
+  ],
+  "actions": [],
+  "id": "c780_姜鳞"
+}

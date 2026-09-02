@@ -1,0 +1,23 @@
+{
+  "canonical_name": "棋圣",
+  "aliases": [],
+  "first_seq": 171,
+  "last_seq": 171,
+  "chapter_count": 1,
+  "chapters": [
+    171
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 171,
+      "state": "被吴慢慢当作棋子"
+    }
+  ],
+  "actions": [],
+  "id": "c449_棋圣"
+}

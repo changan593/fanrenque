@@ -515,15 +515,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 8,
-      "extracted_dialogue_count": 5,
-      "missed_count": 3,
-      "dialogue_coverage": 0.625,
-      "missed_samples": [
-        "tt-title",
-        "蜘蛛",
-        "罗生门"
-      ]
+      "raw_speech_count": 6,
+      "extracted_dialogue_count": 6,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

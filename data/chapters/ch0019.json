@@ -835,12 +835,10 @@
     },
     "coverage": {
       "raw_speech_count": 32,
-      "extracted_dialogue_count": 32,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9688,
-      "missed_samples": [
-        "：父亲已经决定收你为义女，你如今是城主府的二小姐，是我的妹妹，这城里的人你谁都配得上，但唯独他不行。他不在城里，他在天上。"
-      ]
+      "extracted_dialogue_count": 33,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

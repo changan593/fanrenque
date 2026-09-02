@@ -814,12 +814,10 @@
     },
     "coverage": {
       "raw_speech_count": 34,
-      "extracted_dialogue_count": 33,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9706,
-      "missed_samples": [
-        "你那位师姐性格木讷，不争不抢，只不过有些好斗，平常你随意待她，只要不抢她的猎物就好。"
-      ]
+      "extracted_dialogue_count": 34,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

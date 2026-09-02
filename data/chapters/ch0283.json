@@ -495,13 +495,10 @@
     },
     "coverage": {
       "raw_speech_count": 27,
-      "extracted_dialogue_count": 25,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9259,
-      "missed_samples": [
-        "不。。",
-        "我教您！保证让您玩得开心！"
-      ]
+      "extracted_dialogue_count": 27,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

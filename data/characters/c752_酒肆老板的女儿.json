@@ -1,0 +1,36 @@
+{
+  "canonical_name": "酒肆老板的女儿",
+  "aliases": [],
+  "first_seq": 680,
+  "last_seq": 680,
+  "chapter_count": 1,
+  "chapters": [
+    680
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 680,
+      "quote": "一身土妞打扮，不过眉眼着实靓丽"
+    }
+  ],
+  "states": [
+    {
+      "seq": 680,
+      "state": "已婚有子，被余庆调笑"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 680,
+      "actions": [
+        "为客人打酒",
+        "叫来儿子阿洽，揭露自己已婚"
+      ]
+    }
+  ],
+  "id": "c752_酒肆老板的女儿"
+}

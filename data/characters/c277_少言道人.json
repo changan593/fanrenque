@@ -1,0 +1,48 @@
+{
+  "canonical_name": "少言道人",
+  "aliases": [],
+  "first_seq": 102,
+  "last_seq": 103,
+  "chapter_count": 2,
+  "chapters": [
+    102,
+    103
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 102,
+      "quote": "道袍陈旧带有油污，手里常年不离酒壶，一头油发乱糟糟的"
+    }
+  ],
+  "states": [
+    {
+      "seq": 102,
+      "state": "百剑峰炼神境长老，邋遢大叔，健谈"
+    },
+    {
+      "seq": 103,
+      "state": "百剑峰修士，笑声响起"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 102,
+      "actions": [
+        "御剑凑近吕藏锋低声解释形势",
+        "介绍灵兽崖、普陀山等峰立场",
+        "转移话题避免阴暗"
+      ]
+    },
+    {
+      "seq": 103,
+      "actions": [
+        "回应金童峰长老，称剑山同道个人行为"
+      ]
+    }
+  ],
+  "id": "c277_少言道人"
+}

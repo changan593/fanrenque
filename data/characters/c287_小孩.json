@@ -1,0 +1,54 @@
+{
+  "canonical_name": "小孩",
+  "aliases": [
+    "铁蛋儿"
+  ],
+  "first_seq": 206,
+  "last_seq": 340,
+  "chapter_count": 2,
+  "chapters": [
+    206,
+    340
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 206,
+      "quote": "八九岁的小孩，黑黢黢的身上挂着几片椰树叶子"
+    },
+    {
+      "seq": 206,
+      "quote": "被太阳暴晒的黝黑皮肤上露出了一张天真的笑脸"
+    }
+  ],
+  "states": [
+    {
+      "seq": 206,
+      "state": "天真无邪"
+    },
+    {
+      "seq": 340,
+      "state": "心动"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 206,
+      "actions": [
+        "被齐渊吓到，烤蜗牛掉地",
+        "捡起烤蜗牛递给齐渊"
+      ]
+    },
+    {
+      "seq": 340,
+      "actions": [
+        "开口叫妈",
+        "张大嘴巴看法术"
+      ]
+    }
+  ],
+  "id": "c287_小孩"
+}

@@ -107,7 +107,7 @@
       {
         "name": "白幡人影",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -610,13 +610,10 @@
     },
     "coverage": {
       "raw_speech_count": 20,
-      "extracted_dialogue_count": 18,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9,
-      "missed_samples": [
-        "嗯。",
-        "走！回城墙！"
-      ]
+      "extracted_dialogue_count": 20,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

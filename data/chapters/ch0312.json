@@ -496,13 +496,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 13,
-      "extracted_dialogue_count": 12,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "自己的血也是血！总好过云儿姐的血！"
-      ]
+      "raw_speech_count": 12,
+      "extracted_dialogue_count": 13,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

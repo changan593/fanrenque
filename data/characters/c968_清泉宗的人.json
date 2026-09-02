@@ -1,0 +1,31 @@
+{
+  "canonical_name": "清泉宗的人",
+  "aliases": [],
+  "first_seq": 1141,
+  "last_seq": 1141,
+  "chapter_count": 1,
+  "chapters": [
+    1141
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1141,
+      "state": "在高空施法"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1141,
+      "actions": [
+        "启动囚龙大阵",
+        "喊封龙骨"
+      ]
+    }
+  ],
+  "id": "c968_清泉宗的人"
+}

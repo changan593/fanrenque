@@ -1,0 +1,43 @@
+{
+  "canonical_name": "男主人",
+  "aliases": [
+    "家主"
+  ],
+  "first_seq": 244,
+  "last_seq": 244,
+  "chapter_count": 1,
+  "chapters": [
+    244
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 244,
+      "quote": "人过中年但依然满身腱子肉"
+    },
+    {
+      "seq": 244,
+      "quote": "浓密的胡子"
+    }
+  ],
+  "states": [
+    {
+      "seq": 244,
+      "state": "热情好客，喝多了，自豪于妻子的传奇"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 244,
+      "actions": [
+        "招待尉天齐，询问家世",
+        "讲述妻子当年生产经历",
+        "举杯敬丢失的孩子"
+      ]
+    }
+  ],
+  "id": "c510_男主人"
+}

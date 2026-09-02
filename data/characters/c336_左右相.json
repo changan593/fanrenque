@@ -1,0 +1,41 @@
+{
+  "canonical_name": "左右相",
+  "aliases": [],
+  "first_seq": 883,
+  "last_seq": 926,
+  "chapter_count": 2,
+  "chapters": [
+    883,
+    926
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 883,
+      "state": "同时扭头，抬头蹙眉"
+    },
+    {
+      "seq": 926,
+      "state": "未明确"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 883,
+      "actions": [
+        "同时扭头，说‘有结果了’，抬头看金色巨树。"
+      ]
+    },
+    {
+      "seq": 926,
+      "actions": [
+        "接受姜赢命令，制定撤离章程"
+      ]
+    }
+  ],
+  "id": "c336_左右相"
+}

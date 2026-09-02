@@ -663,12 +663,10 @@
     },
     "coverage": {
       "raw_speech_count": 31,
-      "extracted_dialogue_count": 30,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9677,
-      "missed_samples": [
-        "或者说整个杜家犯了什么错。"
-      ]
+      "extracted_dialogue_count": 31,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

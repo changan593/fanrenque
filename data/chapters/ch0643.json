@@ -619,12 +619,10 @@
     },
     "coverage": {
       "raw_speech_count": 12,
-      "extracted_dialogue_count": 11,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9167,
-      "missed_samples": [
-        "最早的时候，道理很乱，所以主干很粗，能承载大多数人。可到如今，道理的脉络逐渐清晰，而主干也越来越细，于是排挤愈发多的发生。"
-      ]
+      "extracted_dialogue_count": 12,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

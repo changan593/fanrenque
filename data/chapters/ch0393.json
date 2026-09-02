@@ -371,12 +371,10 @@
     },
     "coverage": {
       "raw_speech_count": 10,
-      "extracted_dialogue_count": 9,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9,
-      "missed_samples": [
-        "是按照原计划让一位长老去看看情况？还是怎样？"
-      ]
+      "extracted_dialogue_count": 10,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

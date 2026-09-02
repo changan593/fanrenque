@@ -1,0 +1,19 @@
+{
+  "canonical_name": "岛民",
+  "aliases": [],
+  "first_seq": 572,
+  "last_seq": 573,
+  "chapter_count": 2,
+  "chapters": [
+    572,
+    573
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [],
+  "id": "c312_岛民"
+}

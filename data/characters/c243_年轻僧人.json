@@ -1,0 +1,63 @@
+{
+  "canonical_name": "年轻僧人",
+  "aliases": [
+    "领路僧人",
+    "少壮派僧人"
+  ],
+  "first_seq": 650,
+  "last_seq": 874,
+  "chapter_count": 3,
+  "chapters": [
+    650,
+    651,
+    874
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 650,
+      "quote": "长相俊秀的年轻僧人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 650,
+      "state": "眉目含笑，答非所问"
+    },
+    {
+      "seq": 651,
+      "state": "负责引路和传话"
+    },
+    {
+      "seq": 874,
+      "state": "佛宗内地位很高，属于少壮派"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 650,
+      "actions": [
+        "领路并介绍悬空寺",
+        "回答唐真问题，但含糊其辞"
+      ]
+    },
+    {
+      "seq": 651,
+      "actions": [
+        "引众人至厢房，催促前往大殿",
+        "向迦叶禀报带来二人"
+      ]
+    },
+    {
+      "seq": 874,
+      "actions": [
+        "回应密集尊者，为还愿辩护",
+        "同意按密集尊者要求做"
+      ]
+    }
+  ],
+  "id": "c243_年轻僧人"
+}

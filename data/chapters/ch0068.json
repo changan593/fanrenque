@@ -604,12 +604,10 @@
     },
     "coverage": {
       "raw_speech_count": 8,
-      "extracted_dialogue_count": 9,
-      "missed_count": 1,
-      "dialogue_coverage": 0.875,
-      "missed_samples": [
-        "大哥，这个回剑入鞘怎样能不扎手一次成功啊？"
-      ]
+      "extracted_dialogue_count": 10,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

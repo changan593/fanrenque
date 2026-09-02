@@ -1,0 +1,50 @@
+{
+  "canonical_name": "胖女人",
+  "aliases": [
+    "有点胖的大妈"
+  ],
+  "first_seq": 1048,
+  "last_seq": 1049,
+  "chapter_count": 2,
+  "chapters": [
+    1048,
+    1049
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1048,
+      "quote": "一个略有些肥胖的穿着绿色裙子的女人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1048,
+      "state": "慌张急切，抽泣"
+    },
+    {
+      "seq": 1049,
+      "state": "红着眼睛抽泣"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1048,
+      "actions": [
+        "呼喊老太太和老爷子，说孩子们回来了",
+        "抽泣着劝老太太"
+      ]
+    },
+    {
+      "seq": 1049,
+      "actions": [
+        "摆手叫喊",
+        "抱着老太太"
+      ]
+    }
+  ],
+  "id": "c345_胖女人"
+}

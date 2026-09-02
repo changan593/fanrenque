@@ -633,12 +633,10 @@
     },
     "coverage": {
       "raw_speech_count": 30,
-      "extracted_dialogue_count": 29,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9667,
-      "missed_samples": [
-        "好俊的姑娘，好有派的儿郎。"
-      ]
+      "extracted_dialogue_count": 30,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

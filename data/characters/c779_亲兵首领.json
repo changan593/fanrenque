@@ -1,0 +1,32 @@
+{
+  "canonical_name": "亲兵首领",
+  "aliases": [],
+  "first_seq": 715,
+  "last_seq": 715,
+  "chapter_count": 1,
+  "chapters": [
+    715
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 715,
+      "state": "冷笑，态度强硬"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 715,
+      "actions": [
+        "拒绝污衙要求",
+        "侧移一步指向无名",
+        "朗声宣布带不走两位将军"
+      ]
+    }
+  ],
+  "id": "c779_亲兵首领"
+}

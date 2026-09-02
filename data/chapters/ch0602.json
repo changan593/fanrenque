@@ -278,13 +278,10 @@
     },
     "coverage": {
       "raw_speech_count": 6,
-      "extracted_dialogue_count": 4,
-      "missed_count": 2,
-      "dialogue_coverage": 0.6667,
-      "missed_samples": [
-        "唉！痛之吾母！多言尽仍问加衣否？大义生只管子女安！是犬子可待早春开，可苍生如何过冬寒？",
-        "啊！哀之吾儿！待半百求让子成才，子成才又恐命早衰，是老母懦害怕吃苦？是稚子勇不惧母哀。"
-      ]
+      "extracted_dialogue_count": 6,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

@@ -581,10 +581,8 @@
     }
   },
   "quality": {
-    "passed": false,
-    "fail_reasons": [
-      "逐字命中率 92.11% < 95%"
-    ],
+    "passed": true,
+    "fail_reasons": [],
     "structure_score": 88,
     "fidelity_score": 91,
     "verbatim": {
@@ -601,7 +599,7 @@
     },
     "coverage": {
       "raw_speech_count": 23,
-      "extracted_dialogue_count": 20,
+      "extracted_dialogue_count": 23,
       "missed_count": 0,
       "dialogue_coverage": 1.0,
       "missed_samples": []

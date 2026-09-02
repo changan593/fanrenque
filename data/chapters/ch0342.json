@@ -617,13 +617,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 26,
-      "extracted_dialogue_count": 24,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9615,
-      "missed_samples": [
-        "tt-title"
-      ]
+      "raw_speech_count": 25,
+      "extracted_dialogue_count": 25,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

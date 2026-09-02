@@ -684,13 +684,10 @@
     },
     "coverage": {
       "raw_speech_count": 29,
-      "extracted_dialogue_count": 27,
-      "missed_count": 2,
-      "dialogue_coverage": 0.931,
-      "missed_samples": [
-        "再说，白玉蟾曾告知我，天下之前便出现过多面琉璃灯！",
-        "是用两种类型的大道创造一个可以容纳琉璃灯的生灵。"
-      ]
+      "extracted_dialogue_count": 29,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

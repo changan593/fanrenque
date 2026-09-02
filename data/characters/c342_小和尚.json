@@ -1,0 +1,46 @@
+{
+  "canonical_name": "小和尚",
+  "aliases": [
+    "阿觉",
+    "虫修小和尚"
+  ],
+  "first_seq": 984,
+  "last_seq": 987,
+  "chapter_count": 2,
+  "chapters": [
+    984,
+    987
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 984,
+      "state": "首魔尊头颅所化，阴恻恻"
+    },
+    {
+      "seq": 987,
+      "state": "被雷击，狼狈"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 984,
+      "actions": [
+        "躲在柱子后观察",
+        "质问姚安恕如何识破"
+      ]
+    },
+    {
+      "seq": 987,
+      "actions": [
+        "被罗汉音压制，后跃向空中",
+        "被雷光击中"
+      ]
+    }
+  ],
+  "id": "c342_小和尚"
+}

@@ -459,12 +459,10 @@
     },
     "coverage": {
       "raw_speech_count": 15,
-      "extracted_dialogue_count": 14,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9333,
-      "missed_samples": [
-        "他也让我进入了白马寺，他说‘趁错的还不远改一改，改不好，他在一旁也能直接杀了我，免得让其他人受难。’他虽如此说，但一直在悉心教导，带着我修行，这才有了如今我成为准佛，却不曾堕入魔窟。"
-      ]
+      "extracted_dialogue_count": 15,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

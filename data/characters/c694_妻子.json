@@ -1,0 +1,44 @@
+{
+  "canonical_name": "妻子",
+  "aliases": [
+    "于家的妻子"
+  ],
+  "first_seq": 603,
+  "last_seq": 603,
+  "chapter_count": 1,
+  "chapters": [
+    603
+  ],
+  "role_distribution": {
+    "主导": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 603,
+      "quote": "她长得只有七分，可只要一笑起来就有了九分，因为眯起来眼睛无比的可爱"
+    },
+    {
+      "seq": 603,
+      "quote": "上面有冬天过冷水留下的疙瘩，可依然十分洁白"
+    }
+  ],
+  "states": [
+    {
+      "seq": 603,
+      "state": "笑眯眯，善良，担忧史家二郎，与丈夫有误会"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 603,
+      "actions": [
+        "扫落叶，喝豆浆",
+        "要求丈夫修瓦、挑水、打落叶",
+        "提及史家二郎，请求丈夫别下死手",
+        "被丈夫大声反问后生气回屋"
+      ]
+    }
+  ],
+  "id": "c694_妻子"
+}

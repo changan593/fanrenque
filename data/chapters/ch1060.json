@@ -1428,14 +1428,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 76,
-      "extracted_dialogue_count": 74,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9737,
-      "missed_samples": [
-        "姚望舒屠戮桐庐观是否是错的。",
-        "离经叛道"
-      ]
+      "raw_speech_count": 75,
+      "extracted_dialogue_count": 75,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

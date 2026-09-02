@@ -1,0 +1,27 @@
+{
+  "canonical_name": "群众",
+  "aliases": [
+    "邻里街坊",
+    "好事的人",
+    "人群"
+  ],
+  "first_seq": 611,
+  "last_seq": 611,
+  "chapter_count": 1,
+  "chapters": [
+    611
+  ],
+  "role_distribution": {
+    "围观": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 611,
+      "state": "围观史母喊冤，但大多不敢靠近"
+    }
+  ],
+  "actions": [],
+  "id": "c709_群众"
+}

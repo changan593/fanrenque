@@ -1,0 +1,47 @@
+{
+  "canonical_name": "伙计们",
+  "aliases": [],
+  "first_seq": 528,
+  "last_seq": 675,
+  "chapter_count": 2,
+  "chapters": [
+    528,
+    675
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 675,
+      "quote": "那帮伙计竟然都被黑布蒙着眼睛，靠着腰间牵连的绳索一步步的磨蹭前进。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 528,
+      "state": "忙碌"
+    },
+    {
+      "seq": 675,
+      "state": "被蒙眼搬运，听从老人命令。"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 528,
+      "actions": [
+        "解灯笼",
+        "堵门"
+      ]
+    },
+    {
+      "seq": 675,
+      "actions": [
+        "蒙眼搬运木材和石料"
+      ]
+    }
+  ],
+  "id": "c310_伙计们"
+}

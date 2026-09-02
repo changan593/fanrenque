@@ -1014,12 +1014,10 @@
     },
     "coverage": {
       "raw_speech_count": 24,
-      "extracted_dialogue_count": 23,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9583,
-      "missed_samples": [
-        "若是妈妈还活着！一定不会允许那个女人进到家里来！你每天在妈妈灵位前就不会觉得羞耻吗！我要带着妈妈回姥爷家！才不会让她跟你在这里受这种委屈！"
-      ]
+      "extracted_dialogue_count": 24,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

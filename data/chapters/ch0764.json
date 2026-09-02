@@ -677,13 +677,10 @@
     },
     "coverage": {
       "raw_speech_count": 12,
-      "extracted_dialogue_count": 10,
-      "missed_count": 2,
-      "dialogue_coverage": 0.8333,
-      "missed_samples": [
-        "你们究竟想要做什么，以及做到什么程度。",
-        "那人是三教凡夫尉天齐。"
-      ]
+      "extracted_dialogue_count": 12,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

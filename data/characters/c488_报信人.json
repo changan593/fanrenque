@@ -1,0 +1,18 @@
+{
+  "canonical_name": "报信人",
+  "aliases": [],
+  "first_seq": 210,
+  "last_seq": 210,
+  "chapter_count": 1,
+  "chapters": [
+    210
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [],
+  "id": "c488_报信人"
+}

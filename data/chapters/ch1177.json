@@ -701,13 +701,10 @@
     },
     "coverage": {
       "raw_speech_count": 29,
-      "extracted_dialogue_count": 27,
-      "missed_count": 2,
-      "dialogue_coverage": 0.931,
-      "missed_samples": [
-        "哈哈哈。",
-        "那我玉屏观就谢过仙宫了。"
-      ]
+      "extracted_dialogue_count": 29,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

@@ -1,0 +1,30 @@
+{
+  "canonical_name": "养狗的人家",
+  "aliases": [],
+  "first_seq": 192,
+  "last_seq": 192,
+  "chapter_count": 1,
+  "chapters": [
+    192
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 192,
+      "state": "骂骂咧咧"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 192,
+      "actions": [
+        "出来骂狗，踢狗，查看院外"
+      ]
+    }
+  ],
+  "id": "c470_养狗的人家"
+}

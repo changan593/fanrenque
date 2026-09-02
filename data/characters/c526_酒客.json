@@ -1,0 +1,38 @@
+{
+  "canonical_name": "酒客",
+  "aliases": [
+    "酒客们"
+  ],
+  "first_seq": 282,
+  "last_seq": 282,
+  "chapter_count": 1,
+  "chapters": [
+    282
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 282,
+      "quote": "一位酒桌上的酒客看着那笔走龙蛇的墨迹"
+    }
+  ],
+  "states": [
+    {
+      "seq": 282,
+      "state": "议论儒术"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 282,
+      "actions": [
+        "吐槽儒术",
+        "与店小二对话"
+      ]
+    }
+  ],
+  "id": "c526_酒客"
+}

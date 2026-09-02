@@ -514,13 +514,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 21,
-      "extracted_dialogue_count": 19,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9524,
-      "missed_samples": [
-        "所以实际上这惩罚真正的重心不是让他们自己改正，而是罚给整个婆娑洲的人看的？"
-      ]
+      "raw_speech_count": 20,
+      "extracted_dialogue_count": 20,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

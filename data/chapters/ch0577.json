@@ -582,12 +582,10 @@
     },
     "coverage": {
       "raw_speech_count": 30,
-      "extracted_dialogue_count": 29,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9667,
-      "missed_samples": [
-        "这些菜大多都是婆娑洲本地的富户创造的，他们家中多有自称信佛却无法成为僧侣之人，为了能维持人设，故而创造了很多奇怪的搭配，最终慢慢流入民间。"
-      ]
+      "extracted_dialogue_count": 30,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

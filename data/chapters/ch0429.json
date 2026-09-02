@@ -643,14 +643,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 25,
-      "extracted_dialogue_count": 23,
-      "missed_count": 2,
-      "dialogue_coverage": 0.92,
-      "missed_samples": [
-        "那。。。",
-        "独夫"
-      ]
+      "raw_speech_count": 24,
+      "extracted_dialogue_count": 24,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

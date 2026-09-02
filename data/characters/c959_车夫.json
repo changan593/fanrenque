@@ -1,0 +1,31 @@
+{
+  "canonical_name": "车夫",
+  "aliases": [],
+  "first_seq": 1122,
+  "last_seq": 1122,
+  "chapter_count": 1,
+  "chapters": [
+    1122
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1122,
+      "state": "善谈，吹嘘镜湖茶叶"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1122,
+      "actions": [
+        "向女子推荐茶庄",
+        "解释大雾原因"
+      ]
+    }
+  ],
+  "id": "c959_车夫"
+}

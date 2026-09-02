@@ -1,0 +1,36 @@
+{
+  "canonical_name": "清泉圣人",
+  "aliases": [
+    "青冥魔尊",
+    "青冥尊者"
+  ],
+  "first_seq": 1115,
+  "last_seq": 1145,
+  "chapter_count": 3,
+  "chapters": [
+    1115,
+    1121,
+    1145
+  ],
+  "role_distribution": {
+    "提及": 3
+  },
+  "mentioned_only_count": 3,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1115,
+      "state": "被提及为镜湖下的存在"
+    },
+    {
+      "seq": 1121,
+      "state": "未明确"
+    },
+    {
+      "seq": 1145,
+      "state": "据说死在蝇魔尊肚子里"
+    }
+  ],
+  "actions": [],
+  "id": "c259_清泉圣人"
+}

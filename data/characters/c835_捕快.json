@@ -1,0 +1,41 @@
+{
+  "canonical_name": "捕快",
+  "aliases": [
+    "为首的捕快"
+  ],
+  "first_seq": 822,
+  "last_seq": 822,
+  "chapter_count": 1,
+  "chapters": [
+    822
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 822,
+      "quote": "穿着街头捕快衣服的壮汉"
+    },
+    {
+      "seq": 822,
+      "quote": "面容无比的刚硬，身上还有着淡淡的血腥味，衣角也有血渍"
+    }
+  ],
+  "states": [
+    {
+      "seq": 822,
+      "state": "刚和人起过冲突"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 822,
+      "actions": [
+        "搜查林佳人家，警告她"
+      ]
+    }
+  ],
+  "id": "c835_捕快"
+}

@@ -1,0 +1,23 @@
+{
+  "canonical_name": "小胖师父",
+  "aliases": [],
+  "first_seq": 87,
+  "last_seq": 87,
+  "chapter_count": 1,
+  "chapters": [
+    87
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 87,
+      "state": "与玉女峰峰主关系好，可能出事"
+    }
+  ],
+  "actions": [],
+  "id": "c396_小胖师父"
+}

@@ -1,0 +1,32 @@
+{
+  "canonical_name": "白日笑面儒生",
+  "aliases": [
+    "儒生"
+  ],
+  "first_seq": 387,
+  "last_seq": 387,
+  "chapter_count": 1,
+  "chapters": [
+    387
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 387,
+      "state": "代表清水书院，与玄甲军将领对话"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 387,
+      "actions": [
+        "建议将领召集全军围困，被将领婉拒"
+      ]
+    }
+  ],
+  "id": "c578_白日笑面儒生"
+}

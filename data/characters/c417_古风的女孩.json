@@ -1,0 +1,30 @@
+{
+  "canonical_name": "古风的女孩",
+  "aliases": [],
+  "first_seq": 110,
+  "last_seq": 110,
+  "chapter_count": 1,
+  "chapters": [
+    110
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 110,
+      "state": "满脸忧色"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 110,
+      "actions": [
+        "坐在竹椅上沉默"
+      ]
+    }
+  ],
+  "id": "c417_古风的女孩"
+}

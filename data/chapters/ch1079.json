@@ -776,14 +776,10 @@
     },
     "coverage": {
       "raw_speech_count": 40,
-      "extracted_dialogue_count": 37,
-      "missed_count": 3,
-      "dialogue_coverage": 0.925,
-      "missed_samples": [
-        "你与我说，他深入婆娑洲，为了一个饶儿班的孩子，我是信的。",
-        "天下修行，不存在无路可走，总有方法能处理。",
-        "他的命就像是被人横着敲断了一样，强迫着跟我同样走了一步‘桃花崖’。"
-      ]
+      "extracted_dialogue_count": 40,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

@@ -641,8 +641,8 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 28,
-      "extracted_dialogue_count": 27,
+      "raw_speech_count": 27,
+      "extracted_dialogue_count": 28,
       "missed_count": 0,
       "dialogue_coverage": 1.0,
       "missed_samples": []

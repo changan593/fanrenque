@@ -494,13 +494,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 17,
+      "raw_speech_count": 16,
       "extracted_dialogue_count": 16,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9412,
-      "missed_samples": [
-        "父母"
-      ]
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

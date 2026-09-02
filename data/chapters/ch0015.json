@@ -676,12 +676,10 @@
     },
     "coverage": {
       "raw_speech_count": 24,
-      "extracted_dialogue_count": 24,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9583,
-      "missed_samples": [
-        "：师父让你去，应该是另有原因。"
-      ]
+      "extracted_dialogue_count": 25,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

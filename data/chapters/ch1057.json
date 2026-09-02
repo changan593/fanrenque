@@ -741,14 +741,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 44,
-      "extracted_dialogue_count": 42,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9545,
-      "missed_samples": [
-        "如今想来，其实各个方面，洪州都有些不对劲，只是过往想着那毕竟是相对封闭的地方，而且有着两家十四处，可能就是那么奇怪。",
-        "曲径通幽处"
-      ]
+      "raw_speech_count": 43,
+      "extracted_dialogue_count": 43,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

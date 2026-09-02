@@ -1,0 +1,38 @@
+{
+  "canonical_name": "妖猴",
+  "aliases": [
+    "猿猴",
+    "红尾猿猴"
+  ],
+  "first_seq": 823,
+  "last_seq": 823,
+  "chapter_count": 1,
+  "chapters": [
+    823
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 823,
+      "quote": "那是一只比人还大的猿猴，毛色枯黄，但尾巴却是红色的"
+    }
+  ],
+  "states": [
+    {
+      "seq": 823,
+      "state": "筑基或炼神境，受伤，强弩之末"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 823,
+      "actions": [
+        "袭击于林俊，喷火，被林佳人射中，最终被斩杀"
+      ]
+    }
+  ],
+  "id": "c836_妖猴"
+}

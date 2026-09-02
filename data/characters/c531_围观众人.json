@@ -1,0 +1,25 @@
+{
+  "canonical_name": "围观众人",
+  "aliases": [
+    "旁人"
+  ],
+  "first_seq": 287,
+  "last_seq": 287,
+  "chapter_count": 1,
+  "chapters": [
+    287
+  ],
+  "role_distribution": {
+    "背景": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 287,
+      "state": "震惊，交头接耳"
+    }
+  ],
+  "actions": [],
+  "id": "c531_围观众人"
+}

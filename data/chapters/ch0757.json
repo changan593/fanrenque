@@ -434,12 +434,10 @@
     },
     "coverage": {
       "raw_speech_count": 9,
-      "extracted_dialogue_count": 8,
-      "missed_count": 1,
-      "dialogue_coverage": 0.8889,
-      "missed_samples": [
-        "天齐小时候啊，也是这么坐在那吃地瓜的，然后看着我拿着刀削木头，一看就是一整天，然后就开始自己动手做，刚开始做些小玩意，小人、小狗什么的，后来忽然就能做大件了，他第一套木桌子现在还摆在灶台旁边呢！"
-      ]
+      "extracted_dialogue_count": 9,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

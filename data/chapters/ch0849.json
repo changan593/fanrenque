@@ -808,14 +808,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 44,
-      "extracted_dialogue_count": 42,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9545,
-      "missed_samples": [
-        "如此父子之情，终是让人羡羡。",
-        "荀欢左乐"
-      ]
+      "raw_speech_count": 43,
+      "extracted_dialogue_count": 43,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

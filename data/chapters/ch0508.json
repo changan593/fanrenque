@@ -532,13 +532,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 12,
+      "raw_speech_count": 11,
       "extracted_dialogue_count": 11,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9167,
-      "missed_samples": [
-        "坏话"
-      ]
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

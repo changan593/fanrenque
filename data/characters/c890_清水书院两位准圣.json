@@ -1,0 +1,35 @@
+{
+  "canonical_name": "清水书院两位准圣",
+  "aliases": [],
+  "first_seq": 924,
+  "last_seq": 924,
+  "chapter_count": 1,
+  "chapters": [
+    924
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 924,
+      "quote": "后面那两位虽然年老但各自的学问都是九洲儒门当中的显学"
+    }
+  ],
+  "states": [
+    {
+      "seq": 924,
+      "state": "年老，皱眉不语"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 924,
+      "actions": [
+        "随程百尺入场，沉默"
+      ]
+    }
+  ],
+  "id": "c890_清水书院两位准圣"
+}

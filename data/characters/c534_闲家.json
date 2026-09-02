@@ -1,0 +1,30 @@
+{
+  "canonical_name": "闲家",
+  "aliases": [],
+  "first_seq": 290,
+  "last_seq": 290,
+  "chapter_count": 1,
+  "chapters": [
+    290
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 290,
+      "state": "弃牌"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 290,
+      "actions": [
+        "弃牌"
+      ]
+    }
+  ],
+  "id": "c534_闲家"
+}

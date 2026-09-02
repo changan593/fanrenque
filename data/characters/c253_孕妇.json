@@ -1,0 +1,66 @@
+{
+  "canonical_name": "孕妇",
+  "aliases": [
+    "女人",
+    "大肚子的女人",
+    "桌子上的女人"
+  ],
+  "first_seq": 864,
+  "last_seq": 928,
+  "chapter_count": 3,
+  "chapters": [
+    864,
+    927,
+    928
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 864,
+      "quote": "女人正肤色发白，满脸惊慌"
+    },
+    {
+      "seq": 864,
+      "quote": "她瘦弱的脸上浮现出痛苦的神色"
+    }
+  ],
+  "states": [
+    {
+      "seq": 864,
+      "state": "体虚，胎儿营养匮乏，生产后睡着"
+    },
+    {
+      "seq": 927,
+      "state": "痛苦嘶吼，产子后昏迷"
+    },
+    {
+      "seq": 928,
+      "state": "昏迷后醒来，精神抖擞"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 864,
+      "actions": [
+        "临产，被还俗接生，生下孩子后睡着"
+      ]
+    },
+    {
+      "seq": 927,
+      "actions": [
+        "哭嚎，掷银瓜子",
+        "被喂药，产子"
+      ]
+    },
+    {
+      "seq": 928,
+      "actions": [
+        "醒来后询问孩子，坚称已生产"
+      ]
+    }
+  ],
+  "id": "c253_孕妇"
+}

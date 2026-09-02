@@ -1,0 +1,50 @@
+{
+  "canonical_name": "锦袍老人",
+  "aliases": [
+    "南洲行商的代表",
+    "锦袍的老天仙"
+  ],
+  "first_seq": 449,
+  "last_seq": 454,
+  "chapter_count": 2,
+  "chapters": [
+    449,
+    454
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 449,
+      "quote": "一位锦袍老人躬身站在房外等待，他已经很老了，但脸上的皱纹并没有掩盖他身上的贵气，那是常年富贵才能养出的东西。"
+    },
+    {
+      "seq": 454,
+      "quote": "穿着锦袍的老人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 449,
+      "state": "南洲最大行商所有者，天仙境修为。"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 449,
+      "actions": [
+        "躬身等待，伸手肘让姚望舒搭着，陪护她走下台阶"
+      ]
+    },
+    {
+      "seq": 454,
+      "actions": [
+        "指出魔功扭曲人性",
+        "解释铜炉百炼的局限性"
+      ]
+    }
+  ],
+  "id": "c303_锦袍老人"
+}

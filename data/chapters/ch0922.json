@@ -379,12 +379,10 @@
     },
     "coverage": {
       "raw_speech_count": 9,
-      "extracted_dialogue_count": 9,
-      "missed_count": 1,
-      "dialogue_coverage": 0.8889,
-      "missed_samples": [
-        "妈的！老子赶了一天一夜的路，结果我刚到就给我来这个？！！"
-      ]
+      "extracted_dialogue_count": 10,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

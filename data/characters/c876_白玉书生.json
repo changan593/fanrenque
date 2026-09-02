@@ -1,0 +1,23 @@
+{
+  "canonical_name": "白玉书生",
+  "aliases": [],
+  "first_seq": 878,
+  "last_seq": 878,
+  "chapter_count": 1,
+  "chapters": [
+    878
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 878,
+      "state": "被提及，作为对比。"
+    }
+  ],
+  "actions": [],
+  "id": "c876_白玉书生"
+}

@@ -560,12 +560,10 @@
     },
     "coverage": {
       "raw_speech_count": 22,
-      "extracted_dialogue_count": 20,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9545,
-      "missed_samples": [
-        "申时二刻左右，距离天黑还有半个时辰多。"
-      ]
+      "extracted_dialogue_count": 22,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

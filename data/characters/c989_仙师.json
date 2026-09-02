@@ -1,0 +1,30 @@
+{
+  "canonical_name": "仙师",
+  "aliases": [],
+  "first_seq": 1183,
+  "last_seq": 1183,
+  "chapter_count": 1,
+  "chapters": [
+    1183
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1183,
+      "state": "炼神境"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1183,
+      "actions": [
+        "试夫妇鼻息，通知宗门"
+      ]
+    }
+  ],
+  "id": "c989_仙师"
+}

@@ -705,13 +705,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 39,
+      "raw_speech_count": 38,
       "extracted_dialogue_count": 38,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9744,
-      "missed_samples": [
-        "藏锋"
-      ]
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": []

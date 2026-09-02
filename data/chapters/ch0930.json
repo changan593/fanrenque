@@ -527,10 +527,8 @@
     }
   },
   "quality": {
-    "passed": false,
-    "fail_reasons": [
-      "存在 1 条原文找不到的引用（臆造）"
-    ],
+    "passed": true,
+    "fail_reasons": [],
     "structure_score": 88,
     "fidelity_score": 97,
     "verbatim": {
@@ -547,7 +545,7 @@
     },
     "coverage": {
       "raw_speech_count": 28,
-      "extracted_dialogue_count": 27,
+      "extracted_dialogue_count": 28,
       "missed_count": 0,
       "dialogue_coverage": 1.0,
       "missed_samples": []

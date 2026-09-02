@@ -603,12 +603,10 @@
     },
     "coverage": {
       "raw_speech_count": 25,
-      "extracted_dialogue_count": 24,
-      "missed_count": 1,
-      "dialogue_coverage": 0.96,
-      "missed_samples": [
-        "而且天命阁也来人了，别人可能不认识，但天命阁。"
-      ]
+      "extracted_dialogue_count": 25,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

@@ -538,12 +538,10 @@
     },
     "coverage": {
       "raw_speech_count": 16,
-      "extracted_dialogue_count": 15,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9375,
-      "missed_samples": [
-        "天下祸根何其恨，最怕分家找外人！刀加颈火攻心，哪怕永世不翻身，我也要祖业有存根！"
-      ]
+      "extracted_dialogue_count": 16,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

@@ -1,0 +1,35 @@
+{
+  "canonical_name": "斗笠壮汉",
+  "aliases": [],
+  "first_seq": 40,
+  "last_seq": 40,
+  "chapter_count": 1,
+  "chapters": [
+    40
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 40,
+      "quote": "几人中一位带着斗笠的壮汉怒喝道。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 40,
+      "state": "炼神境魔道高手，愤怒"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 40,
+      "actions": [
+        "怒喝，拔刀冲向祠堂。"
+      ]
+    }
+  ],
+  "id": "c370_斗笠壮汉"
+}

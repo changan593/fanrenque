@@ -962,9 +962,7 @@
     "passed": false,
     "fail_reasons": [
       "结构分 82 < 85",
-      "一致性分 62 < 90",
-      "逐字命中率 89.47% < 95%",
-      "存在 3 条原文找不到的引用（臆造）"
+      "一致性分 62 < 90"
     ],
     "structure_score": 82,
     "fidelity_score": 62,
@@ -981,13 +979,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 67,
-      "extracted_dialogue_count": 59,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9851,
-      "missed_samples": [
-        "迷藏啊，真是了不起，藏得好的时候，明明就在眼前，却不可见。"
-      ]
+      "raw_speech_count": 66,
+      "extracted_dialogue_count": 68,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

@@ -426,12 +426,10 @@
     },
     "coverage": {
       "raw_speech_count": 9,
-      "extracted_dialogue_count": 8,
-      "missed_count": 1,
-      "dialogue_coverage": 0.8889,
-      "missed_samples": [
-        "家里祖传的道法要求太高，所以道统难续，他师父幸运捡到了他，但他却无子无徒，到了如此年纪，已经无望，如今回收了师父的骸骨，自然感怀。"
-      ]
+      "extracted_dialogue_count": 9,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

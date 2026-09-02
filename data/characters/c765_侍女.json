@@ -1,0 +1,30 @@
+{
+  "canonical_name": "侍女",
+  "aliases": [],
+  "first_seq": 694,
+  "last_seq": 694,
+  "chapter_count": 1,
+  "chapters": [
+    694
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 694,
+      "state": "盯了尉天齐小半天"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 694,
+      "actions": [
+        "盯尉天齐"
+      ]
+    }
+  ],
+  "id": "c765_侍女"
+}

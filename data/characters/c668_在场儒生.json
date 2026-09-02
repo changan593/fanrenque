@@ -1,0 +1,25 @@
+{
+  "canonical_name": "在场儒生",
+  "aliases": [],
+  "first_seq": 537,
+  "last_seq": 537,
+  "chapter_count": 1,
+  "chapters": [
+    537
+  ],
+  "role_distribution": {
+    "群像": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 537,
+      "actions": [
+        "起身跟着拜礼，齐呼大义"
+      ]
+    }
+  ],
+  "id": "c668_在场儒生"
+}

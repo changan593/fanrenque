@@ -1,0 +1,32 @@
+{
+  "canonical_name": "周寨主夫人",
+  "aliases": [
+    "家妻"
+  ],
+  "first_seq": 429,
+  "last_seq": 429,
+  "chapter_count": 1,
+  "chapters": [
+    429
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 429,
+      "state": "愿同行照料择荫"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 429,
+      "actions": [
+        "与寨主一同行礼，提出同行"
+      ]
+    }
+  ],
+  "id": "c598_周寨主夫人"
+}

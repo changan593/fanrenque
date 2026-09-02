@@ -549,13 +549,10 @@
     },
     "coverage": {
       "raw_speech_count": 21,
-      "extracted_dialogue_count": 19,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9048,
-      "missed_samples": [
-        "望舒宫。。。",
-        "杀！！"
-      ]
+      "extracted_dialogue_count": 21,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

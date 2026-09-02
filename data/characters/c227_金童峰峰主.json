@@ -1,0 +1,60 @@
+{
+  "canonical_name": "金童峰峰主",
+  "aliases": [
+    "帅气的中年大叔"
+  ],
+  "first_seq": 82,
+  "last_seq": 179,
+  "chapter_count": 3,
+  "chapters": [
+    82,
+    175,
+    179
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 82,
+      "quote": "剑眉星目的中年男人"
+    }
+  ],
+  "states": [
+    {
+      "seq": 82,
+      "state": "与玉女峰峰主争吵，后参与赌斗"
+    },
+    {
+      "seq": 175,
+      "state": "背负双手，低语"
+    },
+    {
+      "seq": 179,
+      "state": "表情淡然，代表新派质问"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 82,
+      "actions": [
+        "与玉女峰峰主争吵",
+        "接受赌斗，拿出十个名额"
+      ]
+    },
+    {
+      "seq": 175,
+      "actions": [
+        "带领弟子祭拜祖师，低语表达对天门山的忠诚"
+      ]
+    },
+    {
+      "seq": 179,
+      "actions": [
+        "在玉皇顶主殿开口质问灵脉私物"
+      ]
+    }
+  ],
+  "id": "c227_金童峰峰主"
+}

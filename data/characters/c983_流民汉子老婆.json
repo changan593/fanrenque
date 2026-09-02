@@ -1,0 +1,30 @@
+{
+  "canonical_name": "流民汉子老婆",
+  "aliases": [
+    "婆娘"
+  ],
+  "first_seq": 1178,
+  "last_seq": 1178,
+  "chapter_count": 1,
+  "chapters": [
+    1178
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 1178,
+      "quote": "大着肚子"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1178,
+      "state": "羊水破了，即将生产"
+    }
+  ],
+  "actions": [],
+  "id": "c983_流民汉子老婆"
+}

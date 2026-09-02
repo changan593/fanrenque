@@ -1,0 +1,37 @@
+{
+  "canonical_name": "史凡仁的同窗",
+  "aliases": [
+    "几位身穿儒袍的青年男女",
+    "儒生",
+    "少年男女",
+    "身后那群儒生"
+  ],
+  "first_seq": 611,
+  "last_seq": 611,
+  "chapter_count": 1,
+  "chapters": [
+    611
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 611,
+      "state": "年轻，无法拒绝老人要求，跟随并暗中帮助"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 611,
+      "actions": [
+        "对史老太太行礼并答应帮忙",
+        "跟随史母，用清风咒暗中托举",
+        "在污衙前掏出笔准备记录"
+      ]
+    }
+  ],
+  "id": "c708_史凡仁的同窗"
+}

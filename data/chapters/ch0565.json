@@ -593,7 +593,7 @@
     },
     "coverage": {
       "raw_speech_count": 15,
-      "extracted_dialogue_count": 14,
+      "extracted_dialogue_count": 15,
       "missed_count": 0,
       "dialogue_coverage": 1.0,
       "missed_samples": []

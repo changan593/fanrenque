@@ -666,12 +666,10 @@
     },
     "coverage": {
       "raw_speech_count": 37,
-      "extracted_dialogue_count": 36,
-      "missed_count": 1,
-      "dialogue_coverage": 0.973,
-      "missed_samples": [
-        "对了，我还有一事要问你来的。"
-      ]
+      "extracted_dialogue_count": 37,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

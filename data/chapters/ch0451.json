@@ -468,12 +468,10 @@
     },
     "coverage": {
       "raw_speech_count": 14,
-      "extracted_dialogue_count": 13,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9286,
-      "missed_samples": [
-        "潇洒桐庐郡，乌龙山霭中。使君无一事，心共白玉空。"
-      ]
+      "extracted_dialogue_count": 14,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

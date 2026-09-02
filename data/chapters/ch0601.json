@@ -164,7 +164,7 @@
       {
         "name": "悬镜司白衣人",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -484,12 +484,10 @@
     },
     "coverage": {
       "raw_speech_count": 13,
-      "extracted_dialogue_count": 12,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "堂堂副司长还要做这种活儿。"
-      ]
+      "extracted_dialogue_count": 13,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

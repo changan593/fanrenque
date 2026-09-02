@@ -560,14 +560,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 8,
-      "extracted_dialogue_count": 6,
-      "missed_count": 2,
-      "dialogue_coverage": 0.75,
-      "missed_samples": [
-        "伟迹",
-        "好吵。"
-      ]
+      "raw_speech_count": 7,
+      "extracted_dialogue_count": 7,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

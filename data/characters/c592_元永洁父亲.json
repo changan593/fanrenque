@@ -1,0 +1,30 @@
+{
+  "canonical_name": "元永洁父亲",
+  "aliases": [],
+  "first_seq": 424,
+  "last_seq": 424,
+  "chapter_count": 1,
+  "chapters": [
+    424
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 424,
+      "state": "率领铁骑筹粮押送"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 424,
+      "actions": [
+        "率领铁骑四处筹粮押送"
+      ]
+    }
+  ],
+  "id": "c592_元永洁父亲"
+}

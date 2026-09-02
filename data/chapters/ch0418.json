@@ -717,13 +717,10 @@
     },
     "coverage": {
       "raw_speech_count": 33,
-      "extracted_dialogue_count": 31,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9394,
-      "missed_samples": [
-        "那尉天齐这边。。。",
-        "尉公子上去吧，会有其他宫人领路。"
-      ]
+      "extracted_dialogue_count": 33,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

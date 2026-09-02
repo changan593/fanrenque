@@ -680,16 +680,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 25,
-      "extracted_dialogue_count": 21,
-      "missed_count": 4,
-      "dialogue_coverage": 0.84,
-      "missed_samples": [
-        "名扬四海风云戏，业立千秋日月追",
-        "夸奖",
-        "看‘真君’，要先嚼明白三庆班的轴子，吃透了四喜班的曲子，养大个春台班的孩子，见识过和安班的把子，最后，来到永和楼，去请饶儿班睁下眼子。",
-        "是二皇子还是三皇子？"
-      ]
+      "raw_speech_count": 24,
+      "extracted_dialogue_count": 24,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

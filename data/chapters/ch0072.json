@@ -633,13 +633,10 @@
     },
     "coverage": {
       "raw_speech_count": 23,
-      "extracted_dialogue_count": 21,
-      "missed_count": 2,
-      "dialogue_coverage": 0.913,
-      "missed_samples": [
-        "倒是蛮便捷的。",
-        "金童峰在主峰只是第六位，又不是第一位，在我们玉屏山说话并不管用。"
-      ]
+      "extracted_dialogue_count": 23,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

@@ -505,8 +505,7 @@
   "quality": {
     "passed": false,
     "fail_reasons": [
-      "一致性分 62 < 90",
-      "存在 1 条原文找不到的引用（臆造）"
+      "一致性分 62 < 90"
     ],
     "structure_score": 88,
     "fidelity_score": 62,
@@ -523,20 +522,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 16,
-      "extracted_dialogue_count": 7,
-      "missed_count": 8,
-      "dialogue_coverage": 0.5,
-      "missed_samples": [
-        "凡人",
-        "藏起来了？还是来错方位了？",
-        "高人",
-        "六指大神",
-        "仙人脑",
-        "天残手",
-        "最近府里不太平，护院更要加强防范，抓到可疑之人不必顾虑手段，审的出来就审，审不出来就斩了。",
-        "是！"
-      ]
+      "raw_speech_count": 11,
+      "extracted_dialogue_count": 11,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

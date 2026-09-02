@@ -691,13 +691,10 @@
     },
     "coverage": {
       "raw_speech_count": 31,
-      "extracted_dialogue_count": 29,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9355,
-      "missed_samples": [
-        "这里是外殿，只有每年开山祭拜时才会请人打扫清理一番，平常只是每月固定擦拭一下神像罢了，后殿才是玉屏观的修行之所。",
-        "难道就坐在这观里，每天指望玉女峰帮忙吗？"
-      ]
+      "extracted_dialogue_count": 31,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [

@@ -1,0 +1,46 @@
+{
+  "canonical_name": "二君子",
+  "aliases": [
+    "儒生",
+    "另一位儒生"
+  ],
+  "first_seq": 262,
+  "last_seq": 263,
+  "chapter_count": 2,
+  "chapters": [
+    262,
+    263
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 262,
+      "state": "替友人压阵，败后告辞"
+    },
+    {
+      "seq": 263,
+      "state": "一人肩膀凹陷，重伤"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 262,
+      "actions": [
+        "搀扶小剑疯",
+        "串供"
+      ]
+    },
+    {
+      "seq": 263,
+      "actions": [
+        "哀嚎喝骂",
+        "提议突围"
+      ]
+    }
+  ],
+  "id": "c291_二君子"
+}

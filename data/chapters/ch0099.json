@@ -903,7 +903,7 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 39,
+      "raw_speech_count": 38,
       "extracted_dialogue_count": 39,
       "missed_count": 0,
       "dialogue_coverage": 1.0,

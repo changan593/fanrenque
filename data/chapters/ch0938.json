@@ -213,7 +213,7 @@
       {
         "name": "道士",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -777,14 +777,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 26,
-      "extracted_dialogue_count": 24,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "你生为凤凰，久居天上，不知亦不懂世间亲情，亲情不是必须爱着彼此，也不是要如何恨着彼此！",
-        "呼——哈——"
-      ]
+      "raw_speech_count": 25,
+      "extracted_dialogue_count": 25,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

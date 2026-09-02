@@ -589,12 +589,10 @@
     },
     "coverage": {
       "raw_speech_count": 29,
-      "extracted_dialogue_count": 28,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9655,
-      "missed_samples": [
-        "tt-title"
-      ]
+      "extracted_dialogue_count": 29,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [

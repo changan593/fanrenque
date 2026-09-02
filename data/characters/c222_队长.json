@@ -1,0 +1,63 @@
+{
+  "canonical_name": "队长",
+  "aliases": [
+    "将领",
+    "小队长"
+  ],
+  "first_seq": 26,
+  "last_seq": 819,
+  "chapter_count": 3,
+  "chapters": [
+    26,
+    818,
+    819
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 26,
+      "quote": "雨水沿着那刀削般的脸颊流下"
+    }
+  ],
+  "states": [
+    {
+      "seq": 26,
+      "state": "巡卒队长，有怨气"
+    },
+    {
+      "seq": 818,
+      "state": "带领第三队，持长刀，满身暗红色血液"
+    },
+    {
+      "seq": 819,
+      "state": "紧张，惊讶"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 26,
+      "actions": [
+        "与老赵巡视，发现尸体，骂官靴"
+      ]
+    },
+    {
+      "seq": 818,
+      "actions": [
+        "拦住史老二",
+        "同意夹击蝎子精",
+        "问史老二与哪位兵爷相熟"
+      ]
+    },
+    {
+      "seq": 819,
+      "actions": [
+        "与史二郎配合猎蝎",
+        "见唐真平沙丘惊讶"
+      ]
+    }
+  ],
+  "id": "c222_队长"
+}

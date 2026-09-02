@@ -567,14 +567,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 25,
-      "extracted_dialogue_count": 23,
-      "missed_count": 2,
-      "dialogue_coverage": 0.92,
-      "missed_samples": [
-        "杨柳局",
-        "登天太难了，而且也不安全，我师父不就是明证吗？"
-      ]
+      "raw_speech_count": 24,
+      "extracted_dialogue_count": 24,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

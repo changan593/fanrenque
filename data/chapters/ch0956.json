@@ -202,7 +202,7 @@
       {
         "name": "东临太守",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -212,7 +212,7 @@
       {
         "name": "世家",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",
@@ -222,7 +222,7 @@
       {
         "name": "佛宗",
         "aliases": [],
-        "role_in_chapter": "出场",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "",

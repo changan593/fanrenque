@@ -1,0 +1,43 @@
+{
+  "canonical_name": "猴群",
+  "aliases": [
+    "妖猴",
+    "群猴"
+  ],
+  "first_seq": 813,
+  "last_seq": 813,
+  "chapter_count": 1,
+  "chapters": [
+    813
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 813,
+      "quote": "它们通体棕黑色，毛发被雨水打湿耷拉在身上，所以看影子才会那么像人。"
+    },
+    {
+      "seq": 813,
+      "quote": "不过最惹人注目的则是它们的尾巴，粗壮的尾巴从尖部开始向下会有一截明显的朱红色。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 813,
+      "state": "遭弩箭伏击，死伤惨重"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 813,
+      "actions": [
+        "随猴王潜入坊市",
+        "遭伏击后死伤"
+      ]
+    }
+  ],
+  "id": "c831_猴群"
+}

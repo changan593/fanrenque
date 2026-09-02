@@ -740,14 +740,10 @@
     },
     "coverage": {
       "raw_speech_count": 39,
-      "extracted_dialogue_count": 36,
-      "missed_count": 3,
-      "dialogue_coverage": 0.9231,
-      "missed_samples": [
-        "不论‘七尾变’究竟为何种术法，都有着一个很重要的问题没有解决。",
-        "不过并非不可能。",
-        "因为除了术法，还有人心。"
-      ]
+      "extracted_dialogue_count": 39,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

@@ -1025,13 +1025,10 @@
     },
     "coverage": {
       "raw_speech_count": 61,
-      "extracted_dialogue_count": 59,
-      "missed_count": 2,
-      "dialogue_coverage": 0.9672,
-      "missed_samples": [
-        "毕竟这个消息天下只有两个人需要。",
-        "真君变得小气了些。"
-      ]
+      "extracted_dialogue_count": 61,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 0,
     "context_chapters_used": [],

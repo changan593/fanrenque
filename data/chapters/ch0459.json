@@ -554,15 +554,11 @@
       "problems": []
     },
     "coverage": {
-      "raw_speech_count": 16,
-      "extracted_dialogue_count": 13,
-      "missed_count": 3,
-      "dialogue_coverage": 0.8125,
-      "missed_samples": [
-        "桐庐观葬于此",
-        "欲改修行路，自寻高人控鼎，于悬崖而跃，莫要回头，生则拜桐庐老人为道途祖师，死可让亲友取己之遗骸，莫作他想，鼎不可动。——望舒宫立，违者杀之。",
-        "大藏经"
-      ]
+      "raw_speech_count": 14,
+      "extracted_dialogue_count": 14,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

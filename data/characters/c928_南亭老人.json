@@ -1,0 +1,25 @@
+{
+  "canonical_name": "南亭老人",
+  "aliases": [
+    "那位老人"
+  ],
+  "first_seq": 1042,
+  "last_seq": 1042,
+  "chapter_count": 1,
+  "chapters": [
+    1042
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 1042,
+      "state": "年老但通明"
+    }
+  ],
+  "actions": [],
+  "id": "c928_南亭老人"
+}

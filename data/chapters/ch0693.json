@@ -497,12 +497,10 @@
     },
     "coverage": {
       "raw_speech_count": 22,
-      "extracted_dialogue_count": 21,
-      "missed_count": 1,
-      "dialogue_coverage": 0.9545,
-      "missed_samples": [
-        "儒门做学问，清水最世故、龙场最自由、茅草最死板、棋盘最可爱、白鹿最正常。"
-      ]
+      "extracted_dialogue_count": 22,
+      "missed_count": 0,
+      "dialogue_coverage": 1.0,
+      "missed_samples": []
     },
     "repair_rounds": 1,
     "context_chapters_used": [],

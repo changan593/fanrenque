@@ -1,0 +1,25 @@
+{
+  "canonical_name": "伪佛李苦",
+  "aliases": [
+    "伪佛"
+  ],
+  "first_seq": 50,
+  "last_seq": 50,
+  "chapter_count": 1,
+  "chapters": [
+    50
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 50,
+      "state": "活着并在城中"
+    }
+  ],
+  "actions": [],
+  "id": "c383_伪佛李苦"
+}

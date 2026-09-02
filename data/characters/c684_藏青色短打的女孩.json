@@ -1,0 +1,38 @@
+{
+  "canonical_name": "藏青色短打的女孩",
+  "aliases": [
+    "葵"
+  ],
+  "first_seq": 587,
+  "last_seq": 587,
+  "chapter_count": 1,
+  "chapters": [
+    587
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 587,
+      "quote": "那是个穿着藏青色的短打，眉眼锋利，但脸颊微圆的可爱姑娘。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 587,
+      "state": "跋扈，抱怨皇宫梦魇"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 587,
+      "actions": [
+        "闯入戏楼，要求入座",
+        "点席面，抱怨皇宫梦魇"
+      ]
+    }
+  ],
+  "id": "c684_藏青色短打的女孩"
+}
