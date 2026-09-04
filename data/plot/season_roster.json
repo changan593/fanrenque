@@ -492,7 +492,7 @@
           "first_episode": "S01E24",
           "debuts_this_season": true,
           "tier": "次要",
-          "has_card": false,
+          "has_card": true,
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": false
@@ -6785,7 +6785,7 @@
           "first_episode": "S02E07",
           "debuts_this_season": false,
           "tier": "主要",
-          "has_card": false,
+          "has_card": true,
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": false
@@ -13283,7 +13283,7 @@
           "first_episode": "S03E01",
           "debuts_this_season": false,
           "tier": "次要",
-          "has_card": false,
+          "has_card": true,
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": false
@@ -20849,7 +20849,7 @@
           "first_episode": "S04E18",
           "debuts_this_season": false,
           "tier": "龙套",
-          "has_card": false,
+          "has_card": true,
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": false
@@ -33781,7 +33781,7 @@
           "first_episode": "S06E46",
           "debuts_this_season": false,
           "tier": "龙套",
-          "has_card": false,
+          "has_card": true,
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": false

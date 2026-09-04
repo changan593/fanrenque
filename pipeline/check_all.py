@@ -7,13 +7,14 @@
     python pipeline/check_all.py            # 全部
     python pipeline/check_all.py --quick    # 跳过 47 集的 s14（最慢的一段）
 
-五道闸门：
+六道闸门：
 
     selftest      离线自测，190+ 条断言，管道逻辑
     s3            1200 章体检：臆造 = 0、逐字率、台词覆盖、审查分是否过合格线（T3 只提示不拦）
     s14 × 47      每集旁白承载账：关键旁白全部上账、现身 ≤ 6 次……
     s15           画风金标准：无载体冲突、渲染锁与同源锁逐字一致
     s17           原文引用：每处 【原】「…」 都逐字落在所标段号
+    s18           出图台账：幕文档里的每一镜都有行，通过的行有版本，双层镜头两层齐
 
 任一失败退出码 1，并把失败项列在最后。每道闸门各自的输出在上面，翻回去看细节。
 """
@@ -55,6 +56,7 @@ def main() -> int:
     results.append(run("s3 章节体检", [PY, str(PIPE / "s3_validate_chapters.py")], quiet=False))
     results.append(run("s15 画风闸门", [PY, str(PIPE / "s15_style_guard.py")], quiet=False))
     results.append(run("s17 引用闸门", [PY, str(PIPE / "s17_citation_check.py")], quiet=False))
+    results.append(run("s18 出图台账", [PY, str(PIPE / "s18_render_ledger.py")], quiet=False))
 
     if not args.quick:
         eps = read_json(paths.EPISODES_JSON)["episodes"]

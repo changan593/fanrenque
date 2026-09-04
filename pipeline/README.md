@@ -7,7 +7,7 @@
 
 | 脚本 | 干什么 | 产物 | 花钱 |
 | --- | --- | --- | --- |
-| `check_all.py` | **一键跑全部闸门**：selftest / s3 / s15 / s17 / s14 × 每集 | 终端报告，退出码 | |
+| `check_all.py` | **一键跑全部闸门**：selftest / s3 / s15 / s17 / s18 / s14 × 每集 | 终端报告，退出码 | |
 | `s0_probe_text.py` | 纯原文结构探查（不依赖任何分析结果） | `data/plot/text_probe.json` | |
 | `s1_normalize_novel.py` | 原文 txt → 标准化 | `source/novel.json` | |
 | `s2_analyze_chapters.py` | **逐章分析**，每章 3 次调用 + 可选修订轮 | `data/chapters/chNNNN.json` | 💰 |
@@ -27,6 +27,7 @@
 | `s15_style_guard.py` | **画风金标准的闸门**：提示词里有没有与国风三维冲突的载体声明 | 检查报告 | |
 | `s16_shot_pack.py` | **按幕装配出图包**：剧本＋幕提示词＋角色卡＋场景卡＋风格段 | 一份可直接开工的 md | |
 | `s17_citation_check.py` | **原文引用的闸门**：每处 `【原】「…」` 的段号拿去和原文逐字对 | 检查报告，可自动修 | |
+| `s18_render_ledger.py` | **出图台账的闸门**：漏镜、串号、通过却没填版本、双层镜头只记一层 | 检查报告；`--scaffold` 生成空台账 | |
 | `selftest.py` | 离线自测，196 条断言，用假模型跑通全流程 | | |
 | `config.py` | 所有可调参数的唯一来源（读 `.env`） | | |
 
@@ -283,7 +284,7 @@ LLM_THINKING=1 python pipeline/s2_analyze_chapters.py --phase review --force
 ## check_all —— 一键跑全部闸门
 
 ```bash
-python pipeline/check_all.py            # selftest + s3 + s15 + s17 + s14 × 每一集有剧本的集，约 70 秒
+python pipeline/check_all.py            # selftest + s3 + s15 + s17 + s18 + s14 × 每一集有剧本的集，约 70 秒
 python pipeline/check_all.py --quick    # 跳过 s14
 ```
 
@@ -413,7 +414,7 @@ python pipeline/s16_shot_pack.py s01/E01/01_第一幕_北阳城城隍庙 --refs-
 
 从幕文档的「本幕人物与状态」表里读角色名（排行经 `names.CARD_ALIASES` 换算），从正文里读场景码 `SNN`，
 再去 `production/characters/` 与 `production/scenes/` 找卡（`common/production.py`），按 `style_assets/README.md` 的九步顺序装配。
-**匹配不上的卡会明确报出来，不会静默跳过**；`NO_CARD_BY_DESIGN` 里的名字（唐假、人魔尊、老赵……）单独说明为什么不建卡。
+**匹配不上的卡会明确报出来，不会静默跳过**；`NO_CARD_BY_DESIGN` 里的名字（人魔尊、老赵……）单独说明为什么不建卡；唐假已建卡 `C53_唐假`。
 
 ## s17_citation_check —— 原文引用闸门
 
@@ -423,7 +424,7 @@ python pipeline/s16_shot_pack.py s01/E01/01_第一幕_北阳城城隍庙 --refs-
 `seq2[1][18]`（一行挂两段）、`seq3[18-19]`（区间）、「前半句……后半句」（省略号跳过）都认得——解析在 `common/cite.py`。
 
 ```bash
-python pipeline/s17_citation_check.py                     # 全量，当前 1431 条全部命中
+python pipeline/s17_citation_check.py                     # 全量，当前 1449 条全部命中
 python pipeline/s17_citation_check.py --path production/characters
 python pipeline/s17_citation_check.py --fix               # 只改「差一位」
 python pipeline/s17_citation_check.py --relocate          # 引文全书唯一落点时改段号
@@ -431,6 +432,22 @@ python pipeline/s17_citation_check.py --show-ok           # 把命中的也列�
 ```
 
 它抓到的第一个真问题是 `s8` 卷宗曾输出 0 基段号（照着卷宗写卡的人会整张偏移一位）。已修，全项目段号一律 1 基。
+
+## s18_render_ledger —— 出图台账闸门
+
+镜头成品图**不入库**（第一季 12,958 镜、一镜 2~3 版，50GB 以上，且由卡 + 幕提示词 + 风格段确定地推导出来），
+**入库的是每集的 `出图台账.md`**——哪一镜用了哪一版、谁验收的、什么时候，那是人的判断。规范在 `doc/16_出图工序规范.md`。
+
+```bash
+python pipeline/s18_render_ledger.py                # 全季
+python pipeline/s18_render_ledger.py --episode E01  # 单集
+python pipeline/s18_render_ledger.py --todo         # 只列还没出的镜
+python pipeline/s18_render_ledger.py --episode E02 --scaffold   # 按幕文档生成空台账
+```
+
+查五件事：台账在不在、表头对不对；幕文档里的每一镜台账里都有行；没有幕文档里不存在的镜号；
+验收 `✅` 的行必须有采用版本且文件名合规（`E{集}_M{镜}[_{层}]_t{版次}.png`）；
+剧本标 `【现】` 的双层镜头两层（`base` / `tangjia`）都要有行。**跑通不代表图好看**，质量靠 `doc/16` 第七节的三层人工验收。
 
 ## s6 / s7 —— 画风选型矩阵（已结束）
 

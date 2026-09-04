@@ -32,9 +32,11 @@
 | **写或改一集剧本** | [`doc/13_剧本格式规范.md`](doc/13_剧本格式规范.md)（格式）+ [`doc/05_唐假旁白系统.md`](doc/05_唐假旁白系统.md)（旁白怎么派） |
 | 知道第一季写作里查出了哪些抽取误判、数据哪里不可信 | [`doc/15_写作台账.md`](doc/15_写作台账.md) |
 | 出图 / 写分镜时对齐画面风格 | [`doc/04_风格规范.md`](doc/04_风格规范.md) |
+| **开始出图、验收卡图、记台账** | [`doc/16_出图工序规范.md`](doc/16_出图工序规范.md) |
 | **直接拿去用的风格提示词**（环境 / 人物） | [`production/style_assets/README.md`](production/style_assets/README.md) |
 | 某个角色长什么样、跨集怎么锁住不漂 | [`production/characters/README.md`](production/characters/README.md) |
 | 看全书剧情线、六季怎么划的、分集表 | [`doc/08_全书剧情线.md`](doc/08_全书剧情线.md) |
+| **开始出图**（工序、命名、台账、验收、返工） | [`doc/13_出图工序规范.md`](doc/13_出图工序规范.md) ← **开拍前必读** |
 | 跑脚本 / 排查跑批故障 | [`pipeline/README.md`](pipeline/README.md) |
 | 复盘当初为什么选国风三维 | [`doc/archive/`](doc/archive/) |
 | 知道最近改了什么、为什么改 | [`CHANGELOG.md`](CHANGELOG.md) |
@@ -50,13 +52,16 @@
 | ③ 资产与结构规划 | ✅ 997 角色 / 1364 场景 / 3000 对同框 / 90 个卷段 / 6 季 267 集 |
 | ④ 风格定稿与资产深化 | ⏳ **画风已定稿（国风三维）**。角色卡 15 具名 + 5 群像、场景卡 10，E01 全覆盖；第一季共 207 角色（主要 25）/ 274 场景待做 |
 | ⑤ 第一季深化 | ⏳ 47 集剧本**声音层**全部完成（485 幕 / 12,958 镜，`s14` 全绿）；**画面提示词层** 77 幕（E01~E10）进行中；分镜草图只有 E01 |
-| ⑥ 第一季制作 | ⛔ 待 ⑤ |
+| ⑥ 第一季制作 | ⏳ E01 纸面就绪（9 幕 212 镜提示词、角色卡 16 具名 + 5 群像、场景卡 10 母版 + 13 状态），**卡图人工验收进行中，通过 0**。出图工序与台账见 [`doc/16`](doc/16_出图工序规范.md)，闸门 `s18` |
 
 画风载体是**国风三维**——中国院线三维 CG 动画电影，风格化写实。两份统一提示词（环境一份、人物一份）见
 [`production/style_assets/`](production/style_assets/README.md)，落槌理由见 [`doc/04`](doc/04_风格规范.md) 第 3.1 节。
 
-**当前的活是量**：第一季的角色卡与场景卡要逐个写出来。工作队列见
-[`data/plot/season_roster.md`](data/plot/season_roster.md)；开工一幕用 `python pipeline/s16_shot_pack.py`。
+**当前的活**：E01 的角色卡与场景卡，提示词和 PNG 都已就位，卡在**人工验收**这一步——验收通过前，图不具备权威
+（[`production/characters/README.md`](production/characters/README.md)「PNG 现状」）。已查出三张不过并重写了提示词：
+`C04_红儿` V6、`C02_南红枝` V4（脸偏圆、缺特色）、`C03_老拐子` V2（右脚没画出萎缩内翻）；`C53_唐假` 新建卡，Q 版 PNG 待出。
+再往后仍是量：第一季 207 角色 / 274 场景，工作队列见 [`data/plot/season_roster.md`](data/plot/season_roster.md)；
+开工一幕用 `python pipeline/s16_shot_pack.py`。
 
 ---
 
@@ -79,8 +84,8 @@ data/            机器产出的数据资产，删了能重跑（data/manual/ �
   └── manual/            ★ 人定的输入：seasons.json 六季定义、人工卷段、一次性分析产物
 
 pipeline/        脚本管道，编号即执行顺序 —— 见 pipeline/README.md
-  ├── s0 ~ s17           各步骤脚本，只有 s2 / s6 花 API 的钱
-  ├── check_all.py       ★ 一键跑全部闸门（selftest / s3 / s14×47 / s15 / s17）
+  ├── s0 ~ s18           各步骤脚本，只有 s2 / s6 花 API 的钱
+  ├── check_all.py       ★ 一键跑全部闸门（selftest / s3 / s14×47 / s15 / s17 / s18）
   ├── config.py          所有可调参数的唯一来源（读 .env）
   ├── common/            路径、命名、引用记法、质量闸门、逐字核验、LLM 客户端……
   ├── prompts/           四个提示词，纯文本，改了立即生效
@@ -91,10 +96,10 @@ production/      人工产出的成片素材，与 data/ 的区别是「这些�
   ├── style_assets/      ★ 全片「怎么画」的唯一入口：统一风格 / 角色提示词 + 场景参考包
   ├── characters/        跨季人物视觉资产：CNN_ 具名卡、GNN_ 群像卡；_深度档案/ 14 份人写档案；_归档/
   ├── scenes/            跨季场景视觉资产：SNN_ 场景卡（母版 + 状态）
-  ├── s01/               第一季：分集方案、总则、角色 / 场景取证、视觉基准补充、47 集剧本与幕文档
+  ├── s01/               第一季：分集方案、总则、角色 / 场景取证、视觉基准补充、47 集剧本与幕文档、E01 出图台账
   └── style_test/        画风选型矩阵的配置与留痕（选型已结束）
 
-doc/             文档 00~05、08~11、13~15；archive/ 放选型期的 06、07、12
+doc/             文档 00~05、08~11、13~16；archive/ 放选型期的 06、07、12
 CHANGELOG.md     变更与决策记录
 .run/            运行期日志与体检报告，不入库
 ```
@@ -112,10 +117,10 @@ CHANGELOG.md     变更与决策记录
 pip install -r requirements.txt
 cp .env.example .env              # 填 DEEPSEEK_API_KEY / IMAGE_API_KEY，.env 不入库
 python pipeline/check_all.py --quick   # selftest + s3 + s15 + s17，约一分钟，不花钱
-python pipeline/check_all.py           # 再加 47 集的 s14，约 70 秒
+python pipeline/check_all.py           # 再加 47 集的 s14 与出图台账 s18，约 70 秒
 ```
 
-期望：selftest / s15 / s17 / s14 全绿；`s3` 会报出下面「已知欠账」里的 29 章，那是已知状态，不是新问题。
+期望：selftest / s15 / s17 / s18 / s14 全绿；`s3` 会报出下面「已知欠账」里的 29 章，那是已知状态，不是新问题。
 
 密钥只从 `.env` 或环境变量读，**任何时候都不写进代码、不进版本库**。
 
@@ -132,6 +137,7 @@ python pipeline/check_all.py           # 再加 47 集的 s14，约 70 秒
 3. **第 1115~1205 章之间 41 章正文被截**，影响第六季。见 [`doc/11`](doc/11_待补原文清单.md)。
 4. **卷段是算法版**（90 段，只约六成边界站得住），只作分集的软约束；人工卷段只做了 seq201~400 一块。见 [`doc/08`](doc/08_全书剧情线.md) 4.5。
 5. **第一季只有 E01 有分镜草图**，画面提示词层写到 E10。
+6. **E01 的 20 张角色卡、23 张场景卡通过人工验收 0 张**，验收通过前不许开工出图（`doc/16` 第二节）。
 
 ---
 
