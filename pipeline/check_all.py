@@ -21,6 +21,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 import time
@@ -36,7 +37,10 @@ PIPE = paths.PIPELINE_DIR
 
 def run(label: str, cmd: list[str], quiet: bool) -> tuple[str, bool, float, str]:
     t0 = time.time()
-    r = subprocess.run(cmd, capture_output=True, text=True, cwd=str(paths.ROOT))
+    # 子进程输出统一按 UTF-8 收：Windows 下管道默认 GBK，✓ ✗ 会让子进程在最后一行炸掉
+    env = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
+    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                       cwd=str(paths.ROOT), env=env)
     out = (r.stdout or "") + (r.stderr or "")
     ok = r.returncode == 0
     if not quiet or not ok:
