@@ -316,6 +316,7 @@ python pipeline/s3_validate_chapters.py --rerun-list   # 只打印 T1+T2 的 seq
 python pipeline/s5_repair_quotes.py --dry-run     # 只报会改什么，不落盘
 python pipeline/s5_repair_quotes.py               # 修全书
 python pipeline/s5_repair_quotes.py --seqs 9,90   # 只修指定章
+python pipeline/s5_repair_quotes.py --refresh      # 不改 analysis，只重算质量块（旧版脚本跑出的章、手改过之后用）
 ```
 
 修完调 `quality.refresh` 重算整块质量（此前只回写 verbatim 不回写 coverage / passed，留下过 374 章的旧值）。

@@ -30,6 +30,7 @@
     python pipeline/s5_repair_quotes.py --dry-run     # 只报会改什么，不落盘
     python pipeline/s5_repair_quotes.py               # 修全书
     python pipeline/s5_repair_quotes.py --seqs 9,90   # 只修指定章
+    python pipeline/s5_repair_quotes.py --refresh      # 不改 analysis，只重算质量块并回写有变化的章
 """
 import argparse
 import difflib
@@ -379,18 +380,51 @@ def repair_chapter(doc: dict) -> tuple[dict, list[dict]]:
     return doc, log
 
 
+def refresh_only(seqs: list[int], dry_run: bool) -> int:
+    """不改 analysis，只按当前内容重算质量块，回写有变化的章。
+
+    用旧版脚本跑出的章（闸门规则不同）、或手改过 analysis 之后，靠它把 passed / coverage /
+    fail_reasons 对齐到现行闸门。s3 只报不写，所以这件事放在这里。"""
+    changed, flipped = [], []
+    for seq in seqs:
+        p = paths.chapter_json_path(seq)
+        if not p.exists():
+            continue
+        doc = read_json(p)
+        before = json.dumps(doc.get("quality"), sort_keys=True, ensure_ascii=False)
+        was = (doc.get("quality") or {}).get("passed")
+        quality.refresh(doc)
+        if json.dumps(doc["quality"], sort_keys=True, ensure_ascii=False) == before:
+            continue
+        changed.append(seq)
+        if doc["quality"]["passed"] != was:
+            flipped.append(f"seq{seq} {was}→{doc['quality']['passed']}")
+        if not dry_run:
+            write_json(p, doc)
+    print(f"{'（dry-run，未落盘）' if dry_run else ''}重算 {len(seqs)} 章，质量块有变化 {len(changed)} 章"
+          + (f"：{changed[:30]}{' …' if len(changed) > 30 else ''}" if changed else ""))
+    if flipped:
+        print(f"  passed 翻转 {len(flipped)} 章：{'；'.join(flipped[:20])}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="把不逐字的引用对齐回原文（不调 API）")
     ap.add_argument("--seqs", help="只修这些 seq，逗号分隔。默认全书")
     ap.add_argument("--dry-run", action="store_true", help="只报告，不落盘")
     ap.add_argument("--no-fill", action="store_true",
                     help="只做引用对齐，不补漏抽的台词与未登记的人物")
+    ap.add_argument("--refresh", action="store_true",
+                    help="不改 analysis，只按当前内容重算质量块（逐字/覆盖/passed/fail_reasons）并回写有变化的章。"
+                         "用旧版脚本跑出的章或手改过 analysis 之后用它对齐闸门结论")
     args = ap.parse_args()
 
     if args.seqs:
         seqs = sorted(int(x) for x in args.seqs.replace(" ", ",").split(",") if x.strip())
     else:
         seqs = sorted(int(p.stem[2:]) for p in paths.CHAPTERS_DIR.glob("ch*.json"))
+    if args.refresh:
+        return refresh_only(seqs, args.dry_run)
 
     touched, reverted, total_fix = 0, [], 0
     before_bad = after_bad = 0
