@@ -298,17 +298,27 @@ def out_of_range_items(doc: dict) -> list[tuple[str, dict]]:
 
 
 def fix_out_of_range_para(doc: dict) -> list[dict]:
-    """越界的段号按正文逐字命中的位置改回来。只改**越界**的：
+    """越界（或缺失）的段号按正文逐字命中的位置改回来。只改**越界**的：
     落在范围内但标错的段号（doc/15 第一节的「段号错位」）不动——第一季剧本的 [n] 是照 analysis 写的，
     改了它们 s14 就对不上账；越界的本来就没人能引用，改回去只会变好。"""
     paras, log = doc["paragraphs"], []
     for field, obj in out_of_range_items(doc):
         tkey, pkey = next((t, p) for f, t, p in TEXT_FIELDS if f == field)
-        r = verbatim.check_quote(obj.get(tkey, ""), paras, None)
-        if r["status"] == "exact" and isinstance(r["para_found"], int) and r["para_found"] >= 1:
-            log.append({"field": field, "kind": "段号越界", "before": f"para {obj.get(pkey)!r}",
-                        "after": [f"para {r['para_found']}"], "text": obj.get(tkey, "")[:40]})
-            obj[pkey] = r["para_found"]
+        text = obj.get(tkey, "")
+        r = verbatim.check_quote(text, paras, None)
+        if r["status"] != "exact":
+            continue
+        if isinstance(r["para_found"], int) and r["para_found"] >= 1:
+            new, note = r["para_found"], ""
+        else:
+            # 跨段命中（check_quote 给 -1）：记引用开头所在的那一段，剧本和 s14 都按起点引
+            span = verbatim.locate(text, paras)
+            if not span:
+                continue
+            new, note = span[0], f"（跨 {span[0]}~{span[1]} 段，记起始段）"
+        log.append({"field": field, "kind": "段号越界", "before": f"para {obj.get(pkey)!r}",
+                    "after": [f"para {new}{note}"], "text": text[:40]})
+        obj[pkey] = new
     return log
 
 

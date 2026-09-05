@@ -1146,6 +1146,19 @@ def test_common_modules() -> None:
           doc2["analysis"]["dialogues"][0]["para"] == para_no and len(log) == 1 and log[0]["kind"] == "段号越界",
           str(log))
     check("s5：范围内标错的段号不动", doc2["analysis"]["dialogues"][1]["para"] == 1)
+    # 跨段引用（ch0350 那条只有 para_range 没 para 的独白）：check_quote 给 -1，s5 要记起始段
+    span_text = P[para_no - 1][-8:] + P[para_no][:8]
+    check("verbatim.locate：单段 / 跨段 / 未命中",
+          verbatim.locate(line, P) == (para_no, para_no)
+          and verbatim.locate(span_text, P) == (para_no, para_no + 1)
+          and verbatim.locate("这天地终将由我改写！", P) is None,
+          f"{verbatim.locate(line, P)} {verbatim.locate(span_text, P)}")
+    doc3 = {"analysis": {"monologues": [{"para_range": [para_no, para_no + 1], "text": span_text}],
+                         "dialogues": [], "narration": []}, "paragraphs": P}
+    log3 = s5.fix_out_of_range_para(doc3)
+    check("s5：跨段逐字命中的引用记起始段",
+          doc3["analysis"]["monologues"][0]["para"] == para_no and len(log3) == 1
+          and "跨" in log3[0]["after"][0], str(log3))
 
     # ---- quality：人工放行只对分数类原因生效
     wdoc = {"analysis": dict(full, dialogues=[dict(d) for d in full["dialogues"]]),

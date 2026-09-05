@@ -110,6 +110,31 @@ def check_quote(quote: str, paragraphs: list[str], para: int | None = None,
     return result
 
 
+def locate(quote: str, paragraphs: list[str]) -> tuple[int, int] | None:
+    """
+    逐字命中的引用落在第几段到第几段（1 起，含两端）；没命中返回 None，单段命中时两端相等。
+
+    check_quote 对跨段命中只给 para_found=-1——一条引用横跨两段，段号本就对不上「一段」。
+    但 s5 修越界段号、剧本引用都需要一个能落笔的位置，这里按引用开头落在哪一段给出起点。
+    """
+    q = norm(quote)
+    if not q:
+        return None
+    norm_paras = [norm(p) for p in paragraphs]
+    pos = "".join(norm_paras).find(q)
+    if pos < 0:
+        return None
+    end_pos, start, offset = pos + len(q) - 1, None, 0
+    for i, np in enumerate(norm_paras, 1):
+        nxt = offset + len(np)
+        if start is None and pos < nxt:
+            start = i
+        if end_pos < nxt:
+            return start, i
+        offset = nxt
+    return None
+
+
 # 需要逐字的字段：(JSON 路径, 取文本的键, 取段落号的键)
 VERBATIM_FIELDS = [
     ("dialogues", "text", "para"),

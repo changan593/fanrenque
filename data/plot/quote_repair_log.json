@@ -1,100 +1,19 @@
 [
   {
-    "seq": 670,
+    "seq": 350,
     "before_rate": 1.0,
     "after_rate": 1.0,
     "before_coverage": 1.0,
     "after_coverage": 1.0,
     "fixes": [
       {
-        "field": "dialogues",
+        "field": "monologues",
         "kind": "段号越界",
-        "before": "para 117",
+        "before": "para None",
         "after": [
-          "para 113"
+          "para 27（跨 27~28 段，记起始段）"
         ],
-        "text": "赢了，婆娑洲的一切你都能带出去。输了，你就什么都带不出去，包括你自己。"
-      },
-      {
-        "field": "dialogues",
-        "kind": "段号越界",
-        "before": "para 118",
-        "after": [
-          "para 114"
-        ],
-        "text": "很公平吧！"
-      },
-      {
-        "field": "narration",
-        "kind": "段号越界",
-        "before": "para 116",
-        "after": [
-          "para 112"
-        ],
-        "text": "唐真悚然一惊，他猛地起身，再回头，不知何时庙外月色已经要散了，天边开始亮起，而庙"
-      }
-    ]
-  },
-  {
-    "seq": 990,
-    "before_rate": 0.9565,
-    "after_rate": 1.0,
-    "before_coverage": 1.0,
-    "after_coverage": 1.0,
-    "fixes": [
-      {
-        "field": "dialogues",
-        "kind": "拆分拼接",
-        "before": "哈，堂堂圣人首，落在你手里竟是这等窝囊用法？我倒要看看你还能画多少。",
-        "after": [
-          "哈，堂堂圣人首，落在你手里竟是这等窝囊用法？",
-          "我倒要看看你还能画多少。"
-        ]
-      }
-    ]
-  },
-  {
-    "seq": 1141,
-    "before_rate": 1.0,
-    "after_rate": 1.0,
-    "before_coverage": 1.0,
-    "after_coverage": 1.0,
-    "fixes": [
-      {
-        "field": "dialogues",
-        "kind": "段号越界",
-        "before": "para 49",
-        "after": [
-          "para 47"
-        ],
-        "text": "宗内的说法是，他把自己修没了。"
-      },
-      {
-        "field": "dialogues",
-        "kind": "段号越界",
-        "before": "para 50",
-        "after": [
-          "para 48"
-        ],
-        "text": "我看，他只是想开了。"
-      }
-    ]
-  },
-  {
-    "seq": 1155,
-    "before_rate": 0.9714,
-    "after_rate": 1.0,
-    "before_coverage": 1.0,
-    "after_coverage": 1.0,
-    "fixes": [
-      {
-        "field": "dialogues",
-        "kind": "拆分拼接",
-        "before": "不，她是固定要输的，因为她不知道自己该爱谁，于是谁做出爱她的样子，她便冷着脸回馈，她就没想过赢。而你则是最想赢的，也是输的最丑的。",
-        "after": [
-          "不，她是固定要输的，因为她不知道自己该爱谁，于是谁做出爱她的样子，她便冷着脸回馈，她就没想过赢。",
-          "而你则是最想赢的，也是输的最丑的。"
-        ]
+        "text": "吕藏锋其实也没反应过来，但他下意识觉得应该这样做，那个女人在恋爱方面只教给了吕藏"
       }
     ]
   }
