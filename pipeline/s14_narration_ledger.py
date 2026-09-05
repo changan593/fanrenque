@@ -440,11 +440,14 @@ def main() -> int:
         for n in unaccounted:
             print(f"  seq{n['seq']}[{n['para']}] ({n['function']}) {n['text'][:46]}")
     if plain:
+        # 缺理由的全部列出来（那是要改的），写了理由的只示例几条——以前按顺序截前 12 条，
+        # E22 的 3 处缺理由排在第 12 条之后，闸门红了却看不见该改哪一镜。
+        shown = sorted(plain, key=lambda x: x[2])[:max(12, len(unjust))]
         print(f"\n── 派给唐假的白描（{len(plain)} 处，{len(unjust)} 处缺理由）──")
-        for shot, body, ok_ in plain[:12]:
+        for shot, body, ok_ in shown:
             print(f"  {'✓' if ok_ else '✗'} 镜{shot}  {body[:44]}")
-        if len(plain) > 12:
-            print(f"  …… 另有 {len(plain) - 12} 处")
+        if len(plain) > len(shown):
+            print(f"  …… 另有 {len(plain) - len(shown)} 处已写理由")
 
     if args.out:
         md = [f"# {args.episode or script.stem} 旁白承载账\n",
