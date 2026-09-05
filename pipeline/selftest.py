@@ -1137,6 +1137,45 @@ def test_common_modules() -> None:
           doc["quality"]["passed"] is True and doc["quality"]["verbatim"]["counts"]["miss"] == 0
           and "dialogue_coverage" in doc["quality"]["coverage"])
 
+    # ---- s5：越界段号按正文命中位置改回；范围内标错的不动（剧本照 analysis 写）
+    import s5_repair_quotes as s5
+    doc2 = {"analysis": {"dialogues": [{"para": 999, "text": line}, {"para": 1, "text": line}],
+                         "monologues": [], "narration": []}, "paragraphs": P}
+    log = s5.fix_out_of_range_para(doc2)
+    check("s5：越界段号改回逐字命中的那一段",
+          doc2["analysis"]["dialogues"][0]["para"] == para_no and len(log) == 1 and log[0]["kind"] == "段号越界",
+          str(log))
+    check("s5：范围内标错的段号不动", doc2["analysis"]["dialogues"][1]["para"] == 1)
+
+    # ---- quality：人工放行只对分数类原因生效
+    wdoc = {"analysis": dict(full, dialogues=[dict(d) for d in full["dialogues"]]),
+            "paragraphs": P, "quality": {"structure_score": 82, "fidelity_score": 95},
+            "reviews": [], "run": {"model": "x"}}
+    quality.refresh(wdoc)
+    check("放行前：结构分 82 不过", wdoc["quality"]["passed"] is False)
+    wdoc["quality"]["waiver"] = {"by": "人工", "reason": "三轮修订仍 82，人读过结构完整", "date": "2026-09-02"}
+    quality.refresh(wdoc)
+    check("放行后：passed 翻绿且原因留在 waived_reasons",
+          wdoc["quality"]["passed"] is True and wdoc["quality"]["fail_reasons"] == []
+          and any("结构分" in r for r in wdoc["quality"].get("waived_reasons", [])))
+    wdoc["analysis"]["dialogues"][0]["text"] = "这天地终将由我改写！"
+    quality.refresh(wdoc)
+    check("放行挡不住客观项：出现臆造照样不过",
+          wdoc["quality"]["passed"] is False and "waived_reasons" not in wdoc["quality"],
+          str(wdoc["quality"]["fail_reasons"]))
+    import s3_validate_chapters as s3
+    wdoc["analysis"]["dialogues"][0]["text"] = line
+    quality.refresh(wdoc)
+    res_w = s3.check_one(dict(wdoc, seq=1, chapter_id="ch0001"))
+    check("s3：放行的章不再报审查分，且单列出来",
+          not any("审查分" in x for x in res_w["problems"]) and bool(res_w["waived"]), str(res_w["problems"]))
+
+    # ---- s15：豁免名单的路径都是 posix 写法且文件都在（Windows 下曾因反斜杠全部失配）
+    import s15_style_guard as s15
+    check("s15：豁免名单路径全部存在且用 /",
+          all("\\" not in k and (paths.ROOT / k).exists() for k in s15.LEGACY_ALLOW),
+          str([k for k in s15.LEGACY_ALLOW if not (paths.ROOT / k).exists()]))
+
     # ---- jsonio：原子写不能把文件权限变成 0600
     with tempfile.TemporaryDirectory() as d:
         f = Path(d) / "x.json"

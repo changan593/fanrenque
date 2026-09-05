@@ -104,6 +104,8 @@ LEGACY_ALLOW = {
 
 # ── 内容层：风格词一律不许出现（黑名单来自 production/s01/01_总则与模板.md 第 1.1 节）──
 CONTENT_LAYER = "production/s01"
+# 相对路径一律用 as_posix()：Windows 下 str(Path) 是反斜杠，
+# 豁免名单与内容层前缀会全部对不上——另一会话就是这样被 4 个留痕文件的 88 处「冲突」拦了半天。
 STYLE_WORDS_IN_CONTENT = [
     "厚涂", "笔触", "半写实", "水墨", "油画", "插画", "赛璐璐",
     "二次元", "动漫", "漫画风", "三渲二", "建模", "滤镜", "胶片", "颗粒感",
@@ -235,7 +237,7 @@ def check_render_locks() -> list[str]:
         return problems
     for card in sorted(root.rglob("*_超详细提示词.md")):
         text = card.read_text(encoding="utf-8")
-        rel = str(card.relative_to(paths.ROOT))
+        rel = card.relative_to(paths.ROOT).as_posix()
         for name, block in canon.items():
             if block not in text:
                 problems.append(f"{rel}：缺{name}")
@@ -267,7 +269,7 @@ def check_homology_locks() -> list[str]:
         return problems
     for f in sorted(root.glob("_*同源锁*.md")):
         text = f.read_text(encoding="utf-8")
-        rel_f = str(f.relative_to(paths.ROOT))
+        rel_f = f.relative_to(paths.ROOT).as_posix()
         m = re.search(r"绑定[：:]\s*(.+)", text)
         if not m:
             problems.append(f"{rel_f}：缺「绑定：」行")
@@ -344,7 +346,7 @@ def main() -> int:
 
     violations, legacy_hits, scanned = {}, {}, 0
     for f in files:
-        rel = str(f.relative_to(paths.ROOT))
+        rel = f.relative_to(paths.ROOT).as_posix()
         hits = scan_file(f, content_layer=rel.startswith(CONTENT_LAYER))
         scanned += 1
         if not hits:

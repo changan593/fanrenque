@@ -15,6 +15,11 @@
 一致性审查员列出的 missing_items **不是**闸门。它只作为修订轮的输入（p4 按它逐条补）。
 实测 1200 章里 415 章的审查员列了遗漏项，其中「是！」「蜜语」这类占大半，而程序覆盖率全部 100%——
 拿它当闸门会让三分之一的章过不了，且拦的多是噪音。盯漏靠覆盖率，不靠模型的印象。
+
+人工放行（quality.waiver）：审查分是模型给的、主观的；有的章三轮修订仍卡在结构分 82，而引用早已
+100% 逐字。人读过之后可以接受它——`s5 --waive --seqs … --reason …` 记一条带理由的豁免，
+refresh 时**只对分数类原因生效**：逐字率、臆造、台词覆盖这些客观项不放行。放行的原因留在
+waived_reasons 里，s3 单列不算问题。
 """
 from __future__ import annotations
 
@@ -56,5 +61,17 @@ def refresh(doc: dict) -> dict:
     vb, cov = measure(doc["analysis"], doc["paragraphs"])
     manual = (doc.get("run") or {}).get("model") == "人工"
     passed, reasons = gate(q.get("structure_score"), q.get("fidelity_score"), vb, cov, manual)
+    waived: list[str] = []
+    if not passed and q.get("waiver") and all(is_score_reason(r) for r in reasons):
+        waived, reasons, passed = reasons, [], True
     q.update(verbatim=vb, coverage=cov, passed=passed, fail_reasons=reasons)
+    if waived:
+        q["waived_reasons"] = waived
+    else:
+        q.pop("waived_reasons", None)
     return doc
+
+
+def is_score_reason(reason: str) -> bool:
+    """闸门原因里哪些是模型分数（可被人工放行），哪些是客观项（不可）。"""
+    return reason.startswith(("结构分", "一致性分"))

@@ -78,8 +78,13 @@ def check_one(doc: dict) -> dict:
     q = doc.get("quality") or {}
     manual = (doc.get("run") or {}).get("model") == "人工"
     _, gate_reasons = quality.gate(q.get("structure_score"), q.get("fidelity_score"), vb, cov, manual)
-    for r in gate_reasons:
-        if "结构分" in r or "一致性分" in r:
+    score_reasons = [r for r in gate_reasons if quality.is_score_reason(r)]
+    waived = None
+    if score_reasons and q.get("waiver"):
+        # 人工放行：分数类原因不算问题，但单列出来，让人看得见哪些章是「接受」而不是「通过」
+        waived = q["waiver"].get("reason", "")
+    else:
+        for r in score_reasons:
             problems.append(f"审查分不达标：{r}")
 
     # 段号越界：para 是 1 基，落在 1..段数之外说明定位错了（s14 会对不上账）
@@ -127,7 +132,7 @@ def check_one(doc: dict) -> dict:
                 problems.append(f"{r['stage']} 的详细分析过短")
 
     return {"seq": doc.get("seq"), "chapter_id": doc.get("chapter_id"),
-            "problems": problems,
+            "problems": problems, "waived": waived,
             "structure_score": (doc.get("quality") or {}).get("structure_score"),
             "fidelity_score": (doc.get("quality") or {}).get("fidelity_score"),
             "verbatim_rate": vb["verbatim_rate"],
@@ -173,6 +178,7 @@ def main() -> int:
                             "repair_rounds": 0})
 
     bad = [r for r in results if r["problems"]]
+    waived = [r for r in results if r.get("waived")]
 
     # 按严重程度分级。全部重跑既费钱又没必要——
     # 「说话人是泛称」和「引用被改写一条」跟「臆造」不是一个量级的事。
@@ -215,6 +221,11 @@ def main() -> int:
               f"{sum(1 for v in dc if v < config.COVERAGE_PASS_RATE)} 章")
         print(f"触发过修订   {sum(1 for r in results if r['repair_rounds'])} 章")
 
+    if waived:
+        print(f"\n人工放行 {len(waived)} 章（审查分未达线，人读过后接受；理由在各章 quality.waiver）：")
+        for r in waived:
+            print(f"  {r['chapter_id']}: 结构 {r['structure_score']} / 一致 {r['fidelity_score']}  {r['waived'][:60]}")
+
     print(f"\n有问题的章节 {len(bad)} 个")
     for r in bad[:25]:
         print(f"  {r['chapter_id']}: " + "；".join(r["problems"][:3]))
@@ -244,6 +255,7 @@ def main() -> int:
     write_json(out, {"total_chapters": total, "analyzed": len(results),
                      "missing": missing, "problem_count": len(bad),
                      "rerun_seqs": rerun, "tiers": tiers,
+                     "waived": [r["seq"] for r in waived],
                      "enum_drift": {k: dict(v) for k, v in drift.items()},
                      "details": results})
     seq_file = paths.REPORTS_DIR / "rerun_seqs.txt"

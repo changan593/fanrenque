@@ -31,9 +31,11 @@
     python pipeline/s5_repair_quotes.py               # 修全书
     python pipeline/s5_repair_quotes.py --seqs 9,90   # 只修指定章
     python pipeline/s5_repair_quotes.py --refresh      # 不改 analysis，只重算质量块并回写有变化的章
+    python pipeline/s5_repair_quotes.py --waive --seqs 990,1149 --reason "……"   # 人工放行审查分不达标的章
 """
 import argparse
 import difflib
+from datetime import date
 import json
 import re
 import sys
@@ -284,6 +286,32 @@ def fill_missing_characters(doc: dict) -> list[str]:
     return added
 
 
+def out_of_range_items(doc: dict) -> list[tuple[str, dict]]:
+    """段号落在 1~段数之外的引用。s3 报 T3 的那一类；段号错了 s14 对不上账，剧本也没法引用。"""
+    n = len(doc["paragraphs"])
+    out = []
+    for field, _tkey, pkey in TEXT_FIELDS:
+        for obj in doc["analysis"].get(field) or []:
+            if isinstance(obj, dict) and not (isinstance(obj.get(pkey), int) and 1 <= obj[pkey] <= n):
+                out.append((field, obj))
+    return out
+
+
+def fix_out_of_range_para(doc: dict) -> list[dict]:
+    """越界的段号按正文逐字命中的位置改回来。只改**越界**的：
+    落在范围内但标错的段号（doc/15 第一节的「段号错位」）不动——第一季剧本的 [n] 是照 analysis 写的，
+    改了它们 s14 就对不上账；越界的本来就没人能引用，改回去只会变好。"""
+    paras, log = doc["paragraphs"], []
+    for field, obj in out_of_range_items(doc):
+        tkey, pkey = next((t, p) for f, t, p in TEXT_FIELDS if f == field)
+        r = verbatim.check_quote(obj.get(tkey, ""), paras, None)
+        if r["status"] == "exact" and isinstance(r["para_found"], int) and r["para_found"] >= 1:
+            log.append({"field": field, "kind": "段号越界", "before": f"para {obj.get(pkey)!r}",
+                        "after": [f"para {r['para_found']}"], "text": obj.get(tkey, "")[:40]})
+            obj[pkey] = r["para_found"]
+    return log
+
+
 def has_unregistered(doc: dict) -> bool:
     """本章有没有「说了话或在场，却不在人物名单」的具名角色。"""
     a = doc.get("analysis") or {}
@@ -408,6 +436,36 @@ def refresh_only(seqs: list[int], dry_run: bool) -> int:
     return 0
 
 
+def waive(seqs: list[int], reason: str, remove: bool, dry_run: bool) -> int:
+    """人工放行 / 撤销。放行是人的决定，所以理由必填、原样入库，且只对模型分数生效。"""
+    if not remove and len(reason.strip()) < 8:
+        raise SystemExit("--waive 必须带 --reason，写清为什么接受这几章（至少 8 个字，会留在章节 json 里）")
+    for seq in seqs:
+        p = paths.chapter_json_path(seq)
+        if not p.exists():
+            print(f"seq{seq}: 文件不存在，跳过")
+            continue
+        doc = read_json(p)
+        q = doc.setdefault("quality", {})
+        if remove:
+            q.pop("waiver", None)
+        else:
+            q["waiver"] = {"by": "人工", "reason": reason.strip(), "date": date.today().isoformat(),
+                           "structure_score": q.get("structure_score"),
+                           "fidelity_score": q.get("fidelity_score")}
+        quality.refresh(doc)
+        if q.get("waived_reasons"):
+            state = f"已放行（{'；'.join(q['waived_reasons'])}）"
+        elif q["passed"]:
+            state = "本就通过，无需放行" if not remove else "撤销后仍通过"
+        else:
+            state = f"未放行——有客观项不过：{'；'.join(q['fail_reasons'])}"
+        print(f"seq{seq:4d}: {state}")
+        if not dry_run:
+            write_json(p, doc)
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="把不逐字的引用对齐回原文（不调 API）")
     ap.add_argument("--seqs", help="只修这些 seq，逗号分隔。默认全书")
@@ -417,6 +475,11 @@ def main() -> int:
     ap.add_argument("--refresh", action="store_true",
                     help="不改 analysis，只按当前内容重算质量块（逐字/覆盖/passed/fail_reasons）并回写有变化的章。"
                          "用旧版脚本跑出的章或手改过 analysis 之后用它对齐闸门结论")
+    ap.add_argument("--waive", action="store_true",
+                    help="人工放行：给 --seqs 指定的章记一条带理由的豁免（须配 --reason）。"
+                         "只对「审查分不达标」生效；逐字率 / 臆造 / 台词覆盖不达标的章不放行")
+    ap.add_argument("--unwaive", action="store_true", help="撤销 --seqs 指定章的人工放行")
+    ap.add_argument("--reason", default="", help="--waive 的理由，会原样写进章节 json 的 quality.waiver")
     args = ap.parse_args()
 
     if args.seqs:
@@ -425,6 +488,10 @@ def main() -> int:
         seqs = sorted(int(p.stem[2:]) for p in paths.CHAPTERS_DIR.glob("ch*.json"))
     if args.refresh:
         return refresh_only(seqs, args.dry_run)
+    if args.waive or args.unwaive:
+        if not args.seqs:
+            raise SystemExit("--waive / --unwaive 必须配 --seqs 指定章，不接受全书放行")
+        return waive(seqs, args.reason, remove=args.unwaive, dry_run=args.dry_run)
 
     touched, reverted, total_fix = 0, [], 0
     before_bad = after_bad = 0
@@ -438,7 +505,7 @@ def main() -> int:
         c0 = verbatim.coverage_report(doc["analysis"], doc["paragraphs"])
         # 三类都要进来，不能只看逐字：
         # 漏台词和臆造一样违反原则二；人物没登记则会让资产聚合丢掉出场。
-        need = bool(v0["problems"])
+        need = bool(v0["problems"]) or bool(out_of_range_items(doc))
         if not args.no_fill:
             need = need or c0["dialogue_coverage"] < 1.0 or has_unregistered(doc)
         if not need:
@@ -446,6 +513,7 @@ def main() -> int:
         before_bad += len(v0["problems"])
 
         fixed, log = repair_chapter(json.loads(json.dumps(doc)))
+        log += fix_out_of_range_para(fixed)
         if not args.no_fill:
             fd = fill_missing_dialogue(fixed)
             fc = fill_missing_characters(fixed)

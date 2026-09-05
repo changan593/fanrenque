@@ -318,7 +318,13 @@ python pipeline/s5_repair_quotes.py --dry-run     # 只报会改什么，不落�
 python pipeline/s5_repair_quotes.py               # 修全书
 python pipeline/s5_repair_quotes.py --seqs 9,90   # 只修指定章
 python pipeline/s5_repair_quotes.py --refresh      # 不改 analysis，只重算质量块（旧版脚本跑出的章、手改过之后用）
+python pipeline/s5_repair_quotes.py --waive --seqs 990,1149 --reason "三轮修订仍 82，人读过结构完整"   # 人工放行
 ```
+
+另外两件质量块的事也放在这里：**越界段号**（`para` 落在 1~段数之外）按正文逐字命中的位置改回——只改越界的，
+范围内标错的不动，因为第一季剧本的 `[n]` 是照 `analysis` 写的；**人工放行** `--waive`：审查分是模型给的主观分，
+三轮修订仍卡在 82 的章，人读过后可以接受，理由必填并原样写进 `quality.waiver`。放行只对分数类原因生效，
+逐字率 / 臆造 / 台词覆盖不达标的章放不了；`s3` 把放行的章单列为「人工放行」，不算问题。`--unwaive` 撤销。
 
 修完调 `quality.refresh` 重算整块质量（此前只回写 verbatim 不回写 coverage / passed，留下过 374 章的旧值）。
 每次修复都记进 `data/plot/quote_repair_log.json`，含改前改后原文。
