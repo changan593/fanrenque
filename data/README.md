@@ -28,6 +28,6 @@
 
 ## 当前状态
 
-- `chapters/` 1200/1200，逐字命中率 **100%**、台词覆盖率 **100%**、臆造 **0** 条；29 章审查分低于合格线待 `s2 --redo-failed`
+- `chapters/` 1200/1200，逐字命中率 **100%**、台词覆盖率 **100%**、臆造 **0** 条，`s3` 零问题；4 章结构分 82 人工放行（`quality.waiver`）
 - 体检报告写在 `.run/reports/quality_report.json`（不入库），`python pipeline/s3_validate_chapters.py` 随时重跑，不花钱
 - 第一季 47 集的分集边界已随剧本锁定，`s10` 重跑不会动它们
