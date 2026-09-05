@@ -1,0 +1,30 @@
+{
+  "canonical_name": "掌柜",
+  "aliases": [],
+  "first_seq": 579,
+  "last_seq": 579,
+  "chapter_count": 1,
+  "chapters": [
+    579
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 579,
+      "state": "旅店掌柜"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 579,
+      "actions": [
+        "迎接法师们"
+      ]
+    }
+  ],
+  "id": "c681_掌柜"
+}

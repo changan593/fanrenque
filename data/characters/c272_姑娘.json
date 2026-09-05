@@ -1,0 +1,52 @@
+{
+  "canonical_name": "姑娘",
+  "aliases": [
+    "最能歌善舞的姑娘"
+  ],
+  "first_seq": 83,
+  "last_seq": 244,
+  "chapter_count": 2,
+  "chapters": [
+    83,
+    244
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 83,
+      "quote": "那是一个相貌清冷，但眉眼十分柔和的姑娘，像是庙里的菩萨，可是细看之下，她眼神里又会透着一些锋利的东西"
+    },
+    {
+      "seq": 83,
+      "quote": "即便是扛着锄头依然美丽潇洒"
+    }
+  ],
+  "states": [
+    {
+      "seq": 83,
+      "state": "未理吕藏锋，径直走过"
+    },
+    {
+      "seq": 244,
+      "state": "待嫁年纪，对尉天齐有好感"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 83,
+      "actions": [
+        "与吕藏锋擦肩而过，未停留"
+      ]
+    },
+    {
+      "seq": 244,
+      "actions": [
+        "敬酒，解释阿姆丢失孩子的事"
+      ]
+    }
+  ],
+  "id": "c272_姑娘"
+}

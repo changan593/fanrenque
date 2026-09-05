@@ -1,0 +1,34 @@
+{
+  "canonical_name": "御林军校尉",
+  "aliases": [
+    "校尉"
+  ],
+  "first_seq": 605,
+  "last_seq": 605,
+  "chapter_count": 1,
+  "chapters": [
+    605
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 605,
+      "state": "骑在马上，面色变冷，被按住刀柄后青紫色脸，最终带兵离开"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 605,
+      "actions": [
+        "带兵前来，要求见管事",
+        "欲拔刀，被按住",
+        "被震慑后带兵离开"
+      ]
+    }
+  ],
+  "id": "c695_御林军校尉"
+}

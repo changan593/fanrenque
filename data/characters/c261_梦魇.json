@@ -1,0 +1,53 @@
+{
+  "canonical_name": "梦魇",
+  "aliases": [
+    "白影",
+    "残魂"
+  ],
+  "first_seq": 16,
+  "last_seq": 17,
+  "chapter_count": 2,
+  "chapters": [
+    16,
+    17
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 16,
+      "quote": "一道白影似是被挤了出来，发出阵阵听不见的嘶鸣和哀嚎，犹如小儿啼哭"
+    }
+  ],
+  "states": [
+    {
+      "seq": 16,
+      "state": "被逼出姚安饶身体，惧怕唐真身体"
+    },
+    {
+      "seq": 17,
+      "state": "被困，附身黑狗"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 16,
+      "actions": [
+        "被挤出姚安饶身体",
+        "试图钻回",
+        "扑向唐真又犹豫",
+        "飘向屋外"
+      ]
+    },
+    {
+      "seq": 17,
+      "actions": [
+        "欲逃，被剑诗困住",
+        "附身黑狗攻击唐真"
+      ]
+    }
+  ],
+  "id": "c261_梦魇"
+}

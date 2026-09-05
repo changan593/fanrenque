@@ -1,0 +1,43 @@
+{
+  "canonical_name": "农妇",
+  "aliases": [
+    "妇人"
+  ],
+  "first_seq": 3,
+  "last_seq": 3,
+  "chapter_count": 1,
+  "chapters": [
+    3
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 3,
+      "quote": "一个农妇带着自家儿子正在那里卖一些自己缝的衣料布碎"
+    },
+    {
+      "seq": 3,
+      "quote": "可是妇人自己穿的却还是草鞋，想来是没舍得给自己做，但用边角料给儿子纳了一双"
+    }
+  ],
+  "states": [
+    {
+      "seq": 3,
+      "state": "在集市角落摆摊卖自缝衣料"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 3,
+      "actions": [
+        "报价",
+        "展示牛皮底布鞋",
+        "验银找钱"
+      ]
+    }
+  ],
+  "id": "c354_农妇"
+}

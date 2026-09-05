@@ -1,0 +1,29 @@
+{
+  "name": "海岛",
+  "first_seq": 1184,
+  "chapter_count": 1,
+  "chapters": [
+    1184
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "阿难": 1,
+    "姚安饶": 1,
+    "知了和尚": 1
+  },
+  "events": [
+    {
+      "seq": 1184,
+      "events": [
+        "阿难与姚安恕对话，谈论佛法与南洲局势"
+      ]
+    }
+  ],
+  "id": "s1348_海岛"
+}

@@ -1,0 +1,33 @@
+{
+  "canonical_name": "小尼姑",
+  "aliases": [
+    "女子"
+  ],
+  "first_seq": 669,
+  "last_seq": 669,
+  "chapter_count": 1,
+  "chapters": [
+    669
+  ],
+  "role_distribution": {
+    "主导": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 669,
+      "state": "笑意盎然，眼神玩味，提及螺生时透出忌惮"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 669,
+      "actions": [
+        "向唐真解释螺生术法",
+        "展示海螺，讲述密宗历史"
+      ]
+    }
+  ],
+  "id": "c746_小尼姑"
+}

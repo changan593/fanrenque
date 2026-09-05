@@ -3,7 +3,7 @@
     "seasons": 6,
     "major_min": 10,
     "minor_min": 3,
-    "ambiguous_names": 180
+    "ambiguous_names": 182
   },
   "seasons": [
     {
@@ -14,13 +14,13 @@
       "episodes": 47,
       "episode_start": "S01E01",
       "episode_end": "S01E47",
-      "character_count": 207,
-      "scene_count": 274,
+      "character_count": 205,
+      "scene_count": 270,
       "characters": [
         {
           "name": "唐真",
           "season_chapters": 156,
-          "book_chapters": 634,
+          "book_chapters": 633,
           "first_seq": 1,
           "first_episode": "S01E01",
           "debuts_this_season": true,
@@ -33,7 +33,7 @@
         {
           "name": "姚望舒",
           "season_chapters": 114,
-          "book_chapters": 380,
+          "book_chapters": 382,
           "first_seq": 2,
           "first_episode": "S01E01",
           "debuts_this_season": true,
@@ -59,7 +59,7 @@
         {
           "name": "吕藏锋",
           "season_chapters": 38,
-          "book_chapters": 154,
+          "book_chapters": 155,
           "first_seq": 83,
           "first_episode": "S01E21",
           "debuts_this_season": true,
@@ -142,7 +142,7 @@
         {
           "name": "姜羽",
           "season_chapters": 24,
-          "book_chapters": 290,
+          "book_chapters": 289,
           "first_seq": 56,
           "first_episode": "S01E14",
           "debuts_this_season": true,
@@ -153,11 +153,11 @@
           "has_dossier": true
         },
         {
-          "name": "胡九",
-          "season_chapters": 23,
-          "book_chapters": 30,
-          "first_seq": 40,
-          "first_episode": "S01E10",
+          "name": "赵辞盈",
+          "season_chapters": 24,
+          "book_chapters": 45,
+          "first_seq": 74,
+          "first_episode": "S01E19",
           "debuts_this_season": true,
           "tier": "主要",
           "has_card": false,
@@ -166,11 +166,11 @@
           "has_dossier": false
         },
         {
-          "name": "赵辞盈",
+          "name": "胡九",
           "season_chapters": 23,
-          "book_chapters": 45,
-          "first_seq": 74,
-          "first_episode": "S01E19",
+          "book_chapters": 30,
+          "first_seq": 40,
+          "first_episode": "S01E10",
           "debuts_this_season": true,
           "tier": "主要",
           "has_card": false,
@@ -246,7 +246,6 @@
             "姚安饶",
             "姚望舒",
             "施家老祖母",
-            "狐魔尊",
             "王求娣"
           ],
           "has_dossier": false
@@ -776,6 +775,19 @@
           "has_dossier": false
         },
         {
+          "name": "兵部侍郎",
+          "season_chapters": 2,
+          "book_chapters": 16,
+          "first_seq": 73,
+          "first_episode": "S01E19",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": false
+        },
+        {
           "name": "剑山老剑仙",
           "season_chapters": 2,
           "book_chapters": 4,
@@ -791,7 +803,7 @@
         {
           "name": "南季礼",
           "season_chapters": 2,
-          "book_chapters": 64,
+          "book_chapters": 63,
           "first_seq": 1,
           "first_episode": "S01E01",
           "debuts_this_season": true,
@@ -830,7 +842,7 @@
         {
           "name": "小女孩",
           "season_chapters": 2,
-          "book_chapters": 7,
+          "book_chapters": 6,
           "first_seq": 45,
           "first_episode": "S01E11",
           "debuts_this_season": true,
@@ -861,7 +873,7 @@
         {
           "name": "师父",
           "season_chapters": 2,
-          "book_chapters": 14,
+          "book_chapters": 13,
           "first_seq": 15,
           "first_episode": "S01E04",
           "debuts_this_season": true,
@@ -903,19 +915,6 @@
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": true
-        },
-        {
-          "name": "施家祖母",
-          "season_chapters": 2,
-          "book_chapters": 16,
-          "first_seq": 9,
-          "first_episode": "S01E03",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
         },
         {
           "name": "梦魇",
@@ -1043,7 +1042,6 @@
             "老拐子",
             "苦行僧",
             "葛道人",
-            "返虚境长老",
             "野狐禅师",
             "金童峰长老",
             "金觉佛陀",
@@ -1125,22 +1123,6 @@
             "白化",
             "白思",
             "第一大菩萨"
-          ],
-          "has_dossier": false
-        },
-        {
-          "name": "长风",
-          "season_chapters": 2,
-          "book_chapters": null,
-          "first_seq": 73,
-          "first_episode": "S01E19",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "兵部侍郎",
-            "长风道人"
           ],
           "has_dossier": false
         },
@@ -1262,19 +1244,6 @@
           "has_dossier": false
         },
         {
-          "name": "六指大神",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 9,
-          "first_episode": "S01E03",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
           "name": "其他奇人",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -1359,19 +1328,6 @@
           "has_dossier": false
         },
         {
-          "name": "几个姑娘",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 121,
-          "first_episode": "S01E30",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
           "name": "副门主",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -1452,7 +1408,7 @@
         {
           "name": "吴慢慢",
           "season_chapters": 1,
-          "book_chapters": 147,
+          "book_chapters": 146,
           "first_seq": 120,
           "first_episode": "S01E30",
           "debuts_this_season": true,
@@ -1567,19 +1523,6 @@
           "book_chapters": 1,
           "first_seq": 59,
           "first_episode": "S01E14",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
-          "name": "天残手",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 9,
-          "first_episode": "S01E03",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -1780,7 +1723,7 @@
         {
           "name": "小男孩",
           "season_chapters": 1,
-          "book_chapters": 3,
+          "book_chapters": 4,
           "first_seq": 3,
           "first_episode": "S01E01",
           "debuts_this_season": true,
@@ -2074,6 +2017,19 @@
           "has_dossier": false
         },
         {
+          "name": "施家祖母",
+          "season_chapters": 1,
+          "book_chapters": 15,
+          "first_seq": 13,
+          "first_episode": "S01E04",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": false
+        },
+        {
           "name": "旧派天仙",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -2195,7 +2151,7 @@
         {
           "name": "灵兽崖崖主",
           "season_chapters": 1,
-          "book_chapters": 3,
+          "book_chapters": 2,
           "first_seq": 195,
           "first_episode": "S01E46",
           "debuts_this_season": true,
@@ -2527,6 +2483,19 @@
           "claimed_by": [
             "知了和尚"
           ],
+          "has_dossier": false
+        },
+        {
+          "name": "紫袍年轻道士",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 121,
+          "first_episode": "S01E30",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
           "has_dossier": false
         },
         {
@@ -3061,7 +3030,7 @@
           "tier": "次要",
           "has_card": false,
           "types": {
-            "室外": 13,
+            "室外": 12,
             "室内": 1
           }
         },
@@ -3263,6 +3232,19 @@
           }
         },
         {
+          "name": "地下溶洞",
+          "season_chapters": 2,
+          "book_chapters": 2,
+          "first_seq": 140,
+          "first_episode": "S01E34",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "其他": 2
+          }
+        },
+        {
           "name": "城主府大堂",
           "season_chapters": 2,
           "book_chapters": 2,
@@ -3394,6 +3376,19 @@
           }
         },
         {
+          "name": "法会广场",
+          "season_chapters": 2,
+          "book_chapters": 2,
+          "first_seq": 121,
+          "first_episode": "S01E30",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室外": 2
+          }
+        },
+        {
           "name": "灵溪洞深处",
           "season_chapters": 2,
           "book_chapters": 2,
@@ -3466,19 +3461,6 @@
           "book_chapters": 2,
           "first_seq": 122,
           "first_episode": "S01E31",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室外": 2
-          }
-        },
-        {
-          "name": "玉皇顶法会广场",
-          "season_chapters": 2,
-          "book_chapters": 2,
-          "first_seq": 121,
-          "first_episode": "S01E30",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -4282,19 +4264,6 @@
           }
         },
         {
-          "name": "地下溶洞",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 140,
-          "first_episode": "S01E34",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "其他": 1
-          }
-        },
-        {
           "name": "地底缝隙",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -4373,7 +4342,7 @@
           }
         },
         {
-          "name": "城主府外墙",
+          "name": "城主府外墙及院内",
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 9,
@@ -4422,19 +4391,6 @@
           "has_card": false,
           "types": {
             "室内": 1
-          }
-        },
-        {
-          "name": "城主府小院",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 9,
-          "first_episode": "S01E03",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室外": 1
           }
         },
         {
@@ -4851,19 +4807,6 @@
           "has_card": false,
           "types": {
             "室内": 2
-          }
-        },
-        {
-          "name": "小道山谷",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 183,
-          "first_episode": "S01E44",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室外": 1
           }
         },
         {
@@ -5335,19 +5278,6 @@
           }
         },
         {
-          "name": "法会广场",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 125,
-          "first_episode": "S01E31",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室外": 1
-          }
-        },
-        {
           "name": "洞底",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -5449,19 +5379,6 @@
           "has_card": false,
           "types": {
             "室外": 2,
-            "其他": 1
-          }
-        },
-        {
-          "name": "溶洞",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 183,
-          "first_episode": "S01E44",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
             "其他": 1
           }
         },
@@ -5722,7 +5639,7 @@
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室内": 1
+            "室内": 2
           }
         },
         {
@@ -5895,19 +5812,6 @@
           }
         },
         {
-          "name": "玉屏观观门",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 183,
-          "first_episode": "S01E44",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室外": 1
-          }
-        },
-        {
           "name": "玉屏观门口",
           "season_chapters": 1,
           "book_chapters": 2,
@@ -6017,6 +5921,19 @@
           "book_chapters": 1,
           "first_seq": 119,
           "first_episode": "S01E30",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室外": 1
+          }
+        },
+        {
+          "name": "玉皇顶法会广场",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 130,
+          "first_episode": "S01E32",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -6412,8 +6329,8 @@
           "has_card": false,
           "types": {
             "室外": 2,
-            "其他": 10,
-            "秘境": 2,
+            "其他": 9,
+            "秘境": 3,
             "特殊空间": 1
           }
         },
@@ -6433,14 +6350,14 @@
         {
           "name": "酒楼",
           "season_chapters": 1,
-          "book_chapters": 5,
+          "book_chapters": 4,
           "first_seq": 64,
           "first_episode": "S01E16",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室内": 5
+            "室内": 4
           }
         },
         {
@@ -6518,13 +6435,13 @@
       "episodes": 46,
       "episode_start": "S02E01",
       "episode_end": "S02E46",
-      "character_count": 219,
-      "scene_count": 247,
+      "character_count": 220,
+      "scene_count": 252,
       "characters": [
         {
           "name": "姚望舒",
           "season_chapters": 94,
-          "book_chapters": 380,
+          "book_chapters": 382,
           "first_seq": 207,
           "first_episode": "S02E02",
           "debuts_this_season": false,
@@ -6537,7 +6454,7 @@
         {
           "name": "唐真",
           "season_chapters": 62,
-          "book_chapters": 634,
+          "book_chapters": 633,
           "first_seq": 201,
           "first_episode": "S02E01",
           "debuts_this_season": false,
@@ -6589,7 +6506,7 @@
         {
           "name": "吕藏锋",
           "season_chapters": 33,
-          "book_chapters": 154,
+          "book_chapters": 155,
           "first_seq": 282,
           "first_episode": "S02E18",
           "debuts_this_season": false,
@@ -6618,7 +6535,7 @@
         {
           "name": "姜羽",
           "season_chapters": 30,
-          "book_chapters": 290,
+          "book_chapters": 289,
           "first_seq": 201,
           "first_episode": "S02E01",
           "debuts_this_season": false,
@@ -6631,7 +6548,7 @@
         {
           "name": "吴慢慢",
           "season_chapters": 26,
-          "book_chapters": 147,
+          "book_chapters": 146,
           "first_seq": 227,
           "first_episode": "S02E06",
           "debuts_this_season": false,
@@ -6669,7 +6586,7 @@
         },
         {
           "name": "王玉屏",
-          "season_chapters": 24,
+          "season_chapters": 25,
           "book_chapters": 89,
           "first_seq": 208,
           "first_episode": "S02E02",
@@ -6697,7 +6614,7 @@
         },
         {
           "name": "周东东",
-          "season_chapters": 19,
+          "season_chapters": 18,
           "book_chapters": 112,
           "first_seq": 201,
           "first_episode": "S02E01",
@@ -6711,7 +6628,7 @@
         {
           "name": "白子鹤",
           "season_chapters": 18,
-          "book_chapters": 44,
+          "book_chapters": 45,
           "first_seq": 338,
           "first_episode": "S02E30",
           "debuts_this_season": true,
@@ -6977,8 +6894,10 @@
           "debuts_this_season": true,
           "tier": "次要",
           "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
+          "ambiguous": true,
+          "claimed_by": [
+            "永和楼楼主"
+          ],
           "has_dossier": false
         },
         {
@@ -7075,6 +6994,33 @@
           "has_dossier": false
         },
         {
+          "name": "中年男人",
+          "season_chapters": 5,
+          "book_chapters": 13,
+          "first_seq": 279,
+          "first_episode": "S02E18",
+          "debuts_this_season": true,
+          "tier": "次要",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "东临水军偏将",
+            "中年修士",
+            "人皇",
+            "儒师",
+            "剑圣",
+            "北阳城城主",
+            "南宁王",
+            "姚城主",
+            "尉梁",
+            "施家子弟",
+            "施家家主",
+            "白师叔",
+            "运粮官"
+          ],
+          "has_dossier": false
+        },
+        {
           "name": "儒师",
           "season_chapters": 5,
           "book_chapters": 11,
@@ -7101,8 +7047,7 @@
           "has_card": false,
           "ambiguous": true,
           "claimed_by": [
-            "姚安饶",
-            "白姓青年"
+            "姚安饶"
           ],
           "has_dossier": false
         },
@@ -7159,33 +7104,6 @@
           "ambiguous": true,
           "claimed_by": [
             "郭师兄"
-          ],
-          "has_dossier": false
-        },
-        {
-          "name": "中年男人",
-          "season_chapters": 4,
-          "book_chapters": 12,
-          "first_seq": 279,
-          "first_episode": "S02E18",
-          "debuts_this_season": true,
-          "tier": "次要",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "东临水军偏将",
-            "中年修士",
-            "人皇",
-            "儒师",
-            "剑圣",
-            "北阳城城主",
-            "南宁王",
-            "姚城主",
-            "尉梁",
-            "施家子弟",
-            "施家家主",
-            "白师叔",
-            "运粮官"
           ],
           "has_dossier": false
         },
@@ -7311,6 +7229,59 @@
           "has_dossier": false
         },
         {
+          "name": "老人",
+          "season_chapters": 4,
+          "book_chapters": 31,
+          "first_seq": 339,
+          "first_episode": "S02E31",
+          "debuts_this_season": false,
+          "tier": "次要",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "两松观的观主",
+            "两松观观主",
+            "主事",
+            "供奉",
+            "兵部侍郎",
+            "南季礼",
+            "史母",
+            "天命阁阁主",
+            "姚城主",
+            "密集尊者",
+            "左相",
+            "师父",
+            "怀素",
+            "施家祖母",
+            "施家老祖母",
+            "无救",
+            "李三全",
+            "村长",
+            "杜圣",
+            "清泉宗长老",
+            "田二郎",
+            "白发老头",
+            "白思道人",
+            "白玉宫执事老人",
+            "白生",
+            "瞎子老人",
+            "程伊",
+            "程百尺",
+            "第一大菩萨",
+            "老僧",
+            "老拐子",
+            "苦行僧",
+            "葛道人",
+            "野狐禅师",
+            "金童峰长老",
+            "金觉佛陀",
+            "铁石",
+            "锦袍老天仙",
+            "长老"
+          ],
+          "has_dossier": false
+        },
+        {
           "name": "齐渊",
           "season_chapters": 4,
           "book_chapters": 118,
@@ -7425,60 +7396,6 @@
           "has_dossier": false
         },
         {
-          "name": "老人",
-          "season_chapters": 3,
-          "book_chapters": 31,
-          "first_seq": 342,
-          "first_episode": "S02E31",
-          "debuts_this_season": false,
-          "tier": "次要",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "两松观的观主",
-            "两松观观主",
-            "主事",
-            "供奉",
-            "兵部侍郎",
-            "南季礼",
-            "史母",
-            "天命阁阁主",
-            "姚城主",
-            "密集尊者",
-            "左相",
-            "师父",
-            "怀素",
-            "施家祖母",
-            "施家老祖母",
-            "无救",
-            "李三全",
-            "村长",
-            "杜圣",
-            "清泉宗长老",
-            "田二郎",
-            "白发老头",
-            "白思道人",
-            "白玉宫执事老人",
-            "白生",
-            "瞎子老人",
-            "程伊",
-            "程百尺",
-            "第一大菩萨",
-            "老僧",
-            "老拐子",
-            "苦行僧",
-            "葛道人",
-            "返虚境长老",
-            "野狐禅师",
-            "金童峰长老",
-            "金觉佛陀",
-            "铁石",
-            "锦袍老天仙",
-            "长老"
-          ],
-          "has_dossier": false
-        },
-        {
           "name": "两松观观主",
           "season_chapters": 2,
           "book_chapters": 9,
@@ -7520,7 +7437,7 @@
         {
           "name": "元永洁",
           "season_chapters": 2,
-          "book_chapters": 95,
+          "book_chapters": 94,
           "first_seq": 204,
           "first_episode": "S02E01",
           "debuts_this_season": true,
@@ -7561,24 +7478,6 @@
           "has_dossier": false
         },
         {
-          "name": "小女孩",
-          "season_chapters": 2,
-          "book_chapters": 7,
-          "first_seq": 342,
-          "first_episode": "S02E31",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "云儿",
-            "妖圣紫云",
-            "幺儿",
-            "蝉儿"
-          ],
-          "has_dossier": false
-        },
-        {
           "name": "小孩",
           "season_chapters": 2,
           "book_chapters": 2,
@@ -7607,6 +7506,21 @@
           "ambiguous": true,
           "claimed_by": [
             "帝后娘娘"
+          ],
+          "has_dossier": false
+        },
+        {
+          "name": "永和楼楼主",
+          "season_chapters": 2,
+          "book_chapters": 6,
+          "first_seq": 364,
+          "first_episode": "S02E36",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "楼主"
           ],
           "has_dossier": false
         },
@@ -8347,8 +8261,8 @@
           "name": "孩子们",
           "season_chapters": 1,
           "book_chapters": 11,
-          "first_seq": 362,
-          "first_episode": "S02E36",
+          "first_seq": 310,
+          "first_episode": "S02E24",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -8389,6 +8303,24 @@
           "has_dossier": false
         },
         {
+          "name": "小女孩",
+          "season_chapters": 1,
+          "book_chapters": 6,
+          "first_seq": 342,
+          "first_episode": "S02E31",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "云儿",
+            "妖圣紫云",
+            "幺儿",
+            "蝉儿"
+          ],
+          "has_dossier": false
+        },
+        {
           "name": "小姑娘",
           "season_chapters": 1,
           "book_chapters": null,
@@ -8410,6 +8342,44 @@
             "白裙姑娘",
             "紫云",
             "葵"
+          ],
+          "has_dossier": false
+        },
+        {
+          "name": "小男孩",
+          "season_chapters": 1,
+          "book_chapters": 4,
+          "first_seq": 339,
+          "first_episode": "S02E31",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": true,
+          "ambiguous": true,
+          "claimed_by": [
+            "周东东",
+            "姜麟",
+            "无救魔尊",
+            "狌狌",
+            "狌狌（小男孩）",
+            "王善",
+            "雄儿",
+            "齐渊"
+          ],
+          "has_dossier": false
+        },
+        {
+          "name": "小白",
+          "season_chapters": 1,
+          "book_chapters": null,
+          "first_seq": 279,
+          "first_episode": "S02E18",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "周东东",
+            "白姓青年"
           ],
           "has_dossier": false
         },
@@ -8534,6 +8504,19 @@
           "has_dossier": false
         },
         {
+          "name": "报幕小姑娘",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 364,
+          "first_episode": "S02E36",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": false
+        },
+        {
           "name": "掌事太监",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -8552,19 +8535,6 @@
           "book_chapters": 2,
           "first_seq": 246,
           "first_episode": "S02E10",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
-          "name": "早食老板",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 280,
-          "first_episode": "S02E18",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -8668,22 +8638,6 @@
           "has_card": false,
           "ambiguous": false,
           "claimed_by": null,
-          "has_dossier": false
-        },
-        {
-          "name": "永和楼楼主",
-          "season_chapters": 1,
-          "book_chapters": 5,
-          "first_seq": 368,
-          "first_episode": "S02E37",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "楼主",
-            "永和楼老板"
-          ],
           "has_dossier": false
         },
         {
@@ -8827,19 +8781,6 @@
           "book_chapters": 1,
           "first_seq": 244,
           "first_episode": "S02E10",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
-          "name": "男童",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 339,
-          "first_episode": "S02E31",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -9700,6 +9641,19 @@
           }
         },
         {
+          "name": "永和楼后台",
+          "season_chapters": 5,
+          "book_chapters": 6,
+          "first_seq": 335,
+          "first_episode": "S02E30",
+          "debuts_this_season": true,
+          "tier": "次要",
+          "has_card": false,
+          "types": {
+            "室内": 7
+          }
+        },
+        {
           "name": "玉屏山",
           "season_chapters": 5,
           "book_chapters": 13,
@@ -9709,7 +9663,7 @@
           "tier": "次要",
           "has_card": false,
           "types": {
-            "室外": 13,
+            "室外": 12,
             "室内": 1
           }
         },
@@ -9751,32 +9705,6 @@
           "has_card": false,
           "types": {
             "室内": 4
-          }
-        },
-        {
-          "name": "永和楼",
-          "season_chapters": 4,
-          "book_chapters": 34,
-          "first_seq": 311,
-          "first_episode": "S02E24",
-          "debuts_this_season": true,
-          "tier": "次要",
-          "has_card": false,
-          "types": {
-            "室内": 34
-          }
-        },
-        {
-          "name": "永和楼后台",
-          "season_chapters": 4,
-          "book_chapters": 5,
-          "first_seq": 335,
-          "first_episode": "S02E30",
-          "debuts_this_season": true,
-          "tier": "次要",
-          "has_card": false,
-          "types": {
-            "室内": 6
           }
         },
         {
@@ -9858,6 +9786,19 @@
           "has_card": false,
           "types": {
             "室外": 3
+          }
+        },
+        {
+          "name": "永和楼",
+          "season_chapters": 3,
+          "book_chapters": 33,
+          "first_seq": 311,
+          "first_episode": "S02E24",
+          "debuts_this_season": true,
+          "tier": "次要",
+          "has_card": false,
+          "types": {
+            "室内": 33
           }
         },
         {
@@ -10151,6 +10092,19 @@
           }
         },
         {
+          "name": "玉屏观后殿偏房",
+          "season_chapters": 2,
+          "book_chapters": 2,
+          "first_seq": 279,
+          "first_episode": "S02E18",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 2
+          }
+        },
+        {
           "name": "登天台",
           "season_chapters": 2,
           "book_chapters": 2,
@@ -10200,19 +10154,6 @@
           "has_card": false,
           "types": {
             "室内": 2
-          }
-        },
-        {
-          "name": "酒楼",
-          "season_chapters": 2,
-          "book_chapters": 5,
-          "first_seq": 316,
-          "first_episode": "S02E25",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室内": 5
           }
         },
         {
@@ -10871,6 +10812,19 @@
           }
         },
         {
+          "name": "壮汉家院门",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 347,
+          "first_episode": "S02E32",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室外": 1
+          }
+        },
+        {
           "name": "夜月星辉阵",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -10906,7 +10860,7 @@
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室外": 1
+            "室内": 1
           }
         },
         {
@@ -11119,6 +11073,19 @@
           }
         },
         {
+          "name": "妇人家院子",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 339,
+          "first_episode": "S02E31",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 1
+          }
+        },
+        {
           "name": "姚安恕居所（屋内及屋外）",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -11236,6 +11203,19 @@
           }
         },
         {
+          "name": "屋外",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 376,
+          "first_episode": "S02E38",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室外": 1
+          }
+        },
+        {
           "name": "屏姐房间",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -11324,6 +11304,32 @@
           "has_card": false,
           "types": {
             "室外": 1
+          }
+        },
+        {
+          "name": "念娘酒楼（红儿房间，夜间）",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 316,
+          "first_episode": "S02E25",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 1
+          }
+        },
+        {
+          "name": "念娘酒楼（红儿房间，白天）",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 316,
+          "first_episode": "S02E25",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 1
           }
         },
         {
@@ -11732,6 +11738,19 @@
           }
         },
         {
+          "name": "永和楼后院（屋内）",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 362,
+          "first_episode": "S02E36",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 1
+          }
+        },
+        {
           "name": "永和楼地窖",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -11755,6 +11774,19 @@
           "has_card": false,
           "types": {
             "室外": 3
+          }
+        },
+        {
+          "name": "永和楼大堂",
+          "season_chapters": 1,
+          "book_chapters": 4,
+          "first_seq": 364,
+          "first_episode": "S02E36",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 4
           }
         },
         {
@@ -12071,29 +12103,16 @@
           }
         },
         {
-          "name": "玉屏观偏房",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 280,
-          "first_episode": "S02E18",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室内": 1
-          }
-        },
-        {
           "name": "玉屏观内",
           "season_chapters": 1,
-          "book_chapters": 2,
+          "book_chapters": 1,
           "first_seq": 296,
           "first_episode": "S02E21",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室内": 2
+            "室内": 1
           }
         },
         {
@@ -12133,19 +12152,6 @@
           "has_card": false,
           "types": {
             "室外": 1
-          }
-        },
-        {
-          "name": "玉屏观后殿偏房",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 279,
-          "first_episode": "S02E18",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室内": 1
           }
         },
         {
@@ -12198,19 +12204,6 @@
           "has_card": false,
           "types": {
             "室外": 1
-          }
-        },
-        {
-          "name": "男童家院子",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 339,
-          "first_episode": "S02E31",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室内": 1
           }
         },
         {
@@ -12692,8 +12685,8 @@
           "has_card": false,
           "types": {
             "室外": 2,
-            "其他": 10,
-            "秘境": 2,
+            "其他": 9,
+            "秘境": 3,
             "特殊空间": 1
           }
         },
@@ -12708,6 +12701,19 @@
           "has_card": false,
           "types": {
             "室内": 1
+          }
+        },
+        {
+          "name": "酒楼",
+          "season_chapters": 1,
+          "book_chapters": 4,
+          "first_seq": 334,
+          "first_episode": "S02E29",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 4
           }
         },
         {
@@ -12882,7 +12888,7 @@
         {
           "name": "姚望舒",
           "season_chapters": 35,
-          "book_chapters": 380,
+          "book_chapters": 382,
           "first_seq": 427,
           "first_episode": "S03E04",
           "debuts_this_season": false,
@@ -12908,7 +12914,7 @@
         {
           "name": "吴慢慢",
           "season_chapters": 31,
-          "book_chapters": 147,
+          "book_chapters": 146,
           "first_seq": 443,
           "first_episode": "S03E07",
           "debuts_this_season": false,
@@ -12921,7 +12927,7 @@
         {
           "name": "唐真",
           "season_chapters": 31,
-          "book_chapters": 634,
+          "book_chapters": 633,
           "first_seq": 413,
           "first_episode": "S03E01",
           "debuts_this_season": false,
@@ -12934,7 +12940,7 @@
         {
           "name": "姜羽",
           "season_chapters": 30,
-          "book_chapters": 290,
+          "book_chapters": 289,
           "first_seq": 431,
           "first_episode": "S03E05",
           "debuts_this_season": false,
@@ -13003,7 +13009,7 @@
         {
           "name": "元永洁",
           "season_chapters": 16,
-          "book_chapters": 95,
+          "book_chapters": 94,
           "first_seq": 423,
           "first_episode": "S03E03",
           "debuts_this_season": false,
@@ -13200,7 +13206,7 @@
         {
           "name": "白子鹤",
           "season_chapters": 10,
-          "book_chapters": 44,
+          "book_chapters": 45,
           "first_seq": 427,
           "first_episode": "S03E04",
           "debuts_this_season": false,
@@ -13265,7 +13271,7 @@
         {
           "name": "吕藏锋",
           "season_chapters": 8,
-          "book_chapters": 154,
+          "book_chapters": 155,
           "first_seq": 488,
           "first_episode": "S03E17",
           "debuts_this_season": false,
@@ -13610,7 +13616,7 @@
         {
           "name": "施家祖母",
           "season_chapters": 4,
-          "book_chapters": 16,
+          "book_chapters": 15,
           "first_seq": 474,
           "first_episode": "S03E14",
           "debuts_this_season": false,
@@ -13679,7 +13685,6 @@
             "老拐子",
             "苦行僧",
             "葛道人",
-            "返虚境长老",
             "野狐禅师",
             "金童峰长老",
             "金觉佛陀",
@@ -13796,7 +13801,7 @@
         {
           "name": "狐魔尊",
           "season_chapters": 3,
-          "book_chapters": 78,
+          "book_chapters": 79,
           "first_seq": 541,
           "first_episode": "S03E29",
           "debuts_this_season": false,
@@ -13830,7 +13835,7 @@
         {
           "name": "葵",
           "season_chapters": 3,
-          "book_chapters": 81,
+          "book_chapters": 80,
           "first_seq": 518,
           "first_episode": "S03E24",
           "debuts_this_season": true,
@@ -13972,7 +13977,7 @@
         {
           "name": "小女孩",
           "season_chapters": 2,
-          "book_chapters": 7,
+          "book_chapters": 6,
           "first_seq": 456,
           "first_episode": "S03E10",
           "debuts_this_season": false,
@@ -14099,7 +14104,7 @@
         {
           "name": "永和楼楼主",
           "season_chapters": 2,
-          "book_chapters": 5,
+          "book_chapters": 6,
           "first_seq": 460,
           "first_episode": "S03E11",
           "debuts_this_season": false,
@@ -14107,8 +14112,7 @@
           "has_card": false,
           "ambiguous": true,
           "claimed_by": [
-            "楼主",
-            "永和楼老板"
+            "楼主"
           ],
           "has_dossier": false
         },
@@ -14315,7 +14319,7 @@
         {
           "name": "中年男人",
           "season_chapters": 1,
-          "book_chapters": 12,
+          "book_chapters": 13,
           "first_seq": 525,
           "first_episode": "S03E25",
           "debuts_this_season": false,
@@ -14938,7 +14942,6 @@
             "姚安饶",
             "姚望舒",
             "施家老祖母",
-            "狐魔尊",
             "王求娣"
           ],
           "has_dossier": false
@@ -15185,8 +15188,10 @@
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
+          "ambiguous": true,
+          "claimed_by": [
+            "永和楼楼主"
+          ],
           "has_dossier": false
         },
         {
@@ -15863,14 +15868,14 @@
         {
           "name": "永和楼",
           "season_chapters": 11,
-          "book_chapters": 34,
+          "book_chapters": 33,
           "first_seq": 414,
           "first_episode": "S03E01",
           "debuts_this_season": false,
           "tier": "主要",
           "has_card": false,
           "types": {
-            "室内": 34
+            "室内": 33
           }
         },
         {
@@ -16075,14 +16080,14 @@
         {
           "name": "永和楼大堂",
           "season_chapters": 3,
-          "book_chapters": 3,
+          "book_chapters": 4,
           "first_seq": 541,
           "first_episode": "S03E29",
-          "debuts_this_season": true,
+          "debuts_this_season": false,
           "tier": "次要",
           "has_card": false,
           "types": {
-            "室内": 3
+            "室内": 4
           }
         },
         {
@@ -17763,14 +17768,14 @@
         {
           "name": "永和楼后台",
           "season_chapters": 1,
-          "book_chapters": 5,
+          "book_chapters": 6,
           "first_seq": 567,
           "first_episode": "S03E35",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室内": 6
+            "室内": 7
           }
         },
         {
@@ -18856,7 +18861,7 @@
         {
           "name": "姜羽",
           "season_chapters": 49,
-          "book_chapters": 290,
+          "book_chapters": 289,
           "first_seq": 615,
           "first_episode": "S04E04",
           "debuts_this_season": false,
@@ -18869,7 +18874,7 @@
         {
           "name": "唐真",
           "season_chapters": 39,
-          "book_chapters": 634,
+          "book_chapters": 633,
           "first_seq": 650,
           "first_episode": "S04E12",
           "debuts_this_season": false,
@@ -18978,7 +18983,7 @@
         {
           "name": "吕藏锋",
           "season_chapters": 18,
-          "book_chapters": 154,
+          "book_chapters": 155,
           "first_seq": 616,
           "first_episode": "S04E04",
           "debuts_this_season": false,
@@ -19004,7 +19009,7 @@
         {
           "name": "元永洁",
           "season_chapters": 16,
-          "book_chapters": 95,
+          "book_chapters": 94,
           "first_seq": 628,
           "first_episode": "S04E07",
           "debuts_this_season": false,
@@ -19017,7 +19022,7 @@
         {
           "name": "葵",
           "season_chapters": 16,
-          "book_chapters": 81,
+          "book_chapters": 80,
           "first_seq": 610,
           "first_episode": "S04E03",
           "debuts_this_season": false,
@@ -19061,7 +19066,7 @@
         {
           "name": "狐魔尊",
           "season_chapters": 15,
-          "book_chapters": 78,
+          "book_chapters": 79,
           "first_seq": 671,
           "first_episode": "S04E18",
           "debuts_this_season": false,
@@ -19319,7 +19324,7 @@
         {
           "name": "姚望舒",
           "season_chapters": 9,
-          "book_chapters": 380,
+          "book_chapters": 382,
           "first_seq": 643,
           "first_episode": "S04E10",
           "debuts_this_season": false,
@@ -19399,7 +19404,7 @@
         {
           "name": "吴慢慢",
           "season_chapters": 8,
-          "book_chapters": 147,
+          "book_chapters": 146,
           "first_seq": 601,
           "first_episode": "S04E01",
           "debuts_this_season": false,
@@ -19560,7 +19565,7 @@
         {
           "name": "中年男人",
           "season_chapters": 4,
-          "book_chapters": 12,
+          "book_chapters": 13,
           "first_seq": 611,
           "first_episode": "S04E03",
           "debuts_this_season": false,
@@ -19657,7 +19662,7 @@
         {
           "name": "老僧",
           "season_chapters": 4,
-          "book_chapters": 19,
+          "book_chapters": 18,
           "first_seq": 619,
           "first_episode": "S04E05",
           "debuts_this_season": true,
@@ -19782,7 +19787,6 @@
             "姚安饶",
             "姚望舒",
             "施家老祖母",
-            "狐魔尊",
             "王求娣"
           ],
           "has_dossier": false
@@ -20173,8 +20177,10 @@
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
+          "ambiguous": true,
+          "claimed_by": [
+            "永和楼楼主"
+          ],
           "has_dossier": false
         },
         {
@@ -20195,7 +20201,7 @@
         {
           "name": "白子鹤",
           "season_chapters": 2,
-          "book_chapters": 44,
+          "book_chapters": 45,
           "first_seq": 649,
           "first_episode": "S04E11",
           "debuts_this_season": false,
@@ -20275,7 +20281,6 @@
             "老拐子",
             "苦行僧",
             "葛道人",
-            "返虚境长老",
             "野狐禅师",
             "金童峰长老",
             "金觉佛陀",
@@ -21053,7 +21058,6 @@
           "has_card": false,
           "ambiguous": true,
           "claimed_by": [
-            "古月皇贵妃",
             "吴慢慢",
             "姚安饶",
             "姚望舒",
@@ -21230,7 +21234,7 @@
         {
           "name": "小女孩",
           "season_chapters": 1,
-          "book_chapters": 7,
+          "book_chapters": 6,
           "first_seq": 679,
           "first_episode": "S04E20",
           "debuts_this_season": false,
@@ -21654,7 +21658,7 @@
         {
           "name": "永和楼楼主",
           "season_chapters": 1,
-          "book_chapters": 5,
+          "book_chapters": 6,
           "first_seq": 751,
           "first_episode": "S04E35",
           "debuts_this_season": false,
@@ -21662,8 +21666,7 @@
           "has_card": false,
           "ambiguous": true,
           "claimed_by": [
-            "楼主",
-            "永和楼老板"
+            "楼主"
           ],
           "has_dossier": false
         },
@@ -22485,14 +22488,14 @@
         {
           "name": "永和楼",
           "season_chapters": 9,
-          "book_chapters": 34,
+          "book_chapters": 33,
           "first_seq": 675,
           "first_episode": "S04E19",
           "debuts_this_season": false,
           "tier": "次要",
           "has_card": false,
           "types": {
-            "室内": 34
+            "室内": 33
           }
         },
         {
@@ -24329,7 +24332,7 @@
           }
         },
         {
-          "name": "峡谷",
+          "name": "峡谷（九洲清宴会场）",
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 696,
@@ -24938,7 +24941,7 @@
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室外": 13,
+            "室外": 12,
             "室内": 1
           }
         },
@@ -25571,14 +25574,14 @@
         {
           "name": "酒楼",
           "season_chapters": 1,
-          "book_chapters": 5,
+          "book_chapters": 4,
           "first_seq": 758,
           "first_episode": "S04E37",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室内": 5
+            "室内": 4
           }
         },
         {
@@ -26176,13 +26179,13 @@
       "episodes": 41,
       "episode_start": "S05E01",
       "episode_end": "S05E41",
-      "character_count": 233,
+      "character_count": 232,
       "scene_count": 249,
       "characters": [
         {
           "name": "唐真",
           "season_chapters": 66,
-          "book_chapters": 634,
+          "book_chapters": 633,
           "first_seq": 815,
           "first_episode": "S05E03",
           "debuts_this_season": false,
@@ -26234,7 +26237,7 @@
         {
           "name": "元永洁",
           "season_chapters": 26,
-          "book_chapters": 95,
+          "book_chapters": 94,
           "first_seq": 801,
           "first_episode": "S05E01",
           "debuts_this_season": false,
@@ -26247,7 +26250,7 @@
         {
           "name": "姜羽",
           "season_chapters": 24,
-          "book_chapters": 290,
+          "book_chapters": 289,
           "first_seq": 817,
           "first_episode": "S05E04",
           "debuts_this_season": false,
@@ -26273,7 +26276,7 @@
         {
           "name": "姚望舒",
           "season_chapters": 19,
-          "book_chapters": 380,
+          "book_chapters": 382,
           "first_seq": 921,
           "first_episode": "S05E26",
           "debuts_this_season": false,
@@ -26299,7 +26302,7 @@
         {
           "name": "吕藏锋",
           "season_chapters": 18,
-          "book_chapters": 154,
+          "book_chapters": 155,
           "first_seq": 959,
           "first_episode": "S05E33",
           "debuts_this_season": false,
@@ -26382,7 +26385,7 @@
         {
           "name": "老僧",
           "season_chapters": 13,
-          "book_chapters": 19,
+          "book_chapters": 18,
           "first_seq": 833,
           "first_episode": "S05E07",
           "debuts_this_season": false,
@@ -26515,7 +26518,7 @@
         {
           "name": "吴慢慢",
           "season_chapters": 10,
-          "book_chapters": 147,
+          "book_chapters": 146,
           "first_seq": 896,
           "first_episode": "S05E20",
           "debuts_this_season": false,
@@ -26637,7 +26640,7 @@
         {
           "name": "狐魔尊",
           "season_chapters": 9,
-          "book_chapters": 78,
+          "book_chapters": 79,
           "first_seq": 824,
           "first_episode": "S05E05",
           "debuts_this_season": false,
@@ -26736,7 +26739,7 @@
         {
           "name": "天魔尊",
           "season_chapters": 7,
-          "book_chapters": 35,
+          "book_chapters": 34,
           "first_seq": 973,
           "first_episode": "S05E36",
           "debuts_this_season": false,
@@ -26840,7 +26843,7 @@
         {
           "name": "白子鹤",
           "season_chapters": 6,
-          "book_chapters": 44,
+          "book_chapters": 45,
           "first_seq": 921,
           "first_episode": "S05E26",
           "debuts_this_season": false,
@@ -26894,7 +26897,6 @@
             "老拐子",
             "苦行僧",
             "葛道人",
-            "返虚境长老",
             "野狐禅师",
             "金童峰长老",
             "金觉佛陀",
@@ -27090,7 +27092,7 @@
         {
           "name": "天菩萨",
           "season_chapters": 3,
-          "book_chapters": 21,
+          "book_chapters": 20,
           "first_seq": 982,
           "first_episode": "S05E38",
           "debuts_this_season": true,
@@ -27709,6 +27711,22 @@
           "has_dossier": false
         },
         {
+          "name": "中年人",
+          "season_chapters": 1,
+          "book_chapters": null,
+          "first_seq": 819,
+          "first_episode": "S05E04",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "师父",
+            "高冠老头"
+          ],
+          "has_dossier": false
+        },
+        {
           "name": "中年僧侣",
           "season_chapters": 1,
           "book_chapters": 2,
@@ -27724,7 +27742,7 @@
         {
           "name": "中年男人",
           "season_chapters": 1,
-          "book_chapters": 12,
+          "book_chapters": 13,
           "first_seq": 868,
           "first_episode": "S05E14",
           "debuts_this_season": false,
@@ -28467,7 +28485,7 @@
         {
           "name": "小男孩",
           "season_chapters": 1,
-          "book_chapters": 3,
+          "book_chapters": 4,
           "first_seq": 980,
           "first_episode": "S05E37",
           "debuts_this_season": false,
@@ -28567,22 +28585,8 @@
             "姚安饶",
             "姚望舒",
             "施家老祖母",
-            "狐魔尊",
             "王求娣"
           ],
-          "has_dossier": false
-        },
-        {
-          "name": "师父",
-          "season_chapters": 1,
-          "book_chapters": 14,
-          "first_seq": 819,
-          "first_episode": "S05E04",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
           "has_dossier": false
         },
         {
@@ -29293,22 +29297,6 @@
           "has_dossier": false
         },
         {
-          "name": "葵",
-          "season_chapters": 1,
-          "book_chapters": 81,
-          "first_seq": 930,
-          "first_episode": "S05E27",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "双胞胎女孩",
-            "藏青色短打的女孩"
-          ],
-          "has_dossier": false
-        },
-        {
           "name": "觉悔",
           "season_chapters": 1,
           "book_chapters": 22,
@@ -29544,14 +29532,14 @@
         {
           "name": "永和楼",
           "season_chapters": 8,
-          "book_chapters": 34,
+          "book_chapters": 33,
           "first_seq": 932,
           "first_episode": "S05E28",
           "debuts_this_season": false,
           "tier": "次要",
           "has_card": false,
           "types": {
-            "室内": 34
+            "室内": 33
           }
         },
         {
@@ -32622,14 +32610,14 @@
         {
           "name": "酒楼",
           "season_chapters": 1,
-          "book_chapters": 5,
+          "book_chapters": 4,
           "first_seq": 928,
           "first_episode": "S05E27",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室内": 5
+            "室内": 4
           }
         },
         {
@@ -32785,13 +32773,13 @@
       "episodes": 46,
       "episode_start": "S06E01",
       "episode_end": "S06E46",
-      "character_count": 166,
-      "scene_count": 243,
+      "character_count": 167,
+      "scene_count": 244,
       "characters": [
         {
           "name": "唐真",
           "season_chapters": 118,
-          "book_chapters": 634,
+          "book_chapters": 633,
           "first_seq": 1001,
           "first_episode": "S06E01",
           "debuts_this_season": false,
@@ -32804,7 +32792,7 @@
         {
           "name": "葵",
           "season_chapters": 51,
-          "book_chapters": 81,
+          "book_chapters": 80,
           "first_seq": 1020,
           "first_episode": "S06E05",
           "debuts_this_season": false,
@@ -32833,7 +32821,7 @@
         {
           "name": "姜羽",
           "season_chapters": 42,
-          "book_chapters": 290,
+          "book_chapters": 289,
           "first_seq": 1023,
           "first_episode": "S06E06",
           "debuts_this_season": false,
@@ -32845,8 +32833,8 @@
         },
         {
           "name": "姚望舒",
-          "season_chapters": 34,
-          "book_chapters": 380,
+          "season_chapters": 35,
+          "book_chapters": 382,
           "first_seq": 1027,
           "first_episode": "S06E07",
           "debuts_this_season": false,
@@ -32859,7 +32847,7 @@
         {
           "name": "南季礼",
           "season_chapters": 30,
-          "book_chapters": 64,
+          "book_chapters": 63,
           "first_seq": 1011,
           "first_episode": "S06E03",
           "debuts_this_season": false,
@@ -32936,7 +32924,7 @@
         },
         {
           "name": "刘全",
-          "season_chapters": 17,
+          "season_chapters": 16,
           "book_chapters": 23,
           "first_seq": 1027,
           "first_episode": "S06E07",
@@ -32963,7 +32951,7 @@
         {
           "name": "狐魔尊",
           "season_chapters": 15,
-          "book_chapters": 78,
+          "book_chapters": 79,
           "first_seq": 1012,
           "first_episode": "S06E03",
           "debuts_this_season": false,
@@ -32995,7 +32983,7 @@
         {
           "name": "吕藏锋",
           "season_chapters": 14,
-          "book_chapters": 154,
+          "book_chapters": 155,
           "first_seq": 1027,
           "first_episode": "S06E07",
           "debuts_this_season": false,
@@ -33017,19 +33005,6 @@
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": true
-        },
-        {
-          "name": "铁石",
-          "season_chapters": 13,
-          "book_chapters": 49,
-          "first_seq": 1027,
-          "first_episode": "S06E07",
-          "debuts_this_season": false,
-          "tier": "主要",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
         },
         {
           "name": "于念娘",
@@ -33063,9 +33038,22 @@
           "has_dossier": false
         },
         {
+          "name": "铁石",
+          "season_chapters": 12,
+          "book_chapters": 49,
+          "first_seq": 1027,
+          "first_episode": "S06E07",
+          "debuts_this_season": false,
+          "tier": "主要",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": false
+        },
+        {
           "name": "元永洁",
           "season_chapters": 11,
-          "book_chapters": 95,
+          "book_chapters": 94,
           "first_seq": 1023,
           "first_episode": "S06E06",
           "debuts_this_season": false,
@@ -33078,7 +33066,7 @@
         {
           "name": "天菩萨",
           "season_chapters": 11,
-          "book_chapters": 21,
+          "book_chapters": 20,
           "first_seq": 1022,
           "first_episode": "S06E06",
           "debuts_this_season": false,
@@ -33089,19 +33077,6 @@
             "天魔尊"
           ],
           "has_dossier": false
-        },
-        {
-          "name": "尉天齐",
-          "season_chapters": 11,
-          "book_chapters": 317,
-          "first_seq": 1022,
-          "first_episode": "S06E06",
-          "debuts_this_season": false,
-          "tier": "主要",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": true
         },
         {
           "name": "程百尺",
@@ -33138,6 +33113,19 @@
           "debuts_this_season": false,
           "tier": "主要",
           "has_card": true,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": true
+        },
+        {
+          "name": "尉天齐",
+          "season_chapters": 10,
+          "book_chapters": 317,
+          "first_seq": 1022,
+          "first_episode": "S06E06",
+          "debuts_this_season": false,
+          "tier": "主要",
+          "has_card": false,
           "ambiguous": false,
           "claimed_by": null,
           "has_dossier": true
@@ -33238,9 +33226,9 @@
         {
           "name": "天魔尊",
           "season_chapters": 8,
-          "book_chapters": 35,
+          "book_chapters": 34,
           "first_seq": 1168,
-          "first_episode": "S06E40",
+          "first_episode": "S06E39",
           "debuts_this_season": false,
           "tier": "次要",
           "has_card": false,
@@ -33308,7 +33296,6 @@
             "老拐子",
             "苦行僧",
             "葛道人",
-            "返虚境长老",
             "野狐禅师",
             "金童峰长老",
             "金觉佛陀",
@@ -33316,6 +33303,19 @@
             "锦袍老天仙",
             "长老"
           ],
+          "has_dossier": false
+        },
+        {
+          "name": "吴慢慢",
+          "season_chapters": 7,
+          "book_chapters": 146,
+          "first_seq": 1009,
+          "first_episode": "S06E03",
+          "debuts_this_season": false,
+          "tier": "次要",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
           "has_dossier": false
         },
         {
@@ -33392,30 +33392,16 @@
           "has_dossier": false
         },
         {
-          "name": "吴慢慢",
-          "season_chapters": 6,
-          "book_chapters": 147,
-          "first_seq": 1009,
-          "first_episode": "S06E03",
-          "debuts_this_season": false,
-          "tier": "次要",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
           "name": "女子",
           "season_chapters": 6,
           "book_chapters": 7,
           "first_seq": 1124,
-          "first_episode": "S06E30",
+          "first_episode": "S06E29",
           "debuts_this_season": false,
           "tier": "次要",
           "has_card": false,
           "ambiguous": true,
           "claimed_by": [
-            "古月皇贵妃",
             "吴慢慢",
             "姚安饶",
             "姚望舒",
@@ -33472,7 +33458,7 @@
           "season_chapters": 5,
           "book_chapters": 138,
           "first_seq": 1154,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": false,
           "tier": "次要",
           "has_card": false,
@@ -33527,19 +33513,6 @@
           "has_dossier": false
         },
         {
-          "name": "老五",
-          "season_chapters": 5,
-          "book_chapters": 35,
-          "first_seq": 1021,
-          "first_episode": "S06E06",
-          "debuts_this_season": false,
-          "tier": "次要",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
           "name": "古月皇贵妃",
           "season_chapters": 4,
           "book_chapters": 47,
@@ -33550,24 +33523,6 @@
           "has_card": false,
           "ambiguous": false,
           "claimed_by": null,
-          "has_dossier": false
-        },
-        {
-          "name": "师父",
-          "season_chapters": 4,
-          "book_chapters": 14,
-          "first_seq": 1087,
-          "first_episode": "S06E21",
-          "debuts_this_season": false,
-          "tier": "次要",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "南季礼",
-            "李一",
-            "蝇魔尊",
-            "齐渊"
-          ],
           "has_dossier": false
         },
         {
@@ -33586,6 +33541,19 @@
             "帝后娘娘",
             "隗夫人"
           ],
+          "has_dossier": false
+        },
+        {
+          "name": "老五",
+          "season_chapters": 4,
+          "book_chapters": 35,
+          "first_seq": 1021,
+          "first_episode": "S06E06",
+          "debuts_this_season": false,
+          "tier": "次要",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
           "has_dossier": false
         },
         {
@@ -33619,7 +33587,7 @@
           "season_chapters": 3,
           "book_chapters": 5,
           "first_seq": 1120,
-          "first_episode": "S06E29",
+          "first_episode": "S06E28",
           "debuts_this_season": false,
           "tier": "次要",
           "has_card": false,
@@ -33748,19 +33716,6 @@
           "has_dossier": false
         },
         {
-          "name": "南红枝",
-          "season_chapters": 2,
-          "book_chapters": 48,
-          "first_seq": 1011,
-          "first_episode": "S06E03",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": true,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": true
-        },
-        {
           "name": "周东东",
           "season_chapters": 2,
           "book_chapters": 112,
@@ -33778,7 +33733,7 @@
           "season_chapters": 2,
           "book_chapters": 37,
           "first_seq": 1197,
-          "first_episode": "S06E46",
+          "first_episode": "S06E45",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": true,
@@ -33851,6 +33806,24 @@
           "has_dossier": false
         },
         {
+          "name": "师父",
+          "season_chapters": 2,
+          "book_chapters": 13,
+          "first_seq": 1145,
+          "first_episode": "S06E34",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "南季礼",
+            "李一",
+            "蝇魔尊",
+            "齐渊"
+          ],
+          "has_dossier": false
+        },
+        {
           "name": "幺儿",
           "season_chapters": 2,
           "book_chapters": 93,
@@ -33882,7 +33855,7 @@
         {
           "name": "施家祖母",
           "season_chapters": 2,
-          "book_chapters": 16,
+          "book_chapters": 15,
           "first_seq": 1050,
           "first_episode": "S06E12",
           "debuts_this_season": false,
@@ -33897,7 +33870,7 @@
           "season_chapters": 2,
           "book_chapters": 2,
           "first_seq": 1108,
-          "first_episode": "S06E26",
+          "first_episode": "S06E25",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -33978,7 +33951,7 @@
         {
           "name": "白子鹤",
           "season_chapters": 2,
-          "book_chapters": 44,
+          "book_chapters": 45,
           "first_seq": 1053,
           "first_episode": "S06E13",
           "debuts_this_season": false,
@@ -34008,7 +33981,7 @@
           "season_chapters": 2,
           "book_chapters": 2,
           "first_seq": 1108,
-          "first_episode": "S06E26",
+          "first_episode": "S06E25",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34073,21 +34046,8 @@
           "season_chapters": 2,
           "book_chapters": 2,
           "first_seq": 1182,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": false,
-          "claimed_by": null,
-          "has_dossier": false
-        },
-        {
-          "name": "裴林剑",
-          "season_chapters": 2,
-          "book_chapters": 28,
-          "first_seq": 1027,
-          "first_episode": "S06E07",
-          "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
           "ambiguous": false,
@@ -34114,7 +34074,7 @@
           "season_chapters": 2,
           "book_chapters": 2,
           "first_seq": 1109,
-          "first_episode": "S06E26",
+          "first_episode": "S06E25",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34127,7 +34087,7 @@
           "season_chapters": 1,
           "book_chapters": 2,
           "first_seq": 1155,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
@@ -34136,9 +34096,25 @@
           "has_dossier": false
         },
         {
+          "name": "中年人",
+          "season_chapters": 1,
+          "book_chapters": null,
+          "first_seq": 1087,
+          "first_episode": "S06E21",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": true,
+          "claimed_by": [
+            "师父",
+            "高冠老头"
+          ],
+          "has_dossier": false
+        },
+        {
           "name": "中年男人",
           "season_chapters": 1,
-          "book_chapters": 12,
+          "book_chapters": 13,
           "first_seq": 1033,
           "first_episode": "S06E08",
           "debuts_this_season": false,
@@ -34195,7 +34171,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1129,
-          "first_episode": "S06E31",
+          "first_episode": "S06E30",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34208,7 +34184,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1173,
-          "first_episode": "S06E41",
+          "first_episode": "S06E40",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34221,7 +34197,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1183,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34275,7 +34251,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1154,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34336,6 +34312,19 @@
           "has_dossier": false
         },
         {
+          "name": "南红枝",
+          "season_chapters": 1,
+          "book_chapters": 48,
+          "first_seq": 1011,
+          "first_episode": "S06E03",
+          "debuts_this_season": false,
+          "tier": "龙套",
+          "has_card": true,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": true
+        },
+        {
           "name": "史母",
           "season_chapters": 1,
           "book_chapters": 11,
@@ -34366,7 +34355,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1182,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34447,7 +34436,7 @@
         {
           "name": "姥爷",
           "season_chapters": 1,
-          "book_chapters": 2,
+          "book_chapters": 1,
           "first_seq": 1069,
           "first_episode": "S06E17",
           "debuts_this_season": true,
@@ -34462,7 +34451,7 @@
         {
           "name": "小男孩",
           "season_chapters": 1,
-          "book_chapters": 3,
+          "book_chapters": 4,
           "first_seq": 1021,
           "first_episode": "S06E06",
           "debuts_this_season": false,
@@ -34499,7 +34488,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1145,
-          "first_episode": "S06E35",
+          "first_episode": "S06E34",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34529,7 +34518,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1183,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34607,7 +34596,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1182,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34649,7 +34638,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1182,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34675,7 +34664,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1116,
-          "first_episode": "S06E28",
+          "first_episode": "S06E27",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34688,7 +34677,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1182,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34716,7 +34705,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1178,
-          "first_episode": "S06E42",
+          "first_episode": "S06E41",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34729,7 +34718,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1142,
-          "first_episode": "S06E34",
+          "first_episode": "S06E33",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34770,7 +34759,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1116,
-          "first_episode": "S06E28",
+          "first_episode": "S06E27",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34797,6 +34786,19 @@
           "book_chapters": 1,
           "first_seq": 1143,
           "first_episode": "S06E34",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": false
+        },
+        {
+          "name": "灵魂",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 1194,
+          "first_episode": "S06E45",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34882,7 +34884,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1109,
-          "first_episode": "S06E26",
+          "first_episode": "S06E25",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -34933,24 +34935,6 @@
           "has_dossier": false
         },
         {
-          "name": "老僧",
-          "season_chapters": 1,
-          "book_chapters": 19,
-          "first_seq": 1155,
-          "first_episode": "S06E37",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": false,
-          "ambiguous": true,
-          "claimed_by": [
-            "密集尊者",
-            "法庆",
-            "法源寺方丈",
-            "老和尚"
-          ],
-          "has_dossier": false
-        },
-        {
           "name": "老太太",
           "season_chapters": 1,
           "book_chapters": null,
@@ -34974,7 +34958,7 @@
           "season_chapters": 1,
           "book_chapters": 29,
           "first_seq": 1124,
-          "first_episode": "S06E30",
+          "first_episode": "S06E29",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": true,
@@ -35039,7 +35023,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1103,
-          "first_episode": "S06E25",
+          "first_episode": "S06E24",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -35054,6 +35038,19 @@
           "first_seq": 1143,
           "first_episode": "S06E34",
           "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "ambiguous": false,
+          "claimed_by": null,
+          "has_dossier": false
+        },
+        {
+          "name": "裴林剑",
+          "season_chapters": 1,
+          "book_chapters": 28,
+          "first_seq": 1027,
+          "first_episode": "S06E07",
+          "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
           "ambiguous": false,
@@ -35104,7 +35101,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1154,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -35205,14 +35202,14 @@
           "season_chapters": 13,
           "book_chapters": 15,
           "first_seq": 1178,
-          "first_episode": "S06E42",
+          "first_episode": "S06E41",
           "debuts_this_season": false,
           "tier": "主要",
           "has_card": false,
           "types": {
             "室外": 2,
-            "其他": 10,
-            "秘境": 2,
+            "其他": 9,
+            "秘境": 3,
             "特殊空间": 1
           }
         },
@@ -35271,19 +35268,6 @@
           }
         },
         {
-          "name": "沙漠",
-          "season_chapters": 5,
-          "book_chapters": 5,
-          "first_seq": 1036,
-          "first_episode": "S06E09",
-          "debuts_this_season": true,
-          "tier": "次要",
-          "has_card": false,
-          "types": {
-            "室外": 5
-          }
-        },
-        {
           "name": "密室",
           "season_chapters": 4,
           "book_chapters": 4,
@@ -35323,6 +35307,19 @@
             "其他": 12,
             "室内": 1,
             "室外": 2
+          }
+        },
+        {
+          "name": "沙漠",
+          "season_chapters": 4,
+          "book_chapters": 4,
+          "first_seq": 1036,
+          "first_episode": "S06E09",
+          "debuts_this_season": true,
+          "tier": "次要",
+          "has_card": false,
+          "types": {
+            "室外": 4
           }
         },
         {
@@ -35370,7 +35367,7 @@
           "season_chapters": 3,
           "book_chapters": 3,
           "first_seq": 1164,
-          "first_episode": "S06E39",
+          "first_episode": "S06E38",
           "debuts_this_season": true,
           "tier": "次要",
           "has_card": false,
@@ -35409,7 +35406,7 @@
           "season_chapters": 2,
           "book_chapters": 2,
           "first_seq": 1155,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -35553,14 +35550,14 @@
         {
           "name": "永和楼",
           "season_chapters": 2,
-          "book_chapters": 34,
+          "book_chapters": 33,
           "first_seq": 1022,
           "first_episode": "S06E06",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室内": 34
+            "室内": 33
           }
         },
         {
@@ -35612,7 +35609,7 @@
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室外": 13,
+            "室外": 12,
             "室内": 1
           }
         },
@@ -35723,16 +35720,16 @@
           }
         },
         {
-          "name": "中洲皇都旧址",
+          "name": "中洲皇都旧址寺庙",
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1155,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
           "types": {
-            "室外": 1
+            "室内": 1
           }
         },
         {
@@ -35832,7 +35829,7 @@
           "season_chapters": 1,
           "book_chapters": 2,
           "first_seq": 1154,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
@@ -35845,7 +35842,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1178,
-          "first_episode": "S06E42",
+          "first_episode": "S06E41",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -35936,7 +35933,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1182,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36001,25 +35998,12 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1155,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
           "types": {
             "室外": 1
-          }
-        },
-        {
-          "name": "古命好家",
-          "season_chapters": 1,
-          "book_chapters": 1,
-          "first_seq": 1075,
-          "first_episode": "S06E18",
-          "debuts_this_season": true,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室内": 1
           }
         },
         {
@@ -36066,7 +36050,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1177,
-          "first_episode": "S06E42",
+          "first_episode": "S06E41",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36079,7 +36063,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1149,
-          "first_episode": "S06E36",
+          "first_episode": "S06E35",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36119,7 +36103,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1128,
-          "first_episode": "S06E31",
+          "first_episode": "S06E30",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36327,7 +36311,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1125,
-          "first_episode": "S06E30",
+          "first_episode": "S06E29",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36392,7 +36376,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1150,
-          "first_episode": "S06E36",
+          "first_episode": "S06E35",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36405,7 +36389,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1104,
-          "first_episode": "S06E25",
+          "first_episode": "S06E24",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36431,7 +36415,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1103,
-          "first_episode": "S06E25",
+          "first_episode": "S06E24",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36535,7 +36519,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1192,
-          "first_episode": "S06E45",
+          "first_episode": "S06E44",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36678,7 +36662,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1117,
-          "first_episode": "S06E28",
+          "first_episode": "S06E27",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36717,7 +36701,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1116,
-          "first_episode": "S06E28",
+          "first_episode": "S06E27",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36847,7 +36831,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1168,
-          "first_episode": "S06E40",
+          "first_episode": "S06E39",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36960,11 +36944,24 @@
           }
         },
         {
+          "name": "沙漠（未明确具体地点）",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 1160,
+          "first_episode": "S06E38",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室外": 1
+          }
+        },
+        {
           "name": "沙漠（白塔附近）",
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1163,
-          "first_episode": "S06E39",
+          "first_episode": "S06E38",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -36977,7 +36974,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1149,
-          "first_episode": "S06E36",
+          "first_episode": "S06E35",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37003,7 +37000,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1145,
-          "first_episode": "S06E35",
+          "first_episode": "S06E34",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37042,7 +37039,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1173,
-          "first_episode": "S06E41",
+          "first_episode": "S06E40",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37120,7 +37117,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1137,
-          "first_episode": "S06E33",
+          "first_episode": "S06E32",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37146,7 +37143,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1113,
-          "first_episode": "S06E27",
+          "first_episode": "S06E26",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37159,7 +37156,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1103,
-          "first_episode": "S06E25",
+          "first_episode": "S06E24",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37328,7 +37325,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1182,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37416,19 +37413,6 @@
           }
         },
         {
-          "name": "玉屏观内",
-          "season_chapters": 1,
-          "book_chapters": 2,
-          "first_seq": 1172,
-          "first_episode": "S06E40",
-          "debuts_this_season": false,
-          "tier": "龙套",
-          "has_card": false,
-          "types": {
-            "室内": 2
-          }
-        },
-        {
           "name": "玉屏观大殿",
           "season_chapters": 1,
           "book_chapters": 1,
@@ -37446,7 +37430,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1183,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37459,7 +37443,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1183,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37472,7 +37456,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1183,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37481,7 +37465,7 @@
           }
         },
         {
-          "name": "百秀山与鹤鸣泉之间的场地",
+          "name": "百秀山",
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1068,
@@ -37615,7 +37599,7 @@
           "season_chapters": 1,
           "book_chapters": 3,
           "first_seq": 1183,
-          "first_episode": "S06E43",
+          "first_episode": "S06E42",
           "debuts_this_season": false,
           "tier": "龙套",
           "has_card": false,
@@ -37667,7 +37651,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1128,
-          "first_episode": "S06E31",
+          "first_episode": "S06E30",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37706,7 +37690,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1125,
-          "first_episode": "S06E30",
+          "first_episode": "S06E29",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37771,7 +37755,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1154,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37823,7 +37807,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1129,
-          "first_episode": "S06E31",
+          "first_episode": "S06E30",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37927,7 +37911,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1109,
-          "first_episode": "S06E26",
+          "first_episode": "S06E25",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -37953,7 +37937,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1159,
-          "first_episode": "S06E38",
+          "first_episode": "S06E37",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38005,7 +37989,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1154,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38018,7 +38002,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1154,
-          "first_episode": "S06E37",
+          "first_episode": "S06E36",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38031,7 +38015,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1145,
-          "first_episode": "S06E35",
+          "first_episode": "S06E34",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38044,7 +38028,20 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1138,
-          "first_episode": "S06E33",
+          "first_episode": "S06E32",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室外": 1
+          }
+        },
+        {
+          "name": "镜湖山腰",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 1087,
+          "first_episode": "S06E21",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38057,7 +38054,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1120,
-          "first_episode": "S06E29",
+          "first_episode": "S06E28",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38070,7 +38067,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1129,
-          "first_episode": "S06E31",
+          "first_episode": "S06E30",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38096,7 +38093,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1121,
-          "first_episode": "S06E29",
+          "first_episode": "S06E28",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38122,7 +38119,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1125,
-          "first_episode": "S06E30",
+          "first_episode": "S06E29",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38291,7 +38288,7 @@
           "season_chapters": 1,
           "book_chapters": 1,
           "first_seq": 1132,
-          "first_episode": "S06E32",
+          "first_episode": "S06E31",
           "debuts_this_season": true,
           "tier": "龙套",
           "has_card": false,
@@ -38349,6 +38346,19 @@
           "has_card": false,
           "types": {
             "室外": 1
+          }
+        },
+        {
+          "name": "龙背谷古命好家",
+          "season_chapters": 1,
+          "book_chapters": 1,
+          "first_seq": 1075,
+          "first_episode": "S06E18",
+          "debuts_this_season": true,
+          "tier": "龙套",
+          "has_card": false,
+          "types": {
+            "室内": 1
           }
         },
         {

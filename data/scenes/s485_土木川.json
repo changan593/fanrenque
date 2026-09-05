@@ -1,0 +1,28 @@
+{
+  "name": "土木川",
+  "first_seq": 227,
+  "chapter_count": 1,
+  "chapters": [
+    227
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "南宁王": 1,
+    "玄甲军将领": 1
+  },
+  "events": [
+    {
+      "seq": 227,
+      "events": [
+        "南宁王等待三日之期，玄甲军将领现身传达长公主令，决定抢占南洲"
+      ]
+    }
+  ],
+  "id": "s485_土木川"
+}

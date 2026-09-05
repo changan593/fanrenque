@@ -1,0 +1,51 @@
+{
+  "canonical_name": "老板娘",
+  "aliases": [
+    "三只手的漂亮老板娘",
+    "三只手"
+  ],
+  "first_seq": 281,
+  "last_seq": 289,
+  "chapter_count": 3,
+  "chapters": [
+    281,
+    288,
+    289
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 281,
+      "quote": "长着三只手的漂亮老板娘"
+    }
+  ],
+  "states": [
+    {
+      "seq": 281,
+      "state": "未明确"
+    },
+    {
+      "seq": 288,
+      "state": "愤怒，捏出法诀"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 281,
+      "actions": [
+        "用线操纵店小二上下酒水"
+      ]
+    },
+    {
+      "seq": 288,
+      "actions": [
+        "捏出法诀准备动手"
+      ]
+    }
+  ],
+  "id": "c235_老板娘"
+}

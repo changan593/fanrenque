@@ -87,10 +87,10 @@
     "“不是说好要一起天下闻名吗？你怎么提前退场了啊？”"
   ],
   "analysis": {
-    "one_line": "藿与闻人哭藏身山林，古命好追至，识破其非真爱，女魔头现身。",
-    "synopsis": "闻人哭重伤，藿带其步行出城躲避追踪，途中用洪泽辅所赠法宝盆栽化作小楼藏身。藿悉心照料闻人哭，二人互诉依赖。古命好追踪而至，点破藿并非真爱闻人哭，只是需要他，劝其回宗。藿哀求留下照顾闻人哭，古命好未答，此时屋内出现两段心跳，女魔头提剑现身，笑问闻人哭为何提前退场。",
+    "one_line": "藿与闻人哭藏身山林，古命好追至，女魔头现身。",
+    "synopsis": "闻人哭重伤，藿带他步行出城躲避皇都耳目，途中藿用洪泽辅所赠盆栽法宝化作小楼供二人歇脚。藿悉心照料闻人哭，二人互诉相依为命。古命好追踪而至，发现血红薄雾，暗示另有追兵。藿熬药失败，古命好现身劝其回宗，藿激动辩解自己爱上闻人哭，古命好指出她只是需要而非爱。此时小屋内出现两段心跳，女魔头提剑现身，质问闻人哭为何提前退场。",
     "time_setting": "夜晚",
-    "emotional_tone": "压抑、紧张、转折",
+    "emotional_tone": "紧张压抑，暗藏危机",
     "characters": [
       {
         "name": "藿",
@@ -100,14 +100,14 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "她那张可爱的圆脸呆呆地，像是没有灵魂。",
+          "她那张可爱的圆脸呆呆地，像是没有灵魂",
           "脸上那黑色的污渍便更加的清晰"
         ],
         "state": "情绪激动，脸色惨白，坚持照顾闻人哭",
         "actions": [
-          "带闻人哭步行出城，用盆栽法宝化作小楼藏身",
-          "为闻人哭熬药，多次失败",
-          "与古命好争执，哀求留下"
+          "带闻人哭步行出城，用盆栽法宝化作小楼",
+          "扶闻人哭上床休息，承诺保护他",
+          "熬药失败，与古命好争执"
         ]
       },
       {
@@ -118,13 +118,13 @@
         "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [
-          "惨白的脸上带着几分无奈的笑意，眉眼间的愁绪好似晚风，动摇人的心神。",
-          "闻人哭是一个长得不错的男人，只是平常过于阴冷，所以锋芒掩盖了他其他的特点，此时重伤濒死，反而多了几分人的色彩"
+          "惨白的脸上带着几分无奈的笑意，眉眼间的愁绪好似晚风",
+          "长得不错的男人，只是平常过于阴冷"
         ],
-        "state": "重伤濒死，躺在床上，眼神黑漆漆的",
+        "state": "重伤濒死，躺在床上",
         "actions": [
-          "被藿扶到床上休息",
-          "侧脸看向藿的背影"
+          "提议步行出城",
+          "躺在床上，眼神黑漆漆地看向藿的背影"
         ]
       },
       {
@@ -135,37 +135,25 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [
-          "月色下少年的脸上都是温和的笑意。"
+          "月色下少年的脸上都是温和的笑意"
         ],
-        "state": "温和但坚定，识破藿的谎言",
+        "state": "温和但态度坚定，声音时而苦涩时而冷漠",
         "actions": [
-          "追踪藿至山林，用红蜡发现血红薄雾",
-          "与藿对话，点破其非真爱",
-          "拒绝藿的哀求"
+          "追踪藿至山林，点燃红蜡发现血红薄雾",
+          "现身劝藿回宗，指出她并非真爱闻人哭"
         ]
       },
       {
         "name": "女魔头",
         "aliases": [],
-        "role_in_chapter": "参与",
+        "role_in_chapter": "提及",
         "mentioned_only": false,
         "appearance_quotes": [
-          "女人提着一柄剑，穿着血红色的红裙，笑盈盈的看着躺在那的闻人哭。"
+          "提着一柄剑，穿着血红色的红裙，笑盈盈的"
         ],
-        "state": "从地狱中追杀而来，笑盈盈",
+        "state": "从地狱中追杀而来",
         "actions": [
-          "提剑出现在闻人哭面前，质问其提前退场"
-        ]
-      },
-      {
-        "name": "葵",
-        "aliases": [],
-        "role_in_chapter": "参与",
-        "mentioned_only": false,
-        "appearance_quotes": [],
-        "state": "有隐匿踪迹的能力，对闻人哭的要求听话遵守",
-        "actions": [
-          "牵马走入灌木丛，用盆栽化作小楼"
+          "出现在小屋中，质问闻人哭"
         ]
       }
     ],
@@ -182,18 +170,16 @@
           "藿",
           "闻人哭",
           "古命好",
-          "女魔头",
-          "葵"
+          "女魔头"
         ],
         "events": [
-          "藿用盆栽化作小楼，安置闻人哭",
-          "藿熬药失败，听到动静",
-          "古命好出现，与藿对话",
-          "女魔头现身"
+          "藿用盆栽法宝化出小楼，安顿闻人哭",
+          "藿熬药失败，古命好现身",
+          "二人争执，女魔头现身"
         ],
         "para_range": [
           1,
-          69
+          70
         ]
       }
     ],
@@ -294,14 +280,7 @@
         "speaker": "藿",
         "addressee": "古命好",
         "text": "古哥，能不抓我走吗？",
-        "manner": "看着古命好"
-      },
-      {
-        "para": 48,
-        "speaker": "藿",
-        "addressee": "古命好",
-        "text": "我以为你是唯一能理解我的人！",
-        "manner": "声音有些大，语气变得有些激动"
+        "manner": "看着古命好开口问道"
       },
       {
         "para": 48,
@@ -309,6 +288,14 @@
         "addressee": "古命好",
         "text": "我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！",
         "manner": "声音有些大，语气变得有些激动"
+      },
+      {
+        "para": 48,
+        "speaker": "未明说",
+        "addressee": "",
+        "text": "我以为你是唯一能理解我的人！",
+        "manner": "",
+        "_filled": true
       },
       {
         "para": 49,
@@ -322,7 +309,7 @@
         "speaker": "藿",
         "addressee": "古命好",
         "text": "当年古哥你不也是因爱上了一个人而犯下大错吗？为什么我就不可以！我们是一样的啊！难道不该帮助彼此吗！",
-        "manner": "更加激动了，挥舞着手臂"
+        "manner": "挥舞着手臂"
       },
       {
         "para": 53,
@@ -336,7 +323,7 @@
         "speaker": "古命好",
         "addressee": "藿",
         "text": "但圣女，你是根本不爱啊！",
-        "manner": "话如风雪，冷的人打颤"
+        "manner": ""
       },
       {
         "para": 56,
@@ -410,17 +397,17 @@
       {
         "para": 17,
         "text": "他们都是失去了一切的人，一个是主动抛弃，一个是被抛弃。",
-        "function": "心理描写"
+        "function": "人物背景"
       },
       {
         "para": 18,
         "text": "所以他们彼此依偎绝不是因为爱情这种虚无缥缈的东西，而是为了生存这种现实到让人喘不过气来东西。",
-        "function": "心理描写"
+        "function": "人物背景"
       },
       {
         "para": 19,
         "text": "可他们如此轻易的背叛了一切，又怎么会安心的把自己交给彼此呢，背叛的诅咒就像是骨髓里的种子，一旦播下就再难提取出来，并缓慢的生根发芽。",
-        "function": "心理描写"
+        "function": "伏笔"
       },
       {
         "para": 22,
@@ -442,7 +429,7 @@
         ],
         "scene": "山林小楼",
         "beat_type": "铺垫",
-        "summary": "藿带闻人哭步行出城，用盆栽法宝化作小楼藏身。"
+        "summary": "藿带闻人哭步行出城，用盆栽法宝化作小楼歇脚。"
       },
       {
         "order": 2,
@@ -452,17 +439,17 @@
         ],
         "scene": "山林小楼",
         "beat_type": "情绪",
-        "summary": "藿照顾闻人哭，二人互诉依赖，旁白揭示彼此并非真爱。"
+        "summary": "藿照顾闻人哭，二人互诉相依为命，旁白揭示彼此背叛的阴影。"
       },
       {
         "order": 3,
         "para_range": [
           20,
-          24
+          23
         ],
         "scene": "山林小楼",
-        "beat_type": "揭示",
-        "summary": "古命好追踪至，发现血红薄雾，暗示另有追兵。"
+        "beat_type": "转折",
+        "summary": "古命好追踪而至，发现血红薄雾，暗示另有追兵。"
       },
       {
         "order": 4,
@@ -471,58 +458,62 @@
           34
         ],
         "scene": "山林小楼",
-        "beat_type": "转折",
-        "summary": "藿熬药失败，古命好现身，二人对话开始。"
+        "beat_type": "铺垫",
+        "summary": "藿熬药失败，古命好现身打招呼。"
       },
       {
         "order": 5,
         "para_range": [
           35,
-          67
+          59
         ],
         "scene": "山林小楼",
         "beat_type": "冲突",
-        "summary": "古命好点破藿并非真爱，藿哀求留下，古命好未答。"
+        "summary": "藿与古命好争执，藿坚持真爱，古命好指出她只是需要。"
       },
       {
         "order": 6,
         "para_range": [
-          68,
+          60,
           70
         ],
         "scene": "山林小楼",
         "beat_type": "揭示",
-        "summary": "女魔头提剑现身，质问闻人哭。"
+        "summary": "古命好劝藿回宗，女魔头现身质问闻人哭。"
       }
     ],
     "props": [
       {
-        "name": "盆栽",
-        "note": "洪泽辅的法宝，可化作小楼"
+        "name": "盆栽法宝",
+        "note": "来自洪泽辅，可化作小楼供歇脚"
       },
       {
         "name": "红蜡",
-        "note": "古命好用来追踪藿的蜡烛"
+        "note": "古命好用来追踪藿的蜡烛，烛光能发现血红薄雾"
       }
     ],
     "terms": [
       {
         "term": "清泉宗",
-        "note": "藿所属宗门"
+        "note": "藿所属宗门，古命好称其为圣女"
+      },
+      {
+        "term": "洪泽辅",
+        "note": "提及，提供盆栽法宝，闻人哭恶名连他都能听到"
       }
     ],
     "continuity": {
       "inherits": [
-        "前文古命好受洪泽辅之托带小丫头回去",
-        "闻人哭重伤"
+        "闻人哭重伤，藿带其出城",
+        "古命好受洪泽辅之托寻找藿"
       ],
       "foreshadows": [
-        "女魔头追杀闻人哭",
-        "藿与闻人哭的背叛关系"
+        "血红薄雾暗示另有追兵",
+        "女魔头现身，与闻人哭有旧怨"
       ],
       "reveals": [
         "藿并非真爱闻人哭，只是需要他",
-        "古命好曾因爱犯错"
+        "古命好曾因爱上一个人而犯下大错"
       ]
     }
   },
@@ -530,7 +521,7 @@
     "passed": true,
     "fail_reasons": [],
     "structure_score": 88,
-    "fidelity_score": 97,
+    "fidelity_score": 92,
     "verbatim": {
       "total_quotes": 43,
       "counts": {
@@ -550,7 +541,7 @@
       "dialogue_coverage": 1.0,
       "missed_samples": []
     },
-    "repair_rounds": 1,
+    "repair_rounds": 0,
     "context_chapters_used": [
       927,
       928,
@@ -563,38 +554,26 @@
       "stage": "structure_review",
       "round": 0,
       "score": 88,
-      "verdict": "revise",
-      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 字数约 180，符合要求，但内容偏重情节概述，对人物动机和结果交代略简。beats 覆盖全章，para_range 递增且无重叠，但 beat 4 的 para_range 从 25 开始，而 beat 3 结束于 23，中间 24 段未覆盖，存在断档。characters 中藿、闻人哭、古命好、女魔头、葵均无重复，但葵的 role_in_chapter 为“参与”，而 scenes 的 present_characters 未包含葵，且葵在 beats 中未出现，存在不一致。dialogues 的 speaker 均在 characters 中，但女魔头在 characters 中 role_in_chapter 为“提及”，却在 dialogues 中有台词，且 scenes 中 present，角色定位矛盾。narration 中 para 17-19 为心理描写，但被归入 narration 而非 monologue，且 para 19 的“背叛的诅咒”等表述有重复嫌疑。continuity.inherits 与前文提要相符，但前文提要中古命好“前往接清泉宗圣女”，本章藿即圣女，命名一致，但 aliases 中未包含“圣女”作为别名，导致跨章命名一致性问题。上下文连贯性方面，人物命名与前文一致，但藿的 aliases 未包含“圣女”，而 dialogue 中古命好称其为“圣女”，应补充。情节推进与前文无矛盾，但女魔头作为新人物出现，前文未铺垫，但本章作为揭示，可接受。总体结构良好，但存在上述问题，故给 88 分。",
+      "verdict": "pass",
+      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 概括了主要情节，但字数约 180，符合要求，且非流水账。beats 覆盖全章，para_range 递增且无重叠，但 beat 3 的 para_range 为 [20,23]，而 narration 中 para 22 和 23 的内容可能涉及古命好发现薄雾，但 beat 4 从 25 开始，中间 24 段未覆盖，存在轻微断档。characters 中四人无重复，但女魔头 role_in_chapter 为“提及”，实际有台词和行动，应为“参与”或“主导”，且 scenes 中 present_characters 包含女魔头，但 characters 中 role 标注为“提及”，不一致。dialogues 的 speaker 均在 characters 中。narration 未重复环境白描，但部分 narration 如 para 17-19 为心理描写，可接受。枚举值合法。上下文连贯性方面，人物命名与前文一致，藿、闻人哭、古命好均沿用前文。continuity.inherits 正确承接前文第927章内容。但女魔头在前文未出现，本章突然现身，且无铺垫，属于新人物引入，但作为本章结尾悬念，可接受。情节推进与前文无矛盾。主要问题：女魔头角色标注不当，beats 有轻微断档，synopsis 未提及女魔头现身，但 one_line 有。综合扣分后给 88 分。",
       "issues": [
-        {
-          "field": "beats[3].para_range",
-          "severity": "中等",
-          "problem": "beat 3 结束于 23，beat 4 开始于 25，第 24 段未被任何 beat 覆盖，存在断档。",
-          "suggestion": "调整 beat 3 的 para_range 为 [20, 24]，或调整 beat 4 的起始为 24。"
-        },
-        {
-          "field": "scenes[0].present_characters",
-          "severity": "中等",
-          "problem": "场景中未包含葵，但葵在 characters 中 role_in_chapter 为“参与”，且 actions 中有“牵马走入灌木丛”，应出现在场景中。",
-          "suggestion": "在 scenes[0].present_characters 中添加“葵”。"
-        },
         {
           "field": "characters[3].role_in_chapter",
           "severity": "中等",
-          "problem": "女魔头在 characters 中 role_in_chapter 为“提及”，但在 dialogues 中有台词，且 scenes 中 present，角色定位矛盾。",
-          "suggestion": "将女魔头的 role_in_chapter 改为“参与”或“主导”。"
+          "problem": "女魔头在场景中现身并有台词，但 role_in_chapter 标注为“提及”，与实际不符。",
+          "suggestion": "改为“参与”或“主导”，并确保 scenes 中 present_characters 一致。"
         },
         {
-          "field": "characters[0].aliases",
+          "field": "beats[3].para_range",
           "severity": "轻微",
-          "problem": "藿的 aliases 未包含“圣女”，但 dialogue 中古命好称其为“圣女”，且前文提要中称“清泉宗圣女”，跨章命名一致性问题。",
-          "suggestion": "在藿的 aliases 中添加“圣女”。"
+          "problem": "beats[3] 结束于 23，beats[4] 开始于 25，第 24 段未被任何 beat 覆盖，存在断档。",
+          "suggestion": "调整 beats[3] 的 para_range 至 [20,24] 或 beats[4] 从 24 开始，确保覆盖连续。"
         },
         {
-          "field": "narration[2].function",
+          "field": "synopsis",
           "severity": "轻微",
-          "problem": "narration 中 para 17-19 为心理描写，但被归入 narration 而非 monologue，且 para 19 的“背叛的诅咒”等表述有重复嫌疑。",
-          "suggestion": "将 para 17-19 移至 monologues，或调整 function 为“心理描写”。"
+          "problem": "synopsis 未提及女魔头现身这一关键情节，导致简介不完整。",
+          "suggestion": "在 synopsis 末尾补充女魔头现身质问闻人哭的内容。"
         }
       ],
       "checked_items": {
@@ -602,56 +581,56 @@
         "简介质量": "通过",
         "beats覆盖": "不通过",
         "人物去重": "通过",
-        "场景人物一致": "不通过",
-        "命名跨章一致": "不通过",
+        "场景人物一致": "通过",
+        "命名跨章一致": "通过",
         "上下文衔接": "通过"
       },
       "missing_items": {},
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 4697,
-        "completion_tokens": 943,
-        "total_tokens": 5640,
+        "prompt_tokens": 4668,
+        "completion_tokens": 694,
+        "total_tokens": 5362,
         "prompt_tokens_details": {
-          "cached_tokens": 1152
+          "cached_tokens": 640
         },
-        "prompt_cache_hit_tokens": 1152,
-        "prompt_cache_miss_tokens": 3545
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 4028
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-07T00:10:35+00:00"
+      "reviewed_at": "2026-09-04T07:24:36+00:00"
     },
     {
       "stage": "fidelity_review",
       "round": 0,
-      "score": 87,
-      "verdict": "revise",
-      "analysis": "臆造情况：程序报告显示有1条miss，即dialogues[13]中藿的台词“我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！”在原文中未找到完全匹配，属于臆造或改写。原文第48段为“我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！”，但程序判定为miss，可能因标点或字符差异，但必须采信程序报告，故判定为臆造。\n\n改写情况：程序报告显示无near条目，所有其他引用均逐字命中，改写情况良好。\n\n遗漏情况：程序报告显示台词覆盖率为96.43%，漏掉1条台词“多久？”（原文第42段）。该台词是藿的追问，属于对话，应补入dialogues。此外，monologues为空，但原文中无明显心理活动独白，故无遗漏。narration已覆盖关键旁白，如第1、7、17-19、22、68段，但第2段“但代价就是步程缓慢。”和第3段“葵对此不置可否……”等次要旁白未收录，但非关键，可接受。\n\n张冠李戴情况：所有对话的说话人归属均正确，未发现张冠李戴。\n\n简介准确性：synopsis与原文事实基本一致，但“女魔头提剑现身，笑问闻人哭为何提前退场”与原文第70段相符，无失真。但synopsis中“古命好未答”与原文第66段“古命好没有回答”一致，准确。\n\n描写忠实度：人物外貌、场景描写均引用原文，如藿的“可爱的圆脸”、闻人哭的“惨白的脸”、古命好的“温和的笑意”、女魔头的“血红色红裙”，均忠实。场景“山林小楼”描述引用原文第5、6段，准确。\n\n综上，主要问题为1条臆造和1条台词遗漏，需修正。",
+      "score": 92,
+      "verdict": "pass",
+      "analysis": "臆造情况：程序逐字核验报告显示所有引用均为 exact，无 miss 条目，因此不存在臆造。\n改写情况：程序报告 near 为 0，所有引用逐字命中，无改写。\n遗漏情况：程序报告台词覆盖率为 96.43%，漏掉 1 条台词：第 48 段“我以为你是唯一能理解我的人！”。该句是藿对古命好说的，属于带引号的说话，应补入 dialogues。此外，原文第 11 段“闻人哭是一个长得不错的男人……这种男人的柔弱，无疑更是让人怜悯的。”是旁白性描写，但 narration 中未收录，属于关键旁白遗漏。其余对话、独白（原文无明确心理活动）、关键旁白（如第 1、7、17-19、22、68 段）均已收录。\n张冠李戴情况：所有对话的说话人归属均正确，未发现错认。\n简介准确性：synopsis 与原文事实相符，未加入原文没有的因果推断或评价。\n描写忠实度：人物外貌、场景陈设等描写均逐字引用原文，忠实无误。\n综上，仅存在 1 条台词遗漏和 1 条旁白遗漏，按评分标准扣分后得 92 分，verdict 为 pass。",
       "issues": [
-        {
-          "field": "dialogues[13].text",
-          "severity": "严重",
-          "type": "臆造",
-          "problem": "台词与原文不符，程序判定为miss，可能因标点或字符差异导致，但必须视为臆造。",
-          "evidence": "原文第48段：'我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！'，但程序未找到完全匹配。",
-          "suggestion": "应逐字复制原文第48段台词，确保标点符号完全一致。"
-        },
         {
           "field": "dialogues",
           "severity": "中等",
           "type": "遗漏",
-          "problem": "漏掉原文第42段台词“多久？”。",
-          "evidence": "原文第42段：'多久？'，程序报告missed_samples包含此句。",
-          "suggestion": "在dialogues中补充该台词，说话人为藿，addressee为古命好，manner可参考上下文。"
+          "problem": "漏掉藿的一句台词“我以为你是唯一能理解我的人！”，该句位于第 48 段，是藿对古命好说的。",
+          "evidence": "原文第 48 段：“我以为你是唯一能理解我的人！”",
+          "suggestion": "在 dialogues 中补充该条，speaker 为“藿”，addressee 为“古命好”，text 为“我以为你是唯一能理解我的人！”，manner 可参考原文“她看着古命好的眼睛，她声音有些大，语气变得有些激动”。"
+        },
+        {
+          "field": "narration",
+          "severity": "轻微",
+          "type": "遗漏",
+          "problem": "漏掉第 11 段关于闻人哭外貌与气质的旁白描写，该段对人物形象有重要作用。",
+          "evidence": "原文第 11 段：“闻人哭是一个长得不错的男人，只是平常过于阴冷，所以锋芒掩盖了他其他的特点，此时重伤濒死，反而多了几分人的色彩，这种男人的柔弱，无疑更是让人怜悯的。”",
+          "suggestion": "在 narration 中补充该段，function 可标注为“人物描写”。"
         }
       ],
       "checked_items": {
-        "无臆造": "不通过",
-        "逐字准确": "不通过",
+        "无臆造": "通过",
+        "逐字准确": "通过",
         "对话无遗漏": "不通过",
         "独白无遗漏": "通过",
-        "关键旁白无遗漏": "通过",
+        "关键旁白无遗漏": "不通过",
         "说话人归属正确": "通过",
         "简介忠于原文": "通过",
         "人物场景描写忠实": "通过"
@@ -659,77 +638,35 @@
       "missing_items": {
         "dialogues": [
           {
-            "para": 42,
-            "text": "多久？"
+            "para": 48,
+            "text": "我以为你是唯一能理解我的人！"
           }
         ],
         "monologues": [],
-        "narration": [],
+        "narration": [
+          {
+            "para": 11,
+            "text": "闻人哭是一个长得不错的男人，只是平常过于阴冷，所以锋芒掩盖了他其他的特点，此时重伤濒死，反而多了几分人的色彩，这种男人的柔弱，无疑更是让人怜悯的。",
+            "function": "人物描写"
+          }
+        ],
         "characters": [],
         "scenes": []
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 6621,
-        "completion_tokens": 867,
-        "total_tokens": 7488,
+        "prompt_tokens": 6508,
+        "completion_tokens": 845,
+        "total_tokens": 7353,
         "prompt_tokens_details": {
-          "cached_tokens": 2816
+          "cached_tokens": 1024
         },
-        "prompt_cache_hit_tokens": 2816,
-        "prompt_cache_miss_tokens": 3805
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 5484
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-07T00:10:46+00:00"
-    },
-    {
-      "stage": "fidelity_review",
-      "round": 1,
-      "score": 97,
-      "verdict": "pass",
-      "analysis": "臆造情况：程序报告显示有1条miss，即dialogues[14]的引用“我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！”在原文中未找到完全匹配，但原文第48段确实存在该台词，只是标点符号略有差异（原文为“我只是。。我只是！爱上了一个人！！”而解析中为“我只是。。我只是！爱上了一个人！！”），属于标点层面的微小差异，且程序相似度0.6585，可能因标点或空格导致未匹配。但根据程序报告，此条被判定为miss，因此必须视为臆造。然而，该台词内容与原文完全一致，仅标点不同，且原文存在，故不构成实质性臆造，但按规则需扣分。除此之外，未发现其他臆造内容。改写情况：程序报告显示无near条目，所有其他引用均逐字命中，无改写。遗漏情况：台词覆盖率100%，无漏掉台词；monologues为空，但原文中无明显心理活动独白，旁白已覆盖关键心理描写（如第17、18、19段）；narration覆盖了关键旁白，如第1、7、22、68段，但第2、3、4、5、6、11、14、15、16、20、21、23、24、25、26、27、28、29、30、31、32、34、44、45、47、50、52、55、61、62、64、66、67、69段等未纳入narration，但其中多为动作描写或过渡，关键信息已覆盖。人物和场景无遗漏。张冠李戴情况：所有对话说话人归属正确，无错位。简介准确性：synopsis与原文事实一致，未加入额外因果推断或评价，准确概括了情节。描写忠实度：人物外貌、场景陈设等描写均与原文一致，如藿的圆脸、闻人哭的惨白脸色、古命好的温和笑意、女魔头的红裙等。唯一问题是dialogues[14]的标点差异，但内容忠实，故整体通过。",
-      "issues": [
-        {
-          "field": "dialogues[14].text",
-          "severity": "轻微",
-          "type": "臆造",
-          "problem": "引用文本与原文存在标点差异，程序判定为miss，但内容一致。",
-          "evidence": "原文第48段：'我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！'；解析中为'我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！'，差异仅在标点。",
-          "suggestion": "将文本改为与原文完全一致的标点，即'我以为你是唯一能理解我的人！我并不是背叛了清泉，我只是。。我只是！爱上了一个人！！'"
-        }
-      ],
-      "checked_items": {
-        "无臆造": "不通过",
-        "逐字准确": "不通过",
-        "对话无遗漏": "通过",
-        "独白无遗漏": "通过",
-        "关键旁白无遗漏": "通过",
-        "说话人归属正确": "通过",
-        "简介忠于原文": "通过",
-        "人物场景描写忠实": "通过"
-      },
-      "missing_items": {
-        "dialogues": [],
-        "monologues": [],
-        "narration": [],
-        "characters": [],
-        "scenes": []
-      },
-      "model": "deepseek-v4-flash",
-      "tokens": {
-        "prompt_tokens": 6662,
-        "completion_tokens": 790,
-        "total_tokens": 7452,
-        "prompt_tokens_details": {
-          "cached_tokens": 2816
-        },
-        "prompt_cache_hit_tokens": 2816,
-        "prompt_cache_miss_tokens": 3846
-      },
-      "attempts": 1,
-      "adapted": [],
-      "reviewed_at": "2026-08-07T00:11:20+00:00"
+      "reviewed_at": "2026-09-04T07:24:42+00:00"
     }
   ],
   "run": {
@@ -737,9 +674,9 @@
     "model": "deepseek-v4-flash",
     "phase": "all",
     "thinking": false,
-    "llm_calls": 5,
-    "started_at": "2026-08-07T00:09:52+00:00",
-    "finished_at": "2026-08-07T00:11:20+00:00",
-    "elapsed_sec": 87.9
+    "llm_calls": 3,
+    "started_at": "2026-09-04T07:24:10+00:00",
+    "finished_at": "2026-09-04T07:24:42+00:00",
+    "elapsed_sec": 31.9
   }
 }

@@ -1,0 +1,31 @@
+{
+  "canonical_name": "白袍修士们",
+  "aliases": [],
+  "first_seq": 398,
+  "last_seq": 398,
+  "chapter_count": 1,
+  "chapters": [
+    398
+  ],
+  "role_distribution": {
+    "群演": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 398,
+      "state": "饮酒作乐，后因奇袭而惊慌"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 398,
+      "actions": [
+        "饮酒作乐",
+        "议论奇袭"
+      ]
+    }
+  ],
+  "id": "c585_白袍修士们"
+}

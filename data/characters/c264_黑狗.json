@@ -1,0 +1,55 @@
+{
+  "canonical_name": "黑狗",
+  "aliases": [
+    "恶犬",
+    "梦魇"
+  ],
+  "first_seq": 18,
+  "last_seq": 19,
+  "chapter_count": 2,
+  "chapters": [
+    18,
+    19
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 19,
+      "quote": "黑狗被压在最下面，渔网与黑色的皮毛纠缠拖拽"
+    },
+    {
+      "seq": 19,
+      "quote": "它双眼被挖，尤其是左眼，一把小铲子陷入眼窝几乎直达脑干，左耳也是稀烂，分不清脑浆还是血液黏糊糊溢了一地。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 18,
+      "state": "被杀死"
+    },
+    {
+      "seq": 19,
+      "state": "已死"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 18,
+      "actions": [
+        "伏击唐真",
+        "被渔网困住",
+        "被杀死"
+      ]
+    },
+    {
+      "seq": 19,
+      "actions": [
+        "与唐真、姚安饶搏斗，被杀死"
+      ]
+    }
+  ],
+  "id": "c264_黑狗"
+}

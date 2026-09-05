@@ -1,0 +1,35 @@
+{
+  "name": "北漠沙尘中",
+  "first_seq": 239,
+  "chapter_count": 1,
+  "chapters": [
+    239
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 239,
+      "quote": "北漠沙尘中"
+    }
+  ],
+  "characters": {
+    "狗娃": 1,
+    "尉天齐": 1
+  },
+  "events": [
+    {
+      "seq": 239,
+      "events": [
+        "狗娃说话表达不杀人",
+        "尉天齐说明杀狗娃的理由",
+        "狗娃感受到杀意准备战斗"
+      ]
+    }
+  ],
+  "id": "s497_北漠沙尘中"
+}

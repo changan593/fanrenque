@@ -44,19 +44,19 @@
       "season": 1,
       "season_name": "白噪音",
       "seq_start": 58,
-      "seq_end": 91,
-      "chapters": 34,
-      "score": 0.805,
+      "seq_end": 67,
+      "chapters": 10,
+      "score": 0.756,
       "cut": "软断",
       "exits": [],
-      "title_at_cut": "紫云之下，无日也明"
+      "title_at_cut": "山林生草木，人人有嗔痴"
     },
     {
       "season": 1,
       "season_name": "白噪音",
-      "seq_start": 92,
+      "seq_start": 68,
       "seq_end": 116,
-      "chapters": 25,
+      "chapters": 49,
       "score": 0.814,
       "cut": "软断",
       "exits": [],
@@ -187,19 +187,19 @@
       "season": 2,
       "season_name": "血月升起",
       "seq_start": 265,
-      "seq_end": 277,
-      "chapters": 13,
+      "seq_end": 276,
+      "chapters": 12,
       "score": 1.0,
       "cut": "软断",
       "exits": [],
-      "title_at_cut": "身在危崖瞬即死，无忧明日雨晴天"
+      "title_at_cut": "甚吉，死期"
     },
     {
       "season": 2,
       "season_name": "血月升起",
-      "seq_start": 278,
+      "seq_start": 277,
       "seq_end": 294,
-      "chapters": 17,
+      "chapters": 18,
       "score": 0.946,
       "cut": "软断",
       "exits": [],
@@ -779,7 +779,8 @@
       "score": 1.0,
       "cut": "硬断",
       "exits": [
-        "觉悔"
+        "觉悔",
+        "老僧"
       ],
       "title_at_cut": "金莲，多闻"
     },
@@ -976,7 +977,7 @@
       "seq_start": 1155,
       "seq_end": 1168,
       "chapters": 14,
-      "score": 0.95,
+      "score": 0.954,
       "cut": "软断",
       "exits": [],
       "title_at_cut": "知尔过往不记事，如今我来替尔言"
@@ -987,7 +988,7 @@
       "seq_start": 1169,
       "seq_end": 1178,
       "chapters": 10,
-      "score": 0.941,
+      "score": 0.946,
       "cut": "软断",
       "exits": [],
       "title_at_cut": "北阳旧事，日光新生"

@@ -49,7 +49,7 @@
     "在场": 1,
     "提及": 12
   },
-  "mentioned_only_count": 7,
+  "mentioned_only_count": 8,
   "appearance_quotes": [
     {
       "seq": 469,
@@ -172,10 +172,6 @@
     {
       "seq": 1035,
       "state": "推木车"
-    },
-    {
-      "seq": 1172,
-      "state": "被王善牵着"
     },
     {
       "seq": 1176,
@@ -331,6 +327,12 @@
       "seq": 1035,
       "actions": [
         "推木车上前"
+      ]
+    },
+    {
+      "seq": 1172,
+      "actions": [
+        "被王善牵着下山"
       ]
     },
     {

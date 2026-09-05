@@ -1,0 +1,28 @@
+{
+  "name": "壮汉家院门",
+  "first_seq": 347,
+  "chapter_count": 1,
+  "chapters": [
+    347
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "壮汉": 1
+  },
+  "events": [
+    {
+      "seq": 347,
+      "events": [
+        "唐真提出买骡子，壮汉起初拒绝，后同意进屋"
+      ]
+    }
+  ],
+  "id": "s583_壮汉家院门"
+}

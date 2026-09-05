@@ -1,0 +1,34 @@
+{
+  "canonical_name": "不痴和尚",
+  "aliases": [
+    "不痴"
+  ],
+  "first_seq": 108,
+  "last_seq": 108,
+  "chapter_count": 1,
+  "chapters": [
+    108
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 108,
+      "state": "佛心颤动，认出唐真，礼数恭敬"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 108,
+      "actions": [
+        "双手合十见过唐真",
+        "告知知了和尚情况",
+        "要求姚安饶放下杀孽"
+      ]
+    }
+  ],
+  "id": "c409_不痴和尚"
+}

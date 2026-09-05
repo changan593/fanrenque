@@ -1,0 +1,30 @@
+{
+  "canonical_name": "灵兽崖众人",
+  "aliases": [],
+  "first_seq": 105,
+  "last_seq": 105,
+  "chapter_count": 1,
+  "chapters": [
+    105
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 105,
+      "state": "乘巨鹰落下"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 105,
+      "actions": [
+        "加入排队"
+      ]
+    }
+  ],
+  "id": "c408_灵兽崖众人"
+}

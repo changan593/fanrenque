@@ -1,0 +1,30 @@
+{
+  "canonical_name": "另一狐祖",
+  "aliases": [],
+  "first_seq": 857,
+  "last_seq": 857,
+  "chapter_count": 1,
+  "chapters": [
+    857
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 857,
+      "state": "与女狐祖一同退向云中"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 857,
+      "actions": [
+        "与女狐祖一同退向云中"
+      ]
+    }
+  ],
+  "id": "c863_另一狐祖"
+}

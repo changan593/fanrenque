@@ -1,0 +1,28 @@
+{
+  "name": "姚望舒书房",
+  "first_seq": 1128,
+  "chapter_count": 1,
+  "chapters": [
+    1128
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 1,
+    "白化": 1
+  },
+  "events": [
+    {
+      "seq": 1128,
+      "events": [
+        "白化送信，汇报情报，姚望舒决定态度，让白化送回信"
+      ]
+    }
+  ],
+  "id": "s1298_姚望舒书房"
+}

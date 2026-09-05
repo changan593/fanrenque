@@ -1,0 +1,40 @@
+{
+  "canonical_name": "蟾宫信使",
+  "aliases": [
+    "白袍修士"
+  ],
+  "first_seq": 213,
+  "last_seq": 213,
+  "chapter_count": 1,
+  "chapters": [
+    213
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 213,
+      "quote": "那是一个白袍修士，中年模样，脸上一片默然"
+    }
+  ],
+  "states": [
+    {
+      "seq": 213,
+      "state": "面无表情，最后认出红儿"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 213,
+      "actions": [
+        "传达二祖南洲令",
+        "递交讣告",
+        "提出捉拿叛徒请求",
+        "认出红儿身份"
+      ]
+    }
+  ],
+  "id": "c489_蟾宫信使"
+}

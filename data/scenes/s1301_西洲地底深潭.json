@@ -1,0 +1,32 @@
+{
+  "name": "西洲地底深潭",
+  "first_seq": 1129,
+  "chapter_count": 1,
+  "chapters": [
+    1129
+  ],
+  "types": {
+    "其他": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1129,
+      "quote": "地底洞穴特有的寒意让他的脸格外的白"
+    }
+  ],
+  "characters": {
+    "齐渊": 1
+  },
+  "events": [
+    {
+      "seq": 1129,
+      "events": [
+        "齐渊等待，听到破风声但判断不是唐真"
+      ]
+    }
+  ],
+  "id": "s1301_西洲地底深潭"
+}

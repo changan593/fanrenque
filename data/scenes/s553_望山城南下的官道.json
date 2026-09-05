@@ -1,0 +1,29 @@
+{
+  "name": "望山城南下的官道",
+  "first_seq": 306,
+  "chapter_count": 1,
+  "chapters": [
+    306
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "魏成": 1,
+    "娇妹儿": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 306,
+      "events": [
+        "两支队伍汇合，一同往南走去"
+      ]
+    }
+  ],
+  "id": "s553_望山城南下的官道"
+}

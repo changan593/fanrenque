@@ -1,0 +1,29 @@
+{
+  "name": "玄甲军营地",
+  "first_seq": 228,
+  "chapter_count": 1,
+  "chapters": [
+    228
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "玄甲军将领": 1,
+    "南宁王": 1
+  },
+  "events": [
+    {
+      "seq": 228,
+      "events": [
+        "玄甲军将领下令上马、检查兵器甲胄、列阵",
+        "胖王爷下令铁骑跟随玄甲"
+      ]
+    }
+  ],
+  "id": "s488_玄甲军营地"
+}

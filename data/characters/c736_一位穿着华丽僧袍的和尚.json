@@ -1,0 +1,35 @@
+{
+  "canonical_name": "一位穿着华丽僧袍的和尚",
+  "aliases": [],
+  "first_seq": 657,
+  "last_seq": 657,
+  "chapter_count": 1,
+  "chapters": [
+    657
+  ],
+  "role_distribution": {
+    "次要": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 657,
+      "quote": "一位穿着华丽僧袍的和尚走入大殿"
+    }
+  ],
+  "states": [
+    {
+      "seq": 657,
+      "state": "佛宗弟子，向迦叶通报老和尚到来"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 657,
+      "actions": [
+        "走入大殿通报迦叶"
+      ]
+    }
+  ],
+  "id": "c736_一位穿着华丽僧袍的和尚"
+}

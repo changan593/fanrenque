@@ -1,0 +1,28 @@
+{
+  "canonical_name": "白玉宫执事",
+  "aliases": [
+    "白玉宫那两位"
+  ],
+  "first_seq": 352,
+  "last_seq": 352,
+  "chapter_count": 1,
+  "chapters": [
+    352
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 352,
+      "actions": [
+        "离开后",
+        "一家一户买孩子"
+      ]
+    }
+  ],
+  "id": "c558_白玉宫执事"
+}

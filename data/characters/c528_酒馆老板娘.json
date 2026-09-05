@@ -1,0 +1,35 @@
+{
+  "canonical_name": "酒馆老板娘",
+  "aliases": [],
+  "first_seq": 287,
+  "last_seq": 287,
+  "chapter_count": 1,
+  "chapters": [
+    287
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 287,
+      "quote": "她的三只手都死死的按着桌面"
+    }
+  ],
+  "states": [
+    {
+      "seq": 287,
+      "state": "紧张，站起"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 287,
+      "actions": [
+        "站起，按着桌面"
+      ]
+    }
+  ],
+  "id": "c528_酒馆老板娘"
+}

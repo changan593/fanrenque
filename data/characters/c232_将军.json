@@ -1,0 +1,64 @@
+{
+  "canonical_name": "将军",
+  "aliases": [
+    "壮汉",
+    "玄甲军将军"
+  ],
+  "first_seq": 202,
+  "last_seq": 816,
+  "chapter_count": 3,
+  "chapters": [
+    202,
+    231,
+    816
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 231,
+      "quote": "盔甲在身"
+    }
+  ],
+  "states": [
+    {
+      "seq": 202,
+      "state": "眼神锐利，渴望战功"
+    },
+    {
+      "seq": 231,
+      "state": "认出唐真，下令停军，后拔剑抵住南宁王"
+    },
+    {
+      "seq": 816,
+      "state": "警惕但军势散了不少"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 202,
+      "actions": [
+        "与南宁王互相吹捧",
+        "见红光后单膝跪地，高喊长公主"
+      ]
+    },
+    {
+      "seq": 231,
+      "actions": [
+        "下令骑兵停止",
+        "跳下马查看线，斩出剑芒试探",
+        "抱拳谢唐真",
+        "用剑抵住南宁王脖颈"
+      ]
+    },
+    {
+      "seq": 816,
+      "actions": [
+        "回头扫了一眼唐真"
+      ]
+    }
+  ],
+  "id": "c232_将军"
+}

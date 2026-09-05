@@ -1,0 +1,48 @@
+{
+  "canonical_name": "返虚境长老",
+  "aliases": [
+    "金童峰长老",
+    "金童峰的返虚境长老",
+    "金童峰的长老"
+  ],
+  "first_seq": 101,
+  "last_seq": 103,
+  "chapter_count": 2,
+  "chapters": [
+    101,
+    103
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 101,
+      "state": "声音平淡"
+    },
+    {
+      "seq": 103,
+      "state": "从头至尾低着眉，似乎与己无关"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 101,
+      "actions": [
+        "决定以境界压山"
+      ]
+    },
+    {
+      "seq": 103,
+      "actions": [
+        "救下金桧",
+        "介绍赵辞盈给魏成",
+        "暗示魏成以势压人",
+        "质问吕藏锋是否代表百剑峰"
+      ]
+    }
+  ],
+  "id": "c275_返虚境长老"
+}

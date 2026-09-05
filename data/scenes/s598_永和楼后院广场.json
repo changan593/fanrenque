@@ -1,0 +1,30 @@
+{
+  "name": "永和楼后院广场",
+  "first_seq": 363,
+  "chapter_count": 1,
+  "chapters": [
+    363
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "白天": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "尉天齐": 1,
+    "云儿": 1,
+    "姚安饶": 1,
+    "吕藏锋": 1
+  },
+  "events": [
+    {
+      "seq": 363,
+      "events": [
+        "尉天齐练习唱段，云儿与他对戏，姚安饶和吕藏锋听戏"
+      ]
+    }
+  ],
+  "id": "s598_永和楼后院广场"
+}

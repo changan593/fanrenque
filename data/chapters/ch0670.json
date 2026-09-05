@@ -681,14 +681,14 @@
         "manner": "俯身缓缓贴到唐真的耳旁，低语"
       },
       {
-        "para": 117,
+        "para": 113,
         "speaker": "女子",
         "addressee": "唐真",
         "text": "赢了，婆娑洲的一切你都能带出去。输了，你就什么都带不出去，包括你自己。",
         "manner": "咯咯咯的笑声"
       },
       {
-        "para": 118,
+        "para": 114,
         "speaker": "女子",
         "addressee": "唐真",
         "text": "很公平吧！",
@@ -897,7 +897,7 @@
         "function": "情节交代"
       },
       {
-        "para": 116,
+        "para": 112,
         "text": "唐真悚然一惊，他猛地起身，再回头，不知何时庙外月色已经要散了，天边开始亮起，而庙门外不知何时站了个人，他提着一把弯刀，岣嵝着腰。",
         "function": "情节交代"
       }
@@ -1040,7 +1040,7 @@
         "empty": 0
       },
       "verbatim_rate": 1.0,
-      "misplaced_para_count": 83,
+      "misplaced_para_count": 80,
       "problems": []
     },
     "coverage": {
@@ -1055,7 +1055,8 @@
       667,
       668,
       669
-    ]
+    ],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

@@ -1,0 +1,28 @@
+{
+  "canonical_name": "天残手",
+  "aliases": [],
+  "first_seq": 9,
+  "last_seq": 9,
+  "chapter_count": 1,
+  "chapters": [
+    9
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 9,
+      "quote": "左手萎缩的“天残手”"
+    }
+  ],
+  "states": [
+    {
+      "seq": 9,
+      "state": "江湖骗子"
+    }
+  ],
+  "actions": [],
+  "id": "c359_天残手"
+}

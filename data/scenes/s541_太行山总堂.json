@@ -1,0 +1,27 @@
+{
+  "name": "太行山总堂",
+  "first_seq": 295,
+  "chapter_count": 1,
+  "chapters": [
+    295
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "裴林剑": 1
+  },
+  "events": [
+    {
+      "seq": 295,
+      "events": [
+        "裴林剑愁眉不展，捏碎信件，长叹"
+      ]
+    }
+  ],
+  "id": "s541_太行山总堂"
+}

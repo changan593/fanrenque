@@ -1,0 +1,44 @@
+{
+  "canonical_name": "田二郎",
+  "aliases": [
+    "田姓老人",
+    "老人"
+  ],
+  "first_seq": 1075,
+  "last_seq": 1075,
+  "chapter_count": 1,
+  "chapters": [
+    1075
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1075,
+      "quote": "两位鹤发的老人坐在其中，绕着矮桌与火炉安静的烹茶"
+    },
+    {
+      "seq": 1075,
+      "quote": "把手在自己脏兮兮的书生袍上擦了擦"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1075,
+      "state": "替天命阁在洪洲办事，谨慎推脱"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1075,
+      "actions": [
+        "与葛道人论道",
+        "推脱河罗鱼消息",
+        "提及天命阁衰落"
+      ]
+    }
+  ],
+  "id": "c946_田二郎"
+}

@@ -67,11 +67,11 @@
     1187
   ],
   "role_distribution": {
-    "提及": 43,
-    "参与": 3,
+    "提及": 44,
+    "参与": 2,
     "主导": 2
   },
-  "mentioned_only_count": 42,
+  "mentioned_only_count": 43,
   "appearance_quotes": [
     {
       "seq": 5,
@@ -277,7 +277,7 @@
     },
     {
       "seq": 1166,
-      "state": "化为桃树，为唐真遮护"
+      "state": "未明确"
     },
     {
       "seq": 1169,
@@ -335,12 +335,6 @@
       "seq": 1013,
       "actions": [
         "参与小品表演"
-      ]
-    },
-    {
-      "seq": 1166,
-      "actions": [
-        "化作桃树为唐真撑伞"
       ]
     }
   ],

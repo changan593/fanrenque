@@ -1,0 +1,28 @@
+{
+  "name": "红儿房间",
+  "first_seq": 264,
+  "chapter_count": 1,
+  "chapters": [
+    264
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "夜晚": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 264,
+      "events": [
+        "红儿写信，取出三件物品",
+        "换上红裙，披上兔绒大衣"
+      ]
+    }
+  ],
+  "id": "s518_红儿房间"
+}

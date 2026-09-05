@@ -1,0 +1,29 @@
+{
+  "name": "念娘酒楼（红儿房间，夜间）",
+  "first_seq": 316,
+  "chapter_count": 1,
+  "chapters": [
+    316
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "第三天夜间": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 1,
+    "念娘": 1
+  },
+  "events": [
+    {
+      "seq": 316,
+      "events": [
+        "红儿修炼",
+        "念娘发现盯梢者"
+      ]
+    }
+  ],
+  "id": "s561_念娘酒楼（红儿房间，夜间）"
+}

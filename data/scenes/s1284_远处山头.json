@@ -1,0 +1,30 @@
+{
+  "name": "远处山头",
+  "first_seq": 1109,
+  "chapter_count": 1,
+  "chapters": [
+    1109
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "古命好": 1,
+    "女人": 1
+  },
+  "events": [
+    {
+      "seq": 1109,
+      "events": [
+        "古命好与女人对话",
+        "分析局势",
+        "看到紫霞"
+      ]
+    }
+  ],
+  "id": "s1284_远处山头"
+}

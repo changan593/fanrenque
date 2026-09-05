@@ -1,0 +1,23 @@
+{
+  "canonical_name": "葵藿",
+  "aliases": [],
+  "first_seq": 700,
+  "last_seq": 700,
+  "chapter_count": 1,
+  "chapters": [
+    700
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 700,
+      "state": "与张狂交战过"
+    }
+  ],
+  "actions": [],
+  "id": "c770_葵藿"
+}

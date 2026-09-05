@@ -1,0 +1,35 @@
+{
+  "canonical_name": "碎发女人",
+  "aliases": [],
+  "first_seq": 834,
+  "last_seq": 834,
+  "chapter_count": 1,
+  "chapters": [
+    834
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 834,
+      "quote": "碎发的女人，她提着一柄短剑"
+    }
+  ],
+  "states": [
+    {
+      "seq": 834,
+      "state": "平静"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 834,
+      "actions": [
+        "提短剑，看着唐真"
+      ]
+    }
+  ],
+  "id": "c844_碎发女人"
+}

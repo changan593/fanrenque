@@ -1,0 +1,39 @@
+{
+  "canonical_name": "唱戏的男人",
+  "aliases": [
+    "面色惨白的男人",
+    "天仙境魔修"
+  ],
+  "first_seq": 149,
+  "last_seq": 149,
+  "chapter_count": 1,
+  "chapters": [
+    149
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 149,
+      "quote": "面色惨白的男人静静的站在那里，正抬起头对自己笑"
+    }
+  ],
+  "states": [
+    {
+      "seq": 149,
+      "state": "面色惨白，被热浪攻击"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 149,
+      "actions": [
+        "唱戏，对姜羽笑",
+        "被姜羽攻击，水分流失"
+      ]
+    }
+  ],
+  "id": "c445_唱戏的男人"
+}

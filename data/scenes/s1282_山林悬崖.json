@@ -1,0 +1,32 @@
+{
+  "name": "山林悬崖",
+  "first_seq": 1103,
+  "chapter_count": 1,
+  "chapters": [
+    1103
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姜羽": 1,
+    "葵": 1,
+    "杜有才": 1,
+    "蜈蚣鬼物": 1
+  },
+  "events": [
+    {
+      "seq": 1103,
+      "events": [
+        "姜羽发现葵",
+        "姜羽重创鬼物",
+        "姜羽制服葵"
+      ]
+    }
+  ],
+  "id": "s1282_山林悬崖"
+}

@@ -1,0 +1,30 @@
+{
+  "canonical_name": "温润的妇人",
+  "aliases": [],
+  "first_seq": 481,
+  "last_seq": 481,
+  "chapter_count": 1,
+  "chapters": [
+    481
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 481,
+      "quote": "一位温润的妇人轻轻敲了敲堂门，她恭敬地行礼，低着头道"
+    }
+  ],
+  "states": [],
+  "actions": [
+    {
+      "seq": 481,
+      "actions": [
+        "通报宴席开始"
+      ]
+    }
+  ],
+  "id": "c635_温润的妇人"
+}

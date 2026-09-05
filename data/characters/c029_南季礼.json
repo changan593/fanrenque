@@ -20,7 +20,7 @@
   ],
   "first_seq": 1,
   "last_seq": 1200,
-  "chapter_count": 64,
+  "chapter_count": 63,
   "chapters": [
     1,
     5,
@@ -79,7 +79,6 @@
     1153,
     1154,
     1157,
-    1166,
     1169,
     1173,
     1175,
@@ -89,10 +88,10 @@
   ],
   "role_distribution": {
     "参与": 15,
-    "提及": 33,
+    "提及": 32,
     "主导": 17
   },
-  "mentioned_only_count": 33,
+  "mentioned_only_count": 32,
   "appearance_quotes": [
     {
       "seq": 1,
@@ -335,10 +334,6 @@
     {
       "seq": 1157,
       "state": "有大道，能砸穿螺生天地"
-    },
-    {
-      "seq": 1166,
-      "state": "掐断南红枝命河"
     },
     {
       "seq": 1169,

@@ -40,10 +40,9 @@
   "role_distribution": {
     "参与": 14,
     "主导": 2,
-    "提及": 11,
-    "在场": 1
+    "提及": 12
   },
-  "mentioned_only_count": 10,
+  "mentioned_only_count": 11,
   "appearance_quotes": [
     {
       "seq": 258,
@@ -138,10 +137,6 @@
     {
       "seq": 1027,
       "state": "在姚望舒一侧"
-    },
-    {
-      "seq": 1172,
-      "state": "出现在场间"
     }
   ],
   "actions": [
@@ -259,6 +254,12 @@
       "seq": 963,
       "actions": [
         "大喝，驾驭太行山剑阵不退反进，与发丝交织"
+      ]
+    },
+    {
+      "seq": 1172,
+      "actions": [
+        "出现在场间"
       ]
     },
     {

@@ -1,0 +1,30 @@
+{
+  "canonical_name": "下人",
+  "aliases": [],
+  "first_seq": 441,
+  "last_seq": 441,
+  "chapter_count": 1,
+  "chapters": [
+    441
+  ],
+  "role_distribution": {
+    "次要": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 441,
+      "state": "带走赵姑姑"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 441,
+      "actions": [
+        "带走赵姑姑"
+      ]
+    }
+  ],
+  "id": "c602_下人"
+}

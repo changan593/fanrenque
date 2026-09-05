@@ -1,0 +1,25 @@
+{
+  "canonical_name": "道圣",
+  "aliases": [],
+  "first_seq": 1200,
+  "last_seq": 1200,
+  "chapter_count": 1,
+  "chapters": [
+    1200
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [
+    {
+      "seq": 1200,
+      "actions": [
+        "与人魔尊论道"
+      ]
+    }
+  ],
+  "id": "c998_道圣"
+}

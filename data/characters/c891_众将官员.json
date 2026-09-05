@@ -1,0 +1,30 @@
+{
+  "canonical_name": "众将官员",
+  "aliases": [],
+  "first_seq": 926,
+  "last_seq": 926,
+  "chapter_count": 1,
+  "chapters": [
+    926
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 926,
+      "state": "劳累，狼狈，但无贪生怕死之辈"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 926,
+      "actions": [
+        "分成两队，撤离或阻敌"
+      ]
+    }
+  ],
+  "id": "c891_众将官员"
+}

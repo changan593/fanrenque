@@ -1,0 +1,25 @@
+{
+  "canonical_name": "郭二狗",
+  "aliases": [
+    "二狗"
+  ],
+  "first_seq": 847,
+  "last_seq": 847,
+  "chapter_count": 1,
+  "chapters": [
+    847
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 847,
+      "state": "失踪，可能已死"
+    }
+  ],
+  "actions": [],
+  "id": "c852_郭二狗"
+}

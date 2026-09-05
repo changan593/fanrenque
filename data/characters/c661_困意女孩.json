@@ -1,0 +1,35 @@
+{
+  "canonical_name": "困意女孩",
+  "aliases": [],
+  "first_seq": 530,
+  "last_seq": 530,
+  "chapter_count": 1,
+  "chapters": [
+    530
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 530,
+      "quote": "一个打着哈欠，满脸困意的女孩"
+    }
+  ],
+  "states": [
+    {
+      "seq": 530,
+      "state": "参与搅乱"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 530,
+      "actions": [
+        "跳窗坠楼"
+      ]
+    }
+  ],
+  "id": "c661_困意女孩"
+}

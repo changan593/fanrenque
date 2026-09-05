@@ -1,0 +1,33 @@
+{
+  "canonical_name": "军士",
+  "aliases": [],
+  "first_seq": 723,
+  "last_seq": 776,
+  "chapter_count": 3,
+  "chapters": [
+    723,
+    748,
+    776
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "群体": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 776,
+      "state": "冲锋、布防"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 748,
+      "actions": [
+        "为姜介撑伞引路"
+      ]
+    }
+  ],
+  "id": "c247_军士"
+}

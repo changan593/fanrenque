@@ -1,0 +1,28 @@
+{
+  "name": "南海边",
+  "first_seq": 1155,
+  "chapter_count": 1,
+  "chapters": [
+    1155
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "阿难": 1,
+    "姚安饶": 1
+  },
+  "events": [
+    {
+      "seq": 1155,
+      "events": [
+        "阿难提醒姚安恕时间不多"
+      ]
+    }
+  ],
+  "id": "s1324_南海边"
+}

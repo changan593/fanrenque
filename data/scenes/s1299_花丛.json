@@ -1,0 +1,33 @@
+{
+  "name": "花丛",
+  "first_seq": 1128,
+  "chapter_count": 1,
+  "chapters": [
+    1128
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 1128,
+      "quote": "花丛里，女子正伸手拨弄着有些重的花骨朵"
+    }
+  ],
+  "characters": {
+    "古命好": 1,
+    "女子": 1
+  },
+  "events": [
+    {
+      "seq": 1128,
+      "events": [
+        "古命好回忆，与女子对话"
+      ]
+    }
+  ],
+  "id": "s1299_花丛"
+}

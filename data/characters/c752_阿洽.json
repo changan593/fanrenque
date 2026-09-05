@@ -1,0 +1,35 @@
+{
+  "canonical_name": "阿洽",
+  "aliases": [],
+  "first_seq": 680,
+  "last_seq": 680,
+  "chapter_count": 1,
+  "chapters": [
+    680
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 680,
+      "quote": "虎头虎脑五六岁的孩子"
+    }
+  ],
+  "states": [
+    {
+      "seq": 680,
+      "state": "酒肆老板女儿的儿子"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 680,
+      "actions": [
+        "被母亲叫来，给余庆斟酒"
+      ]
+    }
+  ],
+  "id": "c752_阿洽"
+}

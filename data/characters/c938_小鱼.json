@@ -1,0 +1,41 @@
+{
+  "canonical_name": "小鱼",
+  "aliases": [
+    "八爪鱼"
+  ],
+  "first_seq": 1059,
+  "last_seq": 1059,
+  "chapter_count": 1,
+  "chapters": [
+    1059
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1059,
+      "quote": "一只灰黑色的八爪鱼从一处陶瓷罐子里爬了出来，它甩动着触手，看起来无精打采的。"
+    },
+    {
+      "seq": 1059,
+      "quote": "它身上有两处触手都已经断开了，伤口丑陋而狰狞，让人不忍直视。"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1059,
+      "state": "受伤，触手断了两处"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1059,
+      "actions": [
+        "从陶瓷罐子里爬出"
+      ]
+    }
+  ],
+  "id": "c938_小鱼"
+}

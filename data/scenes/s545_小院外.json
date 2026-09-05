@@ -1,0 +1,28 @@
+{
+  "name": "小院外",
+  "first_seq": 302,
+  "chapter_count": 1,
+  "chapters": [
+    302
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "姚望舒": 1,
+    "魏成": 1
+  },
+  "events": [
+    {
+      "seq": 302,
+      "events": [
+        "姚红儿走出小院，问魏成唐真去向，魏成答非所问，红儿看着蛛网发呆"
+      ]
+    }
+  ],
+  "id": "s545_小院外"
+}

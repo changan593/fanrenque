@@ -1,0 +1,18 @@
+{
+  "canonical_name": "兵甲",
+  "aliases": [],
+  "first_seq": 726,
+  "last_seq": 726,
+  "chapter_count": 1,
+  "chapters": [
+    726
+  ],
+  "role_distribution": {
+    "背景": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [],
+  "actions": [],
+  "id": "c784_兵甲"
+}

@@ -1,0 +1,23 @@
+{
+  "canonical_name": "姜家凤凰",
+  "aliases": [],
+  "first_seq": 424,
+  "last_seq": 424,
+  "chapter_count": 1,
+  "chapters": [
+    424
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 424,
+      "state": "被逼出走，远遁西洲"
+    }
+  ],
+  "actions": [],
+  "id": "c590_姜家凤凰"
+}

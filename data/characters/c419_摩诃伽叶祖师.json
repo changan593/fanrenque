@@ -1,0 +1,23 @@
+{
+  "canonical_name": "摩诃伽叶祖师",
+  "aliases": [],
+  "first_seq": 115,
+  "last_seq": 115,
+  "chapter_count": 1,
+  "chapters": [
+    115
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 115,
+      "state": "与阿难祖师交替镇守悬空寺底"
+    }
+  ],
+  "actions": [],
+  "id": "c419_摩诃伽叶祖师"
+}

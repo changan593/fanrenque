@@ -1,0 +1,28 @@
+{
+  "canonical_name": "六指大神",
+  "aliases": [],
+  "first_seq": 9,
+  "last_seq": 9,
+  "chapter_count": 1,
+  "chapters": [
+    9
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 9,
+      "quote": "长着六指的“六指大神”"
+    }
+  ],
+  "states": [
+    {
+      "seq": 9,
+      "state": "江湖骗子"
+    }
+  ],
+  "actions": [],
+  "id": "c358_六指大神"
+}

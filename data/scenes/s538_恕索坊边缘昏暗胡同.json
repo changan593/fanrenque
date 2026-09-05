@@ -1,0 +1,29 @@
+{
+  "name": "恕索坊边缘昏暗胡同",
+  "first_seq": 292,
+  "chapter_count": 1,
+  "chapters": [
+    292
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "吕藏锋": 1,
+    "姚安饶": 1,
+    "黑衣人": 1
+  },
+  "events": [
+    {
+      "seq": 292,
+      "events": [
+        "冲突爆发，吕藏锋击杀尾随者，处理伤口，与姚安饶对话"
+      ]
+    }
+  ],
+  "id": "s538_恕索坊边缘昏暗胡同"
+}

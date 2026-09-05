@@ -1,0 +1,23 @@
+{
+  "canonical_name": "木方生之父",
+  "aliases": [],
+  "first_seq": 844,
+  "last_seq": 844,
+  "chapter_count": 1,
+  "chapters": [
+    844
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 844,
+      "state": "已启程前往中洲，永世不能与有情之人见面"
+    }
+  ],
+  "actions": [],
+  "id": "c848_木方生之父"
+}

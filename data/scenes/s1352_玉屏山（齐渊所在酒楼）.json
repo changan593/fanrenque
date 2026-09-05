@@ -1,0 +1,28 @@
+{
+  "name": "玉屏山（齐渊所在酒楼）",
+  "first_seq": 1189,
+  "chapter_count": 1,
+  "chapters": [
+    1189
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "齐渊": 1
+  },
+  "events": [
+    {
+      "seq": 1189,
+      "events": [
+        "齐渊观察玉屏山粗线移动，决定使用无天大道",
+        "齐渊举起左手，瞬移离开"
+      ]
+    }
+  ],
+  "id": "s1352_玉屏山（齐渊所在酒楼）"
+}

@@ -1,6 +1,8 @@
 {
   "canonical_name": "高冠老头",
-  "aliases": [],
+  "aliases": [
+    "中年人"
+  ],
   "first_seq": 1172,
   "last_seq": 1172,
   "chapter_count": 1,
@@ -15,14 +17,15 @@
   "states": [
     {
       "seq": 1172,
-      "state": "皱眉，未作答"
+      "state": "皱眉，欲说话"
     }
   ],
   "actions": [
     {
       "seq": 1172,
       "actions": [
-        "被郭师兄阻拦，欲说话"
+        "未作答继续向前，被郭师兄阻拦",
+        "捻住黑剑与银针，说明来意"
       ]
     }
   ],

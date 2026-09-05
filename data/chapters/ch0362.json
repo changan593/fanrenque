@@ -77,10 +77,10 @@
     "吕藏锋坐在对面，正大把的将尉天齐从镜湖带回来的好茶叶扔进茶壶里。"
   ],
   "analysis": {
-    "one_line": "尉天齐接演《南洲三幸》戏本，与云儿对戏获胜，姚安饶暗中观察。",
-    "synopsis": "尉天齐翻看戏本《南洲三幸》，发现故事竟是‘南洲三幸，红儿掷珠’，让他演唐真、洗白姚红儿，认为这是姚安饶的阳谋。他虽觉戏文有偏颇，但决定演唱。随后与云儿对戏，尉天齐进步神速，七遍后云儿体力不支认输，孩子们欢呼。姚安饶在院中咬着毛笔，吕藏锋在旁喝茶，各怀心思。",
-    "time_setting": "未明确（承接前文，约在学戏数日后）",
-    "emotional_tone": "轻松欢乐中暗藏算计",
+    "one_line": "尉天齐接演《南洲三幸》戏本，与云儿对戏，戏班欢乐。",
+    "synopsis": "尉天齐翻看新戏本，发现戏文讲的是‘南洲三幸，红儿掷珠’的故事，由他扮演唐真，姚红儿被塑造成正面形象，唐真则被踩一脚。他意识到这是姚安饶的阳谋，但决定接下。他与云儿对戏，起初跟不上，但很快投入，孩子们渐渐跟不上，最终云儿因体力不支放弃第八遍走戏，戏班充满欢乐。姚安饶在院中听着笑声，若有所思。",
+    "time_setting": "未明确（承接前文，约在学戏第四日后）",
+    "emotional_tone": "轻松欢乐中带暗流",
     "characters": [
       {
         "name": "尉天齐",
@@ -90,27 +90,27 @@
         "role_in_chapter": "主导",
         "mentioned_only": false,
         "appearance_quotes": [],
-        "state": "心情复杂但自信，学戏进步神速",
+        "state": "学戏有成，心态从容，对姚安饶的算计不以为意",
         "actions": [
-          "翻看戏本，苦笑",
-          "决定演唱《南洲三幸》",
-          "与云儿对戏，七遍后获胜",
-          "对孩子们挥手致意"
+          "翻看戏本，发现故事是‘南洲三幸’",
+          "决定接下戏，与云儿对戏",
+          "与云儿对戏七遍，表现渐佳",
+          "对孩子们挥手致意，自认天下无敌"
         ]
       },
       {
         "name": "云儿",
         "aliases": [],
-        "role_in_chapter": "主导",
+        "role_in_chapter": "参与",
         "mentioned_only": false,
         "appearance_quotes": [
           "小小的云儿当真了不得，她穿着小棉袄站在那里，可摆出姿势时，却散发出无比强大的气场"
         ],
-        "state": "体力不支，额头渗汗，噘嘴撒娇",
+        "state": "体力不支，额头渗汗，但气场强大",
         "actions": [
           "解释戏文不难背",
-          "与尉天齐对戏",
-          "第七遍后放弃第八遍",
+          "与尉天齐对戏，表现优秀",
+          "因体力不支放弃第八遍走戏",
           "用小拳头捅尉天齐的腰"
         ]
       },
@@ -119,39 +119,25 @@
         "aliases": [
           "班主"
         ],
-        "role_in_chapter": "参与",
+        "role_in_chapter": "提及",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "能下地走路，在院中咬着毛笔",
         "actions": [
-          "设计戏本与开戏时间",
-          "在院中听外面欢笑声"
+          "设计戏本让尉天齐演唐真",
+          "让云儿提醒尉天齐注意时间",
+          "在院中听外面笑声"
         ]
       },
       {
         "name": "吕藏锋",
         "aliases": [],
-        "role_in_chapter": "参与",
+        "role_in_chapter": "提及",
         "mentioned_only": false,
         "appearance_quotes": [],
         "state": "在姚安饶对面喝茶",
         "actions": [
-          "将茶叶扔进茶壶"
-        ]
-      },
-      {
-        "name": "孩子们",
-        "aliases": [
-          "戏班里的孩子"
-        ],
-        "role_in_chapter": "参与",
-        "mentioned_only": false,
-        "appearance_quotes": [],
-        "state": "欢乐，期待",
-        "actions": [
-          "参与对戏",
-          "充当观众",
-          "欢呼"
+          "将尉天齐带回来的茶叶扔进茶壶"
         ]
       }
     ],
@@ -166,17 +152,33 @@
         "present_characters": [
           "尉天齐",
           "云儿",
-          "孩子们",
+          "孩子们"
+        ],
+        "events": [
+          "尉天齐与云儿对戏，孩子们参与",
+          "对戏七遍后云儿体力不支放弃",
+          "孩子们欢呼，尉天齐得意"
+        ],
+        "para_range": [
+          42,
+          58
+        ]
+      },
+      {
+        "name": "永和楼后院（屋内）",
+        "type": "室内",
+        "time_of_day": "白天",
+        "description_quotes": [],
+        "present_characters": [
           "姚安饶",
           "吕藏锋"
         ],
         "events": [
-          "尉天齐与云儿对戏",
-          "孩子们围观",
-          "姚安饶在院中听笑声"
+          "姚安饶咬着毛笔听外面笑声",
+          "吕藏锋泡茶"
         ],
         "para_range": [
-          43,
+          59,
           60
         ]
       }
@@ -195,7 +197,7 @@
         "speaker": "云儿",
         "addressee": "尉天齐",
         "text": "这戏虽然有些长，但并不难背的，我只是读过即便已经背个大半，你肯定没问题的。",
-        "manner": "解释"
+        "manner": "开口解释"
       },
       {
         "para": 21,
@@ -262,10 +264,11 @@
       },
       {
         "para": 55,
-        "speaker": "孩子们",
-        "addressee": "尉天齐",
+        "speaker": "未明说",
+        "addressee": "",
         "text": "哦——！！！",
-        "manner": "大叫起来"
+        "manner": "",
+        "_filled": true
       }
     ],
     "monologues": [
@@ -273,12 +276,6 @@
         "para": 4,
         "character": "尉天齐",
         "text": "尉天齐摇了摇头，他才不在意戏的长短难易，他之所以苦笑是因为这戏讲的故事竟然是——‘南洲三幸，红儿掷珠’。",
-        "kind": "心理活动"
-      },
-      {
-        "para": 5,
-        "character": "尉天齐",
-        "text": "啊？！",
         "kind": "心理活动"
       },
       {
@@ -345,7 +342,7 @@
         "para": 16,
         "character": "尉天齐",
         "text": "戏文有两个主角，唐真是眼高于顶的天才，沉寂了两年，如今被迫出来为蟾宫主持公道，你别问他凭什么，反正戏里这么唱的，然后便是他一人一云横压天地，断定蟾宫白生之辈皆是小人，只有萧不同才是真君子。",
-        "kind": "判断推理"
+        "kind": "心理活动"
       },
       {
         "para": 17,
@@ -357,7 +354,7 @@
         "para": 18,
         "character": "尉天齐",
         "text": "但另一个主角姚红儿的改编就有些太多了，此戏中，姚红儿几乎是完全的正面形象，戏里是她劝导唐真出山匡扶正义，也是她拦住萧不同提醒他要注意安全，白玉珠是萧不同硬给的，最终决战前，她也是两方规劝，讲明道理，最终萧不同绝望身死，她才迫不得已、一怒之下为守卫正道而扔下玉珠。",
-        "kind": "判断推理"
+        "kind": "心理活动"
       },
       {
         "para": 19,
@@ -447,36 +444,36 @@
         "para": 41,
         "character": "尉天齐",
         "text": "他由衷的希望对方可以给他一些惊喜。",
-        "kind": "心理活动"
+        "kind": "情绪感受"
       },
       {
         "para": 46,
-        "character": "孩子们",
+        "character": "戏班孩子们",
         "text": "这真是一种无形的压力，倒不是尉天齐很凶，而是他是新学戏的，大家都不想在他的面前掉面儿，每个人都想努力跟上。",
         "kind": "心理活动"
       },
       {
         "para": 47,
-        "character": "孩子们",
+        "character": "戏班孩子们",
         "text": "可最终，在四五遍后，大多数配角都已经无法再参与这场疯狂的学习了，因为不论是戏文本身的通读程度还是节奏台风他们都已经跟不上尉天齐和云儿了。",
         "kind": "心理活动"
       },
       {
         "para": 48,
-        "character": "孩子们",
+        "character": "戏班孩子们",
         "text": "加入进去除了拖慢他们俩的学习速度，没有其他的帮助。",
         "kind": "判断推理"
       },
       {
         "para": 49,
-        "character": "孩子们",
+        "character": "戏班孩子们",
         "text": "倒不如自己先好好努力，将全文流畅的顺下来再考虑对戏。",
         "kind": "判断推理"
       },
       {
-        "para": 50,
-        "character": "孩子们",
-        "text": "孩子们沉默而期待的看着站在最中间一大一小的两人，等待着一个结果。",
+        "para": 56,
+        "character": "云儿",
+        "text": "云儿输了，但她并非是输在了戏上，而是她年龄太小，体力跟不上了，连续快速的走戏，已经让她的额头渗出了不少细密的汗珠，此时她噘着嘴一边高叫着尉天齐耍无赖一边用小拳头去捅尉天齐的腰。",
         "kind": "心理活动"
       },
       {
@@ -487,11 +484,6 @@
       }
     ],
     "narration": [
-      {
-        "para": 2,
-        "text": "尉天齐翻看着戏本，嘴角不由露出几分苦笑。",
-        "function": "情节交代"
-      },
       {
         "para": 42,
         "text": "。。。",
@@ -513,9 +505,14 @@
         "function": "情节交代"
       },
       {
+        "para": 50,
+        "text": "孩子们沉默而期待的看着站在最中间一大一小的两人，等待着一个结果。",
+        "function": "环境渲染"
+      },
+      {
         "para": 51,
         "text": "小小的云儿当真了不得，她穿着小棉袄站在那里，可摆出姿势时，却散发出无比强大的气场，嘴里咿咿呀呀嗓音洪亮，眼随指动，如画一般。",
-        "function": "环境渲染"
+        "function": "人物背景"
       },
       {
         "para": 52,
@@ -535,11 +532,6 @@
       {
         "para": 55,
         "text": "“哦——！！！”围观的孩子们大叫起来，尉天齐仰着脸对周围人挥手致意，一副我果然天下无敌的样子。",
-        "function": "情节交代"
-      },
-      {
-        "para": 56,
-        "text": "云儿输了，但她并非是输在了戏上，而是她年龄太小，体力跟不上了，连续快速的走戏，已经让她的额头渗出了不少细密的汗珠，此时她噘着嘴一边高叫着尉天齐耍无赖一边用小拳头去捅尉天齐的腰。",
         "function": "情节交代"
       },
       {
@@ -563,45 +555,51 @@
         "order": 1,
         "para_range": [
           2,
-          42
+          29
         ],
         "scene": "永和楼后院",
         "beat_type": "铺垫",
-        "summary": "尉天齐看戏本，发现是《南洲三幸》，分析姚安饶的阳谋，决定演唱。"
+        "summary": "尉天齐翻看戏本，发现是‘南洲三幸’故事，分析其争议与姚安饶的阳谋。"
       },
       {
         "order": 2,
         "para_range": [
-          43,
-          57
+          30,
+          41
         ],
         "scene": "永和楼后院",
-        "beat_type": "冲突",
-        "summary": "尉天齐与云儿对戏，进步神速，七遍后云儿体力不支认输。"
+        "beat_type": "转折",
+        "summary": "云儿问是否唱，尉天齐决定唱，并询问班主情况，心中期待姚安饶的惊喜。"
       },
       {
         "order": 3,
+        "para_range": [
+          42,
+          57
+        ],
+        "scene": "永和楼后院",
+        "beat_type": "情绪",
+        "summary": "尉天齐与云儿对戏，孩子们参与，云儿体力不支放弃，尉天齐得意。"
+      },
+      {
+        "order": 4,
         "para_range": [
           58,
           60
         ],
         "scene": "永和楼后院",
         "beat_type": "收束",
-        "summary": "孩子们欢乐，姚安饶与吕藏锋在院中各怀心思。"
+        "summary": "戏班欢乐，姚安饶在院中听笑声，吕藏锋泡茶。"
       }
     ],
     "props": [
       {
         "name": "戏本《南洲三幸》",
-        "note": "姚安饶编撰，讲述‘南洲三幸，红儿掷珠’的故事，尉天齐扮演唐真，云儿扮演红儿。"
+        "note": "新编戏文，讲‘南洲三幸，红儿掷珠’故事，由尉天齐演唐真，云儿演红儿。"
       },
       {
         "name": "白玉珠",
-        "note": "戏中萧不同硬给姚红儿的物件。"
-      },
-      {
-        "name": "茶叶",
-        "note": "尉天齐从镜湖带回来的好茶叶，吕藏锋用来泡茶。"
+        "note": "戏中萧不同硬给姚红儿的珠子。"
       }
     ],
     "terms": [
@@ -611,7 +609,7 @@
       },
       {
         "term": "南洲三幸",
-        "note": "指唐真、姚红儿、萧不同三人，故事发生在九洲最南端。"
+        "note": "指南洲三位幸运人物，包括唐真、姚红儿、萧不同。"
       },
       {
         "term": "求法真君",
@@ -625,30 +623,28 @@
     "continuity": {
       "inherits": [
         "前文姚安饶设计让尉天齐学戏",
-        "云儿教尉天齐唱戏",
-        "姚安饶能下地走路"
+        "前文云儿教尉天齐唱戏",
+        "前文姚安饶能下地"
       ],
       "foreshadows": [
-        "三教御典与永和楼新戏同时开演，可能引发冲突",
-        "姚安饶的阳谋可能还有后手"
+        "姚安饶可能还有后手",
+        "三教御典与永和楼新戏同时开演"
       ],
       "reveals": [
-        "戏本《南洲三幸》的内容与偏向性",
-        "尉天齐决定演唱此戏"
+        "戏本内容为‘南洲三幸’",
+        "姚安饶的阳谋意图"
       ]
     }
   },
   "quality": {
-    "passed": false,
-    "fail_reasons": [
-      "一致性分 88 < 90"
-    ],
+    "passed": true,
+    "fail_reasons": [],
     "structure_score": 88,
-    "fidelity_score": 88,
+    "fidelity_score": 95,
     "verbatim": {
-      "total_quotes": 64,
+      "total_quotes": 62,
       "counts": {
-        "exact": 64,
+        "exact": 62,
         "near": 0,
         "miss": 0,
         "empty": 0
@@ -669,8 +665,7 @@
       359,
       360,
       361
-    ],
-    "repaired_by": "s5_repair_quotes"
+    ]
   },
   "reviews": [
     {
@@ -678,49 +673,37 @@
       "round": 0,
       "score": 88,
       "verdict": "revise",
-      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 概括了本章核心事件，但字数约 120 字，未达 150-300 字要求，且略显流水账，未充分体现人物心理与冲突。beats 覆盖了 2-60 段，但 para_range 有断档（41 到 43 之间缺 42 段，42 段是省略号，可能为时间过渡，但未纳入任何 beat），且 beats 的 scene 字段均为“永和楼后院”，但场景描述中 para_range 为 43-60，与 beats 的起始段不一致。characters 中“孩子们”作为集合体出现，但 dialogues 和 monologues 中将其作为单一说话者，可能造成混淆；且“孩子们”与“戏班里的孩子”作为别名，但未在 aliases 中体现，可能造成重复。scenes 的 present_characters 包含姚安饶和吕藏锋，但场景描述中并未明确他们在场，且 para_range 43-60 主要描述对戏，姚安饶和吕藏锋在 59-60 段才出现，场景划分不够精确。dialogues 的 speaker 均在 characters 中，但“孩子们”作为 speaker 时，addressee 缺失。monologues 中“孩子们”作为 character 出现，但 children 是集合，心理活动描写可能不恰当。narration 中 para 5 和 42 为“啊？！”和“。。。”，作为 narration 可能过于简略，且 para 42 未在 beats 中覆盖。continuity.inherits 与前文提要基本一致，但“姚安饶能下地走路”在前文 361 章已提及，本章再次继承，可能重复。上下文连贯性方面，人物命名与前文一致，尉天齐、云儿、姚安饶、吕藏锋均无别名冲突。但“孩子们”作为集合体，在 monologues 中赋予心理活动，可能不符合叙事逻辑。情节推进与前文无矛盾，但戏本《南洲三幸》的内容在前文未铺垫，本章突然出现，虽在 continuity.reveals 中说明，但前文提要未提及，可能造成突兀。总体而言，结构基本完整，但存在 synopsis 字数不足、beats 断档、场景划分不精确、集合体人物处理不当等问题，建议修订。",
+      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 字数约 200，符合要求，但内容偏重情节流水，对人物动机和结果概括不够精炼。beats 覆盖全章，para_range 递增且有效，但 beat 1 的 para_range 从 2 开始，而正文第 1 段未包含，可能遗漏了开篇场景。characters 无重复，但姚安饶和吕藏锋在场景中标记为 present，实际仅在第 59-60 段出现，且吕藏锋仅在第 60 段出现，场景的 para_range 为 42-60，但姚安饶在第 59 段才出现，吕藏锋在第 60 段出现，场景中 present_characters 包含他们，但场景 events 未明确提及他们，且场景 para_range 从 42 开始，但姚安饶和吕藏锋的段落不在 42-60 内？实际上 59-60 在范围内，但场景描述主要集中在对戏，姚安饶和吕藏锋的段落是独立场景，可能应拆分为两个场景。dialogues 的 speaker 均在 characters 中，但第 35 段云儿转述班主的话，speaker 为云儿，合理。monologues 中第 46-49 段 character 为“孩子们”，但 characters 中无此条目，应改为具体孩子或群体。narration 中第 5 段“啊？！”和第 42 段“。。。”作为 narration 过于简略，且第 5 段可能是对话或感叹，应归入 dialogue 或删除。上下文连贯性方面，人物命名与前文一致，姚安饶别名“班主”合理。continuity.inherits 提及前文姚安饶设计、云儿教戏、姚安饶能下地，均与前文提要相符。但本章出现“吕藏锋”在前文提要中未提及，但可能为前文已有人物，需确认。另外，戏本内容涉及“南洲三幸”事件，前文提要未铺垫，但可能为前文已提及，需确认。总体结构良好，但存在场景划分、monologue 角色、narration 冗余等中等问题，建议修订。",
       "issues": [
         {
-          "field": "synopsis",
+          "field": "scenes[0].present_characters",
           "severity": "中等",
-          "problem": "字数约 120 字，未达 150-300 字要求，且概括较流水账，未突出人物心理冲突。",
-          "suggestion": "扩充至 150 字以上，增加尉天齐对戏本内容的心理活动、云儿的反应、以及姚安饶的算计等细节。"
+          "problem": "场景包含姚安饶和吕藏锋，但场景主要描述对戏，姚安饶和吕藏锋的段落（59-60）与对戏场景（42-58）在时间和空间上可能不同，且场景 events 未提及他们，导致场景内人物与事件不匹配。",
+          "suggestion": "将姚安饶和吕藏锋的段落拆分为独立场景，或调整场景 para_range 和 events 以包含他们的活动。"
         },
         {
-          "field": "beats[1].para_range",
+          "field": "monologues[10].character",
           "severity": "中等",
-          "problem": "beats 的 para_range 从 43 开始，但 42 段（省略号）未包含在任何 beat 中，造成断档。",
-          "suggestion": "将 42 段纳入前一个 beat 或单独作为一个过渡 beat，确保覆盖所有段落。"
+          "problem": "monologues 中 character 为“孩子们”，但 characters 数组中无此条目，导致引用不一致。",
+          "suggestion": "将“孩子们”改为具体孩子名字（如小丫头）或使用群体称呼如“戏班孩子们”，并在 characters 中补充或说明。"
         },
         {
-          "field": "scenes[0].para_range",
-          "severity": "中等",
-          "problem": "场景 para_range 为 43-60，但姚安饶和吕藏锋在 59-60 段才出现，且场景描述主要集中在对戏，场景划分不够精确。",
-          "suggestion": "将场景拆分为两个：对戏场景（43-58）和院中场景（59-60），或调整 para_range 以准确反映场景内容。"
-        },
-        {
-          "field": "characters[4]",
-          "severity": "中等",
-          "problem": "“孩子们”作为集合体，在 monologues 中被赋予心理活动，可能不符合叙事逻辑，且 aliases 中“戏班里的孩子”未在 aliases 字段体现，可能造成重复。",
-          "suggestion": "将“孩子们”改为“戏班孩子们”或明确为个体，避免集合体作为单一角色；若保留，应避免赋予心理活动，或改为叙述者视角。"
-        },
-        {
-          "field": "dialogues[9]",
+          "field": "narration[0]",
           "severity": "轻微",
-          "problem": "speaker 为“孩子们”时，addressee 缺失，且集合体作为说话者可能不明确。",
-          "suggestion": "若保留，应指定具体孩子或改为“孩子们齐声说”，并补充 addressee。"
+          "problem": "narration 第 5 段“啊？！”和第 42 段“。。。”过于简略，且第 5 段可能是感叹词，不应作为 narration，第 42 段可能是时间过渡，但内容空洞。",
+          "suggestion": "删除或合并到相邻 narration，或补充具体内容。"
         },
         {
-          "field": "narration[1]",
+          "field": "beats[0].para_range",
           "severity": "轻微",
-          "problem": "para 5 的 narration 为“啊？！”，过于简略，且 function 为“情节交代”，可能不恰当。",
-          "suggestion": "补充完整描述或调整 function 为“反应”。"
+          "problem": "beats[0] 的 para_range 从 2 开始，但正文第 1 段未包含，可能遗漏了开篇场景。",
+          "suggestion": "确认第 1 段内容，若属于该 beat，则调整 para_range 为 [1,29]。"
         }
       ],
       "checked_items": {
         "字段完整性": "通过",
-        "简介质量": "不通过",
-        "beats覆盖": "不通过",
+        "简介质量": "通过",
+        "beats覆盖": "通过",
         "人物去重": "通过",
         "场景人物一致": "不通过",
         "命名跨章一致": "通过",
@@ -729,55 +712,87 @@
       "missing_items": {},
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 6185,
-        "completion_tokens": 1197,
-        "total_tokens": 7382,
+        "prompt_tokens": 6167,
+        "completion_tokens": 1011,
+        "total_tokens": 7178,
         "prompt_tokens_details": {
-          "cached_tokens": 1024
+          "cached_tokens": 640
         },
-        "prompt_cache_hit_tokens": 1024,
-        "prompt_cache_miss_tokens": 5161
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 5527
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-07T00:08:55+00:00"
+      "reviewed_at": "2026-09-04T07:22:43+00:00"
     },
     {
       "stage": "fidelity_review",
       "round": 0,
-      "score": 82,
-      "verdict": "revise",
-      "analysis": "臆造情况：程序核验报告显示 miss 为 0，未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 1 条 near，即 dialogues[7]（原文第35段云儿台词）。原文为“昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！”，解析结果中该条文本与原文完全一致，但程序判定为 near（相似度0.88），可能因标点或空格差异，需逐字核对并修正为原文精确形式。\n遗漏情况：程序报告台词覆盖率 0.7143，missed_samples 有 4 条：\"tt-title\"（第1段，非实际台词，可忽略）、\"悬案\"（第8段，原文为“悬案”，但该段已作为独白收录，非独立台词）、\"大逆不道\"（第30段，原文为“大逆不道”的剧本，但该段台词已收录，此处为引号内词语，可能被误判）、\"哦——！！！\"（第55段，原文为“哦——！！！”的孩子们欢呼，属于台词，但解析结果中未单独列为 dialogue，而是放在 narration 中，属于遗漏）。此外，原文第5段“啊？！”已作为 narration 收录，但它是尉天齐的心理惊呼，应归入 monologues 或 dialogue，此处归为 narration 略有不妥。\n张冠李戴情况：未发现说话人认错或心理活动归错人。所有 monologues 的 character 归属与原文一致（如第22-25段为云儿，第46-50段为孩子们）。\n简介准确性：synopsis 与原文事实基本相符，但“姚安饶在院中咬着毛笔，吕藏锋在旁喝茶，各怀心思”中“各怀心思”属于轻微推断，原文仅说“不知在想些什么”，未明确吕藏锋心思，但不算严重失真。\n描写忠实度：人物外貌、场景陈设描写与原文一致，如云儿“穿着小棉袄”、永和楼后院广场等，未发现篡改。\n综上，主要问题为台词遗漏（“哦——！！！”）和一处 near 改写，以及“啊？！”的归类不当，需修正。",
+      "score": 88,
+      "verdict": "pass",
+      "analysis": "臆造情况：程序报告显示 miss 为 0，未发现原文没有的人物、场景、外貌、动作、心理或道具，臆造项通过。\n改写情况：程序报告有 1 条 near，即 dialogues[7]（para 35）云儿的台词。原文为“昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！”，解析结果中该条文本与原文完全一致，但程序判定为 near，可能因标点或空格差异，但逐字比对未发现实质改动，故按程序报告记为改写，扣 3 分。\n遗漏情况：程序报告台词覆盖率为 83.33%，missed_samples 为“tt-title”和“哦——！！！”。“tt-title”是章节标题，非实际台词，可忽略；“哦——！！！”是孩子们的大叫，属于感叹语，虽带引号但非完整对话，且已在 narration[10]（para 55）中作为旁白引用，故不算遗漏。其余带引号的说话均已进入 dialogues，心理活动、关键旁白、人物、场景均无遗漏。\n张冠李戴情况：所有说话人归属正确，心理活动归属正确，人物场景安排正确，未发现张冠李戴。\n简介准确性：synopsis 与原文事实相符，未加入原文没有的因果推断、评价或情绪判断，准确概括了尉天齐接戏、对戏、云儿体力不支、姚安饶听笑声等情节。\n描写忠实度：人物外貌、服饰、场景陈设描述均与原文一致，如云儿穿小棉袄、姚安饶咬毛笔、吕藏锋泡茶等，未发现篡改。\n综上，仅有一处程序判定的 near 改写，其余均准确，故扣 3 分，得 88 分。",
       "issues": [
         {
           "field": "dialogues[7].text",
           "severity": "轻微",
           "type": "改写",
-          "problem": "程序判定该条为 near，可能因标点或空格差异，需逐字核对原文。",
-          "evidence": "原文第35段：\"昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！\"",
-          "suggestion": "确保文本与原文完全一致，包括标点符号。"
-        },
-        {
-          "field": "dialogues",
-          "severity": "中等",
-          "type": "遗漏",
-          "problem": "原文第55段孩子们欢呼“哦——！！！”未作为 dialogue 收录，而是放在 narration 中。",
-          "evidence": "原文第55段：\"“哦——！！！”围观的孩子们大叫起来，尉天齐仰着脸对周围人挥手致意，一副我果然天下无敌的样子。\"",
-          "suggestion": "将“哦——！！！”作为 dialogue 收录，speaker 为“孩子们”，addressee 为“尉天齐”。"
-        },
-        {
-          "field": "monologues",
-          "severity": "轻微",
-          "type": "遗漏",
-          "problem": "原文第5段“啊？！”是尉天齐的心理惊呼，但被归入 narration，未作为 monologue 收录。",
-          "evidence": "原文第5段：\"啊？！\"",
-          "suggestion": "将“啊？！”作为 monologue 收录，character 为“尉天齐”，kind 为“心理活动”。"
+          "problem": "程序判定该条引用为 near，相似度 0.8806，可能存在细微标点或空格差异，但逐字比对未发现实质改动。",
+          "evidence": "原文第35段：'昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！'",
+          "suggestion": "确保引用与原文完全一致，包括标点符号，建议重新核对并修正。"
         }
       ],
       "checked_items": {
         "无臆造": "通过",
         "逐字准确": "不通过",
-        "对话无遗漏": "不通过",
+        "对话无遗漏": "通过",
+        "独白无遗漏": "通过",
+        "关键旁白无遗漏": "通过",
+        "说话人归属正确": "通过",
+        "简介忠于原文": "通过",
+        "人物场景描写忠实": "通过"
+      },
+      "missing_items": {
+        "dialogues": [],
+        "monologues": [],
+        "narration": [],
+        "characters": [],
+        "scenes": []
+      },
+      "model": "deepseek-v4-flash",
+      "tokens": {
+        "prompt_tokens": 8382,
+        "completion_tokens": 739,
+        "total_tokens": 9121,
+        "prompt_tokens_details": {
+          "cached_tokens": 1024
+        },
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 7358
+      },
+      "attempts": 1,
+      "adapted": [],
+      "reviewed_at": "2026-09-04T07:22:48+00:00"
+    },
+    {
+      "stage": "fidelity_review",
+      "round": 1,
+      "score": 88,
+      "verdict": "pass",
+      "analysis": "臆造情况：程序报告显示无 miss 条目，解析中所有引用均能在原文找到，未发现原文没有的人物、场景、外貌、动作、心理或道具。臆造项通过。\n改写情况：程序报告有 1 条 near，即 dialogues[7]（第35段云儿台词）。原文为“昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！”，解析文本与原文一致，但程序判定为 near（相似度0.88），可能因标点或细微空格差异，但内容逐字核对无误，不构成实质改写。其余引用均 exact。\n遗漏情况：程序报告台词覆盖率显示漏掉 2 条：一是第1段“tt-title”（非实际台词，是HTML标签，可忽略），二是第55段“哦——！！！”（孩子们的大叫，属于台词，但已作为 narration 收录，且非关键对话，可视为已覆盖）。对话无实质遗漏。独白方面，原文心理活动如第4、6-20、22-29、37-41、46-49、56、59段均已收录，无遗漏。关键旁白如第42-45、50-58、60段均已收录。人物（尉天齐、云儿、姚安饶、吕藏锋）和场景（永和楼后院、屋内）均无遗漏。\n张冠李戴情况：所有说话人归属正确，如第3、30、32、35段为云儿，第21、31、33、34、36段为尉天齐。心理活动归属正确，如第22-25段为云儿，第46-49段为戏班孩子们，第59段为姚安饶。无张冠李戴。\n简介准确性：synopsis 与原文事实相符，准确概括了尉天齐发现戏本内容、决定接下、与云儿对戏、云儿体力不支放弃、姚安饶听笑声等情节，未加入原文没有的因果推断或评价。one_line 也准确。\n描写忠实度：人物外貌、服饰、场景陈设描述与原文一致，如云儿“穿着小棉袄”、姚安饶“咬着毛笔”、吕藏锋“将茶叶扔进茶壶”等均逐字对应。未发现篡改。\n综上，仅存在一条程序判定的 near（但内容实际一致），以及台词覆盖率的轻微遗漏（“哦——！！！”已作为 narration 收录），整体忠实度高，予以通过。",
+      "issues": [
+        {
+          "field": "dialogues[7].text",
+          "severity": "轻微",
+          "type": "改写",
+          "problem": "程序判定该条引用为 near，相似度0.88，但人工核对文本与原文逐字一致，可能因标点或空格差异导致，不构成实质改写。",
+          "evidence": "原文第35段：昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！",
+          "suggestion": "保持原文，无需修改，但可检查标点是否完全一致。"
+        }
+      ],
+      "checked_items": {
+        "无臆造": "通过",
+        "逐字准确": "通过",
+        "对话无遗漏": "通过",
         "独白无遗漏": "通过",
         "关键旁白无遗漏": "通过",
         "说话人归属正确": "通过",
@@ -791,48 +806,102 @@
             "text": "哦——！！！"
           }
         ],
-        "monologues": [
-          {
-            "para": 5,
-            "character": "尉天齐",
-            "text": "啊？！"
-          }
-        ],
+        "monologues": [],
         "narration": [],
         "characters": [],
         "scenes": []
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 8412,
-        "completion_tokens": 1124,
-        "total_tokens": 9536,
+        "prompt_tokens": 8442,
+        "completion_tokens": 901,
+        "total_tokens": 9343,
         "prompt_tokens_details": {
-          "cached_tokens": 2944
+          "cached_tokens": 1024
         },
-        "prompt_cache_hit_tokens": 2944,
-        "prompt_cache_miss_tokens": 5468
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 7418
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-07T00:09:09+00:00"
+      "reviewed_at": "2026-09-04T07:23:18+00:00"
+    },
+    {
+      "stage": "structure_review",
+      "round": 0,
+      "score": 88,
+      "verdict": "revise",
+      "analysis": "结构完整性方面，必填字段齐全，类型正确。synopsis 字数约 200，符合要求，但内容偏重情节流水，对人物动机和结果概括不够精炼。beats 覆盖全章，para_range 递增且无重叠，但第 1 个 beat 的 para_range 从 2 开始，未包含第 1 段（标题），且第 1 段被错误地放入 dialogues 中作为 speaker 为“未明说”的对话，应移出。characters 中姚安饶和吕藏锋在 scenes 中未出现于 present_characters，但 scenes 中“永和楼后院（屋内）”的 present_characters 包含姚安饶和吕藏锋，而该 scene 的 para_range 为 59-60，与姚安饶的 monologue 段落 59 对应，但姚安饶在正文中并未实际出场，仅以心理活动形式存在，因此 present_characters 应改为“姚安饶（提及）”或仅列吕藏锋，但吕藏锋在 60 段有动作，可保留。另外，scenes 中“永和楼后院”的 present_characters 包含“孩子们”，但 characters 中无此条目，应补充或改为“戏班孩子们”。dialogues 中第 1 段是标题，不应作为对话；第 55 段“哦——！！！”是孩子们齐声喊，speaker 应为“戏班孩子们”而非“未明说”。monologues 中第 46-49 段 character 为“戏班孩子们”，但 characters 中无此条目，应补充。narration 中第 42 段“。。。”作为时间推移，过于简略，建议补充具体时间。上下文连贯性方面，人物命名与前文一致，尉天齐、云儿、姚安饶、吕藏锋均在前文出现，无新人物。continuity.inherits 合理，foreshadows 和 reveals 符合情节。但 synopsis 中“姚安饶的阳谋”在前文已有铺垫，本章揭示，衔接自然。主要问题在于 dialogues 和 monologues 中出现了未在 characters 中登记的角色（如“戏班孩子们”），以及 scenes 中 present_characters 与 characters 不一致，需要修订。",
+      "issues": [
+        {
+          "field": "dialogues[0]",
+          "severity": "中等",
+          "problem": "第 1 段是章节标题，不应作为对话记录，且 speaker 为“未明说”，无实际对话内容。",
+          "suggestion": "删除该条 dialogue，或将其移至 narration 或单独字段处理。"
+        },
+        {
+          "field": "dialogues[11]",
+          "severity": "中等",
+          "problem": "第 55 段“哦——！！！”是孩子们齐声欢呼，speaker 应为“戏班孩子们”，而非“未明说”。",
+          "suggestion": "将 speaker 改为“戏班孩子们”，并在 characters 中补充该群体条目。"
+        },
+        {
+          "field": "scenes[0].present_characters",
+          "severity": "中等",
+          "problem": "present_characters 包含“孩子们”，但 characters 中无此条目，导致场景人物与角色表不一致。",
+          "suggestion": "在 characters 中增加“戏班孩子们”条目，或改为“戏班孩子们”并确保与 monologues 中的 character 一致。"
+        },
+        {
+          "field": "monologues[6-9]",
+          "severity": "中等",
+          "problem": "monologues 中 character 为“戏班孩子们”，但 characters 中无此条目，违反一致性。",
+          "suggestion": "在 characters 中增加“戏班孩子们”条目，或将这些 monologue 的 character 改为具体孩子（如“孩子们”），并补充条目。"
+        },
+        {
+          "field": "scenes[1].present_characters",
+          "severity": "轻微",
+          "problem": "姚安饶在 59 段仅以心理活动出现，并未实际在场，present_characters 包含姚安饶可能不准确。",
+          "suggestion": "将姚安饶从 present_characters 中移除，或注明“姚安饶（心理活动）”，但建议仅列吕藏锋。"
+        },
+        {
+          "field": "narration[0]",
+          "severity": "轻微",
+          "problem": "第 42 段“。。。”作为时间推移过于简略，缺乏具体描述。",
+          "suggestion": "补充具体时间或场景转换描述，如“时间流逝，转眼到了下午”等。"
+        }
+      ],
+      "checked_items": {
+        "字段完整性": "通过",
+        "简介质量": "通过",
+        "beats覆盖": "通过",
+        "人物去重": "通过",
+        "场景人物一致": "不通过",
+        "命名跨章一致": "通过",
+        "上下文衔接": "通过"
+      },
+      "missing_items": {},
+      "model": "deepseek-v4-flash",
+      "tokens": {
+        "prompt_tokens": 6370,
+        "completion_tokens": 1127,
+        "total_tokens": 7497,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 5730
+      },
+      "attempts": 1,
+      "adapted": [],
+      "reviewed_at": "2026-09-05T02:35:27+00:00"
     },
     {
       "stage": "fidelity_review",
-      "round": 1,
-      "score": 88,
+      "round": 0,
+      "score": 95,
       "verdict": "pass",
-      "analysis": "臆造情况：程序报告显示无 miss 条目，解析结果中所有引用均能在原文找到，未发现原文没有的人物、场景、外貌、动作、心理或道具。\n改写情况：程序报告有 1 条 near 条目，即 dialogues[7] 中云儿的台词，原文为“昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！”，解析结果中该条文本与原文完全一致，但程序判定为 near，可能因标点或空格差异，但内容逐字一致，故不构成实质改写。\n遗漏情况：程序报告显示有 3 条 missed_samples，分别为“tt-title”、“悬案”、“大逆不道”。其中“tt-title”是章节标题，不属于台词；“悬案”是原文第8段中的词，但该段已作为独白收录，且“悬案”是引号内的词，但并非完整台词，可视为已覆盖；“大逆不道”是原文第30段中云儿心理活动的一部分，但该段已作为独白收录，且“大逆不道”是引号内的词，但并非完整台词，可视为已覆盖。因此，实际遗漏的台词或关键旁白为 0 条。\n张冠李戴情况：所有说话人归属均正确，如第3段云儿、第21段尉天齐、第30段云儿等，未发现错误。\n简介准确性：synopsis 与原文事实相符，未加入原文没有的因果推断、评价或情绪判断。\n描写忠实度：人物外貌、服饰、场景陈设的描述与原文一致，如云儿“穿着小棉袄”、永和楼后院等，未发现篡改。",
-      "issues": [
-        {
-          "field": "dialogues[7].text",
-          "severity": "轻微",
-          "type": "改写",
-          "problem": "程序报告标记为 near，但实际文本与原文逐字一致，可能因标点或空格差异导致相似度略低，不构成实质改写。",
-          "evidence": "原文第35段：昨天已经可以下地走路了。班主说，尉公子上台，她必然亲临见证，不过还让我提醒你，注意时间，三教御典开始时尉公子若是登不了台，可就错过了！",
-          "suggestion": "无需修改，保持原样。"
-        }
-      ],
+      "analysis": "臆造情况：程序逐字核验报告显示所有引用均为 exact，无 miss 条目，未发现原文没有的人物、场景、外貌、动作、心理或道具。\n改写情况：程序报告 near 为 0，所有引用逐字命中，未发现改写。\n遗漏情况：台词覆盖率 100%，无漏掉台词；monologues 覆盖了原文主要心理活动，包括尉天齐对戏本的分析、云儿的担忧、孩子们的感受等；narration 覆盖了关键旁白，如时间推移、对戏过程、环境渲染等；出场人物（尉天齐、云儿、姚安饶、吕藏锋、孩子们）和场景（永和楼后院广场、屋内）均已收录。\n张冠李戴情况：说话人归属正确，如云儿解释戏文、尉天齐点评、云儿询问等；心理活动归属正确，如尉天齐对戏本的分析、云儿的担忧、孩子们的感受等；人物出现在正确场景，如姚安饶和吕藏锋在屋内，尉天齐和云儿在广场。\n简介准确性：synopsis 与原文事实相符，准确概括了尉天齐发现戏本内容、分析姚安饶的阳谋、决定接下、与云儿对戏、云儿体力不支放弃、戏班欢乐、姚安饶听笑声等情节，未加入原文没有的因果推断、评价或情绪判断。\n描写忠实度：人物外貌、服饰、场景陈设描述与原文一致，如云儿穿小棉袄、姚安饶咬毛笔、吕藏锋泡茶等，均逐字引用原文。\n综上，解析结果忠实于原文，无臆造、改写、遗漏、张冠李戴或描写篡改问题，仅个别细节如 dialogues 中 para 1 的 'tt-title' 为程序标记，非实际台词，但已标注 _filled，不影响整体准确性。",
+      "issues": [],
       "checked_items": {
         "无臆造": "通过",
         "逐字准确": "通过",
@@ -852,28 +921,28 @@
       },
       "model": "deepseek-v4-flash",
       "tokens": {
-        "prompt_tokens": 8463,
-        "completion_tokens": 700,
-        "total_tokens": 9163,
+        "prompt_tokens": 8504,
+        "completion_tokens": 567,
+        "total_tokens": 9071,
         "prompt_tokens_details": {
-          "cached_tokens": 3072
+          "cached_tokens": 1024
         },
-        "prompt_cache_hit_tokens": 3072,
-        "prompt_cache_miss_tokens": 5391
+        "prompt_cache_hit_tokens": 1024,
+        "prompt_cache_miss_tokens": 7480
       },
       "attempts": 1,
       "adapted": [],
-      "reviewed_at": "2026-08-07T00:09:52+00:00"
+      "reviewed_at": "2026-09-05T02:35:31+00:00"
     }
   ],
   "run": {
     "pipeline_version": "1.0",
     "model": "deepseek-v4-flash",
-    "phase": "all",
+    "phase": "review",
     "thinking": false,
-    "llm_calls": 5,
-    "started_at": "2026-08-07T00:07:48+00:00",
-    "finished_at": "2026-08-07T00:09:52+00:00",
-    "elapsed_sec": 124.3
+    "llm_calls": 7,
+    "started_at": "2026-09-05T02:35:18+00:00",
+    "finished_at": "2026-09-05T02:35:31+00:00",
+    "elapsed_sec": 13.0
   }
 }

@@ -1,0 +1,35 @@
+{
+  "canonical_name": "金甲军士",
+  "aliases": [],
+  "first_seq": 834,
+  "last_seq": 834,
+  "chapter_count": 1,
+  "chapters": [
+    834
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 834,
+      "quote": "高大的金甲军士"
+    }
+  ],
+  "states": [
+    {
+      "seq": 834,
+      "state": "听从调遣"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 834,
+      "actions": [
+        "抱拳行礼"
+      ]
+    }
+  ],
+  "id": "c842_金甲军士"
+}

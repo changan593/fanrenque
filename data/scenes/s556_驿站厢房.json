@@ -1,0 +1,34 @@
+{
+  "name": "驿站厢房",
+  "first_seq": 308,
+  "chapter_count": 1,
+  "chapters": [
+    308
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "清晨": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 308,
+      "quote": "房里昨夜烧的火炕已经凉了，但是余温还在"
+    }
+  ],
+  "characters": {
+    "娇妹儿": 1,
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 308,
+      "events": [
+        "娇妹儿回房，发现红儿已醒",
+        "红儿与娇妹儿交谈"
+      ]
+    }
+  ],
+  "id": "s556_驿站厢房"
+}

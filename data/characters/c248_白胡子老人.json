@@ -1,0 +1,71 @@
+{
+  "canonical_name": "白胡子老人",
+  "aliases": [
+    "郎中"
+  ],
+  "first_seq": 794,
+  "last_seq": 1052,
+  "chapter_count": 3,
+  "chapters": [
+    794,
+    1001,
+    1052
+  ],
+  "role_distribution": {
+    "参与": 3
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 794,
+      "quote": "白胡子的老人"
+    },
+    {
+      "seq": 1001,
+      "quote": "看起来文雅的老人"
+    },
+    {
+      "seq": 1001,
+      "quote": "喝茶的白胡子老人"
+    },
+    {
+      "seq": 1052,
+      "quote": "满脸都是白胡子"
+    }
+  ],
+  "states": [
+    {
+      "seq": 794,
+      "state": "无奈，表示尽力"
+    },
+    {
+      "seq": 1001,
+      "state": "与杜圣下棋"
+    },
+    {
+      "seq": 1052,
+      "state": "金丹境修士，感怀师父骸骨被寻回"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 794,
+      "actions": [
+        "诊断姚城主，告知病情，答应尽力"
+      ]
+    },
+    {
+      "seq": 1001,
+      "actions": [
+        "与杜圣下棋，与唐真对话"
+      ]
+    },
+    {
+      "seq": 1052,
+      "actions": [
+        "哭诉师父遗骨，跪谢姚望舒"
+      ]
+    }
+  ],
+  "id": "c248_白胡子老人"
+}

@@ -1,0 +1,23 @@
+{
+  "canonical_name": "玉蟾宫准圣",
+  "aliases": [],
+  "first_seq": 188,
+  "last_seq": 188,
+  "chapter_count": 1,
+  "chapters": [
+    188
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 188,
+      "state": "想成为月亮，与许行有赌局"
+    }
+  ],
+  "actions": [],
+  "id": "c466_玉蟾宫准圣"
+}

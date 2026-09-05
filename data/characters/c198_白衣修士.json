@@ -1,0 +1,75 @@
+{
+  "canonical_name": "白衣修士",
+  "aliases": [
+    "白袍修士"
+  ],
+  "first_seq": 51,
+  "last_seq": 456,
+  "chapter_count": 4,
+  "chapters": [
+    51,
+    99,
+    357,
+    456
+  ],
+  "role_distribution": {
+    "参与": 3,
+    "提及": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 99,
+      "quote": "白衣青年"
+    }
+  ],
+  "states": [
+    {
+      "seq": 51,
+      "state": "被幺儿击败，失去意识"
+    },
+    {
+      "seq": 99,
+      "state": "对金桧行为不喜，但执行师长安排"
+    },
+    {
+      "seq": 357,
+      "state": "恭敬等待，引路"
+    },
+    {
+      "seq": 456,
+      "state": "执行斩杀"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 51,
+      "actions": [
+        "攻击幺儿",
+        "被击败"
+      ]
+    },
+    {
+      "seq": 99,
+      "actions": [
+        "跟随金桧登山",
+        "御剑砍伐响林",
+        "对金桧放火不以为然"
+      ]
+    },
+    {
+      "seq": 357,
+      "actions": [
+        "在路旁等候",
+        "引红儿上山"
+      ]
+    },
+    {
+      "seq": 456,
+      "actions": [
+        "拔剑挥斩金丹老修士"
+      ]
+    }
+  ],
+  "id": "c198_白衣修士"
+}

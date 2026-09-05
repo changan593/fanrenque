@@ -1,0 +1,38 @@
+{
+  "canonical_name": "宫裙女子",
+  "aliases": [
+    "宫女"
+  ],
+  "first_seq": 732,
+  "last_seq": 732,
+  "chapter_count": 1,
+  "chapters": [
+    732
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 732,
+      "quote": "一个白色宫裙的女子"
+    }
+  ],
+  "states": [
+    {
+      "seq": 732,
+      "state": "引路者，恭敬"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 732,
+      "actions": [
+        "引姜羽二人至宫门",
+        "通报后带路至老祖宗静修处"
+      ]
+    }
+  ],
+  "id": "c792_宫裙女子"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "屋外",
+  "first_seq": 376,
+  "chapter_count": 1,
+  "chapters": [
+    376
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "唐真": 1,
+    "唐假": 1
+  },
+  "events": [
+    {
+      "seq": 376,
+      "events": [
+        "唐假追上唐真，阐述天道理解",
+        "唐真不听，大步离开"
+      ]
+    }
+  ],
+  "id": "s606_屋外"
+}

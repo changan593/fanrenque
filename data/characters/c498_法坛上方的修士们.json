@@ -1,0 +1,33 @@
+{
+  "canonical_name": "法坛上方的修士们",
+  "aliases": [
+    "老人们",
+    "众人"
+  ],
+  "first_seq": 223,
+  "last_seq": 223,
+  "chapter_count": 1,
+  "chapters": [
+    223
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 223,
+      "state": "表情严肃，释放威压"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 223,
+      "actions": [
+        "站起，释放天仙境威压"
+      ]
+    }
+  ],
+  "id": "c498_法坛上方的修士们"
+}

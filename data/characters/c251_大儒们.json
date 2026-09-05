@@ -1,0 +1,53 @@
+{
+  "canonical_name": "大儒们",
+  "aliases": [
+    "大儒",
+    "其他大儒"
+  ],
+  "first_seq": 820,
+  "last_seq": 855,
+  "chapter_count": 3,
+  "chapters": [
+    820,
+    821,
+    855
+  ],
+  "role_distribution": {
+    "参与": 2,
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 820,
+      "state": "气势滔天，配合假笑，担心唐真安全"
+    },
+    {
+      "seq": 821,
+      "state": "脸色铁青，后微微愣住"
+    },
+    {
+      "seq": 855,
+      "state": "面容严肃，试图阻止巨龟。"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 820,
+      "actions": [
+        "配合唐真假笑",
+        "见唐真撤法阵而色变"
+      ]
+    },
+    {
+      "seq": 855,
+      "actions": [
+        "聚集城墙边观察",
+        "怒喝巨龟来源",
+        "施法阻止巨龟翻转"
+      ]
+    }
+  ],
+  "id": "c251_大儒们"
+}

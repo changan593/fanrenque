@@ -1,0 +1,30 @@
+{
+  "canonical_name": "南洲月牧修士",
+  "aliases": [],
+  "first_seq": 697,
+  "last_seq": 697,
+  "chapter_count": 1,
+  "chapters": [
+    697
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 697,
+      "state": "聚集在魏成座位前，试图解字"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 697,
+      "actions": [
+        "聚集讨论墨迹，听魏成说‘守’后散去"
+      ]
+    }
+  ],
+  "id": "c766_南洲月牧修士"
+}

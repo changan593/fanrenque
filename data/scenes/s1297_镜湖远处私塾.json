@@ -1,0 +1,30 @@
+{
+  "name": "镜湖远处私塾",
+  "first_seq": 1125,
+  "chapter_count": 1,
+  "chapters": [
+    1125
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "主事": 1,
+    "弟子": 1
+  },
+  "events": [
+    {
+      "seq": 1125,
+      "events": [
+        "主事开私塾",
+        "授学",
+        "声名远扬"
+      ]
+    }
+  ],
+  "id": "s1297_镜湖远处私塾"
+}

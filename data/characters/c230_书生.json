@@ -1,0 +1,51 @@
+{
+  "canonical_name": "书生",
+  "aliases": [
+    "清水书院学子"
+  ],
+  "first_seq": 166,
+  "last_seq": 818,
+  "chapter_count": 3,
+  "chapters": [
+    166,
+    385,
+    818
+  ],
+  "role_distribution": {
+    "提及": 1,
+    "参与": 2
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [
+    {
+      "seq": 385,
+      "quote": "看起来二十几岁，手中还拿着一卷书"
+    }
+  ],
+  "states": [
+    {
+      "seq": 166,
+      "state": "垂垂老矣，被白玉蟾寻得"
+    },
+    {
+      "seq": 385,
+      "state": "面带笑意，礼貌但坚持原则"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 166,
+      "actions": [
+        "重写《百艳裙》"
+      ]
+    },
+    {
+      "seq": 385,
+      "actions": [
+        "询问去棋盘山目的",
+        "告知主将不在无法过川"
+      ]
+    }
+  ],
+  "id": "c230_书生"
+}

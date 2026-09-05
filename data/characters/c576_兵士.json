@@ -1,0 +1,35 @@
+{
+  "canonical_name": "兵士",
+  "aliases": [
+    "甲士",
+    "军士"
+  ],
+  "first_seq": 384,
+  "last_seq": 384,
+  "chapter_count": 1,
+  "chapters": [
+    384
+  ],
+  "role_distribution": {
+    "次要": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 384,
+      "state": "大夏兵士，负责守卫和通报"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 384,
+      "actions": [
+        "拦下三个孩子",
+        "通报上级",
+        "带领三人进入行营"
+      ]
+    }
+  ],
+  "id": "c576_兵士"
+}

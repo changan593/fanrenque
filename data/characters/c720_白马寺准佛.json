@@ -1,0 +1,35 @@
+{
+  "canonical_name": "白马寺准佛",
+  "aliases": [],
+  "first_seq": 628,
+  "last_seq": 628,
+  "chapter_count": 1,
+  "chapters": [
+    628
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 628,
+      "quote": "一书一冠，清水一仙"
+    }
+  ],
+  "states": [
+    {
+      "seq": 628,
+      "state": "静立百尺竿头，困住老和尚"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 628,
+      "actions": [
+        "静立，合十低语，打水送回"
+      ]
+    }
+  ],
+  "id": "c720_白马寺准佛"
+}

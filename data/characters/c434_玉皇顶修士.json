@@ -1,0 +1,31 @@
+{
+  "canonical_name": "玉皇顶修士",
+  "aliases": [],
+  "first_seq": 125,
+  "last_seq": 125,
+  "chapter_count": 1,
+  "chapters": [
+    125
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 125,
+      "state": "客气，后推唐真上场"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 125,
+      "actions": [
+        "通知唐真下场",
+        "推唐真上场并传话"
+      ]
+    }
+  ],
+  "id": "c434_玉皇顶修士"
+}

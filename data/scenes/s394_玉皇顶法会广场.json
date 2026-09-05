@@ -1,0 +1,30 @@
+{
+  "name": "玉皇顶法会广场",
+  "first_seq": 130,
+  "chapter_count": 1,
+  "chapters": [
+    130
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "傍晚": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 130,
+      "quote": "广场已经清理，法阵重新补全，法会依旧，百十个宗门轮番上阵，平台上的人来了走，走了回"
+    }
+  ],
+  "characters": {},
+  "events": [
+    {
+      "seq": 130,
+      "events": [
+        "法会第一天结束"
+      ]
+    }
+  ],
+  "id": "s394_玉皇顶法会广场"
+}

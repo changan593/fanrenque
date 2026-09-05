@@ -1,0 +1,31 @@
+{
+  "canonical_name": "御林军总将",
+  "aliases": [],
+  "first_seq": 607,
+  "last_seq": 607,
+  "chapter_count": 1,
+  "chapters": [
+    607
+  ],
+  "role_distribution": {
+    "参与": 1
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 607,
+      "state": "面色不善，但卖人情给董无"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 607,
+      "actions": [
+        "准备进城，被董无求情暂缓",
+        "同意今晚不推戏台"
+      ]
+    }
+  ],
+  "id": "c701_御林军总将"
+}

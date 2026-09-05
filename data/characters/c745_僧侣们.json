@@ -1,0 +1,30 @@
+{
+  "canonical_name": "僧侣们",
+  "aliases": [],
+  "first_seq": 668,
+  "last_seq": 668,
+  "chapter_count": 1,
+  "chapters": [
+    668
+  ],
+  "role_distribution": {
+    "背景": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 668,
+      "state": "忙碌，收集寺庙物品"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 668,
+      "actions": [
+        "收集寺庙内的东西，打包行囊"
+      ]
+    }
+  ],
+  "id": "c745_僧侣们"
+}

@@ -1,0 +1,30 @@
+{
+  "canonical_name": "百剑峰众人",
+  "aliases": [],
+  "first_seq": 100,
+  "last_seq": 100,
+  "chapter_count": 1,
+  "chapters": [
+    100
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 100,
+      "state": "在玉屏山顶云层中，被雷声吸引"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 100,
+      "actions": [
+        "奇怪的扭头看向身后"
+      ]
+    }
+  ],
+  "id": "c404_百剑峰众人"
+}

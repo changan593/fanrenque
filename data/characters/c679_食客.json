@@ -1,0 +1,23 @@
+{
+  "canonical_name": "食客",
+  "aliases": [],
+  "first_seq": 577,
+  "last_seq": 577,
+  "chapter_count": 1,
+  "chapters": [
+    577
+  ],
+  "role_distribution": {
+    "提及": 1
+  },
+  "mentioned_only_count": 1,
+  "appearance_quotes": [],
+  "states": [
+    {
+      "seq": 577,
+      "state": "旅店食客"
+    }
+  ],
+  "actions": [],
+  "id": "c679_食客"
+}

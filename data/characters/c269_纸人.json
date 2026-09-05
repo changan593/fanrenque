@@ -1,0 +1,58 @@
+{
+  "canonical_name": "纸人",
+  "aliases": [],
+  "first_seq": 40,
+  "last_seq": 43,
+  "chapter_count": 2,
+  "chapters": [
+    40,
+    43
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 40,
+      "quote": "十数个穿着祭服的白色纸人一边扔着纸钱一边吹着唢呐打着锣"
+    },
+    {
+      "seq": 40,
+      "quote": "纸人们一半咧着嘴笑，另一半抿着嘴哭"
+    },
+    {
+      "seq": 43,
+      "quote": "白脸红腮的纸人"
+    },
+    {
+      "seq": 43,
+      "quote": "打着白幡，抬着一副棺椁"
+    }
+  ],
+  "states": [
+    {
+      "seq": 40,
+      "state": "诡异，有生命"
+    },
+    {
+      "seq": 43,
+      "state": "化为粉末，后出现血泪"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 40,
+      "actions": [
+        "抬棺，扔姚安饶入棺，嘲笑师姐。"
+      ]
+    },
+    {
+      "seq": 43,
+      "actions": [
+        "唱戏，抬棺，流出血泪"
+      ]
+    }
+  ],
+  "id": "c269_纸人"
+}

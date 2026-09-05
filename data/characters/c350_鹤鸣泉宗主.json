@@ -1,0 +1,61 @@
+{
+  "canonical_name": "鹤鸣泉宗主",
+  "aliases": [
+    "男人",
+    "肌肉男",
+    "高壮男人"
+  ],
+  "first_seq": 1109,
+  "last_seq": 1132,
+  "chapter_count": 2,
+  "chapters": [
+    1109,
+    1132
+  ],
+  "role_distribution": {
+    "参与": 2
+  },
+  "mentioned_only_count": 0,
+  "appearance_quotes": [
+    {
+      "seq": 1109,
+      "quote": "那个肌肉男"
+    },
+    {
+      "seq": 1132,
+      "quote": "一个无比高大强壮的男人正单手拄着头在睡觉"
+    },
+    {
+      "seq": 1132,
+      "quote": "肌肉横飞的准圣"
+    }
+  ],
+  "states": [
+    {
+      "seq": 1109,
+      "state": "出手阻拦葛道人"
+    },
+    {
+      "seq": 1132,
+      "state": "修行出问题，体内灵气密度太大，常昏睡"
+    }
+  ],
+  "actions": [
+    {
+      "seq": 1109,
+      "actions": [
+        "抱拳对葛道人说话",
+        "释放灵潮对葛道人"
+      ]
+    },
+    {
+      "seq": 1132,
+      "actions": [
+        "睡觉打呼噜",
+        "醒来质问南季礼",
+        "告知灵堂牌位来历"
+      ]
+    }
+  ],
+  "id": "c350_鹤鸣泉宗主"
+}

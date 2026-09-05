@@ -1,0 +1,33 @@
+{
+  "name": "沙地战场",
+  "first_seq": 242,
+  "chapter_count": 1,
+  "chapters": [
+    242
+  ],
+  "types": {
+    "室外": 1
+  },
+  "times_of_day": {
+    "朝日": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 242,
+      "quote": "沙地上是天空中朝日火球营造的一层黑色的影子"
+    }
+  ],
+  "characters": {
+    "尉天齐": 1,
+    "狗娃": 1
+  },
+  "events": [
+    {
+      "seq": 242,
+      "events": [
+        "尉天齐与狗娃搏斗，利用佛威和佛影击杀狗娃"
+      ]
+    }
+  ],
+  "id": "s501_沙地战场"
+}

@@ -285,14 +285,14 @@
         "manner": ""
       },
       {
-        "para": 49,
+        "para": 47,
         "speaker": "古命好",
         "addressee": "唐真",
         "text": "宗内的说法是，他把自己修没了。",
         "manner": ""
       },
       {
-        "para": 50,
+        "para": 48,
         "speaker": "唐真",
         "addressee": "古命好",
         "text": "我看，他只是想开了。",
@@ -606,7 +606,7 @@
         "empty": 0
       },
       "verbatim_rate": 1.0,
-      "misplaced_para_count": 9,
+      "misplaced_para_count": 7,
       "problems": []
     },
     "coverage": {
@@ -617,7 +617,8 @@
       "missed_samples": []
     },
     "repair_rounds": 0,
-    "context_chapters_used": []
+    "context_chapters_used": [],
+    "repaired_by": "s5_repair_quotes"
   },
   "reviews": [
     {

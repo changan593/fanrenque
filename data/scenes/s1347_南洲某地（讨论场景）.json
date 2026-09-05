@@ -1,0 +1,29 @@
+{
+  "name": "南洲某地（讨论场景）",
+  "first_seq": 1184,
+  "chapter_count": 1,
+  "chapters": [
+    1184
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [],
+  "characters": {
+    "白化": 1,
+    "秦怀雀": 1
+  },
+  "events": [
+    {
+      "seq": 1184,
+      "events": [
+        "白化汇报灵气追踪进展",
+        "秦淮雀指出双方都在等待时机"
+      ]
+    }
+  ],
+  "id": "s1347_南洲某地（讨论场景）"
+}

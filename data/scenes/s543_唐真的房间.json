@@ -1,0 +1,32 @@
+{
+  "name": "唐真的房间",
+  "first_seq": 300,
+  "chapter_count": 1,
+  "chapters": [
+    300
+  ],
+  "types": {
+    "室内": 1
+  },
+  "times_of_day": {
+    "未明确": 1
+  },
+  "description_quotes": [
+    {
+      "seq": 300,
+      "quote": "进入房间，依然是乱糟糟的"
+    }
+  ],
+  "characters": {
+    "姚望舒": 1
+  },
+  "events": [
+    {
+      "seq": 300,
+      "events": [
+        "红儿翻找酒坛，打开后发呆"
+      ]
+    }
+  ],
+  "id": "s543_唐真的房间"
+}
